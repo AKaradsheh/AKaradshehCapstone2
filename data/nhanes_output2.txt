@@ -1,0 +1,116 @@
+
+
+File Names: data\nhanes_variables.csv
+
+File converted: ACQ_C.XPT
+
+File converted: ALQ_C.XPT
+
+File converted: BIX_C.XPT
+
+File converted: BMX_C.XPT
+
+File converted: BPQ_C.XPT
+
+File converted: BPX_C.XPT
+
+File converted: CDQ_C.XPT
+
+File converted: CIQDEP_C.XPT
+
+File converted: CIQGAD_C.XPT
+
+File converted: CIQPAN_C.XPT
+
+File converted: CVX_C.XPT
+
+File converted: DBQ_C.XPT
+
+File converted: DEMO_C.XPT
+
+File converted: DIQ_C.XPT
+
+File converted: DUQ_C.XPT
+
+File converted: DXXAG_C.XPT
+
+File converted: dxx_c.xpt
+
+File converted: HSQ_C.XPT
+
+File converted: HUQ_C.XPT
+
+File converted: KIQ_P_C.XPT
+
+File converted: KIQ_U_C.XPT
+
+File converted: L11_C.XPT
+
+File converted: L13AM_C.XPT
+
+File converted: L13_C.XPT
+
+File converted: L16_C.XPT
+
+File converted: L40_C.XPT
+
+File converted: LEXAB_C.XPT
+
+File converted: LEXPN_C.XPT
+
+File converted: MCQ_C.XPT
+
+File converted: OCQ_C.XPT
+
+File converted: OHQ_C.XPT
+
+File converted: OHXADD_C.XPT
+
+File converted: OHXDEN_C (1).XPT
+
+File converted: OHXDEN_C.XPT
+
+File converted: OHXPRL_C.XPT
+
+File converted: OHXPRU_C.XPT
+
+File converted: OHXREF_C.XPT
+
+File converted: OSQ_C.XPT
+
+File converted: PAQIAF_C.XPT
+
+File converted: PAQ_C.XPT
+
+File converted: paxraw_c.xpt
+
+File converted: PFQ_C.XPT
+
+File converted: RDQ_C.XPT
+
+File converted: RXQANA_C.XPT
+
+File converted: RXQ_RX_C.XPT
+
+File converted: SMQ_C.XPT
+
+File converted: SSFA_C.XPT
+
+File converted: SSTROP_A.XPT
+
+File converted: VIX_C.XPT
+
+File converted: WHQ_C.XPT
+
+remote: error: File NHANESPackageTest/NHANES/raw_data/2003-2004a/paxraw_c.csv is 2815.60 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: File NHANESPackageTest/NHANES/raw_data/2003-2004a/paxraw_c.xpt is 2411.61 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+
+git rm --cached NHANESPackageTest/NHANES/raw_data/2003-2004a/paxraw_c.csv
+git rm --cached NHANESPackageTest/NHANES/raw_data/2003-2004a/paxraw_c.xpt
+
+NHANESPackageTest/NHANES/raw_data/2003-2004a/paxraw_c.csv
+NHANESPackageTest/NHANES/raw_data/2003-2004a/paxraw_c.xpt
+
+git add .
+git commit -m 'Removed large files from tracking and updated .gitignore'

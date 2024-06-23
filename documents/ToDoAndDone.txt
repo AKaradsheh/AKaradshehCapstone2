@@ -1,0 +1,112 @@
+To Do / Done List:
+
+06/20/2024
+
+- Examined Activity NHANES 2003-2004 vs 2013-2014.
+- Download unsuccessful of raw activity files. Too large.
+- Found article ref for NHANES Mortality and Activity 2019.
+They use data from Activity 2003 - 2006, and mortality 2011.
+
+Leroux A, Di J, Smirnova E, Mcguffey EJ, Cao Q, Bayatmokhtari E, Tabacu L, Zipunnikov V,
+Urbanek JK, Crainiceanu C. Organizing and analyzing the activity data in NHANES.
+Stat Biosci. 2019 Jul;11(2):262-287. doi: 10.1007/s12561-018-09229-9.
+Epub 2019 Feb 9. PMID: 32047572; PMCID: PMC7012355.
+
+Ekaterina Smirnova, Andrew Leroux, Quy Cao, Lucia Tabacu, Vadim Zipunnikov,
+Ciprian Crainiceanu, Jacek K Urbanek,
+The Predictive Performance of Objective Measures of Physical Activity
+Derived From Accelerometry Data for 5-Year All-Cause Mortality in Older Adults:
+National Health and Nutritional Examination Survey 2003–2006,
+The Journals of Gerontology:
+Series A, Volume 75, Issue 9, September 2020, Pages 1779–1785, https://doi.org/10.1093/gerona/glz193
+
+The github location: https://github.com/andrew-leroux/rnhanesdata
+https://github.com/andrew-leroux/rnhanesdata/tree/master/R
+
+- This article explains the difficulty in obtaining the activity data from accelerometers and transforming to useable data.
+The include a github repo of R code to get the data and reduce to a usable form.
+
+- I downloaded the R scripts and got it to work. Used R to export the data file to csv file format.
+The file name is "NHANES_analysis_data.csv"
+
+The Column names:
+SEQN
+PAXCAL
+PAXSTAT
+WEEKDAY
+SDDSRVYR
+eligstat
+mortstat
+causeavl
+permth_exm
+permth_int
+ucod_leading
+diabetes_mcod
+hyperten_mcod
+mortsrce_ndi
+mortsrce_cms
+mortsrce_ssa
+mortsrce_dc
+mortsrce_dcl
+SDMVPSU
+SDMVSTRA
+WTINT2YR
+WTMEC2YR
+RIDAGEMN
+RIDAGEEX
+RIDAGEYR
+BMI
+BMI_cat
+Race
+Gender
+Diabetes
+CHF
+CHD
+Cancer
+Stroke
+EducationAdult
+MobilityProblem
+DrinkStatus
+DrinksPerWeek
+SmokeCigs
+yr5_mort
+Age
+Exclude
+wtint2yr_unadj
+wtmec2yr_unadj
+wtint2yr_unadj_norm
+wtmec2yr_unadj_norm
+wtint4yr_unadj
+wtint4yr_unadj_norm
+wtmec4yr_unadj
+wtmec4yr_unadj_norm
+wtint2yr_adj
+wtint2yr_adj_norm
+wtmec2yr_adj
+wtmec2yr_adj_norm
+wtint4yr_adj
+wtint4yr_adj_norm
+wtmec4yr_adj
+wtmec4yr_adj_norm
+TAC
+TLAC
+WT
+ST
+MVPA
+SATP
+ASTP
+mi1
+si1
+mi2
+si2
+mi3
+si3
+mi4
+si4
+mi5
+si5
+mi6
+si6
+sPC1
+sPC5
+sPC6
