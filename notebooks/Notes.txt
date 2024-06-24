@@ -3,12 +3,21 @@
 
 Capstone Two HTN and parameters
 
-Exploration of available data related to breathing
+Exploration of available data related to mortality, HTN, CV, sleep, activity and breathing
 
 06/21/2024
 o	Set up repo
-o	Reviewed article regarding 2003 - 2006 mortality 2011 and activity
-o	Ran R script
+o	Reviewed article regarding 2003 - 2006 mortality 2011 and activity. R repo on github.
+o	Ran R script with modification:
+```R
+# Export data_analysis to CSV
+write.csv(data_analysis, file = "NHANES_analysis_data.csv", row.names = TRUE) ```
+
+created a file named "NHANES_analysis_data.csv" in directory.
+'''R
+
+
+
 o	Modified script to get the data in csv format and upload.
 o	Identify fields/ columns
 o	Get additional data files. Which? By patient identifier. Isolate patient numbers
@@ -42,7 +51,7 @@ use python code?
 
 
 I would like to automate a process using python code. The process is
-Open a folder and convert each file with the extension     to a csv file. The application that opens the file is       and it saves
+Open a folder and convert each file with the extension to a csv file. The application that opens the file  and it saves
 
 06/22/2024
 o	Added files to the repo. Downloaded to Pycharm. Verified files.
@@ -57,7 +66,8 @@ o
 o	Separate/copy the subjects from the main file.
 o	Try the python code to get the feature description. Look at the documentation of the NHANES python code library.
 o	Select the columns of interest from the main files. Each file gets duplicated with only the relevant subjects. Relabel for ease.
-o	Analyze each: Count, gender, age, features. Think what else with the features of interest. Think mortality, HTN. Activity. Sleep disorders. Morphometrics. May not be able to join all files. May have to use the available mortality data and htn to do each.
+o	Analyze each: Count, gender, age, features. Think what else with the features of interest. Think mortality, HTN. Activity.
+Sleep disorders. Morphometrics. May not be able to join all files. May have to use the available mortality data and htn to do each.
 o	Use the subjects file to get records from the other files
 o	Look at correlations with HTN and mortality.
 o	Analyze meds
@@ -75,3 +85,14 @@ o	For each feature transform to numeric if needed
 o	Analyze what if: Activity is increased, or intensity of dosing a med for a condition or tx for sleep apnea. How would HTN improve, how would mortality improve?
 o	Subject subgroups: HTN + Mortality+ Activity + Sleep apnea
 o	Need to see overlap in other datasets from different years
+
+
+06/24/2024
+- Selecting fields to use from all the data sets
+-
+- Predicting tidal volume from BMI, relationship to HTN and mortality article found
+- evaluating sleep apnea from the quetionniares: articles found
+- Smoking, COPD, asthma : how to handle
+- Triglycerides relate to sleep apnea article. Use TG's as marker for hypoventilation
+
+-

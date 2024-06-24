@@ -1,0 +1,1778 @@
+> # rm(list=ls())
+> ## Please read these comments before running the code contained in this R script!
+> ##
+> ## In order for the code to execute, users need to set the object: dir_supplemental (line 133)
+> ## to be the parent directory of the "code" folder contained in the supplemental material.
+> ## For additional details regarding the analyses performed here, please refer to the manuscript.
+> ##
+> ## The code below is divided into the following "chunks"
+> ##  - Section 0: Install and load all necessary packages including the rnhanesdata package
+> ##               which contains the accelerometry data used in our analysis.
+> ##  - Section 1:
+> ##              1a. Load and merge accelerometry, demographic/comorbidity, and mortality data
+> ##              1b. Create new factor variables which we will use in our analysis.
+> ##                  * We collapse most comorbidity data into either "Yes", "No", or msising from NHANES
+> ##                    questionairre data which allows for "don't know" or "refused" as responses.
+> ##                     We assume individuals who respond "don't know" or "missing" do not have that particular condition.
+> ##                  * We collapse adult education into 3 levels: "less than high school", "high school", and "more than highschool"
+> ##                  * We add a "missing" level to alcohol consumption in order to retain individuals with missing data
+> ##                    for this item in our analysis.
+> ##
+> ##  - Section 2: Calculate commonly used accelerometry summary measures:
+> ##                 * TAC: Total activity counts
+> ##                 * TLAC: Total log(1+activity countss)
+> ##                 * WT: Total wear time
+> ##                 * ST: Total sedentary, sleep, or non-wear time
+> ##                 * MVPA: Total time spent in MVPA
+> ##                 * SATP: Transition probability from sedentary, sleep, or non-wear to active. In the manuscript this is referred to
+> ##                         using the subscript sl/nw
+> ##                 * ASTP: Transition probability from active to sedentary, sleep, or non-wear. In the manuscript this is referred to
+> ##                         using the subscript sl/nw
+> ##               Note that in this section these variables are calculated at the day level. After applying exlcusion criteria
+> ##               in Section 3, we average across days within individuals to get one number per measure for each participant.
+> ##               The exclusion criteria involves excluding days which are deemed to have insufficient wear-time (<10 hours)
+> ##
+> ##  - Section 3: Apply exclusion criteria and create a data frame with one row per subject which will be used as a basis for regression
+> ##               analyses. This data frame is called "data_analysis".
+> ##
+> ##               When estimating complex survey generalized linear models, we create a svydesign() object via the survey package which
+> ##               uses "data_analysis". In order to fit models which use both  the "adjusted" or "unadjusted" survey weights, we create two separate
+> ##               svydesign() objects. This is done in Section 4.d when we perform forward selection.
+> ##
+> ##               Once we've subset the data to obtain "data_analysis", we calculate both adjusted and unadjsuted normalized
+> ##               survey weights. These weights are calculated using the reweight_accel() function
+> ##               (see ?reweight_accel for details). The adjusted weights are calculated using age, gender,
+> ##               and ethnicity strata. The "adjusted" normalizaed weights we use for regression analyses are "wtmec4yr_adj_norm"
+> ##
+> ##               Ecxlusion criteria
+> ##                 * Apply age exclusion (i.e. younger than 50, or 85 and over). Note that individuals age 85 and over
+> ##                   at the time of accelerometer wear have NA (missing) values for the variable RIDAGEEX which records
+> ##                   age in months at the time individuals took part in the exam portion of the study.
+> ##                 * Create a table of pairwise missing data on variables that we intend to include in our prediction model to
+> ##                   see the distribution of missing data. In our analysis individuals are only excluded for:
+> ##                      - Missing body mass index (BMI)
+> ##                      - Missing education
+> ##                      - "Bad" accelerometry data
+> ##                              + fewer than 3 days of accelerometry data with at least 10 hours of estimated wear-time
+> ##                              + device calibration flag recorded by NHANES
+> ##                              + data reliability flag recorded by NHANES
+> ##                      - Missing mortality data
+> ##                      - Individuals recorded as "alive" but had fewer than 5 years of follow-up
+> ##
+> ##  - Section 4: Data analysis
+> ##              4a. Perform (unweighted) functional principal component analysis (FPCA) and survey weighted PCA
+> ##              4b. Use backward selection to identify FPCA features associated with 5-year mortality. Find surrogate measures on
+> ##                  the log transformed activity counts that correlate strongly with the features which are associated with 5-year mortality.
+> ##              4c. Perform scalar on function regression (SoFR) where we include individuals' average (log-transformed) activity profiles
+> ##                  as the functional predictor.
+> ##              4d. Use forward selection to evaluate the predictive value of our set of variables identified in 4b/4c as well as the commonly used
+> ##                  accelerometry features calculated in Section 2 of this code.
+> ##
+> ##                  * Note that functional forms are assumed to be linear and no interactions/effect modifications are considered.
+> ##
+> ##
+> ##
+> ##  By default, the assummption is that this R script will be downloaded with the supplemental material which accompanies
+> ##  the manuscript "Organizing and analyzing the activity in NHANES". This supplemental material is a zipped file with 3 folders:
+> ##    - code
+> ##    - figures
+> ##    - tables
+> ##  Assuming users correctly set the variable "dir_supplemental",
+> ##  running this script will save all figure output to the "figures" folder and
+> ##  .tex files which contain the latex version of tables presented in the manuscript.
+> ##
+> ##  Because the data are relatively large and require a non-trivial amount of working memory (RAM)
+> ##  we "clean up" the workspace as we go, clearing items after the relevant figures/tables/regression results are
+> ##  created/printed to the console. This may need to be taken into consideration if there's a particualr area you'd like to investigate in more detail.
+> ##
+> ##  Finally, although most of the code executes fairly quickly, there are two sections that may take a few minutes to run.
+> ##  The first, calculating survey weighted principal components, will not execute by default. This can be changed by switching
+> ##  make_plot_fpca_vs_svypca to TRUE in Section 0.
+> ##  The other chunk that takes time to run is the forward selection procedure. There's a print statement embedded in the code that will
+> ##  report progress on the procedure, but this may take 15-25 minutes to completely finish.
+> 
+> 
+> ########################################
+> ##                                    ##
+> ##  Section 0: load required packages ##
+> ##                                    ##
+> ########################################
+> 
+> 
+> ## Check for packages needed to run analyses/install the rnhanesdata package.
+> ## Note: all these packages are available on CRAN and can therefore be downloaded using the install.packages() function,
+> ##       the rnhanesdata package is not on CRAN due to package size
+> pckgs <- c("tableone","knitr","kableExtra",   ## packages used for creating Table 1
++            "devtools",                        ## package used to download R packages stored on GitHub
++            "magrittr","dplyr",                ## packages for merging/transforming data
++            "survey",                          ## package used for analyzing complex survey data in R
++            "mgcv","refund"                    ## packages used for smoothing/functional regression
++            )
+> 
+> sapply(pckgs, function(x) if(!require(x,character.only=TRUE,quietly=TRUE)) {
++     install.packages(x)
++     require(x, character.only=TRUE)
++ })
+$tableone
+NULL
+
+$knitr
+NULL
+
+$kableExtra
+NULL
+
+$devtools
+NULL
+
+$magrittr
+NULL
+
+$dplyr
+NULL
+
+$survey
+NULL
+
+$mgcv
+NULL
+
+$refund
+NULL
+
+> rm(list=c("pckgs"))
+> 
+> ## Install the rnhanesdata package and dependencies.
+> ## This may take a few minutes because of the size of the data package.
+> if(!require("rnhanesdata")){
++     install_github("andrew-leroux/rnhanesdata")
++     require("rnhanesdata")
++ }
+> 
+> make_plots  <- TRUE  ## change to FALSE if you don't want to create the figures presented in the manuscript
+> make_tables <- TRUE  ## change to FALSE if you don't want to create the tables presented in the manuscript
+> 
+> ## change "make_plot_fpca_vs_svypca" below to TRUE if you want to plot the first 16 survey weighted principal components versus
+> ## the unweighted functional principal components
+> make_plot_fpca_vs_svypca <- FALSE
+> 
+> 
+> dir_supplemental <- "C:/Users/adlik/Documents/NHANESR20132014/dir_supplemental"  ## directory where supplemental material folder is saved
+> code_path        <- file.path(dir_supplemental, "supplemental_material", "code")     ## file path where helper functions and code to create figures are located
+> figure_path      <- file.path(dir_supplemental, "supplemental_material", "figures")  ## file path where figures will be saved
+> table_path       <- file.path(dir_supplemental, "supplemental_material", "tables")   ## file path where tables will be saved
+> 
+> 
+> ## Source a single helper function: calc_weighted_AUC().
+> ## This  function calculates survey weighted AUC given a set of labels and predictions
+> source(file.path(code_path,"helper_fns.R"))
+> 
+> 
+> 
+> #######################################
+> ##                                   ##
+> ##  Section 1a: load and merge data  ##
+> ##                                   ##
+> #######################################
+> 
+> ## load the data
+> data("PAXINTEN_C");data("PAXINTEN_D")
+> data("Flags_C");data("Flags_D")
+> data("Mortality_2011_C");data("Mortality_2011_D")
+> data("Covariate_C");data("Covariate_D")
+> 
+> 
+> ## re-code activity counts which are considered "non-wear" to be 0
+> ## this doesn't impact much data, most estimated non-wear times correspond to 0 counts anyway
+> PAXINTEN_C[,paste0("MIN",1:1440)] <- PAXINTEN_C[,paste0("MIN",1:1440)]*Flags_C[,paste0("MIN",1:1440)]
+> PAXINTEN_D[,paste0("MIN",1:1440)] <- PAXINTEN_D[,paste0("MIN",1:1440)]*Flags_D[,paste0("MIN",1:1440)]
+> 
+> 
+> 
+> ## Merge covariate, mortality, and accelerometry data
+> ## note that both PAXINTEN_* and Covariate_* have a column
+> ## called "SDDSRVYR" indicating which NHANES wave the data is associated with.
+> ## To avoid duplicating this column in the merged data, we add this variable to the "by"
+> ## argument in left_join()
+> AllAct_C <- left_join(PAXINTEN_C, Mortality_2011_C, by = "SEQN") %>%
++         left_join(Covariate_C, by=c("SEQN", "SDDSRVYR"))
+> AllAct_D <- left_join(PAXINTEN_D, Mortality_2011_D, by = "SEQN") %>%
++         left_join(Covariate_D, by=c("SEQN", "SDDSRVYR"))
+> 
+> AllFlags_C <- left_join(Flags_C, Mortality_2011_C, by = "SEQN") %>%
++         left_join(Covariate_C, by=c("SEQN", "SDDSRVYR"))
+> AllFlags_D <- left_join(Flags_D, Mortality_2011_D, by = "SEQN") %>%
++         left_join(Covariate_D, by=c("SEQN", "SDDSRVYR"))
+> 
+> ## clean up the workspace for memory purposes
+> rm(list=c(paste0(c("PAXINTEN_", "Covariate_","Mortality_2011_","Flags_"),rep(LETTERS[3:4],each=4))))
+> 
+> ## combine data for the two waves
+> AllAct   <- rbind.data.frame(AllAct_C,AllAct_D)
+> AllFlags <- rbind.data.frame(AllFlags_C,AllFlags_D)
+> 
+> 
+> ## clean up the workspace again
+> rm(list=c("AllAct_C","AllAct_D","AllFlags_C","AllFlags_D"))
+> 
+> 
+> 
+> 
+> ##############################################################################
+> ##                                                                          ##
+> ##  Section 1b: create new variables/relevel factor variables for analyses  ##
+> ##                                                                          ##
+> ##############################################################################
+> 
+> ## Code year 5 mortality, NAs for individuals with follow up less than 5 years and alive
+> AllAct$yr5_mort <- AllFlags$yr5_mort <- as.integer(ifelse(AllAct$permth_exm/12 <= 5 & AllAct$mortstat == 1, 1,
++                                                           ifelse(AllAct$permth_exm/12 < 5 & AllAct$mortstat == 0, NA, 0))
++                                                     )
+> 
+> ## Create Age in years using the age at examination (i.e. when participants wore the device)
+> AllAct$Age <- AllFlags$Age <- AllAct$RIDAGEEX/12
+> 
+> ## Re-level comorbidities to assign refused/don't know as not having the condition
+> ## Note that in practice this does not affect many individuals, but it is an assumption we're making.
+> levels(AllAct$CHD)    <- levels(AllFlags$CHD)    <- list("No" = c("No","Refused","Don't know"), "Yes" = c("Yes"))
+> levels(AllAct$CHF)    <- levels(AllFlags$CHF)    <- list("No" = c("No","Refused","Don't know"), "Yes" = c("Yes"))
+> levels(AllAct$Stroke) <- levels(AllFlags$Stroke) <- list("No" = c("No","Refused","Don't know"), "Yes" = c("Yes"))
+> levels(AllAct$Cancer) <- levels(AllFlags$Cancer) <- list("No" = c("No","Refused","Don't know"), "Yes" = c("Yes"))
+> levels(AllAct$Diabetes) <- levels(AllFlags$Diabetes) <- list("No" = c("No","Borderline", "Refused","Don't know"), "Yes" = c("Yes"))
+> 
+> 
+> ## Re-level education to have 3 levels and categorize don't know/refused to be missing
+> levels(AllAct$EducationAdult) <- levels(AllFlags$EducationAdult) <- list("Less than high school" = c("Less than 9th grade", "9-11th grade"),
++                                                                          "High school" = c("High school grad/GED or equivalent"),
++                                                                          "More than high school" = c("Some College or AA degree", "College graduate or above"))
+> 
+> ## Re-level alcohol consumption to include a level for "missing"
+> levels(AllAct$DrinkStatus) <- levels(AllFlags$DrinkStatus) <- c(levels(AllAct$DrinkStatus), "Missing alcohol")
+> AllAct$DrinkStatus[is.na(AllAct$DrinkStatus)] <- AllFlags$DrinkStatus[is.na(AllAct$DrinkStatus)] <- "Missing alcohol"
+> 
+> 
+> 
+> ## Re-order columns so that activity and wear/non-wear flags are the last 1440 columns of our two
+> ## data matrices. This is a personal preference and is absolutely not necessary.
+> act_cols <- which(colnames(AllAct) %in% paste0("MIN",1:1440))
+> oth_cols <- which(!colnames(AllAct) %in% paste0("MIN",1:1440))
+> AllAct   <- AllAct[,c(oth_cols,act_cols)]
+> AllFlags <- AllFlags[,c(oth_cols,act_cols)]
+> rm(list=c("act_cols","oth_cols"))
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> ###########################################################
+> ##                                                       ##
+> ##  Section 2: Calcualte common accelerometery features  ##
+> ##                                                       ##
+> ###########################################################
+> 
+> ## Assign just the activity and wear/non-wear flag data to matrices.
+> ## This makes computing the features faster but is technically required.
+> act_mat  <- as.matrix(AllAct[,paste0("MIN",1:1440)])
+> flag_mat <- as.matrix(AllFlags[,paste0("MIN",1:1440)])
+> 
+> ## replace NAs with 0s
+> ## As described in the manuscript, this only affects 501 minutes for 1 day, for one subject
+> act_mat[is.na(act_mat)]   <- 0
+> flag_mat[is.na(flag_mat)] <- 0
+> 
+> 
+> AllAct$TAC   <- AllFlags$TAC   <- rowSums(act_mat)
+> AllAct$TLAC  <- AllFlags$TLAC  <- rowSums(log(1+act_mat))
+> AllAct$WT    <- AllFlags$WT    <- rowSums(flag_mat)
+> AllAct$ST    <- AllFlags$ST    <- rowSums(act_mat < 100)
+> AllAct$MVPA  <- AllFlags$MVPA  <- rowSums(act_mat >= 2020)
+> 
+> ## calculate fragmentation measures
+> bout_mat <- apply(act_mat >= 100, 1, function(x){
++     mat <- rle(x)
++     sed <- mat$lengths[which(mat$values == FALSE)]
++     act <- mat$length[mat$values == TRUE]
++ 
++     sed <- ifelse(length(sed) == 0, NA, mean(sed))
++     act <- ifelse(length(act) == 0, NA, mean(act))
++     c(sed,act)
++ })
+> 
+> AllAct$SBout <- AllFlags$SBout <- bout_mat[1,]
+> AllAct$ABout <- AllFlags$ABout <- bout_mat[2,]
+> AllAct$SATP  <- AllFlags$SATP  <- 1/AllAct$SBout
+> AllAct$ASTP  <- AllFlags$ASTP  <- 1/AllAct$ABout
+> rm(list=c("act_mat","flag_mat","bout_mat"))
+> 
+> 
+> 
+> ###########################################
+> ##                                       ##
+> ##  Section 3: Apply exclusion criteria  ##
+> ##                                       ##
+> ###########################################
+> 
+> 
+> ## make dataframe with one row per individual to create table 1.
+> ## Remove columns associated with activity to avoid any confusion.
+> table_dat <- AllAct[!duplicated(AllAct$SEQN),-which(colnames(AllAct) %in% c(paste0("MIN",1:1440),
++                                                                             "TAC","TLAC","WT","ST","MVPA",
++                                                                             "SBout","ABout","SATP","ASTP"))]
+> 
+> ## subset based on our age inclusion/exclusion criteria
+> ## note that individuals age 85 and over are coded as NA
+> table_dat <- subset(table_dat, !(Age < 50 | is.na(Age)))
+> 
+> ## get the SEQN (id variable) associated with individuals with fewer than 3 days accelerometer wear time
+> ## with at least 10 hours OR had their data quality/device calibration flagged by NHANES
+> keep_inx       <- exclude_accel(AllAct, AllFlags)
+> Act_Analysis   <- AllAct[keep_inx,]
+> Flags_Analysis <- AllFlags[keep_inx,]
+> nms_rm         <- unique(c(Act_Analysis$SEQN[-which(Act_Analysis$SEQN %in% names(table(Act_Analysis$SEQN))[table(Act_Analysis$SEQN)>=3])],
++                            setdiff(AllAct$SEQN, Act_Analysis$SEQN))
++                           )
+> rm(list=c("keep_inx"))
+> 
+> 
+> ## Additional inclusion/exclusion criteria.
+> ## Aside from mortality or accelerometer weartime, the only missingness is in
+> ## Education (6) and BMI (35).
+> criteria_vec <- c("(is.na(table_dat$BMI_cat))",         # missing BMI
++                   "(is.na(table_dat$EducationAdult))",  # missing education
++                   "(table_dat$SEQN %in% nms_rm)",       # too few "good" days of accelerometery data
++                   "((!table_dat$eligstat %in% 1) | is.na(table_dat$mortstat) | is.na(table_dat$permth_exm) | table_dat$ucod_leading %in% \"004\")", # missing mortality data, or accidental death
++                   "(table_dat$mortstat == 0 & table_dat$permth_exm/12 < 5)" # less than 5 years of follow up with no mortality
++ )
+> 
+> ## create matrix of pairwise missing data based on our exclusion criterial
+> tab_miss <- matrix(NA, ncol=length(criteria_vec), nrow=length(criteria_vec))
+> for(i in seq_along(criteria_vec)){
++     for(j in seq_along(criteria_vec)){
++         eval(parse(text=paste0("miss_cur <- which(", criteria_vec[i], "&", criteria_vec[j],")")))
++         tab_miss[i,j] <- length(miss_cur)
++         rm(list=c("miss_cur"))
++     }
++ }
+> rownames(tab_miss) <- colnames(tab_miss) <- c("BMI","Education","Bad Accel Data","Mortality","Follow-up")
+> rm(list=c("i","j"))
+> ## view missing data pattern
+> tab_miss
+               BMI Education Bad Accel Data Mortality Follow-up
+BMI             35         0              8         1         0
+Education        0         6              2         0         0
+Bad Accel Data   8         2            517         4         2
+Mortality        1         0              4        16         0
+Follow-up        0         0              2         0        17
+> 
+> 
+> ## add in column indicating exclusion:
+> ##   Exclude = 1 indicates an individual does not meet our inclusion criteria
+> ##   Exclude = 0 indicates an individual does meet our inclusion criteria
+> eval(parse(text=paste0("table_dat$Exclude <- as.integer(", paste0(criteria_vec,collapse="|"), ")")))
+> 
+> 
+> ## Create our dataset for analysis with one row per subject
+> ## containing only those subjects who meet our inclusion criteria.
+> data_analysis  <- subset(table_dat, Exclude == 0)
+> ## get adjusted survey weights using the reweight_accel function
+> data_analysis  <- reweight_accel(data_analysis)
+> 
+> ## Get activity/flag data for only those included participants AND who have 3 good days of data.
+> ## Since we've already removed the "bad" days from Act_Analysis and Act_Flags,
+> ## we need only subset based on subject ID now.
+> Act_Analysis   <- subset(Act_Analysis, SEQN %in% data_analysis$SEQN)
+> Flags_Analysis <- subset(Flags_Analysis, SEQN %in% data_analysis$SEQN)
+> 
+> ## calculate subject specific averages of the accelerometry features
+> ## using only the "good" days of data
+> act_var_nms <- c("TAC","TLAC","WT","ST","MVPA","SATP","ASTP")
+> for(i in act_var_nms){
++     data_analysis[[i]] <- vapply(data_analysis$SEQN, function(x) mean(Act_Analysis[[i]][Act_Analysis$SEQN==x],na.rm=TRUE), numeric(1))
++ }
+> 
+> ## verify there's no missingness in the rest of our predictors of interest
+> vars_interest <- c("Age", "Gender", "Race", "EducationAdult", "SmokeCigs", "DrinkStatus", "BMI_cat",
++                    "Diabetes","CHF",  "CHD", "Stroke",
++                    "Cancer", "MobilityProblem",
++                    "permth_exm")
+> summary(data_analysis[,c(vars_interest,act_var_nms,"mortstat")])
+      Age           Gender                   Race                    EducationAdult   SmokeCigs   
+ Min.   :50.00   Male  :1611   White           :1862   Less than high school:1021   Never  :1430  
+ 1st Qu.:58.08   Female:1587   Mexican American: 572   High school          : 792   Former :1229  
+ Median :65.50                 Other Hispanic  :  61   More than high school:1385   Current: 539  
+ Mean   :65.97                 Black           : 601                                              
+ 3rd Qu.:73.56                 Other           : 102                                              
+ Max.   :84.92                                                                                    
+           DrinkStatus          BMI_cat     Diabetes    CHF        CHD       Stroke     Cancer           MobilityProblem
+ Moderate Drinker:1512   Normal     : 827   No :2628   No :3009   No :2933   No :3006   No :2695   No Difficulty :2163  
+ Non-Drinker     :1362   Underweight:  30   Yes: 570   Yes: 189   Yes: 265   Yes: 192   Yes: 503   Any Difficulty:1035  
+ Heavy Drinker   : 188   Overweight :1218                                                                               
+ Missing alcohol : 136   Obese      :1123                                                                               
+                                                                                                                        
+                                                                                                                        
+   permth_exm          TAC              TLAC              WT               ST              MVPA        
+ Min.   :  1.00   Min.   :  8932   Min.   : 429.9   Min.   : 615.3   Min.   : 648.6   Min.   :  0.000  
+ 1st Qu.: 66.00   1st Qu.:124117   1st Qu.:2235.9   1st Qu.: 792.5   1st Qu.:1043.0   1st Qu.:  2.333  
+ Median : 80.00   Median :190580   Median :2740.6   Median : 859.7   Median :1115.5   Median :  7.143  
+ Mean   : 77.27   Mean   :206781   Mean   :2741.1   Mean   : 878.2   Mean   :1113.3   Mean   : 13.534  
+ 3rd Qu.: 92.00   3rd Qu.:266993   3rd Qu.:3225.9   3rd Qu.: 930.1   3rd Qu.:1190.0   3rd Qu.: 18.857  
+ Max.   :107.00   Max.   :912076   Max.   :5655.5   Max.   :1440.0   Max.   :1425.0   Max.   :152.333  
+      SATP               ASTP            mortstat     
+ Min.   :0.007614   Min.   :0.05228   Min.   :0.0000  
+ 1st Qu.:0.066523   1st Qu.:0.24118   1st Qu.:0.0000  
+ Median :0.080574   Median :0.29057   Median :0.0000  
+ Mean   :0.082059   Mean   :0.30182   Mean   :0.1563  
+ 3rd Qu.:0.095511   3rd Qu.:0.34816   3rd Qu.:0.0000  
+ Max.   :0.199420   Max.   :0.74495   Max.   :1.0000  
+> 
+> ## clean up the workspace
+> rm(list=c("AllAct","AllFlags","i","criteria_vec","nms_rm","tab_miss"))
+> gc()
+           used  (Mb) gc trigger   (Mb)   max used   (Mb)
+Ncells  2599549 138.9    4904175  262.0    4904175  262.0
+Vcells 63391717 483.7  677666519 5170.2 1102866233 8414.3
+> 
+> 
+> 
+> #####################################################
+> # Table 1: Compare included vs Excluded individuals #
+> #####################################################
+> if(make_tables){
++     source(file.path(code_path, "create_table1.R"))
++ }
+----------------------------------------------------------------------------------------------------- 
+
+    Table 1: Comparing Included vs. Excluded individuals both unweighted and adjusting for survey weights  
+
+    ------------------------------------------------------------------------------------------------------ 
+                                        0               1               p        0               1               p       
+n                                      "3198"          "574"           ""       "3243.20"       "528.80"        ""      
+Age (mean (SD))                        "65.97 (9.68)"  "65.78 (9.94)"  "0.674"  "62.97 (9.48)"  "63.16 (9.73)"  "0.723" 
+Gender (% Female)                      "1587 (49.6)"   "283 (49.3)"    "0.923"  "1733.1 (53.4)" "277.0 (52.4)"  "0.718" 
+Race (%)                               ""              ""              "0.175"  ""              ""              "0.183" 
+   White                               "1862 (58.2)"   "310 (54.0)"    ""       "2609.2 (80.5)" "405.1 (76.6)"  ""      
+   Mexican American                    "572 (17.9)"    "101 (17.6)"    ""       "128.7 (4.0)"   "26.6 (5.0)"    ""      
+   Other Hispanic                      "61 (1.9)"      "10 (1.7)"      ""       "78.3 (2.4)"    "11.8 (2.2)"    ""      
+   Black                               "601 (18.8)"    "132 (23.0)"    ""       "288.8 (8.9)"   "63.0 (11.9)"   ""      
+   Other                               "102 (3.2)"     "21 (3.7)"      ""       "138.2 (4.3)"   "22.3 (4.2)"    ""      
+Education (%)                          ""              ""              "0.001"  ""              ""              "<0.001"
+   Less than high school               "1021 (31.9)"   "216 (38.0)"    ""       "603.2 (18.6)"  "131.8 (25.2)"  ""      
+   High school                         "792 (24.8)"    "152 (26.8)"    ""       "875.1 (27.0)"  "165.5 (31.6)"  ""      
+   More than high school               "1385 (43.3)"   "200 (35.2)"    ""       "1764.9 (54.4)" "226.3 (43.2)"  ""      
+Cigarette smoking (%)                  ""              ""              "0.001"  ""              ""              "0.002" 
+   Never                               "1430 (44.7)"   "236 (41.4)"    ""       "1479.2 (45.6)" "210.9 (40.0)"  ""      
+   Former                              "1229 (38.4)"   "202 (35.4)"    ""       "1209.8 (37.3)" "193.4 (36.7)"  ""      
+   Current                             "539 (16.9)"    "132 (23.2)"    ""       "554.2 (17.1)"  "122.5 (23.3)"  ""      
+Alcohol consumption (%)                ""              ""              "<0.001" ""              ""              "<0.001"
+   Moderate Drinker                    "1512 (47.3)"   "230 (40.1)"    ""       "1680.1 (51.8)" "251.3 (47.5)"  ""      
+   Non-Drinker                         "1362 (42.6)"   "256 (44.6)"    ""       "1191.9 (36.8)" "196.7 (37.2)"  ""      
+   Heavy Drinker                       "188 (5.9)"     "26 (4.5)"      ""       "233.7 (7.2)"   "27.4 (5.2)"    ""      
+   Missing alcohol                     "136 (4.3)"     "62 (10.8)"     ""       "137.6 (4.2)"   "53.4 (10.1)"   ""      
+Body mass index (%)                    ""              ""              "<0.001" ""              ""              "0.002" 
+   Normal                              "827 (25.9)"    "125 (23.2)"    ""       "875.8 (27.0)"  "120.2 (24.0)"  ""      
+   Underweight                         "30 (0.9)"      "12 (2.2)"      ""       "34.8 (1.1)"    "10.6 (2.1)"    ""      
+   Overweight                          "1218 (38.1)"   "174 (32.3)"    ""       "1219.9 (37.6)" "146.8 (29.3)"  ""      
+   Obese                               "1123 (35.1)"   "228 (42.3)"    ""       "1112.7 (34.3)" "223.9 (44.6)"  ""      
+Diabetes (% Yes)                       "570 (17.8)"    "137 (23.9)"    "0.001"  "444.7 (13.7)"  "101.1 (19.1)"  "0.014" 
+Congestive heart failure (% Yes)       "189 (5.9)"     "46 (8.0)"      "0.068"  "161.1 (5.0)"   "32.2 (6.1)"    "0.312" 
+Coronary heart disease (% Yes)         "265 (8.3)"     "54 (9.4)"      "0.419"  "244.0 (7.5)"   "48.0 (9.1)"    "0.360" 
+Stroke (% Yes)                         "192 (6.0)"     "48 (8.4)"      "0.041"  "151.0 (4.7)"   "32.9 (6.2)"    "0.055" 
+Cancer (% Yes)                         "503 (15.7)"    "69 (12.0)"     "0.027"  "527.3 (16.3)"  "74.9 (14.2)"   "0.328" 
+Mobility problem (% Any Difficulty)    "1035 (32.4)"   "242 (42.2)"    "<0.001" "876.9 (27.0)"  "195.1 (36.9)"  "0.001" 
+Months mortality follow-up (mean (SD)) "77.27 (20.90)" "70.91 (23.60)" "<0.001" "77.63 (18.96)" "71.38 (21.64)" "<0.001"
+Mortality at follow-up (% Dead)        "500 (15.6)"    "113 (19.9)"    "0.013"  "360.8 (11.1)"  "76.8 (14.7)"   "0.074" 
+> 
+> 
+> 
+> 
+> 
+> ###################################
+> ##                               ##
+> ##  Section 4: Data Analysis     ##
+> ##                               ##
+> ###################################
+> 
+> 
+> #############################
+> ##                         ##
+> ##  Section 4.a: PCA/fPCA  ##
+> ##                         ##
+> #############################
+> 
+> ## get activity in matrix format, log transform, add 1 because of 0 counts
+> ## There is one individual with 501 minutes recorded as NA. These missing data occur on the last day they wore the device
+> ## for the last 501 minutes of the day. We impute these missing data with 0.
+> Act <- as.matrix(log(1+Act_Analysis[,paste0("MIN",1:1440)]))
+> Act[is.na(Act)] <- 0
+> 
+> start <- Sys.time()
+> fpca_fit <- fpca.face(Act,knots=50)
+> (end <-  Sys.time()-start)
+Time difference of 1.739151 secs
+> rm(list=c("start","end"))
+> 
+> ## exmine the proportion of variability explained by the first 6 principal components
+> c(cumsum(fpca_fit$evalues)/sum(fpca_fit$evalues))[1:6]
+[1] 0.2191731 0.3610351 0.4394963 0.4925813 0.5370897 0.5743903
+> 
+> 
+> ##calculate the mean and sd of the first 6 PC scores for all participants
+> for(k in 1:6){
++     data_analysis[[paste0("mi",k)]] <- vapply(data_analysis$SEQN, function(x) mean(fpca_fit$scores[Act_Analysis$SEQN==x,k]), numeric(1))
++     data_analysis[[paste0("si",k)]] <- vapply(data_analysis$SEQN, function(x) sd(fpca_fit$scores[Act_Analysis$SEQN==x,k]), numeric(1))
++ }
+> 
+> 
+> ##########################################
+> ## Figure: first 6 principal components ##
+> ##########################################
+> 
+> if(make_plots){
++     source(file.path(code_path,"create_principal_components_plot.R"))
++     if(make_plot_fpca_vs_svypca){
++         source(file.path(code_path,"create_svyprincipal_components_plot.R"))
++     }
++ }
+> rm(list=c("make_plot_fpca_vs_svypca"))
+> 
+> 
+> 
+> ############################################################################
+> ##                                                                        ##
+> ##  Section 4.b: Backward selection to identify features of first 6 fPCs  ##
+> ##               associated with 5-year mortality                         ##
+> ##                                                                        ##
+> ############################################################################
+> 
+> ## Create a svydesign() object for
+> ## estimating complex survey generalized linear models.
+> ## Here we use the adjusted (re-weighted) 4-year normalized survey weights.
+> data_analysis_svy <- svydesign(id= ~SDMVPSU, strata = ~SDMVSTRA,
++                                weights = ~wtmec4yr_adj_norm, data = data_analysis, nest = TRUE)
+> 
+> ind_vars  <- c("mi1", "mi2","mi3", "mi4","mi5","mi6",
++                "si1","si2","si3","si4","si5", "si6")
+> inc_vars  <- c("Age", "SmokeCigs", "DrinkStatus", "BMI_cat",
++                "Diabetes","CHF",  "CHD", "Stroke",
++                "Cancer", "MobilityProblem")
+> exc_vars <- ind_vars
+> aic_vec  <- var_vec <- model_vec <- rep(NA, length(ind_vars))
+> for(i in 1:length(ind_vars)){
++     aic_ij  <- rep(NA,length(exc_vars))
++ 
++     for(k in 1:length(exc_vars)){
++         form    <- paste0(c(inc_vars, exc_vars[-k]), collapse="+")
++         fit_tmp <- svyglm(as.formula(paste("yr5_mort ~", form)), design=data_analysis_svy,family=quasibinomial())
++ 
++         aic_ij[k] <- AIC(fit_tmp)[2]
++ 
++         rm(list=c("fit_tmp","form"))
++     }
++ 
++     k_cur         <- which(aic_ij == min(aic_ij))
++     model_vec[i]  <- paste0(c(inc_vars, exc_vars[-k_cur]), collapse="+")
++     exc_vars      <- exc_vars[-k_cur]
++     aic_vec[i]    <- aic_ij[k_cur]
++     rm(list=c("k_cur","aic_ij","k"))
++ }
+> ## get the final model as the first model where AIC increases after removing a variable
+> ## identified mi1, si1, si5, si6
+> (backward_model <- model_vec[which(diff(aic_vec) > 0) + 1][1])
+[1] "Age+SmokeCigs+DrinkStatus+BMI_cat+Diabetes+CHF+CHD+Stroke+Cancer+MobilityProblem+mi1+si1+si5+si6"
+> 
+> fit_logistic_pca <- svyglm(as.formula(paste("yr5_mort ~", backward_model)), design=data_analysis_svy,
++                            family=quasibinomial())
+> summary(fit_logistic_pca)
+
+Call:
+svyglm(formula = as.formula(paste("yr5_mort ~", backward_model)), 
+    design = data_analysis_svy, family = quasibinomial())
+
+Survey design:
+svydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~wtmec4yr_adj_norm, 
+    data = data_analysis, nest = TRUE)
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                   -7.691557   0.819702  -9.383 1.39e-06 ***
+Age                            0.068862   0.009555   7.207 1.74e-05 ***
+SmokeCigsFormer                0.663792   0.208527   3.183  0.00871 ** 
+SmokeCigsCurrent               0.979918   0.126345   7.756 8.76e-06 ***
+DrinkStatusNon-Drinker         0.624392   0.157568   3.963  0.00222 ** 
+DrinkStatusHeavy Drinker       0.818963   0.377645   2.169  0.05291 .  
+DrinkStatusMissing alcohol     0.849254   0.341316   2.488  0.03013 *  
+BMI_catUnderweight             0.737539   0.493509   1.494  0.16317    
+BMI_catOverweight             -0.564020   0.190483  -2.961  0.01295 *  
+BMI_catObese                  -0.569360   0.164720  -3.457  0.00537 ** 
+DiabetesYes                    0.270816   0.197786   1.369  0.19823    
+CHFYes                         0.777366   0.226759   3.428  0.00564 ** 
+CHDYes                         0.088033   0.239461   0.368  0.72012    
+StrokeYes                      0.225369   0.282591   0.798  0.44203    
+CancerYes                      0.437036   0.170083   2.570  0.02607 *  
+MobilityProblemAny Difficulty  0.685045   0.196822   3.481  0.00514 ** 
+mi1                           -0.020260   0.005056  -4.007  0.00206 ** 
+si1                            0.023457   0.009041   2.594  0.02494 *  
+si5                           -0.044216   0.024958  -1.772  0.10412    
+si6                           -0.055350   0.022306  -2.481  0.03050 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for quasibinomial family taken to be 1.066153)
+
+Number of Fisher Scoring iterations: 6
+
+> rm(list=c("aic_vec","i","model_vec","exc_vars","ind_vars","var_vec",
++           "inc_vars","data_analysis_svy","backward_model","fit_logistic_pca"))
+> 
+> 
+> 
+> 
+> ## Having identified candidate predictors, we now attempt to find surrogate measures for these PC
+> ## features on the original data.
+> ## To qualify as a surrogate, the feature calculated on the raw data should be highly correlated with the PC
+> ## feature it is associated with (~|0.75|+).
+> ## The procedure for finding these surrogate measures involved a fair amount of "guess and check" based on the shape
+> ## of the principal components. The "guessing and checking" is not shown here in the interest of conciseness. We discuss this idea in a bit more detail in the manuscript.
+> ##
+> ## Our search here is by no means exhaustive, and we focused primarily on "average" activity during various
+> ## periods of the day indicated by the shape of each principal component.
+> 
+> #################################
+> ## surrogate for m_{i1}/s_{i1} ##
+> #################################
+> 
+> ## Note that the shape of PC1 is predominantly  a shift in average activity profile
+> ## so we use TLAC as our surrogate measure for m_{i1}, and the day-to-day standard deviation
+> ## of TLAC as our surrogate for s_{i1}
+> data_analysis$sPC1 <- tapply(Act_Analysis$TLAC, Act_Analysis$SEQN, sd)
+> 
+> ## compare association between m_{i1}/s_{i1} with our surrogate measures
+> cor(data_analysis$TLAC,data_analysis$mi1)
+[1] 0.8820064
+> cor(data_analysis$sPC1,data_analysis$si1)
+[1] 0.8504811
+> 
+> 
+> 
+> ##########################
+> ## surrogate for s_{i5} ##
+> ##########################
+> t5a <- (11*60+1):(15*60)
+> t5b <- (16*60+1):(19*60)
+> s5a <- (rowMeans(Act[,t5a]) - rowMeans(Act[,t5b]))
+> data_analysis$sPC5 <- tapply(s5a, Act_Analysis$SEQN, sd)
+> cor(data_analysis$sPC5, data_analysis$si5)
+[1] 0.7748227
+> rm(list=c("t5a","t5b","s5a"))
+> 
+> 
+> 
+> ##########################
+> ## surrogate for s_{i6} ##
+> ##########################
+> t6a <- c((8*60+1):(10*60),
++          (15*60+1):(17*60),
++          (22*60+1):(24*60))
+> t6b <-c((5*60+1):(7*60),
++         (11*60+1):(13*60),
++         (18*60+1):(20*60))
+> s6a <- rowMeans(Act[,t6a])-rowMeans(Act[,t6b])
+> data_analysis$sPC6 <- tapply(s6a, Act_Analysis$SEQN, sd)
+> cor(data_analysis$sPC6,data_analysis$si6)
+[1] 0.8683382
+> rm(list=c("t6a","t6b","s6a"))
+> 
+> 
+> 
+> 
+> 
+> 
+> ##########################################################
+> ##                                                      ##
+> ##  Section 4.c:  Scalar on function regression (SoFR)  ##
+> ##                                                      ##
+> ##########################################################
+> 
+> ## get individual average activity and day-to-day variability profiles
+> ## using log transformed activity smoothed via fPCA
+> avg_profiles <- matrix(NA, nrow=nrow(data_analysis),ncol=ncol(Act))
+> uid          <- unique(data_analysis$SEQN)
+> for(i in 1:length(uid)){
++         avg_profiles[i,] <- colMeans(fpca_fit$Yhat[Act_Analysis$SEQN == uid[i],])
++ }
+> ## center the functions so that our functional regression is identifiable
+> ## add the centered functions to our dataframe using the I() function which retains matrix structure
+> ## within the dataframe
+> data_analysis$X_cn <- I(avg_profiles - rep(1, nrow(avg_profiles)) %*% t(colMeans(avg_profiles)))
+> rm(list=c("uid","i"))
+> 
+> 
+> ## fit the functional linear model using a cyclic p-spline basis
+> ## Note that although this model accounts for survey weights, it ignores the clustering
+> ## structure.
+> fit_SoFR <- pfr(yr5_mort ~ Age + BMI_cat + SmokeCigs + DrinkStatus + Race + EducationAdult+
++                              CHD + Diabetes + CHF + Stroke +MobilityProblem+ Cancer +
++                              lf(X_cn, k=30, bs="cp"),
++                    data=data_analysis, family=quasibinomial(), weights=data_analysis$wtmec4yr_adj_norm)
+> 
+> ## remove all variable names that got assigned to environment, possibly a bug with pfr?
+> rm(list=ls()[ls()%in%colnames(data_analysis)])
+> 
+> 
+> ####################################
+> ## Figure: Functional coefficient ##
+> ####################################
+> if(make_plots){
++     source(file.path(code_path,"create_functional_coefficient_plot.R"))
++ }
+> 
+> ## remove the centered data matrix from our data frame
+> ## this is only done to increase computational speed of the cross-validation below
+> data_analysis <- data_analysis[,-which(colnames(data_analysis) %in% c("X_cn"))]
+> 
+> rm(list=c("fpca_fit","avg_profiles","fit_SoFR"))
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> #################################################################################
+> ##                                                                             ##
+> ##  Section 4.d:  Forward selection to identify predictive value of variables  ##
+> ##                                                                             ##
+> #################################################################################
+> 
+> 
+> 
+> 
+> ## In this section we perform forward selection using the adjusted (re-weighted) survey weights,
+> ## unadjusted weights, and no survey weights. We identify variables and output associated with these models
+> ## using the naming convention: _adj, _unadj, _wnwgt
+> ## to denote adjusted, unadjusted, and unweighted results, respectively.
+> 
+> 
+> 
+> ## variables to consider as linear predictors of 5-year mortality
+> ind_vars <- c("Age", "Gender", "Race", "EducationAdult", "SmokeCigs", "DrinkStatus", "BMI_cat",
++               "Diabetes","CHF",  "CHD", "Stroke", "Cancer", "MobilityProblem",
++               "sPC1", #"sPC5",
++               "sPC6", "ST", "WT", "MVPA","TAC", "TLAC", "SATP", "ASTP")
+> 
+> ## examine distrubtion of predictor variables
+> summary(data_analysis[,ind_vars])
+      Age           Gender                   Race                    EducationAdult   SmokeCigs   
+ Min.   :50.00   Male  :1611   White           :1862   Less than high school:1021   Never  :1430  
+ 1st Qu.:58.08   Female:1587   Mexican American: 572   High school          : 792   Former :1229  
+ Median :65.50                 Other Hispanic  :  61   More than high school:1385   Current: 539  
+ Mean   :65.97                 Black           : 601                                              
+ 3rd Qu.:73.56                 Other           : 102                                              
+ Max.   :84.92                                                                                    
+           DrinkStatus          BMI_cat     Diabetes    CHF        CHD       Stroke     Cancer           MobilityProblem
+ Moderate Drinker:1512   Normal     : 827   No :2628   No :3009   No :2933   No :3006   No :2695   No Difficulty :2163  
+ Non-Drinker     :1362   Underweight:  30   Yes: 570   Yes: 189   Yes: 265   Yes: 192   Yes: 503   Any Difficulty:1035  
+ Heavy Drinker   : 188   Overweight :1218                                                                               
+ Missing alcohol : 136   Obese      :1123                                                                               
+                                                                                                                        
+                                                                                                                        
+      sPC1              sPC6               ST               WT              MVPA              TAC        
+ Min.   :  28.85   Min.   :0.06039   Min.   : 648.6   Min.   : 615.3   Min.   :  0.000   Min.   :  8932  
+ 1st Qu.: 333.52   1st Qu.:0.49361   1st Qu.:1043.0   1st Qu.: 792.5   1st Qu.:  2.333   1st Qu.:124117  
+ Median : 469.30   Median :0.65368   Median :1115.5   Median : 859.7   Median :  7.143   Median :190580  
+ Mean   : 513.64   Mean   :0.68558   Mean   :1113.3   Mean   : 878.2   Mean   : 13.534   Mean   :206781  
+ 3rd Qu.: 633.38   3rd Qu.:0.84752   3rd Qu.:1190.0   3rd Qu.: 930.1   3rd Qu.: 18.857   3rd Qu.:266993  
+ Max.   :2105.08   Max.   :2.03188   Max.   :1425.0   Max.   :1440.0   Max.   :152.333   Max.   :912076  
+      TLAC             SATP               ASTP        
+ Min.   : 429.9   Min.   :0.007614   Min.   :0.05228  
+ 1st Qu.:2235.9   1st Qu.:0.066523   1st Qu.:0.24118  
+ Median :2740.6   Median :0.080574   Median :0.29057  
+ Mean   :2741.1   Mean   :0.082059   Mean   :0.30182  
+ 3rd Qu.:3225.9   3rd Qu.:0.095511   3rd Qu.:0.34816  
+ Max.   :5655.5   Max.   :0.199420   Max.   :0.74495  
+> 
+> ## standardize continuous predictors other than age
+> ## so coefficients are interpretable as
+> ## "a one standard deviation change in ... is associated with ... (in/de)crease in log odds of 5-year mortality"
+> vars_std <- c("sPC1", "sPC5", "sPC6", "ST", "WT", "MVPA","TAC", "TLAC", "SATP", "ASTP")
+> for(i in vars_std){
++     data_analysis[[i]] <- data_analysis[[i]]/sd(data_analysis[[i]])
++ }
+> rm(list=c("vars_std","i"))
+> 
+> ## Create svydesign() objects associated with the adjusted and unadjusted
+> ## survey weights. These are the basis for complex survey glm regressions.
+> data_analysis_svy_adj   <- svydesign(id= ~SDMVPSU, strata = ~SDMVSTRA,
++                                      weights = ~wtmec4yr_adj_norm,
++                                      data = data_analysis, nest = TRUE)
+> data_analysis_svy_unadj <- svydesign(id= ~SDMVPSU, strata = ~SDMVSTRA,
++                                      weights = ~wtmec4yr_unadj_norm,
++                                      data = data_analysis, nest = TRUE)
+> 
+> 
+> ## Create empty vector for incrementing included variables in each of the
+> ## three weighting procedures
+> inc_vars_adj <- inc_vars_unadj <- inc_vars_unwgt <- c()
+> 
+> ## Create empty data frames for storing results for each of the three weighting
+> ## procedures. Each of these data frames contains 4 columns:
+> ##    - Variable: The variable selected in order of inclusion via the forward selection procedure
+> ##    - Cross-Validated AUC: k-fold cross-valided AUC associated with the forward selection procedure after each variable is selected into the model
+> ##    - AIC: Complex survey AIC associated with the forward selection procedure after each variable is selected into the model
+> ##    - AUC: In-sample AUC associated with the forward selection procedure after each variable is selected into the model
+> auc_mat_adj  <- auc_mat_unadj  <- auc_mat_unwgt  <-
++                 data.frame("Variable" = rep(NA_character_,length(ind_vars)),
++                            "Cross-Validated AUC" = rep(NA_real_,length(ind_vars)),
++                            "AIC" = rep(NA_real_,length(ind_vars)),
++                            "AUC" = rep(NA_real_,length(ind_vars)),
++                            stringsAsFactors = FALSE)
+> 
+> 
+> ## set the seed so cross-validation results are reproducible
+> set.seed(1244)
+> ## get the training and testing datasets for 10-fold cross validation
+> n_folds <- 10
+> ## split the data to have an (approximately) equal number of alive/died in each training/test dataset
+> inx_id_alive <- which(data_analysis$yr5_mort==0)
+> inx_id_died  <- which(data_analysis$yr5_mort==1)
+> nid_alive    <- length(inx_id_alive)
+> nid_died     <- length(inx_id_died)
+> 
+> inx_ls_alive <- split(sample(inx_id_alive, size=nid_alive, replace=FALSE),
++                       rep(1:n_folds,each=ceiling(nid_alive/n_folds))[1:nid_alive])
+> inx_ls_died <- split(sample(inx_id_died, size=nid_died, replace=FALSE),
++                      rep(1:n_folds,each=ceiling(nid_died/n_folds))[1:nid_died])
+> inx_ls <- lapply(1:n_folds, function(x) c(inx_ls_alive[[x]], inx_ls_died[[x]]))
+> rm(list=c("inx_id_alive","inx_id_died","nid_alive","nid_died","inx_ls_alive","inx_ls_died"))
+> 
+> 
+> ## function which will get cut-points to use in AUC calculation
+> ## returns all unique predicted values of the model for a given
+> get_ctpts <- function(model, type='link',...) c(Inf,sort(unique(predict(model,type=type,...)),decreasing=TRUE))
+> 
+> ## Vector to multiply vector of k-fold cross validated weights by to
+> ## get an estimate of cross-valided AUC.
+> ## This accounts for potentially unequal sizes in the test datasets
+> k_id <- vapply(inx_ls, length, numeric(1))/nrow(data_analysis)
+> 
+> for(i in 1:length(ind_vars)){
++         ## get a vector containing all variables not already included in the forward prediction
++         ## separately for each of the three weighting procedures.
++         exc_vars_adj   <- setdiff(ind_vars, inc_vars_adj)
++         exc_vars_unadj <- setdiff(ind_vars, inc_vars_unadj)
++         exc_vars_unwgt <- setdiff(ind_vars, inc_vars_unwgt)
++ 
++         ## create empty matrices/vectors to store AUC/AIC results
++         ##   auc_ijk_... Store the cross-valided AUC results
++         ##   aic_ij_... Store the complex survey AIC for each of the variables not already included in the model
++         ##   auc_ij_... Store the full sample AUC for each of the variables not already included in the model.
++         auc_ijk_adj <- auc_ijk_unadj <- auc_ijk_unwgt <- matrix(NA, nrow=length(exc_vars_adj), ncol=n_folds)
++         aic_ij_adj  <- aic_ij_unadj <- aic_ij_unwgt  <-
++             auc_ij_full_adj <- auc_ij_full_unadj <- auc_ij_full_unwgt <- rep(NA,length(exc_vars_adj))
++ 
++ 
++         ## loop over all variables not currently in the model to calcualte their
++         ## improvment to AUC/AIC.
++         for(j in 1:length(exc_vars_adj)){
++                 ## current variable to consider
++                 var_adj   <- exc_vars_adj[j]
++                 var_unadj <- exc_vars_unadj[j]
++                 var_unwgt <- exc_vars_unwgt[j]
++ 
++                 ## create formulas for current regression using
++                 ## all variables previously identified aand the current variable under consideration
++                 form_adj   <- paste(c(inc_vars_adj, var_adj), collapse=" +")
++                 form_unadj <- paste(c(inc_vars_unadj, var_unadj), collapse=" +")
++                 form_unwgt <- paste(c(inc_vars_unwgt, var_unwgt), collapse=" +")
++ 
++ 
++ 
++                 ## fit the model to the full data for calculating AIC
++                 fit_adj   <- svyglm(as.formula(paste("yr5_mort ~", form_adj)),
++                                     design=data_analysis_svy_adj, family=quasibinomial())
++                 fit_unadj <- svyglm(as.formula(paste("yr5_mort ~", form_unadj)),
++                                     design=data_analysis_svy_unadj, family=quasibinomial())
++                 fit_unwgt <- glm(as.formula(paste("yr5_mort ~", form_unwgt)), data=data_analysis, family=binomial())
++ 
++ 
++                 ## get AIC
++                 ## once we have exceeded the design degrees of freedom, we can get
++                 ## point estimates for our coefficients, but can no longer calculate AIC
++                 if(fit_adj$df.residual > 0){
++                     aic_ij_adj[j]  <- AIC(fit_adj)[2]
++                     aic_ij_unadj[j]  <- AIC(fit_unadj)[2]
++                 }
++ 
++                 aic_ij_unwgt[j]  <- AIC(fit_unwgt)
++ 
++ 
++                 ## Calculate weighted and unweighted in-sample AUC using the appropriate weights
++                 auc_ij_full_adj[j]   <- calc_weighted_AUC(response=predict(fit_adj,type='link'),
++                                                           cutpts=get_ctpts(fit_adj,type='link'),
++                                                           labels=data_analysis$yr5_mort,
++                                                           weights=data_analysis$wtmec4yr_adj_norm)
++                 auc_ij_full_unadj[j] <- calc_weighted_AUC(response=predict(fit_unadj,type='link'),
++                                                           cutpts=get_ctpts(fit_unadj,type='link'),
++                                                           labels=data_analysis$yr5_mort,
++                                                           weights=data_analysis$wtmec4yr_unadj_norm)
++                 auc_ij_full_unwgt[j] <- calc_weighted_AUC(response=predict(fit_unwgt,type='link'),
++                                                           cutpts=get_ctpts(fit_unwgt,type='link'),
++                                                           labels=data_analysis$yr5_mort,
++                                                           weights=rep(1, nrow(data_analysis)))
++ 
++                 ## get cross-validated AUC
++                 for(k in 1:n_folds){
++                     ## subset test and training data sets
++                     SEQN_train <- data_analysis$SEQN[-inx_ls[[k]]]
++                     SEQN_test  <- data_analysis$SEQN[inx_ls[[k]]]
++                     data_test  <- subset(data_analysis, SEQN %in% SEQN_test)
++                     data_train <- subset(data_analysis, SEQN %in% SEQN_train)
++ 
++ 
++                     ## Fit the appropriate models by subsetting the data.
++                     ## By subsetting the existing svydesign objects instead of creating new svydesign objects,
++                     ## we retain information on the number of PSU/strata in the original study.
++                     fit_adj_cv   <- svyglm(as.formula(paste("yr5_mort ~", form_adj)),
++                                            design=subset(data_analysis_svy_adj, SEQN %in% SEQN_train),
++                                            family=quasibinomial())
++                     fit_unadj_cv <- svyglm(as.formula(paste("yr5_mort ~", form_unadj)),
++                                            design=subset(data_analysis_svy_unadj, SEQN %in% SEQN_train),
++                                            family=quasibinomial())
++                     fit_unwgt_cv <- glm(as.formula(paste("yr5_mort ~", form_unwgt)), data=data_train,
++                                         family=quasibinomial())
++ 
++ 
++                     ## Calculate weighted and unweighted AUC using the appropriate weights
++                     auc_ijk_adj[j,k]   <- calc_weighted_AUC(response=predict(fit_adj_cv, newdata=data_test, type='link'),
++                                                             cutpts=get_ctpts(fit_adj_cv,type='link',newdata=data_test),
++                                                             labels=data_test$yr5_mort,
++                                                             weights=data_test$wtmec4yr_adj_norm)
++                     auc_ijk_unadj[j,k] <- calc_weighted_AUC(response=predict(fit_unadj_cv, newdata=data_test, type='link'),
++                                                             cutpts=get_ctpts(fit_unadj_cv,type='link',newdata=data_test),
++                                                             labels=data_test$yr5_mort,
++                                                             weights=data_test$wtmec4yr_unadj_norm)
++                     auc_ijk_unwgt[j,k] <- calc_weighted_AUC(response=predict(fit_unwgt_cv, newdata=data_test, type='link'),
++                                                             cutpts=get_ctpts(fit_unwgt_cv,type='link',newdata=data_test),
++                                                             labels=data_test$yr5_mort,
++                                                             weights=rep(1,nrow(data_test)))
++ 
++ 
++                     rm(list=c("data_train","data_test","SEQN_train","SEQN_test",
++                               paste0("fit_",c("adj","unadj","unwgt") ,"_cv")))
++                 }
++ 
++ 
++ 
++                 print(j)
++                 rm(list=c(paste0("fit_",c("adj","unadj","unwgt")),
++                           paste0("form_",c("adj","unadj","unwgt")),
++                           paste0("var_",c("adj","unadj","unwgt")),
++                           "k"))
++         }
++ 
++         ## average across the k-folds using a weighted average of the number of individuals in each test set
++         auc_ij_adj   <- auc_ijk_adj %*% k_id
++         auc_ij_unadj <- auc_ijk_unadj %*% k_id
++         auc_ij_unwgt <- auc_ijk_unwgt %*% k_id
++ 
++         ## combine results for this iteratin
++         auc_j_adj   <- data.frame(exc_vars_adj, auc_ij_adj, aic_ij_adj, auc_ij_full_adj, stringsAsFactors = FALSE)
++         auc_j_unadj <- data.frame(exc_vars_unadj, auc_ij_unadj, aic_ij_unadj, auc_ij_full_unadj, stringsAsFactors = FALSE)
++         auc_j_unwgt <- data.frame(exc_vars_unwgt, auc_ij_unwgt, aic_ij_unwgt, auc_ij_full_unwgt, stringsAsFactors = FALSE)
++ 
++         ## identify which variable is associated with the best improvement (or least bad decrease) in CV-AUC
++         auc_mat_adj[i,]   <- auc_j_adj[which.max(auc_j_adj[,2]),]
++         auc_mat_unadj[i,] <- auc_j_unadj[which.max(auc_j_unadj[,2]),]
++         auc_mat_unwgt[i,] <- auc_j_unwgt[which.max(auc_j_unwgt[,2]),]
++ 
++         ## Create matrices which communicate the predictive power of  all univariate regressions.
++         ## These are used to create Table 4 in the manuscript.
++         if(i == 1){
++             auc_mat_1_adj   <- auc_j_adj[rev(order(auc_j_adj[,2])),]
++             auc_mat_1_unadj <- auc_j_unadj[rev(order(auc_j_unadj[,2])),]
++             auc_mat_1_unwgt <- auc_j_unwgt[rev(order(auc_j_unwgt[,2])),]
++         }
++ 
++         ## Add in our "best" variable to our list of variabels included in the analysis
++         inc_vars_adj   <- c(inc_vars_adj, auc_mat_adj[i,1])
++         inc_vars_unadj <- c(inc_vars_unadj, auc_mat_unadj[i,1])
++         inc_vars_unwgt <- c(inc_vars_unwgt, auc_mat_unwgt[i,1])
++ 
++ 
++         ## at the end of each iteration, print out the current
++         ## adjusted survey weight results
++         print(paste(i, " Independent variable finished"))
++         print(auc_mat_adj[1:i,]);
++         rm(list=c(paste0("auc_j_",c("adj","unadj","unwgt")),
++                   paste0("auc_ij_",c("adj","unadj","unwgt")),
++                   paste0("auc_ijk_",c("adj","unadj","unwgt")),
++                   paste0("auc_ij_full_",c("adj","unadj","unwgt")),
++                   paste0("aic_ij_",c("adj","unadj","unwgt")),
++                   "j"))
++ }
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] 18
+[1] 19
+[1] 20
+[1] 21
+[1] 22
+[1] "1  Independent variable finished"
+  Variable Cross.Validated.AUC      AIC       AUC
+1      TAC           0.7814376 1563.367 0.7801761
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] 18
+[1] 19
+[1] 20
+[1] 21
+[1] "2  Independent variable finished"
+  Variable Cross.Validated.AUC      AIC       AUC
+1      TAC           0.7814376 1563.367 0.7801761
+2      Age           0.7994186 1507.325 0.7977338
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] 18
+[1] 19
+[1] 20
+[1] "3  Independent variable finished"
+  Variable Cross.Validated.AUC      AIC       AUC
+1      TAC           0.7814376 1563.367 0.7801761
+2      Age           0.7994186 1507.325 0.7977338
+3   Gender           0.8091951 1478.405 0.8076229
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] 18
+[1] 19
+[1] "4  Independent variable finished"
+         Variable Cross.Validated.AUC      AIC       AUC
+1             TAC           0.7814376 1563.367 0.7801761
+2             Age           0.7994186 1507.325 0.7977338
+3          Gender           0.8091951 1478.405 0.8076229
+4 MobilityProblem           0.8162985 1451.551 0.8157082
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] 18
+[1] "5  Independent variable finished"
+         Variable Cross.Validated.AUC      AIC       AUC
+1             TAC           0.7814376 1563.367 0.7801761
+2             Age           0.7994186 1507.325 0.7977338
+3          Gender           0.8091951 1478.405 0.8076229
+4 MobilityProblem           0.8162985 1451.551 0.8157082
+5     DrinkStatus           0.8225531 1435.939 0.8244216
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] "6  Independent variable finished"
+         Variable Cross.Validated.AUC      AIC       AUC
+1             TAC           0.7814376 1563.367 0.7801761
+2             Age           0.7994186 1507.325 0.7977338
+3          Gender           0.8091951 1478.405 0.8076229
+4 MobilityProblem           0.8162985 1451.551 0.8157082
+5     DrinkStatus           0.8225531 1435.939 0.8244216
+6       SmokeCigs           0.8284440 1419.358 0.8336095
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] "7  Independent variable finished"
+         Variable Cross.Validated.AUC      AIC       AUC
+1             TAC           0.7814376 1563.367 0.7801761
+2             Age           0.7994186 1507.325 0.7977338
+3          Gender           0.8091951 1478.405 0.8076229
+4 MobilityProblem           0.8162985 1451.551 0.8157082
+5     DrinkStatus           0.8225531 1435.939 0.8244216
+6       SmokeCigs           0.8284440 1419.358 0.8336095
+7         BMI_cat           0.8319313 1406.656 0.8381468
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] "8  Independent variable finished"
+         Variable Cross.Validated.AUC      AIC       AUC
+1             TAC           0.7814376 1563.367 0.7801761
+2             Age           0.7994186 1507.325 0.7977338
+3          Gender           0.8091951 1478.405 0.8076229
+4 MobilityProblem           0.8162985 1451.551 0.8157082
+5     DrinkStatus           0.8225531 1435.939 0.8244216
+6       SmokeCigs           0.8284440 1419.358 0.8336095
+7         BMI_cat           0.8319313 1406.656 0.8381468
+8             CHF           0.8334780 1394.856 0.8415241
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] "9  Independent variable finished"
+         Variable Cross.Validated.AUC      AIC       AUC
+1             TAC           0.7814376 1563.367 0.7801761
+2             Age           0.7994186 1507.325 0.7977338
+3          Gender           0.8091951 1478.405 0.8076229
+4 MobilityProblem           0.8162985 1451.551 0.8157082
+5     DrinkStatus           0.8225531 1435.939 0.8244216
+6       SmokeCigs           0.8284440 1419.358 0.8336095
+7         BMI_cat           0.8319313 1406.656 0.8381468
+8             CHF           0.8334780 1394.856 0.8415241
+9          Cancer           0.8339064 1389.211 0.8424850
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] "10  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] "11  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] "12  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] "13  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] "14  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] "15  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] "16  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] "17  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+17             CHD           0.8337613 1379.307 0.8491991
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] "18  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+17             CHD           0.8337613 1379.307 0.8491991
+18              ST           0.8323858 1381.702 0.8491721
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] "19  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+17             CHD           0.8337613 1379.307 0.8491991
+18              ST           0.8323858 1381.702 0.8491721
+19            SATP           0.8341160 1377.432 0.8529366
+[1] 1
+[1] 2
+[1] 3
+[1] "20  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+17             CHD           0.8337613 1379.307 0.8491991
+18              ST           0.8323858 1381.702 0.8491721
+19            SATP           0.8341160 1377.432 0.8529366
+20            TLAC           0.8336079 1379.509 0.8530722
+[1] 1
+[1] 2
+[1] "21  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+17             CHD           0.8337613 1379.307 0.8491991
+18              ST           0.8323858 1381.702 0.8491721
+19            SATP           0.8341160 1377.432 0.8529366
+20            TLAC           0.8336079 1379.509 0.8530722
+21            MVPA           0.8312899 1383.123 0.8530300
+[1] 1
+[1] "22  Independent variable finished"
+          Variable Cross.Validated.AUC      AIC       AUC
+1              TAC           0.7814376 1563.367 0.7801761
+2              Age           0.7994186 1507.325 0.7977338
+3           Gender           0.8091951 1478.405 0.8076229
+4  MobilityProblem           0.8162985 1451.551 0.8157082
+5      DrinkStatus           0.8225531 1435.939 0.8244216
+6        SmokeCigs           0.8284440 1419.358 0.8336095
+7          BMI_cat           0.8319313 1406.656 0.8381468
+8              CHF           0.8334780 1394.856 0.8415241
+9           Cancer           0.8339064 1389.211 0.8424850
+10            sPC6           0.8349916 1379.351 0.8455204
+11            sPC1           0.8352752 1377.614 0.8463863
+12            ASTP           0.8353309 1368.277 0.8475109
+13        Diabetes           0.8357295 1368.781 0.8484505
+14  EducationAdult           0.8355236 1374.014 0.8493006
+15          Stroke           0.8351014 1375.727 0.8493119
+16              WT           0.8347844 1377.206 0.8492598
+17             CHD           0.8337613 1379.307 0.8491991
+18              ST           0.8323858 1381.702 0.8491721
+19            SATP           0.8341160 1377.432 0.8529366
+20            TLAC           0.8336079 1379.509 0.8530722
+21            MVPA           0.8312899 1383.123 0.8530300
+22            Race           0.8260797       NA 0.8536294
+> rm(list=c("inx_ls",
++           paste0("inc_vars_",c("adj","unadj","unwgt")),
++           paste0("exc_vars_",c("adj","unadj","unwgt")),
++           "i","n_folds","k_id","ind_vars"))
+> 
+> 
+> 
+> ## Final model fits using the adjusted survey weights.
+> ## Fit models using the first 7 predictors (where all models agree) as well as
+> ## the number of predictors identified by AIC and AUC criteria.
+> inx_svy_adj     <- 7
+> inx_aic_svy_adj <- min(which(diff(auc_mat_adj[,3]) > 0))
+> inx_auc_svy_adj <- min(which(diff(auc_mat_adj[,2]) < 0))
+> 
+> fit_final <- svyglm(as.formula(paste("yr5_mort ~", paste0(auc_mat_adj[1:inx_svy_adj,1] ,collapse="+") )),
++                         design=data_analysis_svy_adj,
++                         family=quasibinomial())
+> fit_final_aic <- svyglm(as.formula(paste("yr5_mort ~", paste0(auc_mat_adj[1:inx_aic_svy_adj,1] ,collapse="+") )),
++                         design=data_analysis_svy_adj,
++                         family=quasibinomial())
+> fit_final_auc <- svyglm(as.formula(paste("yr5_mort ~", paste0(auc_mat_adj[1:inx_auc_svy_adj,1] ,collapse="+") )),
++                         design=data_analysis_svy_adj,
++                         family=quasibinomial())
+> 
+> ## look at the coefficients for the first 7 coefficients
+> ## selected using the adjusted survey weight model
+> summary(fit_final)
+
+Call:
+svyglm(formula = as.formula(paste("yr5_mort ~", paste0(auc_mat_adj[1:inx_svy_adj, 
+    1], collapse = "+"))), design = data_analysis_svy_adj, family = quasibinomial())
+
+Survey design:
+svydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~wtmec4yr_adj_norm, 
+    data = data_analysis, nest = TRUE)
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                   -6.035706   1.012504  -5.961 1.22e-05 ***
+TAC                           -0.718536   0.291566  -2.464 0.024017 *  
+Age                            0.064951   0.009459   6.867 2.01e-06 ***
+GenderFemale                  -0.811237   0.176277  -4.602 0.000221 ***
+MobilityProblemAny Difficulty  0.812205   0.220906   3.677 0.001726 ** 
+DrinkStatusNon-Drinker         0.719908   0.164958   4.364 0.000374 ***
+DrinkStatusHeavy Drinker       0.742083   0.393090   1.888 0.075280 .  
+DrinkStatusMissing alcohol     0.925699   0.337512   2.743 0.013379 *  
+SmokeCigsFormer                0.500590   0.221201   2.263 0.036231 *  
+SmokeCigsCurrent               0.872923   0.147789   5.907 1.37e-05 ***
+BMI_catUnderweight             0.654319   0.551554   1.186 0.250919    
+BMI_catOverweight             -0.698097   0.184887  -3.776 0.001384 ** 
+BMI_catObese                  -0.557015   0.163492  -3.407 0.003142 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for quasibinomial family taken to be 1.427539)
+
+Number of Fisher Scoring iterations: 6
+
+> 
+> 
+> ####################################################
+> # Create Tables:                                   #
+> #   1) single best predictor ordered by AUC        #
+> #   2) forward selection procedure                 #
+> #   3) final mode coefficient estimates and 95% CI #
+> ####################################################
+> if(make_tables){
++     source(file.path(code_path, "create_table_auc.R"))
++ 
++     ## sourcing "create_table_final_regression.R" will create one warning which can be safely ignored
++     source(file.path(code_path, "create_table_final_regression.R"))
++ }
+-------------------------------------------------------------------------------------------- 
+
+    Single predictor Cross-validated AUC 
+
+    -------------------------------------------------------------------------------------------- 
+       [,1] [,2]                            [,3]    [,4]                            [,5]   
+ [1,] "1"  "TAC"                           "0.781" "TAC"                           "0.782"
+ [2,] "2"  "MVPA"                          "0.755" "MVPA"                          "0.755"
+ [3,] "3"  "Sedentary, Sleep, or Non-wear" "0.744" "Sedentary, Sleep, or Non-wear" "0.746"
+ [4,] "4"  "ASTP$_{sl/nw}$"                "0.743" "ASTP$_{sl/nw}$"                "0.743"
+ [5,] "5"  "Age"                           "0.741" "TLAC"                          "0.740"
+ [6,] "6"  "TLAC"                          "0.738" "Age"                           "0.739"
+ [7,] "7"  "Mobility problem"              "0.676" "SATP$_{sl/nw}$"                "0.676"
+ [8,] "8"  "SATP$_{sl/nw}$"                "0.675" "Mobility problem"              "0.676"
+ [9,] "9"  "Surrogate for $s_{i6}$"        "0.663" "Surrogate for $s_{i6}$"        "0.662"
+[10,] "10" "Alcohol consumption"           "0.608" "Alcohol consumption"           "0.605"
+[11,] "11" "Education"                     "0.599" "Education"                     "0.600"
+[12,] "12" "Surrogate for $s_{i1}$"        "0.582" "Surrogate for $s_{i1}$"        "0.584"
+[13,] "13" "Cancer"                        "0.581" "Cancer"                        "0.581"
+[14,] "14" "Cigarette smoking"             "0.576" "Cigarette smoking"             "0.578"
+[15,] "15" "Congestive heart failure"      "0.567" "Congestive heart failure"      "0.568"
+[16,] "16" "Gender"                        "0.563" "Gender"                        "0.566"
+[17,] "17" "Body mass index"               "0.561" "Body mass index"               "0.562"
+[18,] "18" "Diabetes"                      "0.552" "Diabetes"                      "0.552"
+[19,] "19" "Coronary heart disease"        "0.547" "Coronary heart disease"        "0.548"
+[20,] "20" "Stroke"                        "0.542" "Stroke"                        "0.541"
+[21,] "21" "Race"                          "0.492" "Race"                          "0.492"
+[22,] "22" "Wear time"                     "0.468" "Wear time"                     "0.463"
+      [,6]                            [,7]   
+ [1,] "TAC"                           "0.751"
+ [2,] "Age"                           "0.732"
+ [3,] "MVPA"                          "0.729"
+ [4,] "ASTP$_{sl/nw}$"                "0.726"
+ [5,] "Sedentary, Sleep, or Non-wear" "0.723"
+ [6,] "TLAC"                          "0.715"
+ [7,] "SATP$_{sl/nw}$"                "0.654"
+ [8,] "Mobility problem"              "0.653"
+ [9,] "Surrogate for $s_{i6}$"        "0.652"
+[10,] "Gender"                        "0.582"
+[11,] "Alcohol consumption"           "0.575"
+[12,] "Cigarette smoking"             "0.573"
+[13,] "Surrogate for $s_{i1}$"        "0.571"
+[14,] "Cancer"                        "0.567"
+[15,] "Education"                     "0.567"
+[16,] "Congestive heart failure"      "0.558"
+[17,] "Race"                          "0.550"
+[18,] "Stroke"                        "0.541"
+[19,] "Diabetes"                      "0.541"
+[20,] "Coronary heart disease"        "0.540"
+[21,] "Body mass index"               "0.539"
+[22,] "Wear time"                     "0.495"
+--------------------------------------------------------------------------------------------- 
+
+    Forward Selection AUC 
+
+    -------------------------------------------------------------------------------------------- 
+       [,1]                            [,2]     [,3]                            [,4]     [,5]                           
+ [1,] "TAC"                           " 0.781" "TAC"                           " 0.782" "TAC"                          
+ [2,] "Age"                           " 0.799" "Age"                           " 0.800" "Age"                          
+ [3,] "Gender"                        " 0.809" "Gender"                        " 0.809" "Gender"                       
+ [4,] "Mobility problem"              " 0.816" "Mobility problem"              " 0.816" "Mobility problem"             
+ [5,] "Alcohol consumption"           " 0.823" "Alcohol consumption"           " 0.823" "Cigarette smoking"            
+ [6,] "Cigarette smoking"             " 0.828" "Cigarette smoking"             " 0.829" "Alcohol consumption"          
+ [7,] "Body mass index"               " 0.832" "Body mass index"               " 0.832" "ASTP$_{sl/nw}$"               
+ [8,] "Congestive heart failure"      " 0.833" "Congestive heart failure"      " 0.834" "Cancer"                       
+ [9,] "Cancer"                        " 0.834" "Cancer"                        " 0.834" "Surrogate for $s_{i6}$"       
+[10,] "Surrogate for $s_{i6}$"        " 0.835" "Surrogate for $s_{i6}$"        " 0.835" "Congestive heart failure"     
+[11,] "Surrogate for $s_{i1}$"        " 0.835" "Surrogate for $s_{i1}$"        " 0.835" "Surrogate for $s_{i1}$"       
+[12,] "ASTP$_{sl/nw}$"                " 0.835" "Wear time"                     " 0.835" "Sedentary, Sleep, or Non-wear"
+[13,] "Diabetes"                      " 0.836" "Diabetes"                      " 0.834" "TLAC"                         
+[14,] "Education"                     " 0.836" "ASTP$_{sl/nw}$"                " 0.834" "Wear time"                    
+[15,] "Stroke"                        " 0.835" "Education"                     " 0.834" "SATP$_{sl/nw}$"               
+[16,] "Wear time"                     " 0.835" "Stroke"                        " 0.833" "Body mass index"              
+[17,] "Coronary heart disease"        " 0.834" "Coronary heart disease"        " 0.832" "Diabetes"                     
+[18,] "Sedentary, Sleep, or Non-wear" " 0.832" "Sedentary, Sleep, or Non-wear" " 0.831" "Education"                    
+[19,] "SATP$_{sl/nw}$"                " 0.834" "SATP$_{sl/nw}$"                " 0.832" "Coronary heart disease"       
+[20,] "TLAC"                          " 0.834" "TLAC"                          " 0.832" "Stroke"                       
+[21,] "MVPA"                          " 0.831" "MVPA"                          " 0.829" "MVPA"                         
+[22,] "Race"                          " 0.826" "Race"                          " 0.824" "Race"                         
+      [,6]    
+ [1,] " 0.751"
+ [2,] " 0.778"
+ [3,] " 0.792"
+ [4,] " 0.801"
+ [5,] " 0.807"
+ [6,] " 0.812"
+ [7,] " 0.815"
+ [8,] " 0.817"
+ [9,] " 0.818"
+[10,] " 0.820"
+[11,] " 0.821"
+[12,] " 0.821"
+[13,] " 0.822"
+[14,] " 0.822"
+[15,] " 0.822"
+[16,] " 0.822"
+[17,] " 0.823"
+[18,] " 0.822"
+[19,] " 0.822"
+[20,] " 0.820"
+[21,] " 0.819"
+[22,] " 0.816"
+-------------------------------------------------------------------------------------------- 
+
+    Regression Results from Forward Selection (Adjusted survey weights)  
+
+    -------------------------------------------------------------------------------------------- 
+       Variable                                          AUC Stopping Criteria  AIC Stopping Criteria 
+ [1,] "(Intercept)"              "0.002 (0.000, 0.020)" "0.000 (0.000, 0.010)" "0.000 (0.000, 0.010)"
+ [2,] "TAC"                      "0.487 (0.264, 0.899)" "0.794 (0.371, 1.701)" "0.802 (0.374, 1.721)"
+ [3,] "Age"                      "1.067 (1.046, 1.089)" "1.067 (1.045, 1.089)" "1.068 (1.044, 1.092)"
+ [4,] "Female"                   "0.444 (0.307, 0.643)" "0.472 (0.321, 0.694)" "0.472 (0.319, 0.697)"
+ [5,] "Mobility problem"         "2.253 (1.416, 3.583)" "2.056 (1.308, 3.231)" "2.027 (1.277, 3.217)"
+ [6,] "Alcohol consumption"      ""                     ""                     ""                    
+ [7,] "Non-Drinker"              "2.054 (1.453, 2.905)" "1.978 (1.379, 2.837)" "1.952 (1.348, 2.828)"
+ [8,] "Heavy Drinker"            "2.100 (0.920, 4.797)" "2.086 (0.899, 4.840)" "2.139 (0.915, 5.004)"
+ [9,] "Missing alcohol"          "2.524 (1.242, 5.128)" "2.348 (1.081, 5.101)" "2.377 (1.079, 5.236)"
+[10,] "Cigarette smoking"        ""                     ""                     ""                    
+[11,] "Former"                   "1.650 (1.036, 2.626)" "1.577 (0.969, 2.566)" "1.586 (0.965, 2.605)"
+[12,] "Current"                  "2.394 (1.755, 3.265)" "2.122 (1.577, 2.856)" "2.145 (1.588, 2.899)"
+[13,] "Body mass index"          ""                     ""                     ""                    
+[14,] "Underweight"              "1.924 (0.604, 6.129)" "2.126 (0.730, 6.192)" "2.156 (0.739, 6.295)"
+[15,] "Overweight"               "0.497 (0.337, 0.734)" "0.537 (0.360, 0.801)" "0.534 (0.356, 0.802)"
+[16,] "Obese"                    "0.573 (0.406, 0.808)" "0.602 (0.403, 0.900)" "0.585 (0.393, 0.870)"
+[17,] "Congestive heart failure" ""                     "2.186 (1.382, 3.457)" "2.087 (1.305, 3.340)"
+[18,] "Cancer"                   ""                     "1.573 (1.077, 2.297)" "1.585 (1.087, 2.312)"
+[19,] "Surrogate for $s_{i6}$"   ""                     "0.778 (0.652, 0.928)" "0.775 (0.650, 0.923)"
+[20,] "Surrogate for $s_{i1}$"   ""                     "1.152 (0.984, 1.349)" "1.156 (0.990, 1.351)"
+[21,] "ASTP$_{sl/nw}$"           ""                     "1.439 (1.042, 1.988)" "1.429 (1.035, 1.972)"
+[22,] "Diabetes"                 ""                     ""                     "1.274 (0.817, 1.988)"
+Warning message:
+In min(which(grepl(x, matrix_reg[, 1]))) :
+  no non-missing arguments to min; returning Inf
+> 
+> 
+> 
+> 
+> save.image("C:\\Users\\adlik\\Documents\\NHANESR20132014\\dir_supplemental\\NHANES20132014MortalityandActivity.RData")
+> local({fn<-choose.files(filters=Filters[c('R','txt','All'),],index=4)
++ file.show(fn,header=fn,title='')})
+> 
