@@ -1,0 +1,77 @@
+
+
+
+Capstone Two HTN and parameters
+
+Exploration of available data related to breathing
+
+06/21/2024
+o	Set up repo
+o	Reviewed article regarding 2003 - 2006 mortality 2011 and activity
+o	Ran R script
+o	Modified script to get the data in csv format and upload.
+o	Identify fields/ columns
+o	Get additional data files. Which? By patient identifier. Isolate patient numbers
+o	Rerun script with pca set to true
+o	Wrangle data files
+o	Work on references
+o	continuous NHANES?
+o	Look at github NHANES PROJECTS by year
+o	Do a limitations file
+o	Five year mortality data. What about HTN and morphometrics and activity. The missing data related to ventilation. Inflammatory markers? Lipids? Chemistries? Using HTN as a proxy for hypoventilation. Treated? Untreated? Respiratory rate?
+o	Look at script to see if it can duplicated for 2014 NHANES
+o	Select patient data.
+o	Comorbidities?
+o	Treatments?
+o	Sleep apnea?
+o	Sedentary vs not sedentary? Proxy for hypoventilation
+o	Sedentary plus Sleep apnea and HTN profile? Vs Not sedentary sleep apnea and HTN
+o	Sleep apnea treated plus HTN vs not treated sleep apnea
+o	patients without sleep apnea profile compared to sleep apnea not treated compared to no sleep apnea plus HTN
+o	No osa, htn, low activitiy . What is their profile? vs osa not treated vs osa treated and activity stratification
+o	Age? Gender?
+o	GET the data
+o	Medications? On no hypolipidemic drugs
+o	Assumptions: Those who hypoventilate have higher bmi, have htn, are sedentary, have osa, what is their profile?
+o
+
+
+
+2 hours download files and convert
+use python code?
+
+
+I would like to automate a process using python code. The process is
+Open a folder and convert each file with the extension     to a csv file. The application that opens the file is       and it saves
+
+06/22/2024
+o	Added files to the repo. Downloaded to Pycharm. Verified files.
+o	Began analysis of main mortality HTN  file
+o	Used the NHANES python library to download files
+o	Did python code to transform the xpt files to csv per folder
+o
+
+
+06/23/2024
+
+o	Separate/copy the subjects from the main file.
+o	Try the python code to get the feature description. Look at the documentation of the NHANES python code library.
+o	Select the columns of interest from the main files. Each file gets duplicated with only the relevant subjects. Relabel for ease.
+o	Analyze each: Count, gender, age, features. Think what else with the features of interest. Think mortality, HTN. Activity. Sleep disorders. Morphometrics. May not be able to join all files. May have to use the available mortality data and htn to do each.
+o	Use the subjects file to get records from the other files
+o	Look at correlations with HTN and mortality.
+o	Analyze meds
+o	Analyze cause if death and morbidities
+o	Analyze sleep
+o	Analyze activity
+o	Analyze DM
+o	Analyze Lipids
+o	Analyze CRP
+o	Analyze fat from dexa data
+o	Analyze arthritis
+o	breathing? What data fields?
+o	Analyze depression
+o	For each feature transform to numeric if needed
+o	Analyze what if: Activity is increased, or intensity of dosing a med for a condition or tx for sleep apnea. How would HTN improve, how would mortality improve?
+o	Subject subgroups: HTN + Mortality+ Activity + Sleep apnea
+o	Need to see overlap in other datasets from different years
