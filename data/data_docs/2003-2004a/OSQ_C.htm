@@ -1,0 +1,4253 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>OSQ_C</title>
+    <meta name="title" content="NHANES 2003-2004: Osteoporosis Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#OSQ010a">OSQ010a - Broken or fractured a hip</a>
+              </li>
+              <li>
+                <a href="#OSQ010b">OSQ010b - Broken or fractured a wrist</a>
+              </li>
+              <li>
+                <a href="#OSQ010c">OSQ010c - Broken or fractured spine</a>
+              </li>
+              <li>
+                <a href="#OSQ020a">OSQ020a - # Times broken/fractured hip</a>
+              </li>
+              <li>
+                <a href="#OSQ020b">OSQ020b - # Times broken/fractured wrist</a>
+              </li>
+              <li>
+                <a href="#OSQ020c">OSQ020c - # Times broken/fractured spine</a>
+              </li>
+              <li>
+                <a href="#OSQ025">OSQ025 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#OSD030aa">OSD030aa - Age when fractured hip 1st time</a>
+              </li>
+              <li>
+                <a href="#OSQ040aa">OSQ040aa - Under/over 50 when fracd. hip 1st time</a>
+              </li>
+              <li>
+                <a href="#OSQ045">OSQ045 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#OSD050aa">OSD050aa - Reason hip fracture occurred 1st time</a>
+              </li>
+              <li>
+                <a href="#OSD030ab">OSD030ab - Age when fractured hip 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSQ040ab">OSQ040ab - Under/over 50 when fracd. hip 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSD050ab">OSD050ab - Reason hip fracture occurred 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSD030ba">OSD030ba - Age when fractured wrist 1st time</a>
+              </li>
+              <li>
+                <a href="#OSQ040ba">OSQ040ba - Under/over 50 when fracd. wrist 1st time</a>
+              </li>
+              <li>
+                <a href="#OSD050ba">OSD050ba - Reason wrist fracture occurred 1st time</a>
+              </li>
+              <li>
+                <a href="#OSD030bb">OSD030bb - Age when fractured wrist 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSQ040bb">OSQ040bb - Under/over 50 when fracd. wrist 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSD050bb">OSD050bb - Reason wrist fracture occurred 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSD030bc">OSD030bc - Age when fractured wrist 3rd time</a>
+              </li>
+              <li>
+                <a href="#OSQ040bc">OSQ040bc - Under/over 50 when fracd. wrist 3rd time</a>
+              </li>
+              <li>
+                <a href="#OSD030bd">OSD030bd - Age when fractured wrist 4th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040bd">OSQ040bd - Under/over 50 when fracd. wrist 4th time</a>
+              </li>
+              <li>
+                <a href="#OSD050bd">OSD050bd - Reason wrist fracture occurred 4th time</a>
+              </li>
+              <li>
+                <a href="#OSD030be">OSD030be - Age when fractured wrist 5th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040be">OSQ040be - Under/over 50 when fracd. wrist 5th time</a>
+              </li>
+              <li>
+                <a href="#OSD030bf">OSD030bf - Age when fractured wrist 6th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040bf">OSQ040bf - Under/over 50 when fracd. wrist 6th time</a>
+              </li>
+              <li>
+                <a href="#OSD030ca">OSD030ca - Age when fractured spine 1st time</a>
+              </li>
+              <li>
+                <a href="#OSQ040ca">OSQ040ca - Under/over 50 when fracd. spine 1st time</a>
+              </li>
+              <li>
+                <a href="#OSD050ca">OSD050ca - Reason spine fracture occurred 1st time</a>
+              </li>
+              <li>
+                <a href="#OSD030cb">OSD030cb - Age when fractured spine 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSQ040cb">OSQ040cb - Under/over 50 when fracd. spine 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSD050cb">OSD050cb - Reason spine fracture occurred 2nd time</a>
+              </li>
+              <li>
+                <a href="#OSD030cc">OSD030cc - Age when fractured spine 3rd time</a>
+              </li>
+              <li>
+                <a href="#OSQ040cc">OSQ040cc - Under/over 50 when fracd. spine 3rd time</a>
+              </li>
+              <li>
+                <a href="#OSD050cc">OSD050cc - Reason spine fracture occurred 3rd time</a>
+              </li>
+              <li>
+                <a href="#OSD030cd">OSD030cd - Age when fractured spine 4th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040cd">OSQ040cd - Under/over 50 when fracd. spine 4th time</a>
+              </li>
+              <li>
+                <a href="#OSD050cd">OSD050cd - Reason spine fracture occurred 4th time</a>
+              </li>
+              <li>
+                <a href="#OSD030ce">OSD030ce - Age when fractured spine 5th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040ce">OSQ040ce - Under/over 50 when fracd. spine 5th time</a>
+              </li>
+              <li>
+                <a href="#OSD050ce">OSD050ce - Reason spine fracture occurred 5th time</a>
+              </li>
+              <li>
+                <a href="#OSD030cf">OSD030cf - Age when fractured spine 6th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040cf">OSQ040cf - Under/over 50 when fracd. spine 6th time</a>
+              </li>
+              <li>
+                <a href="#OSD030cg">OSD030cg - Age when fractured spine 7th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040cg">OSQ040cg - Under/over 50 when fracd. spine 7th time</a>
+              </li>
+              <li>
+                <a href="#OSD030ch">OSD030ch - Age when fractured spine 8th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040ch">OSQ040ch - Under/over 50 when fracd. spine 8th time</a>
+              </li>
+              <li>
+                <a href="#OSD030ci">OSD030ci - Age when fractured spine 9th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040ci">OSQ040ci - Under/over 50 when fracd. spine 9th time</a>
+              </li>
+              <li>
+                <a href="#OSD030cj">OSD030cj - Age when fractured spine 10th time</a>
+              </li>
+              <li>
+                <a href="#OSQ040cj">OSQ040cj - Under/over 50 when fracd spine 10th time</a>
+              </li>
+              <li>
+                <a href="#OSD050cj">OSD050cj - Reason spine fracture occurred 10th time</a>
+              </li>
+              <li>
+                <a href="#OSQ060">OSQ060 - Ever told had osteoporosis/brittle bones</a>
+              </li>
+              <li>
+                <a href="#OSQ070">OSQ070 - Ever treated for osteoporosis</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Osteoporosis (OSQ_C)</h3>
+        <h4> Data File: OSQ_C.xpt</h4>
+        <h5 class="left">First Published: April 2006</h5>
+        <h5 class="right">Last Revised: July 2006</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The Osteoporosis section (OSQ) provides personal interview data on the following: </p>
+<ul>
+    <li>Doctor told participant s/he had fractured hip, wrist, or spine </li>
+    <li>Number of times hip, wrist, or spine was fractured </li>
+    <li>Age at each hip, wrist, or spine fracture </li>
+    <li>Amount of trauma causing each hip, wrist or spine fracture </li>
+    <li>Whether the participant has ever been diagnosed as having osteoporosis </li>
+    <li>If diagnosed with osteoporosis, whether s/he has been treated for it. </li>
+</ul>
+<p>Many of the questions in this section also were included in the NHANES III: 1988-94 questionnaire under Musculoskeletal Conditions.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>The target sample for this section is participants 20 years and older.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>Household in-person.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The Osteoporosis questionnaire data was systematically reviewed for logical, processing, and data input errors on a periodic basis during the process of data collection. </p>
+<p>The computer CAPI system had built-in consistency checks, online information screens that provided the interviewers with information about the terms used in the questionnaires, and hard and soft edit checks to reduce the number of keying entry errors. All of the interviews were reviewed by the NHANES field office staff for accuracy and completeness.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The maximum number of hip fractures reported was 2; the maximum number of wrist fractures was 6; the maximum number of spine fractures was 10. </p>
+<p>Responses to OSD030a (How old were you when you fractured your hip?), OSD030b (How old were you when you fractured your wrist?), and OSD030c (How old were you when you fractured your spine?) were top coded at 85 years for consistency with the top-coded age of the sample person. </p>
+<p>If all ages reported by sample persons for a fracture {1st time, 2nd time, &hellip;} were less than 50 years in OSQ030a and OSQ040a, OSQ030b and OSQ040b, or OSQ030c or OSQ040c, then the associated variables OSQ050a, OSQ050b, or OSQ050c were not included in the OSQ_C data file or codebook.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Appropriate sample weights: interview weights. </p>
+<p>Although these data were collected as part of the household questionnaire, if they are merged with the MEC exam data, exam sample weights should be used for the analyses. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues at <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx</a>. </p>
+<p>The OSQ data are publicly available at <a href="https://www.cdc.gov/nchs/nhanes/index.htm">https://www.cdc.gov/nchs/nhanes/index.htm</a>.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ010a">OSQ010a - Broken or fractured a hip</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ010a</dd>
+            <dt>SAS Label: </dt>
+            <dd>Broken or fractured a hip</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor ever told {you/SP} that {you/s/he} had broken or fractured {your/his/her} . . .hip?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">90</td>
+                <td class="values" align="right">90</td>
+                <td class="values">OSQ020a</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4946</td>
+                <td class="values" align="right">5036</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5036</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">5040</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ010b">OSQ010b - Broken or fractured a wrist</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ010b</dd>
+            <dt>SAS Label: </dt>
+            <dd>Broken or fractured a wrist</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor ever told {you/SP} that {you/s/he} had broken or fractured {your/his/her} . . .wrist?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">DO NOT INCLUDE FOREARM OR HAND.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">445</td>
+                <td class="values" align="right">445</td>
+                <td class="values">OSQ020b</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4592</td>
+                <td class="values" align="right">5037</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5038</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">5040</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ010c">OSQ010c - Broken or fractured spine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ010c</dd>
+            <dt>SAS Label: </dt>
+            <dd>Broken or fractured spine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor ever told {you/SP} that {you/s/he} had broken or fractured {your/his/her} . . .spine?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">103</td>
+                <td class="values">OSQ020c</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4931</td>
+                <td class="values" align="right">5034</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5035</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5040</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ020a">OSQ020a - # Times broken/fractured hip</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ020a</dd>
+            <dt>SAS Label: </dt>
+            <dd># Times broken/fractured hip</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How many times {have you/has SP} broken or fractured {your/his/her} hip?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF TIMES.  SKIP TO OSQ010b.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 33</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">88</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">88</td>
+                <td class="values">OSQ010b</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">90</td>
+                <td class="values">OSQ010b</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4951</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ020b">OSQ020b - # Times broken/fractured wrist</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ020b</dd>
+            <dt>SAS Label: </dt>
+            <dd># Times broken/fractured wrist</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How many times {have you/has SP} broken or fractured {your/his/her} wrist?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF TIMES.  SKIP TO OSQ010c.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 33</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 6</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">445</td>
+                <td class="values" align="right">445</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">445</td>
+                <td class="values">OSQ010c</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">445</td>
+                <td class="values">OSQ010c</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4596</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ020c">OSQ020c - # Times broken/fractured spine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ020c</dd>
+            <dt>SAS Label: </dt>
+            <dd># Times broken/fractured spine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How many times {have you/has SP} broken or fractured {your/his/her} spine?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF TIMES</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 33</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 10</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">101</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">101</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">103</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4938</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ025">OSQ025 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ025</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM OSQ.025:  IF 'YES' (CODE 1) IN OSQ.010 a, b, OR c, CONTINUE WITH LOOP 1.  OTHERWISE, GO TO OSQ.060.
+Loop 1:
+Ask OSQ030 - OSD050 for each type and each incidence of fracture.  (Example: How old were you when you fractured your hip the first time?)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030aa">OSD030aa - Age when fractured hip 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030aa</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured hip 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} hip the 1st time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 84</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">82</td>
+                <td class="values" align="right">82</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4953</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040aa">OSQ040aa - Under/over 50 when fracd. hip 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040aa</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. hip 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">37</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">88</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">88</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4953</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ045">OSQ045 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ045</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM OSQ.045:  IF AGE IS &gt;= 50 IN OSD.030 OR OSQ.040, CONTINUE WITH OSD.050.  OTHERWISE, GO TO OSQ025.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050aa">OSD050aa - Reason hip fracture occurred 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050aa</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason hip fracture occurred 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTIONS:  HELP SCREEN SHOULD READ:  Additional examples for a "hard fall" include being forcibly knocked down by another person or bicycle.  Additional examples for a "fall from standing height or less" include leg gave way, was dizzy, fell bending over, fell out of chair.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">34</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">51</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4990</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030ab">OSD030ab - Age when fractured hip 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030ab</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured hip 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} hip the 2nd time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">17 to 83</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5035</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040ab">OSQ040ab - Under/over 50 when fracd. hip 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040ab</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. hip 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5035</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050ab">OSD050ab - Reason hip fracture occurred 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050ab</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason hip fracture occurred 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5037</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030ba">OSD030ba - Age when fractured wrist 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030ba</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured wrist 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} wrist the 1st time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 84</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">439</td>
+                <td class="values" align="right">439</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">445</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4596</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040ba">OSQ040ba - Under/over 50 when fracd. wrist 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040ba</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. wrist 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">345</td>
+                <td class="values" align="right">345</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">100</td>
+                <td class="values" align="right">445</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">445</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">445</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4596</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050ba">OSD050ba - Reason wrist fracture occurred 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050ba</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason wrist fracture occurred 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of. . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">67</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">27</td>
+                <td class="values" align="right">94</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">98</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">98</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4941</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030bb">OSD030bb - Age when fractured wrist 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030bb</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured wrist 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} wrist 2nd time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4 to 82</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">67</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">68</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4973</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040bb">OSQ040bb - Under/over 50 when fracd. wrist 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040bb</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. wrist 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">54</td>
+                <td class="values" align="right">54</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">68</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">68</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">68</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4973</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050bb">OSD050bb - Reason wrist fracture occurred 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050bb</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason wrist fracture occurred 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">13</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">14</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5027</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030bc">OSD030bc - Age when fractured wrist 3rd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030bc</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured wrist 3rd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} wrist the 3rd time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">11 to 42</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5025</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040bc">OSQ040bc - Under/over 50 when fracd. wrist 3rd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040bc</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. wrist 3rd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">16</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">16</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">16</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5025</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030bd">OSD030bd - Age when fractured wrist 4th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030bd</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured wrist 4th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} wrist the 4th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">13 to 54</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5033</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040bd">OSQ040bd - Under/over 50 when fracd. wrist 4th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040bd</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. wrist 4th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5033</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050bd">OSD050bd - Reason wrist fracture occurred 4th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050bd</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason wrist fracture occurred 4th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030be">OSD030be - Age when fractured wrist 5th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030be</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured wrist 5th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} wrist the 5th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">14 to 29</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5037</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040be">OSQ040be - Under/over 50 when fracd. wrist 5th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040be</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. wrist 5th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5037</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030bf">OSD030bf - Age when fractured wrist 6th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030bf</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured wrist 6th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} wrist the 6th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">18</td>
+                <td class="values">18</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040bf">OSQ040bf - Under/over 50 when fracd. wrist 6th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040bf</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. wrist 6th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030ca">OSD030ca - Age when fractured spine 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030ca</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 1st time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 83</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">98</td>
+                <td class="values" align="right">98</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">98</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">98</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">101</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4940</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040ca">OSQ040ca - Under/over 50 when fracd. spine 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040ca</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">81</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">101</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">101</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">101</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4940</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050ca">OSD050ca - Reason spine fracture occurred 1st time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050ca</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason spine fracture occurred 1st time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">14</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5021</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030cb">OSD030cb - Age when fractured spine 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030cb</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 2nd time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">21 to 63</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5030</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040cb">OSQ040cb - Under/over 50 when fracd. spine 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040cb</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">11</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">11</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5030</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050cb">OSD050cb - Reason spine fracture occurred 2nd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050cb</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason spine fracture occurred 2nd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5038</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030cc">OSD030cc - Age when fractured spine 3rd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030cc</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 3rd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 3rd time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">24 to 65</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5034</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040cc">OSQ040cc - Under/over 50 when fracd. spine 3rd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040cc</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 3rd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5034</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050cc">OSD050cc - Reason spine fracture occurred 3rd time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050cc</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason spine fracture occurred 3rd time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5039</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030cd">OSD030cd - Age when fractured spine 4th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030cd</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 4th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 4th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">24 to 66</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5038</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040cd">OSQ040cd - Under/over 50 when fracd. spine 4th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040cd</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 4th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5038</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050cd">OSD050cd - Reason spine fracture occurred 4th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050cd</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason spine fracture occurred 4th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5039</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030ce">OSD030ce - Age when fractured spine 5th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030ce</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 5th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 5th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">24 to 68</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5038</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040ce">OSQ040ce - Under/over 50 when fracd. spine 5th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040ce</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 5th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5038</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050ce">OSD050ce - Reason spine fracture occurred 5th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050ce</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason spine fracture occurred 5th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030cf">OSD030cf - Age when fractured spine 6th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030cf</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 6th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 6th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">24</td>
+                <td class="values">24</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5039</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040cf">OSQ040cf - Under/over 50 when fracd. spine 6th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040cf</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 6th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5039</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030cg">OSD030cg - Age when fractured spine 7th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030cg</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 7th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 7th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040cg">OSQ040cg - Under/over 50 when fracd. spine 7th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040cg</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 7th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030ch">OSD030ch - Age when fractured spine 8th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030ch</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 8th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 8th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040ch">OSQ040ch - Under/over 50 when fracd. spine 8th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040ch</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 8th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030ci">OSD030ci - Age when fractured spine 9th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030ci</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 9th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 9th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040ci">OSQ040ci - Under/over 50 when fracd. spine 9th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040ci</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd. spine 9th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ060</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ060</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD030cj">OSD030cj - Age when fractured spine 10th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD030cj</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when fractured spine 10th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} fractured {your/his/her} spine the 10th time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS.  SKIP TO OSQ045.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">85 or older</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ040cj">OSQ040cj - Under/over 50 when fracd spine 10th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ040cj</dd>
+            <dt>SAS Label: </dt>
+            <dd>Under/over 50 when fracd spine 10th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Under 50 years old, or</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">50 years old or older?</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">OSQ025</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSD050cj">OSD050cj - Reason spine fracture occurred 10th time</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSD050cj</dd>
+            <dt>SAS Label: </dt>
+            <dd>Reason spine fracture occurred 10th time</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did that fracture occur as a result of.....</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A fall from standing height or less, for example, tripped, slipped, fell out of bed</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A hard fall, such as falling off a ladder or step stool, down stairs</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A car accident or other severe trauma</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5040</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ060">OSQ060 - Ever told had osteoporosis/brittle bones</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever told had osteoporosis/brittle bones</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor ever told {you/SP} that {you/s/he} had osteoporosis, sometimes called thin or brittle bones?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">375</td>
+                <td class="values" align="right">375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4652</td>
+                <td class="values" align="right">5027</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5028</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">5040</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OSQ070">OSQ070 - Ever treated for osteoporosis</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OSQ070</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever treated for osteoporosis</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} treated for osteoporosis?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">265</td>
+                <td class="values" align="right">265</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">106</td>
+                <td class="values" align="right">371</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">371</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4666</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

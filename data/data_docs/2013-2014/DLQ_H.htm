@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Disability" />
+    <meta name="DC.Subject" content="NHANES 2013-2014: Disability Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2013-2014 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2013">
+      <title>
+						NHANES 2013-2014:
+						Disability Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#DLQ010">DLQ010   - Have serious difficulty hearing?</a>
+                </li>
+                <li>
+                  <a href="#DLQ020">DLQ020   - Have serious difficulty seeing?</a>
+                </li>
+                <li>
+                  <a href="#DLQ040">DLQ040   - Have serious difficulty concentrating ?</a>
+                </li>
+                <li>
+                  <a href="#DLQ050">DLQ050   - Have serious difficulty walking ?</a>
+                </li>
+                <li>
+                  <a href="#DLQ060">DLQ060   - Have difficulty dressing or bathing?</a>
+                </li>
+                <li>
+                  <a href="#DLQ080">DLQ080   - Have difficulty doing errands alone ?</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2013-2014 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Disability (DLQ_H)
+			</h3>
+        <h4>
+				Data File: DLQ_H.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				October 2015</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The disability questionnaire (variable name prefix DLQ) provides respondent level interview data on serious difficulty hearing, seeing, concentrating, walking, dressing, and running errands.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 1 year and over were eligible. A proxy answered for participants who were less than 16 years of age. There are no exclusion criteria.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The disability questionnaire was asked in the home by trained interviewers using the Computer-Assisted Personal Interview (CAPI) system.</p>
+<p>Persons 16 years of age and older and emancipated minors were interviewed directly. A proxy provided information for survey participants who were under 16 years of age and for individuals who could not answer the questions themselves. Questions asked varied by age group. </p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The data were reviewed for completeness, consistency, and illogical values. </p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Although the disability data were collected as part of the household questionnaire, if they are merged with exam data, exam sample weights should be used for the analyses. </p>
+<p>Please refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" target="_blank">NHANES Analytic Guidelines</a> and the on-line&nbsp;<a href="https://www.cdc.gov/nchs/tutorials/" target="_blank">NHANES Tutorial</a> for further details on the use of sample weights and other analytic issues.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DLQ010">DLQ010   - Have serious difficulty hearing?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DLQ010  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Have serious difficulty hearing?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">With this next set of questions, we want to learn about people who have physical, mental, or emotional conditions that cause serious difficulties with their daily activities. Though different, these questions may sound similar to ones I asked earlier. {Are you/Is SP} deaf or {do you/does he/does she} have serious difficulty hearing?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF SP AGE &gt;= 16, DISPLAY "YOU" AND "DO YOU". IF SP AGE &lt;16, DISPLAY "SP" AND "DOES HE/DOES SHE".</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">442</td>
+                <td class="values" align="right">442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9325</td>
+                <td class="values" align="right">9767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9768</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9769</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9770</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DLQ020">DLQ020   - Have serious difficulty seeing?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DLQ020  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Have serious difficulty seeing?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} blind or {do you/does he/does she} have serious difficulty seeing even when wearing glasses?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF SP AGE &gt;= 16, DISPLAY "YOU" AND "DO YOU". IF SP AGE &lt;16, DISPLAY "SP" AND "DOES HE/DOES SHE".</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">432</td>
+                <td class="values" align="right">432</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9333</td>
+                <td class="values" align="right">9765</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9766</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">9769</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9770</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DLQ040">DLQ040   - Have serious difficulty concentrating ?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DLQ040  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Have serious difficulty concentrating ?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of a physical, mental, or emotional condition, {do you/does he/does she} have serious difficulty concentrating, remembering, or making decisions?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF SP AGE &gt;= 16, DISPLAY  "DO YOU". IF SP AGE &lt;16, DISPLAY "DOES HE/DOES SHE".</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 5 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">879</td>
+                <td class="values" align="right">879</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">7899</td>
+                <td class="values" align="right">8778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">8779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">8780</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">990</td>
+                <td class="values" align="right">9770</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DLQ050">DLQ050   - Have serious difficulty walking ?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DLQ050  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Have serious difficulty walking ?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} have serious difficulty walking or climbing stairs?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF SP AGE &gt;= 16, DISPLAY  "DO YOU". IF SP AGE &lt;16, DISPLAY  "DOES SP".</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 5 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">815</td>
+                <td class="values" align="right">815</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">7963</td>
+                <td class="values" align="right">8778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">8779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">8780</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">990</td>
+                <td class="values" align="right">9770</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DLQ060">DLQ060   - Have difficulty dressing or bathing?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DLQ060  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Have difficulty dressing or bathing?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} have difficulty dressing or bathing?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 5 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">341</td>
+                <td class="values" align="right">341</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">8438</td>
+                <td class="values" align="right">8779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">8780</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8780</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">990</td>
+                <td class="values" align="right">9770</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DLQ080">DLQ080   - Have difficulty doing errands alone ?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DLQ080  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Have difficulty doing errands alone ?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of a physical, mental, or emotional condition, {do you/does he/does she} have difficulty doing errands alone such as visiting a doctor's office or shopping?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF SP AGE &gt;= 16, DISPLAY "DO YOU". IF SP AGE &lt;16, DISPLAY  "DOES HE/DOES SHE".</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 15 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">474</td>
+                <td class="values" align="right">474</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6163</td>
+                <td class="values" align="right">6637</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6638</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6640</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3130</td>
+                <td class="values" align="right">9770</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

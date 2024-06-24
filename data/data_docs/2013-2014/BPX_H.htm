@@ -1,0 +1,1635 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Blood Pressure" />
+    <meta name="DC.Subject" content="NHANES 2013-2014: Blood Pressure Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2013-2014 Examination page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&amp;CycleBeginYear=2013">
+      <title>
+						NHANES 2013-2014:
+						Blood Pressure Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Protocol_and_Procedure">Protocol and Procedure</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#PEASCST1">PEASCST1 - Blood Pressure Status</a>
+                </li>
+                <li>
+                  <a href="#PEASCTM1">PEASCTM1 - Blood Pressure Time in Seconds</a>
+                </li>
+                <li>
+                  <a href="#PEASCCT1">PEASCCT1 - Blood Pressure Comment</a>
+                </li>
+                <li>
+                  <a href="#BPXCHR">BPXCHR - 60 sec HR (30 sec HR * 2)</a>
+                </li>
+                <li>
+                  <a href="#BPAARM">BPAARM - Arm selected</a>
+                </li>
+                <li>
+                  <a href="#BPACSZ">BPACSZ - Coded cuff size</a>
+                </li>
+                <li>
+                  <a href="#BPXPLS">BPXPLS - 60 sec. pulse (30 sec. pulse * 2)</a>
+                </li>
+                <li>
+                  <a href="#BPXPULS">BPXPULS - Pulse regular or irregular?</a>
+                </li>
+                <li>
+                  <a href="#BPXPTY">BPXPTY - Pulse type</a>
+                </li>
+                <li>
+                  <a href="#BPXML1">BPXML1 - MIL: maximum inflation levels (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#BPXSY1">BPXSY1 - Systolic: Blood pres (1st rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPXDI1">BPXDI1 - Diastolic: Blood pres (1st rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPAEN1">BPAEN1 - Enhancement used first reading</a>
+                </li>
+                <li>
+                  <a href="#BPXSY2">BPXSY2 - Systolic: Blood pres (2nd rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPXDI2">BPXDI2 - Diastolic: Blood pres (2nd rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPAEN2">BPAEN2 - Enhancement used second reading</a>
+                </li>
+                <li>
+                  <a href="#BPXSY3">BPXSY3 - Systolic: Blood pres (3rd rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPXDI3">BPXDI3 - Diastolic: Blood pres (3rd rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPAEN3">BPAEN3 - Enhancement used third reading</a>
+                </li>
+                <li>
+                  <a href="#BPXSY4">BPXSY4 - Systolic: Blood pres (4th rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPXDI4">BPXDI4 - Diastolic: Blood pres (4th rdg) mm Hg</a>
+                </li>
+                <li>
+                  <a href="#BPAEN4">BPAEN4 - Enhancement used fourth reading</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2013-2014 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Blood Pressure (BPX_H)
+			</h3>
+        <h4>
+				Data File: BPX_H.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				October 2015</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>This section provides data for three consecutive blood pressure (BP) measurements and other methodological measurements to obtain an accurate blood pressure.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Heart rate is measured on all children 0-7 years of age; radial pulse is measured on participants&nbsp;8 years and older; and blood pressure (BP) is measured on all participants 8 years and older.</p></div>
+        <h2 id="Protocol_and_Procedure">Protocol and Procedure</h2>
+        <div class="block"><p>After resting quietly in a seated position for 5 minutes and once the participants maximum inflation level (MIL) has been determined, three consecutive blood pressure readings are obtained. If a blood pressure measurement is interrupted or incomplete, a fourth attempt may be made. All BP determinations (systolic and diastolic) are taken in the mobile examination center (MEC). Participants with any of the following on both arms were excluded from the exam: rashes, gauze dressings, casts, edema, paralysis, tubes, open sores or wounds, withered arms, a-v shunts, radical mastectomy, or if BP cuff does not fit on the arm.</p></div>
+        <h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2>
+        <div class="block"><p>The BP examiners are certified for blood pressure measurement through a training program from <em>Shared Care Research and Education Consulting</em>. Certification is achieved when physician examiners meet all requirements of the training program. The initial training includes:&nbsp;</p>
+<ul>
+    <li>didactic instruction about BP measurement and propensity for error;&nbsp;</li>
+    <li>listening to systolic and diastolic BP sounds using a standardized audio-video tape presentation;&nbsp;</li>
+    <li>an audio-video tape test;&nbsp;</li>
+    <li>a written exam; and</li>
+    <li>simultaneously listening to BP on a minimum of 20 volunteers, of all ages, through a Y- stethoscope to compare measures with a gold standard instructor who does the same. </li>
+</ul>
+<p>Certification requires a score of 100 percent on the audio-video tape test. Correct answers on the audio-video tape test require the examiner&rsquo;s answers and the standardized test answers to be within +/- 2mm of mercury (Hg) on 92 percent of 24 measures (12 systolic, 12 diastolic), and within +/- 4mmHg on 100 percent of 24 measures (12 systolic, 12 diastolic). <br />
+<br />
+For more details on the QA/QC process for this component, please refer to the Physician Examination Manual located on the NHANES website at the following link: <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/manuals.aspx?BeginYear=2013">https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/manuals.aspx?BeginYear=2013</a> </p>
+<p>&nbsp;</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The following are some specifications used in capturing the BP data: </p>
+<p>Systolic blood pressure and maximum inflation level cannot be greater than 300 mmHg; </p>
+<p>Systolic and diastolic blood pressure measurements and the maximum inflation level can be even numbers only; </p>
+<p>Systolic blood pressure must be greater than diastolic blood pressure; </p>
+<p>If there is no systolic blood pressure, there can be no diastolic blood pressure. (There can be a systolic measurement without a diastolic measurement.); and </p>
+<p>Diastolic blood pressure can be zero. </p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p class="MsoNormal" style="margin: 6pt 0in 0pt; mso-pagination: none;"><b style="mso-bidi-font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changes Since 2011-2012:</b></p>
+<p class="MsoNormal" style="margin: 6pt 0in 0pt; mso-pagination: none;"><strong></strong></p>
+<br />
+<p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top"><strong>Discontinued Questions</strong></caption>
+    <thead>
+        <tr>
+            <th>BPQ150A</th>
+            <th>BPQ150B</th>
+            <th>BPQ150C</th>
+            <th>BPQ150D</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</p>
+<p>Exam sample weights should be used for analyses. Please refer to the NHANES Analytic Guidelines (<a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx</a>) and the on-line NHANES Tutorial (<a href="https://www.cdc.gov/nchs/tutorials/">https://www.cdc.gov/nchs/tutorials/</a>) for further details on the use of sample weights and other analytic issues.</p></div>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="PEASCST1">PEASCST1 - Blood Pressure Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PEASCST1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blood Pressure Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blood Pressure Status</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Complete</td>
+                <td class="values" align="right">9493</td>
+                <td class="values" align="right">9493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Partial</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">9496</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Not done</td>
+                <td class="values" align="right">317</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="PEASCTM1">PEASCTM1 - Blood Pressure Time in Seconds</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PEASCTM1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blood Pressure Time in Seconds</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blood Pressure Time in Seconds</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7 to 2868</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">9508</td>
+                <td class="values" align="right">9508</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">305</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="PEASCCT1">PEASCCT1 - Blood Pressure Comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PEASCCT1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blood Pressure Comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blood Pressure Comment</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Safety exclusion</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">SP refusal</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">No time</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">27</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Physical limitation</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Communication problem</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">42</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Equipment failure</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">43</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">SP ill/emergency</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">55</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">56</td>
+                <td class="values">Came late/left early</td>
+                <td class="values" align="right">184</td>
+                <td class="values" align="right">239</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">72</td>
+                <td class="values">Error (technician/software/supply)</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">242</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">84</td>
+                <td class="values">SP with child</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">246</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Other, specify</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">315</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">122</td>
+                <td class="values">Language barrier</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">320</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9493</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXCHR">BPXCHR - 60 sec HR (30 sec HR * 2)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXCHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>60 sec HR (30 sec HR * 2)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">60 sec HR (30 sec HR * 2)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			7 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">60 to 178</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1961</td>
+                <td class="values" align="right">1961</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7852</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPAARM">BPAARM - Arm selected</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPAARM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Arm selected</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Arm selected:</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">7480</td>
+                <td class="values" align="right">7480</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">54</td>
+                <td class="values" align="right">7534</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7535</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2278</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPACSZ">BPACSZ - Coded cuff size</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPACSZ</dd>
+            <dt>SAS Label: </dt>
+            <dd>Coded cuff size</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cuff size (cm) (width X length)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Infant (6X12)</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Child (9X17)</td>
+                <td class="values" align="right">450</td>
+                <td class="values" align="right">452</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Adult (12X22)</td>
+                <td class="values" align="right">2590</td>
+                <td class="values" align="right">3042</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Large (15X32)</td>
+                <td class="values" align="right">3452</td>
+                <td class="values" align="right">6494</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Thigh (18X35)</td>
+                <td class="values" align="right">1048</td>
+                <td class="values" align="right">7542</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2271</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXPLS">BPXPLS - 60 sec. pulse (30 sec. pulse * 2)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXPLS</dd>
+            <dt>SAS Label: </dt>
+            <dd>60 sec. pulse (30 sec. pulse * 2)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">60 sec. pulse (30 sec. pulse * 2)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">40 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7549</td>
+                <td class="values" align="right">7549</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2264</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXPULS">BPXPULS - Pulse regular or irregular?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXPULS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pulse regular or irregular?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Pulse regular or irregular?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Regular</td>
+                <td class="values" align="right">9381</td>
+                <td class="values" align="right">9381</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Irregular</td>
+                <td class="values" align="right">130</td>
+                <td class="values" align="right">9511</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">302</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXPTY">BPXPTY - Pulse type</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXPTY</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pulse type</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Pulse type</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Radial</td>
+                <td class="values" align="right">7531</td>
+                <td class="values" align="right">7531</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Brachial</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">7564</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7564</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2249</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXML1">BPXML1 - MIL: maximum inflation levels (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXML1</dd>
+            <dt>SAS Label: </dt>
+            <dd>MIL: maximum inflation levels (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">MIL: maximum inflation levels (mm Hg)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">70.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">100 to 240</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7539</td>
+                <td class="values" align="right">7539</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">7553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2260</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXSY1">BPXSY1 - Systolic: Blood pres (1st rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXSY1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Systolic: Blood pres (1st rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Systolic:  Blood pressure (first reading) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">66 to 228</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7172</td>
+                <td class="values" align="right">7172</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2641</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXDI1">BPXDI1 - Diastolic: Blood pres (1st rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXDI1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Diastolic: Blood pres (1st rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Diastolic:  Blood pressure (first reading) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 122</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7172</td>
+                <td class="values" align="right">7172</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2641</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPAEN1">BPAEN1 - Enhancement used first reading</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPAEN1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Enhancement used first reading</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Enhancement used first reading</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">85</td>
+                <td class="values" align="right">85</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">7454</td>
+                <td class="values" align="right">7539</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7539</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2274</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXSY2">BPXSY2 - Systolic: Blood pres (2nd rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXSY2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Systolic: Blood pres (2nd rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Systolic:  Blood pressure (second reading) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">66 to 230</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7409</td>
+                <td class="values" align="right">7409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2404</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXDI2">BPXDI2 - Diastolic: Blood pres (2nd rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXDI2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Diastolic: Blood pres (2nd rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Diastolic: Blood pressure (second reading) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 116</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7409</td>
+                <td class="values" align="right">7409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2404</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPAEN2">BPAEN2 - Enhancement used second reading</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPAEN2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Enhancement used second reading</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Enhancement used second reading</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">347</td>
+                <td class="values" align="right">347</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">7190</td>
+                <td class="values" align="right">7537</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7537</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2276</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXSY3">BPXSY3 - Systolic: Blood pres (3rd rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXSY3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Systolic: Blood pres (3rd rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Systolic:  Blood pressure (third reading) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">62 to 228</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7408</td>
+                <td class="values" align="right">7408</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2405</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXDI3">BPXDI3 - Diastolic: Blood pres (3rd rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXDI3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Diastolic: Blood pres (3rd rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Diastolic: Blood pressure (third reading) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 118</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7408</td>
+                <td class="values" align="right">7408</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2405</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPAEN3">BPAEN3 - Enhancement used third reading</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPAEN3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Enhancement used third reading</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Enhancement used third reading</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">276</td>
+                <td class="values" align="right">276</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">7261</td>
+                <td class="values" align="right">7537</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7537</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2276</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXSY4">BPXSY4 - Systolic: Blood pres (4th rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXSY4</dd>
+            <dt>SAS Label: </dt>
+            <dd>Systolic: Blood pres (4th rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Systolic:  Blood pressure (fourth reading if necessary) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">80 to 212</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">515</td>
+                <td class="values" align="right">515</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9298</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPXDI4">BPXDI4 - Diastolic: Blood pres (4th rdg) mm Hg</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPXDI4</dd>
+            <dt>SAS Label: </dt>
+            <dd>Diastolic: Blood pres (4th rdg) mm Hg</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Diastolic: Blood pressure (fourth reading if necessary) mm Hg</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 128</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">515</td>
+                <td class="values" align="right">515</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9298</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPAEN4">BPAEN4 - Enhancement used fourth reading</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPAEN4</dd>
+            <dt>SAS Label: </dt>
+            <dd>Enhancement used fourth reading</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Enhancement used fourth reading</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">68</td>
+                <td class="values" align="right">68</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">494</td>
+                <td class="values" align="right">562</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">562</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9251</td>
+                <td class="values" align="right">9813</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

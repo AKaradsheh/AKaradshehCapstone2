@@ -1,0 +1,2868 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Blood Pressure &amp; Cholesterol" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Blood Pressure &amp; Cholesterol Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Blood Pressure &amp; Cholesterol Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#BPQ010">BPQ010 - Last blood pressure reading by doctor</a>
+                </li>
+                <li>
+                  <a href="#BPQ020">BPQ020 - Ever told you had high blood pressure</a>
+                </li>
+                <li>
+                  <a href="#BPQ030">BPQ030 - Told had high blood pressure - 2+ times</a>
+                </li>
+                <li>
+                  <a href="#BPQ040A">BPQ040A - Taking prescription for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ040B">BPQ040B - Told to control weight for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ040C">BPQ040C - Told to reduce sodium for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ040D">BPQ040D - Told to exercise more for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ040E">BPQ040E - Told to reduce alcohol for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ040F">BPQ040F - Told to do other things for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ042">BPQ042 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPQ043A">BPQ043A - Told to stop smoking for hypertension</a>
+                </li>
+                <li>
+                  <a href="#BPQ043B">BPQ043B - Told to increase potassium for hyprtnsn</a>
+                </li>
+                <li>
+                  <a href="#BPQ043C">BPQ043C - Told of other diet changes for hyprtnsn</a>
+                </li>
+                <li>
+                  <a href="#BPQ043D">BPQ043D - Told to do other things for hyprtnsn</a>
+                </li>
+                <li>
+                  <a href="#BPQ045">BPQ045 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPQ050A">BPQ050A - Now taking prescribed medicine</a>
+                </li>
+                <li>
+                  <a href="#BPQ050B">BPQ050B - Now controlling weight</a>
+                </li>
+                <li>
+                  <a href="#BPQ050C">BPQ050C - Now reducing salt/sodium</a>
+                </li>
+                <li>
+                  <a href="#BPQ050D">BPQ050D - Now exercising more</a>
+                </li>
+                <li>
+                  <a href="#BPQ050E">BPQ050E - Now reducing alcohol consumption</a>
+                </li>
+                <li>
+                  <a href="#BPQ055">BPQ055 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPQ060">BPQ060 - Ever had blood cholesterol checked</a>
+                </li>
+                <li>
+                  <a href="#BPQ070">BPQ070 - When blood cholesterol last checked</a>
+                </li>
+                <li>
+                  <a href="#BPQ080">BPQ080 - Doctor told you - high cholesterol level</a>
+                </li>
+                <li>
+                  <a href="#BPQ090A">BPQ090A - Told to eat less fat for cholesterol</a>
+                </li>
+                <li>
+                  <a href="#BPQ090B">BPQ090B - Told to reduce weight for cholesterol</a>
+                </li>
+                <li>
+                  <a href="#BPQ090C">BPQ090C - Told to exercise more for cholesterol</a>
+                </li>
+                <li>
+                  <a href="#BPQ090D">BPQ090D - Told to take prescriptn for cholesterol</a>
+                </li>
+                <li>
+                  <a href="#BPQ095">BPQ095 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPQ100A">BPQ100A - Now eating fewer high fat foods</a>
+                </li>
+                <li>
+                  <a href="#BPQ100B">BPQ100B - Now controlling weight</a>
+                </li>
+                <li>
+                  <a href="#BPQ100C">BPQ100C - Now increasing exercise</a>
+                </li>
+                <li>
+                  <a href="#BPQ100D">BPQ100D - Now taking prescribed medicine</a>
+                </li>
+                <li>
+                  <a href="#BPD110A">BPD110A - Eating fewer high fat foods on own</a>
+                </li>
+                <li>
+                  <a href="#BPD110B">BPD110B - Controlling weight on own</a>
+                </li>
+                <li>
+                  <a href="#BPD110C">BPD110C - Increasing exercise on own</a>
+                </li>
+                <li>
+                  <a href="#BPQ115">BPQ115 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPQ117">BPQ117 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPD120">BPD120 - Eating fewer high fat foods on own</a>
+                </li>
+                <li>
+                  <a href="#BPQ125">BPQ125 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPD130">BPD130 - Controlling weight on own</a>
+                </li>
+                <li>
+                  <a href="#BPQ135">BPQ135 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#BPD140">BPD140 - Increasing exercise on own</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Blood Pressure &amp; Cholesterol (BPQ_C)
+			</h3>
+        <h4>
+				Data File: BPQ_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				April 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The Blood Pressure/Cholesterol section (prefix BPQ) provides personal interview data on awareness, treatment, and control of high blood pressure and high cholesterol. Questions are asked about lifestyle changes made to treat and/or prevent these conditions.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All participants 16 year of age and older are asked about high blood pressure. </p>
+<p>All participants 20 year of age and older are asked about high cholesterol.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>A trained household interviewer administrated these questions to the survey participant during the household interview. The information was recorded using a computer-assisted personal interview (CAPI) system.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>In 2002, the following derived variables were created by combining data collected using questions with slightly different wording: </p>
+<p>BPD110A = BPQ110A + BPQ111A <br />
+BPD110B = BPQ110B + BPQ111B <br />
+BPD110C = BPQ110C + BPQ111C <br />
+BPD120 = BPQ120 + BPQ121 <br />
+BPD130 = BPQ130 + BPQ131 <br />
+BPD140 = BPQ140 + BPQ141 </p>
+<p>To clarify this set of questions for respondents, the text was rephrased in 2002 as &ldquo;we are now going to ask if {you have/SP has} made any major changes on {your/his/her} own...&rdquo; In 2001, the questions read &ldquo;[have you/has s/he} made any major changes on {your/his/her} own&hellip;&rdquo;</p>
+<p>In 2003-2004, only the revised wording from 2002 was used. There was no need to combine data into a derived variable. However, in order to stay consistent with the previous data release naming conventions, the derived variable names were maintained as follows: </p>
+<p>BPD110A = BPQ111A <br />
+BPD110B = BPQ111B <br />
+BPD110C = BPQ111C <br />
+BPD120 = BPQ121 <br />
+BPD130 = BPQ131 <br />
+BPD140 = BPQ141 </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues at <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_general_guidelines.pdf">http://www.cdc.gov/nchs/data/nhanes/nhanes_general_guidelines.pdf</a> </p>
+<p>The BPQ data are publicly available at <a href="https://www.cdc.gov/nchs/nhanes/index.htm">www.cdc.gov/nchs/nhanes.htm</a>.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ010">BPQ010 - Last blood pressure reading by doctor</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last blood pressure reading by doctor</dd>
+            <dt>English Text: </dt>
+            <dd class="info">About how long has it been since {you/SP} last had {your/his/her} blood pressure taken by a doctor or other health professional?  Was it . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less than 6 months ago,</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">4412</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">6 months to 1 year ago,</td>
+                <td class="values" align="right">868</td>
+                <td class="values" align="right">5280</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">More than 1 year to 2 years ago,</td>
+                <td class="values" align="right">434</td>
+                <td class="values" align="right">5714</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">More than 2 years ago, or</td>
+                <td class="values" align="right">411</td>
+                <td class="values" align="right">6125</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never?</td>
+                <td class="values" align="right">75</td>
+                <td class="values" align="right">6200</td>
+                <td class="values">BPQ055  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6200</td>
+                <td class="values">BPQ055  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ020">BPQ020 - Ever told you had high blood pressure</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever told you had high blood pressure</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever been told by a doctor or other health professional that {you/s/he} had hypertension, also called high blood pressure?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1801</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4319</td>
+                <td class="values" align="right">6120</td>
+                <td class="values">BPQ055  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6120</td>
+                <td class="values">BPQ055  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">6138</td>
+                <td class="values">BPQ055  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">75</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ030">BPQ030 - Told had high blood pressure - 2+ times</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told had high blood pressure - 2+ times</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were you/Was SP} told on 2 or more different visits that {you/s/he} had hypertension, also called high blood pressure?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1457</td>
+                <td class="values" align="right">1457</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">339</td>
+                <td class="values" align="right">1796</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1796</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ040A">BPQ040A - Taking prescription for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ040A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Taking prescription for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of {your/SP's} (high blood pressure/hypertension), {have you/has s/he} ever been told to . . . take prescribed medicine?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1452</td>
+                <td class="values" align="right">1452</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">347</td>
+                <td class="values" align="right">1799</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1799</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ040B">BPQ040B - Told to control weight for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ040B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to control weight for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of {your/SP's} (high blood pressure/hypertension), {have you/has s/he} ever been told to control {your/his/her} weight or lose weight?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">867</td>
+                <td class="values" align="right">867</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">927</td>
+                <td class="values" align="right">1794</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1794</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ040C">BPQ040C - Told to reduce sodium for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ040C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to reduce sodium for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of {your/SP's} (high blood pressure/hypertension), {have you/has s/he} ever been told to cut down on salt or sodium in {your/his/her} diet?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1157</td>
+                <td class="values" align="right">1157</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">637</td>
+                <td class="values" align="right">1794</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1794</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ040D">BPQ040D - Told to exercise more for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ040D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to exercise more for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of {your/SP's} (high blood pressure/hypertension), {have you/has s/he} ever been told to exercise more?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1095</td>
+                <td class="values" align="right">1095</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">701</td>
+                <td class="values" align="right">1796</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1796</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ040E">BPQ040E - Told to reduce alcohol for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ040E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to reduce alcohol for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of {your/SP's} (high blood pressure/hypertension), {have you/has s/he} ever been told to cut down {your/his/her} alcohol consumption?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">413</td>
+                <td class="values" align="right">413</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1382</td>
+                <td class="values" align="right">1795</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1795</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ040F">BPQ040F - Told to do other things for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ040F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to do other things for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Because of {your/SP's} (high blood pressure/hypertension), {have you/has s/he} ever been told to do something else?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">185</td>
+                <td class="values" align="right">185</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1613</td>
+                <td class="values" align="right">1798</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1798</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4412</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ042">BPQ042 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ042</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1A.  CHECK ITEM BPQ.042:  IF 'SOMETHING ELSE' (ITEM F) IS CODED 'YES' (CODE 1), DISPLAY QUESTION BPQ.043.  OTHERWISE, DO NOT DISPLAY THIS QUESTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ043A">BPQ043A - Told to stop smoking for hypertension</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ043A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to stop smoking for hypertension</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What else?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Stop smoking</td>
+                <td class="values" align="right">67</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6146</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ043B">BPQ043B - Told to increase potassium for hyprtnsn</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ043B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to increase potassium for hyprtnsn</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What else?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Increase potassium intake</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6209</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ043C">BPQ043C - Told of other diet changes for hyprtnsn</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ043C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told of other diet changes for hyprtnsn</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What else?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Other changes in diet</td>
+                <td class="values" align="right">59</td>
+                <td class="values" align="right">59</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6154</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ043D">BPQ043D - Told to do other things for hyprtnsn</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ043D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to do other things for hyprtnsn</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What else?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">60</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6153</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ045">BPQ045 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ045</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1B.  CHECK ITEM BPQ.045:  IF 'YES' (CODE 1) IN BPQ.040A, B, C, D, OR E, CONTINUE.  OTHERWISE, GO TO BOX 2.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ050A">BPQ050A - Now taking prescribed medicine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ050A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now taking prescribed medicine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HELP AVAILABLE (Are you/Is SP) now taking prescribed medicine</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION:  DISPLAY EACH ACTIVITY CODED ''YES'' (CODE 1) FROM BPQ.040.  DISPLAY FOR EACH ACTIVITY SHOULD READ AS FOLLOWS:  RESPONSES:  YES = 1, NO = 2, REFUSED = 7, DON'T KNOW = 9.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1291</td>
+                <td class="values" align="right">1291</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">160</td>
+                <td class="values" align="right">1451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1452</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4761</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ050B">BPQ050B - Now controlling weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ050B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now controlling weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now controlling (your/his/her) weight or losing weight?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">678</td>
+                <td class="values" align="right">678</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">187</td>
+                <td class="values" align="right">865</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">865</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">867</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5346</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ050C">BPQ050C - Now reducing salt/sodium</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ050C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now reducing salt/sodium</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now cutting down on salt or sodium in (your/his/her) diet?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1008</td>
+                <td class="values" align="right">1008</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">149</td>
+                <td class="values" align="right">1157</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1157</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1157</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5056</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ050D">BPQ050D - Now exercising more</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ050D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now exercising more</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now exercising more?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">649</td>
+                <td class="values" align="right">649</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">446</td>
+                <td class="values" align="right">1095</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1095</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1095</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5118</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ050E">BPQ050E - Now reducing alcohol consumption</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ050E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now reducing alcohol consumption</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now cutting down on (your/his/her) alcohol consumption?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">324</td>
+                <td class="values" align="right">324</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">89</td>
+                <td class="values" align="right">413</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">413</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">413</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5800</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ055">BPQ055 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ055</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 2.  CHECK ITEM BPQ.055:  IF SP AGE &gt;= 20, CONTINUE.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ060">BPQ060 - Ever had blood cholesterol checked</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had blood cholesterol checked</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever had {your/his/her} blood cholesterol checked?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">3486</td>
+                <td class="values" align="right">3486</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1378</td>
+                <td class="values" align="right">4864</td>
+                <td class="values">BPD110a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4864</td>
+                <td class="values">BPD110a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">176</td>
+                <td class="values" align="right">5040</td>
+                <td class="values">BPD110a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1173</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ070">BPQ070 - When blood cholesterol last checked</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ070</dd>
+            <dt>SAS Label: </dt>
+            <dd>When blood cholesterol last checked</dd>
+            <dt>English Text: </dt>
+            <dd class="info">About how long has it been since {you/SP} last had {your/his/her} blood cholesterol checked?  Has it been...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less than 1 year ago,</td>
+                <td class="values" align="right">2357</td>
+                <td class="values" align="right">2357</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">1 year but less than 2 years ago,</td>
+                <td class="values" align="right">565</td>
+                <td class="values" align="right">2922</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">2 years but less than 5 years ago, or</td>
+                <td class="values" align="right">348</td>
+                <td class="values" align="right">3270</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">5 years or more?</td>
+                <td class="values" align="right">192</td>
+                <td class="values" align="right">3462</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3462</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">3486</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2727</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ080">BPQ080 - Doctor told you - high cholesterol level</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Doctor told you - high cholesterol level</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever been told by a doctor or other health professional that {your/his/her} blood cholesterol level was high?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1510</td>
+                <td class="values" align="right">1510</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1935</td>
+                <td class="values" align="right">3445</td>
+                <td class="values">BPD110a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3445</td>
+                <td class="values">BPD110a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">41</td>
+                <td class="values" align="right">3486</td>
+                <td class="values">BPD110a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2727</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ090A">BPQ090A - Told to eat less fat for cholesterol</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ090A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to eat less fat for cholesterol</dd>
+            <dt>English Text: </dt>
+            <dd class="info">To lower (your/his/her) blood cholesterol, (have/has) (you/SP) ever been told by a doctor or other health professional... to eat fewer high fat or high cholesterol foods?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1217</td>
+                <td class="values" align="right">1217</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">282</td>
+                <td class="values" align="right">1499</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1499</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">1510</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4703</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ090B">BPQ090B - Told to reduce weight for cholesterol</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ090B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to reduce weight for cholesterol</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[To lower (your/his/her) blood cholesterol, (have/has) (you/SP) ever been told by a doctor or other health professional]... to control (your/his/her) weight or lose weight?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">826</td>
+                <td class="values" align="right">826</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">679</td>
+                <td class="values" align="right">1505</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1505</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1510</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4703</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ090C">BPQ090C - Told to exercise more for cholesterol</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ090C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to exercise more for cholesterol</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[To lower (your/his/her) blood cholesterol, (have/has) (you/SP) ever been told by a doctor or other health professional]... to increase (your/his/her) physical activity or exercise?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">992</td>
+                <td class="values" align="right">992</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">512</td>
+                <td class="values" align="right">1504</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1504</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1510</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4703</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ090D">BPQ090D - Told to take prescriptn for cholesterol</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ090D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told to take prescriptn for cholesterol</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[To lower (your/his/her) blood cholesterol, (have/has) (you/SP) ever been told by a doctor or other health professional]... to take prescribed medicine?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">897</td>
+                <td class="values" align="right">897</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">609</td>
+                <td class="values" align="right">1506</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1506</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1510</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4703</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ095">BPQ095 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ095</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 3.  CHECK ITEM BPQ.095:  IF 'YES' (CODE 1) TO BPQ.090A, B, C OR D, CONTINUE WITH BPQ.100.  OTHERWISE, GO TO BOX 6.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ100A">BPQ100A - Now eating fewer high fat foods</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ100A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now eating fewer high fat foods</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now following this advice to eat fewer high fat or high cholesterol foods?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTIONS:  DISPLAY EACH ACTIVITY CODED AS 'YES' (CODE 1) IN BPQ.090 A-D.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">978</td>
+                <td class="values" align="right">978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">238</td>
+                <td class="values" align="right">1216</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1216</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1217</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4996</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ100B">BPQ100B - Now controlling weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ100B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now controlling weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now following this advice to control (your/his/her) weight or lose weight?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">636</td>
+                <td class="values" align="right">636</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">190</td>
+                <td class="values" align="right">826</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">826</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">826</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5387</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ100C">BPQ100C - Now increasing exercise</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ100C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now increasing exercise</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now following this advice to increase (your/his/her) physical activity or exercise?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">682</td>
+                <td class="values" align="right">682</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">310</td>
+                <td class="values" align="right">992</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">992</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">992</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5221</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ100D">BPQ100D - Now taking prescribed medicine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ100D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now taking prescribed medicine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Are you/Is SP) now following this advice to take prescribed medicine?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">725</td>
+                <td class="values" align="right">725</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">172</td>
+                <td class="values" align="right">897</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">897</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">897</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5316</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPD110A">BPD110A - Eating fewer high fat foods on own</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPD110A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eating fewer high fat foods on own</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Even though {you have/SP has} never had {your/his/her} blood cholesterol checked} {Even though a doctor or other health professional has never told {you/SP} that {your/his/her} blood cholesterol was high} we are now going to ask you if {you have/SP has} made any major changes on your own to lower {your/his/her} blood cholesterol.  Specifically {do you/does s/he} eat fewer high fat or high cholesterol foods in order to lower {your/his/her} blood cholesterol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTIONS: DISPLAY "EVEN THOUGH YOU HAVE NEVER HAD YOUR BLOOD CHOLESTEROL CHECKED" ONLY IF BPQ.060 IS 'NO' (CODE 2), DK (CODE 9), OR REF (CODE 7).  DISPLAY "EVEN THOUGH A DOCTOR OR OTHER HEALTH PROFESSIONAL HAS NEVER TOLD YOU THAT YOUR BLOOD CHOLESTEROL IS HIGH" ONLY IF BPQ.080 IS 'NO' (CODE 2), DK (CODE 9), OR REF (CODE 7). </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1128</td>
+                <td class="values" align="right">1128</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2396</td>
+                <td class="values" align="right">3524</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3524</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">3530</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2683</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPD110B">BPD110B - Controlling weight on own</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPD110B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Controlling weight on own</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Even though {you have/SP has} never had {your/his/her} blood cholesterol checked} {Even though a doctor or other health professional has never told {you/SP} that {your/his/her} blood cholesterol was high} we are now going to ask you if {you have/SP has} made any major changes on your own to lower {your/his/her} blood cholesterol.    Specifically {have you/has s/he} controlled {your/his/her} weight or lost weight in order to lower {your/his/her} blood cholesterol?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">639</td>
+                <td class="values" align="right">639</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2886</td>
+                <td class="values" align="right">3525</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3525</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">3530</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2683</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPD110C">BPD110C - Increasing exercise on own</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPD110C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Increasing exercise on own</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Even though {you have/SP has} never had {your/his/her} blood cholesterol checked} {Even though a doctor or other health professional has never told {you/SP} that {your/his/her} blood cholesterol was high} we are now going to ask you if {you have/SP has} made any major changes on your own to lower {your/his/her} blood cholesterol.  Specifically{have you/has s/he} increased {your/his/her} physical activity or exercise in order to lower {your/his/her} blood cholesterol?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">598</td>
+                <td class="values" align="right">598</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2928</td>
+                <td class="values" align="right">3526</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3526</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3530</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2683</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ115">BPQ115 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ115</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 6.  CHECK ITEM BPQ.115:  IF 'NO' (CODE 2) OR DON'T KNOW (CODE 9) IN BPQ.090A, B, OR C, CONTINUE WITH BOX 7.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ117">BPQ117 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ117</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 7.  CHECK ITEM BPQ.117:  IF 'NO' (CODE 2) OR DON'T KNOW (CODE 9) IN BPQ.090A, CONTINUE.  OTHERWISE, GO TO BOX 8.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPD120">BPD120 - Eating fewer high fat foods on own</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPD120</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eating fewer high fat foods on own</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Even though a doctor or other health professional has never told {you/SP} to eat fewer high fat or high cholesterol foods, we are now going to ask if {you have/he/she has} made any major changes on {your/his/her} own to lower {your/his/her} cholesterol?  Specifically, {do you/does he/she} eat fewer high fat or high cholesterol foods in order to lower {your/his/her} blood cholesterol?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">153</td>
+                <td class="values" align="right">153</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">140</td>
+                <td class="values" align="right">293</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">293</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">293</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5920</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ125">BPQ125 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ125</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 8.  CHECK ITEM BPQ.125:  IF 'NO' (CODE 2) OR DON'T KNOW (CODE 9) IN BPQ.090B, CONTINUE.  OTHERWISE, GO TO BOX 9.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPD130">BPD130 - Controlling weight on own</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPD130</dd>
+            <dt>SAS Label: </dt>
+            <dd>Controlling weight on own</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Even though a doctor or other health professional has never told {you/SP} to control {your/his/her} weight or lose weight, we are now going to ask if {you have/he/she/has} made any major changes on {your/his/her} own to lower {your/his/her} blood cholesterol?  Specifically, {have you/has he/she} controlled {your/his/her} weight or lost weight in order to lower {your/his/her} blood cholesterol? </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">233</td>
+                <td class="values" align="right">233</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">450</td>
+                <td class="values" align="right">683</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">683</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">684</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5529</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPQ135">BPQ135 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPQ135</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 9.  CHECK ITEM BPQ.135:  IF 'NO' (CODE 2) OR DON'T KNOW (CODE 9) IN BPQ.090C, CONTINUE.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BPD140">BPD140 - Increasing exercise on own</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BPD140</dd>
+            <dt>SAS Label: </dt>
+            <dd>Increasing exercise on own</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Even though a doctor or other health professional has never told {you/SP} to increase {your/his/her} physical activity or exercise, we are now going to ask if {you have/he/she has} made any major changes on {your/his/her} own to lower {your/his/her} blood cholesterol?  Specifically, {have you/has he/she} increased {your/his/her} physical activity or exercise in order to lower {your/his/her} blood cholesterol? </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">131</td>
+                <td class="values" align="right">131</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">387</td>
+                <td class="values" align="right">518</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">518</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">518</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5695</td>
+                <td class="values" align="right">6213</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

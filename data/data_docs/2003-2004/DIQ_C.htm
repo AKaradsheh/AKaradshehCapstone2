@@ -1,0 +1,1492 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>DIQ_C</title>
+    <meta name="title" content="NHANES 2003-2004: Diabetes Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#DIQ010">DIQ010 - Doctor told you have diabetes</a>
+              </li>
+              <li>
+                <a href="#DID040G">DID040G - Age when first told you had diabetes</a>
+              </li>
+              <li>
+                <a href="#DID040Q">DID040Q - Number of years of age</a>
+              </li>
+              <li>
+                <a href="#DIQ050">DIQ050 - Taking insulin now</a>
+              </li>
+              <li>
+                <a href="#DID060G">DID060G - How long taking insulin</a>
+              </li>
+              <li>
+                <a href="#DID060Q">DID060Q - Number of mons/yrs taking insulin</a>
+              </li>
+              <li>
+                <a href="#DIQ060U">DIQ060U - Unit of measure (month/year)</a>
+              </li>
+              <li>
+                <a href="#DIQ065">DIQ065 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#DIQ070">DIQ070 - Take diabetic pills to lower blood sugar</a>
+              </li>
+              <li>
+                <a href="#DIQ075">DIQ075 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#DIQ080">DIQ080 - Diabetes affected eyes/had retinopathy</a>
+              </li>
+              <li>
+                <a href="#DIQ085">DIQ085 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#DIQ090">DIQ090 - Ulcer/sore not healed within 4 weeks</a>
+              </li>
+              <li>
+                <a href="#DIQ100">DIQ100 - Numbness in hands/feet-past 3 mos</a>
+              </li>
+              <li>
+                <a href="#DIQ110">DIQ110 - Numbness in hands, feet or both</a>
+              </li>
+              <li>
+                <a href="#DIQ120">DIQ120 - Pain/tingling in hands/feet - past 3 mos</a>
+              </li>
+              <li>
+                <a href="#DIQ130">DIQ130 - Pain/tingling in hands,feet or both</a>
+              </li>
+              <li>
+                <a href="#DIQ140">DIQ140 - Pain in either leg while walking</a>
+              </li>
+              <li>
+                <a href="#DIQ150">DIQ150 - Pain  in calf or calves</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Diabetes (DIQ_C)</h3>
+        <h4> Data File: DIQ_C.xpt</h4>
+        <h5 class="left">First Published: April 2006</h5>
+        <h5 class="right">Last Revised: NA</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The Diabetes section (prefix DIQ) provides personal interview data on diabetes, use of medications, and symptoms associated with diabetes such as vision problems, foot ulcers and sensations in the extremities.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All participants 1 year of age and older are eligible for the lead-in question <br />
+pertaining to history of diabetes. </p>
+<p><strong>Follow-up questions:</strong> </p>
+<ul>
+    <li>age when first told about diabetes health condition, </li>
+    <li>current insulin use (asked regardless of diabetes response), </li>
+    <li>duration of insulin use, </li>
+    <li>use of oral hypoglycemic agents, </li>
+    <li>history of retinopathy and vision troubles due to diabetes (asked of ages 20+ years), </li>
+    <li>foot ulcer conditions that required significant time to heal (asked of ages 40+ years regardless of diabetes response), </li>
+    <li>numbness in hands or feet (asked of age 40+ years regardless of diabetes response), </li>
+    <li>painful sensations in hands or feet, and leg pain while walking, including pain in the calves (asked of 40+ years regardless of diabetes response) </li>
+</ul><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The DIQ section is administered in the home by a trained household interviewer. This information may be linked to data obtained during the health examination component. An assessment of lower extremity disease (LED) and peripheral neuropathy is performed in adults 40+ years of age. Please refer to the notes for the LED component.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>Questionnaire data is systematically reviewed for logical, processing, and data input errors on a periodic basis during the process of data collection. </p>
+<p>The computer CAPI system had built-in consistency checks, online information screens that provided the interviewers with information about the terms used in the questionnaires, and hard and soft edit checks to reduce the number of keying entry errors. All of the interviews were reviewed by the NHANES field office staff for accuracy and completeness.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>For the following derived variables, when &ldquo;don&rsquo;t know&rdquo; was entered as the response to a quantity question, the data were back coded to reflect &ldquo;don&rsquo;t know&rdquo; in the gate question (enter number, less than 1, refused, don&rsquo;t know) and the &ldquo;don&rsquo;t know&rdquo; response was changed to missing in the quantity variable. </p>
+<p>DID040G / DID040Q </p>
+<p>DID060G / DID060Q </p>
+<p>Only records for eligible participants are included in this file. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues at <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_general_guidelines.pdf">http://www.cdc.gov/nchs/data/nhanes/nhanes_general_guidelines.pdf</a>.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ010">DIQ010 - Doctor told you have diabetes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Doctor told you have diabetes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next questions are about specific medical conditions. {Other than during pregnancy, {have you/has SP}/{Have you/Has SP}} ever been told by a doctor or health professional that {you have/{he/she/SP} has} diabetes or sugar diabetes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION:  IF SP AGE &lt; 12, DISPLAY "HAVE YOU" FOR THE FIRST DISPLAY AND "SP HAS" FOR THE SECOND DISPLAY.   IF SP IS FEMALE AND AGE &gt;= 20, DISPLAY "OTHER THAN DURING PREGNANCY, {HAVE YOU/HAS SP}".</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">559</td>
+                <td class="values" align="right">559</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9001</td>
+                <td class="values" align="right">9560</td>
+                <td class="values">DIQ050</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Borderline</td>
+                <td class="values" align="right">78</td>
+                <td class="values" align="right">9638</td>
+                <td class="values">DIQ050</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9638</td>
+                <td class="values">DIQ050</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">DIQ050</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DID040G">DID040G - Age when first told you had diabetes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DID040G</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when first told you had diabetes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {was SP/were you} when a doctor or other health professional first told {you/him/her} that {you/he/she} had diabetes or sugar diabetes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">GATE QUESTION</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Enter number</td>
+                <td class="values" align="right">548</td>
+                <td class="values" align="right">548</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Less than 1 year</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">556</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">556</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">559</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9086</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DID040Q">DID040Q - Number of years of age</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DID040Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Number of years of age</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {was SP/were you} when a doctor or other health professional first told {you/him/her} that {you/he/she} had diabetes or sugar diabetes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION:  IF SP AGE &lt; 12, DISPLAY "YOU" FOR THE SECOND DISPLAY.  ENTER AGE IN YEARS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 120</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 88</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">548</td>
+                <td class="values" align="right">548</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">548</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">548</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9097</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ050">DIQ050 - Taking insulin now</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Taking insulin now</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Is SP/Are you} now taking insulin</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">{Is SP/Are you} now taking insulin</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">144</td>
+                <td class="values" align="right">144</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9501</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">DIQ065</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">DIQ065</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">DIQ065</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DID060G">DID060G - How long taking insulin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DID060G</dd>
+            <dt>SAS Label: </dt>
+            <dd>How long taking insulin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">For how long {have you/has SP} been taking insulin?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">GATE QUESTION</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Enter number (of months or years)</td>
+                <td class="values" align="right">143</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Less than 1 month</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">144</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9501</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DID060Q">DID060Q - Number of mons/yrs taking insulin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DID060Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Number of mons/yrs taking insulin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">For how long {have you/has SP} been taking insulin?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER (OF MONTHS OR YEARS)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 100</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 47</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">143</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9502</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ060U">DIQ060U - Unit of measure (month/year)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ060U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Unit of measure (month/year)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">UNIT OF MEASURE</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Months</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">14</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Years</td>
+                <td class="values" align="right">129</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9502</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ065">DIQ065 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ065</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 0.  CHECK ITEM DIQ.065:  IF 'YES' (CODE 1) IN DIQ.010, CONTINUE.  OTHERWISE, GO TO BOX 2.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ070">DIQ070 - Take diabetic pills to lower blood sugar</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ070</dd>
+            <dt>SAS Label: </dt>
+            <dd>Take diabetic pills to lower blood sugar</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Is SP/Are you} now taking diabetic pills to lower {{his/her}/your} blood sugar?  These are sometimes called oral agents or oral hypoglycemic agents.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">395</td>
+                <td class="values" align="right">395</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">163</td>
+                <td class="values" align="right">558</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">558</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">559</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9086</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ075">DIQ075 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ075</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1.  CHECK ITEM DIQ.075:  IF SP AGE &gt;= 20, CONTINUE.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ080">DIQ080 - Diabetes affected eyes/had retinopathy</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Diabetes affected eyes/had retinopathy</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor ever told {you/SP} that diabetes has affected {your/his/her} eyes or that {you/s/he} had retinopathy?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">120</td>
+                <td class="values" align="right">120</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">421</td>
+                <td class="values" align="right">541</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">541</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">545</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9100</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ085">DIQ085 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ085</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 2.  CHECK ITEM DIQ.085:  IF SP AGE &gt;= 40, CONTINUE.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ090">DIQ090 - Ulcer/sore not healed within 4 weeks</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ090</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ulcer/sore not healed within 4 weeks</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever had an ulcer or sore on {your/his/her} leg or foot that took more than 4 weeks to heal?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3154</td>
+                <td class="values" align="right">3295</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3295</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3299</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6346</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ100">DIQ100 - Numbness in hands/feet-past 3 mos</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ100</dd>
+            <dt>SAS Label: </dt>
+            <dd>Numbness in hands/feet-past 3 mos</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 3 months, {have you/has SP} had numbness or loss of feeling in {your/his/her} hands or feet, other than from {your/his/her} hands or feet falling asleep?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">775</td>
+                <td class="values" align="right">775</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2521</td>
+                <td class="values" align="right">3296</td>
+                <td class="values">DIQ120</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3296</td>
+                <td class="values">DIQ120</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">3299</td>
+                <td class="values">DIQ120</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6346</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ110">DIQ110 - Numbness in hands, feet or both</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ110</dd>
+            <dt>SAS Label: </dt>
+            <dd>Numbness in hands, feet or both</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has the numbness or loss of feeling been in {your/SP's} hands, feet, or both?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Hands</td>
+                <td class="values" align="right">350</td>
+                <td class="values" align="right">350</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Feet</td>
+                <td class="values" align="right">163</td>
+                <td class="values" align="right">513</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">262</td>
+                <td class="values" align="right">775</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">775</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">775</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8870</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ120">DIQ120 - Pain/tingling in hands/feet - past 3 mos</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ120</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pain/tingling in hands/feet - past 3 mos</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 3 months, {have you/has SP} had a painful sensation or tingling in {your/his/her} hands or feet?  Do not include normal foot aches from standing or walking for long periods.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">770</td>
+                <td class="values" align="right">770</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2525</td>
+                <td class="values" align="right">3295</td>
+                <td class="values">DIQ140</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3295</td>
+                <td class="values">DIQ140</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3299</td>
+                <td class="values">DIQ140</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6346</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ130">DIQ130 - Pain/tingling in hands,feet or both</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ130</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pain/tingling in hands,feet or both</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has the painful sensation or tingling been in {your/his/her} hands, feet, or both?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Hands</td>
+                <td class="values" align="right">355</td>
+                <td class="values" align="right">355</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Feet</td>
+                <td class="values" align="right">175</td>
+                <td class="values" align="right">530</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">240</td>
+                <td class="values" align="right">770</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">770</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">770</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8875</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ140">DIQ140 - Pain in either leg while walking</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ140</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pain in either leg while walking</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} ever get pain in either leg while {you are/s/he is} walking?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">990</td>
+                <td class="values" align="right">990</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2302</td>
+                <td class="values" align="right">3292</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3292</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">3299</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6346</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DIQ150">DIQ150 - Pain  in calf or calves</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DIQ150</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pain  in calf or calves</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Does this pain include pain in {your/SP's} calf or calves?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">585</td>
+                <td class="values" align="right">585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">404</td>
+                <td class="values" align="right">989</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">989</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">990</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8655</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

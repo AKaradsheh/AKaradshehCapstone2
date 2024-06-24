@@ -1,0 +1,1364 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Respiratory Health" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Respiratory Health Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Respiratory Health Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#RDQ005A">RDQ005A - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#RDQ031">RDQ031 - Coughing most days - over 3 mo period</a>
+                </li>
+                <li>
+                  <a href="#RDD040">RDD040 - # years had cough problem</a>
+                </li>
+                <li>
+                  <a href="#RDQ050">RDQ050 - Bring up phlegm most days - 3 mo period</a>
+                </li>
+                <li>
+                  <a href="#RDD060">RDD060 - # years bringing up phlegm problem</a>
+                </li>
+                <li>
+                  <a href="#RDQ070">RDQ070 - Wheezing or whistling in chest - past yr</a>
+                </li>
+                <li>
+                  <a href="#RDQ080">RDQ080 - # wheezing/whistling attacks past year</a>
+                </li>
+                <li>
+                  <a href="#RDQ090">RDQ090 - Wheezing disturb sleep in past year</a>
+                </li>
+                <li>
+                  <a href="#RDQ100">RDQ100 - Chest sound wheezy during exercise</a>
+                </li>
+                <li>
+                  <a href="#RDD120">RDD120 - Got medical attentn for wheezing attack</a>
+                </li>
+                <li>
+                  <a href="#RDQ134">RDQ134 - Doctor prescribe wheezing medication</a>
+                </li>
+                <li>
+                  <a href="#RDQ135">RDQ135 - Limit usual activities due to wheezing</a>
+                </li>
+                <li>
+                  <a href="#RDQ136">RDQ136 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#RDQ137">RDQ137 - Miss work or school due to wheezing</a>
+                </li>
+                <li>
+                  <a href="#RDQ140">RDQ140 - Had dry cough at night in past year</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Respiratory Health (RDQ_C)
+			</h3>
+        <h4>
+				Data File: RDQ_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				January 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>The Respiratory Disease Section (prefix RDQ) provides interview data <br />
+on respiratory symptoms that may be related to bronchitis or asthma. The symptoms profiled include cough, phlegm production, wheezing. Data is also collected on trigger factors for these symptoms, and on related functional impairments. </p>
+<p><strong>Topics: </strong></p>
+<ul>
+    <li>History Cough and Phlegm Production (RDQ031---RDD060) </li>
+</ul>
+<p>12 Month Period Prevalence of: </p>
+<ul>
+    <li>Wheezing (RDQ070); Frequency of Wheezing Episodes (RDQ080) </li>
+    <li>Sleep Disturbance Due to Wheezing (RDQ090) </li>
+    <li>Wheezing With Exercise (RDQ100) </li>
+    <li>Number of Doctor, Hospital or Emergency Room Visits for Wheezing (RDQ120) </li>
+    <li>Prescription Medication use for Wheezing (RDQ134) </li>
+    <li>Limitation of Usual Activities Due to Wheezing (RDQ135) </li>
+    <li>Number of Days of Work/School Missed Due to Wheezing (RDQ137) </li>
+    <li>Dry Nocturnal Cough (RDQ140) </li>
+</ul></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Questions regarding a history of cough and phlegm production were administered to Survey Participants ages 12 years and above, except for RDQ140 (History of Dry Nocturnal Cough) which was administered to Survey Participants of all ages. </p>
+<p>Questions regarding a history of wheezing were administered to Survey Participants of all ages except for RDQ137 which was administered to Survey Participants ages 6 to 69 years. In NHANES 1999-2002, the question series RDQ120 through RDQ 137 were administered only to Survey Participants with a history of more severe asthma (a history of recent sleep disturbance due to wheezing plus a history of recent exercise associated wheezing). However, in NHANES 2003-2004 the question series RDQ120 through RDQ137 was administered to all participants with a history of wheezing.</p></div>
+        <h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2>
+        <div class="block"><p>Household Interview.</p>
+<p>The Interviewer Procedure Manual and the text document for the NHANES 2003-2004 RDQ survey questionnaire are available on the NHANES website.</p></div>
+        <h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2>
+        <div class="block"><p>For details on the QA/QC process for this component, please refer to the Interviewer Procedure Manual.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Data editing (for example &ldquo;top coding&rdquo; of continuous variables) is documented in the RDQ Section Codebook.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>These data were collected as part of the NHANES Household Questionnaire Interview and interview weights should be used if only questionnaire data is analyzed. If RDQ data is merged with the MEC examination data, however, then MEC examination sample weights should be used for the analyses. <br />
+Current NHANES questionnaire data collection relating to respiratory symptoms is based on prior NHANES surveys as well as validated survey instruments. It is recommended that data analysts be familiar with current practice and issues in the epidemiologic investigation of respiratory disease.<sup>1,2,3,4</sup> </p>
+<p>Related NHANES 2001-2002 Questionnaire Datasets: </p>
+<ul>
+    <li>Medical Conditions (MCQ) contains questionnaire data on a history of a previous medical diagnosis of respiratory disease (asthma, chronic bronchitis, emphysema), age at onset of disease, and family history of asthma. </li>
+    <li>Physical Functioning (PFQ) contains data on functional physical limitations as well information on the type of health problems (including respiratory disease) causing the difficulty. </li>
+    <li>Cardiovascular Disease (CDQ) contains data for dyspnea (shortness of breath) on exertion for adults ages 40+. </li>
+    <li>Smoking (SMQ) contains data on past history of smoking. </li>
+    <li>Occupation (OCQ) includes data on current and longest occupation, as well as identification of a Survey Participants exposure to second-hand smoke in their current job (OCQ290G/Q). Also, for Survey Participants whose asthma began as an adult, the type of employment is recorded (OCQ470-480). </li>
+    <li>Prescription Medications (RXQ) contains data on all prescription medications currently taken. </li>
+</ul>
+<p>Please refer to the NHANES Analytic Guidelines for further details on the use of sample weights and other analytic issues.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Celli BR, Halbert RJ, Isonaka S, Schau B. Population impact of different definitions of airway obstruction. Eur Respir J. 2003; 22:268-73.</li>
+          <li>Halbert RJ, Isonaka S, George D, Iqbal A. Interpreting COPD prevalence estimates: what is the true burden of disease? Chest. 2003; 123:1684-92.</li>
+          <li>Pauwels RA, Buist AS, Calverley PM, Jenkins CR, Hurd SS; GOLD Scientific Committee. Global strategy for the diagnosis, management, and prevention of chronic obstructive pulmonary disease. NHLBI/WHO Global Initiative for Chronic Obstructive Lung Disease (GOLD) Workshop summary. Am J Respir Crit Care Med. 2001; 163:1256-76.</li>
+          <li>Pierce N, Beasley R, Burgess C, Crane J. Asthma Epidemiology: Principles and Methods. 1998. New York: Oxford University Press.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ005A">RDQ005A - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ005A</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1.  CHECK ITEM RDQ.005A:  IF SP AGE &lt;12, GO TO RDQ.070.  OTHERWISE, CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ031">RDQ031 - Coughing most days - over 3 mo period</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ031</dd>
+            <dt>SAS Label: </dt>
+            <dd>Coughing most days - over 3 mo period</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} usually cough on most days for 3 consecutive months or more during the year?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">521</td>
+                <td class="values" align="right">521</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6819</td>
+                <td class="values" align="right">7340</td>
+                <td class="values">RDQ050  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7340</td>
+                <td class="values">RDQ050  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">RDQ050  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2301</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDD040">RDD040 - # years had cough problem</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDD040</dd>
+            <dt>SAS Label: </dt>
+            <dd># years had cough problem</dd>
+            <dt>English Text: </dt>
+            <dd class="info">For how many years {have you/has SP} had this cough?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF YEARS. IF LESS THAN 1 YEAR, ENTER 1; IF 70 OR MORE YEARS ENTER 70</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 69</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">508</td>
+                <td class="values" align="right">508</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">70</td>
+                <td class="values">70 or more</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">515</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">515</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">521</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9124</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ050">RDQ050 - Bring up phlegm most days - 3 mo period</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Bring up phlegm most days - 3 mo period</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} bring up phlegm on most days for 3 consecutive months or more during the year?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">562</td>
+                <td class="values" align="right">562</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6779</td>
+                <td class="values" align="right">7341</td>
+                <td class="values">RDQ070  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7341</td>
+                <td class="values">RDQ070  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">RDQ070  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2301</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDD060">RDD060 - # years bringing up phlegm problem</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDD060</dd>
+            <dt>SAS Label: </dt>
+            <dd># years bringing up phlegm problem</dd>
+            <dt>English Text: </dt>
+            <dd class="info">For how many years, {have you/has SP} had trouble with phlegm?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF YEARS. IF LESS THAN 1 YEAR, ENTER 1; IF 70 OR MORE YEARS ENTER 70</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 60</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">554</td>
+                <td class="values" align="right">554</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">70</td>
+                <td class="values">70 or more</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">557</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">557</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">562</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9083</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ070">RDQ070 - Wheezing or whistling in chest - past yr</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ070</dd>
+            <dt>SAS Label: </dt>
+            <dd>Wheezing or whistling in chest - past yr</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months {have you/has SP} had wheezing or whistling in {your/his/her} chest?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1332</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">8310</td>
+                <td class="values" align="right">9642</td>
+                <td class="values">RDQ140  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9642</td>
+                <td class="values">RDQ140  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">RDQ140  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ080">RDQ080 - # wheezing/whistling attacks past year</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ080</dd>
+            <dt>SAS Label: </dt>
+            <dd># wheezing/whistling attacks past year</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[In the past 12 months], how many attacks of wheezing or whistling {have you/has SP} had?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF 12 OR MORE EPISODES, ENTER 12; ENTER NUMBER OF EPISODES.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 12</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 12</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1310</td>
+                <td class="values" align="right">1310</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1310</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8313</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ090">RDQ090 - Wheezing disturb sleep in past year</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ090</dd>
+            <dt>SAS Label: </dt>
+            <dd>Wheezing disturb sleep in past year</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[In the past 12 months], how often, on average, has {your/SP's} sleep been disturbed because of wheezing?  Would you say this happens . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never,</td>
+                <td class="values" align="right">611</td>
+                <td class="values" align="right">611</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1 or more nights per week, or</td>
+                <td class="values" align="right">336</td>
+                <td class="values" align="right">947</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Less than 1 night per week?</td>
+                <td class="values" align="right">382</td>
+                <td class="values" align="right">1329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8313</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ100">RDQ100 - Chest sound wheezy during exercise</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ100</dd>
+            <dt>SAS Label: </dt>
+            <dd>Chest sound wheezy during exercise</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[In the past 12 months], has {your/SP's} chest sounded wheezy during or after exercise or physical activity?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">619</td>
+                <td class="values" align="right">619</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">705</td>
+                <td class="values" align="right">1324</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1324</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8313</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDD120">RDD120 - Got medical attentn for wheezing attack</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDD120</dd>
+            <dt>SAS Label: </dt>
+            <dd>Got medical attentn for wheezing attack</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[In the past 12 months], how many times {have you/has SP} gone to the doctor's office or the hospital emergency room for one or more of these attacks of wheezing or whistling?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER. IF NEVER, ENTER 0;IF 20 OR MORE MONTHS ENTER 20.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 15</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1329</td>
+                <td class="values" align="right">1329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">20</td>
+                <td class="values">20 or more</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1331</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1331</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1331</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8314</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ134">RDQ134 - Doctor prescribe wheezing medication</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ134</dd>
+            <dt>SAS Label: </dt>
+            <dd>Doctor prescribe wheezing medication</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(In the past 12 months), (have you/has SP) taken medication, prescribe by a doctor, for wheezing or whistling?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">782</td>
+                <td class="values" align="right">782</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">547</td>
+                <td class="values" align="right">1329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8313</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ135">RDQ135 - Limit usual activities due to wheezing</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ135</dd>
+            <dt>SAS Label: </dt>
+            <dd>Limit usual activities due to wheezing</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 12 months, how much did {you/SP} limit {your/his/her} usual activities due to wheezing or whistling?  Would you say…</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Not at all,</td>
+                <td class="values" align="right">782</td>
+                <td class="values" align="right">782</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little,</td>
+                <td class="values" align="right">309</td>
+                <td class="values" align="right">1091</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A fair amount,</td>
+                <td class="values" align="right">108</td>
+                <td class="values" align="right">1199</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">A moderate amount, or</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">1242</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">A lot?</td>
+                <td class="values" align="right">90</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8313</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ136">RDQ136 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ136</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 4. 
+CHECK ITEM RDQ.136:
+IF SP AGE=6-69 YEARS CONTINUE.
+OTHERWISE, GO TO RDQ.140.  </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ137">RDQ137 - Miss work or school due to wheezing</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ137</dd>
+            <dt>SAS Label: </dt>
+            <dd>Miss work or school due to wheezing</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 12 months, how many days of work or school did {you/SP} miss due to wheezing or whistling?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">None</td>
+                <td class="values" align="right">719</td>
+                <td class="values" align="right">719</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1 to 7</td>
+                <td class="values" align="right">171</td>
+                <td class="values" align="right">890</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">8 to 30</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">31 plus</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">948</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">948</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">950</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8695</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RDQ140">RDQ140 - Had dry cough at night in past year</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RDQ140</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had dry cough at night in past year</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[In the past 12 months], {have you/has SP} had a dry cough at night not counting a cough associated with a cold or chest infection lasting 14 days or more?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">369</td>
+                <td class="values" align="right">369</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9271</td>
+                <td class="values" align="right">9640</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9640</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9645</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

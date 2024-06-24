@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Cholesterol - LDL &amp; Triglycerides" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Cholesterol - LDL &amp; Triglycerides Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Cholesterol - LDL &amp; Triglycerides Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#WTSAF2YR">WTSAF2YR - 2Yr AM(3-11) &amp; fasting (12+) weights</a>
+                </li>
+                <li>
+                  <a href="#LBXTR">LBXTR - Triglyceride (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDTRSI">LBDTRSI - Triglyceride (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBDLDL">LBDLDL - LDL-cholesterol (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDLDLSI">LBDLDLSI - LDL-cholesterol (mmol/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cholesterol - LDL &amp; Triglycerides (L13AM_C)
+			</h3>
+        <h4>
+				Data File: L13AM_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				September 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				May 2008</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The goals of this component are: </p>
+<ol>
+    <li>to monitor the prevalence and trends in major cardiovascular conditions and risk factors in the U.S.; and </li>
+    <li>to evaluate prevention and treatment programs targeting cardiovascular disease in the U.S. </li>
+</ol>
+<p>The main element of the cardiovascular disease laboratory component in NHANES is blood lipid levels. Cardiovascular disease is the leading cause of death in the United States. An estimated 4.8 million Americans now have congestive heart failure. Increasing prevalence, hospitalizations, and deaths have made congestive heart failure a major chronic condition in the United States. The data will be used to monitor the status of hyperlipidemia and the success of the National Cholesterol Education Program.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 3 years and older who were examined in the morning (AM) session were tested.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>Triglycerides </strong></p>
+<p>Triglycerides are measured enzymatically in serum using a series of coupled reactions in which triglycerides are hydrolyzed to produce glycerol. Glycerol is then oxidized using glycerol oxidase, and H<sub>2</sub>O<sub>2</sub>, one of the reaction products, is converted via peroxidase to a phenazone. Absorbance is measured at 500 nm. </p>
+<p>High levels of serum triglycerides help determine the risk for coronary heart disease (CHD) and peripheral atherosclerosis. High triglycerides are associated with increased risk for coronary artery disease (CAD) inpatients with other risk factors, such as low high-density lipoproteins (HDL)-cholesterol, some patient groups with elevated apolipoprotein B, and patients with forms of low-density lipoproteins (LDL) that maybe particularly atherogenic. Desirable fasting triglyceride levels are considered to be those below 150 mg/dL and are further categorized as Borderline High, 150&ndash;199 mg/dL; High, 200&ndash;499 mg/dL; and Very High, &gt; =500 mg/dL. Very high triglycerides can result in pancreatitis. </p>
+<p>Triglycerides are also measured because the value is used to calculate LDL-cholesterol concentrations. In NHANES, triglycerides are only measured in specimens from the morning session. Sample persons ages 12 and above and fasting at least 8.5 hours or more but less than 24 hours have values and have non-zero fasting sample weights. Morning (non-fasting) weights are provided for participant&rsquo;s aged 3&ndash;11 years. </p>
+<p><strong>LDL-Cholesterol</strong> </p>
+<p>Most of the circulating cholesterol is found in three major lipoprotein fractions: very low-density lipoproteins (VLDL), LDL, and HDL. LDL- cholesterol is calculated from measured values of total cholesterol, triglycerides, and HDL-cholesterol according to the Friedewald calculation: </p>
+<p>[LDL-cholesterol] = [total cholesterol] &ndash; [HDL-cholesterol] &ndash; [triglycerides/5] </p>
+<p>where [triglycerides/5] is an estimate of VLDL-cholesterol and all values are expressed in mg/dL. The calculation is valid for triglycerides less than or equal to 400 mg/dL. LDL carries most of the circulating cholesterol and, when elevated, contributes to the development of coronary atherosclerosis. LDL- cholesterol is measured to assess risk for CHD and to follow the progress of patients being treated to lower LDL-cholesterol concentrations. Desirable levels of LDL-cholesterol are below 100 mg/dL; borderline low from 100&ndash;129 mg/dL borderline high is from 130&ndash; 159 mg/dL; high is from 160&ndash;189 mg/dL; and very high LDL-cholesterol is greater than or equal to 190 mg/dL. LDL-cholesterol is reported only for fasting (at least 8.5 hours or more but less than 24 hours) participants aged 12 and above who were examined in the morning sessions. </p>
+<p>There were no changes to the equipment, lab method, or lab site from the previous 2 years. </p>
+<p>A detailed description of the laboratory method used can be found on the NHANES Web site.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens were processed, stored and shipped to Johns Hopkins Hospital, Baltimore, Maryland for analysis. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of the Laboratory Methodology section. </p>
+<p>There was no top coding in this file. </p>
+<p>Three derived variables were created in this data file. The formula for their derivation is as follows: </p>
+<p><strong>LBDTRSI </strong></p>
+<p>The triglycerides value in mg/dL (LBXTR) was converted to mmol/L (LBDTRSI) by multiplying by 0.01129. </p>
+<p><strong>LBDLDL </strong></p>
+<p>Serum LDL-cholesterol levels were derived on examinees that were examined in the morning session only. The distribution of serum LDL-cholesterol should be estimated only on examinees aged 12 and above <br />
+who fasted at least 8.5 hours or more but less than 24 hours, were examined in the morning, and were randomly assigned to the morning fasting sample. LDL-cholesterol is calculated from measured values of total cholesterol, triglycerides, and HDL-cholesterol according to the Friedewald calculation: [LDL-cholesterol] = [total cholesterol] &ndash; [HDL-cholesterol] &ndash; [triglycerides/5] where all values are expressed in mg/dL. The calculation is valid for triglycerides less than 400 mg/dL. </p>
+<p><strong>LBDLDLSI</strong> </p>
+<p>The LDL-cholesterol in mg/dL (LBDLDL) was converted to mmol/L (LBDLDLSI) by multiplying by 0.02586. </p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES website.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES Web site.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The analysis of NHANES 2003&ndash;2004 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2003&ndash;2004 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN. </p>
+<p><strong>LBXTR </strong></p>
+<p>Serum triglyceride levels were measured on examinees that were examined in the morning session only. The distribution of serum triglycerides should be estimated only on examinees aged 12 and above who fasted at least 8.5 hours or more but less than 24 hours, were examined in the morning, and were randomly assigned to the morning fasting sample. </p>
+<p>The Laboratory 13AM data file contains laboratory test results for triglycerides (LBXTR), which uses the reference analytic method. However, the NHANES Lab 40 biochemistry profiles also include measurements of triglycerides. The Lab 40 variable name is LBXSTR. The appropriate variable to use from Lab 13AM is LBXTR. </p>
+<p><strong>WTSAF2YR </strong></p>
+<p>Sampling Weights: (2-year fasting weights for participants 12+ years and morning weights for 3-11 years): </p>
+<p>One-half of the participants were sampled to attend the morning session. Those participants ages 12 and older appointed to attend the morning session were instructed to fast at least 9 hours prior to their appointment time. Participants aged 3-11 years were not required to fast. </p>
+<p>Subsample weights were required for analysis since the analysis of interest involves only those sampled persons ages 12 and older examined in the morning. Because fasting is a key characteristic of this subsample, this data item is called &ldquo;fasting&rdquo; weight. Fasting weights were generated for the diabetes laboratory testing (Laboratory 10AM) and were also used for triglycerides and LDL cholesterol (Laboratory 13AM) because multiple sets of fasting weights were not desirable. Non- zero fasting weights were generated for sample persons 12years and older who fasted 8.5 to 24 hours and had plasma glucose values and diabetics who fasted but had missing plasma glucose values. Diabetics who did not fast have zero weights. </p>
+<p>Subsample weights arealso provided for participants aged 3&ndash;11 years. The analyst should use these weights for 3-11 years with great caution. Many of these participants were not fasting and these weights were not adjusted for nonresponse in this age group. Weights (WTSAF2YR) for ages 3-11 are referred to as &ldquo;morning&rdquo; weights because they were not adjusted for nonresponse or non-fasting. The analyst may wish to consider the issue of re-weighting the data for 3-11 years. Therefore, when considering the analysis of data for ages 3 and over, the analyst should analyze the data with great caution because of the different weighting methodology and fasting protocols for the participants between ages 3-11 and ages 12 and over. </p>
+<p>The analyst is strongly encouraged to use the 2-year fasting weights (WTSAF2YR) to analyze 2003-2004 data for participants 12 years and older. The use of the full sample MEC examined weights (WTMEC2YR) should not be used to analyze the data if the outcome of interest is only measured on the morning fasting sample. </p>
+<p>See the Analytic Guidelines regarding applying weights for analysis of data.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTSAF2YR">WTSAF2YR - 2Yr AM(3-11) &amp; fasting (12+) weights</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSAF2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>2Yr AM(3-11) &amp; fasting (12+) weights</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2Yr AM(3-11) &amp; fasting (12+) weights
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 355659.4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4034</td>
+                <td class="values" align="right">4034</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4034</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTR">LBXTR - Triglyceride (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triglyceride (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triglyceride (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">20 to 2740</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3680</td>
+                <td class="values" align="right">3680</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">354</td>
+                <td class="values" align="right">4034</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTRSI">LBDTRSI - Triglyceride (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTRSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triglyceride (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triglyceride (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.226 to 30.935</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3680</td>
+                <td class="values" align="right">3680</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">354</td>
+                <td class="values" align="right">4034</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDLDL">LBDLDL - LDL-cholesterol (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDLDL</dd>
+            <dt>SAS Label: </dt>
+            <dd>LDL-cholesterol (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">LDL-cholesterol (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">21 to 629</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3618</td>
+                <td class="values" align="right">3618</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">416</td>
+                <td class="values" align="right">4034</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDLDLSI">LBDLDLSI - LDL-cholesterol (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDLDLSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>LDL-cholesterol (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">LDL-cholesterol (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.543 to 16.266</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3618</td>
+                <td class="values" align="right">3618</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">416</td>
+                <td class="values" align="right">4034</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

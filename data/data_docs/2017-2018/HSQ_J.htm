@@ -1,0 +1,962 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>HSQ_J</title>
+    <meta name="title" content="NHANES 2017-2018: Current Health Status Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#HSD010">HSD010 - General health condition</a>
+              </li>
+              <li>
+                <a href="#HSQ500">HSQ500 - SP have head cold or chest cold</a>
+              </li>
+              <li>
+                <a href="#HSQ510">HSQ510 - SP have stomach or intestinal illness?</a>
+              </li>
+              <li>
+                <a href="#HSQ520">HSQ520 - SP have flu, pneumonia, ear infection?</a>
+              </li>
+              <li>
+                <a href="#HSQ571">HSQ571 - SP donated blood in past 12 months?</a>
+              </li>
+              <li>
+                <a href="#HSQ580">HSQ580 - How long ago was last blood donation?</a>
+              </li>
+              <li>
+                <a href="#HSQ590">HSQ590 - Blood ever tested for HIV virus?</a>
+              </li>
+              <li>
+                <a href="#HSAQUEX">HSAQUEX - Source of Health Status Data </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2017-2018 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Current Health Status (HSQ_J)</h3>
+        <h4> Data File: HSQ_J.xpt</h4>
+        <h5 class="left">First Published: February 2020</h5>
+        <h5 class="right">Last Revised: NA</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The Current Health Status section (variable name prefix HSQ) provides personal interview data on overall health assessment, recent illness (past 30 days), blood donation, and HIV testing.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Study participants aged 1-11 years are only asked 3 questions regarding recent illness (HSQ500, HSQ510, and HSQ520). The remaining questions are asked of participants 12 years of age and older, except for the blood donation and HIV testing questions, which are asked of participants 16 years of age and older.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The current health status questionnaire was done in the Mobile Examination Center (MEC), by trained interviewers, using the Computer-Assisted Personal Interview (CAPI) system. It was conducted by a MEC interviewer, during the MEC Interview, for participants 12 and older. It was conducted by a dietary interviewer, during the MEC dietary recall interview, for participants 1-11 years old (proxy interview).</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p class="Header13pt">The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.
+</p>
+<p class="Header13pt">
+All of the data was reviewed for accuracy and completeness. </p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Frequency counts were verified during the preparation of the file.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><span style="text-decoration: underline;">HSD010 </span>This identical question is asked in the Hospital Utilization section of the household questionnaire (HUQ010). There is a small difference in the administration of the two questions. Participants aged 12-15 years have proxy responses in the household, but respond for themselves at the MEC. Many participants had different responses to this question in the household interview, compared to their responses during the MEC interview. Analysts should consider which of the two versions of this question is best to use for the purposes of their analyses.</p>
+<p><span style="text-decoration: underline;">HSQ500, HSQ510, and HSQ520</span> were asked in the Dietary Recall section for participants aged 1&ndash;11 years. Respondents 12 years and older were asked the same questions during the MEC Interview using CAPI. (The variable HSAQUEX identifies the source of data for each respondent.)</p>
+<p><span style="text-decoration: underline;">HSQ571</span> The question on blood donation, HSQ570, was re-worded in 2002 (dropping the phrase &ldquo;a year ago&rdquo;) and was re-numbered HSQ571. For the 2001-2002 data release, responses to both versions of this question were combined into one variable, named HSD570. For data releases from 2003-2017, only question HSQ571 was asked.</p>
+<p>Exam sample weights should be used for analyses. Please refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" target="_blank">NHANES Analytic Guidelines </a>and the on-line <a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx" target="_blank">NHANES Tutorial</a> for further details on the use of sample weights and other analytic issues. </p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSD010">HSD010 - General health condition</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSD010</dd>
+            <dt>SAS Label: </dt>
+            <dd>General health condition</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Next I have some general questions about {your/SP's} health. Would you say {your/SP's} health in general is . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Excellent</td>
+                <td class="values" align="right">619</td>
+                <td class="values" align="right">619</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Very good,</td>
+                <td class="values" align="right">1544</td>
+                <td class="values" align="right">2163</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Good,</td>
+                <td class="values" align="right">2454</td>
+                <td class="values" align="right">4617</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Fair, or</td>
+                <td class="values" align="right">1175</td>
+                <td class="values" align="right">5792</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Poor?</td>
+                <td class="values" align="right">172</td>
+                <td class="values" align="right">5964</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5965</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">5968</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2398</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSQ500">HSQ500 - SP have head cold or chest cold</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSQ500</dd>
+            <dt>SAS Label: </dt>
+            <dd>SP have head cold or chest cold</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {you/SP} have a head cold or chest cold that started during those 30 days?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD HSQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1328</td>
+                <td class="values" align="right">1328</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6163</td>
+                <td class="values" align="right">7491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">7500</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">7543</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">823</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSQ510">HSQ510 - SP have stomach or intestinal illness?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSQ510</dd>
+            <dt>SAS Label: </dt>
+            <dd>SP have stomach or intestinal illness?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {you/SP} have a stomach or intestinal illness with vomiting or diarrhea that started during those 30 days?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD HSQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">599</td>
+                <td class="values" align="right">599</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6913</td>
+                <td class="values" align="right">7512</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">7522</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">7543</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">823</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSQ520">HSQ520 - SP have flu, pneumonia, ear infection?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSQ520</dd>
+            <dt>SAS Label: </dt>
+            <dd>SP have flu, pneumonia, ear infection?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {you/SP} have flu, pneumonia, or ear infections that started during those 30 days?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD HSQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">345</td>
+                <td class="values" align="right">345</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">7173</td>
+                <td class="values" align="right">7518</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">7527</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">7543</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">823</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSQ571">HSQ571 - SP donated blood in past 12 months?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSQ571</dd>
+            <dt>SAS Label: </dt>
+            <dd>SP donated blood in past 12 months?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 12 months, that is, since (DISPLAY CURRENT MONTH, DISPLAY LAST YEAR), (have you/has SP) donated blood?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">276</td>
+                <td class="values" align="right">276</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5140</td>
+                <td class="values" align="right">5416</td>
+                <td class="values">HSQ590</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5416</td>
+                <td class="values">HSQ590</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">5419</td>
+                <td class="values">HSQ590</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2947</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSQ580">HSQ580 - How long ago was last blood donation?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSQ580</dd>
+            <dt>SAS Label: </dt>
+            <dd>How long ago was last blood donation?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long ago was {your/SP's} last blood donation?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF LESS THAN ONE MONTH, ENTER '1'. ENTER NUMBER OF MONTHS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">53</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">111</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">4</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">144</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">5</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">6</td>
+                <td class="values" align="right">40</td>
+                <td class="values" align="right">195</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">7</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">210</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">8</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">226</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">9</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">233</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">10</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">245</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">11</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">263</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">12</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">269</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">269</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">274</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8092</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSQ590">HSQ590 - Blood ever tested for HIV virus?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSQ590</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blood ever tested for HIV virus?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Except for tests {you/SP} may have had as part of blood donations, {have you/has he/has she} ever had {your/his/her} blood tested for the AIDS virus infection?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1954</td>
+                <td class="values" align="right">1954</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3275</td>
+                <td class="values" align="right">5229</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5229</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">190</td>
+                <td class="values" align="right">5419</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2947</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="HSAQUEX">HSAQUEX - Source of Health Status Data </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HSAQUEX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Source of Health Status Data </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Source of Health Status Data</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Dietary Recall Component -- B(1-11)</td>
+                <td class="values" align="right">1965</td>
+                <td class="values" align="right">1965</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">MEC CAPI Questionnaire -- B(12-150)</td>
+                <td class="values" align="right">6401</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8366</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

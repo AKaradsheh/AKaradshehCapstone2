@@ -1,0 +1,3690 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>VIX_C</title>
+    <meta name="title" content="NHANES 2003-2004: Vision Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Protocol_and_Procedure">Protocol and Procedure</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#VIQ110">VIQ110 - SP has a severe eye infection?</a>
+              </li>
+              <li>
+                <a href="#VIQ121">VIQ121 - Which eye(s) infected?</a>
+              </li>
+              <li>
+                <a href="#VIQ130">VIQ130 - Is SP wearing an eye patch?</a>
+              </li>
+              <li>
+                <a href="#VIQ141">VIQ141 - Which eye has eye patch?</a>
+              </li>
+              <li>
+                <a href="#VIQ150">VIQ150 - Glasses/contact lenses for near work?</a>
+              </li>
+              <li>
+                <a href="#VIQ160">VIQ160 - Glasses/contact lenses available?</a>
+              </li>
+              <li>
+                <a href="#VIQ170">VIQ170 - Glasses or contacts worn for near test?</a>
+              </li>
+              <li>
+                <a href="#VIXNC1">VIXNC1 - Line read on near card</a>
+              </li>
+              <li>
+                <a href="#VIXNC2">VIXNC2 - Testing distance of near card</a>
+              </li>
+              <li>
+                <a href="#VIQ180">VIQ180 - Eye surgery for near sightedness?</a>
+              </li>
+              <li>
+                <a href="#VIQ191">VIQ191 - Which eye(s) surgery - near-sightedness?</a>
+              </li>
+              <li>
+                <a href="#VIQ200">VIQ200 - Eye surgery for cataracts?</a>
+              </li>
+              <li>
+                <a href="#VIQ211">VIQ211 - Which eye(s) cataract surgery?</a>
+              </li>
+              <li>
+                <a href="#VIQ220">VIQ220 - Glasses/contact lenses worn for distance</a>
+              </li>
+              <li>
+                <a href="#VIQ230">VIQ230 - Is distance correction available?</a>
+              </li>
+              <li>
+                <a href="#VIQ240">VIQ240 - Which type? Glasses or contacts?</a>
+              </li>
+              <li>
+                <a href="#VIQ250">VIQ250 - Was prescription obtained?</a>
+              </li>
+              <li>
+                <a href="#VIXPRS">VIXPRS - Prescription, right sphere</a>
+              </li>
+              <li>
+                <a href="#VIXPRC">VIXPRC - Prescription, right cylinder</a>
+              </li>
+              <li>
+                <a href="#VIXPRA">VIXPRA - Prescription, right axis</a>
+              </li>
+              <li>
+                <a href="#VIXPLS">VIXPLS - Prescription, left sphere</a>
+              </li>
+              <li>
+                <a href="#VIXPLC">VIXPLC - Prescription, left cylinder</a>
+              </li>
+              <li>
+                <a href="#VIXPLA">VIXPLA - Prescription, left axis</a>
+              </li>
+              <li>
+                <a href="#VIXOCMT">VIXOCMT - Visual Acuity Comments</a>
+              </li>
+              <li>
+                <a href="#VIXORSM">VIXORSM - OR right sphere, median</a>
+              </li>
+              <li>
+                <a href="#VIXORCM">VIXORCM - OR right cylinder, median</a>
+              </li>
+              <li>
+                <a href="#VIXORAM">VIXORAM - OR right axis, median</a>
+              </li>
+              <li>
+                <a href="#VIDORFM">VIDORFM - OR right confidence level reading</a>
+              </li>
+              <li>
+                <a href="#VIXOLSM">VIXOLSM - OR left sphere, median</a>
+              </li>
+              <li>
+                <a href="#VIXOLCM">VIXOLCM - OR left cylinder, median</a>
+              </li>
+              <li>
+                <a href="#VIXOLAM">VIXOLAM - OR left axis, median</a>
+              </li>
+              <li>
+                <a href="#VIDOLFM">VIDOLFM - OR left confidence level reading</a>
+              </li>
+              <li>
+                <a href="#VIXKRM1">VIXKRM1 - Right keratometry radius flat curve (mm)</a>
+              </li>
+              <li>
+                <a href="#VIXKRD1">VIXKRD1 - Right keratometry power flat curve (D)</a>
+              </li>
+              <li>
+                <a href="#VIXKRG1">VIXKRG1 - Right keratometry axis flat curve (deg)</a>
+              </li>
+              <li>
+                <a href="#VIXKRM2">VIXKRM2 - Right keratometry radius steep curve(mm)</a>
+              </li>
+              <li>
+                <a href="#VIXKRD2">VIXKRD2 - Right keratometry power steep curve (D)</a>
+              </li>
+              <li>
+                <a href="#VIXKRG2">VIXKRG2 - Right keratometry axis steep curve (deg)</a>
+              </li>
+              <li>
+                <a href="#VIXKRMM">VIXKRMM - Right keratometry radius, average (mm)</a>
+              </li>
+              <li>
+                <a href="#VIXKRDM">VIXKRDM - Right keratometry power, average (D)</a>
+              </li>
+              <li>
+                <a href="#VIXKRCD">VIXKRCD - Right keratometry cylinder</a>
+              </li>
+              <li>
+                <a href="#VIXKRCG">VIXKRCG - Right keratometry axis (deg)</a>
+              </li>
+              <li>
+                <a href="#VIXKLM1">VIXKLM1 - Left keratometry radius flat curve (mm)</a>
+              </li>
+              <li>
+                <a href="#VIXKLD1">VIXKLD1 - Left keratometry power flat curve (D)</a>
+              </li>
+              <li>
+                <a href="#VIXKLG1">VIXKLG1 - Left keratometry axis flat curve (deg)</a>
+              </li>
+              <li>
+                <a href="#VIXKLM2">VIXKLM2 - Left keratometry radius steep curve (mm)</a>
+              </li>
+              <li>
+                <a href="#VIXKLD2">VIXKLD2 - Left keratometry power steep curve (D)</a>
+              </li>
+              <li>
+                <a href="#VIXKLG2">VIXKLG2 - Left keratometry axis steep curve (deg)</a>
+              </li>
+              <li>
+                <a href="#VIXKLMM">VIXKLMM - Left keratometry radius, average (mm)</a>
+              </li>
+              <li>
+                <a href="#VIXKLDM">VIXKLDM - Left keratometry power, average (D)</a>
+              </li>
+              <li>
+                <a href="#VIXKLCD">VIXKLCD - Left keratometry cylinder</a>
+              </li>
+              <li>
+                <a href="#VIXKLCG">VIXKLCG - Left keratometry axis (deg)</a>
+              </li>
+              <li>
+                <a href="#VIDRVA">VIDRVA - Right visual acuity, presenting</a>
+              </li>
+              <li>
+                <a href="#VIDLVA">VIDLVA - Left visual acuity, presenting</a>
+              </li>
+              <li>
+                <a href="#VIDROVA">VIDROVA - Right visual acuity, w/ obj. refraction</a>
+              </li>
+              <li>
+                <a href="#VIDLOVA">VIDLOVA - Left visual acuity, w/ obj. refraction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Vision (VIX_C)</h3>
+        <h4> Data File: VIX_C.xpt</h4>
+        <h5 class="left">First Published: December 2005</h5>
+        <h5 class="right">Last Revised: NA</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES Vision Examination data will be used to: </p>
+<ol>
+    <li>measure the prevalence of visual acuity impairment (visual acuity worse than 20/40) in the U.S. population; </li>
+    <li>measure the distribution of refractive error in the U.S. population; and </li>
+    <li>evaluate functional impairment related to vision. </li>
+</ol>
+<p>The NHANES 2003&ndash;2004 Vision Examination consisted of three parts: </p>
+<p>Eye Glasses Prescription Determination &ndash; For persons 12 years of age and older, eye glass prescriptions are measured when eye glasses for viewing distant objects are available. </p>
+<p>Distance Visual Acuity and Objective Refraction/Keratometric Evaluation &ndash; For all persons 12 years and older, distance vision is assessed regardless of whether they wear eyeglasses or contacts; the refraction test measures the person&rsquo;s refractive error and corneal curvature. </p>
+<p>Vision Near Card Test &ndash; For persons 50 years and over, visual acuity at near was assessed.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All sample persons aged 12 years and older are eligible to participate in (1) automated determination of prescription for eye glasses used to view distant objects, (2) distance visual acuity assessment and (3) automated objective refraction/keratometric evaluation. Sample persons aged 50 years and older are also eligible for the Near Card visual acuity test. </p>
+<p>Participants were excluded from the Vision Exam if they were determined to be completely blind or unable to see in both eyes based on the following question asked in the Sample Person Household Interview: &ldquo;With both eyes open, can you see light?&rdquo; Participants were also excluded from the exam if they had a severe eye infection (i.e., purulent discharge with redness and inflammation) in one or both eyes. A participant wearing an eye patch would not be excluded; however, the exam would not be conducted on the affected eye.</p><h2 id="Protocol_and_Procedure">Protocol and Procedure</h2><p>The vision exam included measurements of: 1) eyeglass prescription for glasses used to view distant objects; 2) presenting visual acuity with current correction; 3) visual acuity incorporating objective refraction; and 4) near-vision acuity.</p>
+<p>Health technicians completed screening questions that involved observation of the subject to determine if the medical exclusion criteria applied. The sample person was then asked additional screening questions (e.g. do they wear any distance correction) to determine which measurements in the examination protocol were relevant. </p>
+<p>If the sample person wore eyeglasses to see distant objects, their current eyeglass prescription was determined by using the Nidek Auto Lensmeter Model LM-990A. The Nidek Auto Refractor Model ARK-760 instrument was used to assess visual acuity. Presenting visual acuity was tested with whatever distance correction the participant usually wears, if any. If the participant&rsquo;s visual acuity with their usual correction was 20/30 or worse, visual acuity was further assessed using the objective refraction measurements as the &ldquo;correction factor&rdquo; for the participant. </p>
+<p>For sample persons aged 50 years and older, near vision was tested with a near vision card, and usual reading distance was recorded prior to measuring their presenting distance visual acuity. <br />
+The Nidek Auto Lensmeter Model LM-990A and the Nidek Auto Refractor Model ARK-760 instruments have been used since 1999. </p>
+<p>The Vision Examination Protocol is discussed in detail in the NHANES Vision Procedures Manual.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>A variety of quality control procedures were used to ensure the accurate and reliable collection of these data. Calibrations of the lensmeter and the autorefractor were performed prior to conducting examinations at each survey location, and weekly thereafter. At regular intervals, NCHS and contractor staff observed vision examinations conducted in the MEC to evaluate whether appropriate procedures and techniques were being followed. Retraining sessions were conducted with all MEC health technicians to review data collection procedures. </p>
+<p>The MEC health technicians conducted the vision examination. These technicians received 8 weeks of training initially, and subsequently underwent updates and remedial training as needed. Technicians referred to the Vision Procedures Manual for specific instructions for the administration of this component. <br />
+For details on the QA/QC process for this component, please refer to the NHANES Vision Procedures Manual.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ110">VIQ110 - SP has a severe eye infection?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ110</dd>
+            <dt>SAS Label: </dt>
+            <dd>SP has a severe eye infection?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Does SP appear to have a severe eye infection in one or both eyes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">The examiner observes the examinee's eyes for possible infection.  If either eye has a sign of infection, the examinee is excluded from the vision component.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6527</td>
+                <td class="values" align="right">6530</td>
+                <td class="values">VIQ130</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">460</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ121">VIQ121 - Which eye(s) infected?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ121</dd>
+            <dt>SAS Label: </dt>
+            <dd>Which eye(s) infected?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">if VIQ110 = "Yes" record which eye(s) is/are affected.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6987</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ130">VIQ130 - Is SP wearing an eye patch?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ130</dd>
+            <dt>SAS Label: </dt>
+            <dd>Is SP wearing an eye patch?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Is SP wearing an eye patch?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Although the SP is not excluded from the vision examination because he/she wears an eye patch, the examiner will not conduct the examination on the affected eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6526</td>
+                <td class="values" align="right">6527</td>
+                <td class="values">VIQ150</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">463</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ141">VIQ141 - Which eye has eye patch?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ141</dd>
+            <dt>SAS Label: </dt>
+            <dd>Which eye has eye patch?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If VIQ130 = "Yes" record which eye(s) is/are affected.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6989</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ150">VIQ150 - Glasses/contact lenses for near work?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ150</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glasses/contact lenses for near work?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you wear glasses or contact lenses for reading or near work?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1870</td>
+                <td class="values" align="right">1870</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">268</td>
+                <td class="values" align="right">2138</td>
+                <td class="values">VIXNC1</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2140</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4850</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ160">VIQ160 - Glasses/contact lenses available?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ160</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glasses/contact lenses available?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If VIQ150 = "Yes", record if the examinee brought their near work glasses, contacts, or a combination of glasses and/or contacts to the testing facility.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1617</td>
+                <td class="values" align="right">1617</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">253</td>
+                <td class="values" align="right">1870</td>
+                <td class="values">VIXNC1</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5120</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ170">VIQ170 - Glasses or contacts worn for near test?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ170</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glasses or contacts worn for near test?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If VIQ160 = "Yes", record whether the examinee wore glasses, contacts, or a combination of glasses and/or contacts for test of near vision.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Glasses</td>
+                <td class="values" align="right">1587</td>
+                <td class="values" align="right">1587</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Contacts</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">1611</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both glasses and contact lenses</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1617</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5373</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXNC1">VIXNC1 - Line read on near card</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXNC1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Line read on near card</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The number of the last line the examinee read with one or fewer misses, that is the number of the last line where the examinee read at least four out of the five characters correctly.  Line 1 has the largest print: line 5 has the smallest print.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2133</td>
+                <td class="values" align="right">2133</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2140</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4850</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXNC2">VIXNC2 - Testing distance of near card</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXNC2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Testing distance of near card</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Record to the nearest inch the distance from the center of the card to the examinee's brow.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">A measuring tape is used to determine the distance.  (Rounding rule:  Numbers less than 0.5, round down (example 16 1/4 = 16) and numbers equal to or greater than 0.5, round up (13 1/2 = 14, 21 3/4 = 22).)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 50 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 31</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2133</td>
+                <td class="values" align="right">2133</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2140</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4850</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ180">VIQ180 - Eye surgery for near sightedness?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ180</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eye surgery for near sightedness?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had eye surgery to treat or prevent nearsightedness or myopia?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">The interest is in laser or radial keratotomy (RK) surgeries used to improve nearsightedness.  Some other terms to describe this surgery include:  PRK, RK, Lasik, Eximer, or Refractive Surgery.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">58</td>
+                <td class="values" align="right">58</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6463</td>
+                <td class="values" align="right">6521</td>
+                <td class="values">VIQ200</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">6526</td>
+                <td class="values">VIQ200</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">464</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ191">VIQ191 - Which eye(s) surgery - near-sightedness?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ191</dd>
+            <dt>SAS Label: </dt>
+            <dd>Which eye(s) surgery - near-sightedness?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If VIQ180 = "Yes", record which eye(s) was/were operated on.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">58</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ200">VIQ200 - Eye surgery for cataracts?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ200</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eye surgery for cataracts?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had eye surgery to treat cataracts?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">425</td>
+                <td class="values" align="right">425</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6092</td>
+                <td class="values" align="right">6517</td>
+                <td class="values">VIQ220</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">6526</td>
+                <td class="values">VIQ220</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">464</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ211">VIQ211 - Which eye(s) cataract surgery?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ211</dd>
+            <dt>SAS Label: </dt>
+            <dd>Which eye(s) cataract surgery?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">if VIQ200 = "Yes", record which eye(s) was/were operated on for cataracts.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">74</td>
+                <td class="values" align="right">74</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">124</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">424</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">425</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6565</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ220">VIQ220 - Glasses/contact lenses worn for distance</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ220</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glasses/contact lenses worn for distance</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you wear glasses or contact lenses for distance vision, such as when you watch television?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2819</td>
+                <td class="values" align="right">2819</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3702</td>
+                <td class="values" align="right">6521</td>
+                <td class="values">VIXOCMT</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">6526</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">464</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ230">VIQ230 - Is distance correction available?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ230</dd>
+            <dt>SAS Label: </dt>
+            <dd>Is distance correction available?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If VIQ220 = "Yes", record if  examinee brought their distance correction to the testing center.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">The SP could be wearing the correction or brought it with them.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2413</td>
+                <td class="values" align="right">2413</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">406</td>
+                <td class="values" align="right">2819</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4171</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ240">VIQ240 - Which type? Glasses or contacts?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ240</dd>
+            <dt>SAS Label: </dt>
+            <dd>Which type? Glasses or contacts?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If VIQ230 = "Yes", record the type of correction (glasses, contacts, or a combination of glasses and contacts) the SP has with them.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">This specifies the type of correction worn by the SP for the presenting VA tests (VIDRVA and VIDLVA).</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Glasses</td>
+                <td class="values" align="right">2010</td>
+                <td class="values" align="right">2010</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Contacts</td>
+                <td class="values" align="right">350</td>
+                <td class="values" align="right">2360</td>
+                <td class="values">VIXOCMT</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both glasses and contact lenses</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">2413</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4577</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ250">VIQ250 - Was prescription obtained?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ250</dd>
+            <dt>SAS Label: </dt>
+            <dd>Was prescription obtained?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did the examiner capture the prescription of the examinee's lens?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">This pertains to the lens prescription used for viewing distant objects.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2057</td>
+                <td class="values" align="right">2057</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXPRS">VIXPRS - Prescription, right sphere</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXPRS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Prescription, right sphere</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The prescription of the sphere in the right lens used for distance correction.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">For distance eyeglasses only.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-15 to 6.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1989</td>
+                <td class="values" align="right">1989</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXPRC">VIXPRC - Prescription, right cylinder</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXPRC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Prescription, right cylinder</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Prescription of the cylinder in the right lens used for distance correction</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">For distance eyeglasses only
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 7.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1989</td>
+                <td class="values" align="right">1989</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXPRA">VIXPRA - Prescription, right axis</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXPRA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Prescription, right axis</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Prescription of the axis in the right lens used for distance correction</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">For distance eyeglasses only.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1989</td>
+                <td class="values" align="right">1989</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXPLS">VIXPLS - Prescription, left sphere</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXPLS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Prescription, left sphere</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Prescription of the sphere in the left lens used for distance correction.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">For distance eyeglasses only.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-14 to 8</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1988</td>
+                <td class="values" align="right">1988</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">70</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXPLC">VIXPLC - Prescription, left cylinder</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXPLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Prescription, left cylinder</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Prescription of the cylinder in the left lens used for distance correction.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">For distance eyeglasses only.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 8.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1988</td>
+                <td class="values" align="right">1988</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">70</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXPLA">VIXPLA - Prescription, left axis</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXPLA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Prescription, left axis</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Prescription of the axis in the left lens used for distance correction.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">For distance eyeglasses only
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1988</td>
+                <td class="values" align="right">1988</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">70</td>
+                <td class="values" align="right">2058</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4932</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXOCMT">VIXOCMT - Visual Acuity Comments</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXOCMT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Visual Acuity Comments</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The examiner can note special circumstances related to a visual acuity test.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">These apply to distance vision tests.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Monovision glasses/contacts worn for visual acuity</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">9</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Cataract contact lenses worn for objective refraction</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Contacts worn for objective refraction</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Artificial eye</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">27</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Monovision contacts worn for objective refraction</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Contact in right eye only for presenting visual acuity</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Contact in left eye only for presenting visual acuity</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">33</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6957</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXORSM">VIXORSM - OR right sphere, median</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXORSM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR right sphere, median</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Spherical dioptric power (median value of three objective refractions) of the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-21.75 to 6.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6296</td>
+                <td class="values" align="right">6296</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">197</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXORCM">VIXORCM - OR right cylinder, median</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXORCM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR right cylinder, median</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cylindrical dioptric power (median value of three objective refractions) of the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 8.25</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6296</td>
+                <td class="values" align="right">6296</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">197</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXORAM">VIXORAM - OR right axis, median</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXORAM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR right axis, median</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Axis of refractive astigmatism (median value of three objective refractions) of the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6296</td>
+                <td class="values" align="right">6296</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">197</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIDORFM">VIDORFM - OR right confidence level reading</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIDORFM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR right confidence level reading</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The confidence level of the objective refraction reading for the right eye (mean of three measures).</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Lower values equate to less confidence in the objective refraction values.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6322</td>
+                <td class="values" align="right">6322</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">668</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXOLSM">VIXOLSM - OR left sphere, median</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXOLSM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR left sphere, median</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Spherical dioptric power (median value of three objective refractions) of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-19.75 to 11</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6264</td>
+                <td class="values" align="right">6264</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">229</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXOLCM">VIXOLCM - OR left cylinder, median</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXOLCM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR left cylinder, median</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cylindrical dioptric power (median value of three objective refractions) of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 7.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6264</td>
+                <td class="values" align="right">6264</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">229</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXOLAM">VIXOLAM - OR left axis, median</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXOLAM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR left axis, median</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Axis of refractive astigmatism (median value of three objective refractions) of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6264</td>
+                <td class="values" align="right">6264</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">229</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIDOLFM">VIDOLFM - OR left confidence level reading</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIDOLFM</dd>
+            <dt>SAS Label: </dt>
+            <dd>OR left confidence level reading</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The confidence level of the objective refraction reading of the left eye (mean of three measures).</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Lower values equate to less confidence in the objective refraction values.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6352</td>
+                <td class="values" align="right">6352</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">638</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRM1">VIXKRM1 - Right keratometry radius flat curve (mm)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRM1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry radius flat curve (mm)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure. Radius of corneal curvature (in mm) in the least power meridian of the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.96 to 9.91</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRD1">VIXKRD1 - Right keratometry power flat curve (D)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRD1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry power flat curve (D)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Dioptric power in the least power meridian of the cornea in the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">34 to 56.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRG1">VIXKRG1 - Right keratometry axis flat curve (deg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRG1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry axis flat curve (deg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure. Axis of corneal astigmatism (in degrees) in the least power meridian of the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6441</td>
+                <td class="values" align="right">6441</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRM2">VIXKRM2 - Right keratometry radius steep curve(mm)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRM2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry radius steep curve(mm)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure. Radius of corneal curvature (in mm) in the greatest power  meridian of the examinee's right eye</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4.94 to 9.04</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRD2">VIXKRD2 - Right keratometry power steep curve (D)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRD2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry power steep curve (D)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Dioptric power in the meridian of the cornea with the greatest power in the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">37.25 to 68.25</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRG2">VIXKRG2 - Right keratometry axis steep curve (deg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRG2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry axis steep curve (deg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Axis of corneal astigmatism (in degrees) in the greatest power meridian of the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 179</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6441</td>
+                <td class="values" align="right">6441</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRMM">VIXKRMM - Right keratometry radius, average (mm)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRMM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry radius, average (mm)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Radius of corneal curvature (in mm) averaged across meridians in the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.81 to 9.09</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRDM">VIXKRDM - Right keratometry power, average (D)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRDM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry power, average (D)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Dioptric power of the cornea averaged across meridians in the examinee's right eye</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">37.25 to 58</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRCD">VIXKRCD - Right keratometry cylinder</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRCD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry cylinder</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Difference in dioptric power between meridians of the cornea in the examinee's right eye</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 32.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6442</td>
+                <td class="values" align="right">6442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKRCG">VIXKRCG - Right keratometry axis (deg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKRCG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right keratometry axis (deg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Axis of corneal astigmatism (in degrees) in the steepest meridian of the cornea in the examinee's right eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 179</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6441</td>
+                <td class="values" align="right">6441</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLM1">VIXKLM1 - Left keratometry radius flat curve (mm)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLM1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry radius flat curve (mm)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Radius of corneal curvature (in mm) in the least power meridian of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6.13 to 10</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLD1">VIXKLD1 - Left keratometry power flat curve (D)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLD1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry power flat curve (D)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Dioptric power in the least power meridian of the cornea in the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">33.75 to 55</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLG1">VIXKLG1 - Left keratometry axis flat curve (deg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLG1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry axis flat curve (deg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Axis of corneal astigmatism (in degrees) in the least power median of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLM2">VIXKLM2 - Left keratometry radius steep curve (mm)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLM2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry radius steep curve (mm)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Radius of corneal curvature (in mm) in the greatest power meridian of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.55 to 8.98</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLD2">VIXKLD2 - Left keratometry power steep curve (D)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLD2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry power steep curve (D)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Dioptric power in the meridian of the cornea with the greatest power in the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">37.5 to 60.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLG2">VIXKLG2 - Left keratometry axis steep curve (deg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLG2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry axis steep curve (deg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Axis of corneal astigmatism (in degrees) in the greatest power meridian of the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLMM">VIXKLMM - Left keratometry radius, average (mm)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLMM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry radius, average (mm)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Radius of corneal curvature (in mm) averaged across meridians in the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.85 to 9.09</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLDM">VIXKLDM - Left keratometry power, average (D)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLDM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry power, average (D)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Dioptric power of the cornea averaged across meridians in the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">37.25 to 57.75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLCD">VIXKLCD - Left keratometry cylinder</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLCD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry cylinder</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Difference in dioptric power between meridians of the cornea in the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 18.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIXKLCG">VIXKLCG - Left keratometry axis (deg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIXKLCG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left keratometry axis (deg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Keratometric measure.  Axis of corneal astigmatism (in degrees) in the steepest meridian of the cornea in the examinee's left eye.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 180</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6451</td>
+                <td class="values" align="right">6451</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">888</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">6493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIDRVA">VIDRVA - Right visual acuity, presenting</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIDRVA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right visual acuity, presenting</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The presenting visual acuity of the right eye with usual correction.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Usual correction could be: eyeglasses, contacts, eyeglasses and contacts, or no correction depending on what the SP wore (or brought with them) to view distant objects on the day they visited the MEC (see VIQ230 and VIQ240). </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">20</td>
+                <td class="values">20/20</td>
+                <td class="values" align="right">2776</td>
+                <td class="values" align="right">2776</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">25</td>
+                <td class="values">20/25</td>
+                <td class="values" align="right">1638</td>
+                <td class="values" align="right">4414</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">30</td>
+                <td class="values">20/30</td>
+                <td class="values" align="right">613</td>
+                <td class="values" align="right">5027</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">40</td>
+                <td class="values">20/40</td>
+                <td class="values" align="right">320</td>
+                <td class="values" align="right">5347</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">50</td>
+                <td class="values">20/50</td>
+                <td class="values" align="right">666</td>
+                <td class="values" align="right">6013</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">60</td>
+                <td class="values">20/60</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">6117</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">80</td>
+                <td class="values">20/80</td>
+                <td class="values" align="right">85</td>
+                <td class="values" align="right">6202</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">200</td>
+                <td class="values">20/200</td>
+                <td class="values" align="right">161</td>
+                <td class="values" align="right">6363</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">666</td>
+                <td class="values">20/200+</td>
+                <td class="values" align="right">85</td>
+                <td class="values" align="right">6448</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">542</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIDLVA">VIDLVA - Left visual acuity, presenting</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIDLVA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left visual acuity, presenting</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The presenting visual acuity of the left eye with usual correction.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Usual correction could be: eyeglasses, contacts, eyeglasses and contacts, or no correction depending on what the SP wore (or brought with them) to view distant objects on the day they visited the MEC (see VIQ230 and VIQ240). </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">20</td>
+                <td class="values">20/20</td>
+                <td class="values" align="right">2818</td>
+                <td class="values" align="right">2818</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">25</td>
+                <td class="values">20/25</td>
+                <td class="values" align="right">1566</td>
+                <td class="values" align="right">4384</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">30</td>
+                <td class="values">20/30</td>
+                <td class="values" align="right">643</td>
+                <td class="values" align="right">5027</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">40</td>
+                <td class="values">20/40</td>
+                <td class="values" align="right">312</td>
+                <td class="values" align="right">5339</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">50</td>
+                <td class="values">20/50</td>
+                <td class="values" align="right">685</td>
+                <td class="values" align="right">6024</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">60</td>
+                <td class="values">20/60</td>
+                <td class="values" align="right">78</td>
+                <td class="values" align="right">6102</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">80</td>
+                <td class="values">20/80</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">6183</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">200</td>
+                <td class="values">20/200</td>
+                <td class="values" align="right">160</td>
+                <td class="values" align="right">6343</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">666</td>
+                <td class="values">20/200+</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">6447</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">543</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIDROVA">VIDROVA - Right visual acuity, w/ obj. refraction</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIDROVA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right visual acuity, w/ obj. refraction</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The visual acuity with objective refraction of the right eye.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">This is the visual acuity reported by the SP after the autorefractor inserted what it deemed, based on the objective refraction, to be the most appropriate lens (if any) to allow the eye to see 20/25 or better.  This test was only performed on eyes whose presenting visual acuity was 20/30 or worse.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">25</td>
+                <td class="values">20/25</td>
+                <td class="values" align="right">1356</td>
+                <td class="values" align="right">1356</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">30</td>
+                <td class="values">20/30</td>
+                <td class="values" align="right">122</td>
+                <td class="values" align="right">1478</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">40</td>
+                <td class="values">20/40</td>
+                <td class="values" align="right">120</td>
+                <td class="values" align="right">1598</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">50</td>
+                <td class="values">20/50</td>
+                <td class="values" align="right">221</td>
+                <td class="values" align="right">1819</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">60</td>
+                <td class="values">20/60</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1834</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">80</td>
+                <td class="values">20/80</td>
+                <td class="values" align="right">28</td>
+                <td class="values" align="right">1862</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">200</td>
+                <td class="values">20/200</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">1904</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">666</td>
+                <td class="values">20/200+</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">1935</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5055</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIDLOVA">VIDLOVA - Left visual acuity, w/ obj. refraction</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIDLOVA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left visual acuity, w/ obj. refraction</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The visual acuity with objective refraction of the left eye.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">This is the visual acuity reported by the SP after the autorefractor inserted what it deemed, based on the objective refraction, to be the most appropriate lens (if any) to allow the eye to see 20/25 or better.  This test was only performed on eyes whose presenting visual acuity was 20/30 or worse.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">25</td>
+                <td class="values">20/25</td>
+                <td class="values" align="right">1396</td>
+                <td class="values" align="right">1396</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">30</td>
+                <td class="values">20/30</td>
+                <td class="values" align="right">142</td>
+                <td class="values" align="right">1538</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">40</td>
+                <td class="values">20/40</td>
+                <td class="values" align="right">95</td>
+                <td class="values" align="right">1633</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">50</td>
+                <td class="values">20/50</td>
+                <td class="values" align="right">197</td>
+                <td class="values" align="right">1830</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">60</td>
+                <td class="values">20/60</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">1851</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">80</td>
+                <td class="values">20/80</td>
+                <td class="values" align="right">38</td>
+                <td class="values" align="right">1889</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">200</td>
+                <td class="values">20/200</td>
+                <td class="values" align="right">39</td>
+                <td class="values" align="right">1928</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">666</td>
+                <td class="values">20/200+</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">1979</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5011</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

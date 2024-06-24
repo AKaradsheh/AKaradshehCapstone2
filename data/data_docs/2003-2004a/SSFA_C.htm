@@ -1,0 +1,1964 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SSFA_C</title>
+    <meta name="title" content="NHANES 2003-2004: Fatty Acids - Plasma (Surplus) Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					white-space: pre-line;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					padding: 0 3em 1em;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#SSMR1_N">SSMR1_N - Myristic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSML1_N">SSML1_N - Myristoleic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSPM1_N">SSPM1_N - Palmitic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSPL1_N">SSPL1_N - Palmitoleic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSST1_N">SSST1_N - Stearic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSOL1_N">SSOL1_N - Oleic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSVC1_N">SSVC1_N - cis-Vaccenic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSLNA_N">SSLNA_N - Linoleic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSGLA_N">SSGLA_N - gamma-Linolenic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSALN_N">SSALN_N - alpha-Linolenic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSHGL_N">SSHGL_N - homo-gamma-Linolenic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSAR1_N">SSAR1_N - Arachidic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSEN1_N">SSEN1_N - Eicosenoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSED1_N">SSED1_N - Eicosadienoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSARA_N">SSARA_N - Arachidonic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSEPA_N">SSEPA_N - Eicosapentaenoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSDA1_N">SSDA1_N - Docosanoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSDE1_N">SSDE1_N - Docosenoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSDTA_N">SSDTA_N - Docosatetraenoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSDP6_N">SSDP6_N - Docosapentaenoic-6 acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSDP3_N">SSDP3_N - Docosapentaenoic-3 acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSDHA_N">SSDHA_N - Docosahexaenoic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSLG1_N">SSLG1_N - Lignoceric acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#SSNR1_N">SSNR1_N - Nervonic acid (micromol/L)</a>
+              </li>
+              <li>
+                <a href="#WTSAF2YR">WTSAF2YR - 2Yr fasting weights</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Fatty Acids - Plasma (Surplus) (SSFA_C)</h3>
+        <h4> Data File: SSFA_C.xpt</h4>
+        <h5 class="left">First Published: August 2011</h5>
+        <h5 class="right">Last Revised: April 2022</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">Note: The NHANES Biospecimen Program processes were reevaluated in 2021 and 2022 to monitor quality control after a procedural error was identified. This error did not pose any risk of participant disclosure. Addressing this error resulted in the removal of some records from various stored biospecimen data files between 1999 and 2018 that did not meet program standards. After a comprehensive review of all stored specimen datasets, this data file was modified to remove records (&lt;5% of records) that were initially included in error. No data values were altered. The sample weights and overall estimates were compared between the original and revised files. The sample weights provided with the original data release are appropriate to use with this updated data file; therefore, no new survey weights were created. The overall estimates from these files were examined and are consistent with the previous file. However, not all possible analyses were performed. For any queries related to this dataset please email the Biospecimen Program at serumplasmaurine@cdc.gov. </h5>
+        </div>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Measurement of concentrations (&micro;mol/L) of 24 fatty acids in a 1,845 sample subset of NHANES 2003-2004 plasma samples.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Fasting (&ge; 8 hours) participants &ge; 20 years of age from NHANES 2003-2004.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong><em>Measurement of Plasma Fatty Acids</em></strong></p>
+<p>Modification of the method of Lagerstedt <em>et al.</em> was used to measure total fatty acid concentrations in plasma. In brief, a 100&micro;L plasma sample was spiked with 100&micro;L of a mixture of 11 internal standards (fatty acids labeled with stable isotopes) to account for recovery. Esterified fatty acids were hydrolyzed from lipids such as triglycerides, phospholipids and cholesteryl esters using sequential treatment with acid then base. Following base hydrolysis, the samples were re-acidified and total fatty acids were hexane-extracted from the matrix along with internal standards. Extracts were derivatized with pentafluorobenzyl bromide in the presence of triethylamine to form pentafluorobenzyl (PFB) esters and were reconstituted in hexane.</p>
+<p>PFB-fatty acid derivatives were injected onto a capillary gas chromatographic column to resolve individual <em>cis</em>-fatty acids of interest from other matrix constituents. Analytes were detected using electron capture negative-ion mass spectrometry. Twenty-four <em>cis</em>-fatty acids (6 saturated- (SFA), 7 monounsaturated- (MUFA), and 11 polyunsaturated- (PUFA)) were quantified using selected ion monitoring; for each fatty acid, recovery was estimated and results were adjusted using the most appropriate isotopically-labeled internal standard.</p>
+<p>Separations were carried-out on a 0.25mm &times; 60m (0.25&micro;m film thickness) cyanopropyl-methylpolysiloxane phase (50:50) capillary column at a constant flow rate of 2 mL/min helium carrier gas. Injection volume per sample was 1&micro;L; split ratios varied from 50:1 to 150:1. Injector temperature was maintained at 240&deg;C. The column heating oven started at 170&deg;C then ramped 30&deg;C/min to 230&deg;C and held for 10 min. The temperature then ramped 2&deg;C/min to 250&ordm;C and held for 4.5 minutes. All ramping of temperatures was linear. The total run time was 26.5 minutes per sample.&nbsp;</p>
+<p>Methane (reagent gas) flow rate was set at 40% of the total flow (actual flow: 2mL/min). The mass spectrometer source was set at 170&deg;C and the quadrupole was set at 150&deg;C.</p>
+<p>The acquisition method operated in negative ion mode. A selected ion monitoring (SIM) mass was monitored for each analyte and isotopically labeled standard. The 35 SIM masses were divided into SIM segments (5-7 SIM masses per segment) based on retention time. In some segments enhanced detector sensitivity was used to quantitate low abundance fatty acids.</p>
+<p>Fragmentation of PFB-fatty acid esters using negative chemical ionization (NCI) resulted in a reproducible loss of the PFB moiety giving a stable carboxylate anion (mass minus 1 amu). Filament voltage, inlet temperature, percent reagent gas flow, and source temperature were optimized to yield optimum intensity of selected compounds.</p>
+<p>Internal standards were labeled with deuterium or carbon-13.</p>
+<table>
+    <caption style="text-align: center; caption-side: top; vertical-align: top;">Internal Standards</caption>
+    <thead>
+        <tr>
+            <th id="ms__id801_heading_0">&nbsp;Fatty Acid Internal Standard</th>
+            <th id="ms__id801_heading_1">&nbsp;SIM Mass</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Myristic-d<sub>27</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;254.5</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Palmitic-d<sub>31</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;286.6</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Palmitoleic-d<sub>14</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;267.4</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Stearic-d<sub>35</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;318.6</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;<sup>13</sup>C-Oleic</td>
+            <td headers="ms__id801_heading_1">&nbsp;299.5</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;<sup>13</sup>C-Linoleic</td>
+            <td headers="ms__id801_heading_1">&nbsp;297.5</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;<em>alpha</em>-Linolenic-d<sub>14</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;291.4</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Arachidic-d<sub>39</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;350.3</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Arachidonic-d<sub>8</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;311.4</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Eicosapentaenoic-d<sub>5</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;306.4</td>
+        </tr>
+        <tr>
+            <td headers="ms__id801_heading_0">&nbsp;Docosahexaenoic-d<sub>5</sub></td>
+            <td headers="ms__id801_heading_1">&nbsp;332.4</td>
+        </tr>
+    </tbody>
+</table>
+<p>In the following table, SIM masses are grouped by the internal standard that was used to normalize recovery for the group of fatty acids. Lipid Name indicates the carbon number in the long chain: number of double bonds in the carbon chain and the n- position of the bond closest to the terminal carbon (farthest from the carbonyl carbon).</p>
+<table border="1" bordercolor="#000000">
+    <caption style="text-align: center; caption-side: top; vertical-align: top;">SIM masses and limits of detection (LOD in &micro;mol/L) for 24 fatty acids </caption>
+    <thead>
+        <tr>
+            <th>Internal Standard</th>
+            <th>Fatty Acid</th>
+            <th>Fatty Acid Code</th>
+            <th>SIM Mass</th>
+            <th>Lipid Name</th>
+            <th>LOD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Myristic-d<sub>27</sub></td>
+            <td>Myristic</td>
+            <td>SSMR1_N</td>
+            <td>227.4</td>
+            <td>C14:0</td>
+            <td>1.6</td>
+        </tr>
+        <tr>
+            <td>Myristic-d<sub>27</sub></td>
+            <td>Myristoleic</td>
+            <td>SSML1_N</td>
+            <td>225.3</td>
+            <td>C14:1 n-5</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Palmitic-d<sub>31</sub></td>
+            <td>Palmitic</td>
+            <td>SSPM1_N</td>
+            <td>255.45</td>
+            <td>C16:0</td>
+            <td>8.2</td>
+        </tr>
+        <tr>
+            <td>Palmitoleic-d<sub>14</sub></td>
+            <td>Palmitoleic</td>
+            <td>SSPL1_N</td>
+            <td>253.45</td>
+            <td>C16:1 n-7</td>
+            <td>0.6</td>
+        </tr>
+        <tr>
+            <td>Stearic-d<sub>35</sub></td>
+            <td>Stearic</td>
+            <td>SSST1_N</td>
+            <td>283.4</td>
+            <td>C18:0</td>
+            <td>23.7</td>
+        </tr>
+        <tr>
+            <td><sup>13</sup>C-Oleic</td>
+            <td>Oleic</td>
+            <td>SSOL1_N</td>
+            <td>281.5</td>
+            <td>C18:1 n-9</td>
+            <td>5.2</td>
+        </tr>
+        <tr>
+            <td><sup>13</sup>C-Oleic</td>
+            <td><em>cis</em>-Vaccenic</td>
+            <td>SSVC1_N</td>
+            <td>281.5</td>
+            <td>C18:1 n-7</td>
+            <td>0.3</td>
+        </tr>
+        <tr>
+            <td><sup>13</sup>C-Linoleic</td>
+            <td>Linoleic </td>
+            <td>SSLNA_N</td>
+            <td>279.4</td>
+            <td>C18:2 n-6</td>
+            <td>2.2</td>
+        </tr>
+        <tr>
+            <td>alpha-Linolenic-d<sub>14</sub></td>
+            <td><em>gamma</em>-Linolenic</td>
+            <td>SSGLA_N</td>
+            <td>277.4</td>
+            <td>C18:3 n-6</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>alpha-Linolenic-d<sub>14</sub></td>
+            <td><em>alpha</em>-Linolenic</td>
+            <td>SSALN_N</td>
+            <td>277.4</td>
+            <td>C18:3 n-3</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>alpha-Linolenic-d<sub>14</sub></td>
+            <td><em>homo-gamma</em>-Linolenic</td>
+            <td>SSHGL_N</td>
+            <td>305.4</td>
+            <td>C20:3 n-6</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Arachidic-d<sub>39</sub></td>
+            <td>Arachidic</td>
+            <td>SSAR1_N</td>
+            <td>311.4</td>
+            <td>C20:0</td>
+            <td>0.6</td>
+        </tr>
+        <tr>
+            <td>Arachidic-d<sub>39</sub></td>
+            <td>Eicosenoic</td>
+            <td>SSEN1_N</td>
+            <td>309.4</td>
+            <td>C20:1 n-9</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Arachidic-d<sub>39</sub></td>
+            <td>Eicosadienoic</td>
+            <td>SSED1_N</td>
+            <td>307.4</td>
+            <td>C20:2 n-6</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Arachidonic-d<sub>8</sub></td>
+            <td>Arachidonic</td>
+            <td>SSARA_N</td>
+            <td>303.4</td>
+            <td>C20:4 n-6</td>
+            <td>0.3</td>
+        </tr>
+        <tr>
+            <td>Eicosapentaenoic-d<sub>5</sub></td>
+            <td>Eicosapentaenoic</td>
+            <td>SSEPA_N</td>
+            <td>301.4</td>
+            <td>C20:5 n-3</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Eicosapentaenoic-d<sub>5</sub></td>
+            <td>Docosanoic</td>
+            <td>SSDA1_N</td>
+            <td>339.4</td>
+            <td>C22:0</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Eicosapentaenoic-d<sub>5</sub></td>
+            <td>Docosenoic</td>
+            <td>SSDE1_N</td>
+            <td>337.4</td>
+            <td>C22:1 n-9</td>
+            <td>0.3</td>
+        </tr>
+        <tr>
+            <td>Docosahexaenoic-d<sub>5</sub></td>
+            <td>Docosatetraenoic</td>
+            <td>SSDTA_N</td>
+            <td>331.4</td>
+            <td>C22:4 n-6</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Docosahexaenoic-d<sub>5</sub></td>
+            <td>Docosapentaenoic-6</td>
+            <td>SSDP6_N</td>
+            <td>329.4</td>
+            <td>C22:5 n-6</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Docosahexaenoic-d<sub>5</sub></td>
+            <td>Docosapentaenoic-3</td>
+            <td>SSDP3_N</td>
+            <td>329.4</td>
+            <td>C22:5 n-3</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Docosahexaenoic-d<sub>5</sub></td>
+            <td>Docosahexaenoic</td>
+            <td>SSDHA_N</td>
+            <td>327.4</td>
+            <td>C22:6 n-3</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Docosahexaenoic-d<sub>5</sub></td>
+            <td>Lignoceric</td>
+            <td>SSLG1_N</td>
+            <td>367.4</td>
+            <td>C24:0</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Docosahexaenoic-d<sub>5</sub></td>
+            <td>Nervonic</td>
+            <td>SSNR1_N</td>
+            <td>365.4</td>
+            <td>C24:1 n-9</td>
+            <td>0.4</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>Quantitation was accomplished by comparing the peak area of the analyte in the unknown with peak areas of known amounts of fatty acid based on calibration curves. Calibration curves were prepared for each assay using four levels (Cal 10 - Cal 40) per fatty acid. Calculations were corrected based on the peak area of the internal standard in the unknown compared with the peak area of the internal standard in the calibrator solution. Best fits of concentration versus response were obtained when 1/x<sup>2</sup> was used for all fatty acids except palmitic which used a quadratic fit to calibrate the assay. Peak area ratios (quantitation m/z: internal standard m/z) were linearly related to concentration. Calibration curves were required to have r<sup>2</sup> of at least 0.98 and calibrators were required to be within 15% of their nominal values. The overall average r<sup>2</sup> (SD) of calibration curves, including all analytes in all assays, was 0.999 (0.002).</p>
+<p>Blanks were analyzed concurrently with the samples and were used to determine if any analyte contamination had occurred. Blanks were required to be less than 20% of the lowest calibrator (Cal 10).</p>
+<table border="1" bordercolor="#000000">
+    <caption style="text-align: center; caption-side: top; vertical-align: top;">Concentrations of fatty acids in the four calibration standards</caption>
+    <thead>
+        <tr>
+            <th>Fatty Acid&nbsp;Code</th>
+            <th>Saturation</th>
+            <th>Calibrator Cal 40 (&micro;mol/L)</th>
+            <th>Calibrator Cal 30 (&micro;mol/L)</th>
+            <th>Calibrator Cal 20 (&micro;mol/L)</th>
+            <th>Calibrator Cal 10 (&micro;mol/L)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SSLG1_N</td>
+            <td>SFA</td>
+            <td>183</td>
+            <td>45.7</td>
+            <td>18.3</td>
+            <td>7.3</td>
+        </tr>
+        <tr>
+            <td>SSAR1_N</td>
+            <td>SFA</td>
+            <td>201</td>
+            <td>50.2</td>
+            <td>20.1</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>SSDA1_N</td>
+            <td>SFA</td>
+            <td>202</td>
+            <td>50.4</td>
+            <td>20.2</td>
+            <td>8.1</td>
+        </tr>
+        <tr>
+            <td>SSMR1_N</td>
+            <td>SFA</td>
+            <td>638</td>
+            <td>160</td>
+            <td>63.8</td>
+            <td>25.5</td>
+        </tr>
+        <tr>
+            <td>SSST1_N</td>
+            <td>SFA</td>
+            <td>1975</td>
+            <td>494</td>
+            <td>198</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            <td>SSPM1_N</td>
+            <td>SFA</td>
+            <td>8269</td>
+            <td>2067</td>
+            <td>827</td>
+            <td>331</td>
+        </tr>
+        <tr>
+            <td>SSEN1_N</td>
+            <td>MUFA</td>
+            <td>52</td>
+            <td>12.9</td>
+            <td>5.2</td>
+            <td>2.1</td>
+        </tr>
+        <tr>
+            <td>SSDE1_N</td>
+            <td>MUFA</td>
+            <td>54</td>
+            <td>13.4</td>
+            <td>5.4</td>
+            <td>2.1</td>
+        </tr>
+        <tr>
+            <td>SSML1 _N</td>
+            <td>MUFA</td>
+            <td>98</td>
+            <td>24.5</td>
+            <td>9.8</td>
+            <td>3.9</td>
+        </tr>
+        <tr>
+            <td>SSVC1_N</td>
+            <td>MUFA</td>
+            <td>825</td>
+            <td>206</td>
+            <td>82.5</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>SSNR1_N</td>
+            <td>MUFA</td>
+            <td>1031</td>
+            <td>258</td>
+            <td>103</td>
+            <td>41.2</td>
+        </tr>
+        <tr>
+            <td>SSPL1_N</td>
+            <td>MUFA</td>
+            <td>1204</td>
+            <td>301</td>
+            <td>120</td>
+            <td>48.2</td>
+        </tr>
+        <tr>
+            <td>SSOL1_N</td>
+            <td>MUFA</td>
+            <td>6323</td>
+            <td>1581</td>
+            <td>632</td>
+            <td>253</td>
+        </tr>
+        <tr>
+            <td>SSED1_N</td>
+            <td>PUFA</td>
+            <td>52</td>
+            <td>13.1</td>
+            <td>5.2</td>
+            <td>2.1</td>
+        </tr>
+        <tr>
+            <td>SSDTA_N</td>
+            <td>PUFA</td>
+            <td>105</td>
+            <td>26.3</td>
+            <td>10.5</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>SSDP6_N</td>
+            <td>PUFA</td>
+            <td>108</td>
+            <td>26.9</td>
+            <td>10.8</td>
+            <td>4.3</td>
+        </tr>
+        <tr>
+            <td>SSGLA_N</td>
+            <td>PUFA</td>
+            <td>209</td>
+            <td>52.4</td>
+            <td>20.9</td>
+            <td>8.4</td>
+        </tr>
+        <tr>
+            <td>SSDP3_N</td>
+            <td>PUFA</td>
+            <td>213</td>
+            <td>53.3</td>
+            <td>21.3</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>SSHGL _N</td>
+            <td>PUFA</td>
+            <td>263</td>
+            <td>65.9</td>
+            <td>26.3</td>
+            <td>10.5</td>
+        </tr>
+        <tr>
+            <td>SSALN _N</td>
+            <td>PUFA</td>
+            <td>480</td>
+            <td>120</td>
+            <td>48</td>
+            <td>19.2</td>
+        </tr>
+        <tr>
+            <td>SSEPA_N</td>
+            <td>PUFA</td>
+            <td>822</td>
+            <td>206</td>
+            <td>82.2</td>
+            <td>32.9</td>
+        </tr>
+        <tr>
+            <td>SSDHA_N</td>
+            <td>PUFA</td>
+            <td>1044</td>
+            <td>261</td>
+            <td>104</td>
+            <td>41.8</td>
+        </tr>
+        <tr>
+            <td>SSARA_N</td>
+            <td>PUFA</td>
+            <td>2143</td>
+            <td>536</td>
+            <td>214</td>
+            <td>85.7</td>
+        </tr>
+        <tr>
+            <td>SSLNA _N</td>
+            <td>PUFA</td>
+            <td>9329</td>
+            <td>2332</td>
+            <td>933</td>
+            <td>373</td>
+        </tr>
+    </tbody>
+</table><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Data were received after all the laboratory testing was complete. The data were not edited for extreme values.</p>
+<p>Data Access: All final data are publicly available.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The laboratory and method were certified according to the Clinical Laboratory Improvement Amendments (1988) guidelines</p>
+<p>Units of plasma were obtained from Solomon Park Research Laboratories (Kirkland, WA) and were screened using the methodology described above to obtain the concentrations of each of 24 fatty acids per unit. All quality control pools were prepared by blending units to achieve as best as possible, representative low, medium and high concentrations. Aliquots were dispensed into 2mL cryovials and stored at -70&deg;C. </p>
+<p>Before each analytical run, calibration standards, bench QC materials and plasma samples were thawed from -70&deg;C to room temperature. Calibrators and QC materials were prepared and analyzed in parallel with the unknown samples.</p>
+<p>Typical assays consisted of 4 calibration samples, 1 blank, 3 bench quality control samples, 34 subject person&rsquo;s plasma followed by 3 quality control samples. Typically, one in every 20 subject person&rsquo;s plasma in the assay was actually a blind QC pool which was labeled to resemble a subject person specimen. Two blind QC pools were used throughout the period of analysis of the survey specimens. Their results were required to be within 3 standard deviations of the characterization means for each analyte. Blind QC pools were characterized in singlicate in &gt;40 assays. Mean CV (SD) for all analytes in both blind QC pools was 9% (10%); excluding DE1_N, mean CV (SD) was 7% (3%). </p>
+<p>Bench QC pools (open label) were named as follows: <br />
+High: HP_066209_QC05<br />
+Low: LP_06553_QC05 <br />
+Medium: MP_066208_QC05<br />
+Bench QC pools were characterized to determine the quality control limits by analyzing duplicate samples in 22 assays from 1/13/2010 to 3/24/2010. After establishment of the control limits of the pools, QC samples contained within each analytical run were evaluated for validity by use of a multi-rule quality control. Mean CV (SD) for all analytes in the three bench QC pools was 8% (10%); excluding DE1_N, mean CV (SD) was 6% (2%).</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>Subsample weights</strong></p>
+<p>Measures of fatty acids were measured in a one half fasting subsample of persons 20 years and over. Special sample weights are required to analyze these data properly. Specific sample weights for this subsample are included in this data file and should be used when analyzing these data. </p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Caudill SP, Schleicher RL, Pirkle JL. 2008. Multi-rule quality control for the age-related eye disease study. Stat Med 27:4094-4106.</li>
+          <li>Clinical Laboratory Improvement Amendment. Public Law 100-578. 1988. 10-31-1988.</li>
+          <li>Lagerstedt S, Hinrichs D, Batt S, Magera M, Rinaldo P, McConnell J. Quantitative Determination of Plasma C8-C26 Total Fatty Acids for the Biochemical Diagnosis of Nutritional and Metabolic Disorders. Mol Genet &amp; Metab 2001; 73: 38-45.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSMR1_N">SSMR1_N - Myristic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSMR1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Myristic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Myristic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">24.8 to 2410</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1751</td>
+                <td class="values" align="right">1751</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">27</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSML1_N">SSML1_N - Myristoleic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSML1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Myristoleic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Myristoleic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.19 to 186</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1763</td>
+                <td class="values" align="right">1763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSPM1_N">SSPM1_N - Palmitic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSPM1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Palmitic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Palmitic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1250 to 17800</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1760</td>
+                <td class="values" align="right">1760</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSPL1_N">SSPL1_N - Palmitoleic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSPL1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Palmitoleic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Palmitoleic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">39 to 2500</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1760</td>
+                <td class="values" align="right">1760</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSST1_N">SSST1_N - Stearic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSST1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Stearic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Stearic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">317 to 2970</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1761</td>
+                <td class="values" align="right">1761</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSOL1_N">SSOL1_N - Oleic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSOL1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Oleic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Oleic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">831 to 23700</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1755</td>
+                <td class="values" align="right">1755</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSVC1_N">SSVC1_N - cis-Vaccenic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSVC1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>cis-Vaccenic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">cis-Vaccenic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">54.1 to 1670</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1720</td>
+                <td class="values" align="right">1720</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">58</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSLNA_N">SSLNA_N - Linoleic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSLNA_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Linoleic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Linoleic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1190 to 14200</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1761</td>
+                <td class="values" align="right">1761</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSGLA_N">SSGLA_N - gamma-Linolenic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSGLA_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>gamma-Linolenic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">gamma-Linolenic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.55 to 230</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1750</td>
+                <td class="values" align="right">1750</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">28</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSALN_N">SSALN_N - alpha-Linolenic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSALN_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>alpha-Linolenic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">alpha-Linolenic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">13.3 to 578</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1757</td>
+                <td class="values" align="right">1757</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSHGL_N">SSHGL_N - homo-gamma-Linolenic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSHGL_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>homo-gamma-Linolenic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">homo-gamma-Linolenic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">45.9 to 758</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1761</td>
+                <td class="values" align="right">1761</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAR1_N">SSAR1_N - Arachidic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAR1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Arachidic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Arachidic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6.25 to 83.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1712</td>
+                <td class="values" align="right">1712</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">66</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSEN1_N">SSEN1_N - Eicosenoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSEN1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eicosenoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Eicosenoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.89 to 714</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1760</td>
+                <td class="values" align="right">1760</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSED1_N">SSED1_N - Eicosadienoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSED1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eicosadienoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Eicosadienoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.66 to 383</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1760</td>
+                <td class="values" align="right">1760</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSARA_N">SSARA_N - Arachidonic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSARA_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Arachidonic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Arachidonic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">226 to 2240</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1762</td>
+                <td class="values" align="right">1762</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSEPA_N">SSEPA_N - Eicosapentaenoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSEPA_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eicosapentaenoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Eicosapentaenoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6.03 to 371</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1761</td>
+                <td class="values" align="right">1761</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSDA1_N">SSDA1_N - Docosanoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSDA1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Docosanoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Docosanoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">17 to 171</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1694</td>
+                <td class="values" align="right">1694</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">84</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSDE1_N">SSDE1_N - Docosenoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSDE1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Docosenoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Docosenoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.21 to 43.1</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1567</td>
+                <td class="values" align="right">1567</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">211</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSDTA_N">SSDTA_N - Docosatetraenoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSDTA_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Docosatetraenoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Docosatetraenoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6.28 to 132</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1763</td>
+                <td class="values" align="right">1763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSDP6_N">SSDP6_N - Docosapentaenoic-6 acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSDP6_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Docosapentaenoic-6 acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Docosapentaenoic-6 acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3.35 to 104</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1763</td>
+                <td class="values" align="right">1763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSDP3_N">SSDP3_N - Docosapentaenoic-3 acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSDP3_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Docosapentaenoic-3 acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Docosapentaenoic-3 acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9.59 to 204</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1763</td>
+                <td class="values" align="right">1763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSDHA_N">SSDHA_N - Docosahexaenoic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSDHA_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Docosahexaenoic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Docosahexaenoic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">35.7 to 610</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1763</td>
+                <td class="values" align="right">1763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSLG1_N">SSLG1_N - Lignoceric acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSLG1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Lignoceric acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Lignoceric acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">19.2 to 132</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1698</td>
+                <td class="values" align="right">1698</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">80</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSNR1_N">SSNR1_N - Nervonic acid (micromol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSNR1_N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Nervonic acid (micromol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Nervonic acid (micromol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">18.3 to 167</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1654</td>
+                <td class="values" align="right">1654</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">124</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTSAF2YR">WTSAF2YR - 2Yr fasting weights</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSAF2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>2Yr fasting weights</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2Yr fasting weights</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 355659.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1778</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

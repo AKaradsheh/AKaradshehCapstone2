@@ -1,0 +1,1194 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Acculturation" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Acculturation Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Acculturation Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#ACQ005">ACQ005 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#ACD010A">ACD010A - English usually spoken at home</a>
+                </li>
+                <li>
+                  <a href="#ACD010B">ACD010B - Spanish usually spoken at home</a>
+                </li>
+                <li>
+                  <a href="#ACD010C">ACD010C - Other language(s) usually spoken at home</a>
+                </li>
+                <li>
+                  <a href="#ACQ015">ACQ015 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#ACQ020">ACQ020 - Language(s) read and spoken</a>
+                </li>
+                <li>
+                  <a href="#ACQ030">ACQ030 - Language(s) used as child</a>
+                </li>
+                <li>
+                  <a href="#ACD040">ACD040 - Language(s) usually spoken at home</a>
+                </li>
+                <li>
+                  <a href="#ACQ050">ACQ050 - Language(s) usually used to think</a>
+                </li>
+                <li>
+                  <a href="#ACQ060">ACQ060 - Language(s) usually used with friends</a>
+                </li>
+                <li>
+                  <a href="#ACD070">ACD070 - Father's country of birth</a>
+                </li>
+                <li>
+                  <a href="#ACD080">ACD080 - Mother's country of birth</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Acculturation (ACQ_C)
+			</h3>
+        <h4>
+				Data File: ACQ_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				April 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The Acculturation section (prefix ACQ) provides personal interview data on cultural identity and language/media use.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Non-Hispanics ages 12 and older are asked only one question in this section: language spoken at home (ACD010). </p>
+<p>Hispanics ages 12 and older are asked questions ACD020 &ndash; ACD080. These questions are about language use and country of birth of parents.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>A trained household interviewer administrated these questions to the survey participant during the household interview. The information was recorded using a computer-assisted personal interview (CAPI) system. Some of the questions in the VIQ section required the use of printed hand cards. When necessary, the household interviewers read the hand card selections to the respondent.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The Acculturation questionnaire data was systematically reviewed for logical, processing, and data input errors on a periodic basis during the process of data collection. </p>
+<p>The computer CAPI system had built-in consistency checks, online information screens that provided the interviewers with information about the terms used in the questionnaires, and hard and soft edit checks to reduce the number of keying entry errors. All of the data was reviewed by the NHANES field office staff for accuracy and completeness.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The 2003&ndash;2004 Acculturation Questionnaire data was verified against the main data file prior to public release.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>ACD010 Language spoken at home (non-Hispanics)</strong> </p>
+<p>This question had too few responses in the categories other than English or Spanish. In 2002, the question was re-written to only include English, Spanish and Other as options. In the 2001-2002 data release files these responses were combined into ACD010A, ACD010B, and ACD010C. </p>
+<p>In the 2003-2004 questionnaire, the item number for this question is ACQ011. However, to keep the data release variable names in 2003-2004 the same as those in the 2001-2002 data set, the responses to ACQ011 were renamed ACD010A, ACD010B and ACD010C. </p>
+<p><strong>ACD040 Language spoken at home (Hispanics)</strong> </p>
+<p>Data from two versions of the same question were combined into this derived variable. This question was renamed in 2002 when the response option of &ldquo;not applicable&rdquo; was removed. The one &ldquo;Not applicable&rdquo; response from 2001 was recoded as &ldquo;Don&rsquo;t Know&rdquo;. In the 2003-2004 questionnaire, the item number for this question is ACQ041. </p>
+<p>However, to keep the data release variable names in 2003-2004 the same as those in the 2001-2002 data set, the responses to ACQ041 were renamed ACD040. </p>
+<p><strong>ACD070, ACD080 Country of birth of father/mother, respectively</strong> </p>
+<p>In 2001-2002, data from two versions of the same questions were combined into these derived variables. These questions were renamed in 2002 when more response options were added. However, in 2001-2002, only the response options of US, Puerto Rico, Mexico and Other are released due to low counts for the other responses. The &ldquo;Other&rdquo; category included all other countries that were reported by participants. </p>
+<p>In 2003-2004, ACQ070 and ACQ080 were no longer collected. They were completely replaced by ACQ071 and ACQ081. However, we kept the release names of ACD070 and ACD080 (rather than ACQ071 and ACQ081) to keep the public release variable names consistent. </p>
+<p>For 2003-2004, only the response options of US, Puerto Rico, Mexico, El Salvador and Other were released. The other country response codes had low counts (n&lt;30). Therefore, all other country responses were recoded as &ldquo;Other&rdquo;. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues at <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_general_guidelines.pdf">http://www.cdc.gov/nchs/data/nhanes/nhanes_general_guidelines.pdf</a>.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACQ005">ACQ005 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACQ005</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1.  CHECK ITEM ACQ.005:  IF SP CODED HISPANIC IN SCREENER, GO TO ACQ.020.  OTHERWISE, CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACD010A">ACD010A - English usually spoken at home</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACD010A</dd>
+            <dt>SAS Label: </dt>
+            <dd>English usually spoken at home</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What language(s) {do you/does SP} usually speak at home?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">English</td>
+                <td class="values" align="right">5251</td>
+                <td class="values" align="right">5251</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2092</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACD010B">ACD010B - Spanish usually spoken at home</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACD010B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Spanish usually spoken at home</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What language(s) {do you/does SP} usually speak at home?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Spanish</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7333</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACD010C">ACD010C - Other language(s) usually spoken at home</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACD010C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Other language(s) usually spoken at home</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What language(s) {do you/does SP} usually speak at home?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">314</td>
+                <td class="values" align="right">314</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7030</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACQ015">ACQ015 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACQ015</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 2.  CHECK ITEM ACQ.015:  GO TO END OF SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACQ020">ACQ020 - Language(s) read and spoken</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language(s) read and spoken</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next questions are about language.  In general, what language(s) {do you/does SP} read and speak.  Would you say . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD ACQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Only Spanish,</td>
+                <td class="values" align="right">434</td>
+                <td class="values" align="right">434</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Spanish better than English,</td>
+                <td class="values" align="right">285</td>
+                <td class="values" align="right">719</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both equally,</td>
+                <td class="values" align="right">452</td>
+                <td class="values" align="right">1171</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">English better than Spanish, or</td>
+                <td class="values" align="right">416</td>
+                <td class="values" align="right">1587</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Only English?</td>
+                <td class="values" align="right">306</td>
+                <td class="values" align="right">1893</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1893</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACQ030">ACQ030 - Language(s) used as child</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACQ030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language(s) used as child</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What was the language(s) {you/SP} used as a child?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD ACQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Only Spanish,</td>
+                <td class="values" align="right">1046</td>
+                <td class="values" align="right">1046</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More Spanish than English,</td>
+                <td class="values" align="right">205</td>
+                <td class="values" align="right">1251</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both equally,</td>
+                <td class="values" align="right">204</td>
+                <td class="values" align="right">1455</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">More English than Spanish, or</td>
+                <td class="values" align="right">131</td>
+                <td class="values" align="right">1586</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Only English?</td>
+                <td class="values" align="right">307</td>
+                <td class="values" align="right">1893</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1893</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACD040">ACD040 - Language(s) usually spoken at home</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACD040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language(s) usually spoken at home</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What language(s) {do you/does SP} usually speak at home?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD ACQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Only Spanish,</td>
+                <td class="values" align="right">694</td>
+                <td class="values" align="right">694</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More Spanish than English,</td>
+                <td class="values" align="right">198</td>
+                <td class="values" align="right">892</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both equally,</td>
+                <td class="values" align="right">368</td>
+                <td class="values" align="right">1260</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">More English than Spanish, or</td>
+                <td class="values" align="right">202</td>
+                <td class="values" align="right">1462</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Only English?</td>
+                <td class="values" align="right">430</td>
+                <td class="values" align="right">1892</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1892</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACQ050">ACQ050 - Language(s) usually used to think</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACQ050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language(s) usually used to think</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In which language(s) {do you/does SP} usually think?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD ACQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Only Spanish,</td>
+                <td class="values" align="right">615</td>
+                <td class="values" align="right">615</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More Spanish than English,</td>
+                <td class="values" align="right">134</td>
+                <td class="values" align="right">749</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both equally,</td>
+                <td class="values" align="right">333</td>
+                <td class="values" align="right">1082</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">More English than Spanish, or</td>
+                <td class="values" align="right">196</td>
+                <td class="values" align="right">1278</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Only English?</td>
+                <td class="values" align="right">593</td>
+                <td class="values" align="right">1871</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1871</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACQ060">ACQ060 - Language(s) usually used with friends</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language(s) usually used with friends</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What language(s) {do you/does SP} usually speak with {your/his/her} friends?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD ACQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Only Spanish,</td>
+                <td class="values" align="right">546</td>
+                <td class="values" align="right">546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More Spanish than English,</td>
+                <td class="values" align="right">167</td>
+                <td class="values" align="right">713</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both equally,</td>
+                <td class="values" align="right">383</td>
+                <td class="values" align="right">1096</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">More English than Spanish, or</td>
+                <td class="values" align="right">241</td>
+                <td class="values" align="right">1337</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Only English?</td>
+                <td class="values" align="right">550</td>
+                <td class="values" align="right">1887</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1887</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACD070">ACD070 - Father's country of birth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACD070</dd>
+            <dt>SAS Label: </dt>
+            <dd>Father's country of birth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In what country was {your/SP's} father born?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">United States, except Puerto Rico</td>
+                <td class="values" align="right">507</td>
+                <td class="values" align="right">507</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Puerto Rico</td>
+                <td class="values" align="right">44</td>
+                <td class="values" align="right">551</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Mexico</td>
+                <td class="values" align="right">1173</td>
+                <td class="values" align="right">1724</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Other country</td>
+                <td class="values" align="right">119</td>
+                <td class="values" align="right">1843</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">El Salvador</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">1878</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1878</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ACD080">ACD080 - Mother's country of birth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ACD080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mother's country of birth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In what country was {your/SP's} mother born?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">United States, except Puerto Rico</td>
+                <td class="values" align="right">574</td>
+                <td class="values" align="right">574</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Puerto Rico</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">604</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Mexico</td>
+                <td class="values" align="right">1130</td>
+                <td class="values" align="right">1734</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Other country</td>
+                <td class="values" align="right">123</td>
+                <td class="values" align="right">1857</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">El Salvador</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">1887</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1887</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1895</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5449</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

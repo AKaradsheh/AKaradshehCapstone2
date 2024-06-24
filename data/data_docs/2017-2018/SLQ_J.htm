@@ -1,0 +1,914 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0076)http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>SLQ_J</TITLE>     
+<META name="title" content="NHANES 2017-2018: Sleep Disorders Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Interview_Setting_and_Mode_of_Administration">Interview 
+  Setting and Mode of Administration</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Quality_Assurance_&amp;_Quality_Control">Quality 
+  Assurance &amp; Quality Control</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Data_Processing_and_Editing">Data 
+  Processing and Editing</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#References">References</A> 
+            </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ300">SLQ300 
+    - Usual sleep time on weekdays or workdays</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ310">SLQ310 
+    - Usual wake time on weekdays or workdays</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLD012">SLD012 
+    - Sleep hours - weekdays or workdays</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ320">SLQ320 
+    - Usual sleep time on weekends</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ330">SLQ330 
+    - Usual wake time on weekends</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLD013">SLD013 
+    - Sleep hours - weekends</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ030">SLQ030 
+    - How often do you snore?</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ040">SLQ040 
+    - How often do you snort or stop breathing</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ050">SLQ050 
+    - Ever told doctor had trouble sleeping?</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=4367&amp;Dataset=SLQ_J#SLQ120">SLQ120 
+    - How often feel overly sleepy during day?</A>               
+</LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2017-2018 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Sleep Disorders (SLQ_J)</H3>
+<H4> Data File: SLQ_J.xpt</H4>
+<H5 class="left">First Published: February 2020</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>The sleep disorders (variable name prefix SLQ) data set has questions on 
+sleep habits and disorders. In 2017-2018, the sleep time and awake time 
+questions in the SLQ were adapted from the Munich ChronoType Questionnaire 
+(Roenneberg et al., 2003)  This included the addition of two questions on usual 
+sleep and wake times on weekend or non-workdays.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>All participants aged 16 and older were eligible.</P>
+<H2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode 
+of Administration</H2>
+<P>These questions were asked in the home, by trained interviewers, using the 
+Computer-Assisted Personal Interview (CAPI) system.</P>
+<H2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality 
+Control</H2>
+<P>The CAPI system is programmed with limited built-in consistency checks to 
+reduce data entry errors. Additional edits were conducted post-data collection 
+as described in "Data Processing and Editing."</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>Edits were made to ensure completeness, consistency, and analytic usefulness 
+of the data. Approximately 3% of audio recordings of interviews were reviewed to 
+validate unusual times reported for SLQ300, SLQ310, SLQ320, and SLQ330. Based on 
+review, the most common interview entry errors were the incorrect assignment of 
+AM or PM for the reported day or night periods (e.g., 12 PM was entered for 12 
+AM when midnight was reported as usual time the participant falls asleep), and 
+the transposition of digits when minutes were recorded (e.g., ‘03’ for ‘30’). 
+Comments from interviewers also were considered. Edits were made to 
+approximately 45% of the reviewed records.</P>
+<P>Summary variables for usual number of hours of sleep on weekdays (SLD012) and 
+weekends (SLD013) were derived from reported times. Hours were rounded to the 
+nearest half hour. For SLD012 and SLD013, hours of ‘less than 3’ and ‘more than 
+14’ were grouped and recoded with these value labels. For participants with 
+either of these low or high hours, times in SLQ300, SLQ310, SLQ320, SLQ330 were 
+set to missing to minimize disclosure risks.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Please refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" 
+target="_blank">NHANES Analytic Guidelines</A> and the online <A href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx" 
+target="_blank">NHANES Tutorial</A>  for further details on the use of sample 
+weights and other analytic issues. </P>
+<P>SLQ300 (usual sleep time on weekdays or workdays): The wording for this 
+question was modified slightly from the 2015-16 cycle. Instead of the time the 
+participant usually “goes to sleep”, the current question asked the time the 
+participant usually “falls” asleep.</P>
+<P>SLQ300, SLQ310, SLQ320, SLQ330 were formatted as character variables for time 
+in hours and minutes. Times between 00:00 (midnight) and 11:59 in the morning 
+indicate AM. Times between 12:00 (noon) and 11:59 at night indicate PM.  </P>
+<P>SLD012 (hours of sleep weekdays)/workdays) and SLD013 (hours of sleep 
+weekends/non- workdays) are derived variables, calculated from reported usual 
+sleep time (SLQ300 and SLQ320) and wake time (SLQ310 and SLQ330) during main 
+sleeping period (night or day). Respondents reporting that they woke up 
+periodically or that they slept for very short periods of times at night or 
+during the day were asked to report the sleep and wake time of their main 
+sleeping period. Therefore, the derived variables for hours of sleep, SLD012 and 
+SLD013, may not represent the total hours of sleep during a 24-hour period, 
+including naps or other periods of sleep. If sleep and wake times were not 
+reported, then derived summary variables were not calculated.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Roenneberg T, Wirz-Justice A, and Merrow M (2003) Life between clocks: 
+  daily temporal patterns of human chronotypes. J Biol Rhythms 
+18:80-90.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ300">SLQ300 - Usual sleep time on weekdays or 
+workdays</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ300</DD>
+  <DT>SAS Label: </DT>
+  <DD>Usual sleep time on weekdays or workdays</DD>
+  <DT>English Text: </DT>
+  <DD class="info">What time {do you/does SP} usually fall asleep on weekdays or 
+  workdays?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">Character variable 'HH:MM' ('00:00' to '23:30')</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">Usual sleep time on weekdays or workdays</TD>
+    <TD class="values">Value was recorded</TD>
+    <TD align="right" class="values">6087</TD>
+    <TD align="right" class="values">6087</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">77777</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">6088</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">99999</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">36</TD>
+    <TD align="right" class="values">6124</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">&lt; blank &gt;</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">37</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ310">SLQ310 - Usual wake time on weekdays or 
+workdays</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ310</DD>
+  <DT>SAS Label: </DT>
+  <DD>Usual wake time on weekdays or workdays</DD>
+  <DT>English Text: </DT>
+  <DD class="info">What time {do you/does SP} usually wake up on weekdays or 
+  workdays?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">Character variable 'HH:MM' ('00:00' to '23:30')</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">Usual wake time on weekdays or workdays</TD>
+    <TD class="values">Value was recorded</TD>
+    <TD align="right" class="values">6100</TD>
+    <TD align="right" class="values">6100</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">77777</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">6101</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">99999</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">21</TD>
+    <TD align="right" class="values">6122</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">&lt; blank &gt;</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">39</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLD012">SLD012 - Sleep hours - weekdays or 
+workdays</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLD012</DD>
+  <DT>SAS Label: </DT>
+  <DD>Sleep hours - weekdays or workdays</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Number of hours usually sleep on weekdays or workdays.</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">Derived from SLQ300 and SLQ310</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">3 to 13.5</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">6073</TD>
+    <TD align="right" class="values">6073</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Less then 3 hours</TD>
+    <TD align="right" class="values">27</TD>
+    <TD align="right" class="values">6100</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">14</TD>
+    <TD class="values">14 hours or more</TD>
+    <TD align="right" class="values">13</TD>
+    <TD align="right" class="values">6113</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">48</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ320">SLQ320 - Usual sleep time on weekends</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ320</DD>
+  <DT>SAS Label: </DT>
+  <DD>Usual sleep time on weekends</DD>
+  <DT>English Text: </DT>
+  <DD class="info">What time {do you/does SP} usually fall asleep on weekends or 
+  non-workdays?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">Character variable 'HH:MM' ('00:00' to '23:30')</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">Usual sleep time on weekends</TD>
+    <TD class="values">Value was recorded</TD>
+    <TD align="right" class="values">6090</TD>
+    <TD align="right" class="values">6090</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">77777</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">6091</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">99999</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">39</TD>
+    <TD align="right" class="values">6130</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">&lt; blank &gt;</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">31</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ330">SLQ330 - Usual wake time on weekends</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ330</DD>
+  <DT>SAS Label: </DT>
+  <DD>Usual wake time on weekends</DD>
+  <DT>English Text: </DT>
+  <DD class="info">What time {do you/does SP} usually wake up on weekends or 
+  non-workdays?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">Character variable 'HH:MM' ('00:00' to '23:30')</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">Usual wake time on weekends</TD>
+    <TD class="values">Value was recorded</TD>
+    <TD align="right" class="values">6102</TD>
+    <TD align="right" class="values">6102</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">77777</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">6103</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">99999</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">26</TD>
+    <TD align="right" class="values">6129</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">&lt; blank &gt;</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">32</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLD013">SLD013 - Sleep hours - weekends</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLD013</DD>
+  <DT>SAS Label: </DT>
+  <DD>Sleep hours - weekends</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Number of hours usually sleep on weekends or 
+  non-workdays.</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">Derived from SLQ320 and SLQ330</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">3 to 13.5</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">6061</TD>
+    <TD align="right" class="values">6061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Less then 3 hours</TD>
+    <TD align="right" class="values">12</TD>
+    <TD align="right" class="values">6073</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">14</TD>
+    <TD class="values">14 hours or more</TD>
+    <TD align="right" class="values">31</TD>
+    <TD align="right" class="values">6104</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">57</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ030">SLQ030 - How often do you snore?</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ030</DD>
+  <DT>SAS Label: </DT>
+  <DD>How often do you snore?</DD>
+  <DT>English Text: </DT>
+  <DD class="info">In the past 12 months, how often did {you/SP} snore while 
+  {you were/s/he was} sleeping?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">INTERVIEWER INSTRUCTION: IF R SAYS "DON"T KNOW", PROBE IF 
+  ANYONE HAS TOLD THEM THEY SNORE.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Never</TD>
+    <TD align="right" class="values">1688</TD>
+    <TD align="right" class="values">1688</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Rarely - 1-2 nights a week</TD>
+    <TD align="right" class="values">1370</TD>
+    <TD align="right" class="values">3058</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Occasionally - 3-4 nights a week</TD>
+    <TD align="right" class="values">1068</TD>
+    <TD align="right" class="values">4126</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Frequently - 5 or more nights a week</TD>
+    <TD align="right" class="values">1577</TD>
+    <TD align="right" class="values">5703</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">7</TD>
+    <TD align="right" class="values">5710</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">451</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ040">SLQ040 - How often do you snort or stop 
+breathing</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ040</DD>
+  <DT>SAS Label: </DT>
+  <DD>How often do you snort or stop breathing</DD>
+  <DT>English Text: </DT>
+  <DD class="info">In the past 12 months, how often did {you/SP} snort, gasp, or 
+  stop breathing while {you were/s/he was} asleep?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">INTERVIEWER INSTRUCTION:  IF THE RESPONDENT ASKS "HOW WOULD I 
+  KNOW IF I SNORE, GASP OR STOP BREATHING WHEN I AM SLEEPING? PROBE IF ANYONE 
+  TOLD THEM THAT THEY DO THIS.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Never</TD>
+    <TD align="right" class="values">4474</TD>
+    <TD align="right" class="values">4474</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Rarely - 1-2 nights a week</TD>
+    <TD align="right" class="values">699</TD>
+    <TD align="right" class="values">5173</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Occasionally - 3-4 nights a week</TD>
+    <TD align="right" class="values">361</TD>
+    <TD align="right" class="values">5534</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Frequently - 5 or more nights a week</TD>
+    <TD align="right" class="values">280</TD>
+    <TD align="right" class="values">5814</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">3</TD>
+    <TD align="right" class="values">5817</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">344</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ050">SLQ050 - Ever told doctor had trouble 
+sleeping?</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ050</DD>
+  <DT>SAS Label: </DT>
+  <DD>Ever told doctor had trouble sleeping?</DD>
+  <DT>English Text: </DT>
+  <DD class="info">{Have you/Has SP} ever told a doctor or other health 
+  professional that {you have/s/he has} trouble sleeping?</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Yes</TD>
+    <TD align="right" class="values">1621</TD>
+    <TD align="right" class="values">1621</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">No</TD>
+    <TD align="right" class="values">4535</TD>
+    <TD align="right" class="values">6156</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">6156</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">5</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SLQ120">SLQ120 - How often feel overly sleepy during 
+day?</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SLQ120</DD>
+  <DT>SAS Label: </DT>
+  <DD>How often feel overly sleepy during day?</DD>
+  <DT>English Text: </DT>
+  <DD class="info">In the past month, how often did {you/SP} feel excessively or 
+  overly sleepy during the day?</DD>
+  <DT class="info">English Instructions: </DT>
+  <DD class="info">HAND CARD SLQ1</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 16 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Never</TD>
+    <TD align="right" class="values">1028</TD>
+    <TD align="right" class="values">1028</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Rarely - 1 time a month</TD>
+    <TD align="right" class="values">1468</TD>
+    <TD align="right" class="values">2496</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Sometimes - 2-4 times a month</TD>
+    <TD align="right" class="values">2059</TD>
+    <TD align="right" class="values">4555</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Often- 5-15 times a month</TD>
+    <TD align="right" class="values">1066</TD>
+    <TD align="right" class="values">5621</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Almost always - 16-30 times a month</TD>
+    <TD align="right" class="values">528</TD>
+    <TD align="right" class="values">6149</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">6149</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">12</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">6161</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

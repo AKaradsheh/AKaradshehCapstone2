@@ -1,0 +1,4641 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Diet Behavior &amp; Nutrition" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Diet Behavior &amp; Nutrition Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Diet Behavior &amp; Nutrition Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#DBQ010">DBQ010 - Ever breastfed or fed breastmilk</a>
+                </li>
+                <li>
+                  <a href="#DBD020">DBD020 - Age started eating other foods(days)</a>
+                </li>
+                <li>
+                  <a href="#DBD030">DBD030 - Age stopped breastfeeding(days)</a>
+                </li>
+                <li>
+                  <a href="#DBD040">DBD040 - Age first fed formula daily(days)</a>
+                </li>
+                <li>
+                  <a href="#DBD050">DBD050 - Age stopped receiving formula(days)</a>
+                </li>
+                <li>
+                  <a href="#DBD060">DBD060 - Age first fed milk daily basis(days)</a>
+                </li>
+                <li>
+                  <a href="#DBD072A">DBD072A - Type of milk first fed-whole milk</a>
+                </li>
+                <li>
+                  <a href="#DBD072B">DBD072B - Type of milk first fed-2% milk</a>
+                </li>
+                <li>
+                  <a href="#DBD072C">DBD072C - Type of milk first fed-1% milk</a>
+                </li>
+                <li>
+                  <a href="#DBD072D">DBD072D - Type of milk first fed-fat free milk</a>
+                </li>
+                <li>
+                  <a href="#DBD072U">DBD072U - Type of milk first fed - other</a>
+                </li>
+                <li>
+                  <a href="#DBD080">DBD080 - Age started eating solid foods(days)</a>
+                </li>
+                <li>
+                  <a href="#DBD085">DBD085 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ700">DBQ700 - How healthy is the diet</a>
+                </li>
+                <li>
+                  <a href="#DBQ197">DBQ197 - Past 30 day milk product consumption</a>
+                </li>
+                <li>
+                  <a href="#DBD222A">DBD222A - You drink whole or regular milk</a>
+                </li>
+                <li>
+                  <a href="#DBD222B">DBD222B - You drink 2% fat milk</a>
+                </li>
+                <li>
+                  <a href="#DBD222C">DBD222C - You drink 1% fat milk</a>
+                </li>
+                <li>
+                  <a href="#DBD222D">DBD222D - You drink fat-free or skim milk</a>
+                </li>
+                <li>
+                  <a href="#DBD222U">DBD222U - You drink another type of milk</a>
+                </li>
+                <li>
+                  <a href="#DBD225">DBD225 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ229">DBQ229 - Regular milk use 5 times per week</a>
+                </li>
+                <li>
+                  <a href="#DBQ235A">DBQ235A - How often drank milk age 5-12</a>
+                </li>
+                <li>
+                  <a href="#DBQ235B">DBQ235B - How often drank milk age 13-17</a>
+                </li>
+                <li>
+                  <a href="#DBQ235C">DBQ235C - How often drank milk age 18-35</a>
+                </li>
+                <li>
+                  <a href="#DBD265a">DBD265a - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ301">DBQ301 - Community/Government meals delivered</a>
+                </li>
+                <li>
+                  <a href="#DBQ330">DBQ330 - Eat meals at Community/Senior center</a>
+                </li>
+                <li>
+                  <a href="#DBD355">DBD355 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ360">DBQ360 - Attend kindergarten thru high school</a>
+                </li>
+                <li>
+                  <a href="#DBQ370">DBQ370 - School serves school lunches</a>
+                </li>
+                <li>
+                  <a href="#DBD381">DBD381 - # of times/week get school lunch</a>
+                </li>
+                <li>
+                  <a href="#DBQ390">DBQ390 - School lunch free, reduced or full price</a>
+                </li>
+                <li>
+                  <a href="#DBQ400">DBQ400 - School serve complete breakfast each day</a>
+                </li>
+                <li>
+                  <a href="#DBD411">DBD411 - # of times/week get school breakfast</a>
+                </li>
+                <li>
+                  <a href="#DBQ421">DBQ421 - School breakfast free/reduced/full price</a>
+                </li>
+                <li>
+                  <a href="#DBQ422">DBQ422 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ424">DBQ424 - Summer program meal free/reduced price</a>
+                </li>
+                <li>
+                  <a href="#DBD709">DBD709 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBD091">DBD091 - # of times/wk eat meals not from a home</a>
+                </li>
+                <li>
+                  <a href="#DBQ719">DBQ719 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ720">DBQ720 - Heard of dietary guidelines?</a>
+                </li>
+                <li>
+                  <a href="#DBQ730">DBQ730 - Heard of food guide pyramid?</a>
+                </li>
+                <li>
+                  <a href="#DBQ740">DBQ740 - Heard about 5-a-day program?</a>
+                </li>
+                <li>
+                  <a href="#DBQ750">DBQ750 - Use nutrition facts panel on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ760">DBQ760 - Use ingredients list on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ770">DBQ770 - Use serving size info on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ780">DBQ780 - Use health claims on food packages</a>
+                </li>
+                <li>
+                  <a href="#DBQ789">DBQ789 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#DBQ790">DBQ790 - Check calories on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ800">DBQ800 - Check calories from fat on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ810">DBQ810 - Check total fat on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ820">DBQ820 - Check trans fat on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ830">DBQ830 - Check saturated fat on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ840">DBQ840 - Check cholesterol on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ850">DBQ850 - Check sodium on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ860">DBQ860 - Check carbohydrates on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ870">DBQ870 - Check fiber on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ880">DBQ880 - Check sugars on food label</a>
+                </li>
+                <li>
+                  <a href="#DBQ890">DBQ890 - Are people born to be fat/thin</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Diet Behavior &amp; Nutrition (DBQ_D)
+			</h3>
+        <h4>
+				Data File: DBQ_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				November 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The Diet Behavior and Nutrition (variable name prefix DBQ) section provides personal interview data on various dietary behavior and nutrition related topics. Many of the questions were included in NHANES II (1976-80), Hispanic HANES (1982-84), NHANES III (1988-94), and NHANES 1999-2002 and 2003-2004. Topics included in the section are: </p>
+<ul>
+    <li>Breastfeeding and other childhood feeding practices (&#8804; 6 yr) </li>
+    <li>Current milk consumption pattern and types of milk (&#8805; 1 yr) </li>
+    <li>Milk consumption pattern throughout the life span (&#8805; 20 yr) </li>
+    <li>Community or government meal program participation (&#8805; 60 yr) </li>
+    <li>School meal program participation (4-19 yr) </li>
+    <li>Self-appraised healthfulness level of one&#8217;s own diet (&#8805; 16 yr) </li>
+    <li>Frequency of eating meals not prepared at a home (&#8805; 1 yr) </li>
+    <li>Awareness of federal nutrition information programs (&#8805; 16 yr) </li>
+    <li>Use of food labels (&#8805; 16 yr)</li>
+    <li>Opinion on &#8220;gene theory&#8221; regarding one&#8217;s body weight (&#8805; 16 yr)</li>
+</ul>
+<h2 id="Eligible_Sample">Eligible Sample</h2><p>The target age groups for questions in this section vary by the topic. For example, the questions pertaining to infant nutrition and breast-feeding were asked of proxy respondents for children 6 years of age and younger; and senior meal program participation questions were asked of respondents 60 years of age and older. Please review the questionnaire and codebook carefully. Frequency counts were verified during the preparation of the file.</p>
+<h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>A question on the weekly frequency of eating meals not prepared at a home (DBD091) was asked during the physical examination, at the mobile examination center (MEC), of participants 12-15 years old. Theses 12-15 years old participants answered questions for themselves. </p>
+<p>The same question was asked, before the physical examination, in the home, of participants 1-11 years and of participants 16 years and older. </p>
+<p>All other questions in this section were asked before the physical examination, in the home, as well. <br />
+In the home, questions were asked by trained interviews using the Computer-Assisted Personal Interviewing (CAPI) system. Hand cards showing response categories were also used for some questions. When necessary, the interviewers read the hand cards to respondents. Persons 16 years of age and older and emancipated minors were interviewed directly. A proxy provided information for survey participants who were under 16 years of age and for individuals who could not answer the questions themselves.</p>
+<h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire. All of the data was reviewed by the NHANES field office staff for accuracy and completeness.</p>
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Frequency counts were checked, &#8220;skip&#8221; patterns were verified, and the reasonableness of question responses was reviewed. Edits were made to some variables to ensure the completeness, consistency, and analytic usefulness of the data. Edits were also made, when necessary, to address data disclosure concerns. When a variable was modified globally, as part of the editing process, the third letter in the variable name was changed from a Q (i.e. DIQ) to a D (i.e. DID). For example, some data were collected using two variables (a number variable and a unit of measure variable), but combined into a single variable for data release purposes. </p>
+<p><strong>DBD020, DBD030, DBD040, DBD050, DBD060, and DBD080</strong> (Breastfeeding and other childhood feeding practices) </p>
+<p>This information was collected using two-part (number and unit) questions to allow respondents to report the age of interest in days, weeks, months, or years. The released variables were edited to standardize the reported age to number of days, using the following conversion factors: 7 days/week, 30.4 days/month and 365 days/year. </p>
+<p><strong>DBD091</strong> (Weekly frequency of eating meals not prepared at a home) <br />
+Respondents were asked how many times per week they had eaten meals that were not prepared at a home. If the frequency was reported as "never," the value was recoded as zero. If the frequency was reported more than 21 times per week, the value was recoded as &#8220;5555.&#8221; If the frequency was reported as "less than weekly," the value was recoded as &#8220;6666.&#8221;</p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>DBQ072A, DBQ072B, DBQ072C, DBQ072D, and DBQ072U</strong> (Type of milk first fed) </p>
+<p>The response categories used for reporting types of milk were modified in 2005 to accommodate the most updated FDA regulations. The table below describes these changes in comparison with the categories used in the data released in the 2003-2004 cycle. </p>
+<p>
+<table summary="Comparision of 2004-2004 and 2005-2006 DBQ Type of Milk First Fed Response Categories">
+    <caption valign="top" align="center">Comparision of 2004-2004 and 2005-2006 DBQ Type of Milk First Fed Response Categories</caption>
+    <thead>
+        <tr>
+            <th id="ms__id119_heading_0">&#160;2003-2004 DBQ Variable Names</th>
+            <th id="ms__id119_heading_1">2003-2004 DBW Code Description&#160;&#160;&#160;&#160;&#160;</th>
+            <th id="ms__id119_heading_2">&#160;2005-2006 DBQ Variable Names</th>
+            <th id="ms__id119_heading_3">&#160;2005-2006 DBQ Code Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td headers="ms__id119_heading_0">&#160;DBQ071a</td>
+            <td headers="ms__id119_heading_1">&#160;Whole or regular milk</td>
+            <td headers="ms__id119_heading_2">&#160;DBD072a</td>
+            <td headers="ms__id119_heading_3">&#160;Whole or regular milk</td>
+        </tr>
+        <tr>
+            <td headers="ms__id119_heading_0">&#160;DBQ071b</td>
+            <td headers="ms__id119_heading_1">&#160;2% fat milk (includes &#8220;low fat milk&#8221; not further specified)</td>
+            <td headers="ms__id119_heading_2">&#160;DBD072b</td>
+            <td headers="ms__id119_heading_3">&#160;2% fat or reduced fat milk</td>
+        </tr>
+        <tr>
+            <td headers="ms__id119_heading_0">&#160;DBQ071c</td>
+            <td headers="ms__id119_heading_1">&#160;1% fat milk</td>
+            <td headers="ms__id119_heading_2">&#160;DBD072c</td>
+            <td headers="ms__id119_heading_3">&#160;1% fat or low-fat milk (includes 0.5% fat milk or &#8220;low-fat milk&#8221; not further specified)</td>
+        </tr>
+        <tr>
+            <td headers="ms__id119_heading_0">&#160;DBQ071d</td>
+            <td headers="ms__id119_heading_1">&#160;Skim, nonfat, or 0.5% fat milk</td>
+            <td headers="ms__id119_heading_2">&#160;DBD072d </td>
+            <td headers="ms__id119_heading_3">&#160;Fat-free, skim or nonfat milk</td>
+        </tr>
+        <tr>
+            <td headers="ms__id119_heading_0">&#160;DBQ071u</td>
+            <td headers="ms__id119_heading_1">&#160;Another type</td>
+            <td headers="ms__id119_heading_2">&#160;DBD072u</td>
+            <td headers="ms__id119_heading_3">&#160;Another type</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>Responses to these questions were collected as &#8220;code all that apply&#8221;. A respondent could report more than one type of milk and all their responses were recorded. </p>
+<p><strong>DBQ221A, DBQ221B, DBQ221C, DBQ221D, and DBQ221U</strong> (Type of milk used) </p>
+<p>The response categories used for reporting types of milk were modified in 2005 to accommodate the most updated FDA regulations. The table below describes these changes in comparison with the categories used in the data released in the 2003-2004 cycle.</p>
+<p>
+<table summary="Comparision of 2003-2004 and 2005-2006 DBQ Type of Milk Used Response Categories">
+    <caption valign="top" align="center">Comparision of 2003-2004 and 2005-2006 DBQ Type of Milk Used Response Categories</caption>
+    <thead>
+        <tr>
+            <th id="ms__id120_heading_0">&#160;2003-2004 DBQ Variable Names</th>
+            <th id="ms__id120_heading_1">2003-2004 DBQ Code Description&#160;</th>
+            <th id="ms__id120_heading_2">2005-2006 DBQ Variable Names&#160;</th>
+            <th id="ms__id120_heading_3">2005-2006 DBQ Code Description&#160;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td headers="ms__id120_heading_0">&#160;DBQ221a</td>
+            <td headers="ms__id120_heading_1">Whole or regular milk</td>
+            <td headers="ms__id120_heading_2">&#160;DBD222a</td>
+            <td headers="ms__id120_heading_3">Whole or regular milk</td>
+        </tr>
+        <tr>
+            <td headers="ms__id120_heading_0">&#160;DBQ221b</td>
+            <td headers="ms__id120_heading_1">2% fat milk (includes &#8220;low fat milk&#8221; not further specified)</td>
+            <td headers="ms__id120_heading_2">&#160;DBD222b</td>
+            <td headers="ms__id120_heading_3">2% fat or reduced fat milk</td>
+        </tr>
+        <tr>
+            <td headers="ms__id120_heading_0">&#160;DBQ221c</td>
+            <td headers="ms__id120_heading_1">1% fat milk</td>
+            <td headers="ms__id120_heading_2">&#160;DBD222c</td>
+            <td headers="ms__id120_heading_3">1% fat or low-fat milk (includes 0.5% fat milk or &#8220;low-fat milk&#8221; not further specified)</td>
+        </tr>
+        <tr>
+            <td headers="ms__id120_heading_0">&#160;DBQ221d</td>
+            <td headers="ms__id120_heading_1">Skim, nonfat, or 0.5% fat milk</td>
+            <td headers="ms__id120_heading_2">&#160;DBD222d</td>
+            <td headers="ms__id120_heading_3">Fat-free, skim or nonfat milk</td>
+        </tr>
+        <tr>
+            <td headers="ms__id120_heading_0">&#160;DBQ221u</td>
+            <td headers="ms__id120_heading_1">Another type</td>
+            <td headers="ms__id120_heading_2">&#160;DBD222u</td>
+            <td headers="ms__id120_heading_3">Another type</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>Responses to these questions are collected as &#8220;code all that apply&#8221;. A respondent could report more than one type of milk and all their responses were recorded. </p>
+<p><strong>DBD091</strong> (Weekly frequency of eating meals not prepared at a home) </p>
+<p>A similar question was included in the NHANES 2003-2004 release (variable name: DBD090) for participants aged 1-11 and 16+ years. This current version includes updated probes for different eating establishments, to be more inclusive about the places that provide commercially prepared foods. In addition, a probing sentence was added at the introductory paragraph to help respondents remember to include all meals. Only foods consumed as &#8220;meals&#8221; are of interest, foods consumed as &#8220;snacks&#8221; are not included in this question. Meals received as part of the school lunch or breakfast program, &#8220;Meals on Wheels&#8221; program, or prepared at a community center or senior center are not included either. <br />
+Since the question DBD091 was asked as part of household interview for participants 1-11 (proxy interview used) and 16 or more years of age, the interview sample weights may be used in their analysis. However, if the data is joined with other data from the MEC, the MEC sample weights should be used. Analysis of the question, DBD091, for 12 to 15 year olds should use the MEC sample weights because the question was asked in the MEC for this age group. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ010">DBQ010 - Ever breastfed or fed breastmilk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever breastfed or fed breastmilk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I'm going to ask you some general questions about {SP's} eating habits.  Was {SP} ever breastfed or fed breastmilk?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1484</td>
+                <td class="values" align="right">1484</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">655</td>
+                <td class="values" align="right">2139</td>
+                <td class="values">DBD040  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2139</td>
+                <td class="values">DBD040  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2146</td>
+                <td class="values">DBD040  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8202</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD020">DBD020 - Age started eating other foods(days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age started eating other foods(days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old was {SP} when {he/she} was first fed something other than breastmilk or water?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 730</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1431</td>
+                <td class="values" align="right">1431</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">1481</td>
+                <td class="values">DBD085  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1481</td>
+                <td class="values">DBD085  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1484</td>
+                <td class="values">DBD085  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8864</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD030">DBD030 - Age stopped breastfeeding(days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age stopped breastfeeding(days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old was {SP} when {he/she} completely stopped breastfeeding or being fed breastmilk?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 1460</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1248</td>
+                <td class="values" align="right">1248</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Still breastfeeding</td>
+                <td class="values" align="right">182</td>
+                <td class="values" align="right">1430</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1430</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1431</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8917</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD040">DBD040 - Age first fed formula daily(days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first fed formula daily(days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old was {SP} when {he/she} was first fed formula on a daily basis?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 730</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1830</td>
+                <td class="values" align="right">1830</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never on a daily basis</td>
+                <td class="values" align="right">256</td>
+                <td class="values" align="right">2086</td>
+                <td class="values">DBD060  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2086</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2093</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8255</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD050">DBD050 - Age stopped receiving formula(days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age stopped receiving formula(days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old was {SP} when {he/she} completely stopped drinking formula?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 1095</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1404</td>
+                <td class="values" align="right">1404</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Still drinking formula</td>
+                <td class="values" align="right">418</td>
+                <td class="values" align="right">1822</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1822</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">1836</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8512</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD060">DBD060 - Age first fed milk daily basis(days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first fed milk daily basis(days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old was {SP} when {he/she} was first fed milk on a daily basis?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 1460</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1614</td>
+                <td class="values" align="right">1614</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never on a daily basis</td>
+                <td class="values" align="right">464</td>
+                <td class="values" align="right">2078</td>
+                <td class="values">DBD080  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2078</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">2092</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8256</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD072A">DBD072A - Type of milk first fed-whole milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD072A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Type of milk first fed-whole milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was {SP} first fed on a daily basis?  Was it . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">Whole or regular milk</td>
+                <td class="values" align="right">1265</td>
+                <td class="values" align="right">1265</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1265</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">1275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9073</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD072B">DBD072B - Type of milk first fed-2% milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD072B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Type of milk first fed-2% milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was {SP} first fed on a daily basis?  Was it . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">2% fat or reduced-fat milk</td>
+                <td class="values" align="right">282</td>
+                <td class="values" align="right">282</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10066</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD072C">DBD072C - Type of milk first fed-1% milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD072C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Type of milk first fed-1% milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was {SP} first fed on a daily basis?  Was it . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">1% fat or low-fat milk (includes 0.5% fat milk or low-fat milk not further specified),</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10328</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD072D">DBD072D - Type of milk first fed-fat free milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD072D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Type of milk first fed-fat free milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was {SP} first fed on a daily basis?  Was it . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">13</td>
+                <td class="values">fat-free, skim or nonfat milk, or</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">9</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10339</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD072U">DBD072U - Type of milk first fed - other</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD072U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Type of milk first fed - other</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was {SP} first fed on a daily basis?  Was it . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">30</td>
+                <td class="values">Another type?</td>
+                <td class="values" align="right">59</td>
+                <td class="values" align="right">59</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10289</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD080">DBD080 - Age started eating solid foods(days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age started eating solid foods(days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old was {SP} when {he/she} started eating solid foods [such as strained foods like baby food or any other non-liquid foods] on a daily basis?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			6 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4 to 730</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1913</td>
+                <td class="values" align="right">1913</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never on a daily basis</td>
+                <td class="values" align="right">162</td>
+                <td class="values" align="right">2075</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2075</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">2093</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8255</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD085">DBD085 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD085</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBD085:  IF SP AGE &lt; 1 GO TO END OF SECTION, ELSE SP AGE 1-15 GO TO DBQ197, OTHERWISE CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ700">DBQ700 - How healthy is the diet</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ700</dd>
+            <dt>SAS Label: </dt>
+            <dd>How healthy is the diet</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Next I have some questions about {your/SP?s} eating habits.  In general, how healthy is {your/his/her} overall diet?  Would you say . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Excellent</td>
+                <td class="values" align="right">559</td>
+                <td class="values" align="right">559</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Very good</td>
+                <td class="values" align="right">1290</td>
+                <td class="values" align="right">1849</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Good</td>
+                <td class="values" align="right">2401</td>
+                <td class="values" align="right">4250</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Fair</td>
+                <td class="values" align="right">1496</td>
+                <td class="values" align="right">5746</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Poor</td>
+                <td class="values" align="right">380</td>
+                <td class="values" align="right">6126</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6127</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">6139</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4209</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ197">DBQ197 - Past 30 day milk product consumption</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ197</dd>
+            <dt>SAS Label: </dt>
+            <dd>Past 30 day milk product consumption</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I'm going to ask a few questions about milk products.  Do not include their use in cooking.  In the past 30 days, how often did {you/SP} have milk to drink or on {your/his/her} cereal?  Please include chocolate and other flavored milks as well as hot cocoa made with milk.  Do not count small amounts of milk added to coffee or tea.  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ3</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">932</td>
+                <td class="values" align="right">932</td>
+                <td class="values">DBD225  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Rarely-less than once a week</td>
+                <td class="values" align="right">987</td>
+                <td class="values" align="right">1919</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Sometimes-once a week or more, but less than once a day, or</td>
+                <td class="values" align="right">2117</td>
+                <td class="values" align="right">4036</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Often-once a day or more?</td>
+                <td class="values" align="right">5735</td>
+                <td class="values" align="right">9771</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Varied</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">9821</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9822</td>
+                <td class="values">DBD225  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9822</td>
+                <td class="values">DBD225  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">526</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD222A">DBD222A - You drink whole or regular milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD222A</dd>
+            <dt>SAS Label: </dt>
+            <dd>You drink whole or regular milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was it?  Was it usually . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT CANNOT PROVIDE USUAL TYPE, CODE ALL THAT APPLY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">Whole or regular,</td>
+                <td class="values" align="right">3890</td>
+                <td class="values" align="right">3890</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3890</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">3904</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6444</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD222B">DBD222B - You drink 2% fat milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD222B</dd>
+            <dt>SAS Label: </dt>
+            <dd>You drink 2% fat milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was it?  Was it usually . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT CANNOT PROVIDE USUAL TYPE, CODE ALL THAT APPLY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">2% fat or reduced-fat milk,</td>
+                <td class="values" align="right">3453</td>
+                <td class="values" align="right">3453</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6895</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD222C">DBD222C - You drink 1% fat milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD222C</dd>
+            <dt>SAS Label: </dt>
+            <dd>You drink 1% fat milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was it?  Was it usually . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT CANNOT PROVIDE USUAL TYPE, CODE ALL THAT APPLY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">1% fat or low-fat milk (includes 0.5% fat milk or low-fat milk not further specified),</td>
+                <td class="values" align="right">791</td>
+                <td class="values" align="right">791</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9557</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD222D">DBD222D - You drink fat-free or skim milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD222D</dd>
+            <dt>SAS Label: </dt>
+            <dd>You drink fat-free or skim milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was it?  Was it usually . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT CANNOT PROVIDE USUAL TYPE, CODE ALL THAT APPLY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">13</td>
+                <td class="values">Skim, nonfat, or 0.5% fat milk (includes liquid or reconstituted from dry),</td>
+                <td class="values" align="right">834</td>
+                <td class="values" align="right">834</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9514</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD222U">DBD222U - You drink another type of milk</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD222U</dd>
+            <dt>SAS Label: </dt>
+            <dd>You drink another type of milk</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What type of milk was it?  Was it usually . . .</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT CANNOT PROVIDE USUAL TYPE, CODE ALL THAT APPLY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">30</td>
+                <td class="values">Another type?</td>
+                <td class="values" align="right">412</td>
+                <td class="values" align="right">412</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9936</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD225">DBD225 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD225</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBD225:  IF SP AGE 1-19 GO TO DBD355, OTHERWISE CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ229">DBQ229 - Regular milk use 5 times per week</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ229</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular milk use 5 times per week</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next question is about regular milk use.  A regular milk drinker is someone who uses any type of milk at least 5 times a week.  Using this definition, which statement best describes {you/SP}?...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ4</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">{I've/He's/She's} been a regular milk drinker for most or all of {my/his/her} life, including {my/his/her} childhood</td>
+                <td class="values" align="right">2084</td>
+                <td class="values" align="right">2084</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">{I've/He's/She's} never been a regular milk drinker;</td>
+                <td class="values" align="right">1074</td>
+                <td class="values" align="right">3158</td>
+                <td class="values">DBD265a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">{My/His/Her} milk drinking has varied over {my/his/her} life-sometimes {I've/he's/she's} been a regular milk drinker</td>
+                <td class="values" align="right">1814</td>
+                <td class="values" align="right">4972</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4973</td>
+                <td class="values">DBD265a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">4979</td>
+                <td class="values">DBD265a </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5369</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ235A">DBQ235A - How often drank milk age 5-12</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ235A</dd>
+            <dt>SAS Label: </dt>
+            <dd>How often drank milk age 5-12</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, I'm going to ask you how often {you/SP} drank milk at different times in {your/his/her} life.  How often did {you/SP} drink any type of milk, including milk added to cereal when {you were/s/he was} a child between the ages of 5 and 12 years old?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ5  IF NECESSARY, PROBE FOR USUAL OR MOST COMMON AMOUNT FOR THIS TIME PERIOD</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">62</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Rarely-less than once a week</td>
+                <td class="values" align="right">136</td>
+                <td class="values" align="right">198</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Sometimes-once a week or more, but less than once a day</td>
+                <td class="values" align="right">388</td>
+                <td class="values" align="right">586</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Often-once a day or more</td>
+                <td class="values" align="right">3253</td>
+                <td class="values" align="right">3839</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Varied</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">3853</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3853</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">3898</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6450</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ235B">DBQ235B - How often drank milk age 13-17</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ235B</dd>
+            <dt>SAS Label: </dt>
+            <dd>How often drank milk age 13-17</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, I'm going to ask you how often {you/SP} drank milk at different times in {your/his/her} life.  How often did {you/SP} drink any type of milk, including milk added to cereal when {you were/s/he was} a teenager between the ages of 13 and 17 years old?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ5  IF NECESSARY, PROBE FOR USUAL OR MOST COMMON AMOUNT FOR THIS TIME PERIOD</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">75</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Rarely-less than once a week</td>
+                <td class="values" align="right">242</td>
+                <td class="values" align="right">317</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Sometimes-once a week or more, but less than once a day</td>
+                <td class="values" align="right">787</td>
+                <td class="values" align="right">1104</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Often-once a day or more</td>
+                <td class="values" align="right">2747</td>
+                <td class="values" align="right">3851</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Varied</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">3873</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3873</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">3898</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6450</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ235C">DBQ235C - How often drank milk age 18-35</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ235C</dd>
+            <dt>SAS Label: </dt>
+            <dd>How often drank milk age 18-35</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, I'm going to ask you how often {you/SP} drank milk at different times in {your/his/her} life.  How often did {you/SP} drink any type of milk, including milk added to cereal when {you were/s/he was} a young adult between the ages of 18 and 35 years old?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ5  IF NECESSARY, PROBE FOR USUAL OR MOST COMMON AMOUNT FOR THIS TIME PERIOD</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">111</td>
+                <td class="values" align="right">111</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Rarely-less than once a week</td>
+                <td class="values" align="right">434</td>
+                <td class="values" align="right">545</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Sometimes-once a week or more, but less than once a day</td>
+                <td class="values" align="right">1162</td>
+                <td class="values" align="right">1707</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Often-once a day or more</td>
+                <td class="values" align="right">2119</td>
+                <td class="values" align="right">3826</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Varied</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">3886</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3886</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">3898</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6450</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD265a">DBD265a - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD265a</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBD265A:  IF SP AGE 20-59, GO TO DBD709, OTHERWISE CONTINUE.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ301">DBQ301 - Community/Government meals delivered</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ301</dd>
+            <dt>SAS Label: </dt>
+            <dd>Community/Government meals delivered</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next questions are about meals provided by community or government programs.  In the past 12 months, did {you/SP} receive any meals delivered to {your/his/her} home from community programs, "Meals on Wheels", or any other programs?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">56</td>
+                <td class="values" align="right">56</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1513</td>
+                <td class="values" align="right">1569</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1570</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1570</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8778</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ330">DBQ330 - Eat meals at Community/Senior center</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ330</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eat meals at Community/Senior center</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, did {you/SP} go to a community program or senior center to eat prepared meals?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INCLUDE ADULT DAY CARE</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">136</td>
+                <td class="values" align="right">136</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1433</td>
+                <td class="values" align="right">1569</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1570</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1570</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8778</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD355">DBD355 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD355</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBD355: IF SP AGE &gt;=60, GO TO DBD709, OTHERWISE, CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ360">DBQ360 - Attend kindergarten thru high school</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ360</dd>
+            <dt>SAS Label: </dt>
+            <dd>Attend kindergarten thru high school</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the school year, {do you/does SP} attend a kindergarten, grade school, junior or high school?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">3143</td>
+                <td class="values" align="right">3143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">766</td>
+                <td class="values" align="right">3909</td>
+                <td class="values">DBD709  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3909</td>
+                <td class="values">DBD709  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3909</td>
+                <td class="values">DBD709  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6439</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ370">DBQ370 - School serves school lunches</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ370</dd>
+            <dt>SAS Label: </dt>
+            <dd>School serves school lunches</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Does {your/SP's} school serve school lunches?  These are complete lunches that cost the same every day.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2950</td>
+                <td class="values" align="right">2950</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">183</td>
+                <td class="values" align="right">3133</td>
+                <td class="values">DBQ400  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3133</td>
+                <td class="values">DBQ400  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">3143</td>
+                <td class="values">DBQ400  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7205</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD381">DBD381 - # of times/week get school lunch</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD381</dd>
+            <dt>SAS Label: </dt>
+            <dd># of times/week get school lunch</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the school year, about how many times a week {do you/does SP} usually get a complete school lunch?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2443</td>
+                <td class="values" align="right">2443</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">None</td>
+                <td class="values" align="right">503</td>
+                <td class="values" align="right">2946</td>
+                <td class="values">DBQ400  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2946</td>
+                <td class="values">DBQ400  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">2950</td>
+                <td class="values">DBQ400  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7398</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ390">DBQ390 - School lunch free, reduced or full price</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ390</dd>
+            <dt>SAS Label: </dt>
+            <dd>School lunch free, reduced or full price</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} get these lunches free, at a reduced price, or {do you/does he/she} pay full price?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Free</td>
+                <td class="values" align="right">1290</td>
+                <td class="values" align="right">1290</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Reduced price</td>
+                <td class="values" align="right">275</td>
+                <td class="values" align="right">1565</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Full price</td>
+                <td class="values" align="right">874</td>
+                <td class="values" align="right">2439</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2440</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">2443</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7905</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ400">DBQ400 - School serve complete breakfast each day</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ400</dd>
+            <dt>SAS Label: </dt>
+            <dd>School serve complete breakfast each day</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Does {your/SP's} school serve a complete breakfast that costs the same every day?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2527</td>
+                <td class="values" align="right">2527</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">538</td>
+                <td class="values" align="right">3065</td>
+                <td class="values">DBQ422  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3067</td>
+                <td class="values">DBQ422  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">76</td>
+                <td class="values" align="right">3143</td>
+                <td class="values">DBQ422  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7205</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD411">DBD411 - # of times/week get school breakfast</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD411</dd>
+            <dt>SAS Label: </dt>
+            <dd># of times/week get school breakfast</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the school year, about how many times a week {do you/does SP} usually get a complete breakfast at school?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1152</td>
+                <td class="values" align="right">1152</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">None</td>
+                <td class="values" align="right">1370</td>
+                <td class="values" align="right">2522</td>
+                <td class="values">DBQ422  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2522</td>
+                <td class="values">DBQ422  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">2527</td>
+                <td class="values">DBQ422  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7821</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ421">DBQ421 - School breakfast free/reduced/full price</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ421</dd>
+            <dt>SAS Label: </dt>
+            <dd>School breakfast free/reduced/full price</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} get these breakfasts free, at a reduced price, or {do you/does he/she} pay full price?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Free</td>
+                <td class="values" align="right">846</td>
+                <td class="values" align="right">846</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Reduced price</td>
+                <td class="values" align="right">97</td>
+                <td class="values" align="right">943</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Full price</td>
+                <td class="values" align="right">205</td>
+                <td class="values" align="right">1148</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1148</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1152</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9196</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ422">DBQ422 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ422</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBQ422:  IF DBQ390 = CODE 1 OR CODE 2, OR DBQ421 = CODE 1 OR CODE 2, CONTINUE;  OTHERWISE, GO TO DBD709.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ424">DBQ424 - Summer program meal free/reduced price</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ424</dd>
+            <dt>SAS Label: </dt>
+            <dd>Summer program meal free/reduced price</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(Do you/Does SP) get a free or reduced price meal at any summer program (he/she) attends?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 4 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">354</td>
+                <td class="values" align="right">354</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">624</td>
+                <td class="values" align="right">978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Did not attend summer program</td>
+                <td class="values" align="right">624</td>
+                <td class="values" align="right">1602</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1602</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">1616</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8732</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD709">DBD709 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD709</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBD709: IF SP AGE &lt; 1 OR SP AGE 12-15, GO TO END OF SECTION.  OTHERWISE, CONTINUE.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBD091">DBD091 - # of times/wk eat meals not from a home</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBD091</dd>
+            <dt>SAS Label: </dt>
+            <dd># of times/wk eat meals not from a home</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Next, Im going to ask you about meals.  By meal, I mean breakfast, lunch and dinner.  On average, how many meals per week {do you/does SP} get that were not prepared at a home?  Please include meals from both dine-in and carry out restaurants, restaurants that deliver food to your home, cafeterias, fast-food places, food courts, food stands, meals prepared at a grocery store, and meals from vending machines.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF DBD381 &gt; 0 OR DBD411 &gt; 0, DISPLAY {Please do not include meals provided as part of the school lunch or school breakfast}. IF DBQ301 = 1 OR DBQ330 = 1, DISPLAY {Please do not include meals provided as part of the community programs you reported earlier}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 21</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7465</td>
+                <td class="values" align="right">7465</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">935</td>
+                <td class="values" align="right">8400</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5555</td>
+                <td class="values">More than 21 times per week</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">8405</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6666</td>
+                <td class="values">Less than weekly</td>
+                <td class="values" align="right">1284</td>
+                <td class="values" align="right">9689</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">9690</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">9695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">653</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ719">DBQ719 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ719</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBQ719:  IF SP AGE &lt;= 15 OR IF SP AGE =&gt; 16 AND PROXY INTERVIEW, GO TO END OF SECTION.OTHERWISE, CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ720">DBQ720 - Heard of dietary guidelines?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ720</dd>
+            <dt>SAS Label: </dt>
+            <dd>Heard of dietary guidelines?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you heard of the 'Dietary Guidelines for Americans'?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2336</td>
+                <td class="values" align="right">2336</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3707</td>
+                <td class="values" align="right">6043</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6044</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ730">DBQ730 - Heard of food guide pyramid?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ730</dd>
+            <dt>SAS Label: </dt>
+            <dd>Heard of food guide pyramid?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Have you heard of] 'The Food Guide Pyramid'?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">4405</td>
+                <td class="values" align="right">4405</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1666</td>
+                <td class="values" align="right">6071</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6072</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ740">DBQ740 - Heard about 5-a-day program?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ740</dd>
+            <dt>SAS Label: </dt>
+            <dd>Heard about 5-a-day program?</dd>
+            <dt>English Text: </dt>
+            <dd class="info"> [Have you heard of] The 5-A-Day [for Better Health] Program?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2643</td>
+                <td class="values" align="right">2643</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3410</td>
+                <td class="values" align="right">6053</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6054</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ750">DBQ750 - Use nutrition facts panel on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ750</dd>
+            <dt>SAS Label: </dt>
+            <dd>Use nutrition facts panel on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Here is an example of a food label.  [HAND CARD DBQ4]  This part of the food label is called the Nutrition Facts panel.  How often do you use the Nutrition Facts panel when deciding to buy a food product? 
+
+Would you say always, most of the time, sometimes, rarely, or never? 
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARDS DBQ 4 &amp; 5</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">877</td>
+                <td class="values" align="right">877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">1003</td>
+                <td class="values" align="right">1880</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1318</td>
+                <td class="values" align="right">3198</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">636</td>
+                <td class="values" align="right">3834</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">2018</td>
+                <td class="values" align="right">5852</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">never seen</td>
+                <td class="values" align="right">224</td>
+                <td class="values" align="right">6076</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6078</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ760">DBQ760 - Use ingredients list on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ760</dd>
+            <dt>SAS Label: </dt>
+            <dd>Use ingredients list on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How about the list of ingredients?
+[How often do you use the list of ingredients when deciding to buy a food product?  Would you say always, most of the time, sometimes, rarely, or never?]
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARDS DBQ 4 &amp; 5</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">638</td>
+                <td class="values" align="right">638</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">764</td>
+                <td class="values" align="right">1402</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1328</td>
+                <td class="values" align="right">2730</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">888</td>
+                <td class="values" align="right">3618</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">2268</td>
+                <td class="values" align="right">5886</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">never seen</td>
+                <td class="values" align="right">191</td>
+                <td class="values" align="right">6077</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6078</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ770">DBQ770 - Use serving size info on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ770</dd>
+            <dt>SAS Label: </dt>
+            <dd>Use serving size info on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How about the information on the size of a serving?
+[How often do you use information on the size of a serving when deciding to buy a food product?  Would you say always, most of the time, sometimes, rarely, or never?]
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARDS DBQ 4 &amp; 5</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">596</td>
+                <td class="values" align="right">596</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">703</td>
+                <td class="values" align="right">1299</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1203</td>
+                <td class="values" align="right">2502</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">782</td>
+                <td class="values" align="right">3284</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">2609</td>
+                <td class="values" align="right">5893</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">never seen</td>
+                <td class="values" align="right">182</td>
+                <td class="values" align="right">6075</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6077</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ780">DBQ780 - Use health claims on food packages</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ780</dd>
+            <dt>SAS Label: </dt>
+            <dd>Use health claims on food packages</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Some food packages contain health claims about the benefits of nutrients or foods like the examples on this card.  [HAND CARD DBQ6]  How often do you use this kind of health claim when deciding to buy a product?  Would you say always, most of the time, sometimes, rarely, or never?
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARDS DBQ 6 &amp; 7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">355</td>
+                <td class="values" align="right">355</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">586</td>
+                <td class="values" align="right">941</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1457</td>
+                <td class="values" align="right">2398</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">956</td>
+                <td class="values" align="right">3354</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">2494</td>
+                <td class="values" align="right">5848</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">never seen</td>
+                <td class="values" align="right">226</td>
+                <td class="values" align="right">6074</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6075</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ789">DBQ789 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ789</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM DBQ.789:
+IF (DBQ.750 = 1-4) OR (DBQ.760 = 1-4) OR (DBQ.770 = 1-4) OR (DBQ.780 = 	1-4), CONTINUE.  OTHERWISE, GO TO DBQ.890.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ790">DBQ790 - Check calories on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ790</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check calories on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When you use the food label to decide about a food product, how often do you look for information about calories?  Would you say always, most of the time, sometimes, rarely, or never? 
+
+	
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">733</td>
+                <td class="values" align="right">733</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">853</td>
+                <td class="values" align="right">1586</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1269</td>
+                <td class="values" align="right">2855</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">672</td>
+                <td class="values" align="right">3527</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">884</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ800">DBQ800 - Check calories from fat on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ800</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check calories from fat on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] calories from fat?  [Would you say always, most of the time, sometimes, rarely, or never?] 
+
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">785</td>
+                <td class="values" align="right">785</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">887</td>
+                <td class="values" align="right">1672</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1160</td>
+                <td class="values" align="right">2832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">639</td>
+                <td class="values" align="right">3471</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">940</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ810">DBQ810 - Check total fat on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ810</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check total fat on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] total fat?  [Would you say always, most of the time, sometimes, rarely, or never?] 	
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">830</td>
+                <td class="values" align="right">830</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">919</td>
+                <td class="values" align="right">1749</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1135</td>
+                <td class="values" align="right">2884</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">635</td>
+                <td class="values" align="right">3519</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">891</td>
+                <td class="values" align="right">4410</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4410</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ820">DBQ820 - Check trans fat on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ820</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check trans fat on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] trans fat?  [Would you say always, most of the time, sometimes, rarely, or never?] 
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">693</td>
+                <td class="values" align="right">693</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">626</td>
+                <td class="values" align="right">1319</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">930</td>
+                <td class="values" align="right">2249</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">766</td>
+                <td class="values" align="right">3015</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">1387</td>
+                <td class="values" align="right">4402</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4402</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ830">DBQ830 - Check saturated fat on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ830</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check saturated fat on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] saturated fat?  [Would you say always, most of the time, sometimes, rarely, or never?]</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">743</td>
+                <td class="values" align="right">743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">714</td>
+                <td class="values" align="right">1457</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1026</td>
+                <td class="values" align="right">2483</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">720</td>
+                <td class="values" align="right">3203</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">1206</td>
+                <td class="values" align="right">4409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ840">DBQ840 - Check cholesterol on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ840</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check cholesterol on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] cholesterol?  [Would you say always, most of the time, sometimes, rarely, or never?] 	
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">749</td>
+                <td class="values" align="right">749</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">672</td>
+                <td class="values" align="right">1421</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1076</td>
+                <td class="values" align="right">2497</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">737</td>
+                <td class="values" align="right">3234</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">1176</td>
+                <td class="values" align="right">4410</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4410</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ850">DBQ850 - Check sodium on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ850</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check sodium on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] sodium?  [Would you say always, most of the time, sometimes, rarely, or never?]</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">739</td>
+                <td class="values" align="right">739</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">691</td>
+                <td class="values" align="right">1430</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1055</td>
+                <td class="values" align="right">2485</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">758</td>
+                <td class="values" align="right">3243</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">1167</td>
+                <td class="values" align="right">4410</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ860">DBQ860 - Check carbohydrates on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ860</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check carbohydrates on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] carbohydrates (car-bO-hi-drats)?  [Would you say always, most of the time, sometimes, rarely, or never?] 	
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">663</td>
+                <td class="values" align="right">663</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">690</td>
+                <td class="values" align="right">1353</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1160</td>
+                <td class="values" align="right">2513</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">687</td>
+                <td class="values" align="right">3200</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">1209</td>
+                <td class="values" align="right">4409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ870">DBQ870 - Check fiber on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ870</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check fiber on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] fiber?  [Would you say always, most of the time, sometimes, rarely, or never?]</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">620</td>
+                <td class="values" align="right">620</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">616</td>
+                <td class="values" align="right">1236</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1131</td>
+                <td class="values" align="right">2367</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">750</td>
+                <td class="values" align="right">3117</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">1291</td>
+                <td class="values" align="right">4408</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4408</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ880">DBQ880 - Check sugars on food label</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ880</dd>
+            <dt>SAS Label: </dt>
+            <dd>Check sugars on food label</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[When you use the food label to decide about a food product, how often do you look for information about] sugars?  [Would you say always, most of the time, sometimes, rarely, or never?] 
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ7</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Always</td>
+                <td class="values" align="right">874</td>
+                <td class="values" align="right">874</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Most of the time</td>
+                <td class="values" align="right">734</td>
+                <td class="values" align="right">1608</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Sometimes</td>
+                <td class="values" align="right">1159</td>
+                <td class="values" align="right">2767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Rarely</td>
+                <td class="values" align="right">653</td>
+                <td class="values" align="right">3420</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never</td>
+                <td class="values" align="right">991</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4411</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5937</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DBQ890">DBQ890 - Are people born to be fat/thin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DBQ890</dd>
+            <dt>SAS Label: </dt>
+            <dd>Are people born to be fat/thin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Would you say you strongly agree, somewhat agree, neither agree nor disagree, somewhat disagree, or strongly disagree with the following statement: Some people are born to be fat and some thin; there is not much you can do to change this?
+	
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DBQ8</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Strongly agree</td>
+                <td class="values" align="right">676</td>
+                <td class="values" align="right">676</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Somewhat agree</td>
+                <td class="values" align="right">1439</td>
+                <td class="values" align="right">2115</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">neither agree or disagree</td>
+                <td class="values" align="right">729</td>
+                <td class="values" align="right">2844</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Somewhat disagree</td>
+                <td class="values" align="right">1523</td>
+                <td class="values" align="right">4367</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Strongly disagree</td>
+                <td class="values" align="right">1688</td>
+                <td class="values" align="right">6055</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6056</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">6080</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4268</td>
+                <td class="values" align="right">10348</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

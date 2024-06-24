@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Cholesterol - HDL" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Cholesterol - HDL Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Cholesterol - HDL Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBDHDD">LBDHDD - Direct HDL-Cholesterol (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDHDDSI">LBDHDDSI - Direct HDL-Cholesterol (mmol/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cholesterol - HDL (HDL_D)
+			</h3>
+        <h4>
+				Data File: HDL_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				December 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				April 2010</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">
+						Note: See analytical note on “Change in Assay Methods Most Likely Responsible for Changes in HDL Cholesterol values in NHANES 1999-2008” </h5>
+        </div>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>HDL-Cholesterol</strong> </p>
+<p>The goals of this component are: </p>
+<ol>
+    <li>to monitor the prevalence and trends in major cardiovascular conditions and risk factors in the U.S.; and </li>
+    <li>to evaluate prevention and treatment programs targeting cardiovascular disease in the U.S. </li>
+</ol>
+<p>The main element of the cardiovascular disease laboratory component in NHANES is blood lipid levels. Cardiovascular disease is the leading cause of death in the United States. The data will be used to monitor the status of hyperlipidemia and the success of the National Cholesterol Education Program. </p>
+<h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 6 years and older who do not meet any of the exclusion criteria were sampled.</p> 
+<h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>HDL-Cholestorol </strong></p>
+<p><strong>Data Collection Methods</strong> </p>
+<p>In the mobile examination center (MEC) laboratory, blood specimens are processed, stored, and shipped to the Johns Hopkins University Lipoprotein Analytical Laboratory for analysis. </p>
+<p><strong>Examination Protocol</strong> </p>
+<p>Detailed specimen collection and processing instructions are described in the <span style="text-decoration: underline;">NHANES Laboratory/Medical Technologists Procedures Manual</span> (LPM). Vials were stored under appropriate temperature conditions (stored at -20 degrees Centigrade) until they were shipped to Johns Hopkins University Lipoprotein Analytical Laboratory for testing. The analytical methods are described in the Analytic Methodology section of this document. </p>
+<p><strong>Data Collection</strong> </p>
+<p>Detailed specimen collection and processing instructions are discussed in the LPM. Each chapter in the LPM specifies the procedure to be used for preparation, labeling, processing, preservation, and transport of the specimens. </p>
+<p><strong>Analytic Methodology </strong></p>
+<p><strong>HDL-Cholesterol Direct Immunoassay Method</strong> </p>
+<p>HDL is measured directly in serum. The apolipoprotein B containing lipoproteins in the specimen are reacted with a blocking reagent that renders them non-reactive with the enzymatic cholesterol reagent under conditions of the assay. The reagents are purchased from Roche/Boehringer-Mannheim Diagnostics. The method uses sulfated alpha-cyclodextrin in the presence of Mg<sup>+2</sup> , which forms complexes with apoB containing lipoproteins, and polyethylene glycol-coupled cholesteryl esterase and cholesterol oxidase for the HDL-cholesterol measurement. The reactions are as follows:</p>
+<p>ApoB containing lipoproteins + a-cyclodextrin + Mg<sup>+2</sup> + dextran SO<sub>4</sub> ---&gt; soluble non-reactive complexes with apoB-containing lipoproteins </p>
+<p>                                     PEG-cholesteryl esterase <br />
+HDL-cholesteryl esters ------------------------------------&gt; HDL-unesterified cholesterol + fatty acid</p>
+<p>                                                PEG-cholesterol oxidase <br />
+Unesterified cholesterol + O<sub>2</sub> -------------------------------------&gt; cholestenone + H<sub>2</sub>O<sub>2</sub>  </p>
+<p>H<sub>2</sub>O<sub>2</sub> + 5-aminophenazone + N-ethyl-N-(3-methylphenyl)-N’_succinyl ethylene diamine + H<sub>2</sub>O + H<sup>+</sup> peroxidase ---&gt; qunoneimine dye + H<sub>2</sub>O</p>
+<p>Absorbance is measured at 600 nm. </p>
+<p>There was a change in the equipment from the Hitachi 717 to the Hitachi 912 during 2005-2006. The lab method was similar and the lab site was the same for HDL Cholesterol in NHANES 2003-2004. A detailed description of the laboratory method used can be found in Laboratory Procedures Manuals on the NHANES web site.</p>
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens were processed, stored, and shipped to Johns Hopkins Hospital, Baltimore, MD for analysis. Detailed specimen collection and processing instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of the Laboratory Methodology section. </p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES web site.</p>
+<h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. A detailed description of the QA/QC procedures can be found on the NHANES web site. </p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>Analytical Note</strong> </p>
+<p><strong><span style="text-decoration: underline;">Change in Assay Methods Most Likely Responsible for Changes in HDL Cholesterol values in NHANES 1999-2008 </span></strong><br />
+<br />
+<span style="text-decoration: underline;">Researchers are cautioned to interpret trends in HDL cholesterol for NHANES 1999-2008 in view of probable HDL cholesterol method effects.</span> The mean HDL cholesterol values from 1999-2008 showed changes for sample participants 20 years or older: </p>
+<p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left">Mean HDL Cholesterol Values from 1999-2008</caption>
+    <thead>
+        <tr>
+            <th>Years</th>
+            <th>n</th>
+            <th>Mean HDL(mg/dL)*</th>
+            <th>SEM**</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1999-2000</td>
+            <td>4117</td>
+            <td>50.6</td>
+            <td>0.7</td>
+        </tr>
+        <tr>
+            <td>2001-2002</td>
+            <td>4691</td>
+            <td>51.9</td>
+            <td>0.28</td>
+        </tr>
+        <tr>
+            <td>2003-2004</td>
+            <td>4475</td>
+            <td>54.1</td>
+            <td>0.38</td>
+        </tr>
+        <tr>
+            <td>2005-2006</td>
+            <td>4481</td>
+            <td>54.6</td>
+            <td>0.36</td>
+        </tr>
+        <tr>
+            <td>2007-2008</td>
+            <td>5332</td>
+            <td>51.9</td>
+            <td>0.53</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p> </p>
+<p>* Weighted mean to account for complex sample design of NHANES <br />
+**SEM is the standard error the mean </p>
+<p> </p>
+<p>The changes in average HDL Cholesterol levels from 1999-2008 were seen across various age, gender and race-ethnicity groups indicating a method effect. The HDL cholesterol was analyzed in 1999-2002 using two methods - heparin manganese precipitation and a direct HDL immunoassay depending on the participant age and amount of specimen. Most participants in 1999-2002 were measured by the precipitation method. Starting in 2003, all HDL cholesterol samples were analyzed using the direct HDL cholesterol immunoassay method. The heparin-manganese precipitation method and direct immunoassay method for 1999-2000, 2001-2002 and 2005-2006 showed an undesirable bias (&gt;4%) when compared to the laboratory's HDL-cholesterol quality controls (Solomon Park Research Laboratories, Kirkland, WA) that were assigned values established by the Centers for Disease Control and Prevention. The CDC HDL cholesterol reference method uses heparin-manganese to precipitate HDL-cholesterol and the Abell-Kendall method to measure cholesterol. The HDL cholesterol for 1999-2000, 2001-2002 and 2005-2006 were adjusted using: </p>
+<p>Corrected HDL =  <span style="text-decoration: underline;">     (Solomon Park assigned HDL value) x (Participant HDL)       <br />
+</span>                            (Quality Control HDL value associated with Participant sample) </p>
+<p>The bias for the HDL cholesterol method for 2003-2004 was acceptable (&lt;4%) and the participant results were not corrected. In addition, there was a change in instrumentation in 2005-2006 and there were several modifications of the direct HDL cholesterol method. To control for these differences in methods and instrumentation, the HDL cholesterol was corrected using the Solomon Lab quality controls as described above. In 2007-2008, a new laboratory performed the HDL cholesterol using a direct HDL cholesterol method similar to the direct HDL method of 2005-2006, but it was performed on a different instrument. <br />
+<br />
+Both laboratories performing HDL Cholesterol from 1999-2008 participated in the CDC-NHLBI Lipid Standardization Program (LSP). The CDC LSP maximum allowable bias for HDL Cholesterol is 5%. The average bias compared to the reference CDC HDL Cholesterol value for 2007-2008 was approximately -0.5%. The average bias compared to the CDC HDL Cholesterol values for 2003-2004 and 2005-2006 were approximately +2.7% and +2.0%, respectively. Unfortunately, the HDL Cholesterol values for the LSP program for 1999-2002 could not be evaluated. This indicates that the 2007-2008 HDL Cholesterol values may be less biased than the 2003-2006 values; however, both laboratories were within the 5% maximum allowable bias for HDL Cholesterol. <br />
+<br />
+The changes in average HDL Cholesterol levels from 1999-2008 were seen across various age, gender and race-ethnicity groups indicating a method effect. Other covariates (body mass index, medications, physical exercise, smoking and alcohol consumption) may explain some of the changes in HDL cholesterol, but it is unlikely to account for the majority of the mean changes in HDL cholesterol. </p>
+<p>Derived variables were created in this data file. The derivations follow: </p>
+<p>LBDHDDSI:<br />
+The HDL-cholesterol in mg/dL (LBXHDD) was converted to mmol/L (LBDHDDSI) by multiplying by 0.02586. </p>
+<p>LBDHDD:<br />
+The corrected HDL as described in the above Analytical Note. </p>
+<p>In cases where the result was below the limit of detection, the value for that variable is the detection limit divided by the square root of two.</p>
+<p>Exam sample weights should be used for analyses. Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues.  The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDHDD">LBDHDD - Direct HDL-Cholesterol (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDHDD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Direct HDL-Cholesterol (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Direct HDL-Cholesterol (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">15 to 188</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7360</td>
+                <td class="values" align="right">7360</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">726</td>
+                <td class="values" align="right">8086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDHDDSI">LBDHDDSI - Direct HDL-Cholesterol (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDHDDSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Direct HDL-Cholesterol (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Direct HDL-Cholesterol (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.39 to 4.86</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7360</td>
+                <td class="values" align="right">7360</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">726</td>
+                <td class="values" align="right">8086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

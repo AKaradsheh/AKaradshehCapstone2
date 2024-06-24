@@ -1,0 +1,1842 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Smoking - Recent Tobacco Use" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Smoking - Recent Tobacco Use Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Smoking - Recent Tobacco Use Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#SMQ680">SMQ680 - Used tobacco/nicotine last 5 days?</a>
+                </li>
+                <li>
+                  <a href="#SMQ690A">SMQ690A - Used last 5 days - Cigarettes</a>
+                </li>
+                <li>
+                  <a href="#SMQ690B">SMQ690B - Used last 5 days - Pipes</a>
+                </li>
+                <li>
+                  <a href="#SMQ690C">SMQ690C - Used last 5 days - Cigars</a>
+                </li>
+                <li>
+                  <a href="#SMQ690D">SMQ690D - Used last 5 days - Chewing tobacco</a>
+                </li>
+                <li>
+                  <a href="#SMQ690E">SMQ690E - Used last 5 days - Snuff</a>
+                </li>
+                <li>
+                  <a href="#SMQ690F">SMQ690F - Used last 5 days - Patch, gum, other</a>
+                </li>
+                <li>
+                  <a href="#SMQ700">SMQ700 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#SMQ710">SMQ710 - # days smoked cigarettes last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ720">SMQ720 - # cigarettes smoked per day</a>
+                </li>
+                <li>
+                  <a href="#SMQ725">SMQ725 - When did resp. smoke last cigarette?</a>
+                </li>
+                <li>
+                  <a href="#SMQ740">SMQ740 - # days smoked pipe over last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ750">SMQ750 - # pipes smoked per day - last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ755">SMQ755 - When did resp. smoke last pipe?</a>
+                </li>
+                <li>
+                  <a href="#SMQ770">SMQ770 - # days smoked cigars over last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ780">SMQ780 - # cigars smoked per day - last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ785">SMQ785 - When did resp. smoke last cigar?</a>
+                </li>
+                <li>
+                  <a href="#SMQ800">SMQ800 - #days used chewing tobacco -last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ815">SMQ815 - When did resp. last use chewing tobacco?</a>
+                </li>
+                <li>
+                  <a href="#SMQ817">SMQ817 - # days used snuff over last 5 days</a>
+                </li>
+                <li>
+                  <a href="#SMQ819">SMQ819 - When last used snuff</a>
+                </li>
+                <li>
+                  <a href="#SMQ830">SMQ830 - # days used nicotine stop smoking aids?</a>
+                </li>
+                <li>
+                  <a href="#SMQ840">SMQ840 - Last time used nicotine stop smoking aid</a>
+                </li>
+                <li>
+                  <a href="#SMAQUEX">SMAQUEX - Questionnaire Mode Flag</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Smoking - Recent Tobacco Use (SMQRTU_D)
+			</h3>
+        <h4>
+				Data File: SMQRTU_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				December 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>Smoking - Recent Tobacco Use (now named SMQRTU, previously named SMQMEC) provides details on past 5 days use of cigarettes, pipes, cigars and other forms of nicotine. The questions, asked of youths and adults, are of special interest for evaluating the Laboratory cotinine data (i.e., recent nicotine exposure).</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>The target sample, for the questions in this section, is persons age 12 years and older. </p>
+<p>There were no proxy interviews. Participants 12-19 years old responded for themselves.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>These questions were asked at the mobile examination center (MEC) during the MEC Interview.. Adults 20 years and older were interviewed face -to -face, using computer assisted personal interviewing (CAPI). Youths 12-19 years responded for themselves using a audio computer -assisted self -interview (ACASI) technique, in English or Spanish only.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The CAPI and ACASI systems are programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Edits were made to ensure the completeness, consistency, and analytic usefulness of the data.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>SMQQUEX: Questionnaire source flag to distinguish between modes of interview (CAPI vs. ACASI). </p>
+<p>Additional information on tobacco use is available in data files SMQ and SMQFAM. Note: Youth smoking history (12-19 years)_, formerly SMQMEC is now found in the data file SMQ.</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ680">SMQ680 - Used tobacco/nicotine last 5 days?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ680</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used tobacco/nicotine last 5 days?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions ask about use of tobacco or nicotine products in the past 5 days.  During the past 5 days, did {you/he/she} use any product containing nicotine including cigarettes, pipes, cigars, chewing tobacco, snuff, nicotine patches, nicotine gum, or any other product containing nicotine?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please select Yes, No.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1383</td>
+                <td class="values" align="right">1383</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4987</td>
+                <td class="values" align="right">6370</td>
+                <td class="values">SMAQUEX </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6372</td>
+                <td class="values">SMAQUEX </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6372</td>
+                <td class="values">SMAQUEX </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">608</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ690A">SMQ690A - Used last 5 days - Cigarettes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ690A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used last 5 days - Cigarettes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these products did {you/he/she} use?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(CHECK ALL THAT APPLY).  Verbal instructions to respondent: Please select all that you used.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Cigarettes</td>
+                <td class="values" align="right">1184</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1185</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1186</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5794</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ690B">SMQ690B - Used last 5 days - Pipes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ690B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used last 5 days - Pipes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these products did {you/he/she} use?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(CHECK ALL THAT APPLY).  Verbal instructions to respondent: Please select all that you used.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Pipes</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6961</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ690C">SMQ690C - Used last 5 days - Cigars</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ690C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used last 5 days - Cigars</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these products did {you/he/she} use?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(CHECK ALL THAT APPLY).  Verbal instructions to respondent: Please select all that you used.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Cigars</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6839</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ690D">SMQ690D - Used last 5 days - Chewing tobacco</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ690D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used last 5 days - Chewing tobacco</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these products did {you/he/she} use?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(CHECK ALL THAT APPLY).  Verbal instructions to respondent: Please select all that you used.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Chewing tobacco</td>
+                <td class="values" align="right">64</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6916</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ690E">SMQ690E - Used last 5 days - Snuff</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ690E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used last 5 days - Snuff</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these products did {you/he/she} use?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(CHECK ALL THAT APPLY).  Verbal instructions to respondent: Please select all that you used.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Snuff</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6949</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ690F">SMQ690F - Used last 5 days - Patch, gum, other</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ690F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used last 5 days - Patch, gum, other</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these products did {you/he/she} use?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(CHECK ALL THAT APPLY). Verbal instructions to respondent: Please select all that you used.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Nicotine patches, gum, or other nicotine product</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6965</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ700">SMQ700 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ700</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM SMQ.700:  IF 'CIGARETTES' (CODE 1) IN SMQ.690, GO TO SMQ.710.  IF 'PIPES' (CODE 2) IN SMQ.690, GO TO SMQ.740.  IF 'CIGARS' (CODE 3) IN SMQ.690, GO TO SMQ.770.  IF 'CHEW' (CODE 4) IN SMQ.690, GO TO SMQ.800.  IF 'SNUFF' (CODE 5) IN SMQ.690, GO TO SMQ.817.  IF 'NICOTINE PRODUCT' (CODE 6) IN SMQ.690, GO TO SMQ.830.  IF 'REFUSED' (CODE 77) OR "DON'T KNOW" (CODE 99) IN SMQ.690, GO TO SMQ.710.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ710">SMQ710 - # days smoked cigarettes last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ710</dd>
+            <dt>SAS Label: </dt>
+            <dd># days smoked cigarettes last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days {including today}, on how many days did {you/he/she} smoke cigarettes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF DAYS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 5</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1184</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5796</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ720">SMQ720 - # cigarettes smoked per day</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ720</dd>
+            <dt>SAS Label: </dt>
+            <dd># cigarettes smoked per day</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days, on the days {you/he/she} smoked, how many cigarettes did {you/he/she} smoke each day?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT SAYS 95 OR MORE CIGARETTES PER DAY, ENTER 95.  
+Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF CIGARETTES.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 95</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 60</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1182</td>
+                <td class="values" align="right">1182</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">95</td>
+                <td class="values">95 cigarettes or more</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1182</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1183</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5796</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ725">SMQ725 - When did resp. smoke last cigarette?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ725</dd>
+            <dt>SAS Label: </dt>
+            <dd>When did resp. smoke last cigarette?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When did {you/he/she} smoke {your/his/her} last cigarette? Was it...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Today</td>
+                <td class="values" align="right">851</td>
+                <td class="values" align="right">851</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Yesterday</td>
+                <td class="values" align="right">252</td>
+                <td class="values" align="right">1103</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days ago</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5796</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ740">SMQ740 - # days smoked pipe over last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ740</dd>
+            <dt>SAS Label: </dt>
+            <dd># days smoked pipe over last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days (including today), on how many days did {you/he/she} smoke a pipe?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF DAYS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 5</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6961</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ750">SMQ750 - # pipes smoked per day - last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ750</dd>
+            <dt>SAS Label: </dt>
+            <dd># pipes smoked per day - last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days, on the days did {you/he/she} smoked a pipe, how many pipes did {you/he/she} smoke each day?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT SAYS LESS THAN 1 PIPE PER DAY, ENTER 1.
+Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF PIPES.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 59</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 12</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6961</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ755">SMQ755 - When did resp. smoke last pipe?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ755</dd>
+            <dt>SAS Label: </dt>
+            <dd>When did resp. smoke last pipe?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When did {you/he/she} smoke {your/his/her} last pipe? Was it...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Today</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Yesterday</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">13</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days ago</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6961</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ770">SMQ770 - # days smoked cigars over last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ770</dd>
+            <dt>SAS Label: </dt>
+            <dd># days smoked cigars over last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days (including today), on how many days did {you/he/she} smoke cigars?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF DAYS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 5</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6839</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ780">SMQ780 - # cigars smoked per day - last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ780</dd>
+            <dt>SAS Label: </dt>
+            <dd># cigars smoked per day - last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days, on the days {you/he/she} smoked cigars, how many cigars did {you/he/she} smoke each day?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF RESPONDENT SAYS LESS THAN 1 CIGAR PER DAY, ENTER 1.  
+Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF CIGARS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 59</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 20</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6839</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ785">SMQ785 - When did resp. smoke last cigar?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ785</dd>
+            <dt>SAS Label: </dt>
+            <dd>When did resp. smoke last cigar?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When did {you/he/she} smoke {your/his/her} last cigar? Was it...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Today</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">34</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Yesterday</td>
+                <td class="values" align="right">52</td>
+                <td class="values" align="right">86</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days ago</td>
+                <td class="values" align="right">55</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6839</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ800">SMQ800 - #days used chewing tobacco -last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ800</dd>
+            <dt>SAS Label: </dt>
+            <dd>#days used chewing tobacco -last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days (including today), on how many days did {you/he/she} use chewing tobacco, such as Redman, Levi Garrett or Beechnut?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF DAYS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 5</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">64</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6916</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ815">SMQ815 - When did resp. last use chewing tobacco?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ815</dd>
+            <dt>SAS Label: </dt>
+            <dd>When did resp. last use chewing tobacco?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When did {you/he/she} last use chewing tobacco? Was it...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Today</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">32</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Yesterday</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">53</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days ago</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6916</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ817">SMQ817 - # days used snuff over last 5 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ817</dd>
+            <dt>SAS Label: </dt>
+            <dd># days used snuff over last 5 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days {including today}, on how many days did {you/he/she} use snuff, such as Skoal, Skoal Bandits, or Copenhagen?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF DAYS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 5</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6949</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ819">SMQ819 - When last used snuff</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ819</dd>
+            <dt>SAS Label: </dt>
+            <dd>When last used snuff</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When did {you/he/she} last use snuff? Was it...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Today</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Yesterday</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">27</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days ago</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6949</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ830">SMQ830 - # days used nicotine stop smoking aids?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ830</dd>
+            <dt>SAS Label: </dt>
+            <dd># days used nicotine stop smoking aids?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 5 days (including today), on how many days did {you/he/she} use any product containing nicotine to help {you/he/she} stop smoking? Include nicotine patches, gum, or any other product containing nicotine.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Verbal instructions to respondent:  Please enter a number.  ENTER NUMBER OF DAYS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 5</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6965</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMQ840">SMQ840 - Last time used nicotine stop smoking aid</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ840</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used nicotine stop smoking aid</dd>
+            <dt>English Text: </dt>
+            <dd class="info">When did {you/he/she} last use a product containing nicotine? Was it...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Today</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Yesterday</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days ago</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6965</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SMAQUEX">SMAQUEX - Questionnaire Mode Flag</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMAQUEX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Questionnaire Mode Flag</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Questionnaire Mode Flag.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A-CASI   B(12 Yrs.-19 Yrs.)</td>
+                <td class="values" align="right">2207</td>
+                <td class="values" align="right">2207</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">MEC CAPI   B(20 Yrs.-150 Yrs.)</td>
+                <td class="values" align="right">4773</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6980</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

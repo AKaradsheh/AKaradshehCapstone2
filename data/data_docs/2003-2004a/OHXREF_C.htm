@@ -1,0 +1,2961 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Oral Health - Recommendation of Care" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Oral Health - Recommendation of Care Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Examination page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Oral Health - Recommendation of Care Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Protocol_and_Procedure">Protocol and Procedure</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#OHAEXSTS">OHAEXSTS - Overall Oral Health Exam Status</a>
+                </li>
+                <li>
+                  <a href="#OHASCST5">OHASCST5 - Referral Status Code</a>
+                </li>
+                <li>
+                  <a href="#OHQ131">OHQ131 - Must always take antibiotics?</a>
+                </li>
+                <li>
+                  <a href="#OHQ132">OHQ132 - Had a heart problem?</a>
+                </li>
+                <li>
+                  <a href="#OHQ134">OHQ134 - Had congenital heart murmurs?</a>
+                </li>
+                <li>
+                  <a href="#OHQ136">OHQ136 - Had heart valve problem?</a>
+                </li>
+                <li>
+                  <a href="#OHQ138">OHQ138 - Had congenital heart disease?</a>
+                </li>
+                <li>
+                  <a href="#OHQ140">OHQ140 - Had bacterial endocarditis?</a>
+                </li>
+                <li>
+                  <a href="#OHQ142">OHQ142 - Had rheumatic fever?</a>
+                </li>
+                <li>
+                  <a href="#OHQ144">OHQ144 - Have kidney disease w/ renal dialysis?</a>
+                </li>
+                <li>
+                  <a href="#OHQ146">OHQ146 - Have other artificial material?</a>
+                </li>
+                <li>
+                  <a href="#OHQ148">OHQ148 - Have a hip, bone, or joint replacement?</a>
+                </li>
+                <li>
+                  <a href="#OHQ011">OHQ011 - Describe the cond. of your mouth/teeth</a>
+                </li>
+                <li>
+                  <a href="#OHQ490a">OHQ490a - Toothache</a>
+                </li>
+                <li>
+                  <a href="#OHQ490b">OHQ490b - Sensitivity</a>
+                </li>
+                <li>
+                  <a href="#OHQ490c">OHQ490c - Cavities/Caries</a>
+                </li>
+                <li>
+                  <a href="#OHQ490d">OHQ490d - Broken/missing fillings or restorations</a>
+                </li>
+                <li>
+                  <a href="#OHQ490e">OHQ490e - Broken / fractured teeth</a>
+                </li>
+                <li>
+                  <a href="#OHQ490f">OHQ490f - Staining/discoloration of teeth</a>
+                </li>
+                <li>
+                  <a href="#OHQ490g">OHQ490g - Crooked teeth or need braces</a>
+                </li>
+                <li>
+                  <a href="#OHQ490h">OHQ490h - Teeth needing extractions</a>
+                </li>
+                <li>
+                  <a href="#OHQ490i">OHQ490i - Missing teeth</a>
+                </li>
+                <li>
+                  <a href="#OHQ490j">OHQ490j - Denture problems</a>
+                </li>
+                <li>
+                  <a href="#OHQ490k">OHQ490k - Periodontal problems</a>
+                </li>
+                <li>
+                  <a href="#OHQ490l">OHQ490l - Unsatisfactory prior dental experience</a>
+                </li>
+                <li>
+                  <a href="#OHQ490m">OHQ490m - None/no specific problem</a>
+                </li>
+                <li>
+                  <a href="#OHQ490n">OHQ490n - Other</a>
+                </li>
+                <li>
+                  <a href="#OHQ410">OHQ410 -  Removable complete/partial max denture</a>
+                </li>
+                <li>
+                  <a href="#OHQ420">OHQ420 - Wears complete/partial max denture</a>
+                </li>
+                <li>
+                  <a href="#OHQ430">OHQ430 - Removable complete/partial mand. denture</a>
+                </li>
+                <li>
+                  <a href="#OHQ440">OHQ440 - Wears complete/partial Mand. denture</a>
+                </li>
+                <li>
+                  <a href="#OHAREC">OHAREC - Overall recommendation for care</a>
+                </li>
+                <li>
+                  <a href="#OHAROCDT">OHAROCDT - Untreated Caries / Restorative needs</a>
+                </li>
+                <li>
+                  <a href="#OHAROCGP">OHAROCGP - Periodontal needs</a>
+                </li>
+                <li>
+                  <a href="#OHAROCOH">OHAROCOH - Gingival / OHI needs</a>
+                </li>
+                <li>
+                  <a href="#OHAROCCI">OHAROCCI - Assessment of soft tissue lesion</a>
+                </li>
+                <li>
+                  <a href="#OHAROCDE">OHAROCDE - Denture/Partial Denture/plates</a>
+                </li>
+                <li>
+                  <a href="#OHAROTH">OHAROTH - Some other finding</a>
+                </li>
+                <li>
+                  <a href="#OHARNF">OHARNF - No significant needs</a>
+                </li>
+                <li>
+                  <a href="#OHARCMT">OHARCMT - Other Referral Comments</a>
+                </li>
+                <li>
+                  <a href="#OHAPOS">OHAPOS - Was participant exam position recumbent</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Oral Health - Recommendation of Care (OHXREF_C)
+			</h3>
+        <h4>
+				Data File: OHXREF_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				July 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>NHANES is critical for monitoring oral health status, risk indicators for disease, and access to preventive and treatment services. This component will address public health significance in areas of surveillance, prevention, treatment, dental care utilization, health policy, evaluation of Federal health programs, standardization of new methods, and oral health disparities. </p>
+<p>Oral health data from NHANES will be used for: </p>
+<ul>
+    <li>Assessing the prevalence of major oral health diseases and conditions including dental caries, periodontal disease, dental trauma, dry mouth, and dental fluorosis </li>
+    <li>Assessing prevention and treatment efforts including the prevalence of dental sealants </li>
+    <li>Evaluating specific public health programs/new policies and initiatives </li>
+    <li>Monitoring the oral health status of minority/underserved populations </li>
+    <li>Evaluating Healthy People 2000 and 2010 objectives related to oral health </li>
+    <li>Supporting research activities as identified in the 2000 Surgeon General&rsquo;s Report on Oral Health in the United States.</li>
+</ul><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 2 years and older who do not meet any of the exclusion criteria are eligible. A positive response to any of the following medical health-screening questions asked of participants aged 13 years or older will exclude them from the periodontal and root caries assessments. Participants aged 13-15 years must have a health proxy signed by a parent/guardian to participate in the oral health examination. </p>
+<ul>
+    <li>Has a doctor or dentist ever told you that you must always take antibiotics (e.g. penicillin) before you get a dental check up or care? </li>
+    <li>Do you have a heart problem (specifically congenital heart murmurs, heart valve problems, congenital heart disease, or bacterial endocarditis)? </li>
+    <li>Do you have rheumatic fever? </li>
+    <li>Kidney disease requiring renal dialysis? </li>
+    <li>Hemophilia? </li>
+    <li>Pacemaker or automatic defibrillator or artificial material in your heart veins or arteries?</li>
+</ul><h2 id="Protocol_and_Procedure">Protocol and Procedure</h2><p>The following subcomponents are from the oral health examination component and home interview component with the age groups of interest in parentheses: </p>
+<p>Examination: </p>
+<ul>
+    <li>Medical history screening (13 years and older) </li>
+    <li>Dental sealant assessment (2 to 34 years of age) </li>
+    <li>Tooth count (2 years and older) </li>
+    <li>Coronal caries (2 years and older) </li>
+    <li>Incisor traumatic injuries (10 to 29 years of age) </li>
+    <li>Dental fluorosis assessment (6 to 49 years of age) </li>
+    <li>Periodontal pockets, recession, loss of attachment, and bleeding (13 years and older) </li>
+    <li>Root caries (18 years and older) </li>
+    <li>Dental erosion and tooth wear (13 years and older) </li>
+    <li>Functional occlusal contacts (25 years and older) </li>
+    <li>Self-assessed dental condition questions (16 years and older) </li>
+    <li>Denture use and wear questions (25 years and older) </li>
+    <li>Recommendations for dental care (2 years and older) </li>
+</ul>
+<p>Interview: </p>
+<ul>
+    <li>Dry mouth and problems with chewing food (18 years and older) </li>
+    <li>Dental health perception, dental visits and dental care utilization (2 years and older) </li>
+    <li>Oral health quality of life (16 years and older) </li>
+    <li>Perceived dental treatment needs (18 years and older) </li>
+</ul>
+<p><strong>Survey Staff and Protocol</strong></p>
+<p>The oral health exam is performed by trained dentists who hold a state dental license in an US jurisdiction. One of up to seven trained oral health recorders is paired with a dentist to form a dental examination team. Two teams function independently throughout the data collection period. All oral health exam data is collected in the mobile examination center. Oral health data obtained during the home interview is collected by trained interviewers. Interview and examination protocols are discussed in detail in the NHANES Oral Health Home Interview and Exam Training Manuals. These manuals are available at the NHANES website.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The quality of data in this survey is controlled by </p>
+<ol>
+    <li>an intense training period for the dental teams with calibration of dental examiners prior to the beginning of the survey, </li>
+    <li>periodic monitoring and recalibration of dental examiners, and </li>
+    <li>periodic retraining of dental teams. </li>
+</ol>
+<p>The reference examiner will visit each team three times per year to observe field operations and to replicate 20 to 25 dental examinations during each visit. The purpose of these &ldquo;expert replications&rdquo; is to determine if the field examiners are maintaining the examination standards achieved during training and to measure the degree of deviation, if any, from those standards. If the inter-rater correlation is not within acceptable limits, retraining is conducted on site and future monitoring of the field examiner intensified. An annual retraining session for each dental examiner also is conducted by the reference examiner to reinforce existing protocols and to accommodate protocol updates as needed. </p>
+<p>Automated data collection procedures for the survey were introduced in NHANES 1999. In the mobile examination centers (MECs), data for the oral health component are recorded directly onto a computerized data collection form. The system is integrated centrally and it allows for ongoing monitoring of much of the data. As part of an on-going quality control practice, all data are reviewed systematically for logical inconsistencies and examiner error. Internal quality control data review indicates that data quality is acceptable.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The oral health data is released in the configuration of six &ldquo;chapters.&rdquo; The oral health chapters and subcomponents in parentheses are matched as follows: </p>
+<ul>
+    <li>Dentition Exam (ohxden_): Tooth count, coronal caries, root caries, dental sealants, incisor trauma, and dental fluorosis. </li>
+    <li>Dentition-Addendum Exam (ohxadd_): Tooth wear and functional occlusal contacts. </li>
+    <li>Periodontal Exam-Upper (ohxpru_): Maxillary periodontal pockets, recession, loss of attachment, and bleeding. </li>
+    <li>Periodontal Exam-Lower (ohxprl_): Mandibular periodontal pockets, recession, loss of attachment, and bleeding. </li>
+    <li>Miscellaneous (ohxref_): Medical exclusions, denture questions, care recommendations, and miscellaneous. </li>
+    <li>Home Interview (ohq_): Dry Mouth, dental visits, quality of life dental health perception and perceived treatment needs. </li>
+</ul>
+<p>A variety of oral health variables can be derived to assist analysts using the oral health exam data. Recommended derivations and a selection of sample code for dental caries status, dental fluorosis, dental sealants, and periodontal status is provided at the Oral Health Data Resource Center (DRC): <a href="http://drc.nidcr.nih.gov/">http://drc.nidcr.nih.gov/</a>. Additional information regarding the NHANES datasets, including quality assurance publications and prevalence reports supported by the federal partners is also available at the DRC. </p>
+<p>It is recommended that data users merge relevant 2003-2004 oral health data files with 1999-2000 and 2001-2002 oral health data files to ensure adequate sample size for analyses of many of the oral health outcome measures available in these files. The six-year sample weights can be calculated by data users. Additional analytical details are available at: <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx</a>.</p>
+<p><strong>Special Notes</strong></p>
+<p>The analysis of NHANES 2003-2004 oral health data must be conducted with the key survey design and basic demographic variables. The NHANES 2003-2004 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. Other household questionnaire and oral questionnaire files may be linked to the oral health examination data file using the unique survey participant identifier SEQN. The Oral Health Exam (OHX) and Oral Health Questionnaire (OHQ) data are publicly available at the NHANES website. </p>
+<p>New content was added to the 2003-2004 Oral Health Exam and Interview making the NHANES Oral Health Component one of the most comprehensive assessments of oral health in the United States to date. Consequently, many variables are only available for the 2003-2004 survey period, which may significantly impact some data analyses.</p>
+<p><strong>Acknowledgement</strong></p>
+<p>The 2003-2004 NHANES Oral Health Component is a collaborative effort between the National Institute of Dental and Craniofacial Research (NIDCR), the National Center for Chronic Disease Prevention and Health Promotion, Division of Oral Health (NCCDPHP/DOH), and the National Center for Health Statistics (NCHS).</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAEXSTS">OHAEXSTS - Overall Oral Health Exam Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAEXSTS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Overall Oral Health Exam Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Overall Oral Health Exam Status</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Complete</td>
+                <td class="values" align="right">7072</td>
+                <td class="values" align="right">7072</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Partial</td>
+                <td class="values" align="right">1200</td>
+                <td class="values" align="right">8272</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Not done</td>
+                <td class="values" align="right">575</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHASCST5">OHASCST5 - Referral Status Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHASCST5</dd>
+            <dt>SAS Label: </dt>
+            <dd>Referral Status Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Referral Status Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Complete</td>
+                <td class="values" align="right">8235</td>
+                <td class="values" align="right">8235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Partial</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">8269</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Not done</td>
+                <td class="values" align="right">578</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ131">OHQ131 - Must always take antibiotics?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ131</dd>
+            <dt>SAS Label: </dt>
+            <dd>Must always take antibiotics?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q1. Has a doctor or dentist ever told you that you must ALWAYS take antibiotics (e.g. penicillin) before you get a dental check up or care?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">304</td>
+                <td class="values" align="right">304</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5891</td>
+                <td class="values" align="right">6195</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6195</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">6202</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2645</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ132">OHQ132 - Had a heart problem?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ132</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had a heart problem?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q2. A heart problem?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Before we begin, I would like to read you a list of health conditions that some people have.  As I read off each condition, please tell me whether or not a doctor has ever told you that you have the condition. Has a doctor ever told you that you have...</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">578</td>
+                <td class="values" align="right">578</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5313</td>
+                <td class="values" align="right">5891</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5891</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5891</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2956</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ134">OHQ134 - Had congenital heart murmurs?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ134</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had congenital heart murmurs?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q3. Congenital heart murmurs?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Was the heart problem due to:</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">123</td>
+                <td class="values" align="right">123</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">456</td>
+                <td class="values" align="right">579</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">579</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">579</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8268</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ136">OHQ136 - Had heart valve problem?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ136</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had heart valve problem?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q4. Heart valve problem?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">49</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">407</td>
+                <td class="values" align="right">456</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">456</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">456</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8391</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ138">OHQ138 - Had congenital heart disease?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ138</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had congenital heart disease?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q5. Congenital heart disease?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">12</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">395</td>
+                <td class="values" align="right">407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8440</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ140">OHQ140 - Had bacterial endocarditis?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ140</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had bacterial endocarditis?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q6. Bacterial endocarditis?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">394</td>
+                <td class="values" align="right">395</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">395</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">395</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8452</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ142">OHQ142 - Had rheumatic fever?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ142</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had rheumatic fever?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q7. Rheumatic fever?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Has a doctor ever said you have:</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">42</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5662</td>
+                <td class="values" align="right">5704</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5704</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">5705</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3142</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ144">OHQ144 - Have kidney disease w/ renal dialysis?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ144</dd>
+            <dt>SAS Label: </dt>
+            <dd>Have kidney disease w/ renal dialysis?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q8. Kidney disease requiring renal dialysis?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5656</td>
+                <td class="values" align="right">5663</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5663</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5663</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3184</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ146">OHQ146 - Have other artificial material?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ146</dd>
+            <dt>SAS Label: </dt>
+            <dd>Have other artificial material?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q11. Other artificial material in your heart, veins, or arteries?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">74</td>
+                <td class="values" align="right">74</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5565</td>
+                <td class="values" align="right">5639</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5639</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5639</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3208</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ148">OHQ148 - Have a hip, bone, or joint replacement?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ148</dd>
+            <dt>SAS Label: </dt>
+            <dd>Have a hip, bone, or joint replacement?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Q12. A hip, bone, or joint replacement?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 13 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">87</td>
+                <td class="values" align="right">87</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5481</td>
+                <td class="values" align="right">5568</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5568</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5568</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3279</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ011">OHQ011 - Describe the cond. of your mouth/teeth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ011</dd>
+            <dt>SAS Label: </dt>
+            <dd>Describe the cond. of your mouth/teeth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How would you describe the condition of your  teeth?  Would you say......</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Excellent</td>
+                <td class="values" align="right">333</td>
+                <td class="values" align="right">333</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Very good</td>
+                <td class="values" align="right">755</td>
+                <td class="values" align="right">1088</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Good</td>
+                <td class="values" align="right">1751</td>
+                <td class="values" align="right">2839</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Fair</td>
+                <td class="values" align="right">1555</td>
+                <td class="values" align="right">4394</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Poor</td>
+                <td class="values" align="right">1040</td>
+                <td class="values" align="right">5434</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5434</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">5442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3405</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490a">OHQ490a - Toothache</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490a</dd>
+            <dt>SAS Label: </dt>
+            <dd>Toothache</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? -  Toothache</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">167</td>
+                <td class="values" align="right">167</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">167</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">175</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8672</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490b">OHQ490b - Sensitivity</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490b</dd>
+            <dt>SAS Label: </dt>
+            <dd>Sensitivity</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? -  Sensitivity</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">263</td>
+                <td class="values" align="right">263</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">263</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">271</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8576</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490c">OHQ490c - Cavities/Caries</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490c</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cavities/Caries</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Cavities/Caries</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">897</td>
+                <td class="values" align="right">897</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">897</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">905</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7942</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490d">OHQ490d - Broken/missing fillings or restorations</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490d</dd>
+            <dt>SAS Label: </dt>
+            <dd>Broken/missing fillings or restorations</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Broken/missing fillings or restorations</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">238</td>
+                <td class="values" align="right">238</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">238</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">246</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8601</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490e">OHQ490e - Broken / fractured teeth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490e</dd>
+            <dt>SAS Label: </dt>
+            <dd>Broken / fractured teeth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth?- Broken / fractured teeth </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">393</td>
+                <td class="values" align="right">393</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">393</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">401</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8446</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490f">OHQ490f - Staining/discoloration of teeth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490f</dd>
+            <dt>SAS Label: </dt>
+            <dd>Staining/discoloration of teeth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Staining/discoloration of teeth</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 999</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">138</td>
+                <td class="values" align="right">138</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">138</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">146</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8701</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490g">OHQ490g - Crooked teeth or need braces</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490g</dd>
+            <dt>SAS Label: </dt>
+            <dd>Crooked teeth or need braces</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Crooked teeth, or teeth that need braces</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">227</td>
+                <td class="values" align="right">227</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">227</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8612</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490h">OHQ490h - Teeth needing extractions</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490h</dd>
+            <dt>SAS Label: </dt>
+            <dd>Teeth needing extractions</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Teeth needing extractions</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">155</td>
+                <td class="values" align="right">155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">163</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8684</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490i">OHQ490i - Missing teeth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490i</dd>
+            <dt>SAS Label: </dt>
+            <dd>Missing teeth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Missing teeth</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">526</td>
+                <td class="values" align="right">526</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">526</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">534</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8313</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490j">OHQ490j - Denture problems</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490j</dd>
+            <dt>SAS Label: </dt>
+            <dd>Denture problems</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Denture problems</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">249</td>
+                <td class="values" align="right">249</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">249</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">257</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8590</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490k">OHQ490k - Periodontal problems</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490k</dd>
+            <dt>SAS Label: </dt>
+            <dd>Periodontal problems</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What specific problems do you have with your teeth? - Periodontal problems</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">528</td>
+                <td class="values" align="right">528</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">528</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">536</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8311</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490l">OHQ490l - Unsatisfactory prior dental experience</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490l</dd>
+            <dt>SAS Label: </dt>
+            <dd>Unsatisfactory prior dental experience</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Unsatisfactory prior dental experience</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">37</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8810</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490m">OHQ490m - None/no specific problem</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490m</dd>
+            <dt>SAS Label: </dt>
+            <dd>None/no specific problem</dd>
+            <dt>English Text: </dt>
+            <dd class="info">None/no specific problem</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">1475</td>
+                <td class="values" align="right">1475</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1475</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1483</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7364</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ490n">OHQ490n - Other</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ490n</dd>
+            <dt>SAS Label: </dt>
+            <dd>Other</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Other</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Checked</td>
+                <td class="values" align="right">372</td>
+                <td class="values" align="right">372</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">372</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">380</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8467</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ410">OHQ410 -  Removable complete/partial max denture</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ410</dd>
+            <dt>SAS Label: </dt>
+            <dd> Removable complete/partial max denture</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you have an upper removable partial or full denture? </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 25 YEARS -
+			120 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1039</td>
+                <td class="values" align="right">1039</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2894</td>
+                <td class="values" align="right">3933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4914</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ420">OHQ420 - Wears complete/partial max denture</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ420</dd>
+            <dt>SAS Label: </dt>
+            <dd>Wears complete/partial max denture</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you usually wear it during the day?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 25 YEARS -
+			120 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">956</td>
+                <td class="values" align="right">956</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">83</td>
+                <td class="values" align="right">1039</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1039</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1039</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7808</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ430">OHQ430 - Removable complete/partial mand. denture</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ430</dd>
+            <dt>SAS Label: </dt>
+            <dd>Removable complete/partial mand. denture</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you have a lower removable partial or full denture?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 25 YEARS -
+			120 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">791</td>
+                <td class="values" align="right">791</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3140</td>
+                <td class="values" align="right">3931</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3932</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4914</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHQ440">OHQ440 - Wears complete/partial Mand. denture</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHQ440</dd>
+            <dt>SAS Label: </dt>
+            <dd>Wears complete/partial Mand. denture</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you usually wear it during the day? </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 25 YEARS -
+			120 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">674</td>
+                <td class="values" align="right">674</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">117</td>
+                <td class="values" align="right">791</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">791</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">791</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8056</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAREC">OHAREC - Overall recommendation for care</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAREC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Overall recommendation for care</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Overall recommendation for care</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">See a dentist immediately</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">See a dentist within the next 2 weeks</td>
+                <td class="values" align="right">206</td>
+                <td class="values" align="right">216</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">See a dentist at your earliest convenience</td>
+                <td class="values" align="right">4986</td>
+                <td class="values" align="right">5202</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Continue your regular routine care</td>
+                <td class="values" align="right">3035</td>
+                <td class="values" align="right">8237</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">610</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAROCDT">OHAROCDT - Untreated Caries / Restorative needs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAROCDT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Untreated Caries / Restorative needs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">A. Decayed teeth</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2511</td>
+                <td class="values" align="right">2511</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6336</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAROCGP">OHAROCGP - Periodontal needs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAROCGP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Periodontal needs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">B. Gums/gum disease</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1057</td>
+                <td class="values" align="right">1057</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7790</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAROCOH">OHAROCOH - Gingival / OHI needs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAROCOH</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gingival / OHI needs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">C. Oral hygiene</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">4559</td>
+                <td class="values" align="right">4559</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4288</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAROCCI">OHAROCCI - Assessment of soft tissue lesion</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAROCCI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Assessment of soft tissue lesion</dd>
+            <dt>English Text: </dt>
+            <dd class="info">D. Clinical impression of soft tissue condition</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8839</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAROCDE">OHAROCDE - Denture/Partial Denture/plates</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAROCDE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Denture/Partial Denture/plates</dd>
+            <dt>English Text: </dt>
+            <dd class="info">E. Denture/Partial Denture/plates</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">111</td>
+                <td class="values" align="right">111</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8736</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAROTH">OHAROTH - Some other finding</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAROTH</dd>
+            <dt>SAS Label: </dt>
+            <dd>Some other finding</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Some other finding (specify w/ referral letter)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">306</td>
+                <td class="values" align="right">306</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8541</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHARNF">OHARNF - No significant needs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHARNF</dd>
+            <dt>SAS Label: </dt>
+            <dd>No significant needs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">F. No significant findings</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">3011</td>
+                <td class="values" align="right">3011</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5836</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHARCMT">OHARCMT - Other Referral Comments</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHARCMT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Other Referral Comments</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Other Referral Comments</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">Other Referral Comments</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">317</td>
+                <td class="values" align="right">317</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8530</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OHAPOS">OHAPOS - Was participant exam position recumbent</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OHAPOS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Was participant exam position recumbent</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was the SP in a recumbent (laying down) position for all eligible assessments of the oral health exam? </dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Was the SP in a recumbent (laying down) position for all eligible assessments of the oral health exam (Oral-facial--Loss of Attachment)? </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">8075</td>
+                <td class="values" align="right">8075</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">162</td>
+                <td class="values" align="right">8237</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Can not assess</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8237</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">610</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

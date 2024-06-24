@@ -1,0 +1,2127 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Standard Biochemistry Profile" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Standard Biochemistry Profile Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Standard Biochemistry Profile Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXSAL">LBXSAL - Albumin (g/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSALSI">LBDSALSI - Albumin (g/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSATSI">LBXSATSI - Alanine aminotransferase ALT (U/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSASSI">LBXSASSI - Aspartate aminotransferase AST (U/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSAPSI">LBXSAPSI - Alkaline phosphotase (U/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSBU">LBXSBU - Blood urea nitrogen (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSBUSI">LBDSBUSI - Blood urea nitrogen (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSCA">LBXSCA - Total calcium (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSCASI">LBDSCASI - Total calcium (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSCH">LBXSCH - Cholesterol (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSCHSI">LBDSCHSI - Cholesterol (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSC3SI">LBXSC3SI - Bicarbonate (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSGTSI">LBXSGTSI - Gamma glutamyl transferase (U/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSGL">LBXSGL - Glucose, serum (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSGLSI">LBDSGLSI - Glucose, serum (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSIR">LBXSIR - Iron, refigerated (ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSIRSI">LBDSIRSI - Iron, refigerated (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSLDSI">LBXSLDSI - Lactate dehydrogenase LDH (U/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSPH">LBXSPH - Phosphorus (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSPHSI">LBDSPHSI - Phosphorus (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSTB">LBXSTB - Total bilirubin (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSTBSI">LBDSTBSI - Bilirubin, total (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSTP">LBXSTP - Total protein (g/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSTPSI">LBDSTPSI - Total protein (g/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSTR">LBXSTR - Triglycerides (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSTRSI">LBDSTRSI - Triglycerides (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSUA">LBXSUA - Uric acid (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSUASI">LBDSUASI - Uric acid (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSCR">LBXSCR - Creatinine (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSCRSI">LBDSCRSI - Creatinine (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSNASI">LBXSNASI - Sodium (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSKSI">LBXSKSI - Potassium (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSCLSI">LBXSCLSI - Chloride (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXSOSSI">LBXSOSSI - Osmolality (mmol/Kg)</a>
+                </li>
+                <li>
+                  <a href="#LBXSGB">LBXSGB - Globulin (g/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDSGBSI">LBDSGBSI - Globulin (g/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Standard Biochemistry Profile (L40_C)
+			</h3>
+        <h4>
+				Data File: L40_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				January 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				October 2007</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">
+						Note: The file was updated to correct the Blood Urea Nitrogen (BUN) method description.</h5>
+        </div>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>This battery of measurements are used in the diagnosis and treatment of certain liver, heart, and kidney diseases, acid-base imbalance in the respiratory and metabolic systems, other diseases involving lipid metabolism and various endocrine disorders as well as other metabolic or nutritional disorders. </p>
+<p>1. Alanine Aminotransferase (ALT) </p>
+<p>Alanine aminotransferase measurements are used in the diagnosis and treatment of certain liver diseases (e.g., viral hepatitis and cirrhosis) and heart diseases. Elevated levels of the transaminases can indicate myocardial infarction, hepatic disease, muscular dystrophy, or organ damage. Serum elevations of ALT activity are rarely observed except in parenchymal liver disease, since ALT is a more liver-specific enzyme than aspartate aminotransferase (AST). </p>
+<p>2. Albumin </p>
+<p>Albumin measurements are used in the diagnosis and treatment of numerous diseases primarily involving the liver or kidneys. </p>
+<p>3. Alkaline Phosphatase (ALP) </p>
+<p>Increased ALP activity is associated with two groups of diseases: those affecting liver function and those involving osteoblastic activity in the bones. In hepatic disease, an increase in ALP activity is generally accepted as an indication of biliary obstruction. An increase in serum phosphatase activity is associated with primary hyperparathyroidism, secondary hyperparathyroidism owing to chronic renal disease, rickets, and osteitis deformans juvenilia due to vitamin D deficiency and malabsorption or renal tubular dystrophies. Increased levels of ALP are also associated with Von Recklinghausen's disease with bone involvement and malignant infiltrations of bone. Low levels are associated with hyperthyroidism, and with the rare condition of idiopathic hypophosphatasia associated with rickets and the excretion of excess phosphatidyl ethanolamine in the urine. </p>
+<p>4. Aspartate Aminotransferase (AST) </p>
+<p>AST measurements are used in the diagnosis and treatment of certain types of liver and heart disease. Elevated levels of the transaminases can signal myocardial infarction, hepatic disease, muscular dystrophy, or organ damage.</p>
+<p>5. Bicarbonate (HCO3) </p>
+<p>Together with pH determination, bicarbonate measurements are used in the diagnosis and treatment of numerous potentially serious disorders associated with acid-base imbalance in the respiratory and metabolic systems. </p>
+<p>6. Blood Urea Nitrogen (BUN) </p>
+<p>BUN measurements are used in the diagnosis of certain renal and metabolic diseases. The determination of serum urea nitrogen is the most widely used test for the evaluation of kidney function. The test is frequently requested in conjunction with the serum creatinine test for the differential diagnosis of prerenal, renal, and postrenal uremia. High BUN levels are associated withimpaired renal function, increased protein catabolism, nephritis, intestinal obstruction, urinary obstruction, metallic poisoning, cardiac failure, peritonitis, dehydration, malignancy, pneumonia, surgical shock, Addison's disease, and uremia. Low BUN levels are associated with amyloidosis, acute liver disease, pregnancy, and nephrosis. Normal variations are observed according to a person's age and sex, the time of day, and diet, particularly protein intake. </p>
+<p>7. Calcium </p>
+<p>Elevated total serum calcium levels are associated with idiopathic hypercalcemia, vitamin D intoxication, hyperparathyroidism, sarcoidosis, pneumocystic carinii pneumonia, and blue diaper syndrome. Low calcium levels are associated with hypoparathyroidism, pseudo-hypoparathyroidism, chronic renal failure, rickets, infantile tetany, and steroid therapy. </p>
+<p>8. Cholesterol </p>
+<p>An elevated cholesterol level is associated with diabetes, nephrosis, hypothyroidism, biliary obstruction, and those rare cases of idiopathic hypercholesterolemia and hyperlipidemia; low levels are associated with hyperthyroidism, hepatitis, and sometimes severe anemia or infection. </p>
+<p>9. Creatinine </p>
+<p>Creatinine measurement serves as a test for normal glomerular filtration. Elevated levels are associated with acute and chronic renal insufficiency and urinary tract obstruction. Levels below 0.6 mg/dL are of no significance. </p>
+<p>10. Gamma Glutamyl Transaminase ( GGT) </p>
+<p>GT measurement is principally used to diagnose and monitor hepatobiliary disease. It is currently the most sensitive enzymatic indicator of liver disease, with normal values rarely found in the presence of hepatic disease. It is also used as a sensitive screening test for occult alcoholism. Elevated levels are found in patients who chronically take drugs such as phenobarbital and phenytoin. </p>
+<p>11. Glucose </p>
+<p>Glucose measurements are used in the diagnosis and treatment of pancreatic islet cell carcinoma and of carbohydrate metabolism disorders, including diabetes mellitus, neonatal hypoglycemia, and idiopathic hypoglycemia. </p>
+<p>12. Iron </p>
+<p>Iron (non-heme) measurements are used in the diagnosis and treatment of diseases such as iron deficiency anemia, chronic renal disease, and hemochromatosis (a disease associated with widespread deposit in the tissues of two iron-containing pigments, hemosiderin and hemofuscin, and characterized by pigmentation of the skin). </p>
+<p>13. Lactate Dehydrogenase (LDH) </p>
+<p>LDH measurements are used in the diagnosis and treatment of liver diseases such as acute viral hepatitis, cirrhosis, and metastatic carcinoma of the liver; cardiac diseases such as myocardial infarction; and tumors of the lungs or kidneys.</p>
+<p>14. Phosphorus </p>
+<p>There is a reciprocal relationship between serum calcium and inorganic phosphorus. Any increase in the level of inorganic phosphorus causes a decrease in the calcium level by a mechanism not clearly understood. Hyperphosphatemia is associated withvitamin D hypervitaminosis, hypoparathyroidism, and renal failure. Hypophosphatemia is associated with rickets, hyperparathyroidism, and Fanconi syndrome. Measurements of inorganic phosphorus are used in the diagnosis and treatment of various disorders, including parathyroid gland, kidney diseases, and vitamin D imbalance. </p>
+<p>15. Sodium, Potassium, and Chloride </p>
+<p>Hyponatremia (low serum sodium level) is associated with a variety of conditions, including severe polyuria, metabolic acidosis, Addison's disease, diarrhea, and renal tubular disease. Hypernatremia (increased serum sodium level) is associated with Cushing's syndrome, severe dehydration due to primary water loss, certain types of brain injury, diabetic coma after therapy with insulin, and excess treatment with sodium salts. </p>
+<p>Hypokalemia (low serum potassium level) is associated with body potassium deficiency, excessive potassium loss caused by prolonged diarrhea or prolonged periods of vomiting and increased secretion of mineralocorticosteroids. Hyperkalemia (increased serum potassium level) is associated with oliguria, anuria, and urinary obstruction. </p>
+<p>Low serum chloride values are associated with salt-losing nephritis, Addisonian crisis, prolonged vomiting, and metabolic acidosis caused by excessive production or diminished excretion of acids. High serum chloride values are associated with dehydration and conditions causing decreased renal blood flow, such as congestive heart failure. </p>
+<p>16. Total Bilirubin </p>
+<p>Elevated levels are associated with hemolytic jaundice, paroxysmal hemoglobinuria, pernicious anemia, polycythemia, icterus neonatorum, internal hemorrhage, acute hemolytic anemia, malaria, and septicemia. Low bilirubin levels are associated with aplastic anemia, and certain types of secondary anemia resulting from toxic therapy for carcinoma and chronic nephritis. </p>
+<p>17. Total Protein </p>
+<p>Total protein measurements are used in the diagnosis and treatment of a variety of diseases involving the liver, kidney, or bone marrow, as well as other metabolic or nutritional disorders. </p>
+<p>18. Triglycerides </p>
+<p>Triglyceride measurements are used in the diagnosis of diabetes mellitus, nephrosis, liver obstruction, and other diseases involving lipid metabolism and various endocrinedisorders and in the treatment of patients with these diseases. </p>
+<p>19. Uric Acid </p>
+<p>Uric acid measurements are used in the diagnosis and treatment of numerous renal and metabolic disorders, including renal failure, gout, leukemia, psoriasis, starvation, or other wasting conditions and in the treatment of patients receiving cytotoxic drugs.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 12 year and older are tested.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The 19 analytes described in this method constitute the routine biochemistry profile. The analyses are performed with a Beckman Synchron LX20. Each analyte is described separately within each pertinent section of this document. NOTE: Glucose, cholesterol, and triglycerides were analyzed as part of this profile, but the results do not replace the formalized reference methods data from NHANES 2003-2004 samples analyzed at other institutions. </p>
+<p>1. Alanine Aminotransferase (ALT) </p>
+<p>The LX20 uses an enzymatic rate method to measure ALT activity in serum or plasma. In the reaction, ALT catalyzes the reversible transamination of L-alanine and &alpha;-ketoglutarate to pyruvate and L- glutamate. The pyruvate is then reduced to lactate in the presence of lactate dehydrogenase (LDH) with the concurrent oxidation of NADH to NAD. The system monitors the rate of change in absorbance at 340 nm over a fixed-time interval. The rate of change in absorbance is directly proportional to the ALT activity in the sample. </p>
+<p>2. Albumin </p>
+<p>The method used to measure the albumin concentration on the LX20 is a bichromatic digital endpoint method. In the reaction, the albumin combines with Bromcresol Purple (BCP) reagent to form a complex. The system monitors the change in absorbance at 600 nm. The change in absorbance is directly proportional to the concentration of albumin in the sample. </p>
+<p>3. Alkaline Phosphatase (ALP) </p>
+<p>The LX system uses an enzymatic rate using a 2-Amino-2-Methyl-1-Propanol (AMP) buffer to measure ALP activity in serum or plasma. In the reaction, the ALP catalyzes the hydrolysis of the colorless organic phosphate ester substrate, p-Nitrophenylphosphate, to the yellow colored product p-Nitrophenol and phosphate. This reaction occurs at an alkaline pH of 10.3. The system monitors the rate of change in absorbance at 410 nm over a fixed-time interval. This rate of change in absorbance is directly proportional to the ALP activity in the serum. </p>
+<p>4. Aspartate Aminotransferase (AST) </p>
+<p>The LX20 uses an enzymatic rate method to measure the AST activity in serum or plasma. In the reaction, the AST catalyzes the reversible transamination of L-aspartate and &alpha;-ketoglutarate to oxaloacetate and L-glutamate. The oxaloacetate is then reduced to malate in the presence of malate dehydrogenase with the concurrent oxidation of NADH to NAD. The system monitors the rate of change in absorbance at 340 nm over a fixed-time interval. The rate of change in absorbance is directly proportional to the AST activity in the sample. </p>
+<p>5. Bicarbonate (HCO<sub>3</sub>) </p>
+<p>The LX20 system uses indirect (or diluted) ISE methodology to measure the total CO<sub>2</sub> level in serum, plasma or urine. The system measures the rate of pH change as&nbsp;CO<sub>2</sub> ions diffuse across a membrane. The electrode used for&nbsp;CO<sub>2</sub> determination is actually a pH electrode with the tip covered by a silicone rubber membrane and lowers the pH of a bicarbonate solution between the tip of the membrane and the tip of the pH electrode. The rate of pH change is directly proportional to the carbon dioxide (CO<sub>2</sub>) in the sample. </p>
+<p>6. Blood Urea Nitrogen (BUN) </p>
+<p>The LX20 modular chemistry (BUNm) is used to quantitatively determine the concentration of blood urea nitrogen in serum or plasma by means of the enzymatic conductivity rate method. A precise volume of sample is injected into the urease reagent in a reaction cup containing an electrode that responds to changes in solution conductivity. Electronic circuits determine the rate of increase in conductivity, which is directly proportional to the concentration of urea in the sample. </p>
+<p>7. Calcium </p>
+<p>The LX20 system uses indirect (or diluted) ISE methodology to measure calcium concentration in serum, plasma, or urine. The system determines calcium concentration by measuring calcium ion activity in solution. When the sample buffer mixture contacts the electrode, calcium ions complex with the ionophore at the electrode surface. Changes in potential develop at the electrode surface as the reaction occurs. These changes in potential are referenced to a sodium reference electrode. The reference signal is used in calculating the analyte concentrations based on the Nernst equation. </p>
+<p>8. Cholesterol </p>
+<p>The LX20 uses the timed-endpoint method to measure the cholesterol concentration in serum or plasma. In the reaction, the cholesterol esterase hydrolyzes cholesterol esters to free cholesterol and fatty acids. The free cholesterol is oxidized to cholesten-3-one and hydrogen peroxide by cholesterol oxidase. Peroxidase catalyzes the reaction of hydrogen peroxide with 4-aminoantipyrine and phenol to produce a colored quinoneimine product. The system monitors the change in absorbance at 520 nm at a fixed-time interval. The change in absorbance is directly proportional to the concentration of cholesterol in the sample. </p>
+<p>9. Creatinine <br />
+The LX20 modular chemistry side uses the Jaffe rate method (kinetic alkaline picrate) to determine the concentration of creatinine in serum, plasma, or urine. A precise volume of sample is introduced into areaction cup containing an alkaline picrate solution. Absorbance readings are taken at both 520 nm and 560 nm. Creatinine from the sample combines with the reagent to produce a red color complex. The observed rate measurement at 25.6 seconds after sample introduction has been shown to be a direct measure of the concentration of the creatinine in the sample. </p>
+<p>10. Gamma Glutamyltransaminase (GT) </p>
+<p>The LX uses an enzymatic rate method to determine the GGT activity in serum or plasma. In the reaction, the GGT catalyzes the transfer of a gamma-glutamyl group from the colorless substrate, gamma-glutamyl- p-nitroaniline, to the acceptor, glycylglycine with production of the colored product, p-nitroaniline. The system monitors the rate of change in absorbance at 410 nm over a fixed-time interval. The rate of change in absorbance is directlyproportional to the activity of GGT in the sample. </p>
+<p>11. Glucose </p>
+<p>On the Modular Chemistry side of the LX20, glucose concentration in biologic fluids is determined by the oxygen rate method employing a Beckman Oxygen electrode. A precise volume of sample is introduced in a reaction cup containing an electrode that responds to oxygen concentration. Electronic circuits determine the rate of oxygen consumption, which is directly proportional to the concentration of glucose in the sample. </p>
+<p>12. Iron </p>
+<p>The method used to measure the iron concentration is a timed-endpoint&nbsp; method. In the reaction, iron is released from transferrin by acetic acid and is reduced to the ferrous state by hydroxylamine and thioglycolate. The ferrous ion is immediatelycomplexed with the FerroZine Iron Reagent. The system monitors the change in absorbance at 560 nm at a fixed-time interval. This change in absorbance is directly proportional to the concentration of iron in the sample </p>
+<p>13. Lactate Dehydrogenase (LDH) </p>
+<p>The LX20 with LD reagent (using lactate as substrate) utilizes an enzymatic rate method to measure LD activity in biological fluids. In the reaction, the LD catalyzes the reversible oxidation of L-Lactate to Pyruvate with the concurrent reduction of &szlig;-Nicotinamide Adenine Dinucleotide (NAD) to &szlig;-Nicotinamide Adenine Dinucleotide (reduced form) (NADH). The system monitors the rate of change in absorbance at 340 nm over a fixed-time interval. The rate of change in absorbance is directly proportional to the activity of LD in the sample.</p>
+<p>14. Phosphorus </p>
+<p>The LX system uses a timed-rate method to determine the concentration of phosphorus in serum, plasma and urine. In the reaction, inorganic phosphorus reacts with ammonium molybdate in an acidic solution to form a colored phosphomolybdate </p>
+<p>15. Sodium, Potassium, and Chloride </p>
+<p>The LX system utilizes indirect (or diluted) I.S.E. methodology to determine the concentration of sodium in biological fluids. The LX determines sodium ion concentration by measuring electrolyte activity in solution. When the sample/buffer mixture contacts the electrode, sodium ions undergo an ion exchange in the hydrated outer layer of the glass electrode. As the ion exchange takes place, a change in voltage (potential) is developed at the face of the electrode. The potential follows the Nernst equation and allows the calculation of sodium concentration in a solution. </p>
+<p>The LX system uses indirect (or diluted) I.S.E. methodology to measure potassium in biological fluids. The system determines potassium ion concentration by measuring electrolyte activity in solution. The potassium electrode consists of valinomycin membrane. The voltage (potential) change that takes place within the membrane follows the Nernst equation and allows the calculation of potassium concentration in solution. </p>
+<p>The LX system uses indirect (or diluted) I.S.E. methodology to determine chloride concentration in biological fluids. Chloride is measured using an Ag/AgCl electrode. At the face of the electrode, solid AgCl dissolves to the extent as to saturate the solution around the tip with silver (Ag+) and Chloride (Cl-) ions until equilibrium is established. The product of the ion concentrations in solution, at equilibrium, with an excess of the slightly soluble AgCl is defined as the solubility product constant (Ksp). When chloride sample is added, the Ksp of the solution at the tip is disrupted as AgCl precipitates out of solution. To reestablish the equilibrium, Ag+ ions are generated from the tip causing a change in the potential. According to the Nernst equation, this change is proportional to the concentration of chloride in the sample. </p>
+<p>16. Total Bilirubin </p>
+<p>The LX20 uses a timed-endpoint Diazo method to measure the concentration of total bilirubin in serum or plasma. In the reaction, bilirubin reacts with diazo reagent in the presence of caffeine, benzoate, and acetate as accelerators to form azobilirubin. The system monitors the change in absorbance at 520 nm at a fixed-time interval. This total bilirubin in the sample. </p>
+<p>17. Total Protein </p>
+<p>The LX20 uses a timed rate biuret method to measure the concentration of total protein in serum or plasma. Proteins in the sample combine with the reagent producing alkaline copper-protein chelate. The rate change in absorbance is monitored by a detector at 545 nm. The observed rate of chelate formation is directly proportional to the total protein concentration in the sample. </p>
+<p>18. Triglycerides </p>
+<p>The LX uses a timed-endpoint method to determine the concentration of triglycerides in serum or plasma. Triglycerides in the sample are hydrolyzed to glycerol and free fatty acids by the action of lipase. A sequence of three coupled enzymatic steps using glycerol kinase (GK), glycerophosphate oxidase (GPO), and horseradish peroxidase (HPO) causes the oxidative coupling of 3,5dichloro-2-hydroxybenzenesulfonic acid (DHBS) with 4-aminoantipyrine to form a red quinoneimine dye. The system monitors the change in absorbance at 520 nm for a fixed- time interval. The change in absorbance is directly proportional to the concentration of triglycerides in the sample. </p>
+<p>19. Uric acid <br />
+The LX20 uses a timed endpoint method to measure the concentration of uric acid in serum, plasma or urine. Uric acid is oxidized by uricase to produce allatoin and hydrogen peroxide. The hydrogen peroxide reacts with 4-aminoantipyrine (4-AAP) and 3,5-dichloro-2-hydroxybenzene sulfonate (DCHBS) in a reaction catalyzed by peroxidase to produce a colored product. The system monitors the change in absorbance at 520 nm at a fixed time interval. The change in absorbance is directly proportional to the concentration of uric acid in the sample. </p>
+<p>There were changes to the lab site from the 1999 to 2004. Coulston Foundation at Alamogordo, New Mexico performed testing from 1999 to 2001 and Collaborative Laboratory Services at Ottumwa, Iowa <br />
+performed testing from 2002 to 2004. </p>
+<p>A detailed description of the laboratory method used can be found at NHANES website.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Specimens were processed, stored and shipped to Collaborative Laboratory Services in Ottumwa, Iowa. Detailed specimen collection and processing instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of the Laboratory <br />
+Methodology section. </p>
+<p>Many derived variables were created in this data file. The formula for their derivation is as follows: </p>
+<p>LBDSALSI: </p>
+<p>The albumin in g/dL (LBXSAL) was converted to g/L (LBDSALSI) by <br />
+multiplying by 10. </p>
+<p>LBDSBUSI: </p>
+<p>The blood urea nitrogen (BUN) in mg/dL (LBXSBU) was converted to <br />
+mmol/L (LBDSBUSI) by multiplying by 0.357 </p>
+<p>LBDSCASI </p>
+<p>The calcium in mg/dL (LBXSCA) was converted to mmol/L (LBDSCASI) <br />
+by multiplying by 0.250 </p>
+<p>LBDSCHSI </p>
+<p>The cholesterol in mg/dL (LBXSCH) was converted to mmol/L <br />
+(LBDSCHSI) by multiplying by 0.02586. </p>
+<p>LBDSGLSI </p>
+<p>The glucose in mg/dL (LBXSGL) was converted to mmol/L (LBDSGLSI) <br />
+by multiplying by 0.05551. </p>
+<p>LBDSIRSI </p>
+<p>The iron in &mu;g/dL (LBXSIR) was converted to &mu;mol/L (LBDSIRSI) by <br />
+multiplying by 0.1791. </p>
+<p>LBDSPHSI </p>
+<p>The phosphorus in mg/dL (LBXSPH) was converted to mmol/L <br />
+(LBDSPHSI) by multiplying by 0.3229. </p>
+<p>LBDSTBSI </p>
+<p>The total bilirubin in mg/dL (LBXSTB) was converted to &mu;mol/L <br />
+(LBDSTBSI) by multiplying by 17.1. </p>
+<p>LBDSTPSI </p>
+<p>The total protein in g/dL (LBXSTP) was converted to g/L (LBDSTPSI) by <br />
+multiplying by 10.</p>
+<p>LBDSTRSI </p>
+<p>The triglycerides in mg/dL (LBXSTR) were converted to mmol/L <br />
+(LBDSTRSI) by multiplying by 0.01129. </p>
+<p>LBDSUASI </p>
+<p>The uric acid in mg/dL (LBXSUA) was converted to &mu;mol/L (LBDSUASI) <br />
+by multiplying by 59.48. </p>
+<p>LBDSCRSI </p>
+<p>The creatine in mg/dL (LBXSCR) was converted to &mu;mol/L (LBDSCRSI) <br />
+by multiplying by 88.4. </p>
+<p>LBDSGBSI </p>
+<p>The globulin in g/dL (LBXSGB) was converted to g/L (LBDSGBSI) by <br />
+multiplying by 10. </p>
+<p>Detailed instructions on specimen collection and processing can be found at the NHANES website.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols.</p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>Analytical Note for Serum Creatinine (Lab 40) for NHANES 2003- <br />
+2004:</strong> </p>
+<p>Correction for Serum Creatinine for NHANES 2003-2004 is not <br />
+necessary: </p>
+<p>Serum creatinine is not standardized in many laboratories. The National Kidney Disease Education Program is attempting to have all laboratories standardize serum creatinine to reference methods (Myers, GL, et al. Recommendations for Improving Serum Creatinine Measurement: A Report from the Laboratory Working Group of the National Kidney Disease Education Program. Clin. Chem. 2006; 5- 18). Equations for estimating glomerular filtration rate (GFR) from standardized creatinine have been published (Stevens LA, et al. N Engl J Med. 2006 Jun 8;354(23):2473-83). Serum creatinine assays on 190 stored specimens from NHANES 2003-2004 were used to determine if serum creatinine needed to be adjusted when compared to a method traceable to a &ldquo;gold&rdquo; standard reference method. The Cleveland Clinic Foundation (CCF) laboratory analyzed the serum creatinine specimens using a Roche coupled enzymatic assay (creatininase, creatinase, sarcosine oxidase, kits # 1775677 and 1775766) performed on a Roche P Module instrument. The Roche method calibrators were traceable to an isotope dilution mass spectrometric method for serum creatinine using standard references methods (NIST SRM 967) and confirmed by analysis of CAP LN-24 linearity set based on NIST assigned values. Serum creatinine by the Roche method was then compared to the original NHANES 2003-2004 measurements which used the Jaffe kinetic alkaline picrate method performed on a Beckman LX-20 analyzer. There were no significant differences in results between these two measurements. The comparison of values revealed the mean (SD) serum creatinine at NHANES, CCF, and their difference were 0.977 (0.341), 0.970 (0.337), and 0.007 (0.0583) mg/dL, respectively (paired t-test, p=0.09). The regression of CCF (Y) on NHANES (X) had an intercept and slope of 0.02 (0.01) and 0.98 (0.01) mg/dL and a correlation of 0.99. The difference between the methods was within the analytical error of the NHANES method (CV of 4.3% at 0.67 mg/dL or 0.029 mg/dL). Thus, no correction is necessary for serum creatinine values in NHANES 2003-2004.The analysis of NHANES 2003-2004 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2003- 2004 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN. </p>
+<p>LBXSTR: </p>
+<p>This value was obtained from the standard battery of biochemical assessments. Use of the laboratory test result from the reference method (LBXTR), rather than the (LBXSTR) value, is generally recommended. For most triglyceride analyses, the appropriate variable to use is (LBXTR). The value from the biochemistry profile (LBXSTR) should not be used routinely. </p>
+<p>LBXSCH: </p>
+<p>This value was obtained from the standard battery of biochemical assessments. Use of the laboratory test result from the reference method (LBXTC), rather than the (LBXSCH) value, is generally recommended. For most analyses of serum cholesterol, the appropriate variable to use will be (LBXTC). The (LBXSCH) value from the biochemistry profile should not be used routinely </p>
+<p>LBXSGL </p>
+<p>This value was obtained from the standard battery of biochemical assessments. Use of the laboratory test result from the reference method (LBXGLU), rather than the (LBXSGL) value, is generally recommended. These serum glucose values (LBXSGL) reported in this release should not be used to determine undiagnosed diabetes or prediabetes. Instead, plasma glucose values (LBXGLU) should be used based on the reference analytic method of this analyte. Use the special weights included in this data file when analyzing data.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSAL">LBXSAL - Albumin (g/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSAL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin (g/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin (g/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.9 to 5.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSALSI">LBDSALSI - Albumin (g/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSALSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin (g/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin (g/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">19 to 55</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSATSI">LBXSATSI - Alanine aminotransferase ALT (U/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSATSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Alanine aminotransferase ALT (U/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Alanine aminotransferase(U/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1997</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6489</td>
+                <td class="values" align="right">6489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">501</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSASSI">LBXSASSI - Aspartate aminotransferase AST (U/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSASSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Aspartate aminotransferase AST (U/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Aspartate aminotransferase(U/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7 to 1672</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6488</td>
+                <td class="values" align="right">6488</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">502</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSAPSI">LBXSAPSI - Alkaline phosphotase (U/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSAPSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Alkaline phosphotase (U/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Alkaline phosphatase(U/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">16 to 1378</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSBU">LBXSBU - Blood urea nitrogen (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSBU</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blood urea nitrogen (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blood urea nitrogen (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2 to 91</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSBUSI">LBDSBUSI - Blood urea nitrogen (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSBUSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blood urea nitrogen (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blood urea nitrogen (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.71 to 32.49</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSCA">LBXSCA - Total calcium (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSCA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total calcium (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total calcium (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6.7 to 12.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSCASI">LBDSCASI - Total calcium (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSCASI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total calcium (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total calcium (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.675 to 3.125</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSCH">LBXSCH - Cholesterol (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSCH</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cholesterol (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cholesterol (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">72 to 712</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSCHSI">LBDSCHSI - Cholesterol (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSCHSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cholesterol (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cholesterol (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.862 to 18.412</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSC3SI">LBXSC3SI - Bicarbonate (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSC3SI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Bicarbonate (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Bicarbonate(mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">12 to 35</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSGTSI">LBXSGTSI - Gamma glutamyl transferase (U/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSGTSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gamma glutamyl transferase (U/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gamma glutamyl transferase : SI (U/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3 to 2274</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6491</td>
+                <td class="values" align="right">6491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSGL">LBXSGL - Glucose, serum (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSGL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glucose, serum (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Glucose, serum (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">46 to 512</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSGLSI">LBDSGLSI - Glucose, serum (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSGLSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glucose, serum (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Glucose, serum (mmol/L)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.55 to 28.42</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSIR">LBXSIR - Iron, refigerated (ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSIR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Iron, refigerated (ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Iron, refigerated (ug/dL)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 278</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6486</td>
+                <td class="values" align="right">6486</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">504</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSIRSI">LBDSIRSI - Iron, refigerated (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSIRSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Iron, refigerated (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Iron, refigerated (umol/L)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.9 to 49.8</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6486</td>
+                <td class="values" align="right">6486</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">504</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSLDSI">LBXSLDSI - Lactate dehydrogenase LDH (U/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSLDSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Lactate dehydrogenase LDH (U/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Lactate dehydrogenase LDH (U/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">39 to 1292</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6487</td>
+                <td class="values" align="right">6487</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">503</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSPH">LBXSPH - Phosphorus (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSPH</dd>
+            <dt>SAS Label: </dt>
+            <dd>Phosphorus (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Phosphorus  (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.2 to 6.8</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6491</td>
+                <td class="values" align="right">6491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSPHSI">LBDSPHSI - Phosphorus (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSPHSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Phosphorus (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Phosphorus  (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.71 to 2.196</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6491</td>
+                <td class="values" align="right">6491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSTB">LBXSTB - Total bilirubin (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSTB</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total bilirubin (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total bilirubin (mg/dL)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.1 to 12.9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6487</td>
+                <td class="values" align="right">6487</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">503</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSTBSI">LBDSTBSI - Bilirubin, total (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSTBSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Bilirubin, total (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Bilirubin, total (umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.71 to 220.59</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6487</td>
+                <td class="values" align="right">6487</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">503</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSTP">LBXSTP - Total protein (g/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSTP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total protein (g/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total protein (g/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.4 to 10</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6489</td>
+                <td class="values" align="right">6489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">501</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSTPSI">LBDSTPSI - Total protein (g/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSTPSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total protein (g/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total protein (g/L)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">54 to 100</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6489</td>
+                <td class="values" align="right">6489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">501</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSTR">LBXSTR - Triglycerides (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSTR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triglycerides (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triglycerides (mg/dL) </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">20 to 5210</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6488</td>
+                <td class="values" align="right">6488</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">502</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSTRSI">LBDSTRSI - Triglycerides (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSTRSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triglycerides (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triglycerides (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.226 to 58.821</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6488</td>
+                <td class="values" align="right">6488</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">502</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSUA">LBXSUA - Uric acid (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSUA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Uric acid (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Uric acid (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.4 to 14.9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6490</td>
+                <td class="values" align="right">6490</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">500</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSUASI">LBDSUASI - Uric acid (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSUASI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Uric acid (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Uric acid (umol/L)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">83.3 to 886.3</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6490</td>
+                <td class="values" align="right">6490</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">500</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSCR">LBXSCR - Creatinine (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSCR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Creatinine (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Creatinine (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info"> 0 to  99.9</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.3 to 13.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSCRSI">LBDSCRSI - Creatinine (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSCRSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Creatinine (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info"> </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">26.52 to 1211.08</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSNASI">LBXSNASI - Sodium (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSNASI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Sodium (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Sodium(mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">126 to 153</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6491</td>
+                <td class="values" align="right">6491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSKSI">LBXSKSI - Potassium (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSKSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Potassium (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Potassium (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.5 to 5.9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6491</td>
+                <td class="values" align="right">6491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSCLSI">LBXSCLSI - Chloride (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSCLSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Chloride (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Chloride(mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">86 to 116</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6492</td>
+                <td class="values" align="right">6492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSOSSI">LBXSOSSI - Osmolality (mmol/Kg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSOSSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Osmolality (mmol/Kg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Osmolality(mmol/Kg)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">250 to 306</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6491</td>
+                <td class="values" align="right">6491</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXSGB">LBXSGB - Globulin (g/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXSGB</dd>
+            <dt>SAS Label: </dt>
+            <dd>Globulin (g/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Globulin (g/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.7 to 7.4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6489</td>
+                <td class="values" align="right">6489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">501</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDSGBSI">LBDSGBSI - Globulin (g/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDSGBSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Globulin (g/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Globulin (g/L)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">17 to 74</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6489</td>
+                <td class="values" align="right">6489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">501</td>
+                <td class="values" align="right">6990</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

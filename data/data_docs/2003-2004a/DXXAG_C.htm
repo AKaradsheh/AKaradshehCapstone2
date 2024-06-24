@@ -1,0 +1,1196 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Dual Energy X-ray Absorptiometry - Android/Gynoid" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Dual Energy X-ray Absorptiometry - Android/Gynoid Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Examination page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Dual Energy X-ray Absorptiometry - Android/Gynoid Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Protocol_and_Procedure">Protocol and Procedure</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#DXATRST">DXATRST - Trunk (A/G region) scan status</a>
+                </li>
+                <li>
+                  <a href="#DXATRTV">DXATRTV - Trunk tissue invalidity code</a>
+                </li>
+                <li>
+                  <a href="#DXXANFM">DXXANFM - Android fat mass</a>
+                </li>
+                <li>
+                  <a href="#DXXANLM">DXXANLM - Android lean mass</a>
+                </li>
+                <li>
+                  <a href="#DXXANTOM">DXXANTOM - Android total mass</a>
+                </li>
+                <li>
+                  <a href="#DXXGYFM">DXXGYFM - Gynoid fat mass</a>
+                </li>
+                <li>
+                  <a href="#DXXGYLM">DXXGYLM - Gynoid lean mass</a>
+                </li>
+                <li>
+                  <a href="#DXXGYTOM">DXXGYTOM - Gynoid total mass</a>
+                </li>
+                <li>
+                  <a href="#DXXAGRAT">DXXAGRAT - Android to Gynoid ratio</a>
+                </li>
+                <li>
+                  <a href="#DXXAPFAT">DXXAPFAT - Android percent fat</a>
+                </li>
+                <li>
+                  <a href="#DXXGPFAT">DXXGPFAT - Gynoid percent fat</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Dual Energy X-ray Absorptiometry - Android/Gynoid (DXXAG_C)
+			</h3>
+        <h4>
+				Data File: DXXAG_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				February 2013</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Users of the 2003-2004 dual-energy X-ray absorptiometry android/gynoid data (DXXAG_C) are encouraged to read the documentation before accessing the data file. Note: missing and invalid android and gynoid data were not multiply imputed. <br />
+<br />
+</p>
+<p>Dual-energy x-ray absorptiometry (DXA) is the most widely accepted method of measuring body composition due in part to its speed, ease of use, and low radiation exposure (Baran, 1997; Genant, 1996; Heymsfield, 1989; and Njeh, 1999). In 2003-2004, whole body DXA scans were administered in the NHANES mobile examination center (MEC). <br />
+<br />
+Android and gynoid (A/G) regions were defined by the Hologic APEX software used in the scan analysis. The android area is roughly the area around the waist between mid-point of the lumbar spine and the top of the pelvis; the gynoid area lies roughly between the head of the femur and mid-thigh. Note: the android and gynoid regions described here approximate the regions defined by the APEX software. <br />
+<br />
+Android obesity is often referred to as the &ldquo;apple&rdquo; shape since the increased fat is in the trunk. Gynoid obesity is referred to as the &ldquo;pear&rdquo; shape with increased fat in the hip and thigh areas. Fat deposition in the android region is associated with increased risk of cardiovascular disease, hypertension, hyperlipidemia, insulin resistance, and type-2 diabetes (Kissebah, 1994; Folsom, 2000), while gynoid fat deposition is associated with decreased risk of metabolic and cardiovascular diseases (Folsom, 2000; Ashwell 1994). <br />
+<br />
+The NHANES whole body scans provide nationally representative data on abdominal soft tissue composition and fat distribution overall and for age, gender, and racial/ethnic groups; and to study the association between abdominal fat distribution and other health conditions and risk factors, such as cardiovascular disease, diabetes, hypertension, and activity and dietary patterns. <br />
+<br />
+Analysis of the whole body scans provides soft tissue measurements for the android and gynoid areas of the trunk and android/gynoid ratios. These measurements include: <br />
+&bull; Total mass (gm) <br />
+&bull; Fat mass (gm) <br />
+&bull; Lean mass (gm) <br />
+&bull; Percent fat (%) </p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Whole body scans were administered to eligible survey participants 8 years of age and older. Pregnant females were ineligible for the DXA examination. Participants who were excluded from the DXA examination for reasons other than pregnancy were considered to be eligible non-respondents. Reasons for exclusion from the DXA examination were as follows: <br />
+<br />
+</p>
+<p>&bull; Pregnancy (positive urine pregnancy test and/or self-report at the time of the DXA examination). Females between the ages of 12&ndash;59 years and menstruating 8&ndash;11 year olds were not permitted to take the DXA examination without a negative MEC pregnancy test result. In addition, females aged 12&ndash;59 years were excluded from the examination if they said they were pregnant at the time of the exam, even if the pregnancy test was negative. <br />
+&bull; Self-reported history of radiographic contrast material (barium) use in past 7 days. <br />
+&bull; Self-reported nuclear medicine studies in the past 3 days. <br />
+&bull; Self-reported weight over 300 pounds or height over 6&rsquo;5&rdquo; (DXA table limitation). <br />
+<br />
+</p>
+<p>The variable DXATRST indicates the examination status for the trunk (A/G) region. The codes for DXATRST are as follows: <br />
+1= Scan completed, trunk region is valid <br />
+2= Scan completed, but trunk region is invalid <br />
+3= Not scanned, pregnancy <br />
+4= Not scanned, weight &gt; 300 lbs <br />
+5= Not scanned, other reason <br />
+<br />
+</p>
+<p>The main reasons for completed, but invalid, whole body scans were implants, excessive X-ray &ldquo;noise&rdquo; due to obesity, and jewelry not removed. The &ldquo;Not scanned, other reason&rdquo; code includes no time to complete the examination, pregnancy test not completed, and participant refusal. <br />
+<br />
+</p>
+<p>The percentage of eligible survey participants in 2003-2004 with 100% valid data (all analyzed regions were valid) is shown by age group in Table 1. The percentage of participants with valid data decreases with increasing age. The decrease in valid data with age was due primarily to an increase in the number of participants with implants, such as stents and hip replacements, and higher rates of obesity resulting in invalid truncal data from &ldquo;obesity noise.&rdquo; The percentage of participants with 100% valid data also decreases with increasing BMI due to weight over 300 pounds and &ldquo;obesity noise&rdquo; (Table 2). </p></div>
+        <h2 id="Protocol_and_Procedure">Protocol and Procedure</h2>
+        <div class="block"><p>The whole body DXA scans were acquired with a Hologic QDR-4500A fan-beam densitometer (Hologic, Inc., Bedford, Massachusetts). Hologic software version 8.26:a3* was used to administer all scans. The DXA technique acquires two low-dose x-ray images at different average energies. The ratio of the attenuation of these two average energies, called an R-factor, is used to distinguish both bone from soft tissue, and the percent fat in soft tissue when bone is not present. The radiation exposure from DXA whole body scans is extremely low at less than 10 uSv. <br />
+<br />
+</p>
+<p>The DXA examinations were administered by certified radiology technologists. Further details of the DXA examination protocol are documented in the Body Composition Procedures Manual located on the NHANES website (<a href="https://www.cdc.gov/nchs/nhanes/index.htm">https://www.cdc.gov/nchs/nhanes/index.htm</a>).</p></div>
+        <h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2>
+        <div class="block"><p>A high level of quality control was maintained throughout the DXA data collection and scan analysis, including a rigorous phantom scanning schedule. <br />
+<br />
+</p>
+<p><strong>Monitoring of Field Staff and Densitometers </strong></p>
+<p>Staff from the National Center for Health Statistics (NCHS) and the NHANES data collection contractor monitored technologist acquisition performance through in-person observations in the field. Retraining sessions were conducted with the technologists annually and as needed to reinforce correct techniques and appropriate protocol. In addition, technologist performance codes were recorded by the NHANES quality control center at the University of California, San Francisco (UCSF), Department of Radiology, as part of the participants&rsquo; scan review. The codes documented when the technologist had deviated from acquisition procedures and scan quality could have been improved. The performance codes were tracked for each technologist individually, and a summary was reported to NCHS on a quarterly basis. Constant communication was maintained throughout the year among the UCSF, the NCHS, and the data collection contractor regarding any issues that arose. <br />
+<br />
+Hologic service engineers performed all routine densitometer maintenance and repairs. Copies of all reports completed by the manufacturer&rsquo;s service engineers were sent to the UCSF when the scanners were serviced or repaired so any changes in measurement, as a result of the work, could be assessed. While some minor mechanical repairs were made during 2003-2004 survey operations, replacement or realignment of the detectors, apertures, or other major hardware was not required for any of the three densitometers. <br />
+<br />
+</p>
+<p><strong>Scan Analysis </strong></p>
+<p>Each participant and phantom scan was reviewed and analyzed by the UCSF using standard radiologic techniques and study-specific protocols developed for the NHANES. Hologic APEX software, version 3.0 (Fan, 2008), was used to reanalyze the 2003-2004 participant scans to provide data for the android and gynoid areas. The APEX software incorporates a 5% adjustment in lean mass and fat mass to account for the overestimate of lean mass by the Hologic QDR-4500A densitometer (Schoeller, 2005). Expert review was conducted by the UCSF on 100% of analyzed participant scans to verify the accuracy and consistency of the results. <br />
+<br />
+</p>
+<p><strong>Invalidity Codes </strong></p>
+<p>Invalidity codes were applied by the UCSF to indicate the reasons regions of the body could not be analyzed accurately. The invalidity codes for the trunk region are provided in the data file (see Analytic Notes for a description of the invalidity codes). <br />
+<br />
+</p>
+<p><strong>Quality Control Scans </strong></p>
+<p>The quality control phantoms were scanned according to a predetermined schedule. The Hologic Anthropomorphic Spine Phantom associated with each MEC was scanned daily as required by the manufacturer to ensure accurate calibration of the densitometer. Other MEC-specific phantoms, such as the Hologic Whole Body Slim-line Phantom and Hologic Tissue Step Phantom, were scanned 1 to 3 times weekly. Another set of phantoms, the Hologic Spine (HSP-Q96), Hologic Block, and Hologic Whole Body Phantoms, circulated among the MECs and was scanned at the start of operations at each survey site. <br />
+<br />
+Air scans, which are phantom-less scans using the whole body scan mode, were used to describe and monitor the systems&rsquo; radiographic uniformity across the entire scan field. Poor uniformity could be caused by poor aperture alignment, incorrect gantry rotation, non-uniform gain in detectors, etc., that result in localized inaccuracies in the attenuation values. <br />
+<br />
+The complete phantom scanning schedule is described in the Body Composition Procedures Manual located on the NHANES: (<a href="https://wwwn.cdc.gov/nchs/data/nhanes/2003-2004/manuals/bc.pdf">https://wwwn.cdc.gov/nchs/data/nhanes/2003-2004/manuals/bc.pdf</a>). <br />
+<br />
+In 2003-2004, longitudinal monitoring was conducted through the daily spine phantom scans as required by the manufacturer, 3 times weekly whole body slim-line phantom scans, and weekly air scans in order to correct any scanner-related changes in participant data. The circulating HSP-Q96, block, and whole body phantoms, which were scanned at the start of operations at each site, provided additional data for use in longitudinal monitoring and cross calibration. The cross-comparability of the data from each MEC was critical so the data could be pooled for analysis. <br />
+<br />
+The UCSF used the Cumulative Statistics method (CUSUM) and the MEC-specific phantom data to determine breaks in the calibration of the densitometers over the course of the survey (Lu, 1996). Multiplicative correction factors were used to correct the phantom data back to the baseline calibration. The type, frequency, and magnitude of calibration problems detected in the NHANES data were similar to those in other studies using stationary densitometers that were being monitored by UCSF. After applying the correction factors developed by UCSF, from the cross-calibration and longitudinal phantom data to the NHANES participant data, the adjusted participant data were compared to unadjusted data. The magnitude of the changes and reduction in standard errors between the adjusted and unadjusted data were found to be small and correction of the participant data was not required. <br />
+<br />
+A number of issues were addressed through the quality control program. Direct feedback given to the technologists regarding acquisition problems affecting the quality of the scans and yearly refresher training resulted in improved technologist performance. The rigorous schedule of quality control scans provided continuous monitoring of machine performance. The expert review procedures assured that scan analysis was accurate and consistent. The air scan quality assurance tool used to evaluate whole body performance was first used in the NHANES and was subsequently adopted by Hologic as a mandatory scan mode for all whole body scanners. <br />
+<br />
+</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>During the editing process, data were reviewed for completeness, consistency, and outliers. Back-end edits of the data were performed when errors were identified.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>The NHANES examination sample weight should be used for any analyses using the DXXAG_C data. Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues. Both of these are available on the NHANES website (<a href="https://www.cdc.gov/nchs/nhanes/index.htm">https://www.cdc.gov/nchs/nhanes/index.htm</a>).</p>
+<p><strong>Invalidity Codes </strong></p>
+<p>Invalidity codes were included in the data file to indicate the reasons regions could not be analyzed accurately. Invalidity codes were applicable to completed scans only (DXATRST=1 or 2). If a participant was not scanned, all invalidity codes are missing. Objects found in the upper portion of the trunk such as pacemakers or breast implants did not invalidate the scan validity for the android gynoid data. <br />
+<br />
+</p>
+<p><span style="text-decoration: underline;">Values for DXATRTV (Trunk tissue validity code) </span></p>
+<p>0 = Valid data <br />
+1 = Objects not removed <br />
+2 = Non-removable objects such as implants <br />
+3 = Excessive x-ray &ldquo;noise&rdquo; due to obesity, i.e., the DXA beam could not penetrate the layers of abdominal fat to provide an analyzable scan image (applied to the trunk region only) <br />
+4 = Arm/hip overlap <br />
+5 = Movement <br />
+7 = Other <br />
+<br />
+</p>
+<p>&nbsp;<b style="mso-bidi-font-weight: normal;">Table 1.</b> Percentages of interviewed and examined participants aged 8 years and older, with valid DXA data by age group, NHANES 2003-2004 </p>
+<p>
+<table border="1" bordercolor="#000000">
+    <thead>
+        <tr>
+            <th>Age group (years)</th>
+            <th>Interviewed and examined(N) *</th>
+            <th>Eligible for DXA (N) &dagger;</th>
+            <th>Eligible for DXA (%) &dagger;</th>
+            <th>100% valid DXA data (N) &Dagger;</th>
+            <th>100% valid DXA data (%) &Dagger;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>8-11</td>
+            <td>666</td>
+            <td>666</td>
+            <td>100</td>
+            <td>623</td>
+            <td>93.5</td>
+        </tr>
+        <tr>
+            <td>12-15</td>
+            <td>1,105</td>
+            <td>1,100</td>
+            <td>99.5</td>
+            <td>998</td>
+            <td>90.7</td>
+        </tr>
+        <tr>
+            <td>16-19</td>
+            <td>1,143</td>
+            <td>1,091</td>
+            <td>95.4</td>
+            <td>969</td>
+            <td>88.8</td>
+        </tr>
+        <tr>
+            <td>20-29</td>
+            <td>873</td>
+            <td>743</td>
+            <td>85.1</td>
+            <td>616</td>
+            <td>82.9</td>
+        </tr>
+        <tr>
+            <td>30-39</td>
+            <td>783</td>
+            <td>696</td>
+            <td>88.8</td>
+            <td>576</td>
+            <td>82.7</td>
+        </tr>
+        <tr>
+            <td>40-49</td>
+            <td>759</td>
+            <td>757</td>
+            <td>99.7</td>
+            <td>637</td>
+            <td>84.1</td>
+        </tr>
+        <tr>
+            <td>50-59</td>
+            <td>577</td>
+            <td>577</td>
+            <td>100</td>
+            <td>452</td>
+            <td>78.3</td>
+        </tr>
+        <tr>
+            <td>60-69</td>
+            <td>723</td>
+            <td>723</td>
+            <td>100</td>
+            <td>610</td>
+            <td>84.3</td>
+        </tr>
+        <tr>
+            <td>70-79</td>
+            <td>578</td>
+            <td>578</td>
+            <td>100</td>
+            <td>443</td>
+            <td>76.6</td>
+        </tr>
+        <tr>
+            <td>80+</td>
+            <td>449</td>
+            <td>449</td>
+            <td>100</td>
+            <td>311</td>
+            <td>69.2</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>7,656</td>
+            <td>7,380</td>
+            <td>96.3</td>
+            <td>6,235</td>
+            <td>84.5</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>* The number interviewed and examined is the total number of participants in the data file with a SEQN variable. This number includes pregnant females (n= 276).<br />
+&dagger; Does not include pregnant females.<br />
+&Dagger; Of those eligible for DXA who successfully completed a scan.<br />
+<br />
+<br />
+</p>
+<p>&nbsp;<b style="mso-bidi-font-weight: normal;">Table 2.</b> Percentages of participants aged 20 years and older with valid DXA data by body mass index (BMI)* category, NHANES 2003-2004</p>
+<p>
+<table border="1" bordercolor="#000000">
+    <thead>
+        <tr>
+            <th>BMI Category</th>
+            <th>Eligible for DXA(N)&dagger;</th>
+            <th>%100 valid DXA data(N)&Dagger;</th>
+            <th>%100 valid DXA data(%)&Dagger;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt; 18.5</td>
+            <td>65</td>
+            <td>49</td>
+            <td>75.4</td>
+        </tr>
+        <tr>
+            <td>18.5-24.9</td>
+            <td>1,351</td>
+            <td>1,128</td>
+            <td>83.5</td>
+        </tr>
+        <tr>
+            <td>25-29.9</td>
+            <td>1,564</td>
+            <td>1,357</td>
+            <td>86.7</td>
+        </tr>
+        <tr>
+            <td>30-34.9</td>
+            <td>897</td>
+            <td>778</td>
+            <td>86.7</td>
+        </tr>
+        <tr>
+            <td>35-39.9</td>
+            <td>330</td>
+            <td>230</td>
+            <td>69.7</td>
+        </tr>
+        <tr>
+            <td>&gt;= 40</td>
+            <td>224</td>
+            <td>78</td>
+            <td>34.8</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>4,431</td>
+            <td>3,620</td>
+            <td>81.7</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>* Measured weight in kilograms divided by measured height in meters squared.<br />
+&dagger; Does not include pregnant females.<br />
+&Dagger; Of those eligible for DXA who successfully completed a scan.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Ashwell M. Obesity in men and women. Int J Obes Relat Metab Disord 1994; 18(supple): S1-S7.</li>
+          <li>Baran DT, Faulkner KG, Genant HK, Miller PD, Pacifici R. Diagnosis and management of osteoporosis: guidelines for the utilization of bone densitometry.Calcif Tissue Int 1997:62:433-440.</li>
+          <li>Fan B, Lewiecki EM, Sherman M, Lu Y, Miller PD, Genant HK, Shepherd JA. Improved precision with Hologic Apex software. Osteoporos Int. 2008; 19:1597-602.</li>
+          <li>Folsom AR, Kushi LH, Anderson KE et al. Associations of general and abdominal obesity with multiple health outcomes in older women: the Iowa Women&rsquo;s Health Study. Arch Intern Med 2000; 160:2117-28.</li>
+          <li>Genant HK, Engelke K, Fuerst T, G&uuml;er C-C, Grampp S, Harris ST, Jergas M, Lang T, Lu Y, Majumdar S, Mathur A, Takada M. Noninvasive assessment of bone mineral and structure: state of the art. J Bone Miner Res 1996; 11:707-30.</li>
+          <li>Heymsfield SB, Wang J, Heshka S, Kehayias JJ, Pierson RN Jr. Dual-photon absorptiometry: comparison of bone mineral and soft tissue measurements in vivo with established methods. Am J Clin Nutr 1989; 49:1283-9.</li>
+          <li>Kissebah AH, Krakower GR. Regional adiposity and morbidity. Physiol Rev 1994; 74:761-811.</li>
+          <li>Lu Y, Mathur AK, Blunt BA, et al. Dual X-ray absorptiometry quality control: comparison of visual examination and process-control charts. JBMR 1996; 11:626-37.</li>
+          <li>Njeh CF, Fuerst T, Hans D, Blake GM, Genant HK. Radiation exposure in bone mineral density assessment. Appl Radiat Isot 1999; 50:215-36.</li>
+          <li>Schoeller DA, Tylavsky FA, Baer DJ, Chumlea WC, Earthman CP, Fuerst T, Harris TB, Heymsfield SB, Horlick M, Lohman TG, Lukaski HC, Shepherd J, Siervogel RM, Borrud LG. QDR 4500A dual-energy X-ray absorptiometer underestimates fat mass in comparison with criterion methods in adults. Am J Clin Nutr. 2005; 81:1018-25.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXATRST">DXATRST - Trunk (A/G region) scan status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXATRST</dd>
+            <dt>SAS Label: </dt>
+            <dd>Trunk (A/G region) scan status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Trunk scan status</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Trunk scan completed, trunk scan is valid</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Trunk scan completed, but trunk scan is invalid</td>
+                <td class="values" align="right">401</td>
+                <td class="values" align="right">6636</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Not scanned, pregnancy</td>
+                <td class="values" align="right">276</td>
+                <td class="values" align="right">6912</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Not scanned, weight &gt; 300 lbs</td>
+                <td class="values" align="right">73</td>
+                <td class="values" align="right">6985</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Not scanned, other reason</td>
+                <td class="values" align="right">671</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXATRTV">DXATRTV - Trunk tissue invalidity code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXATRTV</dd>
+            <dt>SAS Label: </dt>
+            <dd>Trunk tissue invalidity code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Trunk tissue invalidity code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Valid data</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Objects not removed</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">6247</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Non-removable objects such as implants</td>
+                <td class="values" align="right">167</td>
+                <td class="values" align="right">6414</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Excessive x-ray noise due to morbid obesity</td>
+                <td class="values" align="right">136</td>
+                <td class="values" align="right">6550</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Hip arm overlap</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6551</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Movement</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6552</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">84</td>
+                <td class="values" align="right">6636</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1020</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXANFM">DXXANFM - Android fat mass</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXANFM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Android fat mass</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Android fat mass</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">161.9 to 7686.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXANLM">DXXANLM - Android lean mass</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXANLM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Android lean mass</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Android lean mass</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">794.4 to 7299.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXANTOM">DXXANTOM - Android total mass</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXANTOM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Android total mass</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Android total mass</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">995.2 to 13220.4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXGYFM">DXXGYFM - Gynoid fat mass</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXGYFM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gynoid fat mass</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gynoid fat mass</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">560.9 to 12493.3</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXGYLM">DXXGYLM - Gynoid lean mass</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXGYLM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gynoid lean mass</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gynoid lean mass</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1713 to 15162.9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXGYTOM">DXXGYTOM - Gynoid total mass</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXGYTOM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gynoid total mass</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gynoid total mass</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2598.2 to 24420.4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXAGRAT">DXXAGRAT - Android to Gynoid ratio</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXAGRAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Android to Gynoid ratio</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Android to gynoid ratio</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.4 to 1.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXAPFAT">DXXAPFAT - Android percent fat</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXAPFAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Android percent fat</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Android percent fat</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10.3 to 59.6</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DXXGPFAT">DXXGPFAT - Gynoid percent fat</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DXXGPFAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gynoid percent fat</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gynoid percent fat</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">12.3 to 58.4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6235</td>
+                <td class="values" align="right">6235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">7656</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Cholesterol - Total" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Cholesterol - Total Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Cholesterol - Total Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXTC">LBXTC - Total cholesterol (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDTCSI">LBDTCSI - Total Cholesterol( mmol/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cholesterol - Total (TCHOL_D)
+			</h3>
+        <h4>
+				Data File: TCHOL_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				November 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				April 2010</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>Total Cholesterol and HDL-Cholesterol</strong> </p>
+<p>The goals of this component are: </p>
+<ol>
+    <li>to monitor the prevalence and trends in major cardiovascular conditions and risk factors in the U.S.; and </li>
+    <li>to evaluate prevention and treatment programs targeting cardiovascular disease in the U.S. </li>
+</ol>
+<p>The main element of the cardiovascular disease laboratory component in NHANES is blood lipid levels. Cardiovascular disease is the leading cause of death in the United States. The data will be used to monitor the status of hyperlipidemia and the success of the National Cholesterol Education Program. </p>
+<h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 6 years and older who do not meet any of the exclusion criteria were sampled. </p>
+<h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong> Data Collection Methods</strong> </p>
+<p>In the mobile examination center (MEC) laboratory, blood specimens are processed, stored, and shipped to the Johns Hopkins University Lipoprotein Analytical Laboratory for analysis. </p>
+<p><strong>Examination Protocol</strong> </p>
+<p>Detailed specimen collection and processing instructions are described in the <span style="text-decoration: underline;">NHANES Laboratory/Medical Technologists Procedures Manual</span> (LPM). Vials were stored under appropriate temperature conditions (stored at -20 degrees Centigrade) until they were shipped to Johns Hopkins University Lipoprotein Analytical Laboratory for testing. The analytical methods are described in the Analytic Methodology section of this document. </p>
+<p><strong>Data Collection</strong> </p>
+<p>Detailed specimen collection and processing instructions are discussed in the LPM. Each chapter in the LPM specifies the procedure to be used for preparation, labeling, processing, preservation, and transport of the specimens. </p>
+<p><strong>Analytic Methodology </strong></p>
+<p><strong>Total Cholesterol</strong> </p>
+<p>There were changes in the instruments used to measure total cholesterol, but the method and lab site were the same as 2003- 2004. In 2005, total cholesterol was measured enzymatically in serum using the Roche Hitachi 717. In 2006, total cholesterol was measured enzymatically in serum using the Roche Hitachi 717 and 912. No adjustment was necessary for the change in instrumentation for total cholesterol. </p>
+<p> <strong>Hitachi 717 and 912</strong></p>
+<p>Total cholesterol is measured enzymatically in serum or plasma in a series of coupled reactions that hydrolyze cholesteryl esters and oxidize the 3-OH group of cholesterol. One of the reaction byproducts, H<sub>2</sub>O<sub>2 </sub>is measured quantitatively in a peroxidase-catalyzed reaction that produces a color. Absorbance is measured at 500 nm. The color intensity is proportional to cholesterol concentration. The reaction sequence is as follows: </p>
+<p>                                        cholesteryl ester hydrolase <br />
+Cholesteryl ester + H<sub>2</sub>O -------------------------------------&gt;cholesterol + fatty acid </p>
+<p>                              cholesterol oxidase <br />
+Cholesterol + O<sub>2</sub> ----------------------------&gt; cholest-4-en-3-one + H<sub>2</sub>O<sub>2</sub> </p>
+<p>                                                                 peroxidase <br />
+2H<sub>2</sub>O<sub>2</sub> + 4-aminophenazone + phenol ---------------------&gt; 4-(p-benzoquinone <br />
+monoimino)-phenazone + 4 H<sub>2</sub>O </p>
+
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens were processed, stored, and shipped to Johns 
+Hopkins Hospital, Baltimore, MD for analysis. Detailed specimen 
+collection and processing instructions are discussed in the 
+NHANES Laboratory/Medical Technologists Procedures Manual 
+(LPM). Read the LABDOC file for detailed data processing and 
+editing protocols. The analytical methods are described in the 
+Description of the Laboratory Methodology section. 
+</p>
+<p>
+One derived variable was created in this data file. The formula 
+for their derivation is as follows: 
+</p>
+LBDTCSI: <br />
+<p>The total cholesterol in mg/dL (LBXTC) was converted to 
+mmol/L (LBDTCSI) by multiplying by 0.02586. </p>
+
+<p>Detailed instructions on specimen collection and processing can 
+be found on the NHANES web site. </p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>LBXTC:</strong> </p>
+<p>The Lipid Laboratory Total Cholesterol data file contains laboratory test results for total cholesterol (LBXTC), which uses the reference analytic method. However, the NHANES standard biochemistry profile laboratory also includes measurements of total cholesterol. The biochemistry profile total cholesterol variable name is LBXSCH. The appropriate variable to use is LBXTC from the Lipid Laboratory.</p>
+
+<p>In cases where the result was below the limit of detection, the value for that variable is the detection limit divided by the square root of two.</p>
+<p>Exam sample weights should be used for analyses. Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues.  The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTC">LBXTC - Total cholesterol (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total cholesterol (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total cholesterol (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">78 to 615</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7360</td>
+                <td class="values" align="right">7360</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">726</td>
+                <td class="values" align="right">8086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTCSI">LBDTCSI - Total Cholesterol( mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTCSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total Cholesterol( mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total Cholesterol( mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.02 to 15.9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7360</td>
+                <td class="values" align="right">7360</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">726</td>
+                <td class="values" align="right">8086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

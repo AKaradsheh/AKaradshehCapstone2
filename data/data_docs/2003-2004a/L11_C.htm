@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,C-Reactive Protein (CRP), Bone Alkaline Phosphatase (BAP) &amp; Parathyroid Hormone (PTH)" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: C-Reactive Protein (CRP), Bone Alkaline Phosphatase (BAP) &amp; Parathyroid Hormone (PTH) Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						C-Reactive Protein (CRP), Bone Alkaline Phosphatase (BAP) &amp; Parathyroid Hormone (PTH) Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXCRP">LBXCRP - C-reactive protein(mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBXBAP">LBXBAP - Bone alkaline phosphotase (ug/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXPT21">LBXPT21 - Parathyroid Hormone(Elecys method) pg/mL</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>C-Reactive Protein (CRP), Bone Alkaline Phosphatase (BAP) &amp; Parathyroid Hormone (PTH) (L11_C)
+			</h3>
+        <h4>
+				Data File: L11_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				February 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>C-reactive protein (CRP)</strong> </p>
+<p>C-reactive protein is considered one of the best measures of the acute-phase response to an infectious disease or other cause of tissue damage and inflammation. It is used to correct the iron status measures, which are affected by inflammation. It can also be used to measure the body&rsquo;s response to inflammation from chronic conditions, such as arthritis, and environmental exposures to agents such as tobacco smoke. </p>
+<p><strong>Bone Alkaline Phosphatase (BAP)</strong> </p>
+<p>To assist in the evaluation of skeletal status, one marker of bone turnover is being measured: bone alkaline phosphatase in serum. </p>
+<p><strong>Parathyroid Hormone (PTH)</strong> </p>
+<p>Evaluation of bone mineral status will utilize an evaluation of vitamin D status based on two analytes: serum 25-hydroxyvitamin D and parathyroid hormone (PTH). Vitamin D is essential for active intestinal calcium absorption and plays a central role in maintaining calcium homeostasis and skeletal integrity. In addition, vitamin D has recently been linked to other non-skeletal conditions of public health significance, such as hypertension and cancer. Vitamin D is derived mainly from cutaneous synthesis in the presence of ultraviolet sunlight, whereas dietary intake constitutes a minor fraction. Serum 25(OH)D is the best indicator of vitamin D status. It is converted in the kidney, stimulated by PTH, to the hormonally active metabolite 1,25-dihydroxyvitamin D [1,25 (OH)2D]. Serum PTH concentration is a very sensitive indicator of calcium homeostasis and vitamin D deficiency. The inclusion of this measure to the NHANES laboratory protocol will increase the usefulness of the vitamin D measurement in evaluating vitamin D status, particularly as it relates to skeletal status. The inclusion of both of these markers in the NHANES survey will provide a more complete picture of vitamin D status.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p><strong>CRP: </strong>Participants aged 1 year and older. </p>
+<p><strong>BAP:</strong> Participants aged 8&ndash;49 years. </p>
+<p><strong>PTH:</strong> Participants aged 6 years and older.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>CRP </strong></p>
+<p>This method quantified CRP by latex-enhanced nephelometry. Particle-enhanced assays were based on the reaction between a soluble analyte and the corresponding antigen or antibody bound to polystyrene particles. For the quantification of CRP, particles consisting of a polystyrene core and a hydrophilic shell were used to link anti-CRP antibodies covalently. A dilute solution of test sample was mixed with latex particles coated with mouse monoclonal anti-CRP antibodies. CRP present in the test sample forms an antigen antibody complex with the latex particles. </p>
+<p>An automatic blank subtraction was performed. CRP concentrations were calculated by using a calibration curve. Data reduction of the signals was performed by using a storable logit-log function for the calibration curve performed data reduction of the signals. These assays were performed on a Behring Nephelometer for quantitative CRP determination. </p>
+<p><strong>BAP</strong> </p>
+<p>The Tandem-MP Ostase ImmunoEnzymetric Assay is an in vitro device for the quantitative measurement of Skeletal Alkaline Phosphatase (sALP), an indicator of osteoblastic activity, in human serum. This device is intended to be used as an aid in the management of postmenopausal osteoporosis and Paget&rsquo;s disease. </p>
+<p>The Ostase Assay is a solid-phase, monoclonal antibody immuno-enzymetric assay. Samples containing sALP are reacted with a solution containing a biotin-labeled, sALP-specific monoclonal antibody. The reaction takes place in a plastic well strip (solid phase) coated with strepavidin and enclosed in a plastic frame. Following the formation of a solid-phase/capture antibody/sALP complex, the microplate is washed to remove unbound sALP and is then incubated with an enzyme substrate. The amount of substrate turnover is determined colorimetrically by measuring the absorbance of the quenched reaction at 405 nm in a microplate reader. The absorbance is proportional to the concentration of sALP present in the test sample. The calculation of sALP concentration in the sample is based on concurrent testing of sALP Calibrators and the Zero Diluent/Calibrator. </p>
+<p>The Ostase assay is an in vitro device for the quantitative measurement of skeletal alkaline phosphatase (sALP) in human serum. Changes in sALP have been shown to be useful in participants undergoing therapy for metabolic bone disorders. It may also be an indicator of vitamin D deficiency in some participants.</p>
+<p><strong>PTH </strong></p>
+<p>The Elecsys 1010 analyzer is a fully automatic run-oriented analyzer system for the determination of immunological tests using the ECL/Origen electrochemiluminescent process. All components and reagents for routine analysis are integrated in or on the analyzer. PTH is measured on the Elecsys 1010 using a sandwich principle. </p>
+<ol style="list-style-type: lower-alpha;">
+    <li>1st incubation. A 50 &mu;L sample of a biotinylated monoclonal PTH-specific antibody and monoclonal PTH-specific antibody labeled with a ruthenium complex form a sandwich complex. </li>
+    <li>2nd incubation. After the addition of streptavidin-labeled microparticles, the complex produced is bound to the solid phase via biotin-streptavidin interaction. </li>
+    <li>The reaction mixture is aspirated into the measuring cell where the microparticles are magnetically captured onto the surface of the electrode. Unbound substances are then removed with ProCell. Application of a voltage to the electrode then induces chemiluminescent emission (which is measured by a photomultiplier). </li>
+    <li>Results are determined by means of a calibration curve. This curve is instrument-specifically generated by a two-point calibration and a master curve provided via the reagent barcode. </li>
+</ol>
+<p>PTH is an 84 amino acid peptide produced by the parathyroid gland. Because the PTH molecule undergoes extensive proteolytic modifications, human serum contains both the intact molecule and several fragments. The biologically active N-terminal fragment has a half-life of only a few minutes. The secretory activity of the parathyroid gland can be determined by the selective measurement of the (mainly) intact parathyroid hormone. This Elecsys 1010 method is for the in vitro quantitative determination of intact parathyroid hormone in human serum and plasma. Together with vitamin D and calcitonin, PTH brings about the mobilization of calcium and phosphate from the skeletal system and increases the uptake of calcium in the intestine and the excretion of phosphate via the kidneys. Secretion of PTH is inhibited by high calcium concentrations and is promoted by low calcium concentrations. The ratios of intact hormone to peptide fragments may vary from individual to individual as well as between patients with hyperparathyroidism or chronic renal failure. The concentration of metabolically inactive PTH fragments increases in renal failure. </p>
+<p>There were no changes to the equipment, lab method, or lab site from the previous 2 years.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens are processed, stored and shipped to University of Washington, Seattle, WA. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of Laboratory Methodology section. </p>
+<p>The age range for CRP changed to 1 year and older in 2003&ndash;2004 from 3 years and older from the previous 2 years. The age range for BAP changed to 8&ndash;49 years in 2003&ndash;2004 from 8 years and older in the previous 2 years. </p>
+<p>There were no top coding or derived variables in this file. </p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES website.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The analysis of NHANES 2003&ndash;2004 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2003&ndash;2004 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXCRP">LBXCRP - C-reactive protein(mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXCRP</dd>
+            <dt>SAS Label: </dt>
+            <dd>C-reactive protein(mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">C-reactive protein (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.02 to 25.4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7200</td>
+                <td class="values" align="right">7200</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.01</td>
+                <td class="values">Below Limit of Detection</td>
+                <td class="values" align="right">1054</td>
+                <td class="values" align="right">8254</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">925</td>
+                <td class="values" align="right">9179</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXBAP">LBXBAP - Bone alkaline phosphotase (ug/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXBAP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Bone alkaline phosphotase (ug/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Bone alkaline phosphotase (ug/L)
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 8 YEARS -
+			49 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.8 to 445</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4877</td>
+                <td class="values" align="right">4877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4302</td>
+                <td class="values" align="right">9179</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXPT21">LBXPT21 - Parathyroid Hormone(Elecys method) pg/mL</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPT21</dd>
+            <dt>SAS Label: </dt>
+            <dd>Parathyroid Hormone(Elecys method) pg/mL</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Parathyroid Hormone(Elecys method) pg/mL
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9 to 1491</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7334</td>
+                <td class="values" align="right">7334</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Below Limit of Detection</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">7344</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1835</td>
+                <td class="values" align="right">9179</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

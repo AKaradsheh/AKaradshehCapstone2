@@ -1,0 +1,471 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>GHB_J</title>
+    <meta name="title" content="NHANES 2017-2018: Glycohemoglobin Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#LBXGH">LBXGH - Glycohemoglobin (%)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2017-2018 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Glycohemoglobin (GHB_J)</h3>
+        <h4> Data File: GHB_J.xpt</h4>
+        <h5 class="left">First Published: February 2020</h5>
+        <h5 class="right">Last Revised: NA</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">In 2015, diabetes was
+the seventh leading cause of death in the United States. &nbsp;More than 30 million Americans are living with
+diabetes, and 86 million are living with prediabetes, which is a serious health
+condition that increases a person&rsquo;s risk of type 2 diabetes and other chronic
+diseases. The prevalence of diabetes and overweight (one of the major risk
+factors for diabetes) continue to increase. Substantial new efforts to prevent
+or control diabetes have begun, including the Diabetes Prevention Trial and the
+National Diabetes Education Program. </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Diabetes testing
+provides population data to: 1) determine a national estimate of diabetes
+prevalence (diagnosed and undiagnosed); 2) identify the risk factors; 3) permit
+a national cohort to be established for follow-up studies of this condition;
+and 4) provide critical information to clinicians and public health officials
+for the development of preventive care and community-based interventions. </p><h2 id="Eligible_Sample">Eligible Sample</h2><p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Examined
+participants aged 12 years and older were eligible.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">In this assay, the
+stable (SA1c) and labile (LA1c) A1c forms can be individually resolved on the
+chromatogram without manual pretreatment, allowing accurate measurement of the
+stable form of HbA1c. The analyzer dilutes the whole blood specimen with a
+hemolysis solution, and then injects a small volume of the treated specimen
+onto the HPLC analytical column. Separation is achieved by utilizing differences
+in ionic interactions between the cation exchange group on the column resin
+surface and the hemoglobin components. The hemoglobin fractions (A1c, A1b, F,
+LA1c, SA1c, A0 and H-Var) are subsequently removed from the column material by
+step-wise elution using elution buffers each with a different salt
+concentration. The separated hemoglobin components pass through the photometer
+flow cell where the analyzer measures changes in absorbance at 415 nm. The
+analyzer integrates and reduces the raw data, and then calculates the relative
+percentages of each hemoglobin fraction. Analysis requires three minutes. If a
+specimen showed a deterioration peak, hemoglobin variant, or a LA1c results &ge;
+5% and/or LA1c results &gt; half SA1c during the regular test, it would be retested
+by a second method, <span style="font-family: Calibri;">ultra 2 HPLC</span>. In the 2017-2018 cycle, only 2.2% of the blood specimens required to be
+retested by the <span style="font-family: Calibri;">ultra 2 HPLC</span> method. A lab instrumentation change was made for this secondary
+method during the data collection period. This instrument change did not
+significantly affect the resulted glycohemoglobin values; the mean relative
+error between results from the two instruments was 0.5% (ranged from -4.0% to
+5.2%).</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Refer to the
+Laboratory Method Files section for a detailed description of the laboratory
+methods used.</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Other than the
+minor change in the secondary <span style="font-family: Calibri;">ultra 2
+HPLC</span> method described above, there were no
+changes to the lab method, lab equipment, or lab site for this component in the
+NHANES 2017-2018 cycle.</p><h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2017-2018/labmethods/GHB-J-Premier-508.pdf">Glycohemoglobin_Premier</a>
+          <span> (February 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2017-2018/labmethods/GHB-J-G8-508.pdf">Glycohemoglobin_G8</a>
+          <span> (February 2020)</span>
+        </p>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Whole blood specimens
+were processed, stored, and shipped to the University of Missouri-Columbia, MO
+for analysis. </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Detailed
+instructions on specimen collection and processing are discussed in the NHANES <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2017-2018/manuals/2017_MEC_Laboratory_Procedures_Manual.pdf">Laboratory Procedures Manual (LPM)</a>. Vials are stored under appropriate&nbsp;refrigerated (2-8&deg;C) conditions
+until they were shipped to University of Missouri for testing.</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The NHANES quality
+assurance and quality control (QA/QC) protocols meet the 1988 Clinical
+Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed
+in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2017-2018/manuals/2017_MEC_Laboratory_Procedures_Manual.pdf">NHANES LPM</a>.</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><b>Mobile Examination
+Centers (MECs)</b> <br />
+Laboratory team performance is monitored using several techniques. NCHS and contract
+consultants use a structured competency assessment evaluation during visits to
+evaluate both the quality of the laboratory work and the quality control
+procedures. Each laboratory staff&nbsp;member is observed for equipment
+operation, specimen collection and preparation; testing procedures and
+constructive feedback are given to each staff member. Formal retraining
+sessions are conducted annually to ensure that required skill levels were
+maintained. </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><b>Analytical
+Laboratories</b> <br />
+NHANES uses several methods to monitor the quality of the analyses performed by
+the contract laboratories. In the MEC, these methods include performing blind
+split samples collected on &ldquo;dry run&rdquo; sessions. In addition, contract
+laboratories randomly perform repeat testing on 2% of all specimens.</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">NCHS developed and
+distributed a quality control protocol for all CDC and contract laboratories,
+which outlined the use of Westgard rules (Westgard et al., 1981) when running
+NHANES specimens. Progress reports containing any problems encountered during
+shipping or receipt of specimens, summary statistics for each control pool, QC
+graphs, instrument calibration, reagents, and any special considerations are submitted
+to NCHS quarterly. The reports are reviewed for trends or shifts in the data.
+The laboratories are required to explain any identified areas of concern.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The data were
+reviewed. Incomplete data or improbable values were sent to the performing
+laboratory for confirmation. </p><h2 id="Analytic_Notes">Analytic Notes</h2><p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2017">2017 - 2018 Laboratory Data Overview</a> for general information on NHANES laboratory data.</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">There are over 800 laboratory tests performed on NHANES participants. However, not all participants provided biospecimens or enough volume for all the tests to be performed. The specimen availability can also vary by age or other population characteristics. For example, in 2017-2018, approximately 80% of children aged 1-17 years who were examined in the MEC provided a blood specimen through phlebotomy, while 95% of examined adults age 18 and older provided a blood specimen. Analysts should evaluate the extent of missing data in the dataset related to the outcome of interest as well as any predictor variables used in the analyses to determine whether additional re-weighting for item non-response is necessary.</p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Please refer to
+the NHANES <a href="http://www.cdc.gov/nchs/nhanes/survey_methods.htm">Analytic Guidelines</a> and the on-line NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx">Tutorial</a> for further
+details on the use of sample weights and analytic issues. </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><b>Demographic and
+Other Related Variables</b> </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The analysis of
+NHANES laboratory data must be conducted using the appropriate survey design
+and demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2017">NHANES 2017-2018 Demographics File</a> contains demographic data, health indicators, and other related
+information collected during household interviews as well as the sample design
+variables. The recommended procedure for variance estimation requires use of
+stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the
+demographic data file. </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The <a href="https://wwwn.cdc.gov/nchs/nhanes/2017-2018/fastqx_j.htm">Fasting Questionnaire File</a> includes auxiliary information, such as fasting status, length of fast and
+the time of venipuncture. </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">This laboratory
+data file can be linked to the other NHANES data files using the unique survey
+participant identifier (i.e., SEQN). </p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><b>Detection Limits </b></p>
+<p style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Since
+this data is reported in percent, the use of lower LLODs isn&rsquo;t applicable. <br style="mso-special-character: line-break;" />
+</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Centers for Disease Control and Prevention. National Diabetes Statistics Report: Estimates of Diabetes and Its Burden in the United States, 2014. Atlanta, GA: U.S. Department of Health and Human Services; 2014.</li>
+          <li>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality control in clinical chemistry. Clin Chem (1981) 27:493-501.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXGH">LBXGH - Glycohemoglobin (%)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXGH</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glycohemoglobin (%)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Glycohemoglobin (%)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3.8 to 16.2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6045</td>
+                <td class="values" align="right">6045</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">356</td>
+                <td class="values" align="right">6401</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

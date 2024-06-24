@@ -1,0 +1,1106 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SSTROP_A</title>
+    <meta name="title" content="NHANES 1999-2004: High-sensitivity cardiac troponins (Surplus)  Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ol,
+					.nhanes-doc ul {
+					margin-left: 2.4em;
+					margin-bottom: 1.2em;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					}
+
+					.nhanes-doc li {
+					margin-top: 0.6em;
+					}
+
+					.nhanes-doc #toc ul,
+					.nhanes-doc #References ul {
+					margin-left: 0em;
+					}
+
+					.nhanes-doc #Sections ol ul,
+					.nhanes-doc #Sections ul ul {
+					margin-left: 0;
+					}
+
+					.nhanes-doc #Sections ol ol,
+					.nhanes-doc #Sections ul ol {
+					margin-left: -1.2em;
+					}
+
+					.nhanes-doc #Sections li {
+					margin-left: 1.2em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#WTSSCB2Y">WTSSCB2Y - Cardiac biomarkers 2 year weights</a>
+              </li>
+              <li>
+                <a href="#WTSSCB4Y">WTSSCB4Y - Cardiac biomarker 4 yr weights 1999-2002</a>
+              </li>
+              <li>
+                <a href="#SSTNT">SSTNT - Cardiac hs-Troponin T, ng/L</a>
+              </li>
+              <li>
+                <a href="#SSTNTLC">SSTNTLC - Cardiac hs-Troponin T comment code</a>
+              </li>
+              <li>
+                <a href="#SSTNIA">SSTNIA - Cardiac hs-Troponin I (Abbott), ng/L</a>
+              </li>
+              <li>
+                <a href="#SSTNIALC">SSTNIALC - Cardiac hs-Troponin I (Abbott) comt</a>
+              </li>
+              <li>
+                <a href="#SSTNIS">SSTNIS - Cardiac hs-Troponin I (Siemens), ng/L</a>
+              </li>
+              <li>
+                <a href="#SSTNISLC">SSTNISLC - Cardiac hs-Troponin I (Siemens) comt</a>
+              </li>
+              <li>
+                <a href="#SSTNIO">SSTNIO - Cardiac hs-Troponin I (Ortho), ng/L</a>
+              </li>
+              <li>
+                <a href="#SSTNIOLC">SSTNIOLC - Cardiac hs-Troponin I (Ortho) comt</a>
+              </li>
+              <li>
+                <a href="#SSPRISTP">SSPRISTP - Pristine sample comment for SSTROP_A</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>1999-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>High-sensitivity cardiac troponins (Surplus)  (SSTROP_A)</h3>
+        <h4> Data File: SSTROP_A.xpt</h4>
+        <h5 class="left">First Published: September 2022</h5>
+        <h5 class="right">Last Revised: NA</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Sera from stored surplus specimens in the NHANES 1999-2004
+cycles were tested for high-sensitivity (hs)-troponin T (Roche), hs-troponin I
+(Abbott), hs-troponin I (Siemens) and hs-troponin I (Ortho). The results
+for high-sensitivity cardiac troponin in this data release are reported in nanograms
+per liter (ng/L).   </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>NHANES participants aged 1
+year or older who consented to storing their samples for future research and
+had stored sera samples from 1999-2004.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>This stored specimen study was
+conducted by the Principal Investigator (PI) Dr. Elizabeth Selvin at the Johns
+Hopkins Bloomberg School of Public Health. All measurements were performed
+during 2018-2020 at the University of Maryland School of Medicine, Baltimore,
+Maryland (Lab Director: Dr. Robert Christenson).</p>
+<p><strong>Hs-Troponin
+T (Roche)</strong></p>
+<p>Hs-troponin T, TnT Gen 5 STAT in the USA, was
+measured using the Roche Cobas e601 using Elecsys reagents. The limit of
+detection (LoD) for this assay is 3 ng/L.</p>
+<p>Total
+imprecision was expressed as coefficients of variation (CVs). They were 3.1% (26.12&ndash;31.28 ng/L) and 2.0% (2004.5&ndash;2215.5 ng/L).</p>
+<p><strong>Hs-Troponin I (Abbott)</strong></p>
+<p>Hs-troponin I (Abbott) was measured using the Abbott ARCHITECT i2000SR. The LoD for
+this assay is 1.7 ng/L.</p>
+<p>CVs: 6.4% (8.12-16.01
+ng/L), 4.5% (27.69-55.38 ng/L), 3.5% (169.1-314.1 ng/L), and 6.7% (2758-4444
+ng/L).</p>
+<p><strong style="mso-bidi-font-weight:normal;">Hs-Troponin I (Siemens)</strong></p>
+<p>Hs-troponin I (Siemens), TNIH assay, was measured using the Siemens Centaur
+XP. The LoD for this assay is 1.6 ng/L.</p>
+<p>CVs: 3.8% (12-28
+ng/L), 2.7% (120-280 ng/L), and 2.6% (9000-21000 ng/L).</p>
+<p><strong>Hs-Troponin</strong><strong style="mso-bidi-font-weight:normal;"> I (Ortho)</strong></p>
+<p>Hs-troponin I (Ortho) was measured using the Ortho Vitros 3600. The LoD for
+this assay is 0.39 ng/L.</p>
+<p>CVs: 4.2% (6-16 ng/L) and 2.8% (17511-21403 ng/L).</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Data were received after all analyses were complete.
+The data were not edited. <br />
+Data Access: All data are publicly available.&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=1999">1999-2000</a>, <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2001">2001-2002</a>, and <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2003">2003-2004</a> Laboratory
+Data Overview for general information on NHANES laboratory data. For
+information on the stored specimens, refer to the <a href="https://www.cdc.gov/nchs/nhanes/biospecimens/biospecimens.htm">NHANES Biospecimen Program</a>.<strong></strong></p>
+<p>Very low concentrations of
+hs-troponin are associated with greater variability and are not routinely
+reported for clinical use. However, such values have been unblinded in this
+dataset
+for&nbsp;<strong><span style="text-decoration: underline;">research purposes only</span></strong>. &nbsp;</p>
+<p>For hs-troponin T (Roche) and
+hs-troponin I (Ortho), low values were initially blinded for each assay. Such
+values were subsequently unblinded. If unblinding was not possible, the
+hs-troponin T (Roche) value was imputed as 3 ng/L divided by square root of 2
+and the hs-troponin I (Ortho) value was imputed as 0.39 ng/L divided by square
+root of 2. The hs-troponin I (Siemens) was initially blinded at values below
+the limit of quantitation (LoQ). If unblinding was not possible, the
+hs-troponin I (Siemens) value was imputed as 2.5 ng/L divided by square root of
+2. For the purposes of this study, the hs-troponin I (Abbott) was not blinded. </p>
+<p>
+The initial
+lowest reported value before unblinding, limit of the blank (LoB), limit of
+detection (LoD) and limit of quantitation (LoQ) for hs-troponin T (Roche),
+hs-troponin I (Abbott), hs-troponin I (Siemens) and hs-troponin I (Ortho) are:</p>
+<table bordercolor="#000000" border="1">
+    <thead>
+        <tr>
+            <th>Analyte</th>
+            <th>Device</th>
+            <th>Initial lowest reported value<br />
+            before unblinding</th>
+            <th>LoB</th>
+            <th>LoD</th>
+            <th>LoQ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Hs-Troponin T</td>
+            <td>Roche</td>
+            <td>3 ng/L</td>
+            <td>2.5 ng/L</td>
+            <td>3 ng/L</td>
+            <td>6 ng/L</td>
+        </tr>
+        <tr>
+            <td>Hs-Troponin I</td>
+            <td>Abbott</td>
+            <td>-</td>
+            <td>0.9 ng/L</td>
+            <td>1.7 ng/L</td>
+            <td>2.3 ng/L</td>
+        </tr>
+        <tr>
+            <td>Hs-Troponin I</td>
+            <td>Siemens</td>
+            <td>2.5 ng/L</td>
+            <td>0.5 ng/L</td>
+            <td>1.6 ng/L</td>
+            <td>2.5 ng/L</td>
+        </tr>
+        <tr>
+            <td>Hs-Troponin&nbsp;I</td>
+            <td>Ortho</td>
+            <td>0.39 ng/L</td>
+            <td>0.14 ng/L</td>
+            <td>0.39 ng/L</td>
+            <td>1.23 ng/L</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<p>Two variables are provided for
+each analyte. The variable prefixed SS (i.e., SSTNT) provides the analytic
+result for that analyte. The other variable prefixed SS and suffixed with &ldquo;LC&rdquo;
+(ex., SSTNTLC) indicates how the analytic results was obtained: A &ldquo;0&rdquo; value
+means that the result was initially measurable and not blinded. A &ldquo;1&rdquo; indicates
+that the result was initially blinded and was able to be unblinded to provide a
+measured result. A &ldquo;2&rdquo; indicates that the result was initially blinded and was
+unable to be unblinded, requiring imputation of the result as documented above.
+For analytes with results that are below the manufacturer-reported LoQ, caution
+is required for interpretation and values are provided for research purposes
+only. </p>
+<p>
+The
+hs-troponin variable names and its corresponding analyte names are:&nbsp;<br />
+</p>
+<table bordercolor="#000000" border="1">
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Analyte name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SSTNT</td>
+            <td>Cardiac hs-Troponin T, ng/L</td>
+        </tr>
+        <tr>
+            <td>SSTNIA</td>
+            <td>Cardiac hs-Troponin I (Abbott), ng/L</td>
+        </tr>
+        <tr>
+            <td>SSTNIS</td>
+            <td>Cardiac hs-Troponin I (Siemens), ng/L</td>
+        </tr>
+        <tr>
+            <td>SSTNIO</td>
+            <td>Cardiac hs-Troponin I (Ortho), ng/L</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<p><strong>Other
+variables in this dataset:</strong></p>
+<p>An indicator variable (SSPRISTP) is included for whether the
+analyte was measured in a pristine sample (never previously thawed and
+re-frozen): 0=non-pristine; 1=pristine.</p>
+<table bordercolor="#000000" border="1">
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SSTNTLC</td>
+            <td>Cardiac hs-Troponin T indicator for values less than blinding threshold value</td>
+        </tr>
+        <tr>
+            <td>SSTNIALC</td>
+            <td>Cardiac hs-Troponin I (Abbott) indicator for greater than/equal or less then LoD</td>
+        </tr>
+        <tr>
+            <td>SSTNISLC</td>
+            <td>Cardiac hs-Troponin I (Siemens) indicator for values less than blinding threshold value</td>
+        </tr>
+        <tr>
+            <td>SSTNIOLC</td>
+            <td>Cardiac hs-Troponin I (Ortho) indicator for values less than blinding threshold value</td>
+        </tr>
+        <tr>
+            <td>SSPRISTP</td>
+            <td>Pristine sample indicator for SSTROP_A</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<p><strong>Subsample
+Weights</strong></p>
+<p>Sample weights are required to
+analyze these data properly. Specific sample weights for this subsample are
+included in this data file and should be used when analyzing these data
+(WTSSCB2Y, WTSSCB4Y). Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic Guidelines</a> and the on-line
+NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx">Tutorial</a> for further details on the use of sample weights and
+other analytic issues<strong>. </strong>These sample
+weights are shared with files: &ldquo;SSCARD_A&rdquo; and &ldquo;SSBNP_A&rdquo;, which were from the
+same sample of survey participants.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTSSCB2Y">WTSSCB2Y - Cardiac biomarkers 2 year weights</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSSCB2Y</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac biomarkers 2 year weights</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Surplus specimen cardiac biomarkers 2 year weights</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1250.055251 to 297328.56282</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">21743</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No lab specimen</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTSSCB4Y">WTSSCB4Y - Cardiac biomarker 4 yr weights 1999-2002</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSSCB4Y</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac biomarker 4 yr weights 1999-2002</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Surplus specimen cardiac biomarker 4 yr weights 1999-2002
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">773.99041 to 120568.91688</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">14471</td>
+                <td class="values" align="right">14471</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No lab specimen</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14471</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7272</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNT">SSTNT - Cardiac hs-Troponin T, ng/L</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin T, ng/L</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin T, ng/L</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 417.1</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">20561</td>
+                <td class="values" align="right">20561</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1182</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNTLC">SSTNTLC - Cardiac hs-Troponin T comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNTLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin T comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin T indicator for values less than blinding threshold value</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Measurable</td>
+                <td class="values" align="right">16731</td>
+                <td class="values" align="right">16731</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Unblinded</td>
+                <td class="values" align="right">3401</td>
+                <td class="values" align="right">20132</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Imputed</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">20561</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1182</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNIA">SSTNIA - Cardiac hs-Troponin I (Abbott), ng/L</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNIA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin I (Abbott), ng/L</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin I (Abbott), ng/L
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 1033.8</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">21319</td>
+                <td class="values" align="right">21319</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">424</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNIALC">SSTNIALC - Cardiac hs-Troponin I (Abbott) comt</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNIALC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin I (Abbott) comt</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin I (Abbott) indicator for greater than/equal or less then LoD
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Greater than or equal to the LoD</td>
+                <td class="values" align="right">9013</td>
+                <td class="values" align="right">9013</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less than the LoD</td>
+                <td class="values" align="right">12306</td>
+                <td class="values" align="right">21319</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">424</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNIS">SSTNIS - Cardiac hs-Troponin I (Siemens), ng/L</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNIS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin I (Siemens), ng/L</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin I (Siemens), ng/L</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 1616.67</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">20033</td>
+                <td class="values" align="right">20033</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1710</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNISLC">SSTNISLC - Cardiac hs-Troponin I (Siemens) comt</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNISLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin I (Siemens) comt</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin I (Siemens) indicator for values less than blinding threshold value</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Measurable</td>
+                <td class="values" align="right">8676</td>
+                <td class="values" align="right">8676</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Unblinded</td>
+                <td class="values" align="right">11326</td>
+                <td class="values" align="right">20002</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Imputed</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">20033</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1710</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNIO">SSTNIO - Cardiac hs-Troponin I (Ortho), ng/L</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNIO</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin I (Ortho), ng/L</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin I (Ortho), ng/L</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 1780</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">19662</td>
+                <td class="values" align="right">19662</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2081</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSTNIOLC">SSTNIOLC - Cardiac hs-Troponin I (Ortho) comt</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSTNIOLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cardiac hs-Troponin I (Ortho) comt</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cardiac hs-Troponin I (Ortho) indicator for values less than blinding threshold value</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Measurable</td>
+                <td class="values" align="right">8604</td>
+                <td class="values" align="right">8604</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Unblinded</td>
+                <td class="values" align="right">11051</td>
+                <td class="values" align="right">19655</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Imputed</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">19662</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2081</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSPRISTP">SSPRISTP - Pristine sample comment for SSTROP_A</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSPRISTP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pristine sample comment for SSTROP_A</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Pristine sample indicator for SSTROP_A</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Non-Pristine</td>
+                <td class="values" align="right">1433</td>
+                <td class="values" align="right">1433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Pristine</td>
+                <td class="values" align="right">20310</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">21743</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

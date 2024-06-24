@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Albumin &amp; Creatinine - Urine" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Albumin &amp; Creatinine - Urine Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Albumin &amp; Creatinine - Urine Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#URXUCR">URXUCR - Creatinine, urine (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URXUCRSI">URXUCRSI - Creatinine, urine (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#URXUMA">URXUMA - Albumin, urine (ug/mL)</a>
+                </li>
+                <li>
+                  <a href="#URXUMASI">URXUMASI - Albumin, urine (mg/L) SI</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Albumin &amp; Creatinine - Urine (L16_C)
+			</h3>
+        <h4>
+				Data File: L16_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				April 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Urinary albumin and creatinine are measured. Related survey questionnaire data include information on analgesic product use and incontinence.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Participants aged 6 years and older.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p><strong>Urinary Creatinine</strong> </p>
+<p>Creatinine analysis uses a Jaff&eacute; rate reaction, in which creatinine reacts with picrate in an alkaline solution to form a red creatinine-picrate complex. The reaction is measured with a CX3 analyzer. The rate of the color development is measured 25.6 sec after sample injection at 520 and 560 nm. The rate difference between the two wavelengths is proportional to the concentration of creatinine in the reaction cup. The procedures described below are the standard protocols of the Fairview University Medical Center.</p>
+<p>Creatinine, the waste product derived from creatine, is released into the plasma at a relatively constant rate. The amount of creatinine per unit of muscle mass is constant; therefore, creatinine is the best indicator of impaired kidney function.</p>
+<p><strong>Urinary Albumin</strong> </p>
+<p>A solid-phase fluorescent immunoassay for the measurement of human urinary albumin is described by Chavers et al. (6). The fluorescent immunoassay is a non-competitive, double-antibody method for the determination of human albumin in urine. Antibody to human albumin is covalently attached to derivatized polyacrylamide beads. The solid-phase antibody is reacted with a urine specimen, and the urine albumin-antigen complexes with the solid-phase antibody. This complex then reacts with fluorescein-labeled antibody. The unattached fluorescent antibody is then removed by washing during centrifugation. The fluorescence of the stable solid-phase antibody complex is determined with a fluorometer; the fluorescence is directly proportional to the amount of urine albumin present. The standard curve is 0.5&ndash;20 &mu;g/mL of albumin.</p>
+<p>Increased microalbuminuria is a sign of renal disease and may be predictive of nephropathy risk in patients with insulin-dependent diabetes. Results of the fluorescent immunoassay (FIA) are reproducible, and the test is accurate and sensitive for the detection of human urinary albumin excretion. It is especially useful for the measurement of low levels of urinary albumin not detectable by dipstick methods. The FIA assay resembles the radio-immunoassay (RIA) in technique and sensitivity without the potential health hazards associated with the handling of isotopes in the laboratory. </p>
+<p>There were no changes to the equipment, lab method, or lab site from the previous 2 years. </p>
+<p>A detailed description of the laboratory method used can be found on the NHANES website.&nbsp;</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Urine specimens are processed, stored and shipped to University of Minnesota, Minneapolis, MN. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Analytic methodology section. </p>
+<p>Randomly collected or &ldquo;spot&rdquo; urine specimens were collected by clean-catch technique into sterile 250-mL polyethylene containers (from a large production lot, previously prescreened for trace element contamination). Although the collection of 24-hour urine specimens is scientifically desirable, it is simply not feasible for survey purposes; thus, the use of spot urine collections has been a necessity. Urine creatinine concentrations from these specimens have been used (instead of a 24-hour volume correction) to correct for the degree of dilution or concentration of some of the urine analytes, such as the phenols or microalbumin. </p>
+<p>There was no top coding in this file. Detailed instructions on specimen collection and processing can be found on the NHANES website.</p></div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>The analysis of NHANES 2003&ndash;2004 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2003&ndash;2004 Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interview and MEC examination. They also contain sample weights for these age groups. The phlebotomy file includes auxiliary information, such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Chavers BM, Simonson J, Michael AF. A solid-phase fluorescent immunoassay for the measurement of human urinary albumin. Kidney Int. 1984;25:576&ndash;578.</li>
+          <li>Creatinine Measurement Module Operating and Service Instructions, Beckman ASTRA. Brea (CA): Beckman Instruments, Inc., 1979.</li>
+          <li>Kaplan LA, Pesce AJ, editors, Clinical Chemistry Theory, Analysis and Correlation. St. Louis: CV Mosby Company, 1984:416&ndash;1261.</li>
+          <li>Maintenance Guide, Beckman ASTRA. Brea (CA): Beckman Instruments, Inc., 1982.</li>
+          <li>Operating and Service Instructions, Beckman ASTRA. Brea (CA): Beckman Instruments, Inc., 1986.</li>
+          <li>Tietz NW, editor, Textbook of Clinical Chemistry. Philadelphia: WB Saunders Company, 1986;775&ndash;1392.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URXUCR">URXUCR - Creatinine, urine (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUCR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Creatinine, urine (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Creatinine, urine (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6 to 882</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7739</td>
+                <td class="values" align="right">7739</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">243</td>
+                <td class="values" align="right">7982</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URXUCRSI">URXUCRSI - Creatinine, urine (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUCRSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Creatinine, urine (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Creatinine, urine (umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">530 to 77969</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7739</td>
+                <td class="values" align="right">7739</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">243</td>
+                <td class="values" align="right">7982</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URXUMA">URXUMA - Albumin, urine (ug/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUMA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin, urine (ug/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin, urine (ug/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.3 to 9870</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7738</td>
+                <td class="values" align="right">7738</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.2</td>
+                <td class="values">Below Limit of Detection</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7739</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">243</td>
+                <td class="values" align="right">7982</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URXUMASI">URXUMASI - Albumin, urine (mg/L) SI</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUMASI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin, urine (mg/L) SI</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin, urine (mg/L) SI</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.3 to 9870</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7738</td>
+                <td class="values" align="right">7738</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.2</td>
+                <td class="values">Below Limit of Detection</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7739</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">243</td>
+                <td class="values" align="right">7982</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

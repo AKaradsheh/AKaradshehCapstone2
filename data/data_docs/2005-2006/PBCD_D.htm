@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Cadmium, Lead, &amp; Total Mercury - Blood" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Cadmium, Lead, &amp; Total Mercury - Blood Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Cadmium, Lead, &amp; Total Mercury - Blood Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXBCD">LBXBCD - Cadmium (ug/L)</a>
+                </li>
+                <li>
+                  <a href="#LBDBCDSI">LBDBCDSI - Cadmium (nmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXBPB">LBXBPB - Lead (ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDBPBSI">LBDBPBSI - Lead (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXTHG">LBXTHG - Mercury, total (ug/L)</a>
+                </li>
+                <li>
+                  <a href="#LBDTHGSI">LBDTHGSI - Mercury, total (umol/L )</a>
+                </li>
+                <li>
+                  <a href="#LBDTHGLC">LBDTHGLC - Mercury, total comment code</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cadmium, Lead, &amp; Total Mercury - Blood (PbCd_D)
+			</h3>
+        <h4>
+				Data File: PbCd_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				April 2008</h5>
+        <h5 class="right">
+				Last Revised:
+				June 2013</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>Lead</strong></p>
+<p>Lead is a known environmental toxin that has been shown to deleteriously affect the nervous, hematopoietic, endocrine, renal, and reproductive systems. In young children, lead exposure is a particular hazard because children more readily absorb lead than do adults, and children&rsquo;s developing nervous systems also make them more susceptible to the effects of lead. The primary sources of exposure for children are lead-laden paint chips and dust as a result of deteriorating lead-based paint. The risk for lead exposure is disproportionately higher for children who are poor, non-Hispanic black, living in large metropolitan areas, or living in older housing. Among adults, the most common high exposure sources are occupational. Blood lead levels measured in previous NHANES programs have been the cornerstone of lead exposure surveillance in the U.S. The data have been used to document the burden and dramatic decline of elevated blood lead levels, to promote the reduction of lead use, and to help to redefine national lead poisoning prevention guidelines, standards, and abatement activities.</p>
+<p><strong>Cadmium</strong></p>
+<p>A cadmium assay is performed to identify cases of cadmium toxicity. Occupational exposure is the most common cause of elevated cadmium levels.&nbsp;</p>
+<p><strong>Total Mercury</strong> </p>
+<p>Uncertainties exist regarding levels of exposure to methyl mercury from fish consumption and potential health effects resulting from this exposure. Past estimates of exposure to methyl mercury have been obtained from results of food consumption surveys and measures of methyl mercury in fish. Measures of a biomarker of exposure are needed for improved exposure assessments. Blood mercury levels will be assessed in two subpopulations particularly vulnerable to the health effects from mercury exposure: children 1&ndash;5 years old and women of childbearing age. </p>
+<p>Blood measures of total and inorganic mercury will be important for evaluation of exposure from exposure to mercury in interior latex paints </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 1 year and older who do not meet any of the exclusion criteria are eligible.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>Blood Lead and Cadmium</strong> </p>
+<p>Whole blood lead (Pb), cadmium (Cd), and total mercury concentrations concentrations are determined using inductively coupled plasma mass spectrometry. This multi-element analytical technique is based on quadrupole ICP-MS technology. Coupling radio frequency power into a flowing argon stream seeded with electrons creates the plasma. Predominate species in the plasma are positive argon ions and electrons. Diluted whole blood samples are converted into an aerosol using a nebulizer inserted within a spray chamber. A portion of the aerosol is transported through the spray chamber and then through the central channel of the plasma, where it experiences temperatures of 6000&ndash;8000 K. This thermal energy atomizes and ionizes the sample. The ions, along with the argon, enter the mass spectrometer through an interface that separates the ICP, operating at atmospheric pressure (approximately 760 torr), </p>
+<p>There were no changes to the equipment, method or lab site from the previous 2 years.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Whole blood specimens are processed, stored, and shipped to the Division of Laboratory Sciences, National Center for Environmental Health, and Centers for Disease Control and Prevention for analysis. <br />
+Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Vials are stored under appropriate frozen (&ndash;20&deg;C) conditions until they are shipped to National Center for Environmental Health for testing. </p>
+<p>Three derived variables were created in this data file. The formula for their derivation is as follows: </p>
+<p>The cadmium in &micro;g/L was converted to nmol/L by multiplying by 8.897. </p>
+<p>The lead in &micro;g/L was converted to &micro;mol/L by multiplying by 0.0483. </p>
+<p>The total mercury in &mu;g/L was converted to nmol/L by multiplying by 4.99. </p>
+<p><strong>Detection Limits </strong></p>
+<p>The detection limit for cadmium was constant in the data set. One variable is provided for each of these analytes. The variable named LBX___ provides the analytic result for that analyte. In cases, where the result was below the limit of detection, the value for that variable is the detection limit divided by the square root of two. Detailed instructions on specimen collection and processing can be found on the NHANES website. </p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website. </p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p>The analysis of NHANES 2005–2006 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2005–2006 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. The Household Questionnaire Data Files also contain all survey design variables and sample weights required to analyze these data. The Phlebotomy Examination file includes auxiliary information on duration of fasting, the time of day of the venipuncture, and the conditions precluding venipuncture. The Household Questionnaire and Phlebotomy Exam files may be linked to the laboratory data file using the unique survey participant identifier SEQN. </p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXBCD">LBXBCD - Cadmium (ug/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXBCD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cadmium (ug/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cadmium (ug/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.19 to 10.8</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4715</td>
+                <td class="values" align="right">4715</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.14</td>
+                <td class="values">Below Detection Limit Fill Value</td>
+                <td class="values" align="right">3692</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDBCDSI">LBDBCDSI - Cadmium (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDBCDSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cadmium (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cadmium (nmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.69 to 96.09</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4715</td>
+                <td class="values" align="right">4715</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1.25</td>
+                <td class="values">Below Detection Limit Fill Value</td>
+                <td class="values" align="right">3692</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXBPB">LBXBPB - Lead (ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXBPB</dd>
+            <dt>SAS Label: </dt>
+            <dd>Lead (ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Lead (ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.25 to 55.2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8373</td>
+                <td class="values" align="right">8373</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.18</td>
+                <td class="values">First Below Detection Limit Fill Value</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">8405</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.21</td>
+                <td class="values">Second Below Detection Limit Fill Value</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDBPBSI">LBDBPBSI - Lead (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDBPBSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Lead (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Lead (umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.012 to 2.666</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8373</td>
+                <td class="values" align="right">8373</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.01</td>
+                <td class="values">First Below Detection Limit Fill Value</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">8375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0.009</td>
+                <td class="values">Second Below Detection Limit Fill Value</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTHG">LBXTHG - Mercury, total (ug/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTHG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mercury, total (ug/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, total (ug/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.14 to 33.2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8407</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTHGSI">LBDTHGSI - Mercury, total (umol/L )</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTHGSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mercury, total (umol/L )</dd>
+            <dt>English Text: </dt>
+            <dd class="info">
+            </dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Mercury, total (umol/L )</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.7 to 165.67</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8407</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTHGLC">LBDTHGLC - Mercury, total comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTHGLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mercury, total comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, total comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">6267</td>
+                <td class="values" align="right">6267</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2140</td>
+                <td class="values" align="right">8407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1033</td>
+                <td class="values" align="right">9440</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

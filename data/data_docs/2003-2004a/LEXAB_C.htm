@@ -1,0 +1,1856 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Lower Extremity Disease - Ankle Brachial Blood Pressure Index" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Lower Extremity Disease - Ankle Brachial Blood Pressure Index Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Examination page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Lower Extremity Disease - Ankle Brachial Blood Pressure Index Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Protocol_and_Procedure">Protocol and Procedure</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LEDSCCT2">LEDSCCT2 - ABPI Section Comment</a>
+                </li>
+                <li>
+                  <a href="#LEAARM">LEAARM - Arm tested</a>
+                </li>
+                <li>
+                  <a href="#LEAARMC">LEAARMC - Arm comment</a>
+                </li>
+                <li>
+                  <a href="#LEDARMCF">LEDARMCF - Brachial cuff size used</a>
+                </li>
+                <li>
+                  <a href="#LEQ020">LEQ020 - Large adult used, poor thigh cuff fit</a>
+                </li>
+                <li>
+                  <a href="#LEAANKL">LEAANKL - Ankle(s) tested</a>
+                </li>
+                <li>
+                  <a href="#LEAANKLC">LEAANKLC - Ankle comment</a>
+                </li>
+                <li>
+                  <a href="#LEDANKCF">LEDANKCF - Ankle cuff size used</a>
+                </li>
+                <li>
+                  <a href="#LEXBRP1">LEXBRP1 - Brachial SBP 1 (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXBRP2">LEXBRP2 - Brachial SBP 2 (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXBRPM">LEXBRPM - Mean Brachial SBP (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXLPTS1">LEXLPTS1 - Left Posterior Tibial SBP 1 (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXLPTS2">LEXLPTS2 - Left Posterior Tibial SBP 2 (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXLPTSM">LEXLPTSM - Left Mean Posterior Tibial SBP (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXLABPI">LEXLABPI - Left ABPI</a>
+                </li>
+                <li>
+                  <a href="#LEXRPTS1">LEXRPTS1 - Right Posterior Tibial SBP 1 (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXRPTS2">LEXRPTS2 - Right Posterior Tibial SBP 2 (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXRPTSM">LEXRPTSM - Right Mean Posterior Tibial SBP (mm Hg)</a>
+                </li>
+                <li>
+                  <a href="#LEXRABPI">LEXRABPI - Right ABPI</a>
+                </li>
+                <li>
+                  <a href="#LEALPTPD">LEALPTPD - Left PT pulse detected?</a>
+                </li>
+                <li>
+                  <a href="#LEARPTPD">LEARPTPD - Right PT pulse detected?</a>
+                </li>
+                <li>
+                  <a href="#LEALAPNC">LEALAPNC - Left ankle SBP &gt; 255 mm Hg?</a>
+                </li>
+                <li>
+                  <a href="#LEARAPNC">LEARAPNC - Right ankle SBP &gt; 255 mm Hg?</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Lower Extremity Disease - Ankle Brachial Blood Pressure Index (LEXAB_C)
+			</h3>
+        <h4>
+				Data File: LEXAB_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				December 2005</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>The Lower Extremity Disease examination data will be used to determine the prevalence of lower extremity disease in the U.S. population (diagnosed and undiagnosed), including those at high risk for the late complications of the disease (i.e., ulceration and amputation). The major manifestations of lower extremity disease are peripheral vascular disease and peripheral neuropathy. The Ankle Brachial Blood Pressure Index section of the Lower Extremity Disease component collects data on peripheral vascular disease and the Peripheral Neuropathy section of the Lower Extremity Disease component collects data on peripheral neuropathy. The following documentation provides information on the ABPI section. Please refer to the LEXPN_C data file, codebook, and documentation for information on the Peripheral Neuropathy.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Participants 40 years of age and older are asked to participate in the ABPI Section of the Lower Extremity Disease examination. </p>
+<p>Persons are excluded from the exam if they have a bilateral amputation or weigh over 400 pounds (due to equipment limitations). Additionally, some persons who were eligible for the exam (40 years of age and older) might not have received the exam due to the following multiple reasons: </p>
+<ol>
+    <li>casts, ulcers, dressings, or other conditions of the participant interfered with testing; </li>
+    <li>participant could not understand the test instructions; </li>
+    <li>participant became ill and the test could not be performed; </li>
+    <li>there was an equipment failure; </li>
+    <li>participant refused; </li>
+    <li>participant came late or left early from the MEC and the LED exam could not be performed; or </li>
+    <li>some other reason. As a result, these eligible persons will have missing data for the ABPI variables. </li>
+</ol>
+<p>The variable LEDSCCT2 may be used to identify reasons for missing data (refer to Analytic Notes section of this documentation for further details on the LEDSCCT2 variable). Because of participant confidentiality and data disclosure concerns, this file does not identify persons with a bilateral amputation. However, persons reporting right or left amputations of the feet and toes can be identified on the LEXPN_C data file, in variables LEALAMP and LEARAMP.</p></div>
+        <h2 id="Protocol_and_Procedure">Protocol and Procedure</h2>
+        <div class="block"><p>The ABPI exam was performed by trained health technicians in a specially equipped room in the mobile examination center (MEC). Participants lie supine on the exam table during the exam. Systolic pressure is measured on the right arm (brachial artery) and both ankles (posterior tibial arteries). If the participant has a rash or open wound on the right arm, dialysis shunt, right-sided radical mastectomy or any other condition that would interfere with accurate measurement or would cause discomfort to the participant, the left arm is used for the brachial pressure measurement. Systolic blood pressure is measured twice at each site for participants aged 40&ndash;59 years and once at each site for participants aged 60 years and older. If a health technician is unable to obtain a reading at a site, they may attempt another reading at the same site after a brief resting period. If the technician was unable to obtain even one ankle reading, they were asked to record whether they felt a posterior tibial pulse. If the technician recorded &ldquo;yes&rdquo;, they were asked if the participant&rsquo;s posterior tibial systolic blood pressure was greater than 255 mm Hg. </p>
+<p>Health technicians measured brachial and tibial systolic blood pressures using blood pressure cuffs with bladder widths of 9 cm, 12 cm, 15 cm, and 18 cm. The appropriate cuff to be used on a participant was determined by the circumference of the participant&rsquo;s bare upper arm at the midpoint. While the participant was standing upright, the health technician would measure the participant&rsquo;s arm circumference and then refer to the table below [adapted from Human Blood Pressure Determination by Sphygmomanometry by the American Heart Association (Perloff, 1993) ] to determine the acceptable cuff size for a given arm circumference. The same size cuff was used on the arm and both ankles with one exception. If the adult thigh cuff was used on the arm, the large adult cuff would be used on the participant's ankles. Also, if the technician was unable to make the adult thigh cuff fit properly on the participant's arm, the large adult cuff could be used instead. The information regarding the cuff exchange is recorded in variable LEQ020.</p>
+<p>
+<table>
+    <caption style="text-align: center; caption-side: top; vertical-align: top;">LEQ020 - Cuff Exchange</caption>
+    <thead>
+        <tr>
+            <th id="ms__id209_heading_0">Cuff Size&nbsp;</th>
+            <th id="ms__id209_heading_1">Bladder Width (cm)</th>
+            <th id="ms__id209_heading_2">Bladder Length (cm)&nbsp;</th>
+            <th id="ms__id209_heading_3">Arm Circumference (cm)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="ms__id209_heading_4">Child/small adult</th>
+            <td headers="ms__id209_heading_1">9</td>
+            <td headers="ms__id209_heading_2">17</td>
+            <td headers="ms__id209_heading_3">17-21.9</td>
+        </tr>
+        <tr>
+            <th id="ms__id209_heading_5">Adult</th>
+            <td headers="ms__id209_heading_1">12</td>
+            <td headers="ms__id209_heading_2">22</td>
+            <td headers="ms__id209_heading_3">22-29.9</td>
+        </tr>
+        <tr>
+            <th id="ms__id209_heading_6">Large adult</th>
+            <td headers="ms__id209_heading_1">15</td>
+            <td headers="ms__id209_heading_2">32</td>
+            <td headers="ms__id209_heading_3">30-37.9</td>
+        </tr>
+        <tr>
+            <th id="ms__id209_heading_7">Adult thigh</th>
+            <td headers="ms__id209_heading_1">18</td>
+            <td headers="ms__id209_heading_2">35</td>
+            <td headers="ms__id209_heading_3">38-47.9</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>After the appropriate cuff size was selected, the cuffs were placed on the participant&rsquo;s arm and each ankle. Before the blood pressure was measured at each site, the peripheral neuropathy testing of the LED exam was performed to provide a brief resting period for stabilization of the participant&rsquo;s blood pressure prior to measurement. (Note: the peripheral neuropathy protocol is described in a separate file (LEXPN_C). </p>
+<p>For the procedures relevant to this component, please go to the Lower Extremity Disease Procedures Manual on the NHANES website.</p></div>
+        <h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2>
+        <div class="block"><p>Health technicians were regularly monitored by MEC supervisory staff and evaluated by experienced trainers and NCHS staff two to four times per year in the field. Retraining sessions were conducted with the technicians periodically and annually to reinforce the proper protocols and technique. Data were also routinely examined by outside staff. </p>
+<p>Inspection, calibration, and maintenance of the equipment and supplies were performed on a regular basis. The NHANES Lower Extremity Disease Procedures Manual details the equipment quality control procedures. </p>
+<p>For details on the QA/QC process for this component, please refer to the Procedure Manuals on the NHANES website.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>During the data editing process, extreme values were examined. When there was insufficient information to conclude that values were invalid, they were retained in the data set. A few systolic blood pressure values below 40 mm Hg were considered implausible and set to missing. No other editing of the systolic blood pressure values was performed. </p>
+<p>The ankle-brachial blood pressure index (ABPI) was automatically calculated by the computer system and verified by NCHS before data release. The right ABPI was obtained by dividing the mean systolic blood pressure in the right ankle by the mean blood pressure in the arm. The left ABPI was obtained by dividing the mean systolic blood pressure in the left ankle by the mean blood pressure in the arm. The mean blood pressure value for the arm and ankles are computed based on the first and second reading at each site. Because the second reading for all persons 60+ is missing, the mean values are in fact the first recorded blood pressure reading at a site. This may also be true for 40&ndash;59 year old persons who have a missing value for the first or second blood pressure reading. </p>
+<p>Variable-Specific Editing:</p>
+<p>LEDSCCT2 &ndash; ABPI Section Comment Variable </p>
+<p>This variable is a quality control variable that NCHS used to monitor the LED component and the reasons technicians provided for why an exam was not done or was incomplete. Technicians were provided a defined list of reasons but could also select &ldquo;other, specify&rdquo; and provide the reason for a not-done or incomplete exam in a separate text field. Several of these &ldquo;other&rdquo; reasons were re-coded to one of the specific reasons (1&ndash;104), and the remaining were left as &ldquo;other&rdquo;.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Analysts should examine the data distribution and consider whether or not it is appropriate to include or exclude extreme values in a given analysis. Analysts should note that the absolute difference between the first and second systolic blood pressure reading (when available) was mostly between 0&ndash;10 mm Hg. There were cases where the difference was greater than 10 mm Hg. </p>
+<p>Persons aged 40&ndash;59 may have up to two recorded blood pressure readings at each site, whereas persons aged 60 and older would only have one recorded reading at each site. Therefore, analysts should note that for participants aged 60 and older, all second measurements will be missing at each site. Other missing blood pressure values (either the first or second for those 40&ndash;59 or the first reading for those 60+) may have been due to one of many reasons, as described above, such as participant refusal, equipment failure, or technical error. </p>
+<p>LEDSCCT2 &ndash; ABPI Section Comment Variable </p>
+<p>This variable is a quality control variable that allowed NCHS to monitor the component and the reasons technicians provided for why an exam was not done or incomplete. The data were not collected for analytic reasons but for quality control purposes. This variable is only provided in the data release file to allow analysts to have some information on missing data and possible reasons for non-response. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues at <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx</a>.</p>
+<p>No data from this component currently exist in the Research Data Center.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Special Report: Human Blood Pressure Determination by Sphygmomanometry. Circulation. 1993: 88(5);2460&ndash;2470.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEDSCCT2">LEDSCCT2 - ABPI Section Comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEDSCCT2</dd>
+            <dt>SAS Label: </dt>
+            <dd>ABPI Section Comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">ABPI section comment</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">None</td>
+                <td class="values" align="right">2082</td>
+                <td class="values" align="right">2082</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Safety exclusion</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2089</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">SP refusal</td>
+                <td class="values" align="right">139</td>
+                <td class="values" align="right">2228</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">No time</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">2273</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Physical limitation</td>
+                <td class="values" align="right">100</td>
+                <td class="values" align="right">2373</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Communication problem</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">2377</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Equipment failure</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">2393</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">SP ill/emergency</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">2403</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">14</td>
+                <td class="values">Interrupted</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2405</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">22</td>
+                <td class="values">Pain or discomfort</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2412</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">23</td>
+                <td class="values">Poor cuff fit</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">2420</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">56</td>
+                <td class="values">Came late/left early</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">2489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">58</td>
+                <td class="values">Unable to obtain all bps</td>
+                <td class="values" align="right">565</td>
+                <td class="values" align="right">3054</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">72</td>
+                <td class="values">Error (technician/software/supply)</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3055</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">84</td>
+                <td class="values">SP with child</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">3067</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">101</td>
+                <td class="values">Bandage, stocking, or other obstruction</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3071</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">104</td>
+                <td class="values">Swollen legs/ankle edema</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3073</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999</td>
+                <td class="values">Other, specify</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEAARM">LEAARM - Arm tested</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEAARM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Arm tested</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Arm tested</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">DEFAULT IS RIGHT.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">2744</td>
+                <td class="values" align="right">2744</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">2783</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">303</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEAARMC">LEAARMC - Arm comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEAARMC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Arm comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Arm comment</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">REASON FOR NOT USING RIGHT ARM.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Lesion, bandage</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">18</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Rash</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">18</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Amputation</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">18</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">39</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3047</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEDARMCF">LEDARMCF - Brachial cuff size used</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEDARMCF</dd>
+            <dt>SAS Label: </dt>
+            <dd>Brachial cuff size used</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Brachial cuff size used for BP measurement</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">9 cm</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">12 cm</td>
+                <td class="values" align="right">757</td>
+                <td class="values" align="right">763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">15 cm</td>
+                <td class="values" align="right">1878</td>
+                <td class="values" align="right">2641</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">18 cm</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">2745</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">2753</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">333</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEQ020">LEQ020 - Large adult used, poor thigh cuff fit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Large adult used, poor thigh cuff fit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Large adult cuff selected due to poor thigh cuff fit?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">244</td>
+                <td class="values" align="right">244</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1634</td>
+                <td class="values" align="right">1878</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1208</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEAANKL">LEAANKL - Ankle(s) tested</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEAANKL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ankle(s) tested</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ankle(s) tested</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">DEFAULT IS BOTH.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">14</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">2760</td>
+                <td class="values" align="right">2774</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">308</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEAANKLC">LEAANKLC - Ankle comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEAANKLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ankle comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ankle comment</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">REASON FOR NOT USING BOTH ANKLES.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Edema, lesions, bandages</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Rash</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Amputation</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">18</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3068</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEDANKCF">LEDANKCF - Ankle cuff size used</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEDANKCF</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ankle cuff size used</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ankle cuff size used for BP measurement</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">9 cm</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">12 cm</td>
+                <td class="values" align="right">773</td>
+                <td class="values" align="right">779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">15 cm</td>
+                <td class="values" align="right">1966</td>
+                <td class="values" align="right">2745</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">18 cm</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2745</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">2750</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">336</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXBRP1">LEXBRP1 - Brachial SBP 1 (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXBRP1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Brachial SBP 1 (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Brachial systolic blood pressure 1 (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">57 to 250</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2642</td>
+                <td class="values" align="right">2642</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">444</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXBRP2">LEXBRP2 - Brachial SBP 2 (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXBRP2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Brachial SBP 2 (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Brachial systolic blood pressure 2 (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">55 to 217</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1066</td>
+                <td class="values" align="right">1066</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2020</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXBRPM">LEXBRPM - Mean Brachial SBP (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXBRPM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mean Brachial SBP (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mean brachial systolic blood pressure (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">56 to 250</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2658</td>
+                <td class="values" align="right">2658</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">428</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXLPTS1">LEXLPTS1 - Left Posterior Tibial SBP 1 (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXLPTS1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left Posterior Tibial SBP 1 (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Left posterior tibial systolic blood pressure 1 (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">52 to 248</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2348</td>
+                <td class="values" align="right">2348</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">738</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXLPTS2">LEXLPTS2 - Left Posterior Tibial SBP 2 (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXLPTS2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left Posterior Tibial SBP 2 (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Left posterior tibial systolic blood pressure 2 (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">65 to 230</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">964</td>
+                <td class="values" align="right">964</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2122</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXLPTSM">LEXLPTSM - Left Mean Posterior Tibial SBP (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXLPTSM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left Mean Posterior Tibial SBP (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Left mean posterior tibial systolic blood pressure (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">52 to 248</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2370</td>
+                <td class="values" align="right">2370</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">716</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXLABPI">LEXLABPI - Left ABPI</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXLABPI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left ABPI</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Left ABPI</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.33 to 2.16</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2346</td>
+                <td class="values" align="right">2346</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">740</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXRPTS1">LEXRPTS1 - Right Posterior Tibial SBP 1 (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXRPTS1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right Posterior Tibial SBP 1 (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Right posterior tibial systolic blood pressure 1 (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">61 to 248</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2347</td>
+                <td class="values" align="right">2347</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">739</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXRPTS2">LEXRPTS2 - Right Posterior Tibial SBP 2 (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXRPTS2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right Posterior Tibial SBP 2 (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Right posterior tibial systolic blood pressure 2 (in millimeters of mercury)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">76 to 232</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">973</td>
+                <td class="values" align="right">973</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2113</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXRPTSM">LEXRPTSM - Right Mean Posterior Tibial SBP (mm Hg)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXRPTSM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right Mean Posterior Tibial SBP (mm Hg)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Right mean posterior tibial systolic blood pressure (in millimeters of mercury) </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0.0000 to 300.0000</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">61 to 248</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2364</td>
+                <td class="values" align="right">2364</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">722</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEXRABPI">LEXRABPI - Right ABPI</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEXRABPI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right ABPI</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Right ABPI</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.36 to 2.07</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2339</td>
+                <td class="values" align="right">2339</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">747</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEALPTPD">LEALPTPD - Left PT pulse detected?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEALPTPD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left PT pulse detected?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Left posterior tibial pulse detected?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">275</td>
+                <td class="values" align="right">275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">54</td>
+                <td class="values" align="right">329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">329</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2757</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEARPTPD">LEARPTPD - Right PT pulse detected?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEARPTPD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right PT pulse detected?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Right posterior tibial pulse detected?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">277</td>
+                <td class="values" align="right">277</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">330</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">330</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2756</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEALAPNC">LEALAPNC - Left ankle SBP &gt; 255 mm Hg?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEALAPNC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Left ankle SBP &gt; 255 mm Hg?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Left ankle systolic blood pressure &gt; 255 mm Hg?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">43</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">274</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">274</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2812</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LEARAPNC">LEARAPNC - Right ankle SBP &gt; 255 mm Hg?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LEARAPNC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Right ankle SBP &gt; 255 mm Hg?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Right ankle systolic blood pressure &gt; 255 mm Hg?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">45</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">276</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Could not obtain</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">276</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2810</td>
+                <td class="values" align="right">3086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
