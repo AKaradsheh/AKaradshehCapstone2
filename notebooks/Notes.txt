@@ -95,4 +95,4 @@ o	Need to see overlap in other datasets from different years
 - Smoking, COPD, asthma : how to handle
 - Triglycerides relate to sleep apnea article. Use TG's as marker for hypoventilation
 
--
+- Ran the R script again and obtained the csv again. Added the folder of 2003-2004 with additional data, including the lab data which has the triglycerides.
