@@ -1,0 +1,684 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Cholesterol - LDL, Triglyceride &amp; Apoliprotein (ApoB)" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Cholesterol - LDL, Triglyceride &amp; Apoliprotein (ApoB) Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Cholesterol - LDL, Triglyceride &amp; Apoliprotein (ApoB) Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#WTSAF2YR">WTSAF2YR - Fasting Subsample 2 Year MEC Weight</a>
+                </li>
+                <li>
+                  <a href="#LBXTR">LBXTR - Triglyceride (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDTRSI">LBDTRSI - Triglyceride (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBDLDL">LBDLDL - LDL-cholesterol (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDLDLSI">LBDLDLSI - LDL-cholesterol (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBXAPB">LBXAPB - Apolipoprotein (B) (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDAPBSI">LBDAPBSI - Apolipoprotein (B) (g/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cholesterol - LDL, Triglyceride &amp; Apoliprotein (ApoB) (TRIGLY_D)
+			</h3>
+        <h4>
+				Data File: TRIGLY_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				March 2008</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The goals of this component are: </p>
+<ol>
+    <li>to monitor the prevalence and trends in major cardiovascular conditions and risk factors in the U.S.; and</li>
+    <li>to evaluate prevention and treatment programs targeting cardiovascular disease in the U.S. </li>
+</ol>
+<p>The main element of the cardiovascular disease laboratory component in NHANES is blood lipid levels. Cardiovascular disease is the leading cause of death in the United States. The data will be used to monitor the status of hyperlipidemia and the success of the National Cholesterol Education Program.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 12 years and older who were examined in the morning (AM) session were tested.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>Triglycerides by Hitachi 717 and Hitachi 912</strong> </p>
+<p>Triglycerides are measured enzymatically in serum using a series of coupled reactions. Triglycerides are hydrolyzed by lipase to produce glycerol. Gylcerol is then phoshorylated using Glycerokinase (GK). Glycerol-3-phosphate is then oxidized using glycerophosphate oxidase (GPO), and the resulting H2O2 is combined with a phenazone using peroxidase to form a dye, whose absorbance is measured at 500 nm. High levels of serum triglycerides help mark conditions that are associated with increased risk for CHD and peripheral atherosclerosis. High triglycerides are associated with increased risk for CAD in patients with other risk factors, such as low HDL-cholesterol, some patient groups with elevated apolipoprotein B concentrations, and patients with forms of LDL that may be particularly atherogenic. Very high triglycerides can result in pancreatitis.</p>
+<p>Triglycerides are also measured because the value is used to calculate LDL-cholesterol concentrations. In NHANES, triglycerides are only measured in specimens from the morning session. Sample persons ages 12 and older and fasting at least 8.5 hours or more but less than 24 hours have values and have non-zero fasting sample weights.</p>
+<p><strong>LDL-Cholesterol</strong> </p>
+<p>Most of the circulating cholesterol is found in three major lipoprotein fractions: very low-density lipoproteins (VLDL), low-density lipoproteins (LDL), and high-density lipoproteins (HDL). LDL-cholesterol is <br />
+calculated from measured values of total cholesterol, triglycerides, and HDL-cholesterol according to the Friedewald calculation: </p>
+<p>[LDL-cholesterol] = [total cholesterol] &ndash; [HDL-cholesterol] &ndash; [triglycerides/5] </p>
+<p>where [triglycerides/5] is an estimate of VLDL-cholesterol and all values are expressed in mg/dL. The calculation is valid for triglycerides less than equal to 400 mg/dL. </p>
+<p>LDL carries most of the circulating cholesterol and, when elevated, contributes to the development of coronary atherosclerosis. LDL-cholesterol is measured to assess risk for CHD and to follow the progress of patients being treated to lower LDL-cholesterol concentrations. Desirable levels of LDL-cholesterol are below 100 mg/dL; borderline low from 100&ndash;129 mg/dL; borderline high is from 130&ndash;159 mg/dL; high is from 160&ndash;189 mg/dL; and very high LDL-cholesterol is greater than or equal to 190 mg/dL. LDL-cholesterol is only measured in specimens from the morning session. Participants ages 12 and older and fasting at least 8.5 hours or more but less than 24 hours have values and have non-zero fasting sample weights. </p>
+<p><strong>Apoliprotein B (ApoB)</strong> </p>
+<p>In an immunochemical reaction, Apolipoprotein B in the human serum sample form immune complexes with specific antibodies. These complexes scatter a beam of light passed through the sample. The intensity of the scattered light is proportional to the concentration of Apolipoprotein B in the sample. The result is evaluated by comparison with a standard of known concentration. </p>
+<p>Apolipoprotein B is the main protein component of LDL and accounts for approximately 95% of the total protein content of LDL. Apo B is necessary for the reaction with LDL receptors in the liver and on cell walls, and is thus involved in transporting cholesterol from the liver to the vessel cell. Elevated levels of Apo B are frequently found in patients withatherosclerotic vascular changes and are a risk factor for atheroscelerosis. </p>
+<p>There were no changes to the lab method, or lab site from 2003-2004. However, there were changes to the lab instrument for total cholesterol, HDL-cholesterol, and triglycerides. The Hitachi 717 and Hitachi 912 <br />
+instruments were used during 2005-2006. </p>
+<p>A detailed description of the laboratory method used can be found on the NHANES Web site.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens were processed, stored and shipped to Johns Hopkins Hospital, Baltimore, Maryland for analysis. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of the Laboratory Methodology section. </p>
+<p>Two derived variables were created in this data file. The formula for their derivation is as follows: </p>
+<p>LBDTRSI <br />
+The triglycerides value in mg/dL (LBXTR) was converted to mmol/L (LBDTRSI) by multiplying by 0.01129. </p>
+<p>LBDLDLSI <br />
+The LDL-cholesterol in mg/dL (LBDLDL) was converted to mmol/L (LBDLDLSI) by multiplying by 0.02586. </p>
+<p>LBDLDL <br />
+Serum LDL-cholesterol levels were derived on examinees that were examined in the morning session only.</p>
+<p>The distribution of serum LDL-cholesterol should be estimated only on examinees aged 12 and above who fasted at least 8.5 hours or more but less than 24 hours in the morning session. LDL-cholesterol is calculated from measured values of total cholesterol, triglycerides, and HDL-cholesterol according to the <br />
+Friedewald calculation: </p>
+<p>[LDL-cholesterol] = [total cholesterol] &ndash; [HDL-cholesterol] &ndash; [triglycerides/5] </p>
+<p>where all values are expressed in mg/dL. The calculation is valid for triglycerides less than 400 mg/dL. </p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES website.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES Web site.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The analysis of NHANES 2005&ndash;2006 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2005&ndash;2006 Household Questionnaire Data Files contain <br />
+demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN. </p>
+<p><strong>LBXTR </strong></p>
+<p>Serum triglyceride levels were measured on examinees that were examined in the morning session only. The distribution of serum triglycerides should be estimated only on examinees aged 12 and above who fasted at least 8.5 hours or more but less than 24 hours. The Laboratory data file contains laboratory test results for triglycerides (LBXTR), which uses the reference analytic method. The NHANES Lab 40 biochemistry profiles also include measurements of triglycerides. The Lab 40 variable name is LBXSTR. The appropriate variable to use from TRIGLY_D data file is LBXTR found in these files. </p>
+<p><strong>Sampling Weights</strong> </p>
+<p>The analyst should use the special sampling weights in this file to analyze 2005&ndash;2006 triglycerides, LDL-cholesterol, and Apoliprotein B (ApoB). </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTSAF2YR">WTSAF2YR - Fasting Subsample 2 Year MEC Weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSAF2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Fasting Subsample 2 Year MEC Weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Fasting Subsample 2 Year MEC Weight</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 327394.027</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3352</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTR">LBXTR - Triglyceride (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triglyceride (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triglyceride (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">19 to 1600</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3089</td>
+                <td class="values" align="right">3089</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">263</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTRSI">LBDTRSI - Triglyceride (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTRSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triglyceride (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triglyceride (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.215 to 18.064</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3089</td>
+                <td class="values" align="right">3089</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">263</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDLDL">LBDLDL - LDL-cholesterol (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDLDL</dd>
+            <dt>SAS Label: </dt>
+            <dd>LDL-cholesterol (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">LDL-cholesterol (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">19 to 328</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3026</td>
+                <td class="values" align="right">3026</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">326</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDLDLSI">LBDLDLSI - LDL-cholesterol (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDLDLSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>LDL-cholesterol (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">LDL-cholesterol (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.491 to 8.482</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3026</td>
+                <td class="values" align="right">3026</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">326</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXAPB">LBXAPB - Apolipoprotein (B) (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXAPB</dd>
+            <dt>SAS Label: </dt>
+            <dd>Apolipoprotein (B) (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Apolipoprotein (B) (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">24 to 345</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3106</td>
+                <td class="values" align="right">3106</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">246</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDAPBSI">LBDAPBSI - Apolipoprotein (B) (g/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDAPBSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Apolipoprotein (B) (g/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Apolipoprotein (B) (g/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.24 to 3.45</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3106</td>
+                <td class="values" align="right">3106</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">246</td>
+                <td class="values" align="right">3352</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

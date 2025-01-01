@@ -1,0 +1,1800 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>VIQ_D</title>
+    <meta name="title" content="NHANES 2005-2006: Vision Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#VIQ010">VIQ010 - Can see light</a>
+              </li>
+              <li>
+                <a href="#VIQ017">VIQ017 - Blind in both eyes</a>
+              </li>
+              <li>
+                <a href="#VIQ031">VIQ031 - General condition of eyesight</a>
+              </li>
+              <li>
+                <a href="#VIQ041">VIQ041 - Time worrying about eyesight</a>
+              </li>
+              <li>
+                <a href="#VIQ051A">VIQ051A - Difficulty reading ordinary newsprint</a>
+              </li>
+              <li>
+                <a href="#VIQ051B">VIQ051B - Difficulty with up close work or chores</a>
+              </li>
+              <li>
+                <a href="#VIQ051C">VIQ051C - Difficulty seeing steps/curbs-dim light</a>
+              </li>
+              <li>
+                <a href="#VIQ051D">VIQ051D - Difficulty noticing objects to side</a>
+              </li>
+              <li>
+                <a href="#VIQ051E">VIQ051E - Difficulty findng object on crowdedshelf</a>
+              </li>
+              <li>
+                <a href="#VIQ056">VIQ056 - Difficulty drivng daytime-familiar place</a>
+              </li>
+              <li>
+                <a href="#VIQ061">VIQ061 - Vision limits how long can do activities</a>
+              </li>
+              <li>
+                <a href="#VIQ071">VIQ071 - Ever had a cataract operation</a>
+              </li>
+              <li>
+                <a href="#VIQ081">VIQ081 - Operation in right, left or both eyes</a>
+              </li>
+              <li>
+                <a href="#VIQ090">VIQ090 - Ever told had glaucoma</a>
+              </li>
+              <li>
+                <a href="#VIQ100">VIQ100 - Glaucoma in which eye</a>
+              </li>
+              <li>
+                <a href="#VIQ310">VIQ310 - Told had macular degeneration</a>
+              </li>
+              <li>
+                <a href="#VIQ320">VIQ320 - Macular degeneration in which eye</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Vision (VIQ_D)</h3>
+        <h4> Data File: VIQ_D.xpt</h4>
+        <h5 class="left">First Published: April 2008</h5>
+        <h5 class="right">Last Revised: NA</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The vision section (abbreviated &ldquo;VIQ&rdquo; in the NHANES questionnaire variable naming convention scheme), provides personal interview data on several vision topics. </p>
+<p><strong>Topics and the target population groups in the VIQ section: </strong></p>
+<ul>
+    <li>The ability to see light and general condition of eyesight (12+ yr) </li>
+    <li>Difficulty in performing certain activities due to eyesight (20+ yr) </li>
+    <li>Cataract operation (20+ yr) </li>
+    <li>Common eye diseases including glaucoma and age-related macular degeneration (40+ yr) </li>
+</ul><h2 id="Eligible_Sample">Eligible Sample</h2><p>All survey participants 12 years and older were eligible for the first set of questions on blindness and general conditions of eyesight. Participants 20 years and older were asked further detailed questions about activity limitations due to their vision and cataract operation. Participants 40 years and older were eligible for a new set of questions on eye diseases, including glaucoma and age-related macular degeneration.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>These questions were asked before the physical examination, in the home, using the Computer-Assisted Personal Interviewing-CAPI (interviewer administered) system. Hand cards showing response categories were also used for some questions. When necessary, household interviewers read the hand cards to respondents.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>Several types of quality control were implemented to ensure that high quality data were collected during the survey. </p>
+<p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<p>Additional details describing the quality assurance/quality control processes are provided in the survey procedures manuals.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Frequency counts were checked, &ldquo;skip&rdquo; patterns were verified, and the reasonableness of responses to the questions was reviewed.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The 2005-2006 vision questionnaire data is similar to the 1999-2000, 2001-2002, and 2003-2004 publicly release files. However, target ages for 2005-2006 are different from data collected in previous years. Also, the blindness screening questions are different. For 2005-2006, persons who reported &ldquo;Can&rsquo;t see light&rdquo; are then asked if they are &ldquo;Blind in both eyes&rdquo;. New questions about ophthalmologic disorders were first collected during 2005-2006 survey, and will not be found in the earlier data release files. </p>
+<p>In addition to the vision questionnaire data, general vision examination and special ophthalmic examination data can be found in the vision section and ophthalmology section of the NHANES 2005-2006 Exam Files (VIX and OPX). These data may be linked using the unique survey participant identifier, SEQN. </p>
+<p>Although these data were collected as part of the household questionnaire, if they are merged with the MEC exam data, exam sample weights should be used for the analyses. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website. </p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ010">VIQ010 - Can see light</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Can see light</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Next I have general questions about (your/SP's) vision. With both eyes open, can (you/he/she) see light?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF VIQ.010 = 2 AND MCQ.140 = 1, DISPLAY THE FOLLOWING MESSAGE: "YOU HAVE CODED THAT SP CANNOT SEE LIGHT - PLEASE VERIFY BY REENTERING THE RESPONSE." CAPI SHOULD DISPLAY VIQ.010 AGAIN WITH BLANK ENTRY. IF VIQ.010 = 2 AND MCQ.140 = 2, DISPLAY THE FOLLOWING MESSAGE: "YOU HAVE CODED THAT SP CANNOT SEE LIGHT. EARLIER SP REPORTED NO TROUBLE SEEING. RECONCILE RESPONSES WITH SP AND CHANGE RESPONSE TO ONE OF THE QUESTIONS BELOW." DISPLAY RESPONSES TO BOTH - WITH LABELS. MCQ.140 - TROUBLE SEEING, VIQ.010 - SEE LIGHT, HIGHLIGHT MUST BE ON VIQ.010.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">7266</td>
+                <td class="values" align="right">7266</td>
+                <td class="values">VIQ031</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ017">VIQ017 - Blind in both eyes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ017</dd>
+            <dt>SAS Label: </dt>
+            <dd>Blind in both eyes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} blind in both eyes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF VIQ.010 = 2 (NO) AND VIQ.017 = 2 (NO), DISPLAY THE FOLLOWING MESSAGE: "YOU HAVE CODED THAT SP IS NOT BLIND. EARLIER SP REPORTED THAT HE/SHE CANNOT SEE LIGHT. RECONCILE RESPONSES WITH SP AND CHANGE RESPONSE TO ONE QUESTION BELOW:" DISPLAY RESPONSES TO BOTH VIQ.010 AND VIQ.017 WITH LABELS. PLACE HIGHLIGHT ON VIQ.010.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">VIQ071</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7266</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ031">VIQ031 - General condition of eyesight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ031</dd>
+            <dt>SAS Label: </dt>
+            <dd>General condition of eyesight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">At the present time, would you say (your/SP'S) eyesight, with glasses or contact lenses if (you/he/she) wear them is.....</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF VIQ.010 = 2 AND VIQ.031 = 1 (EXCELLENT vision), DISPLAY THE FOLLOWING MESSAGE: "YOU HAVE CODED THAT SP CANNOT SEE LIGHT. SP REPORTED EXCELLENT VISION. RECONCILE RESPONSES WITH SP AND CHANGE RESPONSE TO ONE OF THE QUESTIONS BELOW." DISPLAY RESPONSES TO ALL - WITH LABELS. VIQ.010 - CAN'T SEE LIGHT VIQ.031 = 1 (EXCELLENT vision) HIGHLIGHT MUST BE ON VIQ.010.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Excellent,</td>
+                <td class="values" align="right">3082</td>
+                <td class="values" align="right">3082</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Good,</td>
+                <td class="values" align="right">3027</td>
+                <td class="values" align="right">6109</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Fair,</td>
+                <td class="values" align="right">912</td>
+                <td class="values" align="right">7021</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Poor, or</td>
+                <td class="values" align="right">180</td>
+                <td class="values" align="right">7201</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Very poor?</td>
+                <td class="values" align="right">57</td>
+                <td class="values" align="right">7258</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7258</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">7266</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ041">VIQ041 - Time worrying about eyesight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ041</dd>
+            <dt>SAS Label: </dt>
+            <dd>Time worrying about eyesight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much of the time {do you/does SP} worry about {your/his/her} eyesight?  Would you say . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">None of the time,</td>
+                <td class="values" align="right">4394</td>
+                <td class="values" align="right">4394</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A little of the time,</td>
+                <td class="values" align="right">1358</td>
+                <td class="values" align="right">5752</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Some of the time,</td>
+                <td class="values" align="right">960</td>
+                <td class="values" align="right">6712</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Most of the time, or</td>
+                <td class="values" align="right">280</td>
+                <td class="values" align="right">6992</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">All of the time?</td>
+                <td class="values" align="right">267</td>
+                <td class="values" align="right">7259</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7260</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">7266</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ051A">VIQ051A - Difficulty reading ordinary newsprint</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ051A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty reading ordinary newsprint</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next questions are about how much difficulty, if any, {you have/SP has} doing certain activities, such as reading ordinary newsprint or going down steps.  If {you/s/he} usually wear{s} glasses or contact lenses to do these activities, please rate {you r/his/her} ability to do them while wearing {your/his/her} glasses or contacts.  How much difficulty {do you/does SP} have . . .reading ordinary print in newspapers?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD VIQ1.  READ CATEGORIES TO RESPONDENT IF NECESSARY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">No difficulty</td>
+                <td class="values" align="right">3834</td>
+                <td class="values" align="right">3834</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little difficulty</td>
+                <td class="values" align="right">696</td>
+                <td class="values" align="right">4530</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Moderate difficulty</td>
+                <td class="values" align="right">239</td>
+                <td class="values" align="right">4769</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Extreme difficulty</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">4872</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to do because of eyesight</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">4925</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not do this for other reasons</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ051B">VIQ051B - Difficulty with up close work or chores</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ051B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty with up close work or chores</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much difficulty {do you/does SP} have . . .doing work or hobbies that require {you/him/her} to see well up close such as cooking, sewing, fixing things around the house, or using hand tools?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">No difficulty</td>
+                <td class="values" align="right">4035</td>
+                <td class="values" align="right">4035</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little difficulty</td>
+                <td class="values" align="right">592</td>
+                <td class="values" align="right">4627</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Moderate difficulty</td>
+                <td class="values" align="right">183</td>
+                <td class="values" align="right">4810</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Extreme difficulty</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">4879</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to do because of eyesight</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">4914</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not do this for other reasons</td>
+                <td class="values" align="right">63</td>
+                <td class="values" align="right">4977</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4977</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ051C">VIQ051C - Difficulty seeing steps/curbs-dim light</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ051C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty seeing steps/curbs-dim light</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much difficulty {do you/does SP} have . . .going down steps, stairs, or curbs in dim light or at night?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">No difficulty</td>
+                <td class="values" align="right">4003</td>
+                <td class="values" align="right">4003</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little difficulty</td>
+                <td class="values" align="right">559</td>
+                <td class="values" align="right">4562</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Moderate difficulty</td>
+                <td class="values" align="right">198</td>
+                <td class="values" align="right">4760</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Extreme difficulty</td>
+                <td class="values" align="right">97</td>
+                <td class="values" align="right">4857</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to do because of eyesight</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">4883</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not do this for other reasons</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">4975</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4975</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ051D">VIQ051D - Difficulty noticing objects to side</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ051D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty noticing objects to side</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much difficulty {do you/does SP} have . . .noticing objects off to the side while {you are/s/he is} walking?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">No difficulty</td>
+                <td class="values" align="right">4427</td>
+                <td class="values" align="right">4427</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little difficulty</td>
+                <td class="values" align="right">338</td>
+                <td class="values" align="right">4765</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Moderate difficulty</td>
+                <td class="values" align="right">120</td>
+                <td class="values" align="right">4885</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Extreme difficulty</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">4936</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to do because of eyesight</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">4954</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not do this for other reasons</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">4975</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4975</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ051E">VIQ051E - Difficulty findng object on crowdedshelf</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ051E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty findng object on crowdedshelf</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much difficulty {do you/does SP} have . . .finding something on a crowded shelf?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">No difficulty</td>
+                <td class="values" align="right">4315</td>
+                <td class="values" align="right">4315</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little difficulty</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">4744</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Moderate difficulty</td>
+                <td class="values" align="right">137</td>
+                <td class="values" align="right">4881</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Extreme difficulty</td>
+                <td class="values" align="right">52</td>
+                <td class="values" align="right">4933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to do because of eyesight</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">4948</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not do this for other reasons</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">4974</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4974</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ056">VIQ056 - Difficulty drivng daytime-familiar place</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ056</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty drivng daytime-familiar place</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much difficulty {do you/does SP}  have driving during the daytime in familiar places?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF VIQ.010 = 2 AND VIQ.056 = 1 (NO DIFFICULTY), DISPLAY THE FOLLOWING MESSAGE: "YOU HAVE REPORTED THAT SP CANNOT SEE LIGHT. SP REPORTED NO DIFFICULTY DRIVING. RECONCILE RESPONSES WITH SP AND CHANGE RESPONSE TO ONE OF THE QUESTIONS BELOW." DISPLAY RESPONSES TO ALL - WITH LABELS. VIQ.010 - CAN'T SEE LIGHT VIQ.056 = 1 (NO DIFFICULTY), HIGHLIGHT MUST BE ON VIQ.010.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">No difficulty</td>
+                <td class="values" align="right">4203</td>
+                <td class="values" align="right">4203</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A little difficulty</td>
+                <td class="values" align="right">133</td>
+                <td class="values" align="right">4336</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Moderate difficulty</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">4358</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Extreme difficulty</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4362</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to do because of eyesight</td>
+                <td class="values" align="right">52</td>
+                <td class="values" align="right">4414</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not do this for other reasons</td>
+                <td class="values" align="right">278</td>
+                <td class="values" align="right">4692</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Never drove</td>
+                <td class="values" align="right">286</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ061">VIQ061 - Vision limits how long can do activities</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ061</dd>
+            <dt>SAS Label: </dt>
+            <dd>Vision limits how long can do activities</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How limited {are you/is SP} in how long {you/s/he} can work or do other daily activities such as housework, child care, school, or community activities because of {your/his/her} vision?  Would you say {you are/s/he is} limited . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">None of the time,</td>
+                <td class="values" align="right">4375</td>
+                <td class="values" align="right">4375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A little of the time,</td>
+                <td class="values" align="right">324</td>
+                <td class="values" align="right">4699</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Some of the time,</td>
+                <td class="values" align="right">164</td>
+                <td class="values" align="right">4863</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Most of the time, or</td>
+                <td class="values" align="right">61</td>
+                <td class="values" align="right">4924</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">All of the time?</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">4975</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4975</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">4978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2289</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ071">VIQ071 - Ever had a cataract operation</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ071</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had a cataract operation</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever had a cataract operation?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">440</td>
+                <td class="values" align="right">440</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4534</td>
+                <td class="values" align="right">4974</td>
+                <td class="values">VIQ090</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4974</td>
+                <td class="values">VIQ090</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">4979</td>
+                <td class="values">VIQ090</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2288</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ081">VIQ081 - Operation in right, left or both eyes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ081</dd>
+            <dt>SAS Label: </dt>
+            <dd>Operation in right, left or both eyes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was the operation in {your/SPs} right eye, left eye, or both eyes?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right eye</td>
+                <td class="values" align="right">75</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left eye</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">120</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">313</td>
+                <td class="values" align="right">433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">440</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6827</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ090">VIQ090 - Ever told had glaucoma</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ090</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever told had glaucoma</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever been told by an eye doctor that {you have/s/he has} glaucoma (gla-co-ma), sometimes called high pressure in {your/his/her} eyes?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">219</td>
+                <td class="values" align="right">219</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2813</td>
+                <td class="values" align="right">3032</td>
+                <td class="values">VIQ310</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3032</td>
+                <td class="values">VIQ310</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">3055</td>
+                <td class="values">VIQ310</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4212</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ100">VIQ100 - Glaucoma in which eye</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ100</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glaucoma in which eye</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was the glaucoma in {your/his/her} right eye, left eye, or both eyes?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right eye</td>
+                <td class="values" align="right">41</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left eye</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">70</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">133</td>
+                <td class="values" align="right">203</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">203</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">219</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7048</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ310">VIQ310 - Told had macular degeneration</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ310</dd>
+            <dt>SAS Label: </dt>
+            <dd>Told had macular degeneration</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Have you/Has SP} ever been told by an eye doctor that {you have/s/he has} age-related macular (mac-u-lar) degeneration?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2878</td>
+                <td class="values" align="right">3019</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3019</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">3055</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4212</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VIQ320">VIQ320 - Macular degeneration in which eye</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VIQ320</dd>
+            <dt>SAS Label: </dt>
+            <dd>Macular degeneration in which eye</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was the age-related macular (mac-u-lar) degeneration in {your/his/her} right eye, left eye, or both eyes?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Right eye</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Left eye</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">43</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Both</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">129</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">129</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7126</td>
+                <td class="values" align="right">7267</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

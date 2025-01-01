@@ -1,0 +1,3464 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>DEMO_C</title>
+    <meta name="title" content="NHANES 2003-2004: Demographic Variables &amp; Sample Weights Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#SDDSRVYR">SDDSRVYR - Data Release Number</a>
+              </li>
+              <li>
+                <a href="#RIDSTATR">RIDSTATR - Interview/Examination Status</a>
+              </li>
+              <li>
+                <a href="#RIDEXMON">RIDEXMON - Six month time period</a>
+              </li>
+              <li>
+                <a href="#RIAGENDR">RIAGENDR - Gender</a>
+              </li>
+              <li>
+                <a href="#RIDAGEYR">RIDAGEYR - Age at Screening Adjudicated - Recode</a>
+              </li>
+              <li>
+                <a href="#RIDAGEMN">RIDAGEMN - Age in Months - Recode</a>
+              </li>
+              <li>
+                <a href="#RIDAGEEX">RIDAGEEX - Exam Age in Months - Recode</a>
+              </li>
+              <li>
+                <a href="#RIDRETH1">RIDRETH1 - Race/Ethnicity - Recode</a>
+              </li>
+              <li>
+                <a href="#RIDRETH2">RIDRETH2 - Linked NH3 Race/Ethnicity - Recode </a>
+              </li>
+              <li>
+                <a href="#DMQMILIT">DMQMILIT - Veteran/Military Status</a>
+              </li>
+              <li>
+                <a href="#DMDBORN">DMDBORN - Country of Birth - Recode</a>
+              </li>
+              <li>
+                <a href="#DMDCITZN">DMDCITZN - Citizenship Status</a>
+              </li>
+              <li>
+                <a href="#DMDYRSUS">DMDYRSUS - Length of time in US</a>
+              </li>
+              <li>
+                <a href="#DMDEDUC3">DMDEDUC3 - Education Level - Children/Youth 6-19</a>
+              </li>
+              <li>
+                <a href="#DMDEDUC2">DMDEDUC2 - Education Level - Adults 20+</a>
+              </li>
+              <li>
+                <a href="#DMDEDUC">DMDEDUC - Education - Recode (old version)</a>
+              </li>
+              <li>
+                <a href="#DMDSCHOL">DMDSCHOL - Now attending school?</a>
+              </li>
+              <li>
+                <a href="#DMDMARTL">DMDMARTL - Marital Status</a>
+              </li>
+              <li>
+                <a href="#DMDHHSIZ">DMDHHSIZ - Total number of people in the Household</a>
+              </li>
+              <li>
+                <a href="#INDHHINC">INDHHINC - Annual Household Income</a>
+              </li>
+              <li>
+                <a href="#INDFMINC">INDFMINC - Annual Family Income</a>
+              </li>
+              <li>
+                <a href="#INDFMPIR">INDFMPIR - Family PIR</a>
+              </li>
+              <li>
+                <a href="#RIDEXPRG">RIDEXPRG - Pregnancy Status at Exam - Recode</a>
+              </li>
+              <li>
+                <a href="#DMDHRGND">DMDHRGND - HH Ref Person Gender</a>
+              </li>
+              <li>
+                <a href="#DMDHRAGE">DMDHRAGE - HH Ref Person Age</a>
+              </li>
+              <li>
+                <a href="#DMDHRBRN">DMDHRBRN - HH Ref Person Country of Birth</a>
+              </li>
+              <li>
+                <a href="#DMDHREDU">DMDHREDU - HH Ref Person Education Level</a>
+              </li>
+              <li>
+                <a href="#DMDHRMAR">DMDHRMAR - HH Ref Person Marital Status</a>
+              </li>
+              <li>
+                <a href="#DMDHSEDU">DMDHSEDU - HH Ref Person's Spouse Education Level</a>
+              </li>
+              <li>
+                <a href="#SIALANG">SIALANG - Language of SP Interview</a>
+              </li>
+              <li>
+                <a href="#SIAPROXY">SIAPROXY - Proxy used in SP Interview?</a>
+              </li>
+              <li>
+                <a href="#SIAINTRP">SIAINTRP - Interpreter used in SP Interview?</a>
+              </li>
+              <li>
+                <a href="#FIALANG">FIALANG - Language of Family Interview</a>
+              </li>
+              <li>
+                <a href="#FIAPROXY">FIAPROXY - Proxy used in Family Interview?</a>
+              </li>
+              <li>
+                <a href="#FIAINTRP">FIAINTRP - Interpreter used in Family Interview?</a>
+              </li>
+              <li>
+                <a href="#MIALANG">MIALANG - Language of MEC Interview</a>
+              </li>
+              <li>
+                <a href="#MIAPROXY">MIAPROXY - Proxy used in MEC Interview?</a>
+              </li>
+              <li>
+                <a href="#MIAINTRP">MIAINTRP - Interpreter used in MEC Interview?</a>
+              </li>
+              <li>
+                <a href="#AIALANG">AIALANG - Language of ACASI Interview</a>
+              </li>
+              <li>
+                <a href="#WTINT2YR">WTINT2YR - Full Sample 2 Year Interview Weight</a>
+              </li>
+              <li>
+                <a href="#WTMEC2YR">WTMEC2YR - Full Sample 2 Year MEC Exam Weight</a>
+              </li>
+              <li>
+                <a href="#SDMVPSU">SDMVPSU - Masked Variance Pseudo-PSU</a>
+              </li>
+              <li>
+                <a href="#SDMVSTRA">SDMVSTRA - Masked Variance Pseudo-Stratum</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Demographic Variables &amp; Sample Weights (DEMO_C)</h3>
+        <h4> Data File: DEMO_C.xpt</h4>
+        <h5 class="left">First Published: November 2005</h5>
+        <h5 class="right">Last Revised: September 2009</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES 2003-2004 Sample Person Demographics File provides the interview and MEC examination status variable, sample weights, and selected demographic variables such as gender, age, race/ethnicity, education, marital status, country of birth, pregnancy status, total family and household income, and&nbsp;ratio of income to poverty.</p>
+<p>This updated Demographics file includes several new variables that provide information on citizenship status, years of U.S. residence, educational attainment, school attendance, household size,&nbsp;characteristics of the household reference person, and an indicator for the month of exam. The household reference person is the first household member, 18 years of age or older who is listed on the Screener household member roster who owns or rents the residence where members of the household reside. Brief descriptions of the variables that have been added to the 2003-2004 Demographics file appear in the Data Processing and Editing section of the documentation.</p>
+<p>Several questionnaire items that were asked in the Family and Sample Person Demographics questionnaires are not included in the NHANES 2003-2004 data release file. Concerns about data disclosure and confidentiality protection prevented some of the interview information from being released publicly. </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All survey participants who have a household interview record have a Demographics file record. The Demographics questionnaire items include family-level and individual-level information. The target age groups for the Demographics questions vary. Please review the NHANES 2003-2004 Family and Sample Person Demographics section questionnaires and codebooks.</p>
+
+<h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>Demographics information was collected in the home prior to the health examination. Computer-assisted personal interviewing (CAPI) methodology was used. Persons 16 years of age and older and emancipated minors were interviewed directly. A proxy respondent provided information for survey participants who were less than 16 years of age and for persons who could not answer the questions themselves.</p>
+<h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The NHANES computer-assisted personal interview (CAPI) software program that was used to collect the interview data had pre-programmed data edit and consistency checks. The data edit checks alerted the interviewer when unusual or potentially erroneous data values were recorded. The consistency checks were used to alert the interviewer when information was recorded that was inconsistent with previous data entries or respondent characteristics such as the respondent&#8217;s age. Questionnaire &#8220;skip&#8221; patterns were pre-programmed in the questionnaires to reduce respondent burden. Online information screens provided the interviewers with standardized descriptions of the terminology and concepts that were used in the questionnaires.</p>
+<p>After data collection, interview records were reviewed by the NHANES field office staff for accuracy and completeness. A subset of the household interviews was verified by re-contacting the survey participants. The interviewers were required to record several interviews and the audio-taped interviews were reviewed by NCHS and contractor staff. The NHANES quality assurance and quality control procedures are described in the field procedures manuals that are posted on the NHANES website.</p>
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p><strong>SDDSRVYR </strong>represents the data release number. A code of 3 denotes NHANES 2003-2004.</p>
+<p><strong>RIDSTATR</strong> is a recoded variable representing interview/examination status.</p>
+<p><strong>RIDEXMON</strong> is a variable indicating the six month time period when the examination was performed. A value of &ldquo;1&rdquo; indicates November 1<sup>st</sup> through April 30<sup>th</sup>; a value of &ldquo;2&rdquo; indicates May 1<sup>st</sup> through October 31<sup>st</sup>.</p>
+<p><strong>RIDAGEYR</strong>: This is the age of the sample person at the time of the screening interview. Age in years is reported by single year of age for persons from 1 through 84 years of age. For older adults, age in years was top coded at 85 years to reduce the risk of disclosure. All adults 85 years and older have a RIDAGEYR value of &rsquo;85&rsquo;. In NHANES 2003-2004, the weighted mean age for participants 85 years and older is 88 years.</p>
+<p>If exact date of birth information is provided during the interview, this information is used to calculate the exact age on the date of screening. Otherwise, an imputed date of birth is created using the following procedures: When date of birth information is missing or refused, but age in years is provided by the sample person: If month of birth is missing or not given it is imputed as 7. If day of birth is missing or not given, it is imputed as 1. If year of birth is missing or not given, it is imputed as the year of the screening interview less the age in years provided by the sample person at screening. Corrections are made to this imputed information for sample persons who are less than 1 year of age at the time of screening.</p>
+<p><strong>RIDAGEMN</strong> is age in months at household screening, provided only for those who were less than 85 years of age. If exact date of birth is not provided by the sample person, then the age in months is calculated based on the imputed age at screener to allow the sample person to proceed with the questionnaire and examination.</p>
+<p><strong>RIDAGEEX</strong> is age in months at MEC examination, provided only for persons who are less than 85 years of age at the time of the household screening interview. RIDAGEEX was not calculated for individuals with an imputed age.</p>
+<p><strong>RIDRETH1</strong>: This race/ethnicity variable is derived by combining responses to questions on race and Hispanic origin. Respondents who self-identified as &ldquo;Mexican American&rdquo; were coded as such (i.e., RIDRETH1=1) regardless of their other race-ethnicity identities. Otherwise, self-identified &ldquo;Hispanic&rdquo; ethnicity would result in code &ldquo;2, Other Hispanic&rdquo; in the RIDRETH1 variable. All other non-Hispanic participants would then be categorized based on their self-reported races: non-Hispanic white (RIDRETH1=3), non-Hispanic black (RIDRETH1=4), and other non-Hispanic race including non-Hispanic multiracial (RIDRETH1=5). </p>
+<p><strong>RIDRETH2</strong> is the race/ethnicity recode that can be linked to the NHANES III race/ethnicity variable. Non-Hispanics who indicated more than one race (multiracial) and then selected a main race as black (non-Hispanic) or white (non-Hispanic) were recoded into those respective categories. In other cases, the coding was similar to RIDRETH1. </p>
+<p><strong>DMDBORN</strong>: Country of birth was recoded into three categories: 1) born in 50 U.S. states or Washington, D.C.; 2) born in Mexico; and 3) born in any other location or foreign country.</p>
+<p><strong>INDFMINC</strong>: This variable is the total family income variable. NCHS used the U.S. Bureau of the Census Current Population Survey (CPS) definition of &ldquo;family&rdquo; to group household members into one or more families (US Census 2003). The CPS defines a family as: &ldquo;a group of two people or more (one of whom is the householder) related by birth, marriage, or adoption and residing together;&rdquo; all such people (including related subfamily members) are considered to be members of one family. Over eighty percent of the NHANES households were single-family households; the remaining households were comprised of 2 or more CPS families.</p>
+<p>After the information about sources of income was obtained in the Family Interview Income section questionnaire (INQ), the respondent was asked to report total combined family income for themselves and the other members of their family in dollars (question INQ200). If the respondent refused to answer INQ200 or did not know the total combined family income, an income screener question was asked (question INQ220) to query if the total family income was &lt; $20,000 or&nbsp;&ge; $20,000. If the respondent answered INQ220, a follow-up question asked the respondent to select an income range (question INQ230) from a list of income ranges listed on a printed hand card. The midpoint of the income range was then used as the total family income value. Family income values were used to calculate the ratio of income to poverty (INDFMPIR) and estimated total household income (INDHHINC) as described below. Total family income is reported as a range in the NHANES data file.</p>
+<p><strong>INDHHINC</strong>: This variable is the estimated total household income. The estimated household income was derived from family income data. If a household was comprised of a single CPS family, the family income value was used as previously described. When more than one CPS family resided in the household, two methods were used to compute estimated total household income. One method was to use income data reported by each CPS family that was interviewed (INQ200). The second method for multi-family households used total household income information (INQ200) provided by a household reference person. The income information provided by respondents for each CPS family (method 1) was used whenever possible because this information was considered to be more reliable than information provided by a household reference person who may or may not have had firsthand knowledge of the total household income.</p>
+<p>When income information was obtained from each of the CPS families in a household, the reported CPS family income values were summed to compute total household income (INDHHINC). When information was missing for any of the CPS families in the household, the estimated household income value provided by a family reference person was used to compute estimated total household income. Total household income could not be calculated for multi-family households when income range data were reported by any of the families in the household and thus the household income data are coded as missing.</p>
+<p><strong>INDFMPIR</strong>: This variable is an index for the ratio of family income to poverty. The Department of Health and Human Services&rsquo; (HHS) poverty guidelines were used as the poverty measure to calculate this index. These guidelines are issued each year, in the Federal Register, for determining financial eligibility for certain federal programs such as Head Start, Supplemental Nutrition Assistance Program (SNAP) (formerly Food Stamp Program), Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), and the National School Lunch Program.</p>
+<p>The variable INDFMPIR was calculated by dividing family income by the poverty guidelines, specific to family size, as well as the appropriate year and state. The values were not computed if the income screener information (INQ 220: &lt; $20,000 or &ge; $20,000) was the only family income information reported. If family income was reported as a range value, the midpoint of the range was used to compute the variable. Values at or above 5.00 were coded as 5.00 or more because of disclosure concerns. The values were not computed if the family income data was missing.</p>
+<p><strong>DMDMARTL</strong> is the derived marital status variable. Marital status data were collected for sample persons 14 years of age and older. Individuals belonging to single person households were not asked about their marital status during part of the 1999-2000 data collection cycle. For a number of these persons marital status was imputed from other questionnaire items that made reference to their marital status. Marital status remains missing 566 sample persons 14 years of age and older due to lack of sufficient data for imputation.</p>
+<p><strong>PREGNANCY STATUS</strong>: Pregnancy status at the time of examination (RIDEXPRG) is reported for females 8-59 years of age. Females 8-59 years of age received a urine pregnancy test prior to the dual energy x-ray absorptiometry (DXA) exam. Persons who reported they were pregnant at the time of exam were assumed to be pregnant; if the urine test was negative, but the subject reported they were pregnant, the status was still coded as pregnant at exam (RIDEXPRG=1). If the urine pregnancy results were negative and the respondent said they were not pregnant, the respondent was coded not pregnant at examination (RIDEXPRG=2). Persons who were only interviewed have an RIDEXPRG value = 3 (could not be determined).</p>
+<p>The following new variables were added to the NHANES 2003-2004 Demographic file:</p>
+<p><strong>DMDCITZN</strong>: Citizenship status is reported as follows: A code of &lsquo;1&rsquo; denotes U.S. citizen by birth or naturalization. A code of &lsquo;2&rsquo; was assigned to persons who were not citizens of the U.S. Persons who were born in the U.S. or US&nbsp;territories who acquire citizenship at birth were coded as US citizens.</p>
+<p><strong>DMDYRSUS</strong>: This variable is the number of years the respondent has lived in the United States. Respondents who were born outside the U.S. were asked the month and year when they came to the U.S. to stay (DMQ.160). The responses to the question were recoded into 9 categories ranging from less than one year to 50 years or more.</p>
+<p><strong>DMDHHSIZ</strong>: This variable is the number of people in the respondent&rsquo;s household. The values for this variable range from 1 to 7 with 7 being the code used for households comprised of 7 or more members.</p>
+<p><strong>DMDEDUC3</strong>: This variable provides information on the highest grade or level of education completed by respondents 6-19 years of age. The responses were recoded by NCHS as follows: single years of education (grades 1-12), high school graduate/GED, and post-high school.</p>
+<p><strong>DMDEDUC2</strong>: This variable is the highest grade or level of education completed by adults 20 years of age and older. The response categories are: less than 9th grade education, 9-11th grade education (includes 12th grade and no diploma), High school graduate/GED, some college or associates (AA) degree, and college graduate or higher. DMDEDUC2 provides more detailed information on educational attainment levels of adults compared to the categories that were released previously in the NHANES 2003-2004 Demographic file.</p>
+<p><strong>DMDSCHOL</strong>: This variable is school attendance status. It is asked for respondents 6-19 years of age.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>RIDRETH2 race/ethnicity recode should be used to compare NHANES 2003–2004 estimates of health measures with those of NHANES III.</p>
+<p><strong>Income variables</strong>: Income information was not obtained from all of the families in the survey sample. Some respondents refused to provide this information, and others had little or no knowledge of family income. No attempt was made to assign or impute income in these instances. Incomplete information was reported to the extent possible.</p>
+<p><strong>Educational attainment</strong>: Five educational attainment variables are included the Demographics File. Three of the education variables target survey participants. Two other education variables provide information about the educational attainment of the household reference person (DMDHREDU) and the household reference person’s spouse (DMDHSEDU), when applicable. A brief description of survey participant educational attainment variables follows.</p>
+<p><strong>DMDEDUC</strong> is a 3-category variable that groups survey participants 6 years of age and over into one of three educational attainment groups: 1) less than high school education attainment, 2) high school graduate (has a high school diploma or high school equivalency diploma such as a General Educational Development/GED), or 3) has more than a high school education.</p>
+<p>In addition to DMDEDUC, the Demographics File contains 2 variables that provide additional information on the educational attainment level of survey participants. Educational attainment information for persons 6 through 19 years of age is included in DMDEDUC3. Detailed educational attainment information for adults who are 20 years of age and over is reported in DMDEDUC2.</p>
+<p>The questionnaire, examination files, and laboratory files can be linked to SP demographics variables using the unique survey participant identifier SEQN. RIDSTATR provides the MEC examination status of an SP.</p>
+<p>The 2-year sample weights (WTINT2YR, WTMEC2YR) should be used for all NHANES 2003–2004 analyses. There are no 4-year weights in this file. The 4-year weights were provided with the NHANES 2001–2002 release file because there were some transition issues related to the use of 1990 Census and 2000 Census information. Detailed instructions for linking earlier datasets (1999–2000 and 2001–2002) are provided in the NHANES Analytic Guidelines. Analysts are encouraged to review the NHANES Analytic Guidelines provided with the data release files to determine the appropriate analytic methodology.</p>
+<p>Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues. Both of these are available on the NHANES website.</p>
+</div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>U.S. Census Bureau. Current Population Survey (CPS) Definitions and Explanations. 2003. <a href="http://www.census.gov/population/www/cps/cpsdef.html">http://www.census.gov/population/www/cps/cpsdef.html</a>
+          </li>
+          <li>U.S. Department of Health &amp; Human Services. Poverty Guidelines, Research, and Measurement. Washington, DC: U.S. Department of Health &amp; Human Services, January 2011. <a href="http://aspe.hhs.gov/POVERTY/">http://aspe.hhs.gov/POVERTY/</a>
+          </li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SDDSRVYR">SDDSRVYR - Data Release Number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SDDSRVYR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Data Release Number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Data Release Number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">NHANES 2003-2004 Public Release</td>
+                <td class="values" align="right">10122</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDSTATR">RIDSTATR - Interview/Examination Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDSTATR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Interview/Examination Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Interview and Examination Status of the Sample Person.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Interviewed Only</td>
+                <td class="values" align="right">479</td>
+                <td class="values" align="right">479</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Both Interviewed and MEC examined</td>
+                <td class="values" align="right">9643</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDEXMON">RIDEXMON - Six month time period</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDEXMON</dd>
+            <dt>SAS Label: </dt>
+            <dd>Six month time period</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Six month time period when the examination was performed - two categories: November 1 through April 30, May 1 through October 31.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">November 1 through April 30</td>
+                <td class="values" align="right">4638</td>
+                <td class="values" align="right">4638</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">May 1 through October 31</td>
+                <td class="values" align="right">5005</td>
+                <td class="values" align="right">9643</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">479</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIAGENDR">RIAGENDR - Gender</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIAGENDR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gender</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gender of the sample person</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Male</td>
+                <td class="values" align="right">4970</td>
+                <td class="values" align="right">4970</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Female</td>
+                <td class="values" align="right">5152</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDAGEYR">RIDAGEYR - Age at Screening Adjudicated - Recode</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDAGEYR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age at Screening Adjudicated - Recode</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Best age in years of the sample person at time of HH screening.  Individuals 85 and over are topcoded at 85 years of age.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 84</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">9899</td>
+                <td class="values" align="right">9899</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">&gt;= 85 years of age</td>
+                <td class="values" align="right">223</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDAGEMN">RIDAGEMN - Age in Months - Recode</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDAGEMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age in Months - Recode</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Best age in months at date of screening for individuals under 85 years of age.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			84 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 1019</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">9899</td>
+                <td class="values" align="right">9899</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">223</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDAGEEX">RIDAGEEX - Exam Age in Months - Recode</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDAGEEX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Exam Age in Months - Recode</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Best age in months at date of examination for individuals under 85 years of age at screening.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			84 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 1019</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">9430</td>
+                <td class="values" align="right">9430</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">692</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDRETH1">RIDRETH1 - Race/Ethnicity - Recode</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDRETH1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Race/Ethnicity - Recode</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Recode of reported race and ethnicity information.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Mexican American</td>
+                <td class="values" align="right">2519</td>
+                <td class="values" align="right">2519</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Other Hispanic</td>
+                <td class="values" align="right">341</td>
+                <td class="values" align="right">2860</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Non-Hispanic White</td>
+                <td class="values" align="right">4133</td>
+                <td class="values" align="right">6993</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Non-Hispanic Black</td>
+                <td class="values" align="right">2663</td>
+                <td class="values" align="right">9656</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Other Race - Including Multi-Racial</td>
+                <td class="values" align="right">466</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDRETH2">RIDRETH2 - Linked NH3 Race/Ethnicity - Recode </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDRETH2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Linked NH3 Race/Ethnicity - Recode </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Linked NH3 Race and Ethnicity Recode.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Non-Hispanic White</td>
+                <td class="values" align="right">4182</td>
+                <td class="values" align="right">4182</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Non-Hispanic Black</td>
+                <td class="values" align="right">2746</td>
+                <td class="values" align="right">6928</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Mexican American</td>
+                <td class="values" align="right">2519</td>
+                <td class="values" align="right">9447</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Other Race - Including Multi-Racial</td>
+                <td class="values" align="right">334</td>
+                <td class="values" align="right">9781</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Other Hispanic</td>
+                <td class="values" align="right">341</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMQMILIT">DMQMILIT - Veteran/Military Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMQMILIT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Veteran/Military Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {you/SP} ever serve in the Armed Forces of the United States?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 17 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">774</td>
+                <td class="values" align="right">774</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">5150</td>
+                <td class="values" align="right">5924</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">5926</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">5926</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4196</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDBORN">DMDBORN - Country of Birth - Recode</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDBORN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Country of Birth - Recode</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In what country {were you/was SP} born?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Born in 50 US States or Washington, DC</td>
+                <td class="values" align="right">8670</td>
+                <td class="values" align="right">8670</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Born in Mexico</td>
+                <td class="values" align="right">805</td>
+                <td class="values" align="right">9475</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Born Elsewhere</td>
+                <td class="values" align="right">645</td>
+                <td class="values" align="right">10120</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDCITZN">DMDCITZN - Citizenship Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDCITZN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Citizenship Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} a citizen of the United States? [Information about citizenship is being collected by the U.S. Public Health Service to perform health related research. Providing this information is voluntary and is collected under the authority of the Public Health Service Act. There will be no effect on pending immigration or citizenship petitions.] </dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DMQ2 </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Citizen by birth or naturalization</td>
+                <td class="values" align="right">9181</td>
+                <td class="values" align="right">9181</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Not a citizen of the US</td>
+                <td class="values" align="right">937</td>
+                <td class="values" align="right">10118</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDYRSUS">DMDYRSUS - Length of time in US</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDYRSUS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Length of time in US</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Length of time SP has been in the US.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less than 1 year</td>
+                <td class="values" align="right">85</td>
+                <td class="values" align="right">85</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">1 yr., less than 5 yrs.</td>
+                <td class="values" align="right">312</td>
+                <td class="values" align="right">397</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">5 yrs., less than 10 yrs.</td>
+                <td class="values" align="right">209</td>
+                <td class="values" align="right">606</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">10 yrs., less than 15 yrs.</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">837</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">15 yrs., less than 20 yrs.</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">978</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">20 yrs., less than 30 yrs.</td>
+                <td class="values" align="right">168</td>
+                <td class="values" align="right">1146</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">30 yrs., less than 40 yrs.</td>
+                <td class="values" align="right">110</td>
+                <td class="values" align="right">1256</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">40 yrs., less than 50 yrs.</td>
+                <td class="values" align="right">93</td>
+                <td class="values" align="right">1349</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">50 years or more</td>
+                <td class="values" align="right">76</td>
+                <td class="values" align="right">1425</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1430</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">88</td>
+                <td class="values">Could not determine</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1432</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">1444</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8678</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDEDUC3">DMDEDUC3 - Education Level - Children/Youth 6-19</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDEDUC3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Education Level - Children/Youth 6-19</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(SP Interview Version) What is the highest grade or level of school {you have/SP has} completed or the highest degree {you have/s/he has} received?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DMQ1
+READ HAND CARD CATEGORIES IF NECESSARY
+ENTER HIGHEST LEVEL OF SCHOOL</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Never Attended / Kindergarten Only</td>
+                <td class="values" align="right">205</td>
+                <td class="values" align="right">205</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1st Grade</td>
+                <td class="values" align="right">177</td>
+                <td class="values" align="right">382</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2nd Grade</td>
+                <td class="values" align="right">193</td>
+                <td class="values" align="right">575</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3rd Grade</td>
+                <td class="values" align="right">158</td>
+                <td class="values" align="right">733</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">4th Grade</td>
+                <td class="values" align="right">183</td>
+                <td class="values" align="right">916</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">5th Grade</td>
+                <td class="values" align="right">210</td>
+                <td class="values" align="right">1126</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">6th Grade</td>
+                <td class="values" align="right">286</td>
+                <td class="values" align="right">1412</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">7th Grade</td>
+                <td class="values" align="right">277</td>
+                <td class="values" align="right">1689</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">8th Grade</td>
+                <td class="values" align="right">312</td>
+                <td class="values" align="right">2001</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">9th Grade</td>
+                <td class="values" align="right">302</td>
+                <td class="values" align="right">2303</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">10th Grade</td>
+                <td class="values" align="right">284</td>
+                <td class="values" align="right">2587</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">11th Grade</td>
+                <td class="values" align="right">295</td>
+                <td class="values" align="right">2882</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">12th Grade, No Diploma</td>
+                <td class="values" align="right">55</td>
+                <td class="values" align="right">2937</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">13</td>
+                <td class="values">High School Graduate</td>
+                <td class="values" align="right">171</td>
+                <td class="values" align="right">3108</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">14</td>
+                <td class="values">GED or Equivalent</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">3130</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">15</td>
+                <td class="values">More than high school</td>
+                <td class="values" align="right">151</td>
+                <td class="values" align="right">3281</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">55</td>
+                <td class="values">Less Than 5th Grade</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">3286</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">66</td>
+                <td class="values">Less Than 9th Grade</td>
+                <td class="values" align="right">49</td>
+                <td class="values" align="right">3335</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3335</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3337</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6785</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDEDUC2">DMDEDUC2 - Education Level - Adults 20+</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDEDUC2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Education Level - Adults 20+</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(SP Interview Version) What is the highest grade or level of school {you have/SP has} completed or the highest degree {you have/s/he has} received?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DMQ1
+READ HAND CARD CATEGORIES IF NECESSARY
+ENTER HIGHEST LEVEL OF SCHOOL</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less Than 9th Grade</td>
+                <td class="values" align="right">727</td>
+                <td class="values" align="right">727</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">9-11th Grade (Includes 12th grade with no diploma)</td>
+                <td class="values" align="right">760</td>
+                <td class="values" align="right">1487</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">High School Grad/GED or Equivalent</td>
+                <td class="values" align="right">1269</td>
+                <td class="values" align="right">2756</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Some College or AA degree</td>
+                <td class="values" align="right">1356</td>
+                <td class="values" align="right">4112</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">College Graduate or above</td>
+                <td class="values" align="right">915</td>
+                <td class="values" align="right">5027</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5032</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">5041</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5081</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDEDUC">DMDEDUC - Education - Recode (old version)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDEDUC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Education - Recode (old version)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">(SP Interview Version) What is the highest grade or level of school {you have/SP has} completed or the highest degree {you have/s/he has} received?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less Than High School</td>
+                <td class="values" align="right">4478</td>
+                <td class="values" align="right">4478</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">High School Diploma (including GED)</td>
+                <td class="values" align="right">1462</td>
+                <td class="values" align="right">5940</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">More Than High School</td>
+                <td class="values" align="right">2422</td>
+                <td class="values" align="right">8362</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">8367</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">8378</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1744</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDSCHOL">DMDSCHOL - Now attending school?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDSCHOL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now attending school?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} now . . . </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">In school</td>
+                <td class="values" align="right">2155</td>
+                <td class="values" align="right">2155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">On vacation from school (between grades)</td>
+                <td class="values" align="right">667</td>
+                <td class="values" align="right">2822</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Neither in school or on vacation from school (between grades)</td>
+                <td class="values" align="right">305</td>
+                <td class="values" align="right">3127</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3127</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3127</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6995</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDMARTL">DMDMARTL - Marital Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDMARTL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Marital Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Marital Status</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Married</td>
+                <td class="values" align="right">2721</td>
+                <td class="values" align="right">2721</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Widowed</td>
+                <td class="values" align="right">588</td>
+                <td class="values" align="right">3309</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Divorced</td>
+                <td class="values" align="right">473</td>
+                <td class="values" align="right">3782</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Separated</td>
+                <td class="values" align="right">137</td>
+                <td class="values" align="right">3919</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never married</td>
+                <td class="values" align="right">2502</td>
+                <td class="values" align="right">6421</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Living with partner</td>
+                <td class="values" align="right">345</td>
+                <td class="values" align="right">6766</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6766</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6766</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3356</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHHSIZ">DMDHHSIZ - Total number of people in the Household</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHHSIZ</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total number of people in the Household</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total number of people in the Household</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 6</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">9134</td>
+                <td class="values" align="right">9134</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">7 or more people in the Household</td>
+                <td class="values" align="right">988</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="INDHHINC">INDHHINC - Annual Household Income</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">INDHHINC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Annual Household Income</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total household income (reported as a range value in dollars)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">$     0 to $ 4,999</td>
+                <td class="values" align="right">248</td>
+                <td class="values" align="right">248</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">$ 5,000 to $ 9,999</td>
+                <td class="values" align="right">550</td>
+                <td class="values" align="right">798</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">$10,000 to $14,999</td>
+                <td class="values" align="right">959</td>
+                <td class="values" align="right">1757</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">$15,000 to $19,999</td>
+                <td class="values" align="right">793</td>
+                <td class="values" align="right">2550</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">$20,000 to $24,999</td>
+                <td class="values" align="right">848</td>
+                <td class="values" align="right">3398</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">$25,000 to $34,999</td>
+                <td class="values" align="right">1353</td>
+                <td class="values" align="right">4751</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">$35,000 to $44,999</td>
+                <td class="values" align="right">1066</td>
+                <td class="values" align="right">5817</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">$45,000 to $54,999</td>
+                <td class="values" align="right">812</td>
+                <td class="values" align="right">6629</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">$55,000 to $64,999</td>
+                <td class="values" align="right">537</td>
+                <td class="values" align="right">7166</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">$65,000 to $74,999</td>
+                <td class="values" align="right">416</td>
+                <td class="values" align="right">7582</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">$75,000 and Over</td>
+                <td class="values" align="right">1792</td>
+                <td class="values" align="right">9374</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">Over $20,000</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">9400</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">13</td>
+                <td class="values">Under $20,000</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">9442</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">9455</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">38</td>
+                <td class="values" align="right">9493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">629</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="INDFMINC">INDFMINC - Annual Family Income</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">INDFMINC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Annual Family Income</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total family income (reported as a range value in dollars)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">$     0 to $ 4,999</td>
+                <td class="values" align="right">629</td>
+                <td class="values" align="right">629</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">$ 5,000 to $ 9,999</td>
+                <td class="values" align="right">732</td>
+                <td class="values" align="right">1361</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">$10,000 to $14,999</td>
+                <td class="values" align="right">1148</td>
+                <td class="values" align="right">2509</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">$15,000 to $19,999</td>
+                <td class="values" align="right">893</td>
+                <td class="values" align="right">3402</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">$20,000 to $24,999</td>
+                <td class="values" align="right">913</td>
+                <td class="values" align="right">4315</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">$25,000 to $34,999</td>
+                <td class="values" align="right">1214</td>
+                <td class="values" align="right">5529</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">$35,000 to $44,999</td>
+                <td class="values" align="right">909</td>
+                <td class="values" align="right">6438</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">$45,000 to $54,999</td>
+                <td class="values" align="right">753</td>
+                <td class="values" align="right">7191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">$55,000 to $64,999</td>
+                <td class="values" align="right">470</td>
+                <td class="values" align="right">7661</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">$65,000 to $74,999</td>
+                <td class="values" align="right">379</td>
+                <td class="values" align="right">8040</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">$75,000 and Over</td>
+                <td class="values" align="right">1495</td>
+                <td class="values" align="right">9535</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">Over $20,000</td>
+                <td class="values" align="right">128</td>
+                <td class="values" align="right">9663</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">13</td>
+                <td class="values">Under $20,000</td>
+                <td class="values" align="right">136</td>
+                <td class="values" align="right">9799</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">84</td>
+                <td class="values" align="right">9883</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">9964</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">158</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="INDFMPIR">INDFMPIR - Family PIR</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">INDFMPIR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Family PIR</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Poverty income ratio (PIR) - a ratio of family income to poverty threshold</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 4.99</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8360</td>
+                <td class="values" align="right">8360</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">PIR value greater than or equal to 5.00</td>
+                <td class="values" align="right">1175</td>
+                <td class="values" align="right">9535</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">587</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDEXPRG">RIDEXPRG - Pregnancy Status at Exam - Recode</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDEXPRG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Pregnancy Status at Exam - Recode</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Pregnancy status at the time of MEC exam.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 8 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes, positive lab pregnancy test or self-reported pregnant at exam</td>
+                <td class="values" align="right">292</td>
+                <td class="values" align="right">292</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">SP not pregnant at exam</td>
+                <td class="values" align="right">2574</td>
+                <td class="values" align="right">2866</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Cannot ascertain if SP is pregnant at exam</td>
+                <td class="values" align="right">264</td>
+                <td class="values" align="right">3130</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6992</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHRGND">DMDHRGND - HH Ref Person Gender</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHRGND</dd>
+            <dt>SAS Label: </dt>
+            <dd>HH Ref Person Gender</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gender of the household reference person</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Male</td>
+                <td class="values" align="right">5322</td>
+                <td class="values" align="right">5322</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Female</td>
+                <td class="values" align="right">4799</td>
+                <td class="values" align="right">10121</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHRAGE">DMDHRAGE - HH Ref Person Age</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHRAGE</dd>
+            <dt>SAS Label: </dt>
+            <dd>HH Ref Person Age</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Age in years of the household reference person at the time of HH screening.  Individuals 85 and over are topcoded at 85 years of age.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">16 to 84</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">9900</td>
+                <td class="values" align="right">9900</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">85</td>
+                <td class="values">&gt;= 85 years of age</td>
+                <td class="values" align="right">221</td>
+                <td class="values" align="right">10121</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHRBRN">DMDHRBRN - HH Ref Person Country of Birth</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHRBRN</dd>
+            <dt>SAS Label: </dt>
+            <dd>HH Ref Person Country of Birth</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In what country {were you/was NON-SP Head} born?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Born in 50 US States or Washington, DC</td>
+                <td class="values" align="right">7387</td>
+                <td class="values" align="right">7387</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Born in Mexico</td>
+                <td class="values" align="right">1416</td>
+                <td class="values" align="right">8803</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Born Elsewhere</td>
+                <td class="values" align="right">965</td>
+                <td class="values" align="right">9768</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9768</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9768</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">354</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHREDU">DMDHREDU - HH Ref Person Education Level</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHREDU</dd>
+            <dt>SAS Label: </dt>
+            <dd>HH Ref Person Education Level</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What is the highest grade or level of school {you have/NON_SP HEAD has} received?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD DMQ1 Read HAND CARD CATEGORES IF NECESSARY ENTER HIGHEST LEVEL OF SCHOOL</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less Than 9th Grade</td>
+                <td class="values" align="right">1286</td>
+                <td class="values" align="right">1286</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">9-11th Grade (Includes 12th grade with no diploma)</td>
+                <td class="values" align="right">1727</td>
+                <td class="values" align="right">3013</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">High School Grad/GED or equivalent</td>
+                <td class="values" align="right">2529</td>
+                <td class="values" align="right">5542</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Some College or AA degree</td>
+                <td class="values" align="right">2625</td>
+                <td class="values" align="right">8167</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">College Graduate or above</td>
+                <td class="values" align="right">1534</td>
+                <td class="values" align="right">9701</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">9715</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">9768</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">354</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHRMAR">DMDHRMAR - HH Ref Person Marital Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHRMAR</dd>
+            <dt>SAS Label: </dt>
+            <dd>HH Ref Person Marital Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Marital Status of household reference person</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Married</td>
+                <td class="values" align="right">5766</td>
+                <td class="values" align="right">5766</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Widowed</td>
+                <td class="values" align="right">755</td>
+                <td class="values" align="right">6521</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Divorced</td>
+                <td class="values" align="right">967</td>
+                <td class="values" align="right">7488</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Separated</td>
+                <td class="values" align="right">367</td>
+                <td class="values" align="right">7855</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Never married</td>
+                <td class="values" align="right">1497</td>
+                <td class="values" align="right">9352</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Living with partner</td>
+                <td class="values" align="right">436</td>
+                <td class="values" align="right">9788</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">9824</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">9833</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">289</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DMDHSEDU">DMDHSEDU - HH Ref Person's Spouse Education Level</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DMDHSEDU</dd>
+            <dt>SAS Label: </dt>
+            <dd>HH Ref Person's Spouse Education Level</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What is the highest grade or level of school {you have/NON-SP SPOUSE has completed or the highest degree {you have/he/she has} received</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Less Than 9th Grade</td>
+                <td class="values" align="right">748</td>
+                <td class="values" align="right">748</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">9-11th Grade (Includes 12th grade with no diploma)</td>
+                <td class="values" align="right">765</td>
+                <td class="values" align="right">1513</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">High School Grad/GED or equivalent</td>
+                <td class="values" align="right">1336</td>
+                <td class="values" align="right">2849</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Some College or AA degree</td>
+                <td class="values" align="right">1494</td>
+                <td class="values" align="right">4343</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">College Graduate or above</td>
+                <td class="values" align="right">1001</td>
+                <td class="values" align="right">5344</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">5359</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">5381</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4741</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SIALANG">SIALANG - Language of SP Interview</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SIALANG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language of SP Interview</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Language of the Sample Person Interview Instrument</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">English</td>
+                <td class="values" align="right">8991</td>
+                <td class="values" align="right">8991</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Spanish</td>
+                <td class="values" align="right">1131</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SIAPROXY">SIAPROXY - Proxy used in SP Interview?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SIAPROXY</dd>
+            <dt>SAS Label: </dt>
+            <dd>Proxy used in SP Interview?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was a Proxy respondent used in conducting the Sample Person (SP) interview?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">3990</td>
+                <td class="values" align="right">3990</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6132</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SIAINTRP">SIAINTRP - Interpreter used in SP Interview?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SIAINTRP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Interpreter used in SP Interview?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was an interpreter used to conduct the Sample Person (SP) interview?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">168</td>
+                <td class="values" align="right">168</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9954</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="FIALANG">FIALANG - Language of Family Interview</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">FIALANG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language of Family Interview</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Language of the Family Interview Instrument</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">English</td>
+                <td class="values" align="right">9185</td>
+                <td class="values" align="right">9185</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Spanish</td>
+                <td class="values" align="right">798</td>
+                <td class="values" align="right">9983</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">139</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="FIAPROXY">FIAPROXY - Proxy used in Family Interview?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">FIAPROXY</dd>
+            <dt>SAS Label: </dt>
+            <dd>Proxy used in Family Interview?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was a Proxy respondent used in conducting the Family Interview?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9954</td>
+                <td class="values" align="right">9983</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">139</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="FIAINTRP">FIAINTRP - Interpreter used in Family Interview?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">FIAINTRP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Interpreter used in Family Interview?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was an interpreter used to conduct the Family interview?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">147</td>
+                <td class="values" align="right">147</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">9836</td>
+                <td class="values" align="right">9983</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">139</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="MIALANG">MIALANG - Language of MEC Interview</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">MIALANG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language of MEC Interview</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Language of the CAPI MEC Interview Instrument</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">English</td>
+                <td class="values" align="right">5915</td>
+                <td class="values" align="right">5915</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Spanish</td>
+                <td class="values" align="right">518</td>
+                <td class="values" align="right">6433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3689</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="MIAPROXY">MIAPROXY - Proxy used in MEC Interview?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">MIAPROXY</dd>
+            <dt>SAS Label: </dt>
+            <dd>Proxy used in MEC Interview?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was a Proxy respondent used in conducting the MEC CAPI Interview?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6413</td>
+                <td class="values" align="right">6433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3689</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="MIAINTRP">MIAINTRP - Interpreter used in MEC Interview?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">MIAINTRP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Interpreter used in MEC Interview?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was an interpreter used to conduct the MEC CAPI interview?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">36</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6397</td>
+                <td class="values" align="right">6433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3689</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="AIALANG">AIALANG - Language of ACASI Interview</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">AIALANG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Language of ACASI Interview</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Language of the MEC ACASI Interview Instrument</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">English</td>
+                <td class="values" align="right">4334</td>
+                <td class="values" align="right">4334</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Spanish</td>
+                <td class="values" align="right">375</td>
+                <td class="values" align="right">4709</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5413</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTINT2YR">WTINT2YR - Full Sample 2 Year Interview Weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTINT2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Full Sample 2 Year Interview Weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Interviewed Sample Persons.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1498.994197 to 156319.65778</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">10122</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTMEC2YR">WTMEC2YR - Full Sample 2 Year MEC Exam Weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTMEC2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Full Sample 2 Year MEC Exam Weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Both Interviewed and MEC Examined Sample Persons.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 159302.77518</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">10122</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SDMVPSU">SDMVPSU - Masked Variance Pseudo-PSU</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SDMVPSU</dd>
+            <dt>SAS Label: </dt>
+            <dd>Masked Variance Pseudo-PSU</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Masked Variance Unit Pseudo-PSU variable for variance estimation</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">10122</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SDMVSTRA">SDMVSTRA - Masked Variance Pseudo-Stratum</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SDMVSTRA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Masked Variance Pseudo-Stratum</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Masked Variance Unit Pseudo-Stratum variable for variance estimation</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">29 to 43</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">10122</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10122</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
