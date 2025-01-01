@@ -4,7 +4,7 @@ import pandas as pd
 import openpyxl
 
 # Specify the folder containing the HTML files
-folder_path = '/NHANESData/NHANES/data_docs/2003-2004a'  #'./NHANESData/NHANES/data_docs/2003-2004a'
+folder_path = 'C:/Users/adlik/PycharmProjects/CapstoneTwoNHANES20032006/data/data_docs/2005-2006'  #  data/data_docs/2005-2006  './NHANESData/NHANES/data_docs/2003-2004a' C:/Users/adlik/PycharmProjects/CapstoneTwoNHANES20032006/data/data_docs/2005-2006
 
 # Create a list to store the data
 all_data = []
@@ -37,7 +37,7 @@ for filename in os.listdir(folder_path):
 df = pd.DataFrame(all_data)
 
 # Save the DataFrame to an Excel file
-excel_path = 'codebook_contents6.xlsx'
+excel_path = 'codebook_contents20052006two.xlsx'
 df.to_excel(excel_path, index=False)
 
 print(f"Data has been saved to {excel_path}")

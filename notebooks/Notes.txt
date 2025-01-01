@@ -96,3 +96,12 @@ o	Need to see overlap in other datasets from different years
 - Triglycerides relate to sleep apnea article. Use TG's as marker for hypoventilation
 
 - Ran the R script again and obtained the csv again. Added the folder of 2003-2004 with additional data, including the lab data which has the triglycerides.
+
+...
+
+07/01/2024 - 07/06/2024
+
+- Worked on the columns in the 2 periods data: 2003-2004, 2005-2006
+- Parsed the fields again from the .htm files (some .htm files did not parse, they had a different structure. Adjusted code.
+- Worked on SQL db and lectures. Finished GIT and unit 18
+- Getting join code for NHANES db.
