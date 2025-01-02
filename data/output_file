@@ -1,0 +1,14 @@
+Combined the column descriptions code book 2003 - 2006:                                    Description       File Variable       Year
+1233     # Hrs/day smell tobacco smoke at work  OCQ_C.htm  OCQ290Q  2003-2004
+3297     # Hrs/day smell tobacco smoke at work  OCQ_D.htm  OCQ290Q  2005-2006
+3375              # Times broken/fractured hip  OSQ_D.htm  OSQ020a  2005-2006
+2041              # Times broken/fractured hip  OSQ_C.htm  OSQ020a  2003-2004
+3377            # Times broken/fractured spine  OSQ_D.htm  OSQ020c  2005-2006
+...                                        ...        ...      ...        ...
+3162    inactive days due to phys./mental hlth  HSQ_D.htm   HSQ490  2005-2006
+889     no. of days mental health was not good  HSQ_C.htm   HSQ480  2003-2004
+3161    no. of days mental health was not good  HSQ_D.htm   HSQ480  2005-2006
+888   no. of days physical health was not good  HSQ_C.htm   HSQ470  2003-2004
+3160  no. of days physical health was not good  HSQ_D.htm   HSQ470  2005-2006
+
+[3861 rows x 4 columns]

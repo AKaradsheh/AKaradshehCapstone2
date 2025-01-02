@@ -1,0 +1,1458 @@
+File,Variable,Description
+ACQ_D.htm,SEQN,SEQN - Respondent sequence number
+ACQ_D.htm,ACQ005,ACQ005 - CHECK ITEM
+ACQ_D.htm,ACD010A,ACD010A - English usually spoken at home
+ACQ_D.htm,ACD010B,ACD010B - Spanish usually spoken at home
+ACQ_D.htm,ACD010C,ACD010C - Other language(s) usually spoken at home
+ACQ_D.htm,ACD040,ACD040 - Language(s) usually spoken at home
+ALQ_D.htm,SEQN,SEQN - Respondent sequence number
+ALQ_D.htm,ALQ101,ALQ101 - Had at least 12 alcohol drinks/1 yr?
+ALQ_D.htm,ALQ110,ALQ110 - Had at least 12 alcohol drinks/lifetime?
+ALQ_D.htm,ALQ120Q,ALQ120Q - How often drink alcohol over past 12 mos
+ALQ_D.htm,ALQ120U,"ALQ120U - # days drink alcohol per wk, mo, yr"
+ALQ_D.htm,ALQ130,ALQ130 - Avg # alcoholic drinks/day -past 12 mos
+ALQ_D.htm,ALQ140Q,ALQ140Q - #days have 5 or more drinks/past 12 mos
+ALQ_D.htm,ALQ140U,"ALQ140U - # days per week, month, year?"
+ALQ_D.htm,ALQ150,ALQ150 - Ever have 5 or more drinks every day?
+BIOPRO_D.htm,SEQN,SEQN - Respondent sequence number
+BIOPRO_D.htm,LBXSAL,LBXSAL - Albumin (g/dL)
+BIOPRO_D.htm,LBDSALSI,LBDSALSI - Albumin (g/L)
+BIOPRO_D.htm,LBXSATSI,LBXSATSI - Alanine aminotransferase ALT (U/L)
+BIOPRO_D.htm,LBXSASSI,LBXSASSI - Aspartate aminotransferase AST (U/L)
+BIOPRO_D.htm,LBXSAPSI,LBXSAPSI - Alkaline phosphotase (U/L)
+BIOPRO_D.htm,LBXSBU,LBXSBU - Blood urea nitrogen (mg/dL)
+BIOPRO_D.htm,LBDSBUSI,LBDSBUSI - Blood urea nitrogen (mmol/L)
+BIOPRO_D.htm,LBXSCA,LBXSCA - Total calcium (mg/dL)
+BIOPRO_D.htm,LBDSCASI,LBDSCASI - Total calcium (mmol/L)
+BIOPRO_D.htm,LBXSCH,LBXSCH - Cholesterol (mg/dL)
+BIOPRO_D.htm,LBDSCHSI,LBDSCHSI - Cholesterol (mmol/L)
+BIOPRO_D.htm,LBXSC3SI,LBXSC3SI - Bicarbonate (mmol/L)
+BIOPRO_D.htm,LBXSCR,LBXSCR - Creatinine (mg/dL)
+BIOPRO_D.htm,LBDSCRSI,LBDSCRSI - Creatinine (umol/L)
+BIOPRO_D.htm,LBXSGTSI,LBXSGTSI - Gamma glutamyl transferase (U/L)
+BIOPRO_D.htm,LBXSGL,"LBXSGL - Glucose, serum (mg/dL)"
+BIOPRO_D.htm,LBDSGLSI,"LBDSGLSI - Glucose, serum (mmol/L)"
+BIOPRO_D.htm,LBXSIR,"LBXSIR - Iron, refigerated (ug/dL)"
+BIOPRO_D.htm,LBDSIRSI,"LBDSIRSI - Iron, refigerated (umol/L)"
+BIOPRO_D.htm,LBXSLDSI,LBXSLDSI - Lactate dehydrogenase LDH (U/L)
+BIOPRO_D.htm,LBXSPH,LBXSPH - Phosphorus (mg/dL)
+BIOPRO_D.htm,LBDSPHSI,LBDSPHSI - Phosphorus (mmol/L)
+BIOPRO_D.htm,LBXSTB,LBXSTB - Total bilirubin (mg/dL)
+BIOPRO_D.htm,LBDSTBSI,"LBDSTBSI - Bilirubin, total (umol/L)"
+BIOPRO_D.htm,LBXSTP,LBXSTP - Total protein (g/dL)
+BIOPRO_D.htm,LBDSTPSI,LBDSTPSI - Total protein (g/L)
+BIOPRO_D.htm,LBXSTR,LBXSTR - Triglycerides (mg/dL)
+BIOPRO_D.htm,LBDSTRSI,LBDSTRSI - Triglycerides (mmol/L)
+BIOPRO_D.htm,LBXSUA,LBXSUA - Uric acid (mg/dL)
+BIOPRO_D.htm,LBDSUASI,LBDSUASI - Uric acid (umol/L)
+BIOPRO_D.htm,LBXSNASI,LBXSNASI - Sodium (mmol/L)
+BIOPRO_D.htm,LBXSKSI,LBXSKSI - Potassium (mmol/L)
+BIOPRO_D.htm,LBXSCLSI,LBXSCLSI - Chloride (mmol/L)
+BIOPRO_D.htm,LBXSOSSI,LBXSOSSI - Osmolality (mmol/Kg)
+BIOPRO_D.htm,LBXSGB,LBXSGB - Globulin (g/dL)
+BIOPRO_D.htm,LBDSGBSI,LBDSGBSI - Globulin (g/L)
+BMX_D.htm,SEQN,SEQN - Respondent sequence number
+BMX_D.htm,BMDSTATS,BMDSTATS - Body Measures Component Status Code
+BMX_D.htm,BMXWT,BMXWT - Weight (kg)
+BMX_D.htm,BMIWT,BMIWT - Weight Comment
+BMX_D.htm,BMXRECUM,BMXRECUM - Recumbent Length (cm)
+BMX_D.htm,BMIRECUM,BMIRECUM - Recumbent Length Comment
+BMX_D.htm,BMXHEAD,BMXHEAD - Head Circumference (cm)
+BMX_D.htm,BMIHEAD,BMIHEAD - Head Circumference Comment
+BMX_D.htm,BMXHT,BMXHT - Standing Height (cm)
+BMX_D.htm,BMIHT,BMIHT - Standing Height Comment
+BMX_D.htm,BMXBMI,BMXBMI - Body Mass Index (kg/m**2)
+BMX_D.htm,BMXLEG,BMXLEG - Upper Leg Length (cm)
+BMX_D.htm,BMILEG,BMILEG - Upper Leg Length Comment
+BMX_D.htm,BMXCALF,BMXCALF - Maximal Calf Circumference (cm)
+BMX_D.htm,BMICALF,BMICALF - Maximal Calf Comment
+BMX_D.htm,BMXARML,BMXARML - Upper Arm Length (cm)
+BMX_D.htm,BMIARML,BMIARML - Upper Arm Length Comment
+BMX_D.htm,BMXARMC,BMXARMC - Arm Circumference (cm)
+BMX_D.htm,BMIARMC,BMIARMC - Arm Circumference Comment
+BMX_D.htm,BMXWAIST,BMXWAIST - Waist Circumference (cm)
+BMX_D.htm,BMIWAIST,BMIWAIST - Waist Circumference Comment
+BMX_D.htm,BMXTHICR,BMXTHICR - Thigh Circumference (cm)
+BMX_D.htm,BMITHICR,BMITHICR - Thigh Circumference Comment
+BMX_D.htm,BMXTRI,BMXTRI - Triceps Skinfold (mm)
+BMX_D.htm,BMITRI,BMITRI - Triceps Skinfold Comment
+BMX_D.htm,BMXSUB,BMXSUB - Subscapular Skinfold (mm)
+BMX_D.htm,BMISUB,BMISUB - Subscapular Skinfold Comment
+BPX_D.htm,SEQN,SEQN - Respondent sequence number
+BPX_D.htm,PEASCST1,PEASCST1 - Blood Pressure Status
+BPX_D.htm,PEASCTM1,PEASCTM1 - Blood Pressure Time in Seconds
+BPX_D.htm,PEASCCT1,PEASCCT1 - Blood Pressure Comment
+BPX_D.htm,BPXCHR,BPXCHR - 60 sec HR (30 sec HR * 2)
+BPX_D.htm,BPQ150A,BPQ150A - Had food in the past 30 minutes?
+BPX_D.htm,BPQ150B,BPQ150B - Had alcohol in the past 30 minutes?
+BPX_D.htm,BPQ150C,BPQ150C - Had coffee in the past 30 minutes?
+BPX_D.htm,BPQ150D,BPQ150D - Had cigarettes in the past 30 minutes?
+BPX_D.htm,BPAARM,BPAARM - Arm selected:
+BPX_D.htm,BPACSZ,BPACSZ - Coded cuff size
+BPX_D.htm,BPXPLS,BPXPLS - 60 sec. pulse (30 sec. pulse * 2):
+BPX_D.htm,BPXDB,BPXDB - # of dropped beats in 30 seconds
+BPX_D.htm,BPXPULS,BPXPULS - Pulse regular or irregular?
+BPX_D.htm,BPXPTY,BPXPTY - Pulse type:
+BPX_D.htm,BPXML1,BPXML1 - MIL: maximum inflation levels (mm Hg)
+BPX_D.htm,BPXSY1,BPXSY1 - Systolic:  Blood pres (1st rdg) mm Hg
+BPX_D.htm,BPXDI1,BPXDI1 - Diastolic:  Blood pres (1st rdg) mm Hg
+BPX_D.htm,BPAEN1,BPAEN1 - Enhancement used first reading
+BPX_D.htm,BPXSY2,BPXSY2 - Systolic:  Blood pres (2nd rdg) mm Hg
+BPX_D.htm,BPXDI2,BPXDI2 - Diastolic: Blood pres (2nd rdg) mm Hg
+BPX_D.htm,BPAEN2,BPAEN2 - Enhancement used second reading
+BPX_D.htm,BPXSY3,BPXSY3 - Systolic:  Blood pres (3rd rdg) mm Hg
+BPX_D.htm,BPXDI3,BPXDI3 - Diastolic: Blood pres (3rd rdg) mm Hg
+BPX_D.htm,BPAEN3,BPAEN3 - Enhancement used third reading
+BPX_D.htm,BPXSY4,BPXSY4 - Systolic: Blood pres (4th rdg) mm Hg
+BPX_D.htm,BPXDI4,BPXDI4 - Diastolic:  Blood pres (4th rdg) mm Hg
+BPX_D.htm,BPAEN4,BPAEN4 - Enhancement used fourth reading
+CBC_D.htm,SEQN,SEQN - Respondent sequence number
+CBC_D.htm,LBXWBCSI,LBXWBCSI - White blood cell count (1000 cells/uL)
+CBC_D.htm,LBXLYPCT,LBXLYPCT - Lymphocyte percent (%)
+CBC_D.htm,LBXMOPCT,LBXMOPCT - Monocyte percent (%)
+CBC_D.htm,LBXNEPCT,LBXNEPCT - Segmented neutrophils percent (%)
+CBC_D.htm,LBXEOPCT,LBXEOPCT - Eosinophils percent (%)
+CBC_D.htm,LBXBAPCT,LBXBAPCT - Basophils percent (%)
+CBC_D.htm,LBDLYMNO,LBDLYMNO - Lymphocyte number (1000 cells/uL)
+CBC_D.htm,LBDMONO,LBDMONO - Monocyte number (1000 cells/uL)
+CBC_D.htm,LBDNENO,LBDNENO - Segmented neutrophils num (1000 cell/uL)
+CBC_D.htm,LBDEONO,LBDEONO - Eosinophils number (1000 cells/uL)
+CBC_D.htm,LBDBANO,LBDBANO - Basophils number (1000 cells/uL)
+CBC_D.htm,LBXRBCSI,LBXRBCSI - Red blood cell count (million cells/uL)
+CBC_D.htm,LBXHGB,LBXHGB - Hemoglobin (g/dL)
+CBC_D.htm,LBXHCT,LBXHCT - Hematocrit (%)
+CBC_D.htm,LBXMCVSI,LBXMCVSI - Mean cell volume (fL)
+CBC_D.htm,LBXMCHSI,LBXMCHSI - Mean cell hemoglobin (pg)
+CBC_D.htm,LBXMC,LBXMC - MCHC (g/dL)
+CBC_D.htm,LBXRDW,LBXRDW - Red cell distribution width (%)
+CBC_D.htm,LBXPLTSI,LBXPLTSI - Platelet count SI (1000 cells/uL)
+CBC_D.htm,LBXMPSI,LBXMPSI - Mean platelet volume (fL)
+CDQ_D.htm,SEQN,SEQN - Respondent sequence number
+CDQ_D.htm,CDQ001,CDQ001 - SP ever had pain or discomfort in chest
+CDQ_D.htm,CDQ002,CDQ002 - SP get it walking uphill or in a hurry
+CDQ_D.htm,CDQ003,CDQ003 - During an ordinary pace on level ground
+CDQ_D.htm,CDQ003A,CDQ003A - CHECK ITEM
+CDQ_D.htm,CDQ004,CDQ004 - If so does SP continue or slow down
+CDQ_D.htm,CDQ005,CDQ005 - Does standing relieve pain/discomfort
+CDQ_D.htm,CDQ006,CDQ006 - How soon is the pain relieved
+CDQ_D.htm,CDQ009A,CDQ009A - Pain in right arm
+CDQ_D.htm,CDQ009B,CDQ009B - Pain in right chest
+CDQ_D.htm,CDQ009C,CDQ009C - Pain in neck
+CDQ_D.htm,CDQ009D,CDQ009D - Pain in upper sternum
+CDQ_D.htm,CDQ009E,CDQ009E - Pain in lower sternum
+CDQ_D.htm,CDQ009F,CDQ009F - Pain in left chest
+CDQ_D.htm,CDQ009G,CDQ009G - Pain in left arm
+CDQ_D.htm,CDQ009H,CDQ009H - Pain in epigastric area
+CDQ_D.htm,CDQ008,CDQ008 - Severe pain in chest more than half hour
+CDQ_D.htm,CDQ010,CDQ010 - Shortness of breath on stairs/inclines
+CRP_D.htm,SEQN,SEQN - Respondent sequence number
+CRP_D.htm,LBXCRP,LBXCRP - C-reactive protein(mg/dL)
+DBQ_D.htm,SEQN,SEQN - Respondent sequence number
+DBQ_D.htm,DBQ010,DBQ010 - Ever breastfed or fed breastmilk
+DBQ_D.htm,DBD020,DBD020 - Age started eating other foods(days)
+DBQ_D.htm,DBD030,DBD030 - Age stopped breastfeeding(days)
+DBQ_D.htm,DBD040,DBD040 - Age first fed formula daily(days)
+DBQ_D.htm,DBD050,DBD050 - Age stopped receiving formula(days)
+DBQ_D.htm,DBD060,DBD060 - Age first fed milk daily basis(days)
+DBQ_D.htm,DBD072A,DBD072A - Type of milk first fed-whole milk
+DBQ_D.htm,DBD072B,DBD072B - Type of milk first fed-2% milk
+DBQ_D.htm,DBD072C,DBD072C - Type of milk first fed-1% milk
+DBQ_D.htm,DBD072D,DBD072D - Type of milk first fed-fat free milk
+DBQ_D.htm,DBD072U,DBD072U - Type of milk first fed - other
+DBQ_D.htm,DBD080,DBD080 - Age started eating solid foods(days)
+DBQ_D.htm,DBD085,DBD085 - CHECK ITEM
+DBQ_D.htm,DBQ700,DBQ700 - How healthy is the diet
+DBQ_D.htm,DBQ197,DBQ197 - Past 30 day milk product consumption
+DBQ_D.htm,DBD222A,DBD222A - You drink whole or regular milk
+DBQ_D.htm,DBD222B,DBD222B - You drink 2% fat milk
+DBQ_D.htm,DBD222C,DBD222C - You drink 1% fat milk
+DBQ_D.htm,DBD222D,DBD222D - You drink fat-free or skim milk
+DBQ_D.htm,DBD222U,DBD222U - You drink another type of milk
+DBQ_D.htm,DBD225,DBD225 - CHECK ITEM
+DBQ_D.htm,DBQ229,DBQ229 - Regular milk use 5 times per week
+DBQ_D.htm,DBQ235A,DBQ235A - How often drank milk age 5-12
+DBQ_D.htm,DBQ235B,DBQ235B - How often drank milk age 13-17
+DBQ_D.htm,DBQ235C,DBQ235C - How often drank milk age 18-35
+DBQ_D.htm,DBD265a,DBD265a - CHECK ITEM
+DBQ_D.htm,DBQ301,DBQ301 - Community/Government meals delivered
+DBQ_D.htm,DBQ330,DBQ330 - Eat meals at Community/Senior center
+DBQ_D.htm,DBD355,DBD355 - CHECK ITEM
+DBQ_D.htm,DBQ360,DBQ360 - Attend kindergarten thru high school
+DBQ_D.htm,DBQ370,DBQ370 - School serves school lunches
+DBQ_D.htm,DBD381,DBD381 - # of times/week get school lunch
+DBQ_D.htm,DBQ390,"DBQ390 - School lunch free, reduced or full price"
+DBQ_D.htm,DBQ400,DBQ400 - School serve complete breakfast each day
+DBQ_D.htm,DBD411,DBD411 - # of times/week get school breakfast
+DBQ_D.htm,DBQ421,DBQ421 - School breakfast free/reduced/full price
+DBQ_D.htm,DBQ422,DBQ422 - CHECK ITEM
+DBQ_D.htm,DBQ424,DBQ424 - Summer program meal free/reduced price
+DBQ_D.htm,DBD709,DBD709 - CHECK ITEM
+DBQ_D.htm,DBD091,DBD091 - # of times/wk eat meals not from a home
+DBQ_D.htm,DBQ719,DBQ719 - CHECK ITEM
+DBQ_D.htm,DBQ720,DBQ720 - Heard of dietary guidelines?
+DBQ_D.htm,DBQ730,DBQ730 - Heard of food guide pyramid?
+DBQ_D.htm,DBQ740,DBQ740 - Heard about 5-a-day program?
+DBQ_D.htm,DBQ750,DBQ750 - Use nutrition facts panel on food label
+DBQ_D.htm,DBQ760,DBQ760 - Use ingredients list on food label
+DBQ_D.htm,DBQ770,DBQ770 - Use serving size info on food label
+DBQ_D.htm,DBQ780,DBQ780 - Use health claims on food packages
+DBQ_D.htm,DBQ789,DBQ789 - CHECK ITEM
+DBQ_D.htm,DBQ790,DBQ790 - Check calories on food label
+DBQ_D.htm,DBQ800,DBQ800 - Check calories from fat on food label
+DBQ_D.htm,DBQ810,DBQ810 - Check total fat on food label
+DBQ_D.htm,DBQ820,DBQ820 - Check trans fat on food label
+DBQ_D.htm,DBQ830,DBQ830 - Check saturated fat on food label
+DBQ_D.htm,DBQ840,DBQ840 - Check cholesterol on food label
+DBQ_D.htm,DBQ850,DBQ850 - Check sodium on food label
+DBQ_D.htm,DBQ860,DBQ860 - Check carbohydrates on food label
+DBQ_D.htm,DBQ870,DBQ870 - Check fiber on food label
+DBQ_D.htm,DBQ880,DBQ880 - Check sugars on food label
+DBQ_D.htm,DBQ890,DBQ890 - Are people born to be fat/thin
+DEMO_D.htm,SEQN,SEQN - Respondent sequence number
+DEMO_D.htm,SDDSRVYR,SDDSRVYR - Data Release Number
+DEMO_D.htm,RIDSTATR,RIDSTATR - Interview/Examination Status
+DEMO_D.htm,RIDEXMON,RIDEXMON - Six month time period
+DEMO_D.htm,RIAGENDR,RIAGENDR - Gender
+DEMO_D.htm,RIDAGEYR,RIDAGEYR - Age at Screening Adjudicated - Recode
+DEMO_D.htm,RIDAGEMN,RIDAGEMN - Age in Months - Recode
+DEMO_D.htm,RIDAGEEX,RIDAGEEX - Exam Age in Months - Recode
+DEMO_D.htm,RIDRETH1,RIDRETH1 - Race/Ethnicity - Recode
+DEMO_D.htm,DMQMILIT,DMQMILIT - Veteran/Military Status
+DEMO_D.htm,DMDBORN,DMDBORN - Country of Birth - Recode
+DEMO_D.htm,DMDCITZN,DMDCITZN - Citizenship Status
+DEMO_D.htm,DMDYRSUS,DMDYRSUS - Length of time in US
+DEMO_D.htm,DMDEDUC3,DMDEDUC3 - Education Level - Children/Youth 6-19
+DEMO_D.htm,DMDEDUC2,DMDEDUC2 - Education Level - Adults 20+
+DEMO_D.htm,DMDSCHOL,DMDSCHOL - Now attending school?
+DEMO_D.htm,DMDMARTL,DMDMARTL - Marital Status
+DEMO_D.htm,DMDHHSIZ,DMDHHSIZ - Total number of people in the Household
+DEMO_D.htm,DMDFMSIZ,DMDFMSIZ - Total number of people in the Family
+DEMO_D.htm,INDHHINC,INDHHINC - Annual Household Income
+DEMO_D.htm,INDFMINC,INDFMINC - Annual Family Income
+DEMO_D.htm,INDFMPIR,INDFMPIR - Family PIR
+DEMO_D.htm,RIDEXPRG,RIDEXPRG - Pregnancy Status at Exam - Recode
+DEMO_D.htm,DMDHRGND,DMDHRGND - HH Ref Person Gender
+DEMO_D.htm,DMDHRAGE,DMDHRAGE - HH Ref Person Age
+DEMO_D.htm,DMDHRBRN,DMDHRBRN - HH Ref Person Country of Birth
+DEMO_D.htm,DMDHREDU,DMDHREDU - HH Ref Person Education Level
+DEMO_D.htm,DMDHRMAR,DMDHRMAR - HH Ref Person Marital Status
+DEMO_D.htm,DMDHSEDU,DMDHSEDU - HH Ref Person's Spouse Education Level
+DEMO_D.htm,SIALANG,SIALANG - Language of SP Interview
+DEMO_D.htm,SIAPROXY,SIAPROXY - Proxy used in SP Interview?
+DEMO_D.htm,SIAINTRP,SIAINTRP - Interpreter used in SP Interview?
+DEMO_D.htm,FIALANG,FIALANG - Language of Family Interview
+DEMO_D.htm,FIAPROXY,FIAPROXY - Proxy used in Family Interview?
+DEMO_D.htm,FIAINTRP,FIAINTRP - Interpreter used in Family Interview?
+DEMO_D.htm,MIALANG,MIALANG - Language of MEC Interview
+DEMO_D.htm,MIAPROXY,MIAPROXY - Proxy used in MEC Interview?
+DEMO_D.htm,MIAINTRP,MIAINTRP - Interpreter used in MEC Interview?
+DEMO_D.htm,AIALANG,AIALANG - Language of ACASI Interview
+DEMO_D.htm,WTINT2YR,WTINT2YR - Full Sample 2 Year Interview Weight
+DEMO_D.htm,WTMEC2YR,WTMEC2YR - Full Sample 2 Year MEC Exam Weight
+DEMO_D.htm,SDMVPSU,SDMVPSU - Masked Variance Pseudo-PSU
+DEMO_D.htm,SDMVSTRA,SDMVSTRA - Masked Variance Pseudo-Stratum
+DIQ_D.htm,SEQN,SEQN - Respondent sequence number
+DIQ_D.htm,DIQ010,DIQ010 - Doctor told you have diabetes
+DIQ_D.htm,DID040,DID040 - Age when first told you had diabetes
+DIQ_D.htm,DIQ219,DIQ219 - CHECK ITEM
+DIQ_D.htm,DIQ220,DIQ220 - When was your diabetes diagnosed
+DIQ_D.htm,DIQ159,DIQ159 - CHECK ITEM
+DIQ_D.htm,DIQ160,DIQ160 - Ever told you have prediabetes
+DIQ_D.htm,DIQ170,DIQ170 - Ever told have health risk for diabetes
+DIQ_D.htm,DIQ180,DIQ180 - Had blood tested past three years
+DIQ_D.htm,DIQ190A,DIQ190A - Past yr told control weight
+DIQ_D.htm,DIQ190B,DIQ190B - Past yr told increase physical activity
+DIQ_D.htm,DIQ190C,DIQ190C - Past yr told reduce fat/calories in diet
+DIQ_D.htm,DIQ200A,DIQ200A - Are you controlling weight
+DIQ_D.htm,DIQ200B,DIQ200B - Are you increasing physical activity
+DIQ_D.htm,DIQ200C,DIQ200C - Are you reducing fat/calories in diet
+DIQ_D.htm,DIQ050,DIQ050 - Taking insulin now
+DIQ_D.htm,DID060,DID060 - How long taking insulin
+DIQ_D.htm,DIQ060U,DIQ060U - Unit of measure (month/year)
+DIQ_D.htm,DID065,DID065 - CHECK ITEM
+DIQ_D.htm,DID070,DID070 - Take diabetic pills to lower blood sugar
+DIQ_D.htm,DID229,DID229 - CHECK ITEM
+DIQ_D.htm,DIQ230,DIQ230 - How long ago saw a diabetes specialist
+DIQ_D.htm,DIQ240,DIQ240 - Is there one Dr you see for diabetes
+DIQ_D.htm,DID250,DID250 - Past year how many times seen doctor
+DIQ_D.htm,DID260,DID260 - How often check blood for glucose/sugar
+DIQ_D.htm,DIQ260U,DIQ260U - Unit of measure (day/week/month/year)
+DIQ_D.htm,DID270,DID270 - Past year times checked for A1C
+DIQ_D.htm,DIQ280,DIQ280 - What was your last A1C level
+DIQ_D.htm,DIQ290,DIQ290 - What does Dr say A1C should be
+DIQ_D.htm,DIQ295,DIQ295 - CHECK ITEM
+DIQ_D.htm,DIQ300S,DIQ300S - What was your recent SBP
+DIQ_D.htm,DIQ300D,DIQ300D - What was your recent DBP
+DIQ_D.htm,DID310S,DID310S - What does Dr say SBP should be
+DIQ_D.htm,DID310D,DID310D - What does Dr say DBP should be
+DIQ_D.htm,DID320,DID320 - What was most recent LDL number
+DIQ_D.htm,DID330,DID330 - What does Dr say LDL should be
+DIQ_D.htm,DID340,DID340 - Past year times Dr check feet for sores
+DIQ_D.htm,DID350,DID350 - How often do you check your feet
+DIQ_D.htm,DIQ350U,DIQ350U - Unit of measure (day/week/month/year)
+DIQ_D.htm,DIQ360,DIQ360 - Last time had pupils dilated for exam
+DIQ_D.htm,DIQ080,DIQ080 - Diabetes affected eyes/had retinopathy
+DPQ_D.htm,SEQN,SEQN - Respondent sequence number
+DPQ_D.htm,DPQ001,DPQ001 - CHECK ITEM
+DPQ_D.htm,DPQ010,DPQ010 - Little interest in doing things
+DPQ_D.htm,DPQ020,"DPQ020 - Feeling down, depressed, or hopeless"
+DPQ_D.htm,DPQ030,DPQ030 - Trouble sleeping or sleeping too much
+DPQ_D.htm,DPQ040,DPQ040 - Feeling tired or having little energy
+DPQ_D.htm,DPQ050,DPQ050 - Poor appetite or overeating
+DPQ_D.htm,DPQ060,DPQ060 - Feeling bad about yourself
+DPQ_D.htm,DPQ070,DPQ070 - Trouble concentrating on things
+DPQ_D.htm,DPQ080,DPQ080 - Moving or speaking slowly or too fast
+DPQ_D.htm,DPQ090,DPQ090 - Thought you would be better off dead
+DPQ_D.htm,DPQ095,DPQ095 - CHECK ITEM
+DPQ_D.htm,DPQ100,DPQ100 - Difficulty these problems have caused
+DR1TOT_D.htm,SEQN,SEQN - Respondent sequence number
+DR1TOT_D.htm,WTDRD1,WTDRD1 - Dietary day one sample weight
+DR1TOT_D.htm,WTDR2D,WTDR2D - Dietary two-day sample weight
+DR1TOT_D.htm,DR1DRSTZ,DR1DRSTZ - Dietary recall status
+DR1TOT_D.htm,DR1EXMER,DR1EXMER - Interviewer ID code
+DR1TOT_D.htm,DRABF,DRABF - Breast-fed infant (either day)
+DR1TOT_D.htm,DRDINT,DRDINT - Number of days of intake
+DR1TOT_D.htm,DR1DAY,DR1DAY - Intake day of the week
+DR1TOT_D.htm,DR1LANG,DR1LANG - Language respondent used mostly
+DR1TOT_D.htm,DR1MNRSP,DR1MNRSP - Main respondent for this interview
+DR1TOT_D.htm,DR1HELPD,DR1HELPD - Helped in responding for this interview
+DR1TOT_D.htm,DBQ095Z,DBQ095Z - Type of table salt used
+DR1TOT_D.htm,DBD100,DBD100 - How often add salt to food at table
+DR1TOT_D.htm,DRQSPREP,DRQSPREP - Salt used in preparation?
+DR1TOT_D.htm,DRQSDIET,DRQSDIET - On special diet?
+DR1TOT_D.htm,DRQSDT1,DRQSDT1 - Weight loss/Low cal/Low carb/Hi pro diet
+DR1TOT_D.htm,DRQSDT2,DRQSDT2 - Low fat/Low cholesterol diet
+DR1TOT_D.htm,DRQSDT3,DRQSDT3 - Low salt/Low sodium diet
+DR1TOT_D.htm,DRQSDT4,DRQSDT4 - Sugar free/Low sugar diet
+DR1TOT_D.htm,DRQSDT5,DRQSDT5 - Low fiber diet
+DR1TOT_D.htm,DRQSDT6,DRQSDT6 - High fiber diet
+DR1TOT_D.htm,DRQSDT7,DRQSDT7 - Diabetic diet
+DR1TOT_D.htm,DRQSDT8,DRQSDT8 - Weight gain/Muscle building diet
+DR1TOT_D.htm,DRQSDT91,DRQSDT91 - Other special diet
+DR1TOT_D.htm,DR1TNUMF,DR1TNUMF - Number of foods reported
+DR1TOT_D.htm,DR1TKCAL,DR1TKCAL - Energy (kcal)
+DR1TOT_D.htm,DR1TPROT,DR1TPROT - Protein (gm)
+DR1TOT_D.htm,DR1TCARB,DR1TCARB - Carbohydrate (gm)
+DR1TOT_D.htm,DR1TSUGR,DR1TSUGR - Total sugars (gm)
+DR1TOT_D.htm,DR1TFIBE,DR1TFIBE - Dietary fiber (gm)
+DR1TOT_D.htm,DR1TTFAT,DR1TTFAT - Total fat (gm)
+DR1TOT_D.htm,DR1TSFAT,DR1TSFAT - Total saturated fatty acids (gm)
+DR1TOT_D.htm,DR1TMFAT,DR1TMFAT - Total monounsaturated fatty acids (gm)
+DR1TOT_D.htm,DR1TPFAT,DR1TPFAT - Total polyunsaturated fatty acids (gm)
+DR1TOT_D.htm,DR1TCHOL,DR1TCHOL - Cholesterol (mg)
+DR1TOT_D.htm,DR1TATOC,DR1TATOC - Vitamin E as alpha-tocopherol (mg)
+DR1TOT_D.htm,DR1TATOA,DR1TATOA - Added alpha-tocopherol (Vitamin E) (mg)
+DR1TOT_D.htm,DR1TRET,DR1TRET - Retinol (mcg)
+DR1TOT_D.htm,DR1TVARA,"DR1TVARA - Vitamin A, RAE (mcg)"
+DR1TOT_D.htm,DR1TACAR,DR1TACAR - Alpha-carotene (mcg)
+DR1TOT_D.htm,DR1TBCAR,DR1TBCAR - Beta-carotene (mcg)
+DR1TOT_D.htm,DR1TCRYP,DR1TCRYP - Beta-cryptoxanthin (mcg)
+DR1TOT_D.htm,DR1TLYCO,DR1TLYCO - Lycopene (mcg)
+DR1TOT_D.htm,DR1TLZ,DR1TLZ - Lutein + zeaxanthin (mcg)
+DR1TOT_D.htm,DR1TVB1,DR1TVB1 - Thiamin (Vitamin B1) (mg)
+DR1TOT_D.htm,DR1TVB2,DR1TVB2 - Riboflavin (Vitamin B2) (mg)
+DR1TOT_D.htm,DR1TNIAC,DR1TNIAC - Niacin (mg)
+DR1TOT_D.htm,DR1TVB6,DR1TVB6 - Vitamin B6 (mg)
+DR1TOT_D.htm,DR1TFOLA,DR1TFOLA - Total folate (mcg)
+DR1TOT_D.htm,DR1TFA,DR1TFA - Folic acid (mcg)
+DR1TOT_D.htm,DR1TFF,DR1TFF - Food folate (mcg)
+DR1TOT_D.htm,DR1TFDFE,"DR1TFDFE - Folate, DFE (mcg)"
+DR1TOT_D.htm,DR1TCHL,DR1TCHL - Total choline (mg)
+DR1TOT_D.htm,DR1TVB12,DR1TVB12 - Vitamin B12 (mcg)
+DR1TOT_D.htm,DR1TB12A,DR1TB12A - Added vitamin B12 (mcg)
+DR1TOT_D.htm,DR1TVC,DR1TVC - Vitamin C (mg)
+DR1TOT_D.htm,DR1TVK,DR1TVK - Vitamin K (mcg)
+DR1TOT_D.htm,DR1TCALC,DR1TCALC - Calcium (mg)
+DR1TOT_D.htm,DR1TPHOS,DR1TPHOS - Phosphorus (mg)
+DR1TOT_D.htm,DR1TMAGN,DR1TMAGN - Magnesium (mg)
+DR1TOT_D.htm,DR1TIRON,DR1TIRON - Iron (mg)
+DR1TOT_D.htm,DR1TZINC,DR1TZINC - Zinc (mg)
+DR1TOT_D.htm,DR1TCOPP,DR1TCOPP - Copper (mg)
+DR1TOT_D.htm,DR1TSODI,DR1TSODI - Sodium (mg)
+DR1TOT_D.htm,DR1TPOTA,DR1TPOTA - Potassium (mg)
+DR1TOT_D.htm,DR1TSELE,DR1TSELE - Selenium (mcg)
+DR1TOT_D.htm,DR1TCAFF,DR1TCAFF - Caffeine (mg)
+DR1TOT_D.htm,DR1TTHEO,DR1TTHEO - Theobromine (mg)
+DR1TOT_D.htm,DR1TALCO,DR1TALCO - Alcohol (gm)
+DR1TOT_D.htm,DR1TMOIS,DR1TMOIS - Moisture (gm)
+DR1TOT_D.htm,DR1TS040,DR1TS040 - SFA 4:0 (Butanoic) (gm)
+DR1TOT_D.htm,DR1TS060,DR1TS060 - SFA 6:0 (Hexanoic) (gm)
+DR1TOT_D.htm,DR1TS080,DR1TS080 - SFA 8:0 (Octanoic) (gm)
+DR1TOT_D.htm,DR1TS100,DR1TS100 - SFA 10:0 (Decanoic) (gm)
+DR1TOT_D.htm,DR1TS120,DR1TS120 - SFA 12:0 (Dodecanoic) (gm)
+DR1TOT_D.htm,DR1TS140,DR1TS140 - SFA 14:0 (Tetradecanoic) (gm)
+DR1TOT_D.htm,DR1TS160,DR1TS160 - SFA 16:0 (Hexadecanoic) (gm)
+DR1TOT_D.htm,DR1TS180,DR1TS180 - SFA 18:0 (Octadecanoic) (gm)
+DR1TOT_D.htm,DR1TM161,DR1TM161 - MFA 16:1 (Hexadecenoic) (gm)
+DR1TOT_D.htm,DR1TM181,DR1TM181 - MFA 18:1 (Octadecenoic) (gm)
+DR1TOT_D.htm,DR1TM201,DR1TM201 - MFA 20:1 (Eicosenoic) (gm)
+DR1TOT_D.htm,DR1TM221,DR1TM221 - MFA 22:1 (Docosenoic) (gm)
+DR1TOT_D.htm,DR1TP182,DR1TP182 - PFA 18:2 (Octadecadienoic) (gm)
+DR1TOT_D.htm,DR1TP183,DR1TP183 - PFA 18:3 (Octadecatrienoic) (gm)
+DR1TOT_D.htm,DR1TP184,DR1TP184 - PFA 18:4 (Octadecatetraenoic) (gm)
+DR1TOT_D.htm,DR1TP204,DR1TP204 - PFA 20:4 (Eicosatetraenoic) (gm)
+DR1TOT_D.htm,DR1TP205,DR1TP205 - PFA 20:5 (Eicosapentaenoic) (gm)
+DR1TOT_D.htm,DR1TP225,DR1TP225 - PFA 22:5 (Docosapentaenoic) (gm)
+DR1TOT_D.htm,DR1TP226,DR1TP226 - PFA 22:6 (Docosahexaenoic) (gm)
+DR1TOT_D.htm,DR1_300,DR1_300 - Compare food consumed yesterday to usual
+DR1TOT_D.htm,DR1_320Z,DR1_320Z - Total plain water drank yesterday (gm)
+DR1TOT_D.htm,DR1_330Z,DR1_330Z - Total tap water drank yesterday (gm)
+DR1TOT_D.htm,DR1BWATZ,DR1BWATZ - Total bottled water drank yesterday (gm)
+DR1TOT_D.htm,DR1TWS,DR1TWS - Tap water source
+DR1TOT_D.htm,DRD340,DRD340 - Shellfish eaten during past 30 days
+DR1TOT_D.htm,DRD350A,DRD350A - Clams eaten during past 30 days
+DR1TOT_D.htm,DRD350AQ,DRD350AQ - # of times clams eaten in past 30 days
+DR1TOT_D.htm,DRD350B,DRD350B - Crabs eaten during past 30 days
+DR1TOT_D.htm,DRD350BQ,DRD350BQ - # of times crabs eaten in past 30 days
+DR1TOT_D.htm,DRD350C,DRD350C - Crayfish eaten during past 30 days
+DR1TOT_D.htm,DRD350CQ,DRD350CQ - # of times crayfish eaten past 30 days
+DR1TOT_D.htm,DRD350D,DRD350D - Lobsters eaten during past 30 days
+DR1TOT_D.htm,DRD350DQ,DRD350DQ - # of times lobsters eaten past 30 days
+DR1TOT_D.htm,DRD350E,DRD350E - Mussels eaten during past 30 days
+DR1TOT_D.htm,DRD350EQ,DRD350EQ - # of times mussels eaten in past 30 days
+DR1TOT_D.htm,DRD350F,DRD350F - Oysters eaten during past 30 days
+DR1TOT_D.htm,DRD350FQ,DRD350FQ - # of times oysters eaten in past 30 days
+DR1TOT_D.htm,DRD350G,DRD350G - Scallops eaten during past 30 days
+DR1TOT_D.htm,DRD350GQ,DRD350GQ - # of times scallops eaten past 30 days
+DR1TOT_D.htm,DRD350H,DRD350H - Shrimp eaten during past 30 days
+DR1TOT_D.htm,DRD350HQ,DRD350HQ - # of times shrimp eaten in past 30 days
+DR1TOT_D.htm,DRD350I,DRD350I - Other shellfish eaten past 30 days
+DR1TOT_D.htm,DRD350IQ,DRD350IQ - # of times other shellfish eaten
+DR1TOT_D.htm,DRD350J,DRD350J - Other unknown shellfish eaten past 30 d
+DR1TOT_D.htm,DRD350JQ,DRD350JQ - # of times other unknown shellfish eaten
+DR1TOT_D.htm,DRD350K,DRD350K - Refused on shellfish eaten past 30 days
+DR1TOT_D.htm,DRD360,DRD360 - Fish eaten during past 30 days
+DR1TOT_D.htm,DRD370A,DRD370A - Breaded fish products eaten past 30 days
+DR1TOT_D.htm,DRD370AQ,DRD370AQ - # of times breaded fish products eaten
+DR1TOT_D.htm,DRD370B,DRD370B - Tuna eaten during past 30 days
+DR1TOT_D.htm,DRD370BQ,DRD370BQ - # of times tuna eaten in past 30 days
+DR1TOT_D.htm,DRD370C,DRD370C - Bass eaten during past 30 days
+DR1TOT_D.htm,DRD370CQ,DRD370CQ - # of times bass eaten in past 30 days
+DR1TOT_D.htm,DRD370D,DRD370D - Catfish eaten during past 30 days
+DR1TOT_D.htm,DRD370DQ,DRD370DQ - # of times catfish eaten in past 30 days
+DR1TOT_D.htm,DRD370E,DRD370E - Cod eaten during past 30 days
+DR1TOT_D.htm,DRD370EQ,DRD370EQ - # of times cod eaten in past 30 days
+DR1TOT_D.htm,DRD370F,DRD370F - Flatfish eaten during past 30 days
+DR1TOT_D.htm,DRD370FQ,DRD370FQ - # of times flatfish eaten past 30 days
+DR1TOT_D.htm,DRD370G,DRD370G - Haddock eaten during past 30 days
+DR1TOT_D.htm,DRD370GQ,DRD370GQ - # of times haddock eaten in past 30 days
+DR1TOT_D.htm,DRD370H,DRD370H - Mackerel eaten during past 30 days
+DR1TOT_D.htm,DRD370HQ,DRD370HQ - # of times mackerel eaten past 30 days
+DR1TOT_D.htm,DRD370I,DRD370I - Perch eaten during past 30 days
+DR1TOT_D.htm,DRD370IQ,DRD370IQ - # of times perch eaten in past 30 days
+DR1TOT_D.htm,DRD370J,DRD370J - Pike eaten during past 30 days
+DR1TOT_D.htm,DRD370JQ,DRD370JQ - # of times pike eaten in past 30 days
+DR1TOT_D.htm,DRD370K,DRD370K - Pollock eaten during past 30 days
+DR1TOT_D.htm,DRD370KQ,DRD370KQ - # of times pollock eaten in past 30 days
+DR1TOT_D.htm,DRD370L,DRD370L - Porgy eaten during past 30 days
+DR1TOT_D.htm,DRD370LQ,DRD370LQ - # of times porgy eaten in past 30 days
+DR1TOT_D.htm,DRD370M,DRD370M - Salmon eaten during past 30 days
+DR1TOT_D.htm,DRD370MQ,DRD370MQ - # of times salmon eaten in past 30 days
+DR1TOT_D.htm,DRD370N,DRD370N - Sardines eaten during past 30 days
+DR1TOT_D.htm,DRD370NQ,DRD370NQ - # of times sardines eaten past 30 days
+DR1TOT_D.htm,DRD370O,DRD370O - Sea bass eaten during past 30 days
+DR1TOT_D.htm,DRD370OQ,DRD370OQ - # of times sea bass eaten past 30 days
+DR1TOT_D.htm,DRD370P,DRD370P - Shark eaten during past 30 days
+DR1TOT_D.htm,DRD370PQ,DRD370PQ - # of times shark eaten in past 30 days
+DR1TOT_D.htm,DRD370Q,DRD370Q - Swordfish eaten during past 30 days
+DR1TOT_D.htm,DRD370QQ,DRD370QQ - # of times swordfish eaten past 30 days
+DR1TOT_D.htm,DRD370R,DRD370R - Trout eaten during past 30 days
+DR1TOT_D.htm,DRD370RQ,DRD370RQ - # of times trout eaten in past 30 days
+DR1TOT_D.htm,DRD370S,DRD370S - Walleye eaten during past 30 days
+DR1TOT_D.htm,DRD370SQ,DRD370SQ - # of times walleye eaten in past 30 days
+DR1TOT_D.htm,DRD370T,DRD370T - Other fish eaten during past 30 days
+DR1TOT_D.htm,DRD370TQ,DRD370TQ - # of times other fish eaten past 30 days
+DR1TOT_D.htm,DRD370U,DRD370U - Other unknown fish eaten in past 30 days
+DR1TOT_D.htm,DRD370UQ,DRD370UQ - # of times other unknown fish eaten
+DR1TOT_D.htm,DRD370V,DRD370V - Refused on fish eaten past 30 days
+DR2TOT_D.htm,SEQN,SEQN - Respondent sequence number
+DR2TOT_D.htm,WTDRD1,WTDRD1 - Dietary day one sample weight
+DR2TOT_D.htm,WTDR2D,WTDR2D - Dietary two-day sample weight
+DR2TOT_D.htm,DR2DRSTZ,DR2DRSTZ - Dietary recall status
+DR2TOT_D.htm,DR2EXMER,DR2EXMER - Interviewer ID code
+DR2TOT_D.htm,DRABF,DRABF - Breast-fed infant (either day)
+DR2TOT_D.htm,DRDINT,DRDINT - Number of days of intake
+DR2TOT_D.htm,DR2DAY,DR2DAY - Intake day of the week
+DR2TOT_D.htm,DR2LANG,DR2LANG - Language respondent used mostly
+DR2TOT_D.htm,DR2MNRSP,DR2MNRSP - Main respondent for this interview
+DR2TOT_D.htm,DR2HELPD,DR2HELPD - Helped in responding for this interview
+DR2TOT_D.htm,DR2TNUMF,DR2TNUMF - Number of foods reported
+DR2TOT_D.htm,DR2TKCAL,DR2TKCAL - Energy (kcal)
+DR2TOT_D.htm,DR2TPROT,DR2TPROT - Protein (gm)
+DR2TOT_D.htm,DR2TCARB,DR2TCARB - Carbohydrate (gm)
+DR2TOT_D.htm,DR2TSUGR,DR2TSUGR - Total sugars (gm)
+DR2TOT_D.htm,DR2TFIBE,DR2TFIBE - Dietary fiber (gm)
+DR2TOT_D.htm,DR2TTFAT,DR2TTFAT - Total fat (gm)
+DR2TOT_D.htm,DR2TSFAT,DR2TSFAT - Total saturated fatty acids (gm)
+DR2TOT_D.htm,DR2TMFAT,DR2TMFAT - Total monounsaturated fatty acids (gm)
+DR2TOT_D.htm,DR2TPFAT,DR2TPFAT - Total polyunsaturated fatty acids (gm)
+DR2TOT_D.htm,DR2TCHOL,DR2TCHOL - Cholesterol (mg)
+DR2TOT_D.htm,DR2TATOC,DR2TATOC - Vitamin E as alpha-tocopherol (mg)
+DR2TOT_D.htm,DR2TATOA,DR2TATOA - Added alpha-tocopherol (Vitamin E) (mg)
+DR2TOT_D.htm,DR2TRET,DR2TRET - Retinol (mcg)
+DR2TOT_D.htm,DR2TVARA,"DR2TVARA - Vitamin A, RAE (mcg)"
+DR2TOT_D.htm,DR2TACAR,DR2TACAR - Alpha-carotene (mcg)
+DR2TOT_D.htm,DR2TBCAR,DR2TBCAR - Beta-carotene (mcg)
+DR2TOT_D.htm,DR2TCRYP,DR2TCRYP - Beta-cryptoxanthin (mcg)
+DR2TOT_D.htm,DR2TLYCO,DR2TLYCO - Lycopene (mcg)
+DR2TOT_D.htm,DR2TLZ,DR2TLZ - Lutein + zeaxanthin (mcg)
+DR2TOT_D.htm,DR2TVB1,DR2TVB1 - Thiamin (Vitamin B1) (mg)
+DR2TOT_D.htm,DR2TVB2,DR2TVB2 - Riboflavin (Vitamin B2) (mg)
+DR2TOT_D.htm,DR2TNIAC,DR2TNIAC - Niacin (mg)
+DR2TOT_D.htm,DR2TVB6,DR2TVB6 - Vitamin B6 (mg)
+DR2TOT_D.htm,DR2TFOLA,DR2TFOLA - Total folate (mcg)
+DR2TOT_D.htm,DR2TFA,DR2TFA - Folic acid (mcg)
+DR2TOT_D.htm,DR2TFF,DR2TFF - Food folate (mcg)
+DR2TOT_D.htm,DR2TFDFE,"DR2TFDFE - Folate, DFE (mcg)"
+DR2TOT_D.htm,DR2TCHL,DR2TCHL - Total choline (mg)
+DR2TOT_D.htm,DR2TVB12,DR2TVB12 - Vitamin B12 (mcg)
+DR2TOT_D.htm,DR2TB12A,DR2TB12A - Added vitamin B12 (mcg)
+DR2TOT_D.htm,DR2TVC,DR2TVC - Vitamin C (mg)
+DR2TOT_D.htm,DR2TVK,DR2TVK - Vitamin K (mcg)
+DR2TOT_D.htm,DR2TCALC,DR2TCALC - Calcium (mg)
+DR2TOT_D.htm,DR2TPHOS,DR2TPHOS - Phosphorus (mg)
+DR2TOT_D.htm,DR2TMAGN,DR2TMAGN - Magnesium (mg)
+DR2TOT_D.htm,DR2TIRON,DR2TIRON - Iron (mg)
+DR2TOT_D.htm,DR2TZINC,DR2TZINC - Zinc (mg)
+DR2TOT_D.htm,DR2TCOPP,DR2TCOPP - Copper (mg)
+DR2TOT_D.htm,DR2TSODI,DR2TSODI - Sodium (mg)
+DR2TOT_D.htm,DR2TPOTA,DR2TPOTA - Potassium (mg)
+DR2TOT_D.htm,DR2TSELE,DR2TSELE - Selenium (mcg)
+DR2TOT_D.htm,DR2TCAFF,DR2TCAFF - Caffeine (mg)
+DR2TOT_D.htm,DR2TTHEO,DR2TTHEO - Theobromine (mg)
+DR2TOT_D.htm,DR2TALCO,DR2TALCO - Alcohol (gm)
+DR2TOT_D.htm,DR2TMOIS,DR2TMOIS - Moisture (gm)
+DR2TOT_D.htm,DR2TS040,DR2TS040 - SFA 4:0 (Butanoic) (gm)
+DR2TOT_D.htm,DR2TS060,DR2TS060 - SFA 6:0 (Hexanoic) (gm)
+DR2TOT_D.htm,DR2TS080,DR2TS080 - SFA 8:0 (Octanoic) (gm)
+DR2TOT_D.htm,DR2TS100,DR2TS100 - SFA 10:0 (Decanoic) (gm)
+DR2TOT_D.htm,DR2TS120,DR2TS120 - SFA 12:0 (Dodecanoic) (gm)
+DR2TOT_D.htm,DR2TS140,DR2TS140 - SFA 14:0 (Tetradecanoic) (gm)
+DR2TOT_D.htm,DR2TS160,DR2TS160 - SFA 16:0 (Hexadecanoic) (gm)
+DR2TOT_D.htm,DR2TS180,DR2TS180 - SFA 18:0 (Octadecanoic) (gm)
+DR2TOT_D.htm,DR2TM161,DR2TM161 - MFA 16:1 (Hexadecenoic) (gm)
+DR2TOT_D.htm,DR2TM181,DR2TM181 - MFA 18:1 (Octadecenoic) (gm)
+DR2TOT_D.htm,DR2TM201,DR2TM201 - MFA 20:1 (Eicosenoic) (gm)
+DR2TOT_D.htm,DR2TM221,DR2TM221 - MFA 22:1 (Docosenoic) (gm)
+DR2TOT_D.htm,DR2TP182,DR2TP182 - PFA 18:2 (Octadecadienoic) (gm)
+DR2TOT_D.htm,DR2TP183,DR2TP183 - PFA 18:3 (Octadecatrienoic) (gm)
+DR2TOT_D.htm,DR2TP184,DR2TP184 - PFA 18:4 (Octadecatetraenoic) (gm)
+DR2TOT_D.htm,DR2TP204,DR2TP204 - PFA 20:4 (Eicosatetraenoic) (gm)
+DR2TOT_D.htm,DR2TP205,DR2TP205 - PFA 20:5 (Eicosapentaenoic) (gm)
+DR2TOT_D.htm,DR2TP225,DR2TP225 - PFA 22:5 (Docosapentaenoic) (gm)
+DR2TOT_D.htm,DR2TP226,DR2TP226 - PFA 22:6 (Docosahexaenoic) (gm)
+DR2TOT_D.htm,DR2_300,DR2_300 - Compare food consumed yesterday to usual
+DR2TOT_D.htm,DR2_320Z,DR2_320Z - Total plain water drank yesterday (gm)
+DR2TOT_D.htm,DR2_330Z,DR2_330Z - Total tap water drank yesterday (gm)
+DR2TOT_D.htm,DR2BWATZ,DR2BWATZ - Total bottled water drank yesterday (gm)
+DR2TOT_D.htm,DR2TWS,DR2TWS - Tap water source
+DUQ_D.htm,SEQN,SEQN - Respondent sequence number
+DUQ_D.htm,DUAISC,DUAISC - Interview status code
+DUQ_D.htm,DUQ200,DUQ200 - Ever used marijuana or hashish
+DUQ_D.htm,DUQ210,DUQ210 - Age when first tried marijuana
+DUQ_D.htm,DUQ220Q,DUQ220Q - Last time used marijuana or hashish
+DUQ_D.htm,DUQ220U,DUQ220U - Last time used marijuana or hashish/unit
+DUQ_D.htm,DUQ230,DUQ230 - # days used marijuana or hashish/month
+DUQ_D.htm,DUQ240,DUQ240 - Ever used cocaine/heroin/methamphetamine
+DUQ_D.htm,DUQ250,DUQ250 - Ever use any form of cocaine
+DUQ_D.htm,DUQ260,DUQ260 - Age first used cocaine
+DUQ_D.htm,DUQ270Q,"DUQ270Q - Last time you used cocaine, in any form"
+DUQ_D.htm,DUQ270U,DUQ270U - Last time you used cocaine/unit
+DUQ_D.htm,DUQ272,DUQ272 - # of time you used cocaine
+DUQ_D.htm,DUQ280,DUQ280 - # of days used cocaine/month
+DUQ_D.htm,DUQ290,DUQ290 - Ever used heroin
+DUQ_D.htm,DUQ300,DUQ300 - Age first used heroin
+DUQ_D.htm,DUQ310Q,DUQ310Q - Last time used heroin
+DUQ_D.htm,DUQ310U,DUQ310U - Last time used heroin/unit
+DUQ_D.htm,DUQ320,DUQ320 - # of days used heroin/month
+DUQ_D.htm,DUQ330,DUQ330 - Ever used methamphetamine
+DUQ_D.htm,DUQ340,DUQ340 - Age first used methamphetamine
+DUQ_D.htm,DUQ350Q,DUQ350Q - Last time used methamphetamine
+DUQ_D.htm,DUQ350U,DUQ350U - Last time used methamphetamine/unit
+DUQ_D.htm,DUQ352,DUQ352 - # times used methamphetamine
+DUQ_D.htm,DUQ360,DUQ360 - # days used methamphetamine/month
+DUQ_D.htm,DUQ370,DUQ370 - Ever use a needle to inject illegal drug
+DUQ_D.htm,DUQ380A,DUQ380A - Drugs injected - Cocaine
+DUQ_D.htm,DUQ380B,DUQ380B - Drugs injected - Heroin
+DUQ_D.htm,DUQ380C,DUQ380C - Drugs injected - Methamphetamine
+DUQ_D.htm,DUQ380D,DUQ380D - Drugs injected - Steroids
+DUQ_D.htm,DUQ380E,DUQ380E - Drugs injected - Any other drugs
+DUQ_D.htm,DUQ390,DUQ390 - Age first injected drugs
+DUQ_D.htm,DUQ400Q,DUQ400Q - Last time injected drugs
+DUQ_D.htm,DUQ400U,DUQ400U - Last time injected drugs/unit
+DUQ_D.htm,DUQ410,DUQ410 - # times injected drugs/lifetime
+DUQ_D.htm,DUQ420,DUQ420 - How often did you inject drugs
+DUQ_D.htm,DUQ425,DUQ425 - CHECK ITEM
+DUQ_D.htm,DUQ430,DUQ430 - Ever been in rehabilitation program
+DXXAG_D.htm,SEQN,SEQN - Respondent sequence number
+DXXAG_D.htm,DXATRST,DXATRST - Trunk (A/G region) scan status
+DXXAG_D.htm,DXATRTV,DXATRTV - Trunk tissue invalidity code
+DXXAG_D.htm,DXXANFM,DXXANFM - Android fat mass
+DXXAG_D.htm,DXXANLM,DXXANLM - Android lean mass
+DXXAG_D.htm,DXXANTOM,DXXANTOM - Android total mass
+DXXAG_D.htm,DXXGYFM,DXXGYFM - Gynoid fat mass
+DXXAG_D.htm,DXXGYLM,DXXGYLM - Gynoid lean mass
+DXXAG_D.htm,DXXGYTOM,DXXGYTOM - Gynoid total mass
+DXXAG_D.htm,DXXAGRAT,DXXAGRAT - Android to Gynoid ratio
+DXXAG_D.htm,DXXAPFAT,DXXAPFAT - Android percent fat
+DXXAG_D.htm,DXXGPFAT,DXXGPFAT - Gynoid percent fat
+dxx_d.htm,SEQN,SEQN - Respondent sequence number
+dxx_d.htm,_MULT_,_MULT_ - Imputation Version
+dxx_d.htm,DXAEXSTS,DXAEXSTS - Exam Status
+dxx_d.htm,DXITOTST,DXITOTST - Soft Tissue Imputation Indicator
+dxx_d.htm,DXITOTBN,DXITOTBN - Bone Imputation Indicator
+dxx_d.htm,DXIHE,DXIHE - Head Imputation Indicator
+dxx_d.htm,DXXHEA,DXXHEA - Head Area (cm^2)
+dxx_d.htm,DXAHEBV,DXAHEBV - Head Bone Invalidity Code
+dxx_d.htm,DXXHEBMC,DXXHEBMC - Head Bone Mineral Content (g)
+dxx_d.htm,DXXHEBMD,DXXHEBMD - Head Bone Mineral Density (g/cm^2)
+dxx_d.htm,DXAHETV,DXAHETV - Head Tissue Invalidity Code
+dxx_d.htm,DXXHEFAT,DXXHEFAT - Head Fat (g)
+dxx_d.htm,DXDHELE,DXDHELE - Head Lean excl BMC (g)
+dxx_d.htm,DXXHELI,DXXHELI - Head Lean incl BMC (g)
+dxx_d.htm,DXDHETOT,DXDHETOT - Head Total (g)
+dxx_d.htm,DXDHEPF,DXDHEPF - Head Percent Fat
+dxx_d.htm,DXILA,DXILA - Left Arm Imputation Indicator
+dxx_d.htm,DXXLAA,DXXLAA - Left Arm Area (cm^2)
+dxx_d.htm,DXALABV,DXALABV - Left Arm Bone Invalidity Code
+dxx_d.htm,DXXLABMC,DXXLABMC - Left Arm BMC (g)
+dxx_d.htm,DXXLABMD,DXXLABMD - Left Arm BMD (g/cm^2)
+dxx_d.htm,DXALATV,DXALATV - Left Arm Tissue Invalidity Code
+dxx_d.htm,DXXLAFAT,DXXLAFAT - Left Arm Fat (g)
+dxx_d.htm,DXDLALE,DXDLALE - Left Arm Lean excl BMC (g)
+dxx_d.htm,DXXLALI,DXXLALI - Left Arm Lean incl BMC (g)
+dxx_d.htm,DXDLATOT,DXDLATOT - Left Arm Total (g)
+dxx_d.htm,DXDLAPF,DXDLAPF - Left Arm Percent Fat
+dxx_d.htm,DXILL,DXILL - Left Leg Imputation Indicator
+dxx_d.htm,DXXLLA,DXXLLA - Left Leg Area (cm^2)
+dxx_d.htm,DXALLBV,DXALLBV - Left Leg Bone Invalidity Code
+dxx_d.htm,DXXLLBMC,DXXLLBMC - Left Leg BMC (g)
+dxx_d.htm,DXXLLBMD,DXXLLBMD - Left Leg BMD (g/cm^2)
+dxx_d.htm,DXALLTV,DXALLTV - Left Leg Tissue Invalidity Code
+dxx_d.htm,DXXLLFAT,DXXLLFAT - Left Leg Fat (g)
+dxx_d.htm,DXDLLLE,DXDLLLE - Left Leg Lean excl BMC (g)
+dxx_d.htm,DXXLLLI,DXXLLLI - Left Leg Lean incl BMC (g)
+dxx_d.htm,DXDLLTOT,DXDLLTOT - Left Leg Total (g)
+dxx_d.htm,DXDLLPF,DXDLLPF - Left Leg Percent Fat
+dxx_d.htm,DXIRA,DXIRA - Right Arm Imputation Indicator
+dxx_d.htm,DXXRAA,DXXRAA - Right Arm Area (cm^2)
+dxx_d.htm,DXARABV,DXARABV - Right Arm Bone Invalidity Code
+dxx_d.htm,DXXRABMC,DXXRABMC - Right Arm BMC (g)
+dxx_d.htm,DXXRABMD,DXXRABMD - Right Arm BMD (g/cm^2)
+dxx_d.htm,DXARATV,DXARATV - Right Arm Tissue Invalidity Code
+dxx_d.htm,DXXRAFAT,DXXRAFAT - Right Arm Fat (g)
+dxx_d.htm,DXDRALE,DXDRALE - Right Arm Lean excl BMC (g)
+dxx_d.htm,DXXRALI,DXXRALI - Right Arm Lean incl BMC (g)
+dxx_d.htm,DXDRATOT,DXDRATOT - Right Arm Total (g)
+dxx_d.htm,DXDRAPF,DXDRAPF - Right Arm Percent Fat
+dxx_d.htm,DXIRL,DXIRL - Right Leg Imputation Indicator
+dxx_d.htm,DXXRLA,DXXRLA - Right Leg Area (cm^2)
+dxx_d.htm,DXARLBV,DXARLBV - Right Leg Bone Invalidity Code
+dxx_d.htm,DXXRLBMC,DXXRLBMC - Right Leg BMC (g)
+dxx_d.htm,DXXRLBMD,DXXRLBMD - Right Leg BMD(g/cm^2)
+dxx_d.htm,DXARLTV,DXARLTV - Right Leg Tissue Invalidity Code
+dxx_d.htm,DXXRLFAT,DXXRLFAT - Right Leg Fat (g)
+dxx_d.htm,DXDRLLE,DXDRLLE - Right Leg Lean excl BMC (g)
+dxx_d.htm,DXXRLLI,DXXRLLI - Right Leg Lean incl BMC (g)
+dxx_d.htm,DXDRLTOT,DXDRLTOT - Right Leg Total (g)
+dxx_d.htm,DXDRLPF,DXDRLPF - Right Leg Percent Fat
+dxx_d.htm,DXILR,DXILR - Left Ribs Imputation Indicator
+dxx_d.htm,DXXLRA,DXXLRA - Left Ribs Area (cm^2)
+dxx_d.htm,DXXLRBMC,DXXLRBMC - Left Ribs BMC (g)
+dxx_d.htm,DXXLRBMD,DXXLRBMD - Left Ribs BMD (g/cm^2)
+dxx_d.htm,DXIRR,DXIRR - Right Ribs Imputation Indicator
+dxx_d.htm,DXXRRA,DXXRRA - Right Ribs Area (cm^2)
+dxx_d.htm,DXXRRBMC,DXXRRBMC - Right Ribs BMC (g)
+dxx_d.htm,DXXRRBMD,DXXRRBMD - Right Ribs BMD (g/cm^2)
+dxx_d.htm,DXITS,DXITS - Thoracic Spine Imputation Indicator
+dxx_d.htm,DXXTSA,DXXTSA - Thoracic Spine Area (cm^2)
+dxx_d.htm,DXXTSBMC,DXXTSBMC - Thoracic Spine BMC (g)
+dxx_d.htm,DXXTSBMD,DXXTSBMD - Thoracic Spine BMD (g/cm^2)
+dxx_d.htm,DXILS,DXILS - Lumbar Spine Imputation Indicator
+dxx_d.htm,DXXLSA,DXXLSA - Lumbar Spine Area (cm^2)
+dxx_d.htm,DXXLSBMC,DXXLSBMC - Lumbar Spine BMC (g)
+dxx_d.htm,DXXLSBMD,DXXLSBMD - Lumbar Spine BMD (g/cm^2)
+dxx_d.htm,DXIPE,DXIPE - Pelvis Imputation Indicator
+dxx_d.htm,DXXPEA,DXXPEA - Pelvis Area (cm^2)
+dxx_d.htm,DXXPEBMC,DXXPEBMC - Pelvis BMC (g)
+dxx_d.htm,DXXPEBMD,DXXPEBMD - Pelvis BMD (g/cm^2)
+dxx_d.htm,DXITR,DXITR - Trunk Imputation Indicator
+dxx_d.htm,DXDTRA,DXDTRA - Trunk Bone area (cm^2)
+dxx_d.htm,DXATRBV,DXATRBV - Trunk Bone Invalidity Code
+dxx_d.htm,DXDTRBMC,DXDTRBMC - Trunk BMC (g)
+dxx_d.htm,DXDTRBMD,DXDTRBMD - Trunk Bone BMD (g/cm^2)
+dxx_d.htm,DXATRTV,DXATRTV - Trunk Tissue Invalidity Code
+dxx_d.htm,DXXTRFAT,DXXTRFAT - Trunk Fat (g)
+dxx_d.htm,DXDTRLE,DXDTRLE - Trunk Lean excl BMC (g)
+dxx_d.htm,DXXTRLI,DXXTRLI - Trunk Lean incl BMC (g)
+dxx_d.htm,DXDTRTOT,DXDTRTOT - Trunk Total (g)
+dxx_d.htm,DXDTRPF,DXDTRPF - Trunk Percent Fat
+dxx_d.htm,DXDSTA,DXDSTA - Subtotal Area (cm^2)
+dxx_d.htm,DXDSTBMC,DXDSTBMC - Subtotal BMC (g)
+dxx_d.htm,DXDSTBMD,DXDSTBMD - Subtotal BMD (g/cm^2)
+dxx_d.htm,DXDSTFAT,DXDSTFAT - Subtotal Fat (g)
+dxx_d.htm,DXDSTLE,DXDSTLE - Subtotal Lean excl BMC (g)
+dxx_d.htm,DXDSTLI,DXDSTLI - Subtotal Lean incl BMC (g)
+dxx_d.htm,DXDSTTOT,DXDSTTOT - Subtotal (Total excl Head) (g)
+dxx_d.htm,DXDSTPF,DXDSTPF - Subtotal Percent Fat
+dxx_d.htm,DXDTOA,DXDTOA - Total Area (cm^2)
+dxx_d.htm,DXDTOBMC,DXDTOBMC - Total Bone Mineral Content (g)
+dxx_d.htm,DXDTOBMD,DXDTOBMD - Total Bone Mineral Density (g/cm^2)
+dxx_d.htm,DXDTOFAT,DXDTOFAT - Total Fat (g)
+dxx_d.htm,DXDTOLE,DXDTOLE - Total Lean excl BMC (g)
+dxx_d.htm,DXDTOLI,DXDTOLI - Total Lean incl BMC (g)
+dxx_d.htm,DXDTOTOT,DXDTOTOT - Total Lean+Fat (g)
+dxx_d.htm,DXDTOPF,DXDTOPF - Total Percent Fat
+EPH_D.htm,SEQN,SEQN - Respondent sequence number
+EPH_D.htm,WTSB2YR,WTSB2YR - Two-year MEC weights of subsample B
+EPH_D.htm,URXUCR,URXUCR - Urinary creatinine
+EPH_D.htm,URXBPH,URXBPH - Urinary Bisphenol A (ng/mL)
+EPH_D.htm,URDBPHLC,URDBPHLC - Urinary Bisphenol A comment
+EPH_D.htm,URXBP3,URXBP3 - Urinary Benzophenone-3 (ng/mL)
+EPH_D.htm,URDBP3LC,URDBP3LC - Urinary Benzophenone-3 comment
+EPH_D.htm,URX4TO,URX4TO - Urinary 4-tert-octylphenol (ng/mL)
+EPH_D.htm,URD4TOLC,URD4TOLC - Urinary 4-tert-octylphenol comment
+EPH_D.htm,URXTRS,URXTRS - Urinary Triclosan (ng/mL)
+EPH_D.htm,URDTRSLC,URDTRSLC - Urinary Triclosan comment
+EPH_D.htm,URXBUP,URXBUP - Butyl paraben (ng/ml)
+EPH_D.htm,URDBUPLC,URDBUPLC - Butyl paraben comment
+EPH_D.htm,URXEPB,URXEPB - Ethyl paraben  (ng/ml)
+EPH_D.htm,URDEPBLC,URDEPBLC - Ethyl paraben comment
+EPH_D.htm,URXMPB,URXMPB - Methyl paraben (ng/ml)
+EPH_D.htm,URDMPBLC,URDMPBLC - Methyl paraben comment
+EPH_D.htm,URXPPB,URXPPB - Propyl paraben (ng/ml)
+EPH_D.htm,URDPPBLC,URDPPBLC - Propyl paraben comment
+EPP_D.htm,SEQN,SEQN - Respondent sequence number
+EPP_D.htm,LBXEPP,LBXEPP - Protoporphyrin(ug/dL RBC)
+EPP_D.htm,LBDEPPSI,LBDEPPSI - Protoporphyrin (umol/L RBC)
+FERTIN_D.htm,SEQN,SEQN - Respondent sequence number
+FERTIN_D.htm,LBXFER,LBXFER - Ferritin(ng/mL)
+FERTIN_D.htm,LBDFERSI,LBDFERSI - Ferritin(ug/L)
+GHB_D.htm,SEQN,SEQN - Respondent sequence number
+GHB_D.htm,LBXGH,LBXGH - Glycohemoglobin (%)
+HDL_D.htm,SEQN,SEQN - Respondent sequence number
+HDL_D.htm,LBDHDD,LBDHDD - Direct HDL-Cholesterol (mg/dL)
+HDL_D.htm,LBDHDDSI,LBDHDDSI - Direct HDL-Cholesterol (mmol/L)
+HIQ_D.htm,SEQN,SEQN - Respondent sequence number
+HIQ_D.htm,HIQ011,HIQ011 - Covered by health insurance
+HIQ_D.htm,HIQ031A,HIQ031A - Covered by private insurance
+HIQ_D.htm,HIQ031B,HIQ031B - Covered by Medicare
+HIQ_D.htm,HIQ031C,HIQ031C - Covered by Medi-Gap
+HIQ_D.htm,HIQ031D,HIQ031D - Covered by Medicaid
+HIQ_D.htm,HIQ031E,HIQ031E - Covered by SCHIP
+HIQ_D.htm,HIQ031F,HIQ031F - Covered by military health care
+HIQ_D.htm,HIQ031G,HIQ031G - Covered by Indian Health Service
+HIQ_D.htm,HIQ031H,HIQ031H - Covered by state-sponsored health plan
+HIQ_D.htm,HIQ031I,HIQ031I - Covered by other government insurance
+HIQ_D.htm,HIQ031J,HIQ031J - Covered by single service plan
+HIQ_D.htm,HIQ031AA,HIQ031AA - No coverage of any type
+HIQ_D.htm,HIQ065,HIQ065 - Check item
+HIQ_D.htm,HIQ259,HIQ259 - Check item
+HIQ_D.htm,HIQ260,HIQ260 - Have Medicare?
+HIQ_D.htm,HIQ105,HIQ105 - Insurance card available or not
+HIQ_D.htm,HIQ269,HIQ269 - Check item
+HIQ_D.htm,HIQ270,HIQ270 - Do plans cover prescriptions?
+HIQ_D.htm,HIQ210,HIQ210 - Time when no insurance in past year?
+HSQ_D.htm,SEQN,SEQN - Respondent sequence number
+HSQ_D.htm,HSD010,HSD010 - General health condition
+HSQ_D.htm,HSQ470,HSQ470 - no. of days physical health was not good
+HSQ_D.htm,HSQ480,HSQ480 - no. of days mental health was not good
+HSQ_D.htm,HSQ490,HSQ490 - inactive days due to phys./mental hlth
+HSQ_D.htm,HSQ500,HSQ500 - SP have head cold or chest cold
+HSQ_D.htm,HSQ510,HSQ510 - SP have stomach or intestinal illness?
+HSQ_D.htm,HSQ520,"HSQ520 - SP have flu, pneumonia, ear infection?"
+HSQ_D.htm,HSQ571,HSQ571 - SP donated blood in past 12 months?
+HSQ_D.htm,HSQ580,HSQ580 - How long ago was last blood donation?
+HSQ_D.htm,HSQ590,HSQ590 - Blood ever tested for HIV virus?
+HSQ_D.htm,HSAQUEX,HSAQUEX - Source of Health Status Data
+HUQ_D.htm,SEQN,SEQN - Respondent sequence number
+HUQ_D.htm,HUQ010,HUQ010 - General health condition
+HUQ_D.htm,HUQ015,HUQ015 - CHECK ITEM
+HUQ_D.htm,HUQ020,HUQ020 - Health now compared with 1 year ago
+HUQ_D.htm,HUQ030,HUQ030 - Routine place to go for healthcare
+HUQ_D.htm,HUQ040,HUQ040 - Type place most often go for healthcare
+HUQ_D.htm,HUQ050,HUQ050 - #times receive healthcare over past year
+HUQ_D.htm,HUQ060,HUQ060 - How long since last healthcare visit
+HUQ_D.htm,HUQ071,HUQ071 - Overnite hospital patient in last year
+HUQ_D.htm,HUD080,HUD080 - #times overnite hospital patient/last yr
+HUQ_D.htm,HUQ085,HUQ085 - CHECK ITEM
+HUQ_D.htm,HUQ090,HUQ090 - Seen mental health professional/past yr
+KIQ_U_D.htm,SEQN,SEQN - Respondent sequence number
+KIQ_U_D.htm,KIQ022,KIQ022 - Ever told you had weak/failing kidneys
+KIQ_U_D.htm,KIQ025,KIQ025 - Received dialysis in past 12 months
+KIQ_U_D.htm,KIQ005,KIQ005 - How often have urinary leakage
+KIQ_U_D.htm,KIQ010,KIQ010 - How much urine lose each time?
+KIQ_U_D.htm,KIQ042,KIQ042 - Leak urine during physical activities
+KIQ_U_D.htm,KIQ430,KIQ430 - How frequently does this occur?
+KIQ_U_D.htm,KIQ044,KIQ044 - Urinated before reaching the toilet
+KIQ_U_D.htm,KIQ450,KIQ450 - How frequently does this occur?
+KIQ_U_D.htm,KIQ046,KIQ046 - Leak urine during nonphysical activities
+KIQ_U_D.htm,KIQ470,KIQ470 - How frequently does this occur?
+KIQ_U_D.htm,KIQ048A,KIQ048A - CHECK ITEM
+KIQ_U_D.htm,KIQ050,KIQ050 - How much did urine leakage bother you
+KIQ_U_D.htm,KIQ052,KIQ052 - How much were daily activities affected
+KIQ_U_D.htm,KIQ480,KIQ480 - How many times urinate in night?
+MCQ_D.htm,SEQN,SEQN - Respondent sequence number
+MCQ_D.htm,MCQ010,MCQ010 - Ever been told you have asthma
+MCQ_D.htm,MCQ025,MCQ025 - Age when first had asthma
+MCQ_D.htm,MCQ035,MCQ035 - Still have asthma
+MCQ_D.htm,MCQ040,MCQ040 - Had asthma attack in past year
+MCQ_D.htm,MCQ050,MCQ050 - Emergency care visit for asthma/past yr
+MCQ_D.htm,MCQ053,MCQ053 - Taking treatment for anemia/past 3 mos
+MCQ_D.htm,MCQ080,MCQ080 - Doctor ever said you were overweight
+MCQ_D.htm,MCQ092,MCQ092 - Ever receive blood transfusion
+MCQ_D.htm,MCD093,MCD093 - Year receive blood transfusion
+MCQ_D.htm,MCQ140,MCQ140 - Trouble seeing even with glass/contacts
+MCQ_D.htm,MCQ149,MCQ149 - Menstrual periods started yet?
+MCQ_D.htm,MCQ150G,MCQ150G - School days missed from injury/illness
+MCQ_D.htm,MCQ150Q,MCQ150Q - # school days missed from injury/illness
+MCQ_D.htm,MCQ160A,MCQ160A - Doctor ever said you had arthritis
+MCQ_D.htm,MCQ160B,MCQ160B - Ever told had congestive heart failure
+MCQ_D.htm,MCQ160C,MCQ160C - Ever told you had coronary heart disease
+MCQ_D.htm,MCQ160D,MCQ160D - Ever told you had angina/angina pectoris
+MCQ_D.htm,MCQ160E,MCQ160E - Ever told you had heart attack
+MCQ_D.htm,MCQ160F,MCQ160F - Ever told you had a stroke
+MCQ_D.htm,MCQ160G,MCQ160G - Ever told you had emphysema
+MCQ_D.htm,MCQ160K,MCQ160K - Ever told you had chronic bronchitis
+MCQ_D.htm,MCQ160L,MCQ160L - Ever told you had any liver condition
+MCQ_D.htm,MCQ160M,MCQ160M - Ever told you had a thyroid problem
+MCQ_D.htm,MCQ170K,MCQ170K - Do you still have chronic bronchitis
+MCQ_D.htm,MCQ170L,MCQ170L - Do you still have a liver condition
+MCQ_D.htm,MCQ170M,MCQ170M - Do you still have a thyroid problem
+MCQ_D.htm,MCQ180A,MCQ180A - Age when told you had arthritis
+MCQ_D.htm,MCQ180B,MCQ180B - Age when told you had heart failure
+MCQ_D.htm,MCQ180C,MCQ180C - Age when told had coronary heart disease
+MCQ_D.htm,MCQ180D,MCQ180D - Age when told you had angina pectoris
+MCQ_D.htm,MCQ180E,MCQ180E - Age when told you had heart attack
+MCQ_D.htm,MCQ180F,MCQ180F - Age when told you had a stroke
+MCQ_D.htm,MCQ180G,MCQ180G - Age when told you had emphysema
+MCQ_D.htm,MCQ180K,MCQ180K - Age when told you had chronic bronchitis
+MCQ_D.htm,MCQ180L,MCQ180L - Age when told you had a liver condition
+MCQ_D.htm,MCQ180M,MCQ180M - Age when told you had a thyroid problem
+MCQ_D.htm,MCQ190,MCQ190 - Which type of arthritis
+MCQ_D.htm,MCQ220,MCQ220 - Ever told you had cancer or malignancy
+MCQ_D.htm,MCQ230A,MCQ230A - What kind of cancer
+MCQ_D.htm,MCQ230B,MCQ230B - What kind of cancer
+MCQ_D.htm,MCQ230C,MCQ230C - What kind of cancer
+MCQ_D.htm,MCQ230D,MCQ230D - What kind of cancer
+MCQ_D.htm,MCQ240A,MCQ240A - Age when bladder cancer first diagnosed
+MCQ_D.htm,MCQ240B,MCQ240B - Age when blood cancer first diagnosed
+MCQ_D.htm,MCQ240C,MCQ240C - Age when bone cancer first diagnosed
+MCQ_D.htm,MCQ240D,MCQ240D - Age when brain cancer first diagnosed
+MCQ_D.htm,MCQ240E,MCQ240E - Age when breast cancer first diagnosed
+MCQ_D.htm,MCQ240F,MCQ240F - Age when cervical cancer first diagnosed
+MCQ_D.htm,MCQ240G,MCQ240G - Age when colon cancer first diagnosed
+MCQ_D.htm,MCQ240H,MCQ240H - Age esophageal cancer first diagnosed
+MCQ_D.htm,MCQ240I,MCQ240I - Age gallbladder cancer first diagnosed
+MCQ_D.htm,MCQ240J,MCQ240J - Age when kidney cancer first diagnosed
+MCQ_D.htm,MCQ240K,MCQ240K - Age larynx/windpipe cancer diagnosed
+MCQ_D.htm,MCQ240L,MCQ240L - Age when leukemia first diagnosed
+MCQ_D.htm,MCQ240M,MCQ240M - Age when liver cancer first diagnosed
+MCQ_D.htm,MCQ240N,MCQ240N - Age when lung cancer first diagnosed
+MCQ_D.htm,MCQ240O,MCQ240O - Age lymphoma/Hodgkin's diagnosed
+MCQ_D.htm,MCQ240P,MCQ240P - Age when melanoma first diagnosed
+MCQ_D.htm,MCQ240Q,MCQ240Q - Age mouth\tongue\lip cancer diagnosed
+MCQ_D.htm,MCQ240R,MCQ240R - Age nervous system cancer diagnosed
+MCQ_D.htm,MCQ240S,MCQ240S - Age when ovarian cancer first diagnosed
+MCQ_D.htm,MCQ240T,MCQ240T - Age pancreatic cancer first diagnosed
+MCQ_D.htm,MCQ240U,MCQ240U - Age prostate cancer first diagnosed
+MCQ_D.htm,MCQ240V,MCQ240V - Age when rectal cancer first diagnosed
+MCQ_D.htm,MCQ240W,MCQ240W - Age non-melanoma skin cancer diagnosed
+MCQ_D.htm,MCQ240X,MCQ240X - Age unknown skin cancer first diagnosed
+MCQ_D.htm,MCQ240Y,MCQ240Y - Age soft tissue cancer first diagnosed
+MCQ_D.htm,MCQ240Z,MCQ240Z - Age stomach cancer first diagnosed
+MCQ_D.htm,MCQ240AA,MCQ240AA - Age testicular cancer first diagnosed
+MCQ_D.htm,MCQ240BB,MCQ240BB - Age when thyroid cancer first diagnosed
+MCQ_D.htm,MCQ240CC,MCQ240CC - Age when uterine cancer first diagnosed
+MCQ_D.htm,MCQ240DD,MCQ240DD - Age other type of cancer first diagnosed
+MCQ_D.htm,MCQ240DK,MCQ240DK - How old when cancer first diagnosed?
+MCQ_D.htm,MCQ245A,MCQ245A - Work days missed for illness/maternity
+MCQ_D.htm,MCQ245B,MCQ245B - # of workdays missed
+MCQ_D.htm,MCQ265,MCQ265 - Blood relative have/had prostate cancer
+MCQ_D.htm,MCQ268A,MCQ268A - Biological family members - father
+MCQ_D.htm,MCQ268B,MCQ268B - Biological family member-mother's father
+MCQ_D.htm,MCQ268C,MCQ268C - Biological family member-father's father
+MCQ_D.htm,MCQ268D,MCQ268D - Biological family member - brother
+MCQ_D.htm,MCQ300A,MCQ300A - Close relative had heart attack?
+MCQ_D.htm,MCQ300B,MCQ300B - Close relative had asthma?
+MCQ_D.htm,MCQ300C,MCQ300C - Close relative had diabetes?
+MCQ_D.htm,MCQ310,MCQ310 - Ever have blood test to check PSA?
+MCQ_D.htm,MCQ320,MCQ320 - Age when first had PSA test
+MCQ_D.htm,MCD330,MCD330 - How long ago was last PSA test?
+MCQ_D.htm,MCQ340,MCQ340 - How many PSA tests in past 5 years?
+MCQ_D.htm,MCQ350,MCQ350 - Ever told PSA test was not normal?
+OCQ_D.htm,SEQN,SEQN - Respondent sequence number
+OCQ_D.htm,OCD150,OCD150 - Type of work done last week
+OCQ_D.htm,OCQ180,OCQ180 - Hours worked last week at all jobs
+OCQ_D.htm,OCQ200,OCQ200 - Check Item
+OCQ_D.htm,OCQ210,OCQ210 - Usually work 35 or more hours per week
+OCQ_D.htm,OCD231,OCD231 - Industry group code: current job
+OCQ_D.htm,OCD241,OCD241 - Occupation group code: current job
+OCQ_D.htm,OCQ260,OCQ260 - Description of job/work situation
+OCQ_D.htm,OCQ265,OCQ265 - Which best describes hours worked?
+OCQ_D.htm,OCD270,OCD270 - Number of months working in the main job
+OCQ_D.htm,OCQ290G,OCQ290G - Smell tobacco smoke at work
+OCQ_D.htm,OCQ290Q,OCQ290Q - # Hrs/day smell tobacco smoke at work
+OCQ_D.htm,OCQ370,OCQ370 - Check Item
+OCQ_D.htm,OCQ380,OCQ380 - Main reason did not work last week
+OCQ_D.htm,OCD390G,OCD390G - Kind of work you have done the longest
+OCQ_D.htm,OCD392,OCD392 - Occupation group code: longest job
+OCQ_D.htm,OCD395,OCD395 - Duration of longest job (months)
+OHQ_D.htm,SEQN,SEQN - Respondent sequence number
+OHQ_D.htm,OHQ011,OHQ011 - Condition of teeth
+OHQ_D.htm,OHQ620,OHQ620 - How often last yr. had aching in mouth?
+OHQ_D.htm,OHQ630,OHQ630 - How often felt bad because of mouth?
+OHQ_D.htm,OHQ640,OHQ640 - Last yr had diff w/ job because of mouth
+OHQ_D.htm,OHQ650,OHQ650 - Last yr taste affected because of mouth
+OHQ_D.htm,OHQ660,OHQ660 - Last yr avoid some food because of mouth
+OHQ_D.htm,OHQ670,OHQ670 - Last yr couldn't eat because of mouth
+OHQ_D.htm,OHQ680,OHQ680 - Last yr embarrassed because of mouth
+OHX_D.htm,SEQN,SEQN - Respondent sequence number
+OHX_D.htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHX_D.htm,OHX08HTC,OHX08HTC - Tooth count: #8
+OHX_D.htm,OHX07HTC,OHX07HTC - Tooth count: #7
+OHX_D.htm,OHX06HTC,OHX06HTC - Tooth count: #6
+OHX_D.htm,OHX05HTC,OHX05HTC - Tooth count: #5
+OHX_D.htm,OHX04HTC,OHX04HTC - Tooth count: #4
+OHX_D.htm,OHX03HTC,OHX03HTC - Tooth count: #3
+OHX_D.htm,OHX02HTC,OHX02HTC - Tooth count: #2
+OHX_D.htm,OHX01HTC,OHX01HTC - Tooth count: #1
+OHX_D.htm,OHX09HTC,OHX09HTC - Tooth count: #9
+OHX_D.htm,OHX10HTC,OHX10HTC - Tooth count: #10
+OHX_D.htm,OHX11HTC,OHX11HTC - Tooth count: #11
+OHX_D.htm,OHX12HTC,OHX12HTC - Tooth count: #12
+OHX_D.htm,OHX13HTC,OHX13HTC - Tooth count: #13
+OHX_D.htm,OHX14HTC,OHX14HTC - Tooth count: #14
+OHX_D.htm,OHX15HTC,OHX15HTC - Tooth count: #15
+OHX_D.htm,OHX16HTC,OHX16HTC - Tooth count: #16
+OHX_D.htm,OHX24HTC,OHX24HTC - Tooth count: #24
+OHX_D.htm,OHX23HTC,OHX23HTC - Tooth count: #23
+OHX_D.htm,OHX22HTC,OHX22HTC - Tooth count: #22
+OHX_D.htm,OHX21HTC,OHX21HTC - Tooth count: #21
+OHX_D.htm,OHX20HTC,OHX20HTC - Tooth count: #20
+OHX_D.htm,OHX19HTC,OHX19HTC - Tooth count: #19
+OHX_D.htm,OHX18HTC,OHX18HTC - Tooth count: #18
+OHX_D.htm,OHX17HTC,OHX17HTC - Tooth count: #17
+OHX_D.htm,OHX25HTC,OHX25HTC - Tooth count: #25
+OHX_D.htm,OHX26HTC,OHX26HTC - Tooth count: #26
+OHX_D.htm,OHX27HTC,OHX27HTC - Tooth count: #27
+OHX_D.htm,OHX28HTC,OHX28HTC - Tooth count: #28
+OHX_D.htm,OHX29HTC,OHX29HTC - Tooth count: #29
+OHX_D.htm,OHX30HTC,OHX30HTC - Tooth count: #30
+OHX_D.htm,OHX31HTC,OHX31HTC - Tooth count: #31
+OHX_D.htm,OHX32HTC,OHX32HTC - Tooth count: #32
+OHX_D.htm,OHXDECAY,OHXDECAY - Dental decay present
+OHX_D.htm,OHXREST,OHXREST - Dental restoration present
+OHX_D.htm,OHXSEAL,OHXSEAL - Dental sealant present
+OHX_D.htm,OHXFCRZ1,OHXFCRZ1 - Right - Zone 1
+OHX_D.htm,OHXFCRZ2,OHXFCRZ2 - Right - Zone 2
+OHX_D.htm,OHXFCRZ3,OHXFCRZ3 - Right - Zone 3
+OHX_D.htm,OHXFCRZ4,OHXFCRZ4 - Right - Zone 4
+OHX_D.htm,OHXFCRZ5,OHXFCRZ5 - Right - Zone 5
+OHX_D.htm,OHXFCRZ6,OHXFCRZ6 - Right - Zone 6
+OHX_D.htm,OHXFCRZ7,OHXFCRZ7 - Right - Zone 7
+OHX_D.htm,OHXFCRZ8,OHXFCRZ8 - Right - Zone 8
+OHX_D.htm,OHXFCLZ1,OHXFCLZ1 - Left - Zone 1
+OHX_D.htm,OHXFCLZ2,OHXFCLZ2 - Left - Zone 2
+OHX_D.htm,OHXFCLZ3,OHXFCLZ3 - Left - Zone 3
+OHX_D.htm,OHXFCLZ4,OHXFCLZ4 - Left - Zone 4
+OHX_D.htm,OHXFCLZ5,OHXFCLZ5 - Left - Zone 5
+OHX_D.htm,OHXFCLZ6,OHXFCLZ6 - Left - Zone 6
+OHX_D.htm,OHXFCLZ7,OHXFCLZ7 - Left - Zone 7
+OHX_D.htm,OHXFCLZ8,OHXFCLZ8 - Left - Zone 8
+OHX_D.htm,OHXFCANT,OHXFCANT - Anterior Zone:
+OHX_D.htm,OHQ410,OHQ410 - Removable complete/partial max denture
+OHX_D.htm,OHQ420,OHQ420 - Wears complete/partial max denture
+OHX_D.htm,OHQ430,OHQ430 - Removable complete/partial mand. denture
+OHX_D.htm,OHQ440,OHQ440 - Wears complete/partial Mand. denture
+OHX_D.htm,OHAPOS,OHAPOS - Was participant exam position recumbent
+OSQ_D.htm,SEQN,SEQN - Respondent sequence number
+OSQ_D.htm,OSQ010a,OSQ010a - Broken or fractured a hip
+OSQ_D.htm,OSQ010b,OSQ010b - Broken or fractured a wrist
+OSQ_D.htm,OSQ010c,OSQ010c - Broken or fractured spine
+OSQ_D.htm,OSQ020a,OSQ020a - # Times broken/fractured hip
+OSQ_D.htm,OSQ020b,OSQ020b - # Times broken/fractured wrist
+OSQ_D.htm,OSQ020c,OSQ020c - # Times broken/fractured spine
+OSQ_D.htm,OSQ025,OSQ025 - CHECK ITEM
+OSQ_D.htm,OSD030aa,OSD030aa - Age when fractured hip 1st time
+OSQ_D.htm,OSQ040aa,OSQ040aa - Under/over 50 when fracd. hip 1st time
+OSQ_D.htm,OSQ045,OSQ045 - CHECK ITEM
+OSQ_D.htm,OSD050aa,OSD050aa - Reason hip fracture occurred 1st time
+OSQ_D.htm,OSD030ab,OSD030ab - Age when fractured hip 2nd time
+OSQ_D.htm,OSQ040ab,OSQ040ab - Under/over 50 when fracd. hip 2nd time
+OSQ_D.htm,OSD050ab,OSD050ab - Reason hip fracture occurred 2nd time
+OSQ_D.htm,OSD030ac,OSD030ac - Age when fractured hip 3rd time
+OSQ_D.htm,OSQ040ac,OSQ040ac - Under/over 50 when fracd. hip 3rd time
+OSQ_D.htm,OSD050ac,OSD050ac - Reason hip fracture occurred 3rd time
+OSQ_D.htm,OSD030ba,OSD030ba - Age when fractured wrist 1st time
+OSQ_D.htm,OSQ040ba,OSQ040ba - Under/over 50 when fracd. wrist 1st time
+OSQ_D.htm,OSD050ba,OSD050ba - Reason wrist fracture occurred 1st time
+OSQ_D.htm,OSD030bb,OSD030bb - Age when fractured wrist 2nd time
+OSQ_D.htm,OSQ040bb,OSQ040bb - Under/over 50 when fracd. wrist 2nd time
+OSQ_D.htm,OSD050bb,OSD050bb - Reason wrist fracture occurred 2nd time
+OSQ_D.htm,OSD030bc,OSD030bc - Age when fractured wrist 3rd time
+OSQ_D.htm,OSQ040bc,OSQ040bc - Under/over 50 when fracd. wrist 3rd time
+OSQ_D.htm,OSD050bc,OSD050bc - Reason wrist fracture occurred 3rd time
+OSQ_D.htm,OSD030bd,OSD030bd - Age when fractured wrist 4th time
+OSQ_D.htm,OSQ040bd,OSQ040bd - Under/over 50 when fracd. wrist 4th time
+OSQ_D.htm,OSD050bd,OSD050bd - Reason wrist fracture occurred 4th time
+OSQ_D.htm,OSD030be,OSD030be - Age when fractured wrist 5th time
+OSQ_D.htm,OSQ040be,OSQ040be - Under/over 50 when fracd. wrist 5th time
+OSQ_D.htm,OSD050be,OSD050be - Reason wrist fracture occurred 5th time
+OSQ_D.htm,OSD030bf,OSD030bf - Age when fractured wrist 6th time
+OSQ_D.htm,OSQ040bf,OSQ040bf - Under/over 50 when fracd. wrist 6th time
+OSQ_D.htm,OSD050bf,OSD050bf - Reason wrist fracture occurred 6th time
+OSQ_D.htm,OSD030bg,OSD030bg - Age when fractured wrist 7th time
+OSQ_D.htm,OSQ040bg,OSQ040bg - Under/over 50 when fracd. wrist 7th time
+OSQ_D.htm,OSD050bg,OSD050bg - Reason wrist fracture occurred 7th time
+OSQ_D.htm,OSD030ca,OSD030ca - Age when fractured spine 1st time
+OSQ_D.htm,OSQ040ca,OSQ040ca - Under/over 50 when fracd. spine 1st time
+OSQ_D.htm,OSD050ca,OSD050ca - Reason spine fracture occurred 1st time
+OSQ_D.htm,OSD030cb,OSD030cb - Age when fractured spine 2nd time
+OSQ_D.htm,OSQ040cb,OSQ040cb - Under/over 50 when fracd. spine 2nd time
+OSQ_D.htm,OSD050cb,OSD050cb - Reason spine fracture occurred 2nd time
+OSQ_D.htm,OSD030cc,OSD030cc - Age when fractured spine 3rd time
+OSQ_D.htm,OSQ040cc,OSQ040cc - Under/over 50 when fracd. spine 3rd time
+OSQ_D.htm,OSD050cc,OSD050cc - Reason spine fracture occurred 3rd time
+OSQ_D.htm,OSD030cd,OSD030cd - Age when fractured spine 4th time
+OSQ_D.htm,OSQ040cd,OSQ040cd - Under/over 50 when fracd. spine 4th time
+OSQ_D.htm,OSD050cd,OSD050cd - Reason spine fracture occurred 4th time
+OSQ_D.htm,OSD030ce,OSD030ce - Age when fractured spine 5th time
+OSQ_D.htm,OSQ040ce,OSQ040ce - Under/over 50 when fracd. spine 5th time
+OSQ_D.htm,OSD050ce,OSD050ce - Reason spine fracture occurred 5th time
+OSQ_D.htm,OSD030cf,OSD030cf - Age when fractured spine 6th time
+OSQ_D.htm,OSQ040cf,OSQ040cf - Under/over 50 when fracd. spine 6th time
+OSQ_D.htm,OSD050cf,OSD050cf - Reason spine fracture occurred 6th time
+OSQ_D.htm,OSD030cg,OSD030cg - Age when fractured spine 7th time
+OSQ_D.htm,OSQ040cg,OSQ040cg - Under/over 50 when fracd. spine 7th time
+OSQ_D.htm,OSD030ch,OSD030ch - Age when fractured spine 8th time
+OSQ_D.htm,OSQ040ch,OSQ040ch - Under/over 50 when fracd. spine 8th time
+OSQ_D.htm,OSD030ci,OSD030ci - Age when fractured spine 9th time
+OSQ_D.htm,OSQ040ci,OSQ040ci - Under/over 50 when fracd. spine 9th time
+OSQ_D.htm,OSD030cj,OSD030cj - Age when fractured spine 10th time
+OSQ_D.htm,OSQ040cj,OSQ040cj - Under/over 50 when fracd spine 10th time
+OSQ_D.htm,OSQ080,OSQ080 - Doctor ever told any other fractures?
+OSQ_D.htm,OSQ090a,OSQ090a - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100a,OSQ100a - Where fracture occurred
+OSQ_D.htm,OSD110a,OSD110a - How old when fracture occurred?
+OSQ_D.htm,OSQ120a,OSQ120a - Any other fractures?
+OSQ_D.htm,OSQ090b,OSQ090b - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100b,OSQ100b - Where fracture occurred
+OSQ_D.htm,OSD110b,OSD110b - How old when fracture occurred?
+OSQ_D.htm,OSQ120b,OSQ120b - Any other fractures?
+OSQ_D.htm,OSQ090c,OSQ090c - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100c,OSQ100c - Where fracture occurred
+OSQ_D.htm,OSD110c,OSD110c - How old when fracture occurred?
+OSQ_D.htm,OSQ120c,OSQ120c - Any other fractures?
+OSQ_D.htm,OSQ090d,OSQ090d - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100d,OSQ100d - Where fracture occurred
+OSQ_D.htm,OSD110d,OSD110d - How old when fracture occurred?
+OSQ_D.htm,OSQ120d,OSQ120d - Any other fractures?
+OSQ_D.htm,OSQ090e,OSQ090e - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100e,OSQ100e - Where fracture occurred
+OSQ_D.htm,OSD110e,OSD110e - How old when fracture occurred?
+OSQ_D.htm,OSQ120e,OSQ120e - Any other fractures?
+OSQ_D.htm,OSQ090f,OSQ090f - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100f,OSQ100f - Where fracture occurred
+OSQ_D.htm,OSD110f,OSD110f - How old when fracture occurred?
+OSQ_D.htm,OSQ120f,OSQ120f - Any other fractures?
+OSQ_D.htm,OSQ090g,OSQ090g - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100g,OSQ100g - Where fracture occurred
+OSQ_D.htm,OSD110g,OSD110g - How old when fracture occurred?
+OSQ_D.htm,OSQ120g,OSQ120g - Any other fractures?
+OSQ_D.htm,OSQ090h,OSQ090h - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100h,OSQ100h - Where fracture occurred
+OSQ_D.htm,OSD110h,OSD110h - How old when fracture occurred?
+OSQ_D.htm,OSQ120h,OSQ120h - Any other fractures?
+OSQ_D.htm,OSQ090i,OSQ090i - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100i,OSQ100i - Where fracture occurred
+OSQ_D.htm,OSD110i,OSD110i - How old when fracture occurred?
+OSQ_D.htm,OSQ120i,OSQ120i - Any other fractures?
+OSQ_D.htm,OSQ090j,OSQ090j - Fracture result of severe trauma?
+OSQ_D.htm,OSQ100j,OSQ100j - Where fracture occurred
+OSQ_D.htm,OSD110j,OSD110j - How old when fracture occurred?
+OSQ_D.htm,OSQ120j,OSQ120j - Any other fractures?
+OSQ_D.htm,OSQ129,OSQ129 - CHECK ITEM
+OSQ_D.htm,OSQ060,OSQ060 - Ever told had osteoporosis/brittle bones
+OSQ_D.htm,OSQ070,OSQ070  - Ever treated for osteoporosis
+OSQ_D.htm,OSQ130,OSQ130 - Ever taken prednisone or cortisone daily
+OSQ_D.htm,OSQ140q,OSQ140q - How long used prednisone or cortisone?
+OSQ_D.htm,OSQ140u,OSQ140u - How long used prednisone or cortisone?
+OSQ_D.htm,OSQ150,OSQ150 - Parents ever told had osteoporosis?
+OSQ_D.htm,OSQ160a,OSQ160a - Mother was told had osteoporosis
+OSQ_D.htm,OSQ160b,OSQ160b - Father was told had osteoporosis
+OSQ_D.htm,OSQ170,OSQ170 - Did mother ever fracture hip?
+OSQ_D.htm,OSQ180,OSQ180 - How old when fractured hip?
+OSQ_D.htm,OSQ190,OSQ190 - Over or under 50 years old?
+OSQ_D.htm,OSQ200,OSQ200 - Did father ever fracture hip?
+OSQ_D.htm,OSQ210,OSQ210 - How old when fractured hip?
+OSQ_D.htm,OSQ220,OSQ220 - Over or under 50 years old?
+PAQIAF_D.htm,SEQN,SEQN - Respondent sequence number
+PAQIAF_D.htm,PADACTIV,PADACTIV - Leisure time activity
+PAQIAF_D.htm,PADLEVEL,PADLEVEL - Activity level
+PAQIAF_D.htm,PADTIMES,PADTIMES - # of times did activity in past 30 days
+PAQIAF_D.htm,PADDURAT,PADDURAT - Average duration of activity (minutes)
+PAQIAF_D.htm,PADMETS,PADMETS - MET score for activity
+PAQIAF_D.htm,PAAQUEX,PAAQUEX - Questionnaire source flag for weighting
+PAQ_D.htm,SEQN,SEQN - Respondent sequence number
+PAQ_D.htm,PAD020,PAD020 - Walked or bicycled over past 30 days
+PAQ_D.htm,PAQ050Q,PAQ050Q - # times walked or bicycled
+PAQ_D.htm,PAQ050U,PAQ050U - Unit of measure (day/week/month)
+PAQ_D.htm,PAD080,PAD080 - How long per day (minutes)
+PAQ_D.htm,PAQ100,PAQ100 - Tasks around home/yard past 30 days
+PAQ_D.htm,PAD120,PAD120 - # of times past 30 days
+PAQ_D.htm,PAD160,PAD160 - How long each time (minutes)
+PAQ_D.htm,PAQ180,PAQ180 - Avg level of physical activity each day
+PAQ_D.htm,PAD200,PAD200 - Vigorous activity over past 30 days
+PAQ_D.htm,PAD320,PAD320 - Moderate activity over past 30 days
+PAQ_D.htm,PAD440,PAD440 - Muscle strengthening activities
+PAQ_D.htm,PAD460,PAD460 - Number of times past 30 days
+PAQ_D.htm,PAQ500,PAQ500 - Activity comparison last mo - last yr
+PAQ_D.htm,PAQ520,PAQ520 - Compare activity w/others same age
+PAQ_D.htm,PAQ540,PAQ540 - Compare activity with 10 years ago
+PAQ_D.htm,PAQ560,PAQ560 - # time/week you play or exercise hard
+PAQ_D.htm,PAD590,PAD590 - # hours watch TV or videos past 30 days
+PAQ_D.htm,PAD600,PAD600 - # of hours use computer past 30 days
+PAQ_D.htm,PAAQUEX,PAAQUEX - Questionnaire source flag for weighting
+PAXRAW_D.htm,SEQN,SEQN - Respondent sequence number
+PAXRAW_D.htm,PAXSTAT,PAXSTAT - Data Reliability Status Flag
+PAXRAW_D.htm,PAXCAL,PAXCAL - Was the Monitor in Calibration?
+PAXRAW_D.htm,PAXDAY,PAXDAY - Day of the Week
+PAXRAW_D.htm,PAXN,PAXN - Sequential Observation Number
+PAXRAW_D.htm,PAXHOUR,PAXHOUR - Hour of the Day
+PAXRAW_D.htm,PAXMINUT,PAXMINUT - Minute of the Hour
+PAXRAW_D.htm,PAXINTEN,PAXINTEN - Device Intensity Value
+PAXRAW_D.htm,PAXSTEP,PAXSTEP - Device Step Count
+PBCD_D.htm,SEQN,SEQN - Respondent sequence number
+PBCD_D.htm,LBXBCD,LBXBCD - Cadmium (ug/L)
+PBCD_D.htm,LBDBCDSI,LBDBCDSI - Cadmium (nmol/L)
+PBCD_D.htm,LBXBPB,LBXBPB - Lead (ug/dL)
+PBCD_D.htm,LBDBPBSI,LBDBPBSI - Lead (umol/L)
+PBCD_D.htm,LBXTHG,"LBXTHG - Mercury, total (ug/L)"
+PBCD_D.htm,LBDTHGSI,"LBDTHGSI - Mercury, total (umol/L )"
+PBCD_D.htm,LBDTHGLC,"LBDTHGLC - Mercury, total comment code"
+PFQ_D.htm,SEQN,SEQN - Respondent sequence number
+PFQ_D.htm,PFQ010,"PFQ010 - Physical,mental,emotional limitations"
+PFQ_D.htm,PFQ015,PFQ015 - Able to take part in most type of play
+PFQ_D.htm,PFQ020,"PFQ020 - Crawl, walk, run, play limitations"
+PFQ_D.htm,PFQ030,PFQ030 - Long term impairment/health problem
+PFQ_D.htm,PFQ035A,PFQ035A - CHECK ITEM
+PFQ_D.htm,PFQ041,PFQ041 - Receive Special Ed or Early Intervention
+PFQ_D.htm,PFQ049,PFQ049 - Limitations keeping you from working
+PFQ_D.htm,PFQ051,PFQ051 - Limited in amount of work you can do
+PFQ_D.htm,PFQ054,PFQ054 - Need special equipment to walk
+PFQ_D.htm,PFQ057,PFQ057 - Experience confusion/memory problems
+PFQ_D.htm,PFQ058,PFQ058 - CHECK ITEM
+PFQ_D.htm,PFQ059,"PFQ059 - Physical, mental, emotional limitations"
+PFQ_D.htm,PFQ059A,PFQ059A - CHECK ITEM
+PFQ_D.htm,PFQ061A,PFQ061A - Managing money difficulty
+PFQ_D.htm,PFQ061B,PFQ061B - Walking for a quarter mile difficulty
+PFQ_D.htm,PFQ061C,PFQ061C - Walking up ten steps difficulty
+PFQ_D.htm,PFQ061D,"PFQ061D - Stooping, crouching, kneeling difficulty"
+PFQ_D.htm,PFQ061E,PFQ061E - Lifting or carrying difficulty
+PFQ_D.htm,PFQ061F,PFQ061F - House chore difficulty
+PFQ_D.htm,PFQ061G,PFQ061G - Preparing meals difficulty
+PFQ_D.htm,PFQ061H,PFQ061H - Walking between rooms on same floor
+PFQ_D.htm,PFQ061I,PFQ061I - Standingup from armless chair difficulty
+PFQ_D.htm,PFQ061J,PFQ061J - Getting in and out of bed difficulty
+PFQ_D.htm,PFQ061K,"PFQ061K - Using fork, knife, drinking from cup"
+PFQ_D.htm,PFQ061L,PFQ061L - Dressing yourself difficulty
+PFQ_D.htm,PFQ061M,PFQ061M - Standing for long periods difficulty
+PFQ_D.htm,PFQ061N,PFQ061N - Sitting for long periods difficulty
+PFQ_D.htm,PFQ061O,PFQ061O - Reaching up over head difficulty
+PFQ_D.htm,PFQ061P,PFQ061P - Grasp/holding small objects difficulty
+PFQ_D.htm,PFQ061Q,"PFQ061Q - Going out to movies, events difficulty"
+PFQ_D.htm,PFQ061R,PFQ061R - Attending social event difficulty
+PFQ_D.htm,PFQ061S,PFQ061S - Leisure activity at home difficulty
+PFQ_D.htm,PFQ061T,PFQ061T - Push or pull large objects difficulty
+PFQ_D.htm,PFQ066A,PFQ066A - CHECK ITEM
+PFQ_D.htm,PFQ063A,PFQ063A - Health problems causing difficulty
+PFQ_D.htm,PFQ063B,PFQ063B - Health problems causing difficulty
+PFQ_D.htm,PFQ063C,PFQ063C - Health problems causing difficulty
+PFQ_D.htm,PFQ063D,PFQ063D - Health problems causing difficulty
+PFQ_D.htm,PFQ063E,PFQ063E - Health problems causing difficulty
+PFQ_D.htm,PFD069A,"PFD069A - Arthritis or rheumatism probl, days"
+PFQ_D.htm,PFD069B,"PFD069B - Back or neck problems, days"
+PFQ_D.htm,PFD069C,"PFD069C - Cancer condition, days"
+PFQ_D.htm,PFD069D,"PFD069D - Depression/anxiety/emotional probl, days"
+PFQ_D.htm,PFD069E,"PFD069E - Other development problems, days"
+PFQ_D.htm,PFD069F,"PFD069F - Diabetes condition, days"
+PFQ_D.htm,PFD069G,"PFD069G - Fractures/bone/joint injury probl, days"
+PFQ_D.htm,PFD069H,"PFD069H - Hearing problems, days"
+PFQ_D.htm,PFD069I,"PFD069I - Heart problems, days"
+PFQ_D.htm,PFD069J,"PFD069J - Hypertension or high blood pressure,days"
+PFQ_D.htm,PFD069K,"PFD069K - Lung or breathing problems, days"
+PFQ_D.htm,PFD069L,"PFD069L - Mental retardation condition, days"
+PFQ_D.htm,PFD069M,"PFD069M - Other injury problems, days"
+PFQ_D.htm,PFD069N,"PFD069N - Senility condition, days"
+PFQ_D.htm,PFD069O,"PFD069O - Stroke problems, days"
+PFQ_D.htm,PFD069P,"PFD069P - Vision problems, days"
+PFQ_D.htm,PFD069Q,"PFD069Q - Weight problems, days"
+PFQ_D.htm,PFD069R,"PFD069R - Other impairment problems, days"
+PFQ_D.htm,PFQ090,PFQ090 - Require special healthcare equipment
+RDQ_D.htm,SEQN,SEQN - Respondent sequence number
+RDQ_D.htm,RDQ005A,RDQ005A - CHECK ITEM
+RDQ_D.htm,RDQ031,RDQ031 - Coughing most days - over 3 mo period
+RDQ_D.htm,RDD040,RDD040 - # years had cough problem
+RDQ_D.htm,RDQ050,RDQ050 - Bring up phlegm most days - 3 mo period
+RDQ_D.htm,RDD060,RDD060 - # years bringing up phlegm problem
+RDQ_D.htm,RDQ070,RDQ070 - Wheezing or whistling in chest - past yr
+RDQ_D.htm,RDQ080,RDQ080 - # wheezing/whistling attacks past year
+RDQ_D.htm,RDQ090,RDQ090 - Wheezing disturb sleep in past year
+RDQ_D.htm,RDQ100,RDQ100 - Chest sound wheezy during exercise
+RDQ_D.htm,RDD120,RDD120 - Got medical attentn for wheezing attack
+RDQ_D.htm,RDQ134,RDQ134 - Doctor prescribe wheezing medication
+RDQ_D.htm,RDQ135,RDQ135 - Limit usual activities due to wheezing
+RDQ_D.htm,RDQ136,RDQ136 - CHECK ITEM
+RDQ_D.htm,RDQ137,RDQ137 - Miss work or school due to wheezing
+RDQ_D.htm,RDQ140,RDQ140 - Had dry cough at night in past year
+RXQ_RX_D.htm,SEQN,SEQN - Respondent sequence number
+RXQ_RX_D.htm,RXDUSE,"RXDUSE - Taken prescription medicine, past month"
+RXQ_RX_D.htm,RXDDRUG,RXDDRUG - Generic drug name
+RXQ_RX_D.htm,RXDDRGID,RXDDRGID - Generic drug code
+RXQ_RX_D.htm,RXQSEEN,RXQSEEN - Medicine container seen by interviewer
+RXQ_RX_D.htm,RXDDAYS,RXDDAYS - Number of days taken medicine
+RXQ_RX_D.htm,RXDCOUNT,RXDCOUNT - Number of prescription medicines taken
+SLQ_D.htm,SEQN,SEQN - Respondent sequence number
+SLQ_D.htm,SLD010H,SLD010H - How much sleep do you get (hours)?
+SLQ_D.htm,SLD020M,SLD020M - How long to fall asleep (minutes)?
+SLQ_D.htm,SLQ030,SLQ030 - How often do you snore?
+SLQ_D.htm,SLQ040,SLQ040 - How often do you snort / stop breathing?
+SLQ_D.htm,SLQ050,SLQ050 - Ever told doctor had trouble sleeping?
+SLQ_D.htm,SLQ060,SLQ060 - Ever told by doctor have sleep disorder?
+SLQ_D.htm,SLQ070A,SLQ070A - Sleep disorder: Sleep Apnea
+SLQ_D.htm,SLQ070B,SLQ070B - Sleep disorder: Insomnia
+SLQ_D.htm,SLQ070C,SLQ070C - Sleep disorder: Restless Legs
+SLQ_D.htm,SLQ070D,SLQ070D - Sleep disorder: Other
+SLQ_D.htm,SLQ080,SLQ080 - How often have trouble falling asleep?
+SLQ_D.htm,SLQ090,SLQ090 - How often wake up during night?
+SLQ_D.htm,SLQ100,SLQ100 - How often wake up too early in morning?
+SLQ_D.htm,SLQ110,SLQ110 - How often feel unrested during the day?
+SLQ_D.htm,SLQ120,SLQ120 - How often feel overly sleepy during day?
+SLQ_D.htm,SLQ130,SLQ130 - How often did you not get enough sleep?
+SLQ_D.htm,SLQ140,SLQ140 - How often take pills to help you sleep?
+SLQ_D.htm,SLQ150,SLQ150 - How often have leg jerks while sleeping?
+SLQ_D.htm,SLQ160,SLQ160 - How often have legs cramp while sleeping
+SLQ_D.htm,SLQ170,SLQ170 - Difficulty concentrating when tired?
+SLQ_D.htm,SLQ180,SLQ180 - Difficulty remembering when tired?
+SLQ_D.htm,SLQ190,SLQ190 - Difficulty eating when tired?
+SLQ_D.htm,SLQ200,SLQ200 - Difficulty with a hobby when tired?
+SLQ_D.htm,SLQ210,SLQ210 - Difficulty getting things done?
+SLQ_D.htm,SLQ220,SLQ220 - Difficulty with finance when tired?
+SLQ_D.htm,SLQ230,SLQ230 - Difficulty at work because tired?
+SLQ_D.htm,SLQ240,SLQ240 - Difficulty on phone when tired?
+SMQRTU_D.htm,SEQN,SEQN - Respondent sequence number
+SMQRTU_D.htm,SMQ680,SMQ680 - Used tobacco/nicotine last 5 days?
+SMQRTU_D.htm,SMQ690A,SMQ690A - Used last 5 days - Cigarettes
+SMQRTU_D.htm,SMQ690B,SMQ690B - Used last 5 days - Pipes
+SMQRTU_D.htm,SMQ690C,SMQ690C - Used last 5 days - Cigars
+SMQRTU_D.htm,SMQ690D,SMQ690D - Used last 5 days - Chewing tobacco
+SMQRTU_D.htm,SMQ690E,SMQ690E - Used last 5 days - Snuff
+SMQRTU_D.htm,SMQ690F,"SMQ690F - Used last 5 days - Patch, gum, other"
+SMQRTU_D.htm,SMQ700,SMQ700 - CHECK ITEM
+SMQRTU_D.htm,SMQ710,SMQ710 - # days smoked cigarettes last 5 days
+SMQRTU_D.htm,SMQ720,SMQ720 - # cigarettes smoked per day
+SMQRTU_D.htm,SMQ725,SMQ725 - When did resp. smoke last cigarette?
+SMQRTU_D.htm,SMQ740,SMQ740 - # days smoked pipe over last 5 days
+SMQRTU_D.htm,SMQ750,SMQ750 - # pipes smoked per day - last 5 days
+SMQRTU_D.htm,SMQ755,SMQ755 - When did resp. smoke last pipe?
+SMQRTU_D.htm,SMQ770,SMQ770 - # days smoked cigars over last 5 days
+SMQRTU_D.htm,SMQ780,SMQ780 - # cigars smoked per day - last 5 days
+SMQRTU_D.htm,SMQ785,SMQ785 - When did resp. smoke last cigar?
+SMQRTU_D.htm,SMQ800,SMQ800 - #days used chewing tobacco -last 5 days
+SMQRTU_D.htm,SMQ815,SMQ815 - When did resp. last use chewing tobacco?
+SMQRTU_D.htm,SMQ817,SMQ817 - # days used snuff over last 5 days
+SMQRTU_D.htm,SMQ819,SMQ819 - When last used snuff
+SMQRTU_D.htm,SMQ830,SMQ830 - # days used nicotine stop smoking aids?
+SMQRTU_D.htm,SMQ840,SMQ840 - Last time used nicotine stop smoking aid
+SMQRTU_D.htm,SMAQUEX,SMAQUEX - Questionnaire Mode Flag
+SMQ_D.htm,SEQN,SEQN - Respondent sequence number
+SMQ_D.htm,SMQ020,SMQ020 - Smoked at least 100 cigarettes in life
+SMQ_D.htm,SMD030,SMD030 - Age started smoking cigarettes regularly
+SMQ_D.htm,SMQ040,SMQ040 - Do you now smoke cigarettes
+SMQ_D.htm,SMQ050Q,SMQ050Q - How long since quit smoking cigarettes
+SMQ_D.htm,SMQ050U,SMQ050U - Unit of measure (day/week/month/year)
+SMQ_D.htm,SMD055,SMD055 - Age last smoked cigarettes regularly
+SMQ_D.htm,SMD057,SMD057 - # cigarettes smoked per day when quit
+SMQ_D.htm,SMD070,SMD070 - # cigarettes smoked per day now
+SMQ_D.htm,SMD075,SMD075 - How many years smoked this amount
+SMQ_D.htm,SMQ077,SMQ077 - How soon after waking do you smoke
+SMQ_D.htm,SMD641,SMD641 - # days smoked cigs during past 30 days
+SMQ_D.htm,SMD650,SMD650 - Avg # cigarettes/day during past 30 days
+SMQ_D.htm,SMD093,SMD093 - May I please see the pack of cigarettes
+SMQ_D.htm,SMDUPCA,SMDUPCA - Cig 12-digit Universal Product Code-UPC
+SMQ_D.htm,SMD100BR,SMD100BR - Cigarette Brand/sub-brand
+SMQ_D.htm,SMD100FL,SMD100FL - Filter type
+SMQ_D.htm,SMD100MN,SMD100MN - Menthol indicator
+SMQ_D.htm,SMD100LN,SMD100LN - Length
+SMQ_D.htm,SMD100TR,SMD100TR - FTC Tar Content
+SMQ_D.htm,SMD100NI,SMD100NI - FTC Nicotine Content
+SMQ_D.htm,SMD100CO,SMD100CO - FTC Carbon Monoxide Content
+SMQ_D.htm,SMQ620,SMQ620 - Ever tried cigarette smoking
+SMQ_D.htm,SMD630,SMD630 - Age first smoked whole cigarette
+SMQ_D.htm,SMQ660,SMQ660 - Brands of cigarettes smoked/past mo
+SMQ_D.htm,SMQ664M,SMQ664M - Menthol or non-menthol Marlboro
+SMQ_D.htm,SMQ664C,SMQ664C - Menthol or non-menthol Camels
+SMQ_D.htm,SMQ664W,SMQ664W - Menthol or non-menthol Winston
+SMQ_D.htm,SMQ664B,SMQ664B - Menthol or non-menthol BensonHedges
+SMQ_D.htm,SMQ664O,SMQ664O - Menthol or non-menthol other brand
+SMQ_D.htm,SMQ666M,"SMQ666M - Regular, light or ultralite Marlboro"
+SMQ_D.htm,SMQ666C,"SMQ666C - Regular, light or ultralite Camels"
+SMQ_D.htm,SMQ666K,"SMQ666K - Regular, light or ultralite Kools"
+SMQ_D.htm,SMQ666W,"SMQ666W - Regular, light or ultralite Winston"
+SMQ_D.htm,SMQ666B,"SMQ666B - Regular, light or ultralite BensonHedges"
+SMQ_D.htm,SMQ666S,"SMQ666S - Regular, light or ultralite Salem"
+SMQ_D.htm,SMQ666O,"SMQ666O - Regular, light or ultralite other brand"
+SMQ_D.htm,SMQ670,SMQ670 - Tried to quit smoking
+SMQ_D.htm,SMAQUEX2,SMAQUEX2 - Questionnaire Mode Flag
+TCHOL_D.htm,SEQN,SEQN - Respondent sequence number
+TCHOL_D.htm,LBXTC,LBXTC - Total cholesterol (mg/dL)
+TCHOL_D.htm,LBDTCSI,LBDTCSI - Total Cholesterol( mmol/L)
+TRIGLY_D.htm,SEQN,SEQN - Respondent sequence number
+TRIGLY_D.htm,WTSAF2YR,WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+TRIGLY_D.htm,LBXTR,LBXTR - Triglyceride (mg/dL)
+TRIGLY_D.htm,LBDTRSI,LBDTRSI - Triglyceride (mmol/L)
+TRIGLY_D.htm,LBDLDL,LBDLDL - LDL-cholesterol (mg/dL)
+TRIGLY_D.htm,LBDLDLSI,LBDLDLSI - LDL-cholesterol (mmol/L)
+TRIGLY_D.htm,LBXAPB,LBXAPB - Apolipoprotein (B) (mg/dL)
+TRIGLY_D.htm,LBDAPBSI,LBDAPBSI - Apolipoprotein (B) (g/L)
+VIQ_D.htm,SEQN,SEQN - Respondent sequence number
+VIQ_D.htm,VIQ010,VIQ010 - Can see light
+VIQ_D.htm,VIQ017,VIQ017 - Blind in both eyes
+VIQ_D.htm,VIQ031,VIQ031 - General condition of eyesight
+VIQ_D.htm,VIQ041,VIQ041 - Time worrying about eyesight
+VIQ_D.htm,VIQ051A,VIQ051A - Difficulty reading ordinary newsprint
+VIQ_D.htm,VIQ051B,VIQ051B - Difficulty with up close work or chores
+VIQ_D.htm,VIQ051C,VIQ051C - Difficulty seeing steps/curbs-dim light
+VIQ_D.htm,VIQ051D,VIQ051D - Difficulty noticing objects to side
+VIQ_D.htm,VIQ051E,VIQ051E - Difficulty findng object on crowdedshelf
+VIQ_D.htm,VIQ056,VIQ056 - Difficulty drivng daytime-familiar place
+VIQ_D.htm,VIQ061,VIQ061 - Vision limits how long can do activities
+VIQ_D.htm,VIQ071,VIQ071 - Ever had a cataract operation
+VIQ_D.htm,VIQ081,"VIQ081 - Operation in right, left or both eyes"
+VIQ_D.htm,VIQ090,VIQ090 - Ever told had glaucoma
+VIQ_D.htm,VIQ100,VIQ100 - Glaucoma in which eye
+VIQ_D.htm,VIQ310,VIQ310 - Told had macular degeneration
+VIQ_D.htm,VIQ320,VIQ320 - Macular degeneration in which eye
+VIX_D.htm,SEQN,SEQN - Respondent sequence number
+VIX_D.htm,VIQ110,VIQ110 - SP has a severe eye infection?
+VIX_D.htm,VIQ121,VIQ121 - Which eye(s) infected?
+VIX_D.htm,VIQ130,VIQ130 - Is SP wearing an eye patch?
+VIX_D.htm,VIQ141,VIQ141 - Which eye has eye patch?
+VIX_D.htm,VIQ150,VIQ150 - Glasses/contact lenses for near work?
+VIX_D.htm,VIQ160,VIQ160 - Glasses/contact lenses available?
+VIX_D.htm,VIQ170,VIQ170 - Glasses or contacts worn for near test?
+VIX_D.htm,VIXNC1,VIXNC1 - Line read on near card
+VIX_D.htm,VIXNC2,VIXNC2 - Testing distance of near card
+VIX_D.htm,VIQ180,VIQ180 - Eye surgery for near sightedness?
+VIX_D.htm,VIQ191,VIQ191 - Which eye(s) surgery - near-sightedness?
+VIX_D.htm,VIQ200,VIQ200 - Eye surgery for cataracts?
+VIX_D.htm,VIQ211,VIQ211 - Which eye(s) cataract surgery?
+VIX_D.htm,VIQ220,VIQ220 - Glasses/contact lenses worn for distance
+VIX_D.htm,VIQ230,VIQ230 - Is distance correction available?
+VIX_D.htm,VIQ240,VIQ240 - Which type? Glasses or contacts?
+VIX_D.htm,VIQ250,VIQ250 - Was prescription obtained?
+VIX_D.htm,VIXPRS,"VIXPRS - Prescription, right sphere"
+VIX_D.htm,VIXPRC,"VIXPRC - Prescription, right cylinder"
+VIX_D.htm,VIXPRA,"VIXPRA - Prescription, right axis"
+VIX_D.htm,VIXPLS,"VIXPLS - Prescription, left sphere"
+VIX_D.htm,VIXPLC,"VIXPLC - Prescription, left cylinder"
+VIX_D.htm,VIXPLA,"VIXPLA - Prescription, left axis"
+VIX_D.htm,VIXOCMT,VIXOCMT - Visual Acuity Comments
+VIX_D.htm,VIXORSM,"VIXORSM - OR right sphere, median"
+VIX_D.htm,VIXORCM,"VIXORCM - OR right cylinder, median"
+VIX_D.htm,VIXORAM,"VIXORAM - OR right axis, median"
+VIX_D.htm,VIDORFM,VIDORFM - OR right confidence level reading
+VIX_D.htm,VIXOLSM,"VIXOLSM - OR left sphere, median"
+VIX_D.htm,VIXOLCM,"VIXOLCM - OR left cylinder, median"
+VIX_D.htm,VIXOLAM,"VIXOLAM - OR left axis, median"
+VIX_D.htm,VIDOLFM,VIDOLFM - OR left confidence level reading
+VIX_D.htm,VIXKRM1,VIXKRM1 - Right keratometry radius flat curve (mm)
+VIX_D.htm,VIXKRD1,VIXKRD1 - Right keratometry power flat curve (D)
+VIX_D.htm,VIXKRG1,VIXKRG1 - Right keratometry axis flat curve (deg)
+VIX_D.htm,VIXKRM2,VIXKRM2 - Right keratometry radius steep curve(mm)
+VIX_D.htm,VIXKRD2,VIXKRD2 - Right keratometry power steep curve (D)
+VIX_D.htm,VIXKRG2,VIXKRG2 - Right keratometry axis steep curve (deg)
+VIX_D.htm,VIXKRMM,"VIXKRMM - Right keratometry radius, average (mm)"
+VIX_D.htm,VIXKRDM,"VIXKRDM - Right keratometry power, average (D)"
+VIX_D.htm,VIXKRCD,VIXKRCD - Right keratometry cylinder
+VIX_D.htm,VIXKRCG,VIXKRCG - Right keratometry axis (deg)
+VIX_D.htm,VIXKLM1,VIXKLM1 - Left keratometry radius flat curve (mm)
+VIX_D.htm,VIXKLD1,VIXKLD1 - Left keratometry power flat curve (D)
+VIX_D.htm,VIXKLG1,VIXKLG1 - Left keratometry axis flat curve (deg)
+VIX_D.htm,VIXKLM2,VIXKLM2 - Left keratometry radius steep curve (mm)
+VIX_D.htm,VIXKLD2,VIXKLD2 - Left keratometry power steep curve (D)
+VIX_D.htm,VIXKLG2,VIXKLG2 - Left keratometry axis steep curve (deg)
+VIX_D.htm,VIXKLMM,"VIXKLMM - Left keratometry radius, average (mm)"
+VIX_D.htm,VIXKLDM,"VIXKLDM - Left keratometry power, average (D)"
+VIX_D.htm,VIXKLCD,VIXKLCD - Left keratometry cylinder
+VIX_D.htm,VIXKLCG,VIXKLCG - Left keratometry axis (deg)
+VIX_D.htm,VIDRVA,"VIDRVA - Right visual acuity, presenting"
+VIX_D.htm,VIDLVA,"VIDLVA - Left visual acuity, presenting"
+VIX_D.htm,VIDROVA,"VIDROVA - Right visual acuity, w/ obj. refraction"
+VIX_D.htm,VIDLOVA,"VIDLOVA - Left visual acuity, w/ obj. refraction"
+WHQ_D.htm,SEQN,SEQN - Respondent sequence number
+WHQ_D.htm,WHD010,WHD010 - Current self-reported height (inches)
+WHQ_D.htm,WHD020,WHD020 - Current self-reported weight (pounds)
+WHQ_D.htm,WHQ030,WHQ030 - How do you consider your weight
+WHQ_D.htm,WHQ040,"WHQ040 - Like to weigh more, less or same"
+WHQ_D.htm,WHD050,WHD050 - Self-reported weight - 1 yr ago (pounds)
+WHQ_D.htm,WHQ055,WHQ055 - CHECK ITEM
+WHQ_D.htm,WHQ060,WHQ060 - Weight change intentional
+WHQ_D.htm,WHQ070,WHQ070 - Tried to lose weight in past year
+WHQ_D.htm,WHD080A,WHD080A - Ate less to lose weight
+WHQ_D.htm,WHD080B,WHD080B - Switched to foods with lower calories
+WHQ_D.htm,WHD080C,WHD080C - Ate less fat to lose weight
+WHQ_D.htm,WHD080D,WHD080D - Exercised to lose weight
+WHQ_D.htm,WHD080E,WHD080E - Skipped meals
+WHQ_D.htm,WHD080F,WHD080F - Ate diet foods or products
+WHQ_D.htm,WHD080G,WHD080G - Used a liquid diet formula
+WHQ_D.htm,WHD080H,WHD080H - Joined a weight loss program
+WHQ_D.htm,WHD080I,WHD080I - Took prescription diet pills
+WHQ_D.htm,WHD080J,WHD080J - Took non-RX suppl. to lose weight
+WHQ_D.htm,WHD080K,WHD080K - Took laxatives or vomited
+WHQ_D.htm,WHD080L,WHD080L - Other
+WHQ_D.htm,WHD080M,WHD080M - Drank a lot of water
+WHQ_D.htm,WHD080N,WHD080N - Followed a special diet
+WHQ_D.htm,WHD080O,WHD080O - Ate fewer carbohydrates
+WHQ_D.htm,WHD080P,WHD080P - Started to smoke or began to smoke again
+WHQ_D.htm,WHD080Q,"WHD080Q - Ate more fruits, vegetables, salads"
+WHQ_D.htm,WHD080R,WHD080R - Changed eating habits
+WHQ_D.htm,WHD080S,"WHD080S - Ate less sugar, candy, sweets"
+WHQ_D.htm,WHQ270,WHQ270 - Seek help from a health professional
+WHQ_D.htm,WHQ280A,WHQ280A - Personal trainer
+WHQ_D.htm,WHQ280B,WHQ280B - Dietitian
+WHQ_D.htm,WHQ280C,WHQ280C - Nutritionist
+WHQ_D.htm,WHQ280D,WHQ280D - Doctor
+WHQ_D.htm,WHQ280E,WHQ280E - Other health professional
+WHQ_D.htm,WHQ185,WHQ185 - CHECK ITEM
+WHQ_D.htm,WHQ090,WHQ090 - Tried not to gain weight in past year
+WHQ_D.htm,WHD100A,WHD100A - Ate less food
+WHQ_D.htm,WHD100B,WHD100B - Switched to foods with lower calories
+WHQ_D.htm,WHD100C,WHD100C - Ate less fat
+WHQ_D.htm,WHD100D,WHD100D - Exercised
+WHQ_D.htm,WHD100E,WHD100E - Skipped meals
+WHQ_D.htm,WHD100F,WHD100F - Ate diet foods or products
+WHQ_D.htm,WHD100G,WHD100G - Used liquid diet formula
+WHQ_D.htm,WHD100H,WHD100H - Joined a weight loss program
+WHQ_D.htm,WHD100I,WHD100I - Took prescription diet pills
+WHQ_D.htm,WHD100J,WHD100J - Took non-prescription diet pills
+WHQ_D.htm,WHD100K,WHD100K - Took laxatives or vomited
+WHQ_D.htm,WHD100L,WHD100L - Other
+WHQ_D.htm,WHD100M,WHD100M - Drank a lot of water
+WHQ_D.htm,WHD100N,WHD100N - Followed a special diet
+WHQ_D.htm,WHD100O,WHD100O - Ate fewer carbohydrates
+WHQ_D.htm,WHD100P,WHD100P - Started to smoke or began to smoke again
+WHQ_D.htm,WHD100Q,"WHD100Q - Ate more fruits, vegetables, salads"
+WHQ_D.htm,WHD100R,WHD100R - Changed eating habits
+WHQ_D.htm,WHD100S,"WHD100S - Ate less sugar, candy, sweets"
+WHQ_D.htm,WHQ210,WHQ210 - Ever tried to lose weight
+WHQ_D.htm,WHD220,WHD220 - Weight loss most successful (pounds)
+WHQ_D.htm,WHQ105,WHQ105 - CHECK ITEM
+WHQ_D.htm,WHD110,WHD110 - Self-reported weight-10 yrs ago (pounds)
+WHQ_D.htm,WHQ115a,WHQ115a - CHECK ITEM
+WHQ_D.htm,WHD120,WHD120 - Self-reported weight-age 25 (pounds)
+WHQ_D.htm,WHQ125,WHQ125 - CHECK ITEM
+WHQ_D.htm,WHD130,WHD130 - Self-reported height - age 25 (inches)
+WHQ_D.htm,WHD140,WHD140 - Self-reported greatest weight (pounds)
+WHQ_D.htm,WHQ150,WHQ150 - Age when heaviest weight

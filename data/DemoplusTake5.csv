@@ -1,0 +1,2405 @@
+File,Variable,Description
+ACQ_C.htm,SEQN,SEQN - Respondent sequence number
+ACQ_C.htm,ACQ005,ACQ005 - CHECK ITEM
+ACQ_C.htm,ACD010A,ACD010A - English usually spoken at home
+ACQ_C.htm,ACD010B,ACD010B - Spanish usually spoken at home
+ACQ_C.htm,ACD010C,ACD010C - Other language(s) usually spoken at home
+ACQ_C.htm,ACQ015,ACQ015 - CHECK ITEM
+ACQ_C.htm,ACQ020,ACQ020 - Language(s) read and spoken
+ACQ_C.htm,ACQ030,ACQ030 - Language(s) used as child
+ACQ_C.htm,ACD040,ACD040 - Language(s) usually spoken at home
+ACQ_C.htm,ACQ050,ACQ050 - Language(s) usually used to think
+ACQ_C.htm,ACQ060,ACQ060 - Language(s) usually used with friends
+ACQ_C.htm,ACD070,ACD070 - Father's country of birth
+ACQ_C.htm,ACD080,ACD080 - Mother's country of birth
+ALQ_C.htm,SEQN,SEQN - Respondent sequence number
+ALQ_C.htm,ALQ101,ALQ101 - Had at least 12 alcohol drinks/1 yr?
+ALQ_C.htm,ALQ110,ALQ110 - Had at least 12 alcohol drinks/lifetime?
+ALQ_C.htm,ALQ120Q,ALQ120Q - How often drink alcohol over past 12 mos
+ALQ_C.htm,ALQ120U,"ALQ120U - # days drink alcohol per wk, mo, yr"
+ALQ_C.htm,ALQ130,ALQ130 - Avg # alcoholic drinks/day -past 12 mos
+ALQ_C.htm,ALQ140Q,ALQ140Q - #days have 5 or more drinks/past 12 mos
+ALQ_C.htm,ALQ140U,"ALQ140U - # days per week, month, year?"
+ALQ_C.htm,ALQ150,ALQ150 - Ever have 5 or more drinks every day?
+BIX_C.htm,SEQN,SEQN - Respondent sequence number
+BIX_C.htm,BIAEXSTS,BIAEXSTS - BIA Status
+BIX_C.htm,BIDFIT,BIDFIT - Quality of fit to Cole model
+BIX_C.htm,BIDRECF,BIDRECF - Resistance (ohms) of extracellular fluid
+BIX_C.htm,BIDRICF,BIDRICF - Resistance (ohms) of intracellular fluid
+BIX_C.htm,BIDCM,BIDCM - Cell membrane capacitance (nF)
+BIX_C.htm,BIDTD,BIDTD - Time delay (ns)
+BIX_C.htm,BIDALPHA,BIDALPHA - Exponent alpha
+BIX_C.htm,BIDFC,BIDFC - Characteristic frequency (KHz)
+BIX_C.htm,BIDECF,BIDECF - Estimated extracellular fluid volume (L)
+BIX_C.htm,BIDTBW,BIDTBW - Estimated total water body volume (L)
+BIX_C.htm,BIDICF,BIDICF - Estimated intracellular fluid volume (L)
+BIX_C.htm,BIDFFM,BIDFFM - Estimated fat-free mass (kg)
+BIX_C.htm,BIDFAT,BIDFAT - Estimated fat mass (kg)
+BIX_C.htm,BIDPFAT,BIDPFAT - Estimated percent body fat
+BIX_C.htm,BIXS005K,BIXS005K - Resistance (Ohms) @ 5 KHz
+BIX_C.htm,BIXS006K,BIXS006K - Resistance (Ohms) @ 6 KHz
+BIX_C.htm,BIXS007K,BIXS007K - Resistance (Ohms) @ 7 KHz
+BIX_C.htm,BIXS008K,BIXS008K - Resistance (Ohms) @ 8 KHz
+BIX_C.htm,BIXS009K,BIXS009K - Resistance (Ohms) @ 9 KHz
+BIX_C.htm,BIXS010K,BIXS010K - Resistance (Ohms) @ 10 KHz
+BIX_C.htm,BIXS011K,BIXS011K - Resistance (Ohms) @ 11 KHz
+BIX_C.htm,BIXS012K,BIXS012K - Resistance (Ohms) @ 12 KHz
+BIX_C.htm,BIXS013K,BIXS013K - Resistance (Ohms) @ 13 KHz
+BIX_C.htm,BIXS014K,BIXS014K - Resistance (Ohms) @ 14 KHz
+BIX_C.htm,BIXS015K,BIXS015K - Resistance (Ohms) @ 15 KHz
+BIX_C.htm,BIXS016K,BIXS016K - Resistance (Ohms) @ 16 KHz
+BIX_C.htm,BIXS018K,BIXS018K - Resistance (Ohms) @ 18 KHz
+BIX_C.htm,BIXS020K,BIXS020K - Resistance (Ohms) @ 20 KHz
+BIX_C.htm,BIXS023K,BIXS023K - Resistance (Ohms) @ 23 KHz
+BIX_C.htm,BIXS025K,BIXS025K - Resistance (Ohms) @ 25 KHz
+BIX_C.htm,BIXS028K,BIXS028K - Resistance (Ohms) @ 28 KHz
+BIX_C.htm,BIXS031K,BIXS031K - Resistance (Ohms) @ 31 KHz
+BIX_C.htm,BIXS035K,BIXS035K - Resistance (Ohms) @ 35 KHz
+BIX_C.htm,BIXS039K,BIXS039K - Resistance (Ohms) @ 39 KHz
+BIX_C.htm,BIXS043K,BIXS043K - Resistance (Ohms) @ 43 KHz
+BIX_C.htm,BIXS050K,BIXS050K - Resistance (Ohms) @ 50 KHz
+BIX_C.htm,BIXS054K,BIXS054K - Resistance (Ohms) @ 54 KHz
+BIX_C.htm,BIXS060K,BIXS060K - Resistance (Ohms) @ 60 KHz
+BIX_C.htm,BIXS067K,BIXS067K - Resistance (Ohms) @ 67 KHz
+BIX_C.htm,BIXS075K,BIXS075K - Resistance (Ohms) @ 75 KHz
+BIX_C.htm,BIXS083K,BIXS083K - Resistance (Ohms) @ 83 KHz
+BIX_C.htm,BIXS093K,BIXS093K - Resistance (Ohms) @ 93 KHz
+BIX_C.htm,BIXS100K,BIXS100K - Resistance (Ohms) @ 100 KHz
+BIX_C.htm,BIXS115K,BIXS115K - Resistance (Ohms) @ 115 KHz
+BIX_C.htm,BIXS128K,BIXS128K - Resistance (Ohms) @ 128 KHz
+BIX_C.htm,BIXS143K,BIXS143K - Resistance (Ohms) @ 143 KHz
+BIX_C.htm,BIXS159K,BIXS159K - Resistance (Ohms) @ 159 KHz
+BIX_C.htm,BIXS177K,BIXS177K - Resistance (Ohms) @ 177 KHz
+BIX_C.htm,BIXS200K,BIXS200K - Resistance (Ohms) @ 200 KHz
+BIX_C.htm,BIXS220K,BIXS220K - Resistance (Ohms) @ 220 KHz
+BIX_C.htm,BIXS245K,BIXS245K - Resistance (Ohms) @ 245 KHz
+BIX_C.htm,BIXS273K,BIXS273K - Resistance (Ohms) @ 273 KHz
+BIX_C.htm,BIXS304K,BIXS304K - Resistance (Ohms) @ 304 KHz
+BIX_C.htm,BIXS339K,BIXS339K - Resistance (Ohms) @ 339 KHz
+BIX_C.htm,BIXS378K,BIXS378K - Resistance (Ohms) @ 378 KHz
+BIX_C.htm,BIXS421K,BIXS421K - Resistance (Ohms) @ 421 KHz
+BIX_C.htm,BIXS469K,BIXS469K - Resistance (Ohms) @ 469 KHz
+BIX_C.htm,BIXS500K,BIXS500K - Resistance (Ohms) @ 500 KHz
+BIX_C.htm,BIXS582K,BIXS582K - Resistance (Ohms) @ 582 KHz
+BIX_C.htm,BIXS649K,BIXS649K - Resistance (Ohms) @  649 KHz
+BIX_C.htm,BIXS723K,BIXS723K - Resistance (Ohms) @ 723 KHz
+BIX_C.htm,BIXS806K,BIXS806K - Resistance (Ohms) @ 806 KHz
+BIX_C.htm,BIXS898K,BIXS898K - Resistance (Ohms) @ 898 KHz
+BIX_C.htm,BIXS1M,BIXS1M - Resistance (Ohms) @ 1 MHz
+BIX_C.htm,BIXC005K,BIXC005K - Reactance (Ohms) @ 5 KHz
+BIX_C.htm,BIXC006K,BIXC006K - Reactance (Ohms) @ 6 KHz
+BIX_C.htm,BIXC007K,BIXC007K - Reactance (Ohms) @ 7 KHz
+BIX_C.htm,BIXC008K,BIXC008K - Reactance (Ohms) @ 8 KHz
+BIX_C.htm,BIXC009K,BIXC009K - Reactance (Ohms) @ 9 KHz
+BIX_C.htm,BIXC010K,BIXC010K - Reactance (Ohms) @ 10 KHz
+BIX_C.htm,BIXC011K,BIXC011K - Reactance (Ohms) @ 11 KHz
+BIX_C.htm,BIXC012K,BIXC012K - Reactance (Ohms) @ 12 KHz
+BIX_C.htm,BIXC013K,BIXC013K - Reactance (Ohms) @ 13 KHz
+BIX_C.htm,BIXC014K,BIXC014K - Reactance (Ohms) @ 14 KHz
+BIX_C.htm,BIXC015K,BIXC015K - Reactance (Ohms) @ 15 KHz
+BIX_C.htm,BIXC016K,BIXC016K - Reactance (Ohms) @ 16 KHz
+BIX_C.htm,BIXC018K,BIXC018K - Reactance (Ohms) @ 18 KHz
+BIX_C.htm,BIXC020K,BIXC020K - Reactance (Ohms) @ 20 KHz
+BIX_C.htm,BIXC023K,BIXC023K - Reactance (Ohms) @ 23 KHz
+BIX_C.htm,BIXC025K,BIXC025K - Reactance (Ohms) @ 25 KHz
+BIX_C.htm,BIXC028K,BIXC028K - Reactance (Ohms) @ 28 KHz
+BIX_C.htm,BIXC031K,BIXC031K - Reactance (Ohms) @ 31 KHz
+BIX_C.htm,BIXC035K,BIXC035K - Reactance (Ohms) @ 35 KHz
+BIX_C.htm,BIXC039K,BIXC039K - Reactance (Ohms) @ 39 KHz
+BIX_C.htm,BIXC043K,BIXC043K - Reactance (Ohms) @ 43 KHz
+BIX_C.htm,BIXC050K,BIXC050K - Reactance (Ohms) @ 50 KHz
+BIX_C.htm,BIXC054K,BIXC054K - Reactance (Ohms) @ 54 KHz
+BIX_C.htm,BIXC060K,BIXC060K - Reactance (Ohms) @ 60 KHz
+BIX_C.htm,BIXC067K,BIXC067K - Reactance (Ohms) @ 67 KHz
+BIX_C.htm,BIXC075K,BIXC075K - Reactance (Ohms) @ 75 KHz
+BIX_C.htm,BIXC083K,BIXC083K - Reactance (Ohms) @ 83 KHz
+BIX_C.htm,BIXC093K,BIXC093K - Reactance (Ohms) @ 93 KHz
+BIX_C.htm,BIXC100K,BIXC100K - Reactance (Ohms) @ 100 KHz
+BIX_C.htm,BIXC115K,BIXC115K - Reactance (Ohms) @ 115 KHz
+BIX_C.htm,BIXC128K,BIXC128K - Reactance (Ohms) @ 128 KHz
+BIX_C.htm,BIXC143K,BIXC143K - Reactance (Ohms) @ 143 KHz
+BIX_C.htm,BIXC159K,BIXC159K - Reactance (Ohms) @ 159 KHz
+BIX_C.htm,BIXC177K,BIXC177K - Reactance (Ohms) @ 177 KHz
+BIX_C.htm,BIXC200K,BIXC200K - Reactance (Ohms) @ 200 KHz
+BIX_C.htm,BIXC220K,BIXC220K - Reactance (Ohms) @ 220 KHz
+BIX_C.htm,BIXC245K,BIXC245K - Reactance (Ohms) @ 245 KHz
+BIX_C.htm,BIXC273K,BIXC273K - Reactance (Ohms) @ 273 KHz
+BIX_C.htm,BIXC304K,BIXC304K - Reactance (Ohms) @ 304 KHz
+BIX_C.htm,BIXC339K,BIXC339K - Reactance (Ohms) @ 339 KHz
+BIX_C.htm,BIXC378K,BIXC378K - Reactance (Ohms) @ 378 KHz
+BIX_C.htm,BIXC421K,BIXC421K - Reactance (Ohms) @ 421 KHz
+BIX_C.htm,BIXC469K,BIXC469K - Reactance (Ohms) @ 469 KHz
+BIX_C.htm,BIXC500K,BIXC500K - Reactance (Ohms) @ 500 KHz
+BIX_C.htm,BIXC582K,BIXC582K - Reactance (Ohms) @ 582 KHz
+BIX_C.htm,BIXC649K,BIXC649K - Reactance (Ohms) @ 649 KHz
+BIX_C.htm,BIXC723K,BIXC723K - Reactance (Ohms) @ 723 KHz
+BIX_C.htm,BIXC806K,BIXC806K - Reactance (Ohms) @ 806 KHz
+BIX_C.htm,BIXC898K,BIXC898K - Reactance (Ohms) @ 898 KHz
+BIX_C.htm,BIXC1M,BIXC1M - Reactance (Ohms) @ 1 MHz
+BMX_C.htm,SEQN,SEQN - Respondent sequence number
+BMX_C.htm,BMDSTATS,BMDSTATS - Body Measures Component Status Code
+BMX_C.htm,BMDRECUF,BMDRECUF - Height-Length difference flagged
+BMX_C.htm,BMDSUBF,BMDSUBF - Unusual value noted during data review
+BMX_C.htm,BMDTHICF,BMDTHICF - Unusual value noted during data review
+BMX_C.htm,BMDLEGF,BMDLEGF - Unusual value noted during data review
+BMX_C.htm,BMDARMLF,BMDARMLF - Unusual value noted during data review
+BMX_C.htm,BMDCALFF,BMDCALFF - Unusual value noted during data review
+BMX_C.htm,BMXWT,BMXWT - Weight (kg)
+BMX_C.htm,BMIWT,BMIWT - Weight Comment
+BMX_C.htm,BMXRECUM,BMXRECUM - Recumbent Length (cm)
+BMX_C.htm,BMIRECUM,BMIRECUM - Recumbent Length Comment
+BMX_C.htm,BMXHEAD,BMXHEAD - Head Circumference (cm)
+BMX_C.htm,BMIHEAD,BMIHEAD - Head Circumference Comment
+BMX_C.htm,BMXHT,BMXHT - Standing Height (cm)
+BMX_C.htm,BMIHT,BMIHT - Standing Height Comment
+BMX_C.htm,BMXBMI,BMXBMI - Body Mass Index (kg/m**2)
+BMX_C.htm,BMXLEG,BMXLEG - Upper Leg Length (cm)
+BMX_C.htm,BMILEG,BMILEG - Upper Leg Length Comment
+BMX_C.htm,BMXCALF,BMXCALF - Maximal Calf Circumference (cm)
+BMX_C.htm,BMICALF,BMICALF - Maximal Calf Comment
+BMX_C.htm,BMXARML,BMXARML - Upper Arm Length (cm)
+BMX_C.htm,BMIARML,BMIARML - Upper Arm Length Comment
+BMX_C.htm,BMXARMC,BMXARMC - Arm Circumference (cm)
+BMX_C.htm,BMIARMC,BMIARMC - Arm Circumference Comment
+BMX_C.htm,BMXWAIST,BMXWAIST - Waist Circumference (cm)
+BMX_C.htm,BMIWAIST,BMIWAIST - Waist Circumference Comment
+BMX_C.htm,BMXTHICR,BMXTHICR - Thigh Circumference (cm)
+BMX_C.htm,BMITHICR,BMITHICR - Thigh Circumference Comment
+BMX_C.htm,BMXTRI,BMXTRI - Triceps Skinfold (mm)
+BMX_C.htm,BMITRI,BMITRI - Triceps Skinfold Comment
+BMX_C.htm,BMXSUB,BMXSUB - Subscapular Skinfold (mm)
+BMX_C.htm,BMISUB,BMISUB - Subscapular Skinfold Comment
+BPQ_C.htm,SEQN,SEQN - Respondent sequence number
+BPQ_C.htm,BPQ010,BPQ010 - Last blood pressure reading by doctor
+BPQ_C.htm,BPQ020,BPQ020 - Ever told you had high blood pressure
+BPQ_C.htm,BPQ030,BPQ030 - Told had high blood pressure - 2+ times
+BPQ_C.htm,BPQ040A,BPQ040A - Taking prescription for hypertension
+BPQ_C.htm,BPQ040B,BPQ040B - Told to control weight for hypertension
+BPQ_C.htm,BPQ040C,BPQ040C - Told to reduce sodium for hypertension
+BPQ_C.htm,BPQ040D,BPQ040D - Told to exercise more for hypertension
+BPQ_C.htm,BPQ040E,BPQ040E - Told to reduce alcohol for hypertension
+BPQ_C.htm,BPQ040F,BPQ040F - Told to do other things for hypertension
+BPQ_C.htm,BPQ042,BPQ042 - CHECK ITEM
+BPQ_C.htm,BPQ043A,BPQ043A - Told to stop smoking for hypertension
+BPQ_C.htm,BPQ043B,BPQ043B - Told to increase potassium for hyprtnsn
+BPQ_C.htm,BPQ043C,BPQ043C - Told of other diet changes for hyprtnsn
+BPQ_C.htm,BPQ043D,BPQ043D - Told to do other things for hyprtnsn
+BPQ_C.htm,BPQ045,BPQ045 - CHECK ITEM
+BPQ_C.htm,BPQ050A,BPQ050A - Now taking prescribed medicine
+BPQ_C.htm,BPQ050B,BPQ050B - Now controlling weight
+BPQ_C.htm,BPQ050C,BPQ050C - Now reducing salt/sodium
+BPQ_C.htm,BPQ050D,BPQ050D - Now exercising more
+BPQ_C.htm,BPQ050E,BPQ050E - Now reducing alcohol consumption
+BPQ_C.htm,BPQ055,BPQ055 - CHECK ITEM
+BPQ_C.htm,BPQ060,BPQ060 - Ever had blood cholesterol checked
+BPQ_C.htm,BPQ070,BPQ070 - When blood cholesterol last checked
+BPQ_C.htm,BPQ080,BPQ080 - Doctor told you - high cholesterol level
+BPQ_C.htm,BPQ090A,BPQ090A - Told to eat less fat for cholesterol
+BPQ_C.htm,BPQ090B,BPQ090B - Told to reduce weight for cholesterol
+BPQ_C.htm,BPQ090C,BPQ090C - Told to exercise more for cholesterol
+BPQ_C.htm,BPQ090D,BPQ090D - Told to take prescriptn for cholesterol
+BPQ_C.htm,BPQ095,BPQ095 - CHECK ITEM
+BPQ_C.htm,BPQ100A,BPQ100A - Now eating fewer high fat foods
+BPQ_C.htm,BPQ100B,BPQ100B - Now controlling weight
+BPQ_C.htm,BPQ100C,BPQ100C - Now increasing exercise
+BPQ_C.htm,BPQ100D,BPQ100D - Now taking prescribed medicine
+BPQ_C.htm,BPD110A,BPD110A - Eating fewer high fat foods on own
+BPQ_C.htm,BPD110B,BPD110B - Controlling weight on own
+BPQ_C.htm,BPD110C,BPD110C - Increasing exercise on own
+BPQ_C.htm,BPQ115,BPQ115 - CHECK ITEM
+BPQ_C.htm,BPQ117,BPQ117 - CHECK ITEM
+BPQ_C.htm,BPD120,BPD120 - Eating fewer high fat foods on own
+BPQ_C.htm,BPQ125,BPQ125 - CHECK ITEM
+BPQ_C.htm,BPD130,BPD130 - Controlling weight on own
+BPQ_C.htm,BPQ135,BPQ135 - CHECK ITEM
+BPQ_C.htm,BPD140,BPD140 - Increasing exercise on own
+BPX_C.htm,SEQN,SEQN - Respondent sequence number
+BPX_C.htm,PEASCST1,PEASCST1 - Blood Pressure Status
+BPX_C.htm,PEASCTM1,PEASCTM1 - Blood Pressure Time in Seconds
+BPX_C.htm,PEASCCT1,PEASCCT1 - Blood Pressure Comment
+BPX_C.htm,BPXCHR,BPXCHR - 60 sec HR (30 sec HR * 2)
+BPX_C.htm,BPQ150A,BPQ150A - Had food in the past 30 minutes?
+BPX_C.htm,BPQ150B,BPQ150B - Had alcohol in the past 30 minutes?
+BPX_C.htm,BPQ150C,BPQ150C - Had coffee in the past 30 minutes?
+BPX_C.htm,BPQ150D,BPQ150D - Had cigarettes in the past 30 minutes?
+BPX_C.htm,BPAARM,BPAARM - Arm selected:
+BPX_C.htm,BPACSZ,BPACSZ - Coded cuff size
+BPX_C.htm,BPXPLS,BPXPLS - 60 sec. pulse (30 sec. pulse * 2):
+BPX_C.htm,BPXDB,BPXDB - # of dropped beats in 30 seconds
+BPX_C.htm,BPXPULS,BPXPULS - Pulse regular or irregular?
+BPX_C.htm,BPXPTY,BPXPTY - Pulse type:
+BPX_C.htm,BPXML1,BPXML1 - MIL: maximum inflation levels (mm Hg)
+BPX_C.htm,BPXSY1,BPXSY1 - Systolic:  Blood pres (1st rdg) mm Hg
+BPX_C.htm,BPXDI1,BPXDI1 - Diastolic:  Blood pres (1st rdg) mm Hg
+BPX_C.htm,BPAEN1,BPAEN1 - Enhancement used first reading
+BPX_C.htm,BPXSY2,BPXSY2 - Systolic:  Blood pres (2nd rdg) mm Hg
+BPX_C.htm,BPXDI2,BPXDI2 - Diastolic: Blood pres (2nd rdg) mm Hg
+BPX_C.htm,BPAEN2,BPAEN2 - Enhancement used second reading
+BPX_C.htm,BPXSY3,BPXSY3 - Systolic:  Blood pres (3rd rdg) mm Hg
+BPX_C.htm,BPXDI3,BPXDI3 - Diastolic: Blood pres (3rd rdg) mm Hg
+BPX_C.htm,BPAEN3,BPAEN3 - Enhancement used third reading
+BPX_C.htm,BPXSY4,BPXSY4 - Systolic: Blood pres (4th rdg) mm Hg
+BPX_C.htm,BPXDI4,BPXDI4 - Diastolic:  Blood pres (4th rdg) mm Hg
+BPX_C.htm,BPAEN4,BPAEN4 - Enhancement used fourth reading
+CDQ_C.htm,SEQN,SEQN - Respondent sequence number
+CDQ_C.htm,CDQ001,CDQ001 - SP ever had pain or discomfort in chest
+CDQ_C.htm,CDQ002,CDQ002 - SP get it walking uphill or in a hurry
+CDQ_C.htm,CDQ003,CDQ003 - During an ordinary pace on level ground
+CDQ_C.htm,CDQ003A,CDQ003A - CHECK ITEM
+CDQ_C.htm,CDQ004,CDQ004 - If so does SP continue or slow down
+CDQ_C.htm,CDQ005,CDQ005 - Does standing relieve pain/discomfort
+CDQ_C.htm,CDQ006,CDQ006 - How soon is the pain relieved
+CDQ_C.htm,CDQ009A,CDQ009A - Pain in right arm
+CDQ_C.htm,CDQ009B,CDQ009B - Pain in right chest
+CDQ_C.htm,CDQ009C,CDQ009C - Pain in neck
+CDQ_C.htm,CDQ009D,CDQ009D - Pain in upper sternum
+CDQ_C.htm,CDQ009E,CDQ009E - Pain in lower sternum
+CDQ_C.htm,CDQ009F,CDQ009F - Pain in left chest
+CDQ_C.htm,CDQ009G,CDQ009G - Pain in left arm
+CDQ_C.htm,CDQ009H,CDQ009H - Pain in epigastric area
+CDQ_C.htm,CDQ008,CDQ008 - Severe pain in chest more than half hour
+CDQ_C.htm,CDQ010,CDQ010 - Shortness of breath on stairs/inclines
+CIQDEP_C.htm,SEQN,SEQN - Respondent sequence number
+CIQDEP_C.htm,WTSCI2YR,WTSCI2YR - CIDI Subsample 2 year MEC Weight
+CIQDEP_C.htm,CIAORDER,CIAORDER - Order in which CIDI modules are asked
+CIQDEP_C.htm,CIQD001,"CIQD001 - Two weeks sad, empty, depressed?"
+CIQDEP_C.htm,CIQD002,"CIQD002 - Sad, empty, depressed (SED) frequency"
+CIQDEP_C.htm,CIQD003,CIQD003 - SED duration
+CIQDEP_C.htm,CIQD004,"CIQD004 - When SED, also other problems?"
+CIQDEP_C.htm,CIQD005,"CIQD005 - When SED, did you lack energy?"
+CIQDEP_C.htm,CIQD006,"CIQD006 - When SED, did you lose interest?"
+CIQDEP_C.htm,CIQD007,"CIQD007 - When SED, were you irritable or grouchy?"
+CIQDEP_C.htm,CIQD008,CIQD008 - Past 12 mos. 2 weeks lost interest?
+CIQDEP_C.htm,CIQD009,CIQD009 - Loss of interest frequency
+CIQDEP_C.htm,CIQD010,CIQD010 - Loss of interest duration
+CIQDEP_C.htm,CIQD011,"CIQD011 - When lost interest, also other problems?"
+CIQDEP_C.htm,CIQD012,"CIQD012 - When lost interest, did you lack energy?"
+CIQDEP_C.htm,CIQD013,"CIQD013 - When lost interest, irritable/grouchy?"
+CIQDEP_C.htm,CIQD014,CIQD014 - Two weeks irritable most of the time?
+CIQDEP_C.htm,CIQD015,CIQD015 - Irritable frequency
+CIQDEP_C.htm,CIQD016,CIQD016 - Irritable duration
+CIQDEP_C.htm,CIQD017,"CIQD017 - When irritable, also other problems?"
+CIQDEP_C.htm,CIQD018,"CIQD018 - When irritable, did you lack energy?"
+CIQDEP_C.htm,CIQD019,CIQD019 - Did you have less appetite?
+CIQDEP_C.htm,CIQD020,CIQD020 - Did you lose weight?
+CIQDEP_C.htm,CIQD020Z,CIQD020Z - CHECK ITEM
+CIQDEP_C.htm,CIQD021,CIQD021 - Amount of weight lost
+CIQDEP_C.htm,CIQD021Z,CIQD021Z - CHECK ITEM
+CIQDEP_C.htm,CIQD022,CIQD022 - Did you have a larger appetite?
+CIQDEP_C.htm,CIQD023,CIQD023 - Did you gain weight?
+CIQDEP_C.htm,CIQD024,CIQD024 - Amount of weight gained
+CIQDEP_C.htm,CIQD025,"CIQD025 - During 2 weeks, trouble sleep?"
+CIQDEP_C.htm,CIQD026,CIQD026 - Frequency trouble sleeping
+CIQDEP_C.htm,CIQD027,CIQD027 - Did you wake up 2 hours early?
+CIQDEP_C.htm,CIQD028,CIQD028 - Did you sleep too much?
+CIQDEP_C.htm,CIQD029,"CIQD029 - Felt bad first woke, better later?"
+CIQDEP_C.htm,CIQD030,CIQD030 - Was interest in sex less than usual?
+CIQDEP_C.htm,CIQD031,CIQD031 - Lose ability to enjoy good things?
+CIQDEP_C.htm,CIQD032,CIQD032 - Did you talk or move more slowly?
+CIQDEP_C.htm,CIQD033,CIQD033 - Did anyone notice...more slowly?
+CIQDEP_C.htm,CIQD034,CIQD034 - Did you have to move all the time?
+CIQDEP_C.htm,CIQD035,CIQD035 - Did anyone notice moving all the time?
+CIQDEP_C.htm,CIQD036,CIQD036 - Did you feel worthless nearly every day?
+CIQDEP_C.htm,CIQD037,CIQD037 - Did you feel guilty?
+CIQDEP_C.htm,CIQD037Z,CIQD037Z - CHECK ITEM
+CIQDEP_C.htm,CIQD038,CIQD038 - Was there reason worthless or guilty?
+CIQDEP_C.htm,CIQD040,CIQD040 - Was R worthless/guilty about depression?
+CIQDEP_C.htm,CIQD041,CIQD041 - Did you feel not as good as others?
+CIQDEP_C.htm,CIQD042,CIQD042 - Did you have so little confidence...?
+CIQDEP_C.htm,CIQD043,CIQD043 - Did you have...trouble concentrating?
+CIQDEP_C.htm,CIQD044,CIQD044 - Unable to read...couldn't pay attention?
+CIQDEP_C.htm,CIQD045,CIQD045 - Did thoughts come slower...?
+CIQDEP_C.htm,CIQD046,CIQD046 - Were you unable to make up your mind...?
+CIQDEP_C.htm,CIQD047,CIQD047 - Did you think a lot about death?
+CIQDEP_C.htm,CIQD048,CIQD048 - Did you think about committing suicide?
+CIQDEP_C.htm,CIQD049,CIQD049 - Did you make a suicide plan?
+CIQDEP_C.htm,CIQD050,CIQD050 - Did you attempt suicide?
+CIQDEP_C.htm,CIQD050Z,CIQD050Z - CHECK ITEM
+CIQDEP_C.htm,CIQD051,CIQD051 - No. weeks SED... past 12 mos?
+CIQDEP_C.htm,CIQD051Z,CIQD051Z - CHECK ITEM
+CIQDEP_C.htm,CIQD052,CIQD052 - Was it 1 period or 2 or more?
+CIQDEP_C.htm,CIQD053,CIQD053 - Was it one period or two or more?
+CIQDEP_C.htm,CIQD054,CIQD054 - Is the period still going on or ended?
+CIQDEP_C.htm,CIQD054Z,CIQD054Z - CHECK ITEM
+CIQDEP_C.htm,CIQD055,CIQD055 - How long has period been going on?
+CIQDEP_C.htm,CIQD055Z,CIQD055Z - CHECK ITEM
+CIQDEP_C.htm,CIQD056,CIQD056 - When did it end -- past month or more?
+CIQDEP_C.htm,CIQD057,"CIQD057 - Ended past month, 6 months, more than 6?"
+CIQDEP_C.htm,CIQD058,CIQD058 - How long period before it ended?
+CIQDEP_C.htm,CIQD059,CIQD059 - Did period begin after someone died?
+CIQDEP_C.htm,CIQD060,CIQD060 - Who was it that died?
+CIQDEP_C.htm,CIQD061,CIQD061 - Did period begin w_in month of baby?
+CIQDEP_C.htm,CIQD062,CIQD062 - Did anything else happen before period?
+CIQDEP_C.htm,CIQD064,CIQD064 - How many periods?
+CIQDEP_C.htm,CIQD064Z,CIQD064Z - CHECK ITEM
+CIQDEP_C.htm,CIQD065,CIQD065 - Number of weeks before end?
+CIQDEP_C.htm,CIQD066,CIQD066 - Did 1st per begin after someone died?
+CIQDEP_C.htm,CIQD067,CIQD067 - Who was it that died?
+CIQDEP_C.htm,CIQD068,CIQD068 - Did period begin w_in month of baby?
+CIQDEP_C.htm,CIQD069,CIQD069 - Did anything else happen before period?
+CIQDEP_C.htm,CIQD071,CIQD071 - How long between two periods?
+CIQDEP_C.htm,CIQD071Z,CIQD071Z - CHECK ITEM
+CIQDEP_C.htm,CIQD072,CIQD072 - Did you feel ok two months between?
+CIQDEP_C.htm,CIQD073,CIQD073 - Did you have two mos. enjoy...?
+CIQDEP_C.htm,CIQD074,CIQD074 - Is second period going on or ended?
+CIQDEP_C.htm,CIQD075,CIQD075 - How long went on before ended?
+CIQDEP_C.htm,CIQD075Z,CIQD075Z - CHECK ITEM
+CIQDEP_C.htm,CIQD076,CIQD076 - Did it end past mos. or more than month?
+CIQDEP_C.htm,CIQD077,"CIQD077 - Did it end past mos, past 6 mos or more?"
+CIQDEP_C.htm,CIQD078,CIQD078 - Did 2nd period begin after someone died?
+CIQDEP_C.htm,CIQD079,CIQD079 - Who was it that died?
+CIQDEP_C.htm,CIQD080,CIQD080 - Did 2nd period begin w_in a mon of baby?
+CIQDEP_C.htm,CIQD081,CIQD081 - Anything else happen before 2nd period?
+CIQDEP_C.htm,CIQD083,CIQD083 - What is longest  no weeks felt that way?
+CIQDEP_C.htm,CIQD084,CIQD084 - Is most recent of 4 periods on or ended?
+CIQDEP_C.htm,CIQD085Z,CIQD085Z - CHECK ITEM
+CIQDEP_C.htm,CIQD085,CIQD085 - Ended past mos. or more than month?
+CIQDEP_C.htm,CIQD086,"CIQD086 - Ended past mos, six months or more?"
+CIQDEP_C.htm,CIQD087,"CIQD087 - In between 4 periods, ok for 2 months?"
+CIQDEP_C.htm,CIQD088,"CIQD088 - Between periods, 2 months activities?"
+CIQDEP_C.htm,CIQD089,CIQD089 - Did 4 periods occur after someone died?
+CIQDEP_C.htm,CIQD090,CIQD090 - Who was it that died?
+CIQDEP_C.htm,CIQD091,CIQD091 - Were all 4 periods after the death?
+CIQDEP_C.htm,CIQD092,CIQD092 - Did periods occur w_in mos. of baby?
+CIQDEP_C.htm,CIQD093,CIQD093 - Anything else happen before periods?
+CIQDEP_C.htm,CIQD095,CIQD095 - SED interfere with daily life?
+CIQDEP_C.htm,CIQD096,CIQD096 - No. days totally unable work
+CIQDEP_C.htm,CIQD096Z,CIQD096Z - CHECK ITEM
+CIQDEP_C.htm,CIQD097,CIQD097 - Did day occur past 4 weeks?
+CIQDEP_C.htm,CIQD098,CIQD098 - No. days totally past 4 weeks
+CIQDEP_C.htm,CIQD099,CIQD099 - No. days cutback amount/quality
+CIQDEP_C.htm,CIQD099Z,CIQD099Z - CHECK ITEM
+CIQDEP_C.htm,CIQD100,CIQD100 - Describe quantity/quality cutback
+CIQDEP_C.htm,CIQD100Z,CIQD100Z - CHECK ITEM
+CIQDEP_C.htm,CIQD101,CIQD101 - Did cutback occur past 4 weeks?
+CIQDEP_C.htm,CIQD102,CIQD102 - No. days cutback past 4 weeks
+CIQDEP_C.htm,CIQD103,CIQD103 - No. days extreme effort to work
+CIQDEP_C.htm,CIQD103Z,CIQD103Z - CHECK ITEM
+CIQDEP_C.htm,CIQD104,CIQD104 - Did extreme occur past 4 weeks?
+CIQDEP_C.htm,CIQD105,CIQD105 - No. days extreme past 4 weeks
+CIQDEP_C.htm,CIQD106,CIQD106 - No. days interfere personal life
+CIQDEP_C.htm,CIQD106Z,CIQD106Z - CHECK ITEM
+CIQDEP_C.htm,CIQD107,CIQD107 - Did interfere occur past 4 weeks?
+CIQDEP_C.htm,CIQD108,CIQD108 - No. days interfere past 4 weeks
+CIQDEP_C.htm,CIQD109,CIQD109 - Did you tell MD about SED?
+CIQDEP_C.htm,CIQDPA,CIQDPA - Did you tell other prof about SED?
+CIQDEP_C.htm,CIQDPB,CIQDPB - Did you take medication for SED?
+CIQDEP_C.htm,CIQDPC,CIQDPC - Did SED interfere with life?
+CIQDEP_C.htm,CIQDPD,CIQDPD - Was SED result of physical illness?
+CIQDEP_C.htm,CIQDPE,CIQDPE - Was SED result of MDA?
+CIQDEP_C.htm,CIQDPF,CIQDPF - Was SED always result MDA?
+CIQDEP_C.htm,CIQDPHA,CIQDPHA - Doctor said nerves causing SED
+CIQDEP_C.htm,CIQDPHB,CIQDPHB - Doctor said stress causing SED
+CIQDEP_C.htm,CIQDPHC,CIQDPHC - Doctor said anxiety causing SED
+CIQDEP_C.htm,CIQDPHD,CIQDPHD - Doctor said depression causing SED
+CIQDEP_C.htm,CIQDPHE,CIQDPHE - Doctor said mental illness causing SED
+CIQDEP_C.htm,CIQDPHF,CIQDPHF - Doctor said medication causing SED
+CIQDEP_C.htm,CIQDPHG,CIQDPHG - Doctor said drugs causing SED
+CIQDEP_C.htm,CIQDPHH,CIQDPHH - Doctor said alcohol causing SED
+CIQDEP_C.htm,CIQDPHI,CIQDPHI - Doctor said physical illness causing SED
+CIQDEP_C.htm,CIQDPHJ,CIQDPHJ - Doctor said physical injury causing SED
+CIQDEP_C.htm,CIQDPHK,CIQDPHK - Doctor gave no definite diag for SED
+CIQDEP_C.htm,CIQDPHZZ,CIQDPHZZ - CHECK ITEM
+CIQDEP_C.htm,CIQDPJ,CIQDPJ - Was SED always result MDA?
+CIQDEP_C.htm,CIQDPK,CIQDPK - Was SED result of phys illness?
+CIQDEP_C.htm,CIQDPQ,CIQDPQ - Anything abnormal when exam?
+CIQDEP_C.htm,CIQDPN,CIQDPN - Was SED always result of phys illness?
+CIQDEP_C.htm,CIQDPO,"CIQDPO - When not ill,was SED always result MDA ?"
+CIQDEP_C.htm,CIDDPRB,CIDDPRB - General cause of problem
+CIQDEP_C.htm,CIQD110,CIQD110 - Remember age when first SED?
+CIQDEP_C.htm,CIQD111,CIQD111 - How old were you when first SED?
+CIQDEP_C.htm,CIQD111Z,CIQD111Z - CHECK ITEM
+CIQDEP_C.htm,CIQD112,CIQD112 - About how old when first SED?
+CIQDEP_C.htm,CIQD113,CIQD113 - Earliest age period of SED
+CIQDEP_C.htm,CIDDSCOR,CIDDSCOR - Depression Score
+CIQGAD_C.htm,SEQN,SEQN - Respondent sequence number
+CIQGAD_C.htm,WTSCI2YR,WTSCI2YR - CIDI Subsample 2 year MEC Weight
+CIQGAD_C.htm,CIAORDER,CIAORDER - Order in which CIDI modules are asked
+CIQGAD_C.htm,CIQG01,"CIQG01 - Month worried, tense, anxious(WTA)?"
+CIQGAD_C.htm,CIQG02,CIQG02 - Did period last six months?
+CIQGAD_C.htm,CIQG03,"CIQG03 - No. months worried, tense, anxious?"
+CIQGAD_C.htm,CIQG04,CIQG04 - WTA frequency
+CIQGAD_C.htm,CIQG05,CIQG05 - WTA duration
+CIQGAD_C.htm,CIQG06,CIQG06 - WTA a lot more than most?
+CIQGAD_C.htm,CIQG07,CIQG07 - Did period last six months?
+CIQGAD_C.htm,CIQG08,"CIQG08 - No. months worried, tense, anxious?"
+CIQGAD_C.htm,CIQG09,CIQG09 - WTA frequency
+CIQGAD_C.htm,CIQG10,CIQG10 - WTA duration
+CIQGAD_C.htm,CIQG12,CIQG12 - Did R worry about health/drug use?
+CIQGAD_C.htm,CIQG13,CIQG13 - Did R have multiple worries?
+CIQGAD_C.htm,CIQG14,CIQG14 - Do you think worry excessive?
+CIQGAD_C.htm,CIQG15,CIQG15 - How often difficult control worry?
+CIQGAD_C.htm,CIQG16,CIQG16 - How often worry so strong?
+CIQGAD_C.htm,CIQG17A,CIQG17A - Handcard: often restless?
+CIQGAD_C.htm,CIQG17B,CIQG17B - Handcard: often keyed up?
+CIQGAD_C.htm,CIQG17C,CIQG17C - Handcard: more tired than usual?
+CIQGAD_C.htm,CIQG17D,CIQG17D - Handcard: more irritable?
+CIQGAD_C.htm,CIQG17E,CIQG17E - Handcard: trouble sleeping?
+CIQGAD_C.htm,CIQG17F,CIQG17F - Handcard: trouble keeping mind on?
+CIQGAD_C.htm,CIQG17G,"CIQG17G - Handcard: tense, sore, ach muscles?"
+CIQGAD_C.htm,CIQG18,CIQG18 - Did you tell MD about WTA?
+CIQGAD_C.htm,CIQGPA,CIQGPA - Did you tell other prof about WTA?
+CIQGAD_C.htm,CIQGPB,CIQGPB - Did you take medication for WTA?
+CIQGAD_C.htm,CIQGPC,CIQGPC - Did WTA interfere with life?
+CIQGAD_C.htm,CIQGPD,CIQGPD - Was WTA result of phys illness?
+CIQGAD_C.htm,CIQGPE,CIQGPE - Was WTA result of  MDA?
+CIQGAD_C.htm,CIQGPF,CIQGPF - Was WTA always result MDA?
+CIQGAD_C.htm,CIQGPHA,CIQGPHA - Doctor said nerves causing WTA
+CIQGAD_C.htm,CIQGPHB,CIQGPHB - Doctor said stress causing WTA
+CIQGAD_C.htm,CIQGPHC,CIQGPHC - Doctor said anxiety causing WTA
+CIQGAD_C.htm,CIQGPHD,CIQGPHD - Doctor said depression causing WTA
+CIQGAD_C.htm,CIQGPHE,CIQGPHE - Doctor said mental illness causing WTA
+CIQGAD_C.htm,CIQGPHF,CIQGPHF - Doctor said medication causing WTA
+CIQGAD_C.htm,CIQGPHG,CIQGPHG - Doctor said drugs causing WTA
+CIQGAD_C.htm,CIQGPHH,CIQGPHH - Doctor said alcohol causing WTA
+CIQGAD_C.htm,CIQGPHI,CIQGPHI - Doctor said physical illness causing WTA
+CIQGAD_C.htm,CIQGPHJ,CIQGPHJ - Doctor said physical injury causing WTA
+CIQGAD_C.htm,CIQGPHK,CIQGPHK - Doc gave no definite diagnosis for WTA
+CIQGAD_C.htm,CIQGPHZZ,CIQGPHZZ - CHECK ITEM
+CIQGAD_C.htm,CIQGPJ,CIQGPJ - Was WTA always result MDA?
+CIQGAD_C.htm,CIQGPK,CIQGPK - Was WTA result of phys illness?
+CIQGAD_C.htm,CIQGPQ,CIQGPQ - Anything abnormal when examined?
+CIQGAD_C.htm,CIQGPN,CIQGPN - Was WTA always result of phys illness?
+CIQGAD_C.htm,CIQGPO,CIQGPO - Was WTA always result MDA?
+CIQGAD_C.htm,CIDGPRB,CIDGPRB - General cause of WTA
+CIQGAD_C.htm,CIQG19,CIQG19 - Remember age when first WTA?
+CIQGAD_C.htm,CIQG20,CIQG20 - How old were you when first WTA?
+CIQGAD_C.htm,CIQG20ZZ,CIQG20ZZ - CHECK ITEM
+CIQGAD_C.htm,CIQG21,CIQG21 - About how old when first WTA?
+CIQGAD_C.htm,CIQG22,CIQG22 - Earliest age period of WTA
+CIQGAD_C.htm,CIQG23,CIQG23 - Recency of period of WTA
+CIQGAD_C.htm,CIQG24,CIQG24 - How upset for feeling WTA?
+CIQGAD_C.htm,CIQG25,CIQG25 - WTA interfere with daily life?
+CIQGAD_C.htm,CIQG26,CIQG26 - No. days totally unable work
+CIQGAD_C.htm,CIQG26ZZ,CIQG26ZZ - CHECK ITEM
+CIQGAD_C.htm,CIQG27,CIQG27 - Did day occur past 4 weeks?
+CIQGAD_C.htm,CIQG28,CIQG28 - No. days totally past 4 weeks
+CIQGAD_C.htm,CIQG29,CIQG29 - No. days cutback amount/quality
+CIQGAD_C.htm,CIQG29ZZ,CIQG29ZZ - CHECK ITEM
+CIQGAD_C.htm,CIQG30,CIQG30 - Describe quantity/quality cutback
+CIQGAD_C.htm,CIQG30ZZ,CIQG30ZZ - CHECK ITEM
+CIQGAD_C.htm,CIQG31,CIQG31 - Did cutback occur past 4 weeks?
+CIQGAD_C.htm,CIQG32,CIQG32 - No. days cutback past 4 weeks
+CIQGAD_C.htm,CIQG33,CIQG33 - No. days extreme effort to work
+CIQGAD_C.htm,CIQG33ZZ,CIQG33ZZ - CHECK ITEM
+CIQGAD_C.htm,CIQG34,CIQG34 - Did extreme occur past 4 weeks?
+CIQGAD_C.htm,CIQG35,CIQG35 - No. days extreme past 4 weeks
+CIQGAD_C.htm,CIQG36,CIQG36 - No. days interfere personal life
+CIQGAD_C.htm,CIQG36ZZ,CIQG36ZZ - CHECK ITEM
+CIQGAD_C.htm,CIQG37,CIQG37 - Did interfere occur past 4 weeks?
+CIQGAD_C.htm,CIQG38,CIQG38 - No. days interfere past 4 weeks
+CIQGAD_C.htm,CIDGSCOR,CIDGSCOR - GAD score
+CIQPAN_C.htm,SEQN,SEQN - Respondent sequence number
+CIQPAN_C.htm,WTSCI2YR,WTSCI2YR - CIDI Subsample 2 year MEC Weight
+CIQPAN_C.htm,CIAORDER,CIAORDER - Order in which CIDI modules are asked
+CIQPAN_C.htm,CIQP01,"CIQP01 - Entire life, ever fear or panic attack?"
+CIQPAN_C.htm,CIQP02,"CIQP02 - Ever attack for no reason, out of blue?"
+CIQPAN_C.htm,CIQP03,CIQP03 - Panic attack past 12 months?
+CIQPAN_C.htm,CIQP04,"CIQP04 - Past 12 mos, avoided situations bc fear?"
+CIQPAN_C.htm,CIQP05,CIQP05 - How recently avoided situations bc fear?
+CIQPAN_C.htm,CIQP06,"CIQP06 - Past 12 mos, month + fear another?"
+CIQPAN_C.htm,CIQP07,CIQP07 - How recently have concern?
+CIQPAN_C.htm,CIQP08,"CIQP08 - Past 12 mos, attacks lead to terrible?"
+CIQPAN_C.htm,CIQP09,CIQP09 - How recently have concern?
+CIQPAN_C.htm,CIQP10ZZ,CIQP10ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP11,CIQP11 - Ever attacks life-threatening?
+CIQPAN_C.htm,CIQP12,CIQP12 - Ever attacks not life-threatening?
+CIQPAN_C.htm,CIQP13A,CIQP13A - Did your heart pound or race?
+CIQPAN_C.htm,CIQP13B,CIQP13B - Did you sweat?
+CIQPAN_C.htm,CIQP13C,CIQP13C - Did you tremble or shake?
+CIQPAN_C.htm,CIQP13D,CIQP13D - Did you have dry mouth?
+CIQPAN_C.htm,CIQP13E,CIQP13E - Were you short of breath?
+CIQPAN_C.htm,CIQP13F,CIQP13F - Feel like you were choking?
+CIQPAN_C.htm,CIQP13G,CIQP13G - Pain or discomfort in chest?
+CIQPAN_C.htm,CIQP13H,CIQP13H - Nausea or discomfort in stomach?
+CIQPAN_C.htm,CIQP13I,CIQP13I - Were you dizzy or feeling faint?
+CIQPAN_C.htm,CIQP13J,CIQP13J - Did you feel unreal?
+CIQPAN_C.htm,CIQP13K,CIQP13K - Feel things around you unreal?
+CIQPAN_C.htm,CIQP13L,CIQP13L - Afraid you might lose control?
+CIQPAN_C.htm,CIQP13M,CIQP13M - Afraid you might pass out?
+CIQPAN_C.htm,CIQP13N,CIQP13N - Afraid you might die?
+CIQPAN_C.htm,CIQP13O,CIQP13O - Have hot flashes or chills?
+CIQPAN_C.htm,CIQP13P,CIQP13P - Have numbness or tingling?
+CIQPAN_C.htm,CIQP13ZZ,CIQP13ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP14,CIQP14 - No. attacks w/symptoms in lifetime?
+CIQPAN_C.htm,CIQP15,"CIQP15 - Problems began suddenly, got worse?"
+CIQPAN_C.htm,CIQP15ZZ,CIQP15ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP16,CIQP16 - When did attack occur?
+CIQPAN_C.htm,CIQP17,CIQP17 - Remember age when attack occurred?
+CIQPAN_C.htm,CIQP18,CIQP18 - Exact age when attack occurred
+CIQPAN_C.htm,CIQP18ZZ,CIQP18ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP19,CIQP19 - Approx age when attack occurred
+CIQPAN_C.htm,CIQP20,CIQP20 - Which of three situations occurred?
+CIQPAN_C.htm,CIQP21A,CIQP21A - Fear: Giving a speech
+CIQPAN_C.htm,CIQP21B,CIQP21B - Fear: Party or social event
+CIQPAN_C.htm,CIQP21C,CIQP21C - Fear: Being in a crowd
+CIQPAN_C.htm,CIQP21D,CIQP21D - Fear: Meeting new people
+CIQPAN_C.htm,CIQP21E,"CIQP21E - Fear: Being outside, away"
+CIQPAN_C.htm,CIQP21F,"CIQP21F - Fear: Traveling bus, train, car"
+CIQPAN_C.htm,CIQP21G,"CIQP21G - Fear:  Crowd, standing in line"
+CIQPAN_C.htm,CIQP21H,CIQP21H - Fear: Being in a public place
+CIQPAN_C.htm,CIQP21I,CIQP21I - Fear: Animals
+CIQPAN_C.htm,CIQP21J,CIQP21J - Fear: Heights
+CIQPAN_C.htm,CIQP21K,"CIQP21K - Fear: Storms, thunder, lightening"
+CIQPAN_C.htm,CIQP21L,CIQP21L - Fear: Flying
+CIQPAN_C.htm,CIQP21M,CIQP21M - Fear: Closed spaces
+CIQPAN_C.htm,CIQP21N,CIQP21N - Fear: Seeing blood
+CIQPAN_C.htm,CIQP21O,CIQP21O - Fear: Getting an injection
+CIQPAN_C.htm,CIQP21P,CIQP21P - Fear: Going to the dentist
+CIQPAN_C.htm,CIQP21Q,CIQP21Q - Fear: Going to a hospital
+CIQPAN_C.htm,CIQP21R,CIQP21R - Fear: Other 1
+CIQPAN_C.htm,CIQP21S,CIQP21S - Fear: Other 2
+CIQPAN_C.htm,CIQP21T,CIQP21T - Fear: Other 3
+CIQPAN_C.htm,CIQP21ZZ,CIQP21ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP23,CIQP23 - Exact age when attack occurred
+CIQPAN_C.htm,CIQP24,CIQP24 - Years of age attack occurred
+CIQPAN_C.htm,CIQP24ZZ,CIQP24ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP25,CIQP25 - When did attack occur?
+CIQPAN_C.htm,CIQP26,"CIQP26 - Attack in past 12 months,or more?"
+CIQPAN_C.htm,CIQP27,CIQP27 - When did attack occur?
+CIQPAN_C.htm,CIQP28,CIQP28 - Approx age when attack occurred
+CIQPAN_C.htm,CIQP29,CIQP29 - Earliest age attack occurred
+CIQPAN_C.htm,CIQP30ZZ,CIQP30ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP31,CIQP31 - Age last time had attack
+CIQPAN_C.htm,CIQP32,CIQP32 - No. attacks lifetime out of the blue
+CIQPAN_C.htm,CIQP32ZZ,CIQP32ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP33,CIQP33 - Out of the blue attack past 12 months?
+CIQPAN_C.htm,CIQP34,CIQP34 - No. attacks past 12 months?
+CIQPAN_C.htm,CIQP35ZZ,CIQP35ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP36,CIQP36 - No. attacks lifetime strong fear
+CIQPAN_C.htm,CIQP36ZZ,CIQP36ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP37,CIQP37 - Attack in past 12 months?
+CIQPAN_C.htm,CIQP38,CIQP38 - No. attacks past 12 months?
+CIQPAN_C.htm,CIQP39ZZ,CIQP39ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP40,CIQP40 - No. attacks lifetime real danger
+CIQPAN_C.htm,CIQP40ZZ,CIQP40ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP41,CIQP41 - Attack in past 12 months?
+CIQPAN_C.htm,CIQP42,CIQP42 - No. attacks past 12 months
+CIQPAN_C.htm,CIQP43ZZ,CIQP43ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP44A,CIQP44A - Strong Fear: Giving a speech
+CIQPAN_C.htm,CIQP44B,CIQP44B - Strong Fear: Party or social event
+CIQPAN_C.htm,CIQP44C,CIQP44C - Strong Fear: Being in a crowd
+CIQPAN_C.htm,CIQP44D,CIQP44D - Strong Fear: Meeting new people
+CIQPAN_C.htm,CIQP44E,"CIQP44E - Strong Fear: Being outside, away"
+CIQPAN_C.htm,CIQP44F,"CIQP44F - Strong Fear: Traveling bus, train, car"
+CIQPAN_C.htm,CIQP44G,"CIQP44G - Strong Fear:  Crowd, standing in line"
+CIQPAN_C.htm,CIQP44H,CIQP44H - Strong Fear: Being in a public place
+CIQPAN_C.htm,CIQP44I,CIQP44I - Strong Fear: Animals
+CIQPAN_C.htm,CIQP44J,CIQP44J - Strong Fear: Heights
+CIQPAN_C.htm,CIQP44K,"CIQP44K - Strong Fear: Storms, thunder, lightning"
+CIQPAN_C.htm,CIQP44L,CIQP44L - Strong Fear: Flying
+CIQPAN_C.htm,CIQP44M,CIQP44M - Strong Fear: Closed spaces
+CIQPAN_C.htm,CIQP44N,CIQP44N - Strong Fear: Seeing blood
+CIQPAN_C.htm,CIQP44O,CIQP44O - Strong Fear: Getting an injection
+CIQPAN_C.htm,CIQP44P,CIQP44P - Strong Fear: Going to the dentist
+CIQPAN_C.htm,CIQP44Q,CIQP44Q - Strong Fear: Going to a hospital
+CIQPAN_C.htm,CIQP44R,CIQP44R - Strong Fear: Other 1
+CIQPAN_C.htm,CIQP44S,CIQP44S - Strong Fear: Other 2
+CIQPAN_C.htm,CIQP44T,CIQP44T - Strong Fear: Other 3
+CIQPAN_C.htm,CIQP48ZZ,CIQP48ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP49,CIQP49 - Recency of fear or out of the blue
+CIQPAN_C.htm,CIQP49ZZ,CIQP49ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP50,CIQP50 - Past 12 months no. weeks attack
+CIQPAN_C.htm,CIQP50ZZ,CIQP50ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP51,CIQP51 - Single period or two+ periods?
+CIQPAN_C.htm,CIQP52,CIQP52 - Longest no. weeks in row attack
+CIQPAN_C.htm,CIQP53ZZ,CIQP53ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP54,CIQP54 - Largest no. attacks any one week
+CIQPAN_C.htm,CIQP54ZZ,CIQP54ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP55,CIQP55 - Largest no. attack any four weeks
+CIQPAN_C.htm,CIQP56ZZ,CIQP56ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP57,CIQP57 - Four week in row and four attacks?
+CIQPAN_C.htm,CIQP58,CIQP58 - Did you tell doctor about attack?
+CIQPAN_C.htm,CIQPPA,CIQPPA - Did you tell other prof about attack?
+CIQPAN_C.htm,CIQPPB,CIQPPB - Did you take medication for attack?
+CIQPAN_C.htm,CIQPPC,CIQPPC - Did attacks interfere with life?
+CIQPAN_C.htm,CIQPPD,CIQPPD - Were attacks result of phys illness?
+CIQPAN_C.htm,CIQPPE,CIQPPE - Were attacks result of  MDA?
+CIQPAN_C.htm,CIQPPF,CIQPPF - Were attacks always result MDA?
+CIQPAN_C.htm,CIQPPHA,CIQPPHA - Doctor said nerves causing attacks
+CIQPAN_C.htm,CIQPPHB,CIQPPHB - Doctor said stress causing attacks
+CIQPAN_C.htm,CIQPPHC,CIQPPHC - Doctor said anxiety causing attacks
+CIQPAN_C.htm,CIQPPHD,CIQPPHD - Doctor said depression causing attacks
+CIQPAN_C.htm,CIQPPHE,CIQPPHE - Doc said mental illness causing attacks
+CIQPAN_C.htm,CIQPPHF,CIQPPHF - Doctor said medication causing attacks
+CIQPAN_C.htm,CIQPPHG,CIQPPHG - Doctor said drugs causing attacks
+CIQPAN_C.htm,CIQPPHH,CIQPPHH - Doctor said alcohol causing attacks
+CIQPAN_C.htm,CIQPPHI,CIQPPHI - Doctor said phys illness causing attacks
+CIQPAN_C.htm,CIQPPHJ,CIQPPHJ - Doctor said phys injury causing attacks
+CIQPAN_C.htm,CIQPPHK,CIQPPHK - Doctor gave no definite diag for attacks
+CIQPAN_C.htm,CIQPPHZZ,CIQPPHZZ - CHECK ITEM
+CIQPAN_C.htm,CIQPPJ,CIQPPJ - Were attacks always result MDA?
+CIQPAN_C.htm,CIQPPK,CIQPPK - Were attacks result of phys illness?
+CIQPAN_C.htm,CIQPPQ,CIQPPQ - Anything abnormal when exam?
+CIQPAN_C.htm,CIQPPN,CIQPPN - Were attacks always result phys ill?
+CIQPAN_C.htm,CIQPPO,CIQPPO - Were attacks always result MDA?
+CIQPAN_C.htm,CIDPPRB,CIDPPRB - General cause of problem
+CIQPAN_C.htm,CIQP59,CIQP59 - Attacks interfere with daily life?
+CIQPAN_C.htm,CIQP60,CIQP60 - No. days totally unable work
+CIQPAN_C.htm,CIQP60ZZ,CIQP60ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP61,CIQP61 - Did totally occur past 4 weeks?
+CIQPAN_C.htm,CIQP61ZZ,CIQP61ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP62,CIQP62 - No. days totally past 4 weeks
+CIQPAN_C.htm,CIQP63,CIQP63 - No. days cutback amount/quality
+CIQPAN_C.htm,CIQP63ZZ,CIQP63ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP64,CIQP64 - Describe quantity/quality cutback
+CIQPAN_C.htm,CIQP64ZZ,CIQP64ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP65,CIQP65 - Did cutback occur past 4 weeks?
+CIQPAN_C.htm,CIQP66,CIQP66 - No. days cutback past 4 weeks
+CIQPAN_C.htm,CIQP67,CIQP67 - No. days extreme effort to work
+CIQPAN_C.htm,CIQP67ZZ,CIQP67ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP68,CIQP68 - Did extreme occur past 4 weeks?
+CIQPAN_C.htm,CIQP69,CIQP69 - No. days extreme past 4 weeks
+CIQPAN_C.htm,CIQP70,CIQP70 - No. days interfere personal life
+CIQPAN_C.htm,CIQP70ZZ,CIQP70ZZ - CHECK ITEM
+CIQPAN_C.htm,CIQP71,CIQP71 - Did interfere occur past 4 weeks?
+CIQPAN_C.htm,CIQP72,CIQP72 - No. days interfere past 4 weeks
+CIQPAN_C.htm,CIDPSCOR,CIDPSCOR - Panic Score
+CVX_C.htm,SEQN,SEQN - Respondent sequence number
+CVX_C.htm,CVDEXSTS,CVDEXSTS - CV fitness exam status
+CVX_C.htm,CVDEXCMT,CVDEXCMT - Comment code for CV fitness exam status
+CVX_C.htm,CVDEXCL1,CVDEXCL1 - Excluded per physical limitations
+CVX_C.htm,CVDEXCL2,CVDEXCL2 - Excluded per cardiovascular conditions
+CVX_C.htm,CVDEXCL3,CVDEXCL3 - Excluded per lung/breathing conditions
+CVX_C.htm,CVDEXCL4,CVDEXCL4 - Excluded per asthma symptoms
+CVX_C.htm,CVDEXCL5,CVDEXCL5 - Excluded per medications
+CVX_C.htm,CVDEXCL6,CVDEXCL6 - Excluded per other specific reasons
+CVX_C.htm,CVQ220a,"CVQ220a - Priority 2 Stop, excessive HR in stage 2"
+CVX_C.htm,CVQ220b,"CVQ220b - Priority 2 Stop, excessive HR in stage 1"
+CVX_C.htm,CVQ220c,"CVQ220c - Priority 2 Stop, excessive BP"
+CVX_C.htm,CVQ220e,"CVQ220e - Priority 2 Stop, significant drop in SBP"
+CVX_C.htm,CVQ220g,"CVQ220g - Priority 2 Stop, variability in HR"
+CVX_C.htm,CVQ220h,"CVQ220h - Priority 2 Stop, participant request"
+CVX_C.htm,CVQ220i,"CVQ220i - Priority 2 Stop, equipment failure"
+CVX_C.htm,CVQ220j,"CVQ220j - Priority 2 Stop, participant grips rails"
+CVX_C.htm,CVQ220k,"CVQ220k - Priority 2 Stop, participant overexerted"
+CVX_C.htm,CVQ220l,"CVQ220l - Priority 2 Stop, technician discretion"
+CVX_C.htm,CVQ220m,"CVQ220m - Priority 2 Stop, other specified reasons"
+CVX_C.htm,CVDEXLEN,CVDEXLEN - Length of CV fitness exam (min)
+CVX_C.htm,CVDEXMER,CVDEXMER - Examiner ID code
+CVX_C.htm,CVDPMHR,CVDPMHR - Predicted maximal heart rate (per min)
+CVX_C.htm,CVXPARC,CVXPARC - Physical activity readiness code
+CVX_C.htm,CVDVOMAX,CVDVOMAX - Predicted VO2max (ml/kg/min)
+CVX_C.htm,CVAPROT,CVAPROT - Assigned exercise protocol
+CVX_C.htm,CVDPROT,CVDPROT - Exercise protocol used in stage 1 and 2
+CVX_C.htm,CVATEMP,CVATEMP - Room temperature (degrees F)
+CVX_C.htm,CVAARM,CVAARM - Arm selected for blood pressure monitor
+CVX_C.htm,CVACUFF,CVACUFF - Cuff size for blood pressure monitor
+CVX_C.htm,CVAVEST,CVAVEST - Mesh vest used
+CVX_C.htm,CVAWS1,CVAWS1 - Warm-up speed (mph)
+CVX_C.htm,CVAWG1,CVAWG1 - Warm-up grade (% incline)
+CVX_C.htm,CVDWTIM,CVDWTIM - Amount of time spent in warm-up (min)
+CVX_C.htm,CVXWRPE,CVXWRPE - Warm-up rating of perceived exertion
+CVX_C.htm,CVDWHR,CVDWHR - Warm-up heart rate (per min)
+CVX_C.htm,CVDWSY,CVDWSY - Warm-up systolic BP (mm Hg)
+CVX_C.htm,CVDWDI,CVDWDI - Warm-up diastolic BP (mm Hg)
+CVX_C.htm,CVDS1S,CVDS1S - Stage 1 speed (mph)
+CVX_C.htm,CVDS1G,CVDS1G - Stage 1 grade (% incline)
+CVX_C.htm,CVDS1TIM,CVDS1TIM - Amount of time spent in Stage 1 (min)
+CVX_C.htm,CVXS1RPE,CVXS1RPE - Stage 1 rating of perceived exertion
+CVX_C.htm,CVDS1HR,CVDS1HR - Stage 1 heart rate (per min)
+CVX_C.htm,CVDS1SY,CVDS1SY - Stage 1 systolic BP (mm Hg)
+CVX_C.htm,CVDS1DI,CVDS1DI - Stage 1 diastolic BP (mm Hg)
+CVX_C.htm,CVDS2S,CVDS2S - Stage 2 speed (mph)
+CVX_C.htm,CVDS2G,CVDS2G - Stage 2 grade (% incline)
+CVX_C.htm,CVDS2TIM,CVDS2TIM - Amount of time spent in Stage 2 (min)
+CVX_C.htm,CVXS2RPE,CVXS2RPE - Stage 2 rating of perceived exertion
+CVX_C.htm,CVDS2HR,CVDS2HR - Stage 2 heart rate (per min)
+CVX_C.htm,CVDS2SY,CVDS2SY - Stage 2 systolic BP (mm Hg)
+CVX_C.htm,CVDS2DI,CVDS2DI - Stage 2 diastolic BP (mm Hg)
+CVX_C.htm,CVDR1TIM,CVDR1TIM - Amount of time spent in Recovery 1 (min)
+CVX_C.htm,CVDR1HR,CVDR1HR - Recovery 1 heart rate (per min)
+CVX_C.htm,CVDR1SY,CVDR1SY - Recovery 1 systolic BP (mm Hg)
+CVX_C.htm,CVDR1DI,CVDR1DI - Recovery 1 diastolic BP (mm Hg)
+CVX_C.htm,CVDR2TIM,CVDR2TIM - Amount of time spent in Recovery 2 (min)
+CVX_C.htm,CVDR2HR,CVDR2HR - Recovery 2 heart rate (per min)
+CVX_C.htm,CVDR2SY,CVDR2SY - Recovery 2 systolic BP (mm Hg)
+CVX_C.htm,CVDR2DI,CVDR2DI - Recovery 2 diastolic BP (mm Hg)
+CVX_C.htm,CVDR3TIM,CVDR3TIM - Amount of time spent in Recovery 3 (min)
+CVX_C.htm,CVDR3HR,CVDR3HR - Recovery 3 heart rate (per min)
+CVX_C.htm,CVDR3SY,CVDR3SY - Recovery 3 systolic BP (mm Hg)
+CVX_C.htm,CVDR3DI,CVDR3DI - Recovery 3 diastolic BP (mm Hg)
+CVX_C.htm,CVDESVO2,CVDESVO2 - Estimated VO2max (ml/kg/min)
+CVX_C.htm,CVDFITLV,CVDFITLV - Cardiovascular fitness level
+DBQ_C.htm,SEQN,SEQN - Respondent sequence number
+DBQ_C.htm,DBQ010,DBQ010 - Ever breastfed or fed breastmilk
+DBQ_C.htm,DBD020,DBD020 - Age started eating other foods(days)
+DBQ_C.htm,DBD030,DBD030 - Age stopped breastfeeding(days)
+DBQ_C.htm,DBD040,DBD040 - Age first fed formula daily(days)
+DBQ_C.htm,DBD050,DBD050 - Age stopped receiving formula(days)
+DBQ_C.htm,DBD060,DBD060 - Age first fed milk daily basis(days)
+DBQ_C.htm,DBQ071A,DBQ071A - Type of milk first fed - whole milk
+DBQ_C.htm,DBQ071B,DBQ071B - Type of milk first fed - 2% milk
+DBQ_C.htm,DBQ071C,DBQ071C - Type of milk first fed - 1% milk
+DBQ_C.htm,DBQ071D,DBQ071D - Type of milk first fed - skim/nonfat
+DBQ_C.htm,DBQ071U,DBQ071U - Type of milk first fed - other
+DBQ_C.htm,DBD080,DBD080 - Age started eating solid foods(days)
+DBQ_C.htm,DBD085,DBD085 - CHECK ITEM
+DBQ_C.htm,DBD090,DBD090 - # of times/week eat restaurant food
+DBQ_C.htm,DBD197,DBD197 - Past 30 day milk product consumption
+DBQ_C.htm,DBQ221A,DBQ221A - You drink whole or regular milk
+DBQ_C.htm,DBQ221B,DBQ221B - You drink 2% fat milk
+DBQ_C.htm,DBQ221C,DBQ221C - You drink 1% fat milk
+DBQ_C.htm,DBQ221D,"DBQ221D - You drink skim, nonfat or .5% milk"
+DBQ_C.htm,DBQ221U,DBQ221U - You drink another type of milk
+DBQ_C.htm,DBD225,DBD225 - CHECK ITEM
+DBQ_C.htm,DBQ229,DBQ229 - Regular milk drinker
+DBQ_C.htm,DBQ235A,DBQ235A - How often drank milk age 5-12
+DBQ_C.htm,DBQ235B,DBQ235B - How often drank milk age 13-17
+DBQ_C.htm,DBQ235C,DBQ235C - How often drank milk age 18-35
+DBQ_C.htm,DBQ265a,DBQ265a - CHECK ITEM
+DBQ_C.htm,DBQ301,DBQ301 - Community/Government meals delivered
+DBQ_C.htm,DBQ330,DBQ330 - Eat meals at Community/Senior center
+DBQ_C.htm,DBD355,DBD355 - CHECK ITEM
+DBQ_C.htm,DBQ360,DBQ360 - Attend kindergarten thru high school
+DBQ_C.htm,DBQ370,DBQ370 - School serves school lunches
+DBQ_C.htm,DBD381,DBD381 - # of times/week get school lunch
+DBQ_C.htm,DBQ390,"DBQ390 - School lunch free, reduced or full price"
+DBQ_C.htm,DBQ400,DBQ400 - School serve complete breakfast each day
+DBQ_C.htm,DBD411,DBD411 - # of times/week get school breakfast
+DBQ_C.htm,DBQ421,DBQ421 - School breakfast free/reduced/full price
+DBQ_C.htm,DBQ422,DBQ422 - CHECK ITEM
+DBQ_C.htm,DBQ424,DBQ424 - Summer program meal free/reduced price
+DEMO_C.htm,SEQN,SEQN - Respondent sequence number
+DEMO_C.htm,SDDSRVYR,SDDSRVYR - Data Release Number
+DEMO_C.htm,RIDSTATR,RIDSTATR - Interview/Examination Status
+DEMO_C.htm,RIDEXMON,RIDEXMON - Six month time period
+DEMO_C.htm,RIAGENDR,RIAGENDR - Gender
+DEMO_C.htm,RIDAGEYR,RIDAGEYR - Age at Screening Adjudicated - Recode
+DEMO_C.htm,RIDAGEMN,RIDAGEMN - Age in Months - Recode
+DEMO_C.htm,RIDAGEEX,RIDAGEEX - Exam Age in Months - Recode
+DEMO_C.htm,RIDRETH1,RIDRETH1 - Race/Ethnicity - Recode
+DEMO_C.htm,RIDRETH2,RIDRETH2 - Linked NH3 Race/Ethnicity - Recode
+DEMO_C.htm,DMQMILIT,DMQMILIT - Veteran/Military Status
+DEMO_C.htm,DMDBORN,DMDBORN - Country of Birth - Recode
+DEMO_C.htm,DMDCITZN,DMDCITZN - Citizenship Status
+DEMO_C.htm,DMDYRSUS,DMDYRSUS - Length of time in US
+DEMO_C.htm,DMDEDUC3,DMDEDUC3 - Education Level - Children/Youth 6-19
+DEMO_C.htm,DMDEDUC2,DMDEDUC2 - Education Level - Adults 20+
+DEMO_C.htm,DMDEDUC,DMDEDUC - Education - Recode (old version)
+DEMO_C.htm,DMDSCHOL,DMDSCHOL - Now attending school?
+DEMO_C.htm,DMDMARTL,DMDMARTL - Marital Status
+DEMO_C.htm,DMDHHSIZ,DMDHHSIZ - Total number of people in the Household
+DEMO_C.htm,INDHHINC,INDHHINC - Annual Household Income
+DEMO_C.htm,INDFMINC,INDFMINC - Annual Family Income
+DEMO_C.htm,INDFMPIR,INDFMPIR - Family PIR
+DEMO_C.htm,RIDEXPRG,RIDEXPRG - Pregnancy Status at Exam - Recode
+DEMO_C.htm,DMDHRGND,DMDHRGND - HH Ref Person Gender
+DEMO_C.htm,DMDHRAGE,DMDHRAGE - HH Ref Person Age
+DEMO_C.htm,DMDHRBRN,DMDHRBRN - HH Ref Person Country of Birth
+DEMO_C.htm,DMDHREDU,DMDHREDU - HH Ref Person Education Level
+DEMO_C.htm,DMDHRMAR,DMDHRMAR - HH Ref Person Marital Status
+DEMO_C.htm,DMDHSEDU,DMDHSEDU - HH Ref Person's Spouse Education Level
+DEMO_C.htm,SIALANG,SIALANG - Language of SP Interview
+DEMO_C.htm,SIAPROXY,SIAPROXY - Proxy used in SP Interview?
+DEMO_C.htm,SIAINTRP,SIAINTRP - Interpreter used in SP Interview?
+DEMO_C.htm,FIALANG,FIALANG - Language of Family Interview
+DEMO_C.htm,FIAPROXY,FIAPROXY - Proxy used in Family Interview?
+DEMO_C.htm,FIAINTRP,FIAINTRP - Interpreter used in Family Interview?
+DEMO_C.htm,MIALANG,MIALANG - Language of MEC Interview
+DEMO_C.htm,MIAPROXY,MIAPROXY - Proxy used in MEC Interview?
+DEMO_C.htm,MIAINTRP,MIAINTRP - Interpreter used in MEC Interview?
+DEMO_C.htm,AIALANG,AIALANG - Language of ACASI Interview
+DEMO_C.htm,WTINT2YR,WTINT2YR - Full Sample 2 Year Interview Weight
+DEMO_C.htm,WTMEC2YR,WTMEC2YR - Full Sample 2 Year MEC Exam Weight
+DEMO_C.htm,SDMVPSU,SDMVPSU - Masked Variance Pseudo-PSU
+DEMO_C.htm,SDMVSTRA,SDMVSTRA - Masked Variance Pseudo-Stratum
+DEMO_C2.htm,SEQN,SEQN - Respondent sequence number
+DEMO_C2.htm,SDDSRVYR,SDDSRVYR - Data Release Number
+DEMO_C2.htm,RIDSTATR,RIDSTATR - Interview/Examination Status
+DEMO_C2.htm,RIDEXMON,RIDEXMON - Six month time period
+DEMO_C2.htm,RIAGENDR,RIAGENDR - Gender
+DEMO_C2.htm,RIDAGEYR,RIDAGEYR - Age at Screening Adjudicated - Recode
+DEMO_C2.htm,RIDAGEMN,RIDAGEMN - Age in Months - Recode
+DEMO_C2.htm,RIDAGEEX,RIDAGEEX - Exam Age in Months - Recode
+DEMO_C2.htm,RIDRETH1,RIDRETH1 - Race/Ethnicity - Recode
+DEMO_C2.htm,RIDRETH2,RIDRETH2 - Linked NH3 Race/Ethnicity - Recode
+DEMO_C2.htm,DMQMILIT,DMQMILIT - Veteran/Military Status
+DEMO_C2.htm,DMDBORN,DMDBORN - Country of Birth - Recode
+DEMO_C2.htm,DMDCITZN,DMDCITZN - Citizenship Status
+DEMO_C2.htm,DMDYRSUS,DMDYRSUS - Length of time in US
+DEMO_C2.htm,DMDEDUC3,DMDEDUC3 - Education Level - Children/Youth 6-19
+DEMO_C2.htm,DMDEDUC2,DMDEDUC2 - Education Level - Adults 20+
+DEMO_C2.htm,DMDEDUC,DMDEDUC - Education - Recode (old version)
+DEMO_C2.htm,DMDSCHOL,DMDSCHOL - Now attending school?
+DEMO_C2.htm,DMDMARTL,DMDMARTL - Marital Status
+DEMO_C2.htm,DMDHHSIZ,DMDHHSIZ - Total number of people in the Household
+DEMO_C2.htm,INDHHINC,INDHHINC - Annual Household Income
+DEMO_C2.htm,INDFMINC,INDFMINC - Annual Family Income
+DEMO_C2.htm,INDFMPIR,INDFMPIR - Family PIR
+DEMO_C2.htm,RIDEXPRG,RIDEXPRG - Pregnancy Status at Exam - Recode
+DEMO_C2.htm,DMDHRGND,DMDHRGND - HH Ref Person Gender
+DEMO_C2.htm,DMDHRAGE,DMDHRAGE - HH Ref Person Age
+DEMO_C2.htm,DMDHRBRN,DMDHRBRN - HH Ref Person Country of Birth
+DEMO_C2.htm,DMDHREDU,DMDHREDU - HH Ref Person Education Level
+DEMO_C2.htm,DMDHRMAR,DMDHRMAR - HH Ref Person Marital Status
+DEMO_C2.htm,DMDHSEDU,DMDHSEDU - HH Ref Person's Spouse Education Level
+DEMO_C2.htm,SIALANG,SIALANG - Language of SP Interview
+DEMO_C2.htm,SIAPROXY,SIAPROXY - Proxy used in SP Interview?
+DEMO_C2.htm,SIAINTRP,SIAINTRP - Interpreter used in SP Interview?
+DEMO_C2.htm,FIALANG,FIALANG - Language of Family Interview
+DEMO_C2.htm,FIAPROXY,FIAPROXY - Proxy used in Family Interview?
+DEMO_C2.htm,FIAINTRP,FIAINTRP - Interpreter used in Family Interview?
+DEMO_C2.htm,MIALANG,MIALANG - Language of MEC Interview
+DEMO_C2.htm,MIAPROXY,MIAPROXY - Proxy used in MEC Interview?
+DEMO_C2.htm,MIAINTRP,MIAINTRP - Interpreter used in MEC Interview?
+DEMO_C2.htm,AIALANG,AIALANG - Language of ACASI Interview
+DEMO_C2.htm,WTINT2YR,WTINT2YR - Full Sample 2 Year Interview Weight
+DEMO_C2.htm,WTMEC2YR,WTMEC2YR - Full Sample 2 Year MEC Exam Weight
+DEMO_C2.htm,SDMVPSU,SDMVPSU - Masked Variance Pseudo-PSU
+DEMO_C2.htm,SDMVSTRA,SDMVSTRA - Masked Variance Pseudo-Stratum
+DIQ_C.htm,SEQN,SEQN - Respondent sequence number
+DIQ_C.htm,DIQ010,DIQ010 - Doctor told you have diabetes
+DIQ_C.htm,DID040G,DID040G - Age when first told you had diabetes
+DIQ_C.htm,DID040Q,DID040Q - Number of years of age
+DIQ_C.htm,DIQ050,DIQ050 - Taking insulin now
+DIQ_C.htm,DID060G,DID060G - How long taking insulin
+DIQ_C.htm,DID060Q,DID060Q - Number of mons/yrs taking insulin
+DIQ_C.htm,DIQ060U,DIQ060U - Unit of measure (month/year)
+DIQ_C.htm,DIQ065,DIQ065 - CHECK ITEM
+DIQ_C.htm,DIQ070,DIQ070 - Take diabetic pills to lower blood sugar
+DIQ_C.htm,DIQ075,DIQ075 - CHECK ITEM
+DIQ_C.htm,DIQ080,DIQ080 - Diabetes affected eyes/had retinopathy
+DIQ_C.htm,DIQ085,DIQ085 - CHECK ITEM
+DIQ_C.htm,DIQ090,DIQ090 - Ulcer/sore not healed within 4 weeks
+DIQ_C.htm,DIQ100,DIQ100 - Numbness in hands/feet-past 3 mos
+DIQ_C.htm,DIQ110,"DIQ110 - Numbness in hands, feet or both"
+DIQ_C.htm,DIQ120,DIQ120 - Pain/tingling in hands/feet - past 3 mos
+DIQ_C.htm,DIQ130,"DIQ130 - Pain/tingling in hands,feet or both"
+DIQ_C.htm,DIQ140,DIQ140 - Pain in either leg while walking
+DIQ_C.htm,DIQ150,DIQ150 - Pain  in calf or calves
+DUQ_C.htm,SEQN,SEQN - Respondent sequence number
+DUQ_C.htm,DUQ100,DUQ100 - Ever used cocaine or other street drug
+DUQ_C.htm,DUQ110,DUQ110 - #days used street drugs over past year
+DUQ_C.htm,DUQ120,DUQ120 - Ever used a needle to take street drugs
+DUQ_C.htm,DUQ130,DUQ130 - #days used needle for street drugs/year
+DXXAG_C.htm,SEQN,SEQN - Respondent sequence number
+DXXAG_C.htm,DXATRST,DXATRST - Trunk (A/G region) scan status
+DXXAG_C.htm,DXATRTV,DXATRTV - Trunk tissue invalidity code
+DXXAG_C.htm,DXXANFM,DXXANFM - Android fat mass
+DXXAG_C.htm,DXXANLM,DXXANLM - Android lean mass
+DXXAG_C.htm,DXXANTOM,DXXANTOM - Android total mass
+DXXAG_C.htm,DXXGYFM,DXXGYFM - Gynoid fat mass
+DXXAG_C.htm,DXXGYLM,DXXGYLM - Gynoid lean mass
+DXXAG_C.htm,DXXGYTOM,DXXGYTOM - Gynoid total mass
+DXXAG_C.htm,DXXAGRAT,DXXAGRAT - Android to Gynoid ratio
+DXXAG_C.htm,DXXAPFAT,DXXAPFAT - Android percent fat
+DXXAG_C.htm,DXXGPFAT,DXXGPFAT - Gynoid percent fat
+HSQ_C.htm,SEQN,SEQN - Respondent sequence number
+HSQ_C.htm,HSD010,HSD010 - General health condition
+HSQ_C.htm,HSQ470,HSQ470 - no. of days physical health was not good
+HSQ_C.htm,HSQ480,HSQ480 - no. of days mental health was not good
+HSQ_C.htm,HSQ490,HSQ490 - inactive days due to phys./mental hlth
+HSQ_C.htm,HSQ500,HSQ500 - SP recent health - over past 4 weeks
+HSQ_C.htm,HSQ510,HSQ510 - SP have stomach or intestinal illness?
+HSQ_C.htm,HSQ520,"HSQ520 - SP have flu, pneumonia, ear infection?"
+HSQ_C.htm,HSQ571,HSQ571 - SP donated blood in past 12 months?
+HSQ_C.htm,HSQ580,HSQ580 - How long ago was last blood donation?
+HSQ_C.htm,HSQ590,HSQ590 - Blood ever tested for HIV virus?
+HSQ_C.htm,HSAQUEX,HSAQUEX - Source of Health Status Data
+HUQ_C.htm,SEQN,SEQN - Respondent sequence number
+HUQ_C.htm,HUQ010,HUQ010 - General health condition
+HUQ_C.htm,HUQ020,HUQ020 - Health now compared with 1 year ago
+HUQ_C.htm,HUQ030,HUQ030 - Routine place to go for healthcare
+HUQ_C.htm,HUQ040,HUQ040 - Type place most often go for healthcare
+HUQ_C.htm,HUQ050,HUQ050 - #Times receive healthcare over past year
+HUQ_C.htm,HUQ060,HUQ060 - How long since last healthcare visit
+HUQ_C.htm,HUQ071,HUQ071 - Overnight hospital patient in last year
+HUQ_C.htm,HUD080,HUD080 - #Times overnite hospital patient/last yr
+HUQ_C.htm,HUQ081,HUQ081 - CHECK ITEM
+HUQ_C.htm,HUQ082,HUQ082 - In long term care facility last 12 month
+HUQ_C.htm,HUQ084,HUQ084 - Total # of days in long term facility
+HUQ_C.htm,HUQ086,HUQ086 - Non SP HH member in care fac overnight
+HUQ_C.htm,HUQ088a,HUQ088a - Acute care facility
+HUQ_C.htm,HUQ088b,HUQ088b - Long term care facility
+HUQ_C.htm,HUQ088c,HUQ088c - Rehabilitation facility
+HUQ_C.htm,HUQ089,HUQ089 - CHECK ITEM
+HUQ_C.htm,HUQ090,HUQ090 - Seen mental health professional /past yr
+KIQ_P_C.htm,SEQN,SEQN - Respondent sequence number
+KIQ_P_C.htm,KIQ081,KIQ081 - Usually have trouble trying to urinate
+KIQ_P_C.htm,KIQ101,KIQ101 - Bladder feels empty after urinating
+KIQ_P_C.htm,KIQ106,KIQ106 - Diagnosed with prostate disease
+KIQ_P_C.htm,KIQ121,KIQ121 - Diagnosed with enlarged prostate
+KIQ_P_C.htm,KIQ141,KIQ141 - Enlargement was BPH
+KIQ_P_C.htm,KIQ161,KIQ161 - Age at first BPH diagnosis
+KIQ_P_C.htm,KIQ182,KIQ182 - Enlargement due to cancer
+KIQ_P_C.htm,KIQ321,KIQ321 - Ever had a PSA test
+KIQ_P_C.htm,KIQ341,KIQ341 - Ever had a rectal exam
+KIQ_P_C.htm,KIQ361,KIQ361 - DRE to check for prostate cancer
+KIQ_P_C.htm,KIQ381,KIQ381 - DRE to check for blood in stool
+KIQ_P_C.htm,KIQ400,KIQ400 - Ability to maintain an erection
+KIQ_U_C.htm,SEQN,SEQN - Respondent sequence number
+KIQ_U_C.htm,KIQ022,KIQ022 - Ever told you had weak/failing kidneys
+KIQ_U_C.htm,KIQ025,KIQ025 - Received dialysis in past 12 months
+KIQ_U_C.htm,KIQ042,KIQ042 - Leak urine during physical activities
+KIQ_U_C.htm,KIQ043,KIQ043 - How frequently does this occur
+KIQ_U_C.htm,KIQ044,KIQ044 - Urinated before reaching the toilet
+KIQ_U_C.htm,KIQ045,KIQ045 - Frequency with which this occurs
+KIQ_U_C.htm,KIQ046,KIQ046 - Leak urine during nonphysical activities
+KIQ_U_C.htm,KIQ047,KIQ047 - Leak urine during nonphysical activities
+KIQ_U_C.htm,KIQ048,KIQ048 - CHECK ITEM
+KIQ_U_C.htm,KIQ050,KIQ050 - How much did urine leakage bother you
+KIQ_U_C.htm,KIQ052,KIQ052 - How much were daily activities affected
+KIQ_U_C.htm,KIDUQUEX,KIDUQUEX - Flag for Source Questionnaire
+L11_C.htm,SEQN,SEQN - Respondent sequence number
+L11_C.htm,LBXCRP,LBXCRP - C-reactive protein(mg/dL)
+L11_C.htm,LBXBAP,LBXBAP - Bone alkaline phosphotase (ug/L)
+L11_C.htm,LBXPT21,LBXPT21 - Parathyroid Hormone(Elecys method) pg/mL
+L13AM_C.htm,SEQN,SEQN - Respondent sequence number
+L13AM_C.htm,WTSAF2YR,WTSAF2YR - 2Yr AM(3-11) & fasting (12+) weights
+L13AM_C.htm,LBXTR,LBXTR - Triglyceride (mg/dL)
+L13AM_C.htm,LBDTRSI,LBDTRSI - Triglyceride (mmol/L)
+L13AM_C.htm,LBDLDL,LBDLDL - LDL-cholesterol (mg/dL)
+L13AM_C.htm,LBDLDLSI,LBDLDLSI - LDL-cholesterol (mmol/L)
+L13_C.htm,SEQN,SEQN - Respondent sequence number
+L13_C.htm,LBXTC,LBXTC - Total Cholesterol (mg/dL)
+L13_C.htm,LBXHDD,LBXHDD - Direct HDL-Cholesterol (mg/dL)
+L13_C.htm,LBDTCSI,LBDTCSI - Total Cholesterol (mmol/L)
+L13_C.htm,LBDHDDSI,LBDHDDSI - Direct HDL-Cholesterol (mmol/L)
+L16_C.htm,SEQN,SEQN - Respondent sequence number
+L16_C.htm,URXUCR,"URXUCR - Creatinine, urine (mg/dL)"
+L16_C.htm,URXUCRSI,"URXUCRSI - Creatinine, urine (umol/L)"
+L16_C.htm,URXUMA,"URXUMA - Albumin, urine (ug/mL)"
+L16_C.htm,URXUMASI,"URXUMASI - Albumin, urine (mg/L) SI"
+L40_C.htm,SEQN,SEQN - Respondent sequence number
+L40_C.htm,LBXSAL,LBXSAL - Albumin (g/dL)
+L40_C.htm,LBDSALSI,LBDSALSI - Albumin (g/L)
+L40_C.htm,LBXSATSI,LBXSATSI - Alanine aminotransferase ALT (U/L)
+L40_C.htm,LBXSASSI,LBXSASSI - Aspartate aminotransferase AST (U/L)
+L40_C.htm,LBXSAPSI,LBXSAPSI - Alkaline phosphotase (U/L)
+L40_C.htm,LBXSBU,LBXSBU - Blood urea nitrogen (mg/dL)
+L40_C.htm,LBDSBUSI,LBDSBUSI - Blood urea nitrogen (mmol/L)
+L40_C.htm,LBXSCA,LBXSCA - Total calcium (mg/dL)
+L40_C.htm,LBDSCASI,LBDSCASI - Total calcium (mmol/L)
+L40_C.htm,LBXSCH,LBXSCH - Cholesterol (mg/dL)
+L40_C.htm,LBDSCHSI,LBDSCHSI - Cholesterol (mmol/L)
+L40_C.htm,LBXSC3SI,LBXSC3SI - Bicarbonate (mmol/L)
+L40_C.htm,LBXSGTSI,LBXSGTSI - Gamma glutamyl transferase (U/L)
+L40_C.htm,LBXSGL,"LBXSGL - Glucose, serum (mg/dL)"
+L40_C.htm,LBDSGLSI,"LBDSGLSI - Glucose, serum (mmol/L)"
+L40_C.htm,LBXSIR,"LBXSIR - Iron, refigerated (ug/dL)"
+L40_C.htm,LBDSIRSI,"LBDSIRSI - Iron, refigerated (umol/L)"
+L40_C.htm,LBXSLDSI,LBXSLDSI - Lactate dehydrogenase LDH (U/L)
+L40_C.htm,LBXSPH,LBXSPH - Phosphorus (mg/dL)
+L40_C.htm,LBDSPHSI,LBDSPHSI - Phosphorus (mmol/L)
+L40_C.htm,LBXSTB,LBXSTB - Total bilirubin (mg/dL)
+L40_C.htm,LBDSTBSI,"LBDSTBSI - Bilirubin, total (umol/L)"
+L40_C.htm,LBXSTP,LBXSTP - Total protein (g/dL)
+L40_C.htm,LBDSTPSI,LBDSTPSI - Total protein (g/L)
+L40_C.htm,LBXSTR,LBXSTR - Triglycerides (mg/dL)
+L40_C.htm,LBDSTRSI,LBDSTRSI - Triglycerides (mmol/L)
+L40_C.htm,LBXSUA,LBXSUA - Uric acid (mg/dL)
+L40_C.htm,LBDSUASI,LBDSUASI - Uric acid (umol/L)
+L40_C.htm,LBXSCR,LBXSCR - Creatinine (mg/dL)
+L40_C.htm,LBDSCRSI,LBDSCRSI - Creatinine (umol/L)
+L40_C.htm,LBXSNASI,LBXSNASI - Sodium (mmol/L)
+L40_C.htm,LBXSKSI,LBXSKSI - Potassium (mmol/L)
+L40_C.htm,LBXSCLSI,LBXSCLSI - Chloride (mmol/L)
+L40_C.htm,LBXSOSSI,LBXSOSSI - Osmolality (mmol/Kg)
+L40_C.htm,LBXSGB,LBXSGB - Globulin (g/dL)
+L40_C.htm,LBDSGBSI,LBDSGBSI - Globulin (g/L)
+LEXAB_C.htm,SEQN,SEQN - Respondent sequence number
+LEXAB_C.htm,LEDSCCT2,LEDSCCT2 - ABPI Section Comment
+LEXAB_C.htm,LEAARM,LEAARM - Arm tested
+LEXAB_C.htm,LEAARMC,LEAARMC - Arm comment
+LEXAB_C.htm,LEDARMCF,LEDARMCF - Brachial cuff size used
+LEXAB_C.htm,LEQ020,"LEQ020 - Large adult used, poor thigh cuff fit"
+LEXAB_C.htm,LEAANKL,LEAANKL - Ankle(s) tested
+LEXAB_C.htm,LEAANKLC,LEAANKLC - Ankle comment
+LEXAB_C.htm,LEDANKCF,LEDANKCF - Ankle cuff size used
+LEXAB_C.htm,LEXBRP1,LEXBRP1 - Brachial SBP 1 (mm Hg)
+LEXAB_C.htm,LEXBRP2,LEXBRP2 - Brachial SBP 2 (mm Hg)
+LEXAB_C.htm,LEXBRPM,LEXBRPM - Mean Brachial SBP (mm Hg)
+LEXAB_C.htm,LEXLPTS1,LEXLPTS1 - Left Posterior Tibial SBP 1 (mm Hg)
+LEXAB_C.htm,LEXLPTS2,LEXLPTS2 - Left Posterior Tibial SBP 2 (mm Hg)
+LEXAB_C.htm,LEXLPTSM,LEXLPTSM - Left Mean Posterior Tibial SBP (mm Hg)
+LEXAB_C.htm,LEXLABPI,LEXLABPI - Left ABPI
+LEXAB_C.htm,LEXRPTS1,LEXRPTS1 - Right Posterior Tibial SBP 1 (mm Hg)
+LEXAB_C.htm,LEXRPTS2,LEXRPTS2 - Right Posterior Tibial SBP 2 (mm Hg)
+LEXAB_C.htm,LEXRPTSM,LEXRPTSM - Right Mean Posterior Tibial SBP (mm Hg)
+LEXAB_C.htm,LEXRABPI,LEXRABPI - Right ABPI
+LEXAB_C.htm,LEALPTPD,LEALPTPD - Left PT pulse detected?
+LEXAB_C.htm,LEARPTPD,LEARPTPD - Right PT pulse detected?
+LEXAB_C.htm,LEALAPNC,LEALAPNC - Left ankle SBP > 255 mm Hg?
+LEXAB_C.htm,LEARAPNC,LEARAPNC - Right ankle SBP > 255 mm Hg?
+LEXPN_C.htm,SEQN,SEQN - Respondent sequence number
+LEXPN_C.htm,LEDSCCT1,LEDSCCT1 - PN Section Comment
+LEXPN_C.htm,LEALAMP,LEALAMP - Left amputation
+LEXPN_C.htm,LEALBUN,LEALBUN - Left bunions
+LEXPN_C.htm,LEALLES,LEALLES - Left lesion
+LEXPN_C.htm,LEALLESS,LEALLESS - Left lesion site
+LEXPN_C.htm,LEARAMP,LEARAMP - Right amputation
+LEXPN_C.htm,LEARBUN,LEARBUN - Right bunions
+LEXPN_C.htm,LEARLES,LEARLES - Right lesion
+LEXPN_C.htm,LEARLESS,LEARLESS - Right lesion site
+LEXPN_C.htm,LEALPN,LEALPN - Left Foot - Number of insensate areas
+LEXPN_C.htm,LEARPN,LEARPN - Right Foot - Number of insensate areas
+LEXPN_C.htm,LEXLMH11,"LEXLMH11 - Left metatarsal head 1, test 1"
+LEXPN_C.htm,LEALM1C1,"LEALM1C1 - Left metatarsal 1 comment, test 1"
+LEXPN_C.htm,LEXLHAL1,"LEXLHAL1 - Left halux, test 1"
+LEXPN_C.htm,LEALHAC1,"LEALHAC1 - Left halux comments, test 1"
+LEXPN_C.htm,LEXLMH51,"LEXLMH51 - Left metatarsal head 5, test 1"
+LEXPN_C.htm,LEALM5C1,"LEALM5C1 - Left metatarsal 5 comment, test 1"
+LEXPN_C.htm,LEXLMH12,"LEXLMH12 - Left metatarsal head 1, test 2"
+LEXPN_C.htm,LEALM1C2,"LEALM1C2 - Left metatarsal 1 comment, test 2"
+LEXPN_C.htm,LEXLHAL2,"LEXLHAL2 - Left halux, test 2"
+LEXPN_C.htm,LEALHAC2,"LEALHAC2 - Left halux comments, test 2"
+LEXPN_C.htm,LEXLMH52,"LEXLMH52 - Left metatarsal head 5, test 2"
+LEXPN_C.htm,LEALM5C2,"LEALM5C2 - Left metatarsal 5 comment, test 2"
+LEXPN_C.htm,LEXLMH13,"LEXLMH13 - Left metatarsal head 1, test 3"
+LEXPN_C.htm,LEALM1C3,"LEALM1C3 - Left metatarsal 1 comment, test 3"
+LEXPN_C.htm,LEXLHAL3,"LEXLHAL3 - Left halux, test 3"
+LEXPN_C.htm,LEALHAC3,"LEALHAC3 - Left halux comments, test 3"
+LEXPN_C.htm,LEXLMH53,"LEXLMH53 - Left metatarsal head 5, test 3"
+LEXPN_C.htm,LEALM5C3,"LEALM5C3 - Left metatarsal 5 comment, test 3"
+LEXPN_C.htm,LEXRMH11,"LEXRMH11 - Right metatarsal head 1, test 1"
+LEXPN_C.htm,LEARM1C1,"LEARM1C1 - Right metatarsal head 1 comment, test 1"
+LEXPN_C.htm,LEXRHAL1,"LEXRHAL1 - Right halux, test 1"
+LEXPN_C.htm,LEARHAC1,"LEARHAC1 - Right halux comment, test 1"
+LEXPN_C.htm,LEXRMH51,"LEXRMH51 - Right metatarsal head 5, test 1"
+LEXPN_C.htm,LEARM5C1,"LEARM5C1 - Right metatarsal head 5 comment, test 1"
+LEXPN_C.htm,LEXRMH12,"LEXRMH12 - Right metatarsal head 1, test 2"
+LEXPN_C.htm,LEARM1C2,"LEARM1C2 - Right metatarsal head 1 comment, test 2"
+LEXPN_C.htm,LEXRHAL2,"LEXRHAL2 - Right halux, test 2"
+LEXPN_C.htm,LEARHAC2,"LEARHAC2 - Right halux comment, test 2"
+LEXPN_C.htm,LEXRMH52,"LEXRMH52 - Right metatarsal head 5, test 2"
+LEXPN_C.htm,LEARM5C2,"LEARM5C2 - Right metatarsal head 5 comment, test 2"
+LEXPN_C.htm,LEXRMH13,"LEXRMH13 - Right metatarsal head 1, test 3"
+LEXPN_C.htm,LEXRHAL3,"LEXRHAL3 - Right halux, test 3"
+LEXPN_C.htm,LEXRMH53,"LEXRMH53 - Right metatarsal head 5, test 3"
+LEXPN_C.htm,LEARM5C3,"LEARM5C3 - Right metatarsal head 5 comment, test 3"
+MCQ_C.htm,SEQN,SEQN - Respondent sequence number
+MCQ_C.htm,MCQ010,MCQ010 - Ever been told you have asthma
+MCQ_C.htm,MCQ025,MCQ025 - Age when first had asthma
+MCQ_C.htm,MCQ035,MCQ035 - Still have asthma
+MCQ_C.htm,MCQ040,MCQ040 - Had asthma attack in past year
+MCQ_C.htm,MCQ050,MCQ050 - Emergency care visit for asthma/past yr
+MCQ_C.htm,MCQ053,MCQ053 - Taking treatment for anemia/past 3 mos
+MCQ_C.htm,MCQ060,MCQ060 - Told have attention deficit disorder?
+MCQ_C.htm,MCQ080,MCQ080 - Doctor ever said you were overweight
+MCQ_C.htm,MCQ083,MCQ083 - Ever told you have learning disability
+MCQ_C.htm,MCQ092,MCQ092 - Ever receive blood transfusion
+MCQ_C.htm,MCD093,MCD093 - Year receive blood transfusion
+MCQ_C.htm,MCQ114,MCQ114 - Ever tested for lead poisoning
+MCQ_C.htm,MCQ117Q,MCQ117Q - How long since lead poisoning test
+MCQ_C.htm,MCQ117U,MCQ117U - Months or years
+MCQ_C.htm,MCQ120A,MCQ120A - Had hay fever in past year
+MCQ_C.htm,MCQ120B,MCQ120B - Had 3 or more ear infections/past year
+MCQ_C.htm,MCQ120C,MCQ120C - Had frequent/severe headaches/past yr
+MCQ_C.htm,MCQ120D,MCQ120D - Stuttering/Stammering in past year
+MCQ_C.htm,MCQ140,MCQ140 - Trouble seeing even with glass/contacts
+MCQ_C.htm,MCQ149,MCQ149 - Menstrual periods started yet?
+MCQ_C.htm,MCQ150G,MCQ150G - School days missed from injury/illness
+MCQ_C.htm,MCQ150Q,MCQ150Q - # school days missed from injury/illness
+MCQ_C.htm,MCQ160A,MCQ160A - Doctor ever said you had arthritis
+MCQ_C.htm,MCQ160B,MCQ160B - Ever told had congestive heart failure
+MCQ_C.htm,MCQ160C,MCQ160C - Ever told you had coronary heart disease
+MCQ_C.htm,MCQ160D,MCQ160D - Ever told you had angina/angina pectoris
+MCQ_C.htm,MCQ160E,MCQ160E - Ever told you had heart attack
+MCQ_C.htm,MCQ160F,MCQ160F - Ever told you had a stroke
+MCQ_C.htm,MCQ160G,MCQ160G - Ever told you had emphysema
+MCQ_C.htm,MCQ160J,MCQ160J - Doctor said you were overweight
+MCQ_C.htm,MCQ160K,MCQ160K - Ever told you had chronic bronchitis
+MCQ_C.htm,MCQ160L,MCQ160L - Ever told you had any liver condition
+MCQ_C.htm,MCQ160M,MCQ160M - Ever told you had a thyroid problem
+MCQ_C.htm,MCQ170K,MCQ170K - Do you still have chronic bronchitis
+MCQ_C.htm,MCQ170L,MCQ170L - Do you still have a liver condition
+MCQ_C.htm,MCQ170M,MCQ170M - Do you still have a thyroid problem
+MCQ_C.htm,MCQ180A,MCQ180A - Age when told you had arthritis
+MCQ_C.htm,MCQ180B,MCQ180B - Age when told you had heart failure
+MCQ_C.htm,MCQ180C,MCQ180C - Age when told had coronary heart disease
+MCQ_C.htm,MCQ180D,MCQ180D - Age when told you had angina pectoris
+MCQ_C.htm,MCQ180E,MCQ180E - Age when told you had heart attack
+MCQ_C.htm,MCQ180F,MCQ180F - Age when told you had a stroke
+MCQ_C.htm,MCQ180G,MCQ180G - Age when told you had emphysema
+MCQ_C.htm,MCQ180K,MCQ180K - Age when told you had chronic bronchitis
+MCQ_C.htm,MCQ180L,MCQ180L - Age when told you had a liver condition
+MCQ_C.htm,MCQ180M,MCQ180M - Age when told you had a thyroid problem
+MCQ_C.htm,MCQ190,MCQ190 - Which type of arthritis
+MCQ_C.htm,MCQ220,MCQ220 - Ever told you had cancer or malignancy
+MCQ_C.htm,MCQ230A,MCQ230A - What kind of cancer
+MCQ_C.htm,MCQ230B,MCQ230B - What kind of cancer
+MCQ_C.htm,MCQ230C,MCQ230C - What kind of cancer
+MCQ_C.htm,MCQ230D,MCQ230D - What kind of cancer
+MCQ_C.htm,MCQ240A,MCQ240A - Age when bladder cancer first diagnosed
+MCQ_C.htm,MCQ240B,MCQ240B - Age when blood cancer first diagnosed
+MCQ_C.htm,MCQ240C,MCQ240C - Age when bone cancer first diagnosed
+MCQ_C.htm,MCQ240D,MCQ240D - Age when brain cancer first diagnosed
+MCQ_C.htm,MCQ240E,MCQ240E - Age when breast cancer first diagnosed
+MCQ_C.htm,MCQ240F,MCQ240F - Age when cervical cancer first diagnosed
+MCQ_C.htm,MCQ240G,MCQ240G - Age when colon cancer first diagnosed
+MCQ_C.htm,MCQ240H,MCQ240H - Age esophageal cancer first diagnosed
+MCQ_C.htm,MCQ240I,MCQ240I - Age gallbladder cancer first diagnosed
+MCQ_C.htm,MCQ240J,MCQ240J - Age when kidney cancer first diagnosed
+MCQ_C.htm,MCQ240K,MCQ240K - Age larynx/windpipe cancer diagnosed
+MCQ_C.htm,MCQ240L,MCQ240L - Age when leukemia first diagnosed
+MCQ_C.htm,MCQ240M,MCQ240M - Age when liver cancer first diagnosed
+MCQ_C.htm,MCQ240N,MCQ240N - Age when lung cancer first diagnosed
+MCQ_C.htm,MCQ240O,MCQ240O - Age lymphoma/Hodgkin's diagnosed
+MCQ_C.htm,MCQ240P,MCQ240P - Age when melanoma first diagnosed
+MCQ_C.htm,MCQ240Q,MCQ240Q - Age mouth\tongue\lip cancer diagnosed
+MCQ_C.htm,MCQ240R,MCQ240R - Age nervous system cancer diagnosed
+MCQ_C.htm,MCQ240S,MCQ240S - Age when ovarian cancer first diagnosed
+MCQ_C.htm,MCQ240T,MCQ240T - Age pancreatic cancer first diagnosed
+MCQ_C.htm,MCQ240U,MCQ240U - Age prostate cancer first diagnosed
+MCQ_C.htm,MCQ240V,MCQ240V - Age when rectal cancer first diagnosed
+MCQ_C.htm,MCQ240W,MCQ240W - Age non-melanoma skin cancer diagnosed
+MCQ_C.htm,MCQ240X,MCQ240X - Age unknown skin cancer first diagnosed
+MCQ_C.htm,MCQ240Y,MCQ240Y - Age soft tissue cancer first diagnosed
+MCQ_C.htm,MCQ240Z,MCQ240Z - Age stomach cancer first diagnosed
+MCQ_C.htm,MCQ240AA,MCQ240AA - Age testicular cancer first diagnosed
+MCQ_C.htm,MCQ240BB,MCQ240BB - Age when thyroid cancer first diagnosed
+MCQ_C.htm,MCQ240CC,MCQ240CC - Age when uterine cancer first diagnosed
+MCQ_C.htm,MCQ240DD,MCQ240DD - Age other type of cancer first diagnosed
+MCQ_C.htm,MCQ245A,MCQ245A - Work days missed for illness/maternity
+MCQ_C.htm,MCQ245B,MCQ245B - # of workdays missed
+MCQ_C.htm,MCQ250A,MCQ250A - Blood relatives have diabetes
+MCQ_C.htm,MCQ250B,MCQ250B - Blood relatives have Alzheimer's
+MCQ_C.htm,MCQ250C,MCQ250C - Blood relatives have asthma
+MCQ_C.htm,MCQ250E,MCQ250E - Blood relatives have osteoporosis
+MCQ_C.htm,MCQ250F,MCQ250F - Blood relatives w/hypertension/stroke
+MCQ_C.htm,MCQ250G,MCQ250G - Blood relatives have angina
+MCQ_C.htm,MCQ260AA,MCQ260AA - Blood relative-diabetes-mother
+MCQ_C.htm,MCQ260AB,MCQ260AB - Blood relative-diabetes-father
+MCQ_C.htm,MCQ260AC,MCQ260AC - Blood relative-diabetes-mother's mother
+MCQ_C.htm,MCQ260AD,MCQ260AD - Blood relative-diabetes-mother's father
+MCQ_C.htm,MCQ260AE,MCQ260AE - Blood relative-diabetes-father's mother
+MCQ_C.htm,MCQ260AF,MCQ260AF - Blood relative-diabetes-father's father
+MCQ_C.htm,MCQ260AG,MCQ260AG - Blood relative-diabetes-brother
+MCQ_C.htm,MCQ260AH,MCQ260AH - Blood relative-diabetes-sister
+MCQ_C.htm,MCQ260AI,MCQ260AI - Blood relative-diabetes-other
+MCQ_C.htm,MCQ260BA,MCQ260BA - Blood relative-Alzheimer's-mother
+MCQ_C.htm,MCQ260BB,MCQ260BB - Blood relative-Alzheimer's-father
+MCQ_C.htm,MCQ260BC,MCQ260BC - Blood relative-Alzheimer's-mom's mother
+MCQ_C.htm,MCQ260BD,MCQ260BD - Blood relative-Alzheimer's-mom's father
+MCQ_C.htm,MCQ260BE,MCQ260BE - Blood relative-Alzheimer's-dad's mother
+MCQ_C.htm,MCQ260BF,MCQ260BF - Blood relative-Alzheimer's-dad's father
+MCQ_C.htm,MCQ260BG,MCQ260BG - Blood relative-Alzheimer's-brother
+MCQ_C.htm,MCQ260BH,MCQ260BH - Blood relative-Alzheimer's-sister
+MCQ_C.htm,MCQ260BI,MCQ260BI - Blood relative-Alzheimer's-other
+MCQ_C.htm,MCQ260CA,MCQ260CA - Blood relative-asthma-mother
+MCQ_C.htm,MCQ260CB,MCQ260CB - Blood relative-asthma-father
+MCQ_C.htm,MCQ260CC,MCQ260CC - Blood relative-asthma-mother's mother
+MCQ_C.htm,MCQ260CD,MCQ260CD - Blood relative-asthma-mother's father
+MCQ_C.htm,MCQ260CE,MCQ260CE - Blood relative-asthma-father's mother
+MCQ_C.htm,MCQ260CF,MCQ260CF - Blood relative-asthma-father's father
+MCQ_C.htm,MCQ260CG,MCQ260CG - Blood relative-asthma-brother
+MCQ_C.htm,MCQ260CH,MCQ260CH - Blood relative-asthma-sister
+MCQ_C.htm,MCQ260CI,MCQ260CI - Blood relative-asthma-other
+MCQ_C.htm,MCQ260EA,MCQ260EA - Blood relative-osteoporosis-mother
+MCQ_C.htm,MCQ260EB,MCQ260EB - Blood relative-osteoporosis-father
+MCQ_C.htm,MCQ260EC,MCQ260EC - Blood relative-osteoporosis-mom's mother
+MCQ_C.htm,MCQ260ED,MCQ260ED - Blood relative-osteoporosis-mom's father
+MCQ_C.htm,MCQ260EE,MCQ260EE - Blood relative-osteoporosis-dad's mother
+MCQ_C.htm,MCQ260EF,MCQ260EF - Blood relative-osteoporosis-dad's father
+MCQ_C.htm,MCQ260EG,MCQ260EG - Blood relative-osteoporosis-brother
+MCQ_C.htm,MCQ260EH,MCQ260EH - Blood relative-osteoporosis-sister
+MCQ_C.htm,MCQ260EI,MCQ260EI - Blood relative-osteoporosis-other
+MCQ_C.htm,MCQ260FA,MCQ260FA - Blood relative-hypertension-mother
+MCQ_C.htm,MCQ260FB,MCQ260FB - Blood relative-hypertension-father
+MCQ_C.htm,MCQ260FC,MCQ260FC - Blood relative-hypertension-mom's mother
+MCQ_C.htm,MCQ260FD,MCQ260FD - Blood relative-hypertension-mom's father
+MCQ_C.htm,MCQ260FE,MCQ260FE - Blood relative-hypertension-dad's mother
+MCQ_C.htm,MCQ260FF,MCQ260FF - Blood relative-hypertension-dad's father
+MCQ_C.htm,MCQ260FG,MCQ260FG - Blood relative-hypertension-brother
+MCQ_C.htm,MCQ260FH,MCQ260FH - Blood relative-hypertension-sister
+MCQ_C.htm,MCQ260FI,MCQ260FI - Blood relative-hypertension-other
+MCQ_C.htm,MCQ260GA,MCQ260GA - Blood relative-heart attack-mother
+MCQ_C.htm,MCQ260GB,MCQ260GB - Blood relative-heart attack-father
+MCQ_C.htm,MCQ260GC,MCQ260GC - Blood relative-heart attack-mom's mother
+MCQ_C.htm,MCQ260GD,MCQ260GD - Blood relative-heart attack-mom's father
+MCQ_C.htm,MCQ260GE,MCQ260GE - Blood relative-heart attack-dad's mother
+MCQ_C.htm,MCQ260GF,MCQ260GF - Blood relative-heart attack-dad's father
+MCQ_C.htm,MCQ260GG,MCQ260GG - Blood relative-heart attack-brother
+MCQ_C.htm,MCQ260GH,MCQ260GH - Blood relative-heart attack-sister
+MCQ_C.htm,MCQ260GI,MCQ260GI - Blood relative-heart attack-other
+MCQ_C.htm,MCQ265,MCQ265 - Blood relative have/had prostate cancer
+MCQ_C.htm,MCQ267A,MCQ267A - Biological family member-father
+MCQ_C.htm,MCQ267B,MCQ267B - Biological family member-mother's father
+MCQ_C.htm,MCQ267C,MCQ267C - Biological family member-father's father
+MCQ_C.htm,MCQ267D,MCQ267D - Biological family member-brother
+MCQ_C.htm,MCQ267E,MCQ267E - Biological family member-other
+MCQ_C.htm,MCQ270,MCQ270 - Your mother ever fracture hip
+MCQ_C.htm,MCQ280,MCQ280 - Mother's age when fractured hip
+MCQ_C.htm,MCQ290,MCQ290 - Mother under/over 50 when fracture hip
+OCQ_C.htm,SEQN,SEQN - Respondent sequence number
+OCQ_C.htm,OCD150,OCD150 - Type of work done last week
+OCQ_C.htm,OCQ180,OCQ180 - Hours worked last week at all jobs
+OCQ_C.htm,OCQ200,OCQ200 - Check Item
+OCQ_C.htm,OCQ210,OCQ210 - Usually work 35 or more hours per week
+OCQ_C.htm,OCD230,OCD230 - Industry group code: current job
+OCQ_C.htm,OCD240,OCD240 - Occupation group code: current job
+OCQ_C.htm,OCQ260,OCQ260 - Description of job/work situation
+OCQ_C.htm,OCD270,OCD270 - Number of months working in the main job
+OCQ_C.htm,OCQ290G,OCQ290G - Smell tobacco smoke at work
+OCQ_C.htm,OCQ290Q,OCQ290Q - # Hrs/day smell tobacco smoke at work
+OCQ_C.htm,OCQ295,"OCQ295 - Wear hearing protection, current job?"
+OCQ_C.htm,OCQ340,OCQ340 - Ever exposed to loud work noise 3+months
+OCQ_C.htm,OCQ350,OCQ350 - Currently exposed to loud noise at work
+OCQ_C.htm,OCQ360,OCQ360 - Avg # hours loud noise exposure now
+OCQ_C.htm,OCQ370,OCQ370 - Check Item
+OCQ_C.htm,OCQ380,OCQ380 - Main reason did not work last week
+OCQ_C.htm,OCD390G,OCD390G - Kind of work you have done the longest
+OCQ_C.htm,OCD390,OCD390 - Occupation group code: longest job
+OCQ_C.htm,OCD395,OCD395 - Duration of longest job (months)
+OCQ_C.htm,OCQ400,OCQ400 - Check Item
+OCQ_C.htm,OCQ410,OCQ410 - Check Item
+OCQ_C.htm,OCQ420,"OCQ420 - Loud job noise: ever exposed, 3 months?"
+OCQ_C.htm,OCQ430,OCQ430 - Loud job noise: 3 months on longest job?
+OCQ_C.htm,OCQ440,OCQ440 - # hours/day constant loud noise on job
+OCQ_C.htm,OCQ450,OCQ450 - Wear ear protection during work
+OCQ_C.htm,OCQ460,OCQ460 - Check Item
+OCQ_C.htm,OCD470G,OCD470G - Kind of job held when had asthma
+OCQ_C.htm,OCD470,OCD470 - Occupation group code: job asthma began
+OCQ_C.htm,OCD480,OCD480 - Industry group code: job asthma began
+OHQ_C.htm,SEQN,SEQN - Respondent sequence number
+OHQ_C.htm,OHQ030,OHQ030 - When did you last visit a dentist
+OHQ_C.htm,OHQ033,OHQ033 - Main reason for last dental visit
+OHQ_C.htm,OHQ075b,OHQ075b - CHECK ITEM
+OHQ_C.htm,OHQ095,OHQ095 - Amount of saliva in mouth
+OHQ_C.htm,OHQ115,OHQ115 - Mouth feel dry when eating meal
+OHQ_C.htm,OHQ600,OHQ600 - CHECK ITEM
+OHQ_C.htm,OHQ620,OHQ620 - How often last yr. had aching in mouth?
+OHQ_C.htm,OHQ630,OHQ630 - How often felt bad because of mouth?
+OHQ_C.htm,OHQ640,OHQ640 - Last yr had diff w/ job because of mouth
+OHQ_C.htm,OHQ650,OHQ650 - Last yr taste affected because of mouth
+OHQ_C.htm,OHQ660,OHQ660 - Last yr avoid some food because of mouth
+OHQ_C.htm,OHQ670,OHQ670 - Last yr couldn't eat because of mouth
+OHQ_C.htm,OHQ680,OHQ680 - Last yr embarrassed because of mouth
+OHQ_C.htm,OHD691,OHD691 - Need any teeth filled or replaced?
+OHQ_C.htm,OHD700,OHD700 - Do you or SP need teeth pulled?
+OHQ_C.htm,OHD711A,OHD711A - Need teeth pulled because of pain
+OHQ_C.htm,OHD711B,OHD711B - Need teeth pulled because of cavities
+OHQ_C.htm,OHD711C,OHD711C - Need teeth pulled because of lost fillin
+OHQ_C.htm,OHD711D,OHD711D - Need teeth pulled because of gum probs
+OHQ_C.htm,OHD711E,OHD711E - Need teeth pulled because of appearance
+OHQ_C.htm,OHD711G,OHD711G - Need teeth pulled because of other
+OHQ_C.htm,OHD721,OHD721 - Do you or SP need dentures made?
+OHQ_C.htm,OHD730,OHD730 - Do you or SP need gum treatment?
+OHQ_C.htm,OHD740,OHD740 - Do you or SP need relief of pain?
+OHQ_C.htm,OHD750,OHD750 - Do you or SP need teeth cleaned?
+OHQ_C.htm,OHQ755,OHQ755 - CHECK ITEM
+OHQ_C.htm,OHQ760,OHQ760 - How long since had teeth cleaned
+OHQ_C.htm,OHQ770,OHQ770 - Past yr need dental but couldn't get it
+OHQ_C.htm,OHQ780A,OHQ780A - Could not afford the cost
+OHQ_C.htm,OHQ780B,OHQ780B - Did not want to spend the money
+OHQ_C.htm,OHQ780C,OHQ780C - Insurance did not cover procedures
+OHQ_C.htm,OHQ780D,OHQ780D - Dental office is too far away
+OHQ_C.htm,OHQ780E,OHQ780E - Office not open at convenient time
+OHQ_C.htm,OHQ780F,OHQ780F - Another dentist recommended not doing it
+OHQ_C.htm,OHQ780G,OHQ780G - Afraid or do not like dentists
+OHQ_C.htm,OHQ780H,OHQ780H - Unable to take time off from work
+OHQ_C.htm,OHQ780I,OHQ780I - Too busy
+OHQ_C.htm,OHQ780J,OHQ780J - Expected dental problems to go away
+OHQ_C.htm,OHQ780K,OHQ780K - Other
+OHXADD_C.htm,SEQN,SEQN - Respondent sequence number
+OHXADD_C.htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHXADD_C.htm,OHDDEST,"OHDDEST - Status code for Tooth ""Wear"""
+OHXADD_C.htm,OHDFCST,OHDFCST - Status code for Contacts
+OHXADD_C.htm,OHXMAXIN,OHXMAXIN - Maximal incisal opening (mm)
+OHXADD_C.htm,OHXFCRZ1,OHXFCRZ1 - Posterior Right FOC Zone 1
+OHXADD_C.htm,OHXFCRZ2,OHXFCRZ2 - Posterior Right FOC Zone 2
+OHXADD_C.htm,OHXFCRZ3,OHXFCRZ3 - Posterior Right FOC Zone 3
+OHXADD_C.htm,OHXFCRZ4,OHXFCRZ4 - Posterior Right FOC Zone 4
+OHXADD_C.htm,OHXFCRZ5,OHXFCRZ5 - Posterior Right FOC Zone 5
+OHXADD_C.htm,OHXFCRZ6,OHXFCRZ6 - Posterior Right FOC Zone 6
+OHXADD_C.htm,OHXFCRZ7,OHXFCRZ7 - Posterior Right FOC Zone 7
+OHXADD_C.htm,OHXFCRZ8,OHXFCRZ8 - Posterior Right FOC Zone 8
+OHXADD_C.htm,OHXFCLZ1,OHXFCLZ1 - Posterior Left  FOC Zone 1
+OHXADD_C.htm,OHXFCLZ2,OHXFCLZ2 - Posterior Left  FOC Zone 2
+OHXADD_C.htm,OHXFCLZ3,OHXFCLZ3 - Posterior Left  FOC Zone 3
+OHXADD_C.htm,OHXFCLZ4,OHXFCLZ4 - Posterior Left  FOC Zone 4
+OHXADD_C.htm,OHXFCLZ5,OHXFCLZ5 - Posterior Left  FOC Zone 5
+OHXADD_C.htm,OHXFCLZ6,OHXFCLZ6 - Posterior Left  FOC Zone 6
+OHXADD_C.htm,OHXFCLZ7,OHXFCLZ7 - Posterior Left  FOC Zone 7
+OHXADD_C.htm,OHXFCLZ8,OHXFCLZ8 - Posterior Left  FOC Zone 8
+OHXADD_C.htm,OHXFCANT,OHXFCANT - Anterior FOC zone
+OHXADD_C.htm,OHX08ESL,OHX08ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX08ESF,OHX08ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX08ESI,OHX08ESI - Incisal surface code for erosion
+OHXADD_C.htm,OHX07ESL,OHX07ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX07ESF,OHX07ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX07ESI,OHX07ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX06ESL,OHX06ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX06ESF,OHX06ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX06ESI,OHX06ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX03ESO,OHX03ESO - Occlusal surface code for erosion
+OHXADD_C.htm,OHX09ESL,OHX09ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX09ESF,OHX09ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX09ESI,OHX09ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX10ESL,OHX10ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX10ESF,OHX10ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX10ESI,OHX10ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX11ESL,OHX11ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX11ESF,OHX11ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX11ESI,OHX11ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX14ESO,OHX14ESO - Occlusal surface code for erosion
+OHXADD_C.htm,OHX25ESL,OHX25ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX25ESF,OHX25ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX25ESI,OHX25ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX26ESL,OHX26ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX26ESF,OHX26ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX26ESI,OHX26ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX27ESL,OHX27ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX27ESF,OHX27ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX27ESI,OHX27ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX30ESO,OHX30ESO - Occlusal surface code for erosion
+OHXADD_C.htm,OHX24ESL,OHX24ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX24ESF,OHX24ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX24ESI,OHX24ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX23ESL,OHX23ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX23ESF,OHX23ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX23ESI,OHX23ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX22ESL,OHX22ESL - Lingual surface code for erosion
+OHXADD_C.htm,OHX22ESF,OHX22ESF - Facial surface code for erosion
+OHXADD_C.htm,OHX22ESI,OHX22ESI - Incisial surface code for erosion
+OHXADD_C.htm,OHX19ESO,OHX19ESO - Occlusal surface code for erosion
+OHXDEN_C (1).htm,SEQN,SEQN - Respondent sequence number
+OHXDEN_C (1).htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHXDEN_C (1).htm,OHASCST3,OHASCST3 - Dentition Status Code
+OHXDEN_C (1).htm,OHX08TC,OHX08TC - Tooth Count:  #8
+OHXDEN_C (1).htm,OHX07TC,OHX07TC - Tooth Count:  #7
+OHXDEN_C (1).htm,OHX06TC,OHX06TC - Tooth Count:  #6
+OHXDEN_C (1).htm,OHX05TC,OHX05TC - Tooth Count:  #5
+OHXDEN_C (1).htm,OHX04TC,OHX04TC - Tooth Count:  #4
+OHXDEN_C (1).htm,OHX03TC,OHX03TC - Tooth Count:  #3
+OHXDEN_C (1).htm,OHX02TC,OHX02TC - Tooth Count:  #2
+OHXDEN_C (1).htm,OHX01TC,OHX01TC - Tooth Count:  #1
+OHXDEN_C (1).htm,OHX09TC,OHX09TC - Tooth Count:  #9
+OHXDEN_C (1).htm,OHX10TC,OHX10TC - Tooth Count:  #10
+OHXDEN_C (1).htm,OHX11TC,OHX11TC - Tooth Count:  #11
+OHXDEN_C (1).htm,OHX12TC,OHX12TC - Tooth Count:  #12
+OHXDEN_C (1).htm,OHX13TC,OHX13TC - Tooth Count:  #13
+OHXDEN_C (1).htm,OHX14TC,OHX14TC - Tooth Count:  #14
+OHXDEN_C (1).htm,OHX15TC,OHX15TC - Tooth Count:  #15
+OHXDEN_C (1).htm,OHX16TC,OHX16TC - Tooth Count:  #16
+OHXDEN_C (1).htm,OHX24TC,OHX24TC - Tooth Count:  #24
+OHXDEN_C (1).htm,OHX23TC,OHX23TC - Tooth Count:  #23
+OHXDEN_C (1).htm,OHX22TC,OHX22TC - Tooth Count:  #22
+OHXDEN_C (1).htm,OHX21TC,OHX21TC - Tooth Count:  #21
+OHXDEN_C (1).htm,OHX20TC,OHX20TC - Tooth Count:  #20
+OHXDEN_C (1).htm,OHX19TC,OHX19TC - Tooth Count:  #19
+OHXDEN_C (1).htm,OHX18TC,OHX18TC - Tooth Count:  #18
+OHXDEN_C (1).htm,OHX17TC,OHX17TC - Tooth Count:  #17
+OHXDEN_C (1).htm,OHX25TC,OHX25TC - Tooth Count:  #25
+OHXDEN_C (1).htm,OHX26TC,OHX26TC - Tooth Count:  #26
+OHXDEN_C (1).htm,OHX27TC,OHX27TC - Tooth Count:  #27
+OHXDEN_C (1).htm,OHX28TC,OHX28TC - Tooth Count:  #28
+OHXDEN_C (1).htm,OHX29TC,OHX29TC - Tooth Count:  #29
+OHXDEN_C (1).htm,OHX30TC,OHX30TC - Tooth Count:  #30
+OHXDEN_C (1).htm,OHX31TC,OHX31TC - Tooth Count:  #31
+OHXDEN_C (1).htm,OHX32TC,OHX32TC - Tooth Count:  #32
+OHXDEN_C (1).htm,OHXIMP,OHXIMP - Dental Implant: yes / no?
+OHXDEN_C (1).htm,OHXEDEN,OHXEDEN - Edentulous-yes
+OHXDEN_C (1).htm,OHX08CTC,OHX08CTC - Coronal Caries:  Tooth count  #8
+OHXDEN_C (1).htm,OHX08CSC,OHX08CSC - Coronal Caries:  Surface condition #8
+OHXDEN_C (1).htm,OHX07CTC,OHX07CTC - Coronal Caries:  Tooth count #7
+OHXDEN_C (1).htm,OHX07CSC,OHX07CSC - Coronal Caries:  Surface condition #7
+OHXDEN_C (1).htm,OHX06CTC,OHX06CTC - Coronal Caries:  Tooth count #6
+OHXDEN_C (1).htm,OHX06CSC,OHX06CSC - Coronal Caries:  Surface condition #6
+OHXDEN_C (1).htm,OHX05CTC,OHX05CTC - Coronal Caries:  Tooth count #5
+OHXDEN_C (1).htm,OHX05CSC,OHX05CSC - Coronal Caries:  Surface condition #5
+OHXDEN_C (1).htm,OHX04CTC,OHX04CTC - Coronal Caries:  Tooth count #4
+OHXDEN_C (1).htm,OHX04CSC,OHX04CSC - Coronal Caries:  Surface condition #4
+OHXDEN_C (1).htm,OHX03CTC,OHX03CTC - Coronal Caries:  Tooth count #3
+OHXDEN_C (1).htm,OHX03CSC,OHX03CSC - Coronal Caries:  Surface condition #3
+OHXDEN_C (1).htm,OHX02CTC,OHX02CTC - Coronal Caries:  Tooth count #2
+OHXDEN_C (1).htm,OHX02CSC,OHX02CSC - Coronal Caries:  Surface condition #2
+OHXDEN_C (1).htm,OHX09CTC,OHX09CTC - Coronal Caries:  Tooth count #9
+OHXDEN_C (1).htm,OHX09CSC,OHX09CSC - Coronal Caries:  Surface condition #9
+OHXDEN_C (1).htm,OHX10CTC,OHX10CTC - Coronal Caries:  Tooth count #10
+OHXDEN_C (1).htm,OHX10CSC,OHX10CSC - Coronal Caries:  Surface condition #10
+OHXDEN_C (1).htm,OHX11CTC,OHX11CTC - Coronal Caries: Tooth Count #11
+OHXDEN_C (1).htm,OHX11CSC,OHX11CSC - Coronal Caries:  Surface condition #11
+OHXDEN_C (1).htm,OHX12CTC,OHX12CTC - Coronal Caries:  Tooth count #12
+OHXDEN_C (1).htm,OHX12CSC,OHX12CSC - Coronal Caries:  Surface condition #12
+OHXDEN_C (1).htm,OHX13CTC,OHX13CTC - Coronal Caries:  Tooth count #13
+OHXDEN_C (1).htm,OHX13CSC,OHX13CSC - Coronal Caries:  Surface condition #13
+OHXDEN_C (1).htm,OHX14CTC,OHX14CTC - Coronal Caries:  Tooth count #14
+OHXDEN_C (1).htm,OHX14CSC,OHX14CSC - Coronal Caries:  Surface condition #14
+OHXDEN_C (1).htm,OHX15CTC,OHX15CTC - Coronal Caries:  Tooth count #15
+OHXDEN_C (1).htm,OHX15CSC,OHX15CSC - Coronal Caries:  Surface condition #15
+OHXDEN_C (1).htm,OHX24CTC,OHX24CTC - Coronal Caries:  Tooth count #24
+OHXDEN_C (1).htm,OHX24CSC,OHX24CSC - Coronal Caries:  Surface condition #24
+OHXDEN_C (1).htm,OHX23CTC,OHX23CTC - Coronal Caries:  Tooth count #23
+OHXDEN_C (1).htm,OHX23CSC,OHX23CSC - Coronal Caries:  Surface condition #23
+OHXDEN_C (1).htm,OHX22CTC,OHX22CTC - Coronal Caries:  Tooth count #22
+OHXDEN_C (1).htm,OHX22CSC,OHX22CSC - Coronal Caries:  Surface condition #22
+OHXDEN_C (1).htm,OHX21CTC,OHX21CTC - Coronal Caries:  Tooth count #21
+OHXDEN_C (1).htm,OHX21CSC,OHX21CSC - Coronal Caries:  Surface condition #21
+OHXDEN_C (1).htm,OHX20CTC,OHX20CTC - Coronal Caries:  Tooth count #20
+OHXDEN_C (1).htm,OHX20CSC,OHX20CSC - Coronal Caries:  Surface condition #20
+OHXDEN_C (1).htm,OHX19CTC,OHX19CTC - Coronal Caries:  Tooth count #19
+OHXDEN_C (1).htm,OHX19CSC,OHX19CSC - Coronal Caries:  Surface condition #19
+OHXDEN_C (1).htm,OHX18CTC,OHX18CTC - Coronal Caries:  Tooth count #18
+OHXDEN_C (1).htm,OHX18CSC,OHX18CSC - Coronal Caries: Surface condition #18
+OHXDEN_C (1).htm,OHX25CTC,OHX25CTC - Coronal Caries:  Tooth count #25
+OHXDEN_C (1).htm,OHX25CSC,OHX25CSC - Coronal Caries:  Surface condition #25
+OHXDEN_C (1).htm,OHX26CTC,OHX26CTC - Coronal Caries:  Tooth count #26
+OHXDEN_C (1).htm,OHX26CSC,OHX26CSC - Coronal Caries:  Surface condition #26
+OHXDEN_C (1).htm,OHX27CTC,OHX27CTC - Coronal Caries:  Tooth count #27
+OHXDEN_C (1).htm,OHX27CSC,OHX27CSC - Coronal Caries:  Surface condition #27
+OHXDEN_C (1).htm,OHX28CTC,OHX28CTC - Coronal Caries:  Tooth count #28
+OHXDEN_C (1).htm,OHX28CSC,OHX28CSC - Coronal Caries:  Surface condition #28
+OHXDEN_C (1).htm,OHX29CTC,OHX29CTC - Coronal Caries:  Tooth count #29
+OHXDEN_C (1).htm,OHX29CSC,OHX29CSC - Coronal Caries:  Surface condition #29
+OHXDEN_C (1).htm,OHX30CTC,OHX30CTC - Coronal Caries:  Tooth count #30
+OHXDEN_C (1).htm,OHX30CSC,OHX30CSC - Coronal Caries:  Surface condition #30
+OHXDEN_C (1).htm,OHX31CTC,OHX31CTC - Coronal Caries:  Tooth count #31
+OHXDEN_C (1).htm,OHX31CSC,OHX31CSC - Coronal Caries:  Surface condition #31
+OHXDEN_C (1).htm,OHXRCAR,OHXRCAR - Root Caries:  yes / no
+OHXDEN_C (1).htm,OHXRRES,OHXRRES - Root restorations: yes / no
+OHXDEN_C (1).htm,OHX07SE,OHX07SE - Dental Sealants:  #7
+OHXDEN_C (1).htm,OHX05SE,OHX05SE - Dental Sealants:  #5
+OHXDEN_C (1).htm,OHX04SE,OHX04SE - Dental Sealants:  #4
+OHXDEN_C (1).htm,OHX03SE,OHX03SE - Dental Sealants:  #3
+OHXDEN_C (1).htm,OHX02SE,OHX02SE - Dental Sealants:  #2
+OHXDEN_C (1).htm,OHX10SE,OHX10SE - Dental Sealants:  #10
+OHXDEN_C (1).htm,OHX12SE,OHX12SE - Dental Sealants:  #12
+OHXDEN_C (1).htm,OHX13SE,OHX13SE - Dental Sealants:  #13
+OHXDEN_C (1).htm,OHX14SE,OHX14SE - Dental Sealants:  #14
+OHXDEN_C (1).htm,OHX15SE,OHX15SE - Dental Sealants:  #15
+OHXDEN_C (1).htm,OHX21SE,OHX21SE - Dental Sealants:  #21
+OHXDEN_C (1).htm,OHX20SE,OHX20SE - Dental Sealants:  #20
+OHXDEN_C (1).htm,OHX19SE,OHX19SE - Dental Sealants:  #19
+OHXDEN_C (1).htm,OHX18SE,OHX18SE - Dental Sealants:  #18
+OHXDEN_C (1).htm,OHX28SE,OHX28SE - Dental Sealants:  #28
+OHXDEN_C (1).htm,OHX29SE,OHX29SE - Dental Sealants:  #29
+OHXDEN_C (1).htm,OHX30SE,OHX30SE - Dental Sealants:  #30
+OHXDEN_C (1).htm,OHX31SE,OHX31SE - Dental Sealants:  #31
+OHXDEN_C (1).htm,OHX08DI,OHX08DI - Fluorosis DI: #8
+OHXDEN_C (1).htm,OHX07DI,OHX07DI - Fluorosis DI: #7
+OHXDEN_C (1).htm,OHX06DI,OHX06DI - Fluorosis DI: #6
+OHXDEN_C (1).htm,OHX05DI,OHX05DI - Fluorosis DI: #5
+OHXDEN_C (1).htm,OHX04DI,OHX04DI - Fluorosis DI: #4
+OHXDEN_C (1).htm,OHX03DI,OHX03DI - Fluorosis DI: #3
+OHXDEN_C (1).htm,OHX02DI,OHX02DI - Fluorosis DI: #2
+OHXDEN_C (1).htm,OHX09DI,OHX09DI - Fluorosis DI: #9
+OHXDEN_C (1).htm,OHX10DI,OHX10DI - Fluorosis DI: #10
+OHXDEN_C (1).htm,OHX11DI,OHX11DI - Fluorosis DI: #11
+OHXDEN_C (1).htm,OHX12DI,OHX12DI - Fluorosis DI: #12
+OHXDEN_C (1).htm,OHX13DI,OHX13DI - Fluorosis DI: #13
+OHXDEN_C (1).htm,OHX14DI,OHX14DI - Fluorosis DI: #14
+OHXDEN_C (1).htm,OHX15DI,OHX15DI - Fluorosis DI: #15
+OHXDEN_C (1).htm,OHX24DI,OHX24DI - Fluorosis DI: #24
+OHXDEN_C (1).htm,OHX23DI,OHX23DI - Fluorosis DI: #23
+OHXDEN_C (1).htm,OHX22DI,OHX22DI - Fluorosis DI: #22
+OHXDEN_C (1).htm,OHX21DI,OHX21DI - Fluorosis DI: #21
+OHXDEN_C (1).htm,OHX20DI,OHX20DI - Fluorosis DI: #20
+OHXDEN_C (1).htm,OHX19DI,OHX19DI - Fluorosis DI: #19
+OHXDEN_C (1).htm,OHX18DI,OHX18DI - Fluorosis DI: #18
+OHXDEN_C (1).htm,OHX25DI,OHX25DI - Fluorosis DI: #25
+OHXDEN_C (1).htm,OHX26DI,OHX26DI - Fluorosis DI: #26
+OHXDEN_C (1).htm,OHX27DI,OHX27DI - Fluorosis DI: #27
+OHXDEN_C (1).htm,OHX28DI,OHX28DI - Fluorosis DI: #28
+OHXDEN_C (1).htm,OHX29DI,OHX29DI - Fluorosis DI: #29
+OHXDEN_C (1).htm,OHX30DI,OHX30DI - Fluorosis DI: #30
+OHXDEN_C (1).htm,OHX31DI,OHX31DI - Fluorosis DI: #31
+OHXDEN_C (1).htm,OHX08TR,OHX08TR - Incisor Trauma:  #8
+OHXDEN_C (1).htm,OHX07TR,OHX07TR - Incisor Trauma:  #7
+OHXDEN_C (1).htm,OHX09TR,OHX09TR - Incisor Trauma:  #9
+OHXDEN_C (1).htm,OHX10TR,OHX10TR - Incisor Trauma:  #10
+OHXDEN_C (1).htm,OHX24TR,OHX24TR - Incisor Trauma:  #24
+OHXDEN_C (1).htm,OHX23TR,OHX23TR - Incisor Trauma:  #23
+OHXDEN_C (1).htm,OHX25TR,OHX25TR - Incisor Trauma:  #25
+OHXDEN_C (1).htm,OHX26TR,OHX26TR - Incisor Trauma:  #26
+OHXDEN_C.htm,SEQN,SEQN - Respondent sequence number
+OHXDEN_C.htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHXDEN_C.htm,OHASCST3,OHASCST3 - Dentition Status Code
+OHXDEN_C.htm,OHX08TC,OHX08TC - Tooth Count:  #8
+OHXDEN_C.htm,OHX07TC,OHX07TC - Tooth Count:  #7
+OHXDEN_C.htm,OHX06TC,OHX06TC - Tooth Count:  #6
+OHXDEN_C.htm,OHX05TC,OHX05TC - Tooth Count:  #5
+OHXDEN_C.htm,OHX04TC,OHX04TC - Tooth Count:  #4
+OHXDEN_C.htm,OHX03TC,OHX03TC - Tooth Count:  #3
+OHXDEN_C.htm,OHX02TC,OHX02TC - Tooth Count:  #2
+OHXDEN_C.htm,OHX01TC,OHX01TC - Tooth Count:  #1
+OHXDEN_C.htm,OHX09TC,OHX09TC - Tooth Count:  #9
+OHXDEN_C.htm,OHX10TC,OHX10TC - Tooth Count:  #10
+OHXDEN_C.htm,OHX11TC,OHX11TC - Tooth Count:  #11
+OHXDEN_C.htm,OHX12TC,OHX12TC - Tooth Count:  #12
+OHXDEN_C.htm,OHX13TC,OHX13TC - Tooth Count:  #13
+OHXDEN_C.htm,OHX14TC,OHX14TC - Tooth Count:  #14
+OHXDEN_C.htm,OHX15TC,OHX15TC - Tooth Count:  #15
+OHXDEN_C.htm,OHX16TC,OHX16TC - Tooth Count:  #16
+OHXDEN_C.htm,OHX24TC,OHX24TC - Tooth Count:  #24
+OHXDEN_C.htm,OHX23TC,OHX23TC - Tooth Count:  #23
+OHXDEN_C.htm,OHX22TC,OHX22TC - Tooth Count:  #22
+OHXDEN_C.htm,OHX21TC,OHX21TC - Tooth Count:  #21
+OHXDEN_C.htm,OHX20TC,OHX20TC - Tooth Count:  #20
+OHXDEN_C.htm,OHX19TC,OHX19TC - Tooth Count:  #19
+OHXDEN_C.htm,OHX18TC,OHX18TC - Tooth Count:  #18
+OHXDEN_C.htm,OHX17TC,OHX17TC - Tooth Count:  #17
+OHXDEN_C.htm,OHX25TC,OHX25TC - Tooth Count:  #25
+OHXDEN_C.htm,OHX26TC,OHX26TC - Tooth Count:  #26
+OHXDEN_C.htm,OHX27TC,OHX27TC - Tooth Count:  #27
+OHXDEN_C.htm,OHX28TC,OHX28TC - Tooth Count:  #28
+OHXDEN_C.htm,OHX29TC,OHX29TC - Tooth Count:  #29
+OHXDEN_C.htm,OHX30TC,OHX30TC - Tooth Count:  #30
+OHXDEN_C.htm,OHX31TC,OHX31TC - Tooth Count:  #31
+OHXDEN_C.htm,OHX32TC,OHX32TC - Tooth Count:  #32
+OHXDEN_C.htm,OHXIMP,OHXIMP - Dental Implant: yes / no?
+OHXDEN_C.htm,OHXEDEN,OHXEDEN - Edentulous-yes
+OHXDEN_C.htm,OHX08CTC,OHX08CTC - Coronal Caries:  Tooth count  #8
+OHXDEN_C.htm,OHX08CSC,OHX08CSC - Coronal Caries:  Surface condition #8
+OHXDEN_C.htm,OHX07CTC,OHX07CTC - Coronal Caries:  Tooth count #7
+OHXDEN_C.htm,OHX07CSC,OHX07CSC - Coronal Caries:  Surface condition #7
+OHXDEN_C.htm,OHX06CTC,OHX06CTC - Coronal Caries:  Tooth count #6
+OHXDEN_C.htm,OHX06CSC,OHX06CSC - Coronal Caries:  Surface condition #6
+OHXDEN_C.htm,OHX05CTC,OHX05CTC - Coronal Caries:  Tooth count #5
+OHXDEN_C.htm,OHX05CSC,OHX05CSC - Coronal Caries:  Surface condition #5
+OHXDEN_C.htm,OHX04CTC,OHX04CTC - Coronal Caries:  Tooth count #4
+OHXDEN_C.htm,OHX04CSC,OHX04CSC - Coronal Caries:  Surface condition #4
+OHXDEN_C.htm,OHX03CTC,OHX03CTC - Coronal Caries:  Tooth count #3
+OHXDEN_C.htm,OHX03CSC,OHX03CSC - Coronal Caries:  Surface condition #3
+OHXDEN_C.htm,OHX02CTC,OHX02CTC - Coronal Caries:  Tooth count #2
+OHXDEN_C.htm,OHX02CSC,OHX02CSC - Coronal Caries:  Surface condition #2
+OHXDEN_C.htm,OHX09CTC,OHX09CTC - Coronal Caries:  Tooth count #9
+OHXDEN_C.htm,OHX09CSC,OHX09CSC - Coronal Caries:  Surface condition #9
+OHXDEN_C.htm,OHX10CTC,OHX10CTC - Coronal Caries:  Tooth count #10
+OHXDEN_C.htm,OHX10CSC,OHX10CSC - Coronal Caries:  Surface condition #10
+OHXDEN_C.htm,OHX11CTC,OHX11CTC - Coronal Caries: Tooth Count #11
+OHXDEN_C.htm,OHX11CSC,OHX11CSC - Coronal Caries:  Surface condition #11
+OHXDEN_C.htm,OHX12CTC,OHX12CTC - Coronal Caries:  Tooth count #12
+OHXDEN_C.htm,OHX12CSC,OHX12CSC - Coronal Caries:  Surface condition #12
+OHXDEN_C.htm,OHX13CTC,OHX13CTC - Coronal Caries:  Tooth count #13
+OHXDEN_C.htm,OHX13CSC,OHX13CSC - Coronal Caries:  Surface condition #13
+OHXDEN_C.htm,OHX14CTC,OHX14CTC - Coronal Caries:  Tooth count #14
+OHXDEN_C.htm,OHX14CSC,OHX14CSC - Coronal Caries:  Surface condition #14
+OHXDEN_C.htm,OHX15CTC,OHX15CTC - Coronal Caries:  Tooth count #15
+OHXDEN_C.htm,OHX15CSC,OHX15CSC - Coronal Caries:  Surface condition #15
+OHXDEN_C.htm,OHX24CTC,OHX24CTC - Coronal Caries:  Tooth count #24
+OHXDEN_C.htm,OHX24CSC,OHX24CSC - Coronal Caries:  Surface condition #24
+OHXDEN_C.htm,OHX23CTC,OHX23CTC - Coronal Caries:  Tooth count #23
+OHXDEN_C.htm,OHX23CSC,OHX23CSC - Coronal Caries:  Surface condition #23
+OHXDEN_C.htm,OHX22CTC,OHX22CTC - Coronal Caries:  Tooth count #22
+OHXDEN_C.htm,OHX22CSC,OHX22CSC - Coronal Caries:  Surface condition #22
+OHXDEN_C.htm,OHX21CTC,OHX21CTC - Coronal Caries:  Tooth count #21
+OHXDEN_C.htm,OHX21CSC,OHX21CSC - Coronal Caries:  Surface condition #21
+OHXDEN_C.htm,OHX20CTC,OHX20CTC - Coronal Caries:  Tooth count #20
+OHXDEN_C.htm,OHX20CSC,OHX20CSC - Coronal Caries:  Surface condition #20
+OHXDEN_C.htm,OHX19CTC,OHX19CTC - Coronal Caries:  Tooth count #19
+OHXDEN_C.htm,OHX19CSC,OHX19CSC - Coronal Caries:  Surface condition #19
+OHXDEN_C.htm,OHX18CTC,OHX18CTC - Coronal Caries:  Tooth count #18
+OHXDEN_C.htm,OHX18CSC,OHX18CSC - Coronal Caries: Surface condition #18
+OHXDEN_C.htm,OHX25CTC,OHX25CTC - Coronal Caries:  Tooth count #25
+OHXDEN_C.htm,OHX25CSC,OHX25CSC - Coronal Caries:  Surface condition #25
+OHXDEN_C.htm,OHX26CTC,OHX26CTC - Coronal Caries:  Tooth count #26
+OHXDEN_C.htm,OHX26CSC,OHX26CSC - Coronal Caries:  Surface condition #26
+OHXDEN_C.htm,OHX27CTC,OHX27CTC - Coronal Caries:  Tooth count #27
+OHXDEN_C.htm,OHX27CSC,OHX27CSC - Coronal Caries:  Surface condition #27
+OHXDEN_C.htm,OHX28CTC,OHX28CTC - Coronal Caries:  Tooth count #28
+OHXDEN_C.htm,OHX28CSC,OHX28CSC - Coronal Caries:  Surface condition #28
+OHXDEN_C.htm,OHX29CTC,OHX29CTC - Coronal Caries:  Tooth count #29
+OHXDEN_C.htm,OHX29CSC,OHX29CSC - Coronal Caries:  Surface condition #29
+OHXDEN_C.htm,OHX30CTC,OHX30CTC - Coronal Caries:  Tooth count #30
+OHXDEN_C.htm,OHX30CSC,OHX30CSC - Coronal Caries:  Surface condition #30
+OHXDEN_C.htm,OHX31CTC,OHX31CTC - Coronal Caries:  Tooth count #31
+OHXDEN_C.htm,OHX31CSC,OHX31CSC - Coronal Caries:  Surface condition #31
+OHXDEN_C.htm,OHXRCAR,OHXRCAR - Root Caries:  yes / no
+OHXDEN_C.htm,OHXRRES,OHXRRES - Root restorations: yes / no
+OHXDEN_C.htm,OHX07SE,OHX07SE - Dental Sealants:  #7
+OHXDEN_C.htm,OHX05SE,OHX05SE - Dental Sealants:  #5
+OHXDEN_C.htm,OHX04SE,OHX04SE - Dental Sealants:  #4
+OHXDEN_C.htm,OHX03SE,OHX03SE - Dental Sealants:  #3
+OHXDEN_C.htm,OHX02SE,OHX02SE - Dental Sealants:  #2
+OHXDEN_C.htm,OHX10SE,OHX10SE - Dental Sealants:  #10
+OHXDEN_C.htm,OHX12SE,OHX12SE - Dental Sealants:  #12
+OHXDEN_C.htm,OHX13SE,OHX13SE - Dental Sealants:  #13
+OHXDEN_C.htm,OHX14SE,OHX14SE - Dental Sealants:  #14
+OHXDEN_C.htm,OHX15SE,OHX15SE - Dental Sealants:  #15
+OHXDEN_C.htm,OHX21SE,OHX21SE - Dental Sealants:  #21
+OHXDEN_C.htm,OHX20SE,OHX20SE - Dental Sealants:  #20
+OHXDEN_C.htm,OHX19SE,OHX19SE - Dental Sealants:  #19
+OHXDEN_C.htm,OHX18SE,OHX18SE - Dental Sealants:  #18
+OHXDEN_C.htm,OHX28SE,OHX28SE - Dental Sealants:  #28
+OHXDEN_C.htm,OHX29SE,OHX29SE - Dental Sealants:  #29
+OHXDEN_C.htm,OHX30SE,OHX30SE - Dental Sealants:  #30
+OHXDEN_C.htm,OHX31SE,OHX31SE - Dental Sealants:  #31
+OHXDEN_C.htm,OHX08DI,OHX08DI - Fluorosis DI: #8
+OHXDEN_C.htm,OHX07DI,OHX07DI - Fluorosis DI: #7
+OHXDEN_C.htm,OHX06DI,OHX06DI - Fluorosis DI: #6
+OHXDEN_C.htm,OHX05DI,OHX05DI - Fluorosis DI: #5
+OHXDEN_C.htm,OHX04DI,OHX04DI - Fluorosis DI: #4
+OHXDEN_C.htm,OHX03DI,OHX03DI - Fluorosis DI: #3
+OHXDEN_C.htm,OHX02DI,OHX02DI - Fluorosis DI: #2
+OHXDEN_C.htm,OHX09DI,OHX09DI - Fluorosis DI: #9
+OHXDEN_C.htm,OHX10DI,OHX10DI - Fluorosis DI: #10
+OHXDEN_C.htm,OHX11DI,OHX11DI - Fluorosis DI: #11
+OHXDEN_C.htm,OHX12DI,OHX12DI - Fluorosis DI: #12
+OHXDEN_C.htm,OHX13DI,OHX13DI - Fluorosis DI: #13
+OHXDEN_C.htm,OHX14DI,OHX14DI - Fluorosis DI: #14
+OHXDEN_C.htm,OHX15DI,OHX15DI - Fluorosis DI: #15
+OHXDEN_C.htm,OHX24DI,OHX24DI - Fluorosis DI: #24
+OHXDEN_C.htm,OHX23DI,OHX23DI - Fluorosis DI: #23
+OHXDEN_C.htm,OHX22DI,OHX22DI - Fluorosis DI: #22
+OHXDEN_C.htm,OHX21DI,OHX21DI - Fluorosis DI: #21
+OHXDEN_C.htm,OHX20DI,OHX20DI - Fluorosis DI: #20
+OHXDEN_C.htm,OHX19DI,OHX19DI - Fluorosis DI: #19
+OHXDEN_C.htm,OHX18DI,OHX18DI - Fluorosis DI: #18
+OHXDEN_C.htm,OHX25DI,OHX25DI - Fluorosis DI: #25
+OHXDEN_C.htm,OHX26DI,OHX26DI - Fluorosis DI: #26
+OHXDEN_C.htm,OHX27DI,OHX27DI - Fluorosis DI: #27
+OHXDEN_C.htm,OHX28DI,OHX28DI - Fluorosis DI: #28
+OHXDEN_C.htm,OHX29DI,OHX29DI - Fluorosis DI: #29
+OHXDEN_C.htm,OHX30DI,OHX30DI - Fluorosis DI: #30
+OHXDEN_C.htm,OHX31DI,OHX31DI - Fluorosis DI: #31
+OHXDEN_C.htm,OHX08TR,OHX08TR - Incisor Trauma:  #8
+OHXDEN_C.htm,OHX07TR,OHX07TR - Incisor Trauma:  #7
+OHXDEN_C.htm,OHX09TR,OHX09TR - Incisor Trauma:  #9
+OHXDEN_C.htm,OHX10TR,OHX10TR - Incisor Trauma:  #10
+OHXDEN_C.htm,OHX24TR,OHX24TR - Incisor Trauma:  #24
+OHXDEN_C.htm,OHX23TR,OHX23TR - Incisor Trauma:  #23
+OHXDEN_C.htm,OHX25TR,OHX25TR - Incisor Trauma:  #25
+OHXDEN_C.htm,OHX26TR,OHX26TR - Incisor Trauma:  #26
+OHXPRL_C.htm,SEQN,SEQN - Respondent sequence number
+OHXPRL_C.htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHXPRL_C.htm,OHASCST4,OHASCST4 - Periodontal Status Code
+OHXPRL_C.htm,OHD18CJM,OHD18CJM - LOA: mid-facial #18 FGM/CEJ
+OHXPRL_C.htm,OHD18PCM,OHD18PCM - LOA: mid-facial #18 PD
+OHXPRL_C.htm,OHD18LAM,OHD18LAM - LOA: mid-facial #18 calculated LA
+OHXPRL_C.htm,OHD18CJS,OHD18CJS - LOA: mesial #18 FGM/CEJ
+OHXPRL_C.htm,OHD18PCS,OHD18PCS - LOA: mesial #18 PD
+OHXPRL_C.htm,OHD18LAS,OHD18LAS - LOA: mesial #18 calculated LA
+OHXPRL_C.htm,OHD18CJD,OHD18CJD - LOA: distal #18 FGM/CEJ
+OHXPRL_C.htm,OHD18PCD,OHD18PCD - LOA: distal #18 PD
+OHXPRL_C.htm,OHD18LAD,OHD18LAD - LOA: distal #18 calculated LA
+OHXPRL_C.htm,OHD19CJM,OHD19CJM - LOA: mid-facial #19 FGM/CEJ
+OHXPRL_C.htm,OHD19PCM,OHD19PCM - LOA: mid-facial #19 PD
+OHXPRL_C.htm,OHD19LAM,OHD19LAM - LOA: mid-facial #19 calculated LA
+OHXPRL_C.htm,OHD19CJS,OHD19CJS - LOA: mesial #19 FGM/CEJ
+OHXPRL_C.htm,OHD19PCS,OHD19PCS - LOA: mesial #19 PD
+OHXPRL_C.htm,OHD19LAS,OHD19LAS - LOA: mesial #19 calculated LA
+OHXPRL_C.htm,OHD19CJD,OHD19CJD - LOA: distal #19 FGM/CEJ
+OHXPRL_C.htm,OHD19PCD,OHD19PCD - LOA: distal #19 PD
+OHXPRL_C.htm,OHD19LAD,OHD19LAD - LOA: distal #19 calculated LA
+OHXPRL_C.htm,OHD20CJM,OHD20CJM - LOA: mid-facial #20 FGM/CEJ
+OHXPRL_C.htm,OHD20PCM,OHD20PCM - LOA: mid-facial #20 PD
+OHXPRL_C.htm,OHD20LAM,OHD20LAM - LOA: mid-facial #20 calculated LA
+OHXPRL_C.htm,OHD20CJS,OHD20CJS - LOA: mesial #20 FGM/CEJ
+OHXPRL_C.htm,OHD20PCS,OHD20PCS - LOA: mesial #20 PD
+OHXPRL_C.htm,OHD20LAS,OHD20LAS - LOA: mesial #20 calculated LA
+OHXPRL_C.htm,OHD20CJD,OHD20CJD - LOA: distal #20 FGM/CEJ
+OHXPRL_C.htm,OHD20PCD,OHD20PCD - LOA: distal #20 PD
+OHXPRL_C.htm,OHD20LAD,OHD20LAD - LOA: distal #20 calculated LA
+OHXPRL_C.htm,OHD21CJM,OHD21CJM - LOA: mid-facial #21 FGM/CEJ
+OHXPRL_C.htm,OHD21PCM,OHD21PCM - LOA: mid-facial #21 PD
+OHXPRL_C.htm,OHD21LAM,OHD21LAM - LOA: mid-facial #21 calculated LA
+OHXPRL_C.htm,OHD21CJS,OHD21CJS - LOA: mesial #21 FGM/CEJ
+OHXPRL_C.htm,OHD21PCS,OHD21PCS - LOA: mesial #21 PD
+OHXPRL_C.htm,OHD21LAS,OHD21LAS - LOA: mesial #21 calculated LA
+OHXPRL_C.htm,OHD21CJD,OHD21CJD - LOA: distal #21 FGM/CEJ
+OHXPRL_C.htm,OHD21PCD,OHD21PCD - LOA: distal #21 PD
+OHXPRL_C.htm,OHD21LAD,OHD21LAD - LOA: distal #21 calculated LA
+OHXPRL_C.htm,OHD22CJM,OHD22CJM - LOA: mid-facial #22 FGM/CEJ
+OHXPRL_C.htm,OHD22PCM,OHD22PCM - LOA: mid-facial #22 PD
+OHXPRL_C.htm,OHD22LAM,OHD22LAM - LOA: mid-facial #22 calculated LA
+OHXPRL_C.htm,OHD22CJS,OHD22CJS - LOA: mesial #22 FGM/CEJ
+OHXPRL_C.htm,OHD22PCS,OHD22PCS - LOA: mesial #22 PD
+OHXPRL_C.htm,OHD22LAS,OHD22LAS - LOA: mesial #22 calculated LA
+OHXPRL_C.htm,OHD22CJD,OHD22CJD - LOA: distal #22 FGM/CEJ
+OHXPRL_C.htm,OHD22PCD,OHD22PCD - LOA: distal #22 PD
+OHXPRL_C.htm,OHD22LAD,OHD22LAD - LOA: distal #22 calculated LA
+OHXPRL_C.htm,OHD23CJM,OHD23CJM - LOA: mid-facial #23 FGM/CEJ
+OHXPRL_C.htm,OHD23PCM,OHD23PCM - LOA: mid-facial #23 PD
+OHXPRL_C.htm,OHD23LAM,OHD23LAM - LOA: mid-facial #23 calculated LA
+OHXPRL_C.htm,OHD23CJS,OHD23CJS - LOA: mesial #23 FGM/CEJ
+OHXPRL_C.htm,OHD23PCS,OHD23PCS - LOA: mesial #23 PD
+OHXPRL_C.htm,OHD23LAS,OHD23LAS - LOA: mesial #23 calculated LA
+OHXPRL_C.htm,OHD23CJD,OHD23CJD - LOA: distal #23 FGM/CEJ
+OHXPRL_C.htm,OHD23PCD,OHD23PCD - LOA: distal #23 PD
+OHXPRL_C.htm,OHD23LAD,OHD23LAD - LOA: distal #23 calculated LA
+OHXPRL_C.htm,OHD24CJM,OHD24CJM - LOA: mid-facial #24 FGM/CEJ
+OHXPRL_C.htm,OHD24PCM,OHD24PCM - LOA: mid-facial #24 PD
+OHXPRL_C.htm,OHD24LAM,OHD24LAM - LOA: mid-facial #24 calculated LA
+OHXPRL_C.htm,OHD24CJS,OHD24CJS - LOA: mesial #24 FGM/CEJ
+OHXPRL_C.htm,OHD24PCS,OHD24PCS - LOA: mesial #24 PD
+OHXPRL_C.htm,OHD24LAS,OHD24LAS - LOA: mesial #24 calculated LA
+OHXPRL_C.htm,OHD24CJD,OHD24CJD - LOA: distal #24 FGM/CEJ
+OHXPRL_C.htm,OHD24PCD,OHD24PCD - LOA: distal #24 PD
+OHXPRL_C.htm,OHD24LAD,OHD24LAD - LOA: distal #24 calculated LA
+OHXPRL_C.htm,OHD31CJM,OHD31CJM - LOA: mid-facial #31 FGM/CEJ
+OHXPRL_C.htm,OHD31PCM,OHD31PCM - LOA: mid-facial #31 PD
+OHXPRL_C.htm,OHD31LAM,OHD31LAM - LOA: mid-facial #31 calculated LA
+OHXPRL_C.htm,OHD31CJS,OHD31CJS - LOA: mesial #31 FGM/CEJ
+OHXPRL_C.htm,OHD31PCS,OHD31PCS - LOA: mesial #31 PD
+OHXPRL_C.htm,OHD31LAS,OHD31LAS - LOA: mesial #31 calculated LA
+OHXPRL_C.htm,OHD31CJD,OHD31CJD - LOA: distal #31 FGM/CEJ
+OHXPRL_C.htm,OHD31PCD,OHD31PCD - LOA: distal #31 PD
+OHXPRL_C.htm,OHD31LAD,OHD31LAD - LOA: distal #31 calculated LA
+OHXPRL_C.htm,OHD30CJM,OHD30CJM - LOA: mid-facial #30 FGM/CEJ
+OHXPRL_C.htm,OHD30PCM,OHD30PCM - LOA: mid-facial #30 PD
+OHXPRL_C.htm,OHD30LAM,OHD30LAM - LOA: mid-facial #30 calculated LA
+OHXPRL_C.htm,OHD30CJS,OHD30CJS - LOA: mesial #30 FGM/CEJ
+OHXPRL_C.htm,OHD30PCS,OHD30PCS - LOA: mesial #30 PD
+OHXPRL_C.htm,OHD30LAS,OHD30LAS - LOA: mesial #30 calculated LA
+OHXPRL_C.htm,OHD30CJD,OHD30CJD - LOA: distal #30 FGM/CEJ
+OHXPRL_C.htm,OHD30PCD,OHD30PCD - LOA: distal #30 PD
+OHXPRL_C.htm,OHD30LAD,OHD30LAD - LOA: distal #30 calculated LA
+OHXPRL_C.htm,OHD29CJM,OHD29CJM - LOA: mid-facial #29 FGM/CEJ
+OHXPRL_C.htm,OHD29PCM,OHD29PCM - LOA: mid-facial #29 PD
+OHXPRL_C.htm,OHD29LAM,OHD29LAM - LOA: mid-facial #29 calculated LA
+OHXPRL_C.htm,OHD29CJS,OHD29CJS - LOA: mesial #29 FGM/CEJ
+OHXPRL_C.htm,OHD29PCS,OHD29PCS - LOA: mesial #29 PD
+OHXPRL_C.htm,OHD29LAS,OHD29LAS - LOA: mesial #29 calculated LA
+OHXPRL_C.htm,OHD29CJD,OHD29CJD - LOA: distal #29 FGM/CEJ
+OHXPRL_C.htm,OHD29PCD,OHD29PCD - LOA: distal #29 PD
+OHXPRL_C.htm,OHD29LAD,OHD29LAD - LOA: distal #29 calculated LA
+OHXPRL_C.htm,OHD28CJM,OHD28CJM - LOA: mid-facial #28 FGM/CEJ
+OHXPRL_C.htm,OHD28PCM,OHD28PCM - LOA: mid-facial #28 PD
+OHXPRL_C.htm,OHD28LAM,OHD28LAM - LOA: mid-facial #28 calculated LA
+OHXPRL_C.htm,OHD28CJS,OHD28CJS - LOA: mesial #28 FGM/CEJ
+OHXPRL_C.htm,OHD28PCS,OHD28PCS - LOA: mesial #28 PD
+OHXPRL_C.htm,OHD28LAS,OHD28LAS - LOA: mesial #28 calculated LA
+OHXPRL_C.htm,OHD28CJD,OHD28CJD - LOA: distal #28 FGM/CEJ
+OHXPRL_C.htm,OHD28PCD,OHD28PCD - LOA: distal #28 PD
+OHXPRL_C.htm,OHD28LAD,OHD28LAD - LOA: distal #28 calculated LA
+OHXPRL_C.htm,OHD27CJM,OHD27CJM - LOA: mid-facial #27 FGM/CEJ
+OHXPRL_C.htm,OHD27PCM,OHD27PCM - LOA: mid-facial #27 PD
+OHXPRL_C.htm,OHD27LAM,OHD27LAM - LOA: mid-facial #27 calculated LA
+OHXPRL_C.htm,OHD27CJS,OHD27CJS - LOA: mesial #27 FGM/CEJ
+OHXPRL_C.htm,OHD27PCS,OHD27PCS - LOA: mesial #27 PD
+OHXPRL_C.htm,OHD27LAS,OHD27LAS - LOA: mesial #27 calculated LA
+OHXPRL_C.htm,OHD27CJD,OHD27CJD - LOA: distal #27 FGM/CEJ
+OHXPRL_C.htm,OHD27PCD,OHD27PCD - LOA: distal #27 PD
+OHXPRL_C.htm,OHD27LAD,OHD27LAD - LOA: distal #27 calculated LA
+OHXPRL_C.htm,OHD26CJM,OHD26CJM - LOA: mid-facial #26 FGM/CEJ
+OHXPRL_C.htm,OHD26PCM,OHD26PCM - LOA: mid-facial #26 PD
+OHXPRL_C.htm,OHD26LAM,OHD26LAM - LOA: mid-facial #26 calculated LA
+OHXPRL_C.htm,OHD26CJS,OHD26CJS - LOA: mesial #26 FGM/CEJ
+OHXPRL_C.htm,OHD26PCS,OHD26PCS - LOA: mesial #26 PD
+OHXPRL_C.htm,OHD26LAS,OHD26LAS - LOA: mesial #26 calculated LA
+OHXPRL_C.htm,OHD26CJD,OHD26CJD - LOA: distal #26 FGM/CEJ
+OHXPRL_C.htm,OHD26PCD,OHD26PCD - LOA: distal #26 PD
+OHXPRL_C.htm,OHD26LAD,OHD26LAD - LOA: distal #26 calculated LA
+OHXPRL_C.htm,OHD25CJM,OHD25CJM - LOA: mid-facial #25 FGM/CEJ
+OHXPRL_C.htm,OHD25PCM,OHD25PCM - LOA: mid-facial #25 PD
+OHXPRL_C.htm,OHD25LAM,OHD25LAM - LOA: mid-facial #25 calculated LA
+OHXPRL_C.htm,OHD25CJS,OHD25CJS - LOA: mesial #25 FGM/CEJ
+OHXPRL_C.htm,OHD25PCS,OHD25PCS - LOA: mesial #25 PD
+OHXPRL_C.htm,OHD25LAS,OHD25LAS - LOA: mesial #25 calculated LA
+OHXPRL_C.htm,OHD25CJD,OHD25CJD - LOA: distal #25 FGM/CEJ
+OHXPRL_C.htm,OHD25PCD,OHD25PCD - LOA: distal #25 PD
+OHXPRL_C.htm,OHD25LAD,OHD25LAD - LOA: distal #25 calculated LA
+OHXPRL_C.htm,OHX18BPD,OHX18BPD - BOP: distal #18
+OHXPRL_C.htm,OHX18BPM,OHX18BPM - BOP: midfacial #18
+OHXPRL_C.htm,OHX18BPS,OHX18BPS - BOP: mesial #18
+OHXPRL_C.htm,OHX19BPD,OHX19BPD - BOP: distal #19
+OHXPRL_C.htm,OHX19BPM,OHX19BPM - BOP: midfacial #19
+OHXPRL_C.htm,OHX19BPS,OHX19BPS - BOP: mesial #19
+OHXPRL_C.htm,OHX20BPD,OHX20BPD - BOP: distal #20
+OHXPRL_C.htm,OHX20BPM,OHX20BPM - BOP: midfacial #20
+OHXPRL_C.htm,OHX20BPS,OHX20BPS - BOP: mesial #20
+OHXPRL_C.htm,OHX21BPD,OHX21BPD - BOP: distal #21
+OHXPRL_C.htm,OHX21BPM,OHX21BPM - BOP: midfacial #21
+OHXPRL_C.htm,OHX21BPS,OHX21BPS - BOP: mesial #21
+OHXPRL_C.htm,OHX22BPD,OHX22BPD - BOP: distal #22
+OHXPRL_C.htm,OHX22BPM,OHX22BPM - BOP: midfacial #22
+OHXPRL_C.htm,OHX22BPS,OHX22BPS - BOP: mesial #22
+OHXPRL_C.htm,OHX23BPD,OHX23BPD - BOP: distal #23
+OHXPRL_C.htm,OHX23BPM,OHX23BPM - BOP: midfacial #23
+OHXPRL_C.htm,OHX23BPS,OHX23BPS - BOP: mesial #23
+OHXPRL_C.htm,OHX24BPD,OHX24BPD - BOP: distal #24
+OHXPRL_C.htm,OHX24BPM,OHX24BPM - BOP: midfacial #24
+OHXPRL_C.htm,OHX24BPS,OHX24BPS - BOP: mesial #24
+OHXPRL_C.htm,OHX31BPD,OHX31BPD - BOP: distal #31
+OHXPRL_C.htm,OHX31BPM,OHX31BPM - BOP: midfacial #31
+OHXPRL_C.htm,OHX31BPS,OHX31BPS - BOP: mesial #31
+OHXPRL_C.htm,OHX30BPD,OHX30BPD - BOP: distal #30
+OHXPRL_C.htm,OHX30BPM,OHX30BPM - BOP: midfacial #30
+OHXPRL_C.htm,OHX30BPS,OHX30BPS - BOP: mesial #30
+OHXPRL_C.htm,OHX29BPD,OHX29BPD - BOP: distal #29
+OHXPRL_C.htm,OHX29BPM,OHX29BPM - BOP: midfacial #29
+OHXPRL_C.htm,OHX29BPS,OHX29BPS - BOP: mesial #29
+OHXPRL_C.htm,OHX28BPD,OHX28BPD - BOP: distal #28
+OHXPRL_C.htm,OHX28BPM,OHX28BPM - BOP: midfacial #28
+OHXPRL_C.htm,OHX28BPS,OHX28BPS - BOP: mesial #28
+OHXPRL_C.htm,OHX27BPD,OHX27BPD - BOP: distal #27
+OHXPRL_C.htm,OHX27BPM,OHX27BPM - BOP: midfacial #27
+OHXPRL_C.htm,OHX27BPS,OHX27BPS - BOP: mesial #27
+OHXPRL_C.htm,OHX26BPD,OHX26BPD - BOP: distal #26
+OHXPRL_C.htm,OHX26BPM,OHX26BPM - BOP: midfacial #26
+OHXPRL_C.htm,OHX26BPS,OHX26BPS - BOP: mesial #26
+OHXPRL_C.htm,OHX25BPD,OHX25BPD - BOP: distal #25
+OHXPRL_C.htm,OHX25BPM,OHX25BPM - BOP: midfacial #25
+OHXPRL_C.htm,OHX25BPS,OHX25BPS - BOP: mesial #25
+OHXPRU_C.htm,SEQN,SEQN - Respondent sequence number
+OHXPRU_C.htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHXPRU_C.htm,OHASCST4,OHASCST4 - Periodontal Status Code
+OHXPRU_C.htm,OHD02CJM,OHD02CJM - LOA: mid-facial #2 FGM/CEJ
+OHXPRU_C.htm,OHD02PCM,OHD02PCM - LOA: mid-facial #2 PD
+OHXPRU_C.htm,OHD02LAM,OHD02LAM - LOA: mid-facial #2 calculated LA
+OHXPRU_C.htm,OHD02CJS,OHD02CJS - LOA: mesial #2 FGM/CEJ
+OHXPRU_C.htm,OHD02PCS,OHD02PCS - LOA: mesial #2 PD
+OHXPRU_C.htm,OHD02LAS,OHD02LAS - LOA: mesial #2 calculated LA
+OHXPRU_C.htm,OHD02CJD,OHD02CJD - LOA: distal #2 FGM/CEJ
+OHXPRU_C.htm,OHD02PCD,OHD02PCD - LOA: distal #2 PD
+OHXPRU_C.htm,OHD02LAD,OHD02LAD - LOA: distal #2 calculated LA
+OHXPRU_C.htm,OHD03CJM,OHD03CJM - LOA:mid-facial #3 FGM/CEJ
+OHXPRU_C.htm,OHD03PCM,OHD03PCM - LOA: mid-facial #3 PD
+OHXPRU_C.htm,OHD03LAM,OHD03LAM - LOA: mid-facial #3 calculated LA
+OHXPRU_C.htm,OHD03CJS,OHD03CJS - LOA: mesial #3 FGM/CEJ
+OHXPRU_C.htm,OHD03PCS,OHD03PCS - LOA: mesial #3 PD
+OHXPRU_C.htm,OHD03LAS,OHD03LAS - LOA: mesial #3 calculated LA
+OHXPRU_C.htm,OHD03CJD,OHD03CJD - LOA: distal #3 FGM/CEJ
+OHXPRU_C.htm,OHD03PCD,OHD03PCD - LOA: distal #3 PD
+OHXPRU_C.htm,OHD03LAD,OHD03LAD - LOA: distal #3 calculated LA
+OHXPRU_C.htm,OHD04CJM,OHD04CJM - LOA: mid-facial #4 FGM/CEJ
+OHXPRU_C.htm,OHD04PCM,OHD04PCM - LOA: mid-facial #4 PD
+OHXPRU_C.htm,OHD04LAM,OHD04LAM - LOA: mid-facial #4 calculated LA
+OHXPRU_C.htm,OHD04CJS,OHD04CJS - LOA: mesial #4 FGM/CEJ
+OHXPRU_C.htm,OHD04PCS,OHD04PCS - LOA: mesial #4 PD
+OHXPRU_C.htm,OHD04LAS,OHD04LAS - LOA: mesial #4 calculated LA
+OHXPRU_C.htm,OHD04CJD,OHD04CJD - LOA: distal #4 FGM/CEJ
+OHXPRU_C.htm,OHD04PCD,OHD04PCD - LOA: distal #4 PD
+OHXPRU_C.htm,OHD04LAD,OHD04LAD - LOA: distal #4 calculated LA
+OHXPRU_C.htm,OHD05CJM,OHD05CJM - LOA: mid-facial #5 FGM/CEJ
+OHXPRU_C.htm,OHD05PCM,OHD05PCM - LOA: mid-facial #5 PD
+OHXPRU_C.htm,OHD05LAM,OHD05LAM - LOA: mid-facial #5 calculated LA
+OHXPRU_C.htm,OHD05CJS,OHD05CJS - LOA: mesial #5 FGM/CEJ
+OHXPRU_C.htm,OHD05PCS,OHD05PCS - LOA: mesial #5 PD
+OHXPRU_C.htm,OHD05LAS,OHD05LAS - LOA: mesial #5 calculated LA
+OHXPRU_C.htm,OHD05CJD,OHD05CJD - LOA: distal #5 FGM/CEJ
+OHXPRU_C.htm,OHD05PCD,OHD05PCD - LOA: distal #5 PD
+OHXPRU_C.htm,OHD05LAD,OHD05LAD - LOA: distal #5 calculated LA
+OHXPRU_C.htm,OHD06CJM,OHD06CJM - LOA: mid-facial #6 FGM/CEJ
+OHXPRU_C.htm,OHD06PCM,OHD06PCM - LOA: mid-facial #6 PD
+OHXPRU_C.htm,OHD06LAM,OHD06LAM - LOA: mid-facial #6 calculated LA
+OHXPRU_C.htm,OHD06CJS,OHD06CJS - LOA: mesial #6 FGM/CEJ
+OHXPRU_C.htm,OHD06PCS,OHD06PCS - LOA: mesial #6 PD
+OHXPRU_C.htm,OHD06LAS,OHD06LAS - LOA: mesial #6 calculated LA
+OHXPRU_C.htm,OHD06CJD,OHD06CJD - LOA: distal #6 FGM/CEJ
+OHXPRU_C.htm,OHD06PCD,OHD06PCD - LOA: distal #6 PD
+OHXPRU_C.htm,OHD06LAD,OHD06LAD - LOA: distal #6 calculated LA
+OHXPRU_C.htm,OHD07CJM,OHD07CJM - LOA: mid-facial #7 FGM/CEJ
+OHXPRU_C.htm,OHD07PCM,OHD07PCM - LOA: mid-facial #7 PD
+OHXPRU_C.htm,OHD07LAM,OHD07LAM - LOA: mid-facial #7 calculated LA
+OHXPRU_C.htm,OHD07CJS,OHD07CJS - LOA: mesial #7 FGM/CEJ
+OHXPRU_C.htm,OHD07PCS,OHD07PCS - LOA: mesial #7 PD
+OHXPRU_C.htm,OHD07LAS,OHD07LAS - LOA: mesial #7 calculated LA
+OHXPRU_C.htm,OHD07CJD,OHD07CJD - LOA: distal #7 FGM/CEJ
+OHXPRU_C.htm,OHD07PCD,OHD07PCD - LOA: distal #7 PD
+OHXPRU_C.htm,OHD07LAD,OHD07LAD - LOA: distal #7 calculated LA
+OHXPRU_C.htm,OHD08CJM,OHD08CJM - LOA: mid-facial #8 FGM/CEJ
+OHXPRU_C.htm,OHD08PCM,OHD08PCM - LOA: mid-facial #8 PD
+OHXPRU_C.htm,OHD08LAM,OHD08LAM - LOA: mid-facial #8 calculated LA
+OHXPRU_C.htm,OHD08CJS,OHD08CJS - LOA: mesial #8 FGM/CEJ
+OHXPRU_C.htm,OHD08PCS,OHD08PCS - LOA: mesial #8 PD
+OHXPRU_C.htm,OHD08LAS,OHD08LAS - LOA: mesial #8 calculated LA
+OHXPRU_C.htm,OHD08CJD,OHD08CJD - LOA: distal #8 FGM/CEJ
+OHXPRU_C.htm,OHD08PCD,OHD08PCD - LOA: distal #8 PD
+OHXPRU_C.htm,OHD08LAD,OHD08LAD - LOA: distal #8 calculated LA
+OHXPRU_C.htm,OHD15CJM,OHD15CJM - LOA: mid-facial #15 FGM/CEJ
+OHXPRU_C.htm,OHD15PCM,OHD15PCM - LOA: mid-facial #15 PD
+OHXPRU_C.htm,OHD15LAM,OHD15LAM - LOA: mid-facial #15 calculated LA
+OHXPRU_C.htm,OHD15CJS,OHD15CJS - LOA: mesial #15 FGM/CEJ
+OHXPRU_C.htm,OHD15PCS,OHD15PCS - LOA: mesial #15 PD
+OHXPRU_C.htm,OHD15LAS,OHD15LAS - LOA: mesial #15 calculated LA
+OHXPRU_C.htm,OHD15CJD,OHD15CJD - LOA: distal #15 FGM/CEJ
+OHXPRU_C.htm,OHD15PCD,OHD15PCD - LOA: distal #15 PD
+OHXPRU_C.htm,OHD15LAD,OHD15LAD - LOA: distal #15 calculated LA
+OHXPRU_C.htm,OHD14CJM,OHD14CJM - LOA: mid-facial #14 FGM/CEJ
+OHXPRU_C.htm,OHD14PCM,OHD14PCM - LOA: mid-facial #14 PD
+OHXPRU_C.htm,OHD14LAM,OHD14LAM - LOA: mid-facial #14 calculated LA
+OHXPRU_C.htm,OHD14CJS,OHD14CJS - LOA: mesial #14 FGM/CEJ
+OHXPRU_C.htm,OHD14PCS,OHD14PCS - LOA: mesial #14 PD
+OHXPRU_C.htm,OHD14LAS,OHD14LAS - LOA: mesial #14 calculated LA
+OHXPRU_C.htm,OHD14CJD,OHD14CJD - LOA: distal #14 FGM/CEJ
+OHXPRU_C.htm,OHD14PCD,OHD14PCD - LOA: distal #14 PD
+OHXPRU_C.htm,OHD14LAD,OHD14LAD - LOA: distal #14 calculated LA
+OHXPRU_C.htm,OHD13CJM,OHD13CJM - LOA: mid-facial #13 FGM/CEJ
+OHXPRU_C.htm,OHD13PCM,OHD13PCM - LOA: mid-facial #13 PD
+OHXPRU_C.htm,OHD13LAM,OHD13LAM - LOA: mid-facial #13 calculated LA
+OHXPRU_C.htm,OHD13CJS,OHD13CJS - LOA: mesial #13 FGM/CEJ
+OHXPRU_C.htm,OHD13PCS,OHD13PCS - LOA: mesial #13 PD
+OHXPRU_C.htm,OHD13LAS,OHD13LAS - LOA: mesial #13 calculated LA
+OHXPRU_C.htm,OHD13CJD,OHD13CJD - LOA: distal #13 FGM/CEJ
+OHXPRU_C.htm,OHD13PCD,OHD13PCD - LOA: distal #13 PD
+OHXPRU_C.htm,OHD13LAD,OHD13LAD - LOA: distal #13 calculated LA
+OHXPRU_C.htm,OHD12CJM,OHD12CJM - LOA: mid-facial #12 FGM/CEJ
+OHXPRU_C.htm,OHD12PCM,OHD12PCM - LOA: mid-facial #12 PD
+OHXPRU_C.htm,OHD12LAM,OHD12LAM - LOA: mid-facial #12 calculated LA
+OHXPRU_C.htm,OHD12CJS,OHD12CJS - LOA: mesial #12 FGM/CEJ
+OHXPRU_C.htm,OHD12PCS,OHD12PCS - LOA: mesial #12 PD
+OHXPRU_C.htm,OHD12LAS,OHD12LAS - LOA: mesial #12 calculated LA
+OHXPRU_C.htm,OHD12CJD,OHD12CJD - LOA: distal #12 FGM/CEJ
+OHXPRU_C.htm,OHD12PCD,OHD12PCD - LOA: distal #12 PD
+OHXPRU_C.htm,OHD12LAD,OHD12LAD - LOA: distal #12 calculated LA
+OHXPRU_C.htm,OHD11CJM,OHD11CJM - LOA: mid-facial #11 FGM/CEJ
+OHXPRU_C.htm,OHD11PCM,OHD11PCM - LOA: mid-facial #11 PD
+OHXPRU_C.htm,OHD11LAM,OHD11LAM - LOA: mid-facial #11 calculated LA
+OHXPRU_C.htm,OHD11CJS,OHD11CJS - LOA: mesial #11 FGM/CEJ
+OHXPRU_C.htm,OHD11PCS,OHD11PCS - LOA: mesial #11 PD
+OHXPRU_C.htm,OHD11LAS,OHD11LAS - LOA: mesial #11 calculated LA
+OHXPRU_C.htm,OHD11CJD,OHD11CJD - LOA: distal #11 FGM/CEJ
+OHXPRU_C.htm,OHD11PCD,OHD11PCD - LOA: distal #11 PD
+OHXPRU_C.htm,OHD11LAD,OHD11LAD - LOA: distal #11 calculated LA
+OHXPRU_C.htm,OHD10CJM,OHD10CJM - LOA: mid-facial #10 FGM/CEJ
+OHXPRU_C.htm,OHD10PCM,OHD10PCM - LOA: mid-facial #10 PD
+OHXPRU_C.htm,OHD10LAM,OHD10LAM - LOA: mid-facial #10 calculated LA
+OHXPRU_C.htm,OHD10CJS,OHD10CJS - LOA: mesial #10 FGM/CEJ
+OHXPRU_C.htm,OHD10PCS,OHD10PCS - LOA: mesial #10 PD
+OHXPRU_C.htm,OHD10LAS,OHD10LAS - LOA: mesial #10 calculated LA
+OHXPRU_C.htm,OHD10CJD,OHD10CJD - LOA: distal #10 FGM/CEJ
+OHXPRU_C.htm,OHD10PCD,OHD10PCD - LOA: distal #10 PD
+OHXPRU_C.htm,OHD10LAD,OHD10LAD - LOA: distal #10 calculated LA
+OHXPRU_C.htm,OHD09CJM,OHD09CJM - LOA: mid-facial #9 FGM/CEJ
+OHXPRU_C.htm,OHD09PCM,OHD09PCM - LOA: mid-facial #9 PD
+OHXPRU_C.htm,OHD09LAM,OHD09LAM - LOA: mid-facial #9 calculated LA
+OHXPRU_C.htm,OHD09CJS,OHD09CJS - LOA: mesial #9 FGM/CEJ
+OHXPRU_C.htm,OHD09PCS,OHD09PCS - LOA: mesial #9 PD
+OHXPRU_C.htm,OHD09LAS,OHD09LAS - LOA: mesial #9 calculated LA
+OHXPRU_C.htm,OHD09CJD,OHD09CJD - LOA: distal #9 FGM/CEJ
+OHXPRU_C.htm,OHD09PCD,OHD09PCD - LOA: distal #9 PD
+OHXPRU_C.htm,OHD09LAD,OHD09LAD - LOA: distal #9 calculated LA
+OHXPRU_C.htm,OHX02BPD,OHX02BPD - BOP: distal #2
+OHXPRU_C.htm,OHX02BPM,OHX02BPM - BOP: midfacial #2
+OHXPRU_C.htm,OHX02BPS,OHX02BPS - BOP: mesial #2
+OHXPRU_C.htm,OHX03BPD,OHX03BPD - BOP: distal #3
+OHXPRU_C.htm,OHX03BPM,OHX03BPM - BOP: midfacial #3
+OHXPRU_C.htm,OHX03BPS,OHX03BPS - BOP: mesial #3
+OHXPRU_C.htm,OHX04BPD,OHX04BPD - BOP: distal #4
+OHXPRU_C.htm,OHX04BPM,OHX04BPM - BOP: midfacial #4
+OHXPRU_C.htm,OHX04BPS,OHX04BPS - BOP: mesial #4
+OHXPRU_C.htm,OHX05BPD,OHX05BPD - BOP: distal #5
+OHXPRU_C.htm,OHX05BPM,OHX05BPM - BOP: midfacial #5
+OHXPRU_C.htm,OHX05BPS,OHX05BPS - BOP: mesial #5
+OHXPRU_C.htm,OHX06BPD,OHX06BPD - BOP: distal #6
+OHXPRU_C.htm,OHX06BPM,OHX06BPM - BOP: midfacial #6
+OHXPRU_C.htm,OHX06BPS,OHX06BPS - BOP: mesial #6
+OHXPRU_C.htm,OHX07BPD,OHX07BPD - BOP: distal #7
+OHXPRU_C.htm,OHX07BPM,OHX07BPM - BOP: midfacial #7
+OHXPRU_C.htm,OHX07BPS,OHX07BPS - BOP: mesial #7
+OHXPRU_C.htm,OHX08BPD,OHX08BPD - BOP: distal #8
+OHXPRU_C.htm,OHX08BPM,OHX08BPM - BOP: midfacial #8
+OHXPRU_C.htm,OHX08BPS,OHX08BPS - BOP: mesial #8
+OHXPRU_C.htm,OHX15BPD,OHX15BPD - BOP: distal #15
+OHXPRU_C.htm,OHX15BPM,OHX15BPM - BOP: midfacial #15
+OHXPRU_C.htm,OHX15BPS,OHX15BPS - BOP: mesial #15
+OHXPRU_C.htm,OHX14BPD,OHX14BPD - BOP: distal #14
+OHXPRU_C.htm,OHX14BPM,OHX14BPM - BOP: midfacial #14
+OHXPRU_C.htm,OHX14BPS,OHX14BPS - BOP: mesial #14
+OHXPRU_C.htm,OHX13BPD,OHX13BPD - BOP: distal #13
+OHXPRU_C.htm,OHX13BPM,OHX13BPM - BOP: midfacial #13
+OHXPRU_C.htm,OHX13BPS,OHX13BPS - BOP: mesial #13
+OHXPRU_C.htm,OHX12BPD,OHX12BPD - BOP: distal #12
+OHXPRU_C.htm,OHX12BPM,OHX12BPM - BOP: midfacial #12
+OHXPRU_C.htm,OHX12BPS,OHX12BPS - BOP: mesial #12
+OHXPRU_C.htm,OHX11BPD,OHX11BPD - BOP: distal #11
+OHXPRU_C.htm,OHX11BPM,OHX11BPM - BOP: midfacial #11
+OHXPRU_C.htm,OHX11BPS,OHX11BPS - BOP: mesial #11
+OHXPRU_C.htm,OHX10BPD,OHX10BPD - BOP: distal #10
+OHXPRU_C.htm,OHX10BPM,OHX10BPM - BOP: midfacial #10
+OHXPRU_C.htm,OHX10BPS,OHX10BPS - BOP: mesial #10
+OHXPRU_C.htm,OHX09BPD,OHX09BPD - BOP: distal #9
+OHXPRU_C.htm,OHX09BPM,OHX09BPM - BOP: midfacial #9
+OHXPRU_C.htm,OHX09BPS,OHX09BPS - BOP: mesial #9
+OHXREF_C.htm,SEQN,SEQN - Respondent sequence number
+OHXREF_C.htm,OHAEXSTS,OHAEXSTS - Overall Oral Health Exam Status
+OHXREF_C.htm,OHASCST5,OHASCST5 - Referral Status Code
+OHXREF_C.htm,OHQ131,OHQ131 - Must always take antibiotics?
+OHXREF_C.htm,OHQ132,OHQ132 - Had a heart problem?
+OHXREF_C.htm,OHQ134,OHQ134 - Had congenital heart murmurs?
+OHXREF_C.htm,OHQ136,OHQ136 - Had heart valve problem?
+OHXREF_C.htm,OHQ138,OHQ138 - Had congenital heart disease?
+OHXREF_C.htm,OHQ140,OHQ140 - Had bacterial endocarditis?
+OHXREF_C.htm,OHQ142,OHQ142 - Had rheumatic fever?
+OHXREF_C.htm,OHQ144,OHQ144 - Have kidney disease w/ renal dialysis?
+OHXREF_C.htm,OHQ146,OHQ146 - Have other artificial material?
+OHXREF_C.htm,OHQ148,"OHQ148 - Have a hip, bone, or joint replacement?"
+OHXREF_C.htm,OHQ011,OHQ011 - Describe the cond. of your mouth/teeth
+OHXREF_C.htm,OHQ490a,OHQ490a - Toothache
+OHXREF_C.htm,OHQ490b,OHQ490b - Sensitivity
+OHXREF_C.htm,OHQ490c,OHQ490c - Cavities/Caries
+OHXREF_C.htm,OHQ490d,OHQ490d - Broken/missing fillings or restorations
+OHXREF_C.htm,OHQ490e,OHQ490e - Broken / fractured teeth
+OHXREF_C.htm,OHQ490f,OHQ490f - Staining/discoloration of teeth
+OHXREF_C.htm,OHQ490g,OHQ490g - Crooked teeth or need braces
+OHXREF_C.htm,OHQ490h,OHQ490h - Teeth needing extractions
+OHXREF_C.htm,OHQ490i,OHQ490i - Missing teeth
+OHXREF_C.htm,OHQ490j,OHQ490j - Denture problems
+OHXREF_C.htm,OHQ490k,OHQ490k - Periodontal problems
+OHXREF_C.htm,OHQ490l,OHQ490l - Unsatisfactory prior dental experience
+OHXREF_C.htm,OHQ490m,OHQ490m - None/no specific problem
+OHXREF_C.htm,OHQ490n,OHQ490n - Other
+OHXREF_C.htm,OHQ410,OHQ410 -  Removable complete/partial max denture
+OHXREF_C.htm,OHQ420,OHQ420 - Wears complete/partial max denture
+OHXREF_C.htm,OHQ430,OHQ430 - Removable complete/partial mand. denture
+OHXREF_C.htm,OHQ440,OHQ440 - Wears complete/partial Mand. denture
+OHXREF_C.htm,OHAREC,OHAREC - Overall recommendation for care
+OHXREF_C.htm,OHAROCDT,OHAROCDT - Untreated Caries / Restorative needs
+OHXREF_C.htm,OHAROCGP,OHAROCGP - Periodontal needs
+OHXREF_C.htm,OHAROCOH,OHAROCOH - Gingival / OHI needs
+OHXREF_C.htm,OHAROCCI,OHAROCCI - Assessment of soft tissue lesion
+OHXREF_C.htm,OHAROCDE,OHAROCDE - Denture/Partial Denture/plates
+OHXREF_C.htm,OHAROTH,OHAROTH - Some other finding
+OHXREF_C.htm,OHARNF,OHARNF - No significant needs
+OHXREF_C.htm,OHARCMT,OHARCMT - Other Referral Comments
+OHXREF_C.htm,OHAPOS,OHAPOS - Was participant exam position recumbent
+OSQ_C.htm,SEQN,SEQN - Respondent sequence number
+OSQ_C.htm,OSQ010a,OSQ010a - Broken or fractured a hip
+OSQ_C.htm,OSQ010b,OSQ010b - Broken or fractured a wrist
+OSQ_C.htm,OSQ010c,OSQ010c - Broken or fractured spine
+OSQ_C.htm,OSQ020a,OSQ020a - # Times broken/fractured hip
+OSQ_C.htm,OSQ020b,OSQ020b - # Times broken/fractured wrist
+OSQ_C.htm,OSQ020c,OSQ020c - # Times broken/fractured spine
+OSQ_C.htm,OSQ025,OSQ025 - CHECK ITEM
+OSQ_C.htm,OSD030aa,OSD030aa - Age when fractured hip 1st time
+OSQ_C.htm,OSQ040aa,OSQ040aa - Under/over 50 when fracd. hip 1st time
+OSQ_C.htm,OSQ045,OSQ045 - CHECK ITEM
+OSQ_C.htm,OSD050aa,OSD050aa - Reason hip fracture occurred 1st time
+OSQ_C.htm,OSD030ab,OSD030ab - Age when fractured hip 2nd time
+OSQ_C.htm,OSQ040ab,OSQ040ab - Under/over 50 when fracd. hip 2nd time
+OSQ_C.htm,OSD050ab,OSD050ab - Reason hip fracture occurred 2nd time
+OSQ_C.htm,OSD030ba,OSD030ba - Age when fractured wrist 1st time
+OSQ_C.htm,OSQ040ba,OSQ040ba - Under/over 50 when fracd. wrist 1st time
+OSQ_C.htm,OSD050ba,OSD050ba - Reason wrist fracture occurred 1st time
+OSQ_C.htm,OSD030bb,OSD030bb - Age when fractured wrist 2nd time
+OSQ_C.htm,OSQ040bb,OSQ040bb - Under/over 50 when fracd. wrist 2nd time
+OSQ_C.htm,OSD050bb,OSD050bb - Reason wrist fracture occurred 2nd time
+OSQ_C.htm,OSD030bc,OSD030bc - Age when fractured wrist 3rd time
+OSQ_C.htm,OSQ040bc,OSQ040bc - Under/over 50 when fracd. wrist 3rd time
+OSQ_C.htm,OSD030bd,OSD030bd - Age when fractured wrist 4th time
+OSQ_C.htm,OSQ040bd,OSQ040bd - Under/over 50 when fracd. wrist 4th time
+OSQ_C.htm,OSD050bd,OSD050bd - Reason wrist fracture occurred 4th time
+OSQ_C.htm,OSD030be,OSD030be - Age when fractured wrist 5th time
+OSQ_C.htm,OSQ040be,OSQ040be - Under/over 50 when fracd. wrist 5th time
+OSQ_C.htm,OSD030bf,OSD030bf - Age when fractured wrist 6th time
+OSQ_C.htm,OSQ040bf,OSQ040bf - Under/over 50 when fracd. wrist 6th time
+OSQ_C.htm,OSD030ca,OSD030ca - Age when fractured spine 1st time
+OSQ_C.htm,OSQ040ca,OSQ040ca - Under/over 50 when fracd. spine 1st time
+OSQ_C.htm,OSD050ca,OSD050ca - Reason spine fracture occurred 1st time
+OSQ_C.htm,OSD030cb,OSD030cb - Age when fractured spine 2nd time
+OSQ_C.htm,OSQ040cb,OSQ040cb - Under/over 50 when fracd. spine 2nd time
+OSQ_C.htm,OSD050cb,OSD050cb - Reason spine fracture occurred 2nd time
+OSQ_C.htm,OSD030cc,OSD030cc - Age when fractured spine 3rd time
+OSQ_C.htm,OSQ040cc,OSQ040cc - Under/over 50 when fracd. spine 3rd time
+OSQ_C.htm,OSD050cc,OSD050cc - Reason spine fracture occurred 3rd time
+OSQ_C.htm,OSD030cd,OSD030cd - Age when fractured spine 4th time
+OSQ_C.htm,OSQ040cd,OSQ040cd - Under/over 50 when fracd. spine 4th time
+OSQ_C.htm,OSD050cd,OSD050cd - Reason spine fracture occurred 4th time
+OSQ_C.htm,OSD030ce,OSD030ce - Age when fractured spine 5th time
+OSQ_C.htm,OSQ040ce,OSQ040ce - Under/over 50 when fracd. spine 5th time
+OSQ_C.htm,OSD050ce,OSD050ce - Reason spine fracture occurred 5th time
+OSQ_C.htm,OSD030cf,OSD030cf - Age when fractured spine 6th time
+OSQ_C.htm,OSQ040cf,OSQ040cf - Under/over 50 when fracd. spine 6th time
+OSQ_C.htm,OSD030cg,OSD030cg - Age when fractured spine 7th time
+OSQ_C.htm,OSQ040cg,OSQ040cg - Under/over 50 when fracd. spine 7th time
+OSQ_C.htm,OSD030ch,OSD030ch - Age when fractured spine 8th time
+OSQ_C.htm,OSQ040ch,OSQ040ch - Under/over 50 when fracd. spine 8th time
+OSQ_C.htm,OSD030ci,OSD030ci - Age when fractured spine 9th time
+OSQ_C.htm,OSQ040ci,OSQ040ci - Under/over 50 when fracd. spine 9th time
+OSQ_C.htm,OSD030cj,OSD030cj - Age when fractured spine 10th time
+OSQ_C.htm,OSQ040cj,OSQ040cj - Under/over 50 when fracd spine 10th time
+OSQ_C.htm,OSD050cj,OSD050cj - Reason spine fracture occurred 10th time
+OSQ_C.htm,OSQ060,OSQ060 - Ever told had osteoporosis/brittle bones
+OSQ_C.htm,OSQ070,OSQ070 - Ever treated for osteoporosis
+PAQIAF_C.htm,SEQN,SEQN - Respondent sequence number
+PAQIAF_C.htm,PADACTIV,PADACTIV - Leisure time activity
+PAQIAF_C.htm,PADLEVEL,PADLEVEL - Activity level
+PAQIAF_C.htm,PADTIMES,PADTIMES - # of times did activity in past 30 days
+PAQIAF_C.htm,PADDURAT,PADDURAT - Average duration of activity (minutes)
+PAQIAF_C.htm,PADMETS,PADMETS - MET score for activity
+PAQIAF_C.htm,PAAQUEX,PAAQUEX - Questionnaire source flag for weighting
+PAQ_C.htm,SEQN,SEQN - Respondent sequence number
+PAQ_C.htm,PAD020,PAD020 - Walked or bicycled over past 30 days
+PAQ_C.htm,PAQ050Q,PAQ050Q - # times walked or bicycled
+PAQ_C.htm,PAQ050U,PAQ050U - Unit of measure (day/week/month)
+PAQ_C.htm,PAD080,PAD080 - How long per day (minutes)
+PAQ_C.htm,PAQ100,PAQ100 - Tasks around home/yard past 30 days
+PAQ_C.htm,PAD120,PAD120 - # of times past 30 days
+PAQ_C.htm,PAD160,PAD160 - How long each time (minutes)
+PAQ_C.htm,PAQ180,PAQ180 - Avg level of physical activity each day
+PAQ_C.htm,PAD200,PAD200 - Vigorous activity over past 30 days
+PAQ_C.htm,PAD320,PAD320 - Moderate activity over past 30 days
+PAQ_C.htm,PAD440,PAD440 - Muscle strengthening activities
+PAQ_C.htm,PAD460,PAD460 - Number of times past 30 days
+PAQ_C.htm,PAQ500,PAQ500 - Activity comparison last mo - last yr
+PAQ_C.htm,PAQ520,PAQ520 - Compare activity w/others same age
+PAQ_C.htm,PAQ540,PAQ540 - Compare activity with 10 years ago
+PAQ_C.htm,PAQ560,PAQ560 - # time/week you play or exercise hard
+PAQ_C.htm,PAD590,PAD590 - # hours watch TV or videos past 30 days
+PAQ_C.htm,PAD600,PAD600 - # of hours use computer past 30 days
+PAQ_C.htm,PAAQUEX,PAAQUEX - Questionnaire source flag for weighting
+PAXRAW_C.htm,SEQN,SEQN - Respondent sequence number
+PAXRAW_C.htm,PAXSTAT,PAXSTAT - Data Reliability Status Flag
+PAXRAW_C.htm,PAXCAL,PAXCAL - Was the Monitor in Calibration?
+PAXRAW_C.htm,PAXDAY,PAXDAY - Day of the Week
+PAXRAW_C.htm,PAXN,PAXN - Sequential Observation Number
+PAXRAW_C.htm,PAXHOUR,PAXHOUR - Hour of the Day
+PAXRAW_C.htm,PAXMINUT,PAXMINUT - Minute of the Hour
+PAXRAW_C.htm,PAXINTEN,PAXINTEN - Device Intensity Value
+PFQ_C.htm,SEQN,SEQN - Respondent sequence number
+PFQ_C.htm,PFQ010,"PFQ010 - Physical,mental,emotional limitations"
+PFQ_C.htm,PFQ015,PFQ015 - Able to take part in most type of play
+PFQ_C.htm,PFQ020,"PFQ020 - Crawl, walk, run, play limitations"
+PFQ_C.htm,PFQ030,PFQ030 - Long term impairment/health problem
+PFQ_C.htm,PFQ035A,PFQ035A - CHECK ITEM
+PFQ_C.htm,PFQ041,PFQ041 - Receive Special Ed or Early Intervention
+PFQ_C.htm,PFQ049,PFQ049 - Limitations keeping you from working
+PFQ_C.htm,PFQ051,PFQ051 - Limited in amount of work you can do
+PFQ_C.htm,PFQ054,PFQ054 - Need special equipment to walk
+PFQ_C.htm,PFQ057,PFQ057 - Experience confusion/memory problems
+PFQ_C.htm,PFQ058,PFQ058 - CHECK ITEM
+PFQ_C.htm,PFQ059,"PFQ059 - Physical, mental, emotional limitations"
+PFQ_C.htm,PFQ059A,PFQ059A - CHECK ITEM
+PFQ_C.htm,PFQ061A,PFQ061A - Managing money difficulty
+PFQ_C.htm,PFQ061B,PFQ061B - Walking for a quarter mile difficulty
+PFQ_C.htm,PFQ061C,PFQ061C - Walking up ten steps difficulty
+PFQ_C.htm,PFQ061D,"PFQ061D - Stooping, crouching, kneeling difficulty"
+PFQ_C.htm,PFQ061E,PFQ061E - Lifting or carrying difficulty
+PFQ_C.htm,PFQ061F,PFQ061F - House chore difficulty
+PFQ_C.htm,PFQ061G,PFQ061G - Preparing meals difficulty
+PFQ_C.htm,PFQ061H,PFQ061H - Walking between rooms on same floor
+PFQ_C.htm,PFQ061I,PFQ061I - Standingup from armless chair difficulty
+PFQ_C.htm,PFQ061J,PFQ061J - Getting in and out of bed difficulty
+PFQ_C.htm,PFQ061K,"PFQ061K - Using fork, knife, drinking from cup"
+PFQ_C.htm,PFQ061L,PFQ061L - Dressing yourself difficulty
+PFQ_C.htm,PFQ061M,PFQ061M - Standing for long periods difficulty
+PFQ_C.htm,PFQ061N,PFQ061N - Sitting for long periods difficulty
+PFQ_C.htm,PFQ061O,PFQ061O - Reaching up over head difficulty
+PFQ_C.htm,PFQ061P,PFQ061P - Grasp/holding small objects difficulty
+PFQ_C.htm,PFQ061Q,"PFQ061Q - Going out to movies, events difficulty"
+PFQ_C.htm,PFQ061R,PFQ061R - Attending social event difficulty
+PFQ_C.htm,PFQ061S,PFQ061S - Leisure activity at home difficulty
+PFQ_C.htm,PFQ061T,PFQ061T - Push or pull large objects difficulty
+PFQ_C.htm,PFQ066A,PFQ066A - CHECK ITEM
+PFQ_C.htm,PFQ063A,PFQ063A - Health problems causing difficulty
+PFQ_C.htm,PFQ063B,PFQ063B - Health problems causing difficulty
+PFQ_C.htm,PFQ063C,PFQ063C - Health problems causing difficulty
+PFQ_C.htm,PFQ063D,PFQ063D - Health problems causing difficulty
+PFQ_C.htm,PFQ063E,PFQ063E - Health problems causing difficulty
+PFQ_C.htm,PFD069A,"PFD069A - Arthritis or rheumatism probl, days"
+PFQ_C.htm,PFD069B,"PFD069B - Back or neck problems, days"
+PFQ_C.htm,PFD069C,"PFD069C - Cancer condition, days"
+PFQ_C.htm,PFD069D,"PFD069D - Depression/anxiety/emotional probl, days"
+PFQ_C.htm,PFD069E,"PFD069E - Other development problems, days"
+PFQ_C.htm,PFD069F,"PFD069F - Diabetes condition, days"
+PFQ_C.htm,PFD069G,"PFD069G - Fractures/bone/joint injury probl, days"
+PFQ_C.htm,PFD069H,"PFD069H - Hearing problems, days"
+PFQ_C.htm,PFD069I,"PFD069I - Heart problems, days"
+PFQ_C.htm,PFD069J,"PFD069J - Hypertension or high blood pressure,days"
+PFQ_C.htm,PFD069K,"PFD069K - Lung or breathing problems, days"
+PFQ_C.htm,PFD069L,"PFD069L - Mental retardation condition, days"
+PFQ_C.htm,PFD069M,"PFD069M - Other injury problems, days"
+PFQ_C.htm,PFD069N,"PFD069N - Senility condition, days"
+PFQ_C.htm,PFD069O,"PFD069O - Stroke problems, days"
+PFQ_C.htm,PFD069P,"PFD069P - Vision problems, days"
+PFQ_C.htm,PFD069Q,"PFD069Q - Weight problems, days"
+PFQ_C.htm,PFD069R,"PFD069R - Other impairment problems, days"
+PFQ_C.htm,PFQ090,PFQ090 - Require special healthcare equipment
+RDQ_C.htm,SEQN,SEQN - Respondent sequence number
+RDQ_C.htm,RDQ005A,RDQ005A - CHECK ITEM
+RDQ_C.htm,RDQ031,RDQ031 - Coughing most days - over 3 mo period
+RDQ_C.htm,RDD040,RDD040 - # years had cough problem
+RDQ_C.htm,RDQ050,RDQ050 - Bring up phlegm most days - 3 mo period
+RDQ_C.htm,RDD060,RDD060 - # years bringing up phlegm problem
+RDQ_C.htm,RDQ070,RDQ070 - Wheezing or whistling in chest - past yr
+RDQ_C.htm,RDQ080,RDQ080 - # wheezing/whistling attacks past year
+RDQ_C.htm,RDQ090,RDQ090 - Wheezing disturb sleep in past year
+RDQ_C.htm,RDQ100,RDQ100 - Chest sound wheezy during exercise
+RDQ_C.htm,RDD120,RDD120 - Got medical attentn for wheezing attack
+RDQ_C.htm,RDQ134,RDQ134 - Doctor prescribe wheezing medication
+RDQ_C.htm,RDQ135,RDQ135 - Limit usual activities due to wheezing
+RDQ_C.htm,RDQ136,RDQ136 - CHECK ITEM
+RDQ_C.htm,RDQ137,RDQ137 - Miss work or school due to wheezing
+RDQ_C.htm,RDQ140,RDQ140 - Had dry cough at night in past year
+RXQANA_C.htm,SEQN,SEQN - Respondent sequence number
+RXQANA_C.htm,RXD300,RXD300 - Drugs/over counter taken regularly
+RXQANA_C.htm,RXD310,RXD310 - Product taken
+RXQANA_C.htm,RXD320,RXD320 - # years taking product every day
+RXQANA_C.htm,RXD330,RXD330 - Currently taking product every day
+RXQANA_C.htm,RXD331Q,RXD331Q - # of pills/doses taken/day
+RXQANA_C.htm,RXD331U,RXD331U - Unit of measure (pills/doses)
+RXQANA_C.htm,RXQ355,RXQ355 - Container seen by interviewer
+RXQANA_C.htm,RXQ360G,RXQ360G - Strength of product
+RXQANA_C.htm,RXQ360Q,RXQ360Q - Quantity of strength
+RXQANA_C.htm,RXQ360U,RXQ360U - Unit of strength on bottle
+RXQ_RX_C.htm,SEQN,SEQN - Respondent sequence number
+RXQ_RX_C.htm,RXDUSE,"RXDUSE - Taken prescription medicine, past month"
+RXQ_RX_C.htm,RXDDRUG,RXDDRUG - Generic drug name
+RXQ_RX_C.htm,RXDDRGID,RXDDRGID - Generic drug code
+RXQ_RX_C.htm,RXQSEEN,RXQSEEN - Medicine container seen by interviewer
+RXQ_RX_C.htm,RXDDAYS,RXDDAYS - Number of days taken medicine
+RXQ_RX_C.htm,RXDCOUNT,RXDCOUNT - Number of prescription medicines taken
+SMQ_C.htm,SEQN,SEQN - Respondent sequence number
+SMQ_C.htm,SMQ020,SMQ020 - Smoked at least 100 cigarettes in life
+SMQ_C.htm,SMD030,SMD030 - Age started smoking cigarettes regularly
+SMQ_C.htm,SMQ040,SMQ040 - Do you now smoke cigarettes
+SMQ_C.htm,SMQ050Q,SMQ050Q - How long since quit smoking cigarettes
+SMQ_C.htm,SMQ050U,SMQ050U - Unit of measure (day/week/month/year)
+SMQ_C.htm,SMQ053,SMQ053 - CHECK ITEM
+SMQ_C.htm,SMD055,SMD055 - Age last smoked cigarettes regularly
+SMQ_C.htm,SMD057,SMD057 - # cigarettes smoked per day when quit
+SMQ_C.htm,SMD070,SMD070 - # cigarettes smoked per day now
+SMQ_C.htm,SMD075,SMD075 - How many years smoked this amount
+SMQ_C.htm,SMQ077,SMQ077 - How soon after waking do you smoke
+SMQ_C.htm,SMD641,SMD641 - # days smoked cigs during past 30 days
+SMQ_C.htm,SMD650,SMD650 - Avg # cigarettes/day during past 30 days
+SMQ_C.htm,SMD093,SMD093 - May I please see the pack of cigarettes
+SMQ_C.htm,SMDUPCA,SMDUPCA - Cig 12-digit Universal Product Code-UPC
+SMQ_C.htm,SMD100BR,SMD100BR - Cigarette Brand/sub-brand
+SMQ_C.htm,SMD100FL,SMD100FL - Filter type
+SMQ_C.htm,SMD100MN,SMD100MN - Menthol indicator
+SMQ_C.htm,SMD100LN,SMD100LN - Length
+SMQ_C.htm,SMD100TR,SMD100TR - FTC Tar Content
+SMQ_C.htm,SMD100NI,SMD100NI - FTC Nicotine Content
+SMQ_C.htm,SMD100CO,SMD100CO - FTC Carbon Monoxide Content
+SMQ_C.htm,SMQ120,SMQ120 - Smoked a pipe at least 20 times in life
+SMQ_C.htm,SMD130,SMD130 - Age started pipe smoking regularly
+SMQ_C.htm,SMQ140,SMQ140 - Do you now smoke a pipe
+SMQ_C.htm,SMQ143,SMQ143 - # pipefuls of tobacco smoked per day
+SMQ_C.htm,SMQ145,SMQ145 - # years smoked this amount of pipes
+SMQ_C.htm,SMQ150,SMQ150 - Smoked cigars at least 20 times in life
+SMQ_C.htm,SMD160,SMD160 - Age started cigar smoking regularly
+SMQ_C.htm,SMQ170,SMQ170 - Do you now smoke cigars
+SMQ_C.htm,SMQ173,SMQ173 - # cigars smokes per day
+SMQ_C.htm,SMQ175,SMQ175 - # years smoked this amount of cigars
+SMQ_C.htm,SMQ180,SMQ180 - Used snuff at least 20 times in life
+SMQ_C.htm,SMD190,SMD190 - Age started using snuff regularly
+SMQ_C.htm,SMQ200,SMQ200 - Do you now use snuff
+SMQ_C.htm,SMD203,SMD203 - # snuff pinches/dips/rubs per day
+SMQ_C.htm,SMQ205,SMQ205 - # years used this amount of snuff
+SMQ_C.htm,SMQ210,SMQ210 - Used chewing tobacco 20 times in life
+SMQ_C.htm,SMD220,SMD220 - Age started chewing tobacco regularly
+SMQ_C.htm,SMQ230,SMQ230 - Do you now use chewing tobacco
+SMQ_C.htm,SMD233,SMD233 - # chewing plugs/wads/chaws per day
+SMQ_C.htm,SMD235,SMD235 - # years used this chewing tobacco amount
+SSFA_C.htm,SEQN,SEQN - Respondent sequence number
+SSFA_C.htm,SSMR1_N,SSMR1_N - Myristic acid (micromol/L)
+SSFA_C.htm,SSML1_N,SSML1_N - Myristoleic acid (micromol/L)
+SSFA_C.htm,SSPM1_N,SSPM1_N - Palmitic acid (micromol/L)
+SSFA_C.htm,SSPL1_N,SSPL1_N - Palmitoleic acid (micromol/L)
+SSFA_C.htm,SSST1_N,SSST1_N - Stearic acid (micromol/L)
+SSFA_C.htm,SSOL1_N,SSOL1_N - Oleic acid (micromol/L)
+SSFA_C.htm,SSVC1_N,SSVC1_N - cis-Vaccenic acid (micromol/L)
+SSFA_C.htm,SSLNA_N,SSLNA_N - Linoleic acid (micromol/L)
+SSFA_C.htm,SSGLA_N,SSGLA_N - gamma-Linolenic acid (micromol/L)
+SSFA_C.htm,SSALN_N,SSALN_N - alpha-Linolenic acid (micromol/L)
+SSFA_C.htm,SSHGL_N,SSHGL_N - homo-gamma-Linolenic acid (micromol/L)
+SSFA_C.htm,SSAR1_N,SSAR1_N - Arachidic acid (micromol/L)
+SSFA_C.htm,SSEN1_N,SSEN1_N - Eicosenoic acid (micromol/L)
+SSFA_C.htm,SSED1_N,SSED1_N - Eicosadienoic acid (micromol/L)
+SSFA_C.htm,SSARA_N,SSARA_N - Arachidonic acid (micromol/L)
+SSFA_C.htm,SSEPA_N,SSEPA_N - Eicosapentaenoic acid (micromol/L)
+SSFA_C.htm,SSDA1_N,SSDA1_N - Docosanoic acid (micromol/L)
+SSFA_C.htm,SSDE1_N,SSDE1_N - Docosenoic acid (micromol/L)
+SSFA_C.htm,SSDTA_N,SSDTA_N - Docosatetraenoic acid (micromol/L)
+SSFA_C.htm,SSDP6_N,SSDP6_N - Docosapentaenoic-6 acid (micromol/L)
+SSFA_C.htm,SSDP3_N,SSDP3_N - Docosapentaenoic-3 acid (micromol/L)
+SSFA_C.htm,SSDHA_N,SSDHA_N - Docosahexaenoic acid (micromol/L)
+SSFA_C.htm,SSLG1_N,SSLG1_N - Lignoceric acid (micromol/L)
+SSFA_C.htm,SSNR1_N,SSNR1_N - Nervonic acid (micromol/L)
+SSFA_C.htm,WTSAF2YR,WTSAF2YR - 2Yr fasting weights
+SSTROP_A.htm,SEQN,SEQN - Respondent sequence number
+SSTROP_A.htm,WTSSCB2Y,WTSSCB2Y - Cardiac biomarkers 2 year weights
+SSTROP_A.htm,WTSSCB4Y,WTSSCB4Y - Cardiac biomarker 4 yr weights 1999-2002
+SSTROP_A.htm,SSTNT,"SSTNT - Cardiac hs-Troponin T, ng/L"
+SSTROP_A.htm,SSTNTLC,SSTNTLC - Cardiac hs-Troponin T comment code
+SSTROP_A.htm,SSTNIA,"SSTNIA - Cardiac hs-Troponin I (Abbott), ng/L"
+SSTROP_A.htm,SSTNIALC,SSTNIALC - Cardiac hs-Troponin I (Abbott) comt
+SSTROP_A.htm,SSTNIS,"SSTNIS - Cardiac hs-Troponin I (Siemens), ng/L"
+SSTROP_A.htm,SSTNISLC,SSTNISLC - Cardiac hs-Troponin I (Siemens) comt
+SSTROP_A.htm,SSTNIO,"SSTNIO - Cardiac hs-Troponin I (Ortho), ng/L"
+SSTROP_A.htm,SSTNIOLC,SSTNIOLC - Cardiac hs-Troponin I (Ortho) comt
+SSTROP_A.htm,SSPRISTP,SSPRISTP - Pristine sample comment for SSTROP_A
+VIX_C.htm,SEQN,SEQN - Respondent sequence number
+VIX_C.htm,VIQ110,VIQ110 - SP has a severe eye infection?
+VIX_C.htm,VIQ121,VIQ121 - Which eye(s) infected?
+VIX_C.htm,VIQ130,VIQ130 - Is SP wearing an eye patch?
+VIX_C.htm,VIQ141,VIQ141 - Which eye has eye patch?
+VIX_C.htm,VIQ150,VIQ150 - Glasses/contact lenses for near work?
+VIX_C.htm,VIQ160,VIQ160 - Glasses/contact lenses available?
+VIX_C.htm,VIQ170,VIQ170 - Glasses or contacts worn for near test?
+VIX_C.htm,VIXNC1,VIXNC1 - Line read on near card
+VIX_C.htm,VIXNC2,VIXNC2 - Testing distance of near card
+VIX_C.htm,VIQ180,VIQ180 - Eye surgery for near sightedness?
+VIX_C.htm,VIQ191,VIQ191 - Which eye(s) surgery - near-sightedness?
+VIX_C.htm,VIQ200,VIQ200 - Eye surgery for cataracts?
+VIX_C.htm,VIQ211,VIQ211 - Which eye(s) cataract surgery?
+VIX_C.htm,VIQ220,VIQ220 - Glasses/contact lenses worn for distance
+VIX_C.htm,VIQ230,VIQ230 - Is distance correction available?
+VIX_C.htm,VIQ240,VIQ240 - Which type? Glasses or contacts?
+VIX_C.htm,VIQ250,VIQ250 - Was prescription obtained?
+VIX_C.htm,VIXPRS,"VIXPRS - Prescription, right sphere"
+VIX_C.htm,VIXPRC,"VIXPRC - Prescription, right cylinder"
+VIX_C.htm,VIXPRA,"VIXPRA - Prescription, right axis"
+VIX_C.htm,VIXPLS,"VIXPLS - Prescription, left sphere"
+VIX_C.htm,VIXPLC,"VIXPLC - Prescription, left cylinder"
+VIX_C.htm,VIXPLA,"VIXPLA - Prescription, left axis"
+VIX_C.htm,VIXOCMT,VIXOCMT - Visual Acuity Comments
+VIX_C.htm,VIXORSM,"VIXORSM - OR right sphere, median"
+VIX_C.htm,VIXORCM,"VIXORCM - OR right cylinder, median"
+VIX_C.htm,VIXORAM,"VIXORAM - OR right axis, median"
+VIX_C.htm,VIDORFM,VIDORFM - OR right confidence level reading
+VIX_C.htm,VIXOLSM,"VIXOLSM - OR left sphere, median"
+VIX_C.htm,VIXOLCM,"VIXOLCM - OR left cylinder, median"
+VIX_C.htm,VIXOLAM,"VIXOLAM - OR left axis, median"
+VIX_C.htm,VIDOLFM,VIDOLFM - OR left confidence level reading
+VIX_C.htm,VIXKRM1,VIXKRM1 - Right keratometry radius flat curve (mm)
+VIX_C.htm,VIXKRD1,VIXKRD1 - Right keratometry power flat curve (D)
+VIX_C.htm,VIXKRG1,VIXKRG1 - Right keratometry axis flat curve (deg)
+VIX_C.htm,VIXKRM2,VIXKRM2 - Right keratometry radius steep curve(mm)
+VIX_C.htm,VIXKRD2,VIXKRD2 - Right keratometry power steep curve (D)
+VIX_C.htm,VIXKRG2,VIXKRG2 - Right keratometry axis steep curve (deg)
+VIX_C.htm,VIXKRMM,"VIXKRMM - Right keratometry radius, average (mm)"
+VIX_C.htm,VIXKRDM,"VIXKRDM - Right keratometry power, average (D)"
+VIX_C.htm,VIXKRCD,VIXKRCD - Right keratometry cylinder
+VIX_C.htm,VIXKRCG,VIXKRCG - Right keratometry axis (deg)
+VIX_C.htm,VIXKLM1,VIXKLM1 - Left keratometry radius flat curve (mm)
+VIX_C.htm,VIXKLD1,VIXKLD1 - Left keratometry power flat curve (D)
+VIX_C.htm,VIXKLG1,VIXKLG1 - Left keratometry axis flat curve (deg)
+VIX_C.htm,VIXKLM2,VIXKLM2 - Left keratometry radius steep curve (mm)
+VIX_C.htm,VIXKLD2,VIXKLD2 - Left keratometry power steep curve (D)
+VIX_C.htm,VIXKLG2,VIXKLG2 - Left keratometry axis steep curve (deg)
+VIX_C.htm,VIXKLMM,"VIXKLMM - Left keratometry radius, average (mm)"
+VIX_C.htm,VIXKLDM,"VIXKLDM - Left keratometry power, average (D)"
+VIX_C.htm,VIXKLCD,VIXKLCD - Left keratometry cylinder
+VIX_C.htm,VIXKLCG,VIXKLCG - Left keratometry axis (deg)
+VIX_C.htm,VIDRVA,"VIDRVA - Right visual acuity, presenting"
+VIX_C.htm,VIDLVA,"VIDLVA - Left visual acuity, presenting"
+VIX_C.htm,VIDROVA,"VIDROVA - Right visual acuity, w/ obj. refraction"
+VIX_C.htm,VIDLOVA,"VIDLOVA - Left visual acuity, w/ obj. refraction"
+WHQ_C.htm,SEQN,SEQN - Respondent sequence number
+WHQ_C.htm,WHD010,WHD010 - Current self-reported height (inches)
+WHQ_C.htm,WHD020,WHD020 - Current self-reported weight (pounds)
+WHQ_C.htm,WHQ030,WHQ030 - How do you consider your weight
+WHQ_C.htm,WHQ040,"WHQ040 - Like to weigh more, less or same"
+WHQ_C.htm,WHD050,WHD050 - Self-reported weight-1 yr ago (pounds)
+WHQ_C.htm,WHQ055,WHQ055 - Check Item
+WHQ_C.htm,WHQ060,WHQ060 - Weight change intentional
+WHQ_C.htm,WHQ070,WHQ070 - Tried to lose weight in past year
+WHQ_C.htm,WHD080A,WHD080A - Ate less food
+WHQ_C.htm,WHD080B,WHD080B - Switched to foods with lower calories
+WHQ_C.htm,WHD080C,WHD080C - Ate less fat
+WHQ_C.htm,WHD080D,WHD080D - Exercised
+WHQ_C.htm,WHD080E,WHD080E - Skipped meals
+WHQ_C.htm,WHD080F,WHD080F - Ate diet foods or products
+WHQ_C.htm,WHD080G,WHD080G - Used a liquid diet formula
+WHQ_C.htm,WHD080H,WHD080H - Joined a weight loss program
+WHQ_C.htm,WHD080I,WHD080I - Took prescription diet pills
+WHQ_C.htm,WHD080J,WHD080J - Took non-prescription diet pills
+WHQ_C.htm,WHD080K,WHD080K - Took laxatives or vomited
+WHQ_C.htm,WHD080L,WHD080L - Other
+WHQ_C.htm,WHD080M,WHD080M - Drank a lot of water
+WHQ_C.htm,WHD080N,WHD080N - Followed a special diet
+WHQ_C.htm,WHQ090,WHQ090 - Tried not to gain weight in past year
+WHQ_C.htm,WHD100a,WHD100a - Ate less food
+WHQ_C.htm,WHD100b,WHD100b - Switched to foods with lower calories
+WHQ_C.htm,WHD100c,WHD100c - Ate less fat
+WHQ_C.htm,WHD100d,WHD100d - Exercised
+WHQ_C.htm,WHD100e,WHD100e - Skipped meals
+WHQ_C.htm,WHD100f,WHD100f - Ate diet foods or products
+WHQ_C.htm,WHD100g,WHD100g - Used a liquid diet formula
+WHQ_C.htm,WHD100h,WHD100h - Joined a weight loss program
+WHQ_C.htm,WHD100i,WHD100i - Took prescription diet pills
+WHQ_C.htm,WHD100j,WHD100j - Took non-prescription diet pills
+WHQ_C.htm,WHD100k,WHD100k - Took laxatives or vomited
+WHQ_C.htm,WHD100l,WHD100l - Other
+WHQ_C.htm,WHD100M,WHD100M - Drank a lot of water
+WHQ_C.htm,WHD100N,WHD100N - Followed a special diet
+WHQ_C.htm,WHD110,WHD110 - Self-reported weight-10 yrs ago (pounds)
+WHQ_C.htm,WHD120,WHD120 - Self-reported weight - age 25 (pounds)
+WHQ_C.htm,WHD130,WHD130 - Self-reported height - age 25 (inches)
+WHQ_C.htm,WHD140,WHD140 - Self-reported greatest weight(pounds)
+WHQ_C.htm,WHQ150,WHQ150 - Age when heaviest weight

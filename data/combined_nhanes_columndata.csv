@@ -1,0 +1,1943 @@
+Description,File,Variable,Year
+# Times broken/fractured hip,OSQ_D.htm,OSQ020a,2005-2006
+# Times broken/fractured spine,OSQ_D.htm,OSQ020c,2005-2006
+# Times broken/fractured wrist,OSQ_D.htm,OSQ020b,2005-2006
+# chewing plugs/wads/chaws per day,SMQ_C.htm,SMD233,2003-2004
+# cigarettes smoked per day,SMQRTU_D.htm,SMQ720,2005-2006
+# cigarettes smoked per day now,SMQ_C.htm,SMD070,2003-2004
+# cigarettes smoked per day when quit,SMQ_C.htm,SMD057,2003-2004
+# cigars smoked per day - last 5 days,SMQRTU_D.htm,SMQ780,2005-2006
+# cigars smokes per day,SMQ_C.htm,SMQ173,2003-2004
+# days smoked cigarettes last 5 days,SMQRTU_D.htm,SMQ710,2005-2006
+# days smoked cigars over last 5 days,SMQRTU_D.htm,SMQ770,2005-2006
+# days smoked cigs during past 30 days,SMQ_C.htm,SMD641,2003-2004
+# days smoked pipe over last 5 days,SMQRTU_D.htm,SMQ740,2005-2006
+# days used nicotine stop smoking aids?,SMQRTU_D.htm,SMQ830,2005-2006
+# days used snuff over last 5 days,SMQRTU_D.htm,SMQ817,2005-2006
+# hours watch TV or videos past 30 days,PAQ_C.htm,PAD590,2003-2004
+# of dropped beats in 30 seconds,BPX_C.htm,BPXDB,2003-2004
+# of hours use computer past 30 days,PAQ_C.htm,PAD600,2003-2004
+# of times did activity in past 30 days,PAQIAF_C.htm,PADTIMES,2003-2004
+# of times past 30 days,PAQ_C.htm,PAD120,2003-2004
+# of times/week get school breakfast,DBQ_D.htm,DBD411,2005-2006
+# of times/week get school lunch,DBQ_D.htm,DBD381,2005-2006
+# of times/wk eat meals not from a home,DBQ_D.htm,DBD091,2005-2006
+# pipefuls of tobacco smoked per day,SMQ_C.htm,SMQ143,2003-2004
+# pipes smoked per day - last 5 days,SMQRTU_D.htm,SMQ750,2005-2006
+# snuff pinches/dips/rubs per day,SMQ_C.htm,SMD203,2003-2004
+# time/week you play or exercise hard,PAQ_C.htm,PAQ560,2003-2004
+# times walked or bicycled,PAQ_C.htm,PAQ050Q,2003-2004
+# wheezing/whistling attacks past year,RDQ_C.htm,RDQ080,2003-2004
+# years bringing up phlegm problem,RDQ_C.htm,RDD060,2003-2004
+# years had cough problem,RDQ_C.htm,RDD040,2003-2004
+# years smoked this amount of cigars,SMQ_C.htm,SMQ175,2003-2004
+# years smoked this amount of pipes,SMQ_C.htm,SMQ145,2003-2004
+# years used this amount of snuff,SMQ_C.htm,SMQ205,2003-2004
+# years used this chewing tobacco amount,SMQ_C.htm,SMD235,2003-2004
+#Times overnite hospital patient/last yr,HUQ_C.htm,HUD080,2003-2004
+#Times receive healthcare over past year,HUQ_C.htm,HUQ050,2003-2004
+#days used chewing tobacco -last 5 days,SMQRTU_D.htm,SMQ800,2005-2006
+#times overnite hospital patient/last yr,HUQ_D.htm,HUD080,2005-2006
+#times receive healthcare over past year,HUQ_D.htm,HUQ050,2005-2006
+2Yr AM(3-11) & fasting (12+) weights,L13AM_C.htm,WTSAF2YR,2003-2004
+60 sec HR (30 sec HR * 2),BPX_C.htm,BPXCHR,2003-2004
+60 sec. pulse (30 sec. pulse * 2):,BPX_C.htm,BPXPLS,2003-2004
+ABPI Section Comment,LEXAB_C.htm,LEDSCCT2,2003-2004
+Ability to maintain an erection,KIQ_P_C.htm,KIQ400,2003-2004
+Able to take part in most type of play,PFQ_C.htm,PFQ015,2003-2004
+About how old when first SED?,CIQDEP_C.htm,CIQD112,2003-2004
+About how old when first WTA?,CIQGAD_C.htm,CIQG21,2003-2004
+Activity comparison last mo - last yr,PAQ_C.htm,PAQ500,2003-2004
+Activity level,PAQIAF_C.htm,PADLEVEL,2003-2004
+Acute care facility,HUQ_C.htm,HUQ088a,2003-2004
+Added alpha-tocopherol (Vitamin E) (mg),DR2TOT_D.htm,DR2TATOA,2005-2006
+Added vitamin B12 (mcg),DR2TOT_D.htm,DR2TB12A,2005-2006
+Afraid you might die?,CIQPAN_C.htm,CIQP13N,2003-2004
+Afraid you might lose control?,CIQPAN_C.htm,CIQP13L,2003-2004
+Afraid you might pass out?,CIQPAN_C.htm,CIQP13M,2003-2004
+Age at first BPH diagnosis,KIQ_P_C.htm,KIQ161,2003-2004
+Age first fed formula daily(days),DBQ_D.htm,DBD040,2005-2006
+Age first fed milk daily basis(days),DBQ_D.htm,DBD060,2005-2006
+Age first smoked whole cigarette,SMQ_D.htm,SMD630,2005-2006
+Age last smoked cigarettes regularly,SMQ_C.htm,SMD055,2003-2004
+Age last time had attack,CIQPAN_C.htm,CIQP31,2003-2004
+Age started chewing tobacco regularly,SMQ_C.htm,SMD220,2003-2004
+Age started cigar smoking regularly,SMQ_C.htm,SMD160,2003-2004
+Age started eating other foods(days),DBQ_D.htm,DBD020,2005-2006
+Age started eating solid foods(days),DBQ_D.htm,DBD080,2005-2006
+Age started pipe smoking regularly,SMQ_C.htm,SMD130,2003-2004
+Age started smoking cigarettes regularly,SMQ_C.htm,SMD030,2003-2004
+Age started using snuff regularly,SMQ_C.htm,SMD190,2003-2004
+Age stopped breastfeeding(days),DBQ_D.htm,DBD030,2005-2006
+Age stopped receiving formula(days),DBQ_D.htm,DBD050,2005-2006
+Age when first told you had diabetes,DIQ_D.htm,DID040,2005-2006
+Age when fractured hip 1st time,OSQ_D.htm,OSD030aa,2005-2006
+Age when fractured hip 2nd time,OSQ_D.htm,OSD030ab,2005-2006
+Age when fractured hip 3rd time,OSQ_D.htm,OSD030ac,2005-2006
+Age when fractured spine 10th time,OSQ_D.htm,OSD030cj,2005-2006
+Age when fractured spine 1st time,OSQ_D.htm,OSD030ca,2005-2006
+Age when fractured spine 2nd time,OSQ_D.htm,OSD030cb,2005-2006
+Age when fractured spine 3rd time,OSQ_D.htm,OSD030cc,2005-2006
+Age when fractured spine 4th time,OSQ_D.htm,OSD030cd,2005-2006
+Age when fractured spine 5th time,OSQ_D.htm,OSD030ce,2005-2006
+Age when fractured spine 6th time,OSQ_D.htm,OSD030cf,2005-2006
+Age when fractured spine 7th time,OSQ_D.htm,OSD030cg,2005-2006
+Age when fractured spine 8th time,OSQ_D.htm,OSD030ch,2005-2006
+Age when fractured spine 9th time,OSQ_D.htm,OSD030ci,2005-2006
+Age when fractured wrist 1st time,OSQ_D.htm,OSD030ba,2005-2006
+Age when fractured wrist 2nd time,OSQ_D.htm,OSD030bb,2005-2006
+Age when fractured wrist 3rd time,OSQ_D.htm,OSD030bc,2005-2006
+Age when fractured wrist 4th time,OSQ_D.htm,OSD030bd,2005-2006
+Age when fractured wrist 5th time,OSQ_D.htm,OSD030be,2005-2006
+Age when fractured wrist 6th time,OSQ_D.htm,OSD030bf,2005-2006
+Age when fractured wrist 7th time,OSQ_D.htm,OSD030bg,2005-2006
+Age when heaviest weight,WHQ_C.htm,WHQ150,2003-2004
+Alanine aminotransferase ALT (U/L),L40_C.htm,LBXSATSI,2003-2004
+Albumin (g/L),L40_C.htm,LBDSALSI,2003-2004
+Albumin (g/dL),L40_C.htm,LBXSAL,2003-2004
+"Albumin, urine (mg/L) SI",L16_C.htm,URXUMASI,2003-2004
+"Albumin, urine (ug/mL)",L16_C.htm,URXUMA,2003-2004
+Alcohol (gm),DR2TOT_D.htm,DR2TALCO,2005-2006
+Alkaline phosphotase (U/L),L40_C.htm,LBXSAPSI,2003-2004
+Alpha-carotene (mcg),DR2TOT_D.htm,DR2TACAR,2005-2006
+Amount of time spent in Recovery 1 (min),CVX_C.htm,CVDR1TIM,2003-2004
+Amount of time spent in Recovery 2 (min),CVX_C.htm,CVDR2TIM,2003-2004
+Amount of time spent in Recovery 3 (min),CVX_C.htm,CVDR3TIM,2003-2004
+Amount of time spent in Stage 1 (min),CVX_C.htm,CVDS1TIM,2003-2004
+Amount of time spent in Stage 2 (min),CVX_C.htm,CVDS2TIM,2003-2004
+Amount of time spent in warm-up (min),CVX_C.htm,CVDWTIM,2003-2004
+Amount of weight gained,CIQDEP_C.htm,CIQD024,2003-2004
+Amount of weight lost,CIQDEP_C.htm,CIQD021,2003-2004
+Android fat mass,DXXAG_C.htm,DXXANFM,2003-2004
+Android lean mass,DXXAG_C.htm,DXXANLM,2003-2004
+Android percent fat,DXXAG_C.htm,DXXAPFAT,2003-2004
+Android to Gynoid ratio,DXXAG_C.htm,DXXAGRAT,2003-2004
+Android total mass,DXXAG_C.htm,DXXANTOM,2003-2004
+Ankle comment,LEXAB_C.htm,LEAANKLC,2003-2004
+Ankle cuff size used,LEXAB_C.htm,LEDANKCF,2003-2004
+Ankle(s) tested,LEXAB_C.htm,LEAANKL,2003-2004
+Anterior FOC zone,OHXADD_C.htm,OHXFCANT,2003-2004
+Anterior Zone:,OHX_D.htm,OHXFCANT,2005-2006
+Any other fractures?,OSQ_D.htm,OSQ120a,2005-2006
+Anything abnormal when exam?,CIQDEP_C.htm,CIQDPQ,2003-2004
+Anything abnormal when examined?,CIQGAD_C.htm,CIQGPQ,2003-2004
+Anything else happen before 2nd period?,CIQDEP_C.htm,CIQD081,2003-2004
+Anything else happen before periods?,CIQDEP_C.htm,CIQD093,2003-2004
+Apolipoprotein (B) (g/L),TRIGLY_D.htm,LBDAPBSI,2005-2006
+Apolipoprotein (B) (mg/dL),TRIGLY_D.htm,LBXAPB,2005-2006
+Approx age when attack occurred,CIQPAN_C.htm,CIQP19,2003-2004
+Are people born to be fat/thin,DBQ_D.htm,DBQ890,2005-2006
+Are you controlling weight,DIQ_D.htm,DIQ200A,2005-2006
+Are you increasing physical activity,DIQ_D.htm,DIQ200B,2005-2006
+Are you reducing fat/calories in diet,DIQ_D.htm,DIQ200C,2005-2006
+Arm Circumference (cm),BMX_C.htm,BMXARMC,2003-2004
+Arm Circumference Comment,BMX_C.htm,BMIARMC,2003-2004
+Arm comment,LEXAB_C.htm,LEAARMC,2003-2004
+Arm selected for blood pressure monitor,CVX_C.htm,CVAARM,2003-2004
+Arm selected:,BPX_C.htm,BPAARM,2003-2004
+Arm tested,LEXAB_C.htm,LEAARM,2003-2004
+"Arthritis or rheumatism probl, days",PFQ_C.htm,PFD069A,2003-2004
+Aspartate aminotransferase AST (U/L),L40_C.htm,LBXSASSI,2003-2004
+Assessment of soft tissue lesion,OHXREF_C.htm,OHAROCCI,2003-2004
+Assigned exercise protocol,CVX_C.htm,CVAPROT,2003-2004
+Ate diet foods or products,WHQ_C.htm,WHD080F,2003-2004
+Ate fewer carbohydrates,WHQ_D.htm,WHD080O,2005-2006
+Ate less fat,WHQ_C.htm,WHD080C,2003-2004
+Ate less fat to lose weight,WHQ_D.htm,WHD080C,2005-2006
+Ate less food,WHQ_C.htm,WHD080A,2003-2004
+"Ate less sugar, candy, sweets",WHQ_D.htm,WHD080S,2005-2006
+Ate less to lose weight,WHQ_D.htm,WHD080A,2005-2006
+"Ate more fruits, vegetables, salads",WHQ_D.htm,WHD080Q,2005-2006
+"Attack in past 12 months,or more?",CIQPAN_C.htm,CIQP26,2003-2004
+Attack in past 12 months?,CIQPAN_C.htm,CIQP37,2003-2004
+Attacks interfere with daily life?,CIQPAN_C.htm,CIQP59,2003-2004
+Attend kindergarten thru high school,DBQ_D.htm,DBQ360,2005-2006
+Attending social event difficulty,PFQ_C.htm,PFQ061R,2003-2004
+Average duration of activity (minutes),PAQIAF_C.htm,PADDURAT,2003-2004
+Avg # cigarettes/day during past 30 days,SMQ_C.htm,SMD650,2003-2004
+Avg level of physical activity each day,PAQ_C.htm,PAQ180,2003-2004
+BIA Status,BIX_C.htm,BIAEXSTS,2003-2004
+BOP: distal #10,OHXPRU_C.htm,OHX10BPD,2003-2004
+BOP: distal #11,OHXPRU_C.htm,OHX11BPD,2003-2004
+BOP: distal #12,OHXPRU_C.htm,OHX12BPD,2003-2004
+BOP: distal #13,OHXPRU_C.htm,OHX13BPD,2003-2004
+BOP: distal #14,OHXPRU_C.htm,OHX14BPD,2003-2004
+BOP: distal #15,OHXPRU_C.htm,OHX15BPD,2003-2004
+BOP: distal #18,OHXPRL_C.htm,OHX18BPD,2003-2004
+BOP: distal #19,OHXPRL_C.htm,OHX19BPD,2003-2004
+BOP: distal #2,OHXPRU_C.htm,OHX02BPD,2003-2004
+BOP: distal #20,OHXPRL_C.htm,OHX20BPD,2003-2004
+BOP: distal #21,OHXPRL_C.htm,OHX21BPD,2003-2004
+BOP: distal #22,OHXPRL_C.htm,OHX22BPD,2003-2004
+BOP: distal #23,OHXPRL_C.htm,OHX23BPD,2003-2004
+BOP: distal #24,OHXPRL_C.htm,OHX24BPD,2003-2004
+BOP: distal #25,OHXPRL_C.htm,OHX25BPD,2003-2004
+BOP: distal #26,OHXPRL_C.htm,OHX26BPD,2003-2004
+BOP: distal #27,OHXPRL_C.htm,OHX27BPD,2003-2004
+BOP: distal #28,OHXPRL_C.htm,OHX28BPD,2003-2004
+BOP: distal #29,OHXPRL_C.htm,OHX29BPD,2003-2004
+BOP: distal #3,OHXPRU_C.htm,OHX03BPD,2003-2004
+BOP: distal #30,OHXPRL_C.htm,OHX30BPD,2003-2004
+BOP: distal #31,OHXPRL_C.htm,OHX31BPD,2003-2004
+BOP: distal #4,OHXPRU_C.htm,OHX04BPD,2003-2004
+BOP: distal #5,OHXPRU_C.htm,OHX05BPD,2003-2004
+BOP: distal #6,OHXPRU_C.htm,OHX06BPD,2003-2004
+BOP: distal #7,OHXPRU_C.htm,OHX07BPD,2003-2004
+BOP: distal #8,OHXPRU_C.htm,OHX08BPD,2003-2004
+BOP: distal #9,OHXPRU_C.htm,OHX09BPD,2003-2004
+BOP: mesial #10,OHXPRU_C.htm,OHX10BPS,2003-2004
+BOP: mesial #11,OHXPRU_C.htm,OHX11BPS,2003-2004
+BOP: mesial #12,OHXPRU_C.htm,OHX12BPS,2003-2004
+BOP: mesial #13,OHXPRU_C.htm,OHX13BPS,2003-2004
+BOP: mesial #14,OHXPRU_C.htm,OHX14BPS,2003-2004
+BOP: mesial #15,OHXPRU_C.htm,OHX15BPS,2003-2004
+BOP: mesial #18,OHXPRL_C.htm,OHX18BPS,2003-2004
+BOP: mesial #19,OHXPRL_C.htm,OHX19BPS,2003-2004
+BOP: mesial #2,OHXPRU_C.htm,OHX02BPS,2003-2004
+BOP: mesial #20,OHXPRL_C.htm,OHX20BPS,2003-2004
+BOP: mesial #21,OHXPRL_C.htm,OHX21BPS,2003-2004
+BOP: mesial #22,OHXPRL_C.htm,OHX22BPS,2003-2004
+BOP: mesial #23,OHXPRL_C.htm,OHX23BPS,2003-2004
+BOP: mesial #24,OHXPRL_C.htm,OHX24BPS,2003-2004
+BOP: mesial #25,OHXPRL_C.htm,OHX25BPS,2003-2004
+BOP: mesial #26,OHXPRL_C.htm,OHX26BPS,2003-2004
+BOP: mesial #27,OHXPRL_C.htm,OHX27BPS,2003-2004
+BOP: mesial #28,OHXPRL_C.htm,OHX28BPS,2003-2004
+BOP: mesial #29,OHXPRL_C.htm,OHX29BPS,2003-2004
+BOP: mesial #3,OHXPRU_C.htm,OHX03BPS,2003-2004
+BOP: mesial #30,OHXPRL_C.htm,OHX30BPS,2003-2004
+BOP: mesial #31,OHXPRL_C.htm,OHX31BPS,2003-2004
+BOP: mesial #4,OHXPRU_C.htm,OHX04BPS,2003-2004
+BOP: mesial #5,OHXPRU_C.htm,OHX05BPS,2003-2004
+BOP: mesial #6,OHXPRU_C.htm,OHX06BPS,2003-2004
+BOP: mesial #7,OHXPRU_C.htm,OHX07BPS,2003-2004
+BOP: mesial #8,OHXPRU_C.htm,OHX08BPS,2003-2004
+BOP: mesial #9,OHXPRU_C.htm,OHX09BPS,2003-2004
+BOP: midfacial #10,OHXPRU_C.htm,OHX10BPM,2003-2004
+BOP: midfacial #11,OHXPRU_C.htm,OHX11BPM,2003-2004
+BOP: midfacial #12,OHXPRU_C.htm,OHX12BPM,2003-2004
+BOP: midfacial #13,OHXPRU_C.htm,OHX13BPM,2003-2004
+BOP: midfacial #14,OHXPRU_C.htm,OHX14BPM,2003-2004
+BOP: midfacial #15,OHXPRU_C.htm,OHX15BPM,2003-2004
+BOP: midfacial #18,OHXPRL_C.htm,OHX18BPM,2003-2004
+BOP: midfacial #19,OHXPRL_C.htm,OHX19BPM,2003-2004
+BOP: midfacial #2,OHXPRU_C.htm,OHX02BPM,2003-2004
+BOP: midfacial #20,OHXPRL_C.htm,OHX20BPM,2003-2004
+BOP: midfacial #21,OHXPRL_C.htm,OHX21BPM,2003-2004
+BOP: midfacial #22,OHXPRL_C.htm,OHX22BPM,2003-2004
+BOP: midfacial #23,OHXPRL_C.htm,OHX23BPM,2003-2004
+BOP: midfacial #24,OHXPRL_C.htm,OHX24BPM,2003-2004
+BOP: midfacial #25,OHXPRL_C.htm,OHX25BPM,2003-2004
+BOP: midfacial #26,OHXPRL_C.htm,OHX26BPM,2003-2004
+BOP: midfacial #27,OHXPRL_C.htm,OHX27BPM,2003-2004
+BOP: midfacial #28,OHXPRL_C.htm,OHX28BPM,2003-2004
+BOP: midfacial #29,OHXPRL_C.htm,OHX29BPM,2003-2004
+BOP: midfacial #3,OHXPRU_C.htm,OHX03BPM,2003-2004
+BOP: midfacial #30,OHXPRL_C.htm,OHX30BPM,2003-2004
+BOP: midfacial #31,OHXPRL_C.htm,OHX31BPM,2003-2004
+BOP: midfacial #4,OHXPRU_C.htm,OHX04BPM,2003-2004
+BOP: midfacial #5,OHXPRU_C.htm,OHX05BPM,2003-2004
+BOP: midfacial #6,OHXPRU_C.htm,OHX06BPM,2003-2004
+BOP: midfacial #7,OHXPRU_C.htm,OHX07BPM,2003-2004
+BOP: midfacial #8,OHXPRU_C.htm,OHX08BPM,2003-2004
+BOP: midfacial #9,OHXPRU_C.htm,OHX09BPM,2003-2004
+"Back or neck problems, days",PFQ_C.htm,PFD069B,2003-2004
+Basophils number (1000 cells/uL),CBC_D.htm,LBDBANO,2005-2006
+Basophils percent (%),CBC_D.htm,LBXBAPCT,2005-2006
+Beta-carotene (mcg),DR2TOT_D.htm,DR2TBCAR,2005-2006
+Beta-cryptoxanthin (mcg),DR2TOT_D.htm,DR2TCRYP,2005-2006
+"Between periods, 2 months activities?",CIQDEP_C.htm,CIQD088,2003-2004
+Bicarbonate (mmol/L),L40_C.htm,LBXSC3SI,2003-2004
+"Bilirubin, total (umol/L)",L40_C.htm,LBDSTBSI,2003-2004
+Bladder feels empty after urinating,KIQ_P_C.htm,KIQ101,2003-2004
+Blood Pressure Comment,BPX_C.htm,PEASCCT1,2003-2004
+Blood Pressure Status,BPX_C.htm,PEASCST1,2003-2004
+Blood Pressure Time in Seconds,BPX_C.htm,PEASCTM1,2003-2004
+Blood ever tested for HIV virus?,HSQ_C.htm,HSQ590,2003-2004
+Blood urea nitrogen (mg/dL),L40_C.htm,LBXSBU,2003-2004
+Blood urea nitrogen (mmol/L),L40_C.htm,LBDSBUSI,2003-2004
+Body Mass Index (kg/m**2),BMX_C.htm,BMXBMI,2003-2004
+Body Measures Component Status Code,BMX_C.htm,BMDSTATS,2003-2004
+Bone alkaline phosphotase (ug/L),L11_C.htm,LBXBAP,2003-2004
+Brachial SBP 1 (mm Hg),LEXAB_C.htm,LEXBRP1,2003-2004
+Brachial SBP 2 (mm Hg),LEXAB_C.htm,LEXBRP2,2003-2004
+Brachial cuff size used,LEXAB_C.htm,LEDARMCF,2003-2004
+Brands of cigarettes smoked/past mo,SMQ_D.htm,SMQ660,2005-2006
+Breast-fed infant (either day),DR2TOT_D.htm,DRABF,2005-2006
+Bring up phlegm most days - 3 mo period,RDQ_C.htm,RDQ050,2003-2004
+Broken / fractured teeth,OHXREF_C.htm,OHQ490e,2003-2004
+Broken or fractured a hip,OSQ_D.htm,OSQ010a,2005-2006
+Broken or fractured a wrist,OSQ_D.htm,OSQ010b,2005-2006
+Broken or fractured spine,OSQ_D.htm,OSQ010c,2005-2006
+Broken/missing fillings or restorations,OHXREF_C.htm,OHQ490d,2003-2004
+Butyl paraben (ng/ml),EPH_D.htm,URXBUP,2005-2006
+Butyl paraben comment,EPH_D.htm,URDBUPLC,2005-2006
+C-reactive protein(mg/dL),L11_C.htm,LBXCRP,2003-2004
+CHECK ITEM,ACQ_C.htm,ACQ005,2003-2004
+CIDI Subsample 2 year MEC Weight,CIQDEP_C.htm,WTSCI2YR,2003-2004
+CV fitness exam status,CVX_C.htm,CVDEXSTS,2003-2004
+Cadmium (nmol/L),PBCD_D.htm,LBDBCDSI,2005-2006
+Cadmium (ug/L),PBCD_D.htm,LBXBCD,2005-2006
+Caffeine (mg),DR2TOT_D.htm,DR2TCAFF,2005-2006
+Calcium (mg),DR2TOT_D.htm,DR2TCALC,2005-2006
+"Cancer condition, days",PFQ_C.htm,PFD069C,2003-2004
+Carbohydrate (gm),DR2TOT_D.htm,DR2TCARB,2005-2006
+Cardiovascular fitness level,CVX_C.htm,CVDFITLV,2003-2004
+Cavities/Caries,OHXREF_C.htm,OHQ490c,2003-2004
+Cell membrane capacitance (nF),BIX_C.htm,BIDCM,2003-2004
+Changed eating habits,WHQ_D.htm,WHD080R,2005-2006
+Characteristic frequency (KHz),BIX_C.htm,BIDFC,2003-2004
+Check Item,WHQ_C.htm,WHQ055,2003-2004
+Check calories from fat on food label,DBQ_D.htm,DBQ800,2005-2006
+Check calories on food label,DBQ_D.htm,DBQ790,2005-2006
+Check carbohydrates on food label,DBQ_D.htm,DBQ860,2005-2006
+Check cholesterol on food label,DBQ_D.htm,DBQ840,2005-2006
+Check fiber on food label,DBQ_D.htm,DBQ870,2005-2006
+Check item,HIQ_D.htm,HIQ065,2005-2006
+Check saturated fat on food label,DBQ_D.htm,DBQ830,2005-2006
+Check sodium on food label,DBQ_D.htm,DBQ850,2005-2006
+Check sugars on food label,DBQ_D.htm,DBQ880,2005-2006
+Check total fat on food label,DBQ_D.htm,DBQ810,2005-2006
+Check trans fat on food label,DBQ_D.htm,DBQ820,2005-2006
+Chest sound wheezy during exercise,RDQ_C.htm,RDQ100,2003-2004
+Chloride (mmol/L),L40_C.htm,LBXSCLSI,2003-2004
+Cholesterol (mg),DR2TOT_D.htm,DR2TCHOL,2005-2006
+Cholesterol (mg/dL),L40_C.htm,LBXSCH,2003-2004
+Cholesterol (mmol/L),L40_C.htm,LBDSCHSI,2003-2004
+Cig 12-digit Universal Product Code-UPC,SMQ_C.htm,SMDUPCA,2003-2004
+Cigarette Brand/sub-brand,SMQ_C.htm,SMD100BR,2003-2004
+Coded cuff size,BPX_C.htm,BPACSZ,2003-2004
+Comment code for CV fitness exam status,CVX_C.htm,CVDEXCMT,2003-2004
+Community/Government meals delivered,DBQ_D.htm,DBQ301,2005-2006
+Compare activity w/others same age,PAQ_C.htm,PAQ520,2003-2004
+Compare activity with 10 years ago,PAQ_C.htm,PAQ540,2003-2004
+Compare food consumed yesterday to usual,DR2TOT_D.htm,DR2_300,2005-2006
+Condition of teeth,OHQ_D.htm,OHQ011,2005-2006
+Controlling weight on own,BPQ_C.htm,BPD110B,2003-2004
+Copper (mg),DR2TOT_D.htm,DR2TCOPP,2005-2006
+Coronal Caries:  Surface condition #10,OHXDEN_C (1).htm,OHX10CSC,2003-2004
+Coronal Caries:  Surface condition #11,OHXDEN_C (1).htm,OHX11CSC,2003-2004
+Coronal Caries:  Surface condition #12,OHXDEN_C (1).htm,OHX12CSC,2003-2004
+Coronal Caries:  Surface condition #13,OHXDEN_C (1).htm,OHX13CSC,2003-2004
+Coronal Caries:  Surface condition #14,OHXDEN_C (1).htm,OHX14CSC,2003-2004
+Coronal Caries:  Surface condition #15,OHXDEN_C (1).htm,OHX15CSC,2003-2004
+Coronal Caries:  Surface condition #19,OHXDEN_C (1).htm,OHX19CSC,2003-2004
+Coronal Caries:  Surface condition #2,OHXDEN_C (1).htm,OHX02CSC,2003-2004
+Coronal Caries:  Surface condition #20,OHXDEN_C (1).htm,OHX20CSC,2003-2004
+Coronal Caries:  Surface condition #21,OHXDEN_C (1).htm,OHX21CSC,2003-2004
+Coronal Caries:  Surface condition #22,OHXDEN_C (1).htm,OHX22CSC,2003-2004
+Coronal Caries:  Surface condition #23,OHXDEN_C (1).htm,OHX23CSC,2003-2004
+Coronal Caries:  Surface condition #24,OHXDEN_C (1).htm,OHX24CSC,2003-2004
+Coronal Caries:  Surface condition #25,OHXDEN_C (1).htm,OHX25CSC,2003-2004
+Coronal Caries:  Surface condition #26,OHXDEN_C (1).htm,OHX26CSC,2003-2004
+Coronal Caries:  Surface condition #27,OHXDEN_C (1).htm,OHX27CSC,2003-2004
+Coronal Caries:  Surface condition #28,OHXDEN_C (1).htm,OHX28CSC,2003-2004
+Coronal Caries:  Surface condition #29,OHXDEN_C (1).htm,OHX29CSC,2003-2004
+Coronal Caries:  Surface condition #3,OHXDEN_C (1).htm,OHX03CSC,2003-2004
+Coronal Caries:  Surface condition #30,OHXDEN_C (1).htm,OHX30CSC,2003-2004
+Coronal Caries:  Surface condition #31,OHXDEN_C (1).htm,OHX31CSC,2003-2004
+Coronal Caries:  Surface condition #4,OHXDEN_C (1).htm,OHX04CSC,2003-2004
+Coronal Caries:  Surface condition #5,OHXDEN_C (1).htm,OHX05CSC,2003-2004
+Coronal Caries:  Surface condition #6,OHXDEN_C (1).htm,OHX06CSC,2003-2004
+Coronal Caries:  Surface condition #7,OHXDEN_C (1).htm,OHX07CSC,2003-2004
+Coronal Caries:  Surface condition #8,OHXDEN_C (1).htm,OHX08CSC,2003-2004
+Coronal Caries:  Surface condition #9,OHXDEN_C (1).htm,OHX09CSC,2003-2004
+Coronal Caries:  Tooth count  #8,OHXDEN_C (1).htm,OHX08CTC,2003-2004
+Coronal Caries:  Tooth count #10,OHXDEN_C (1).htm,OHX10CTC,2003-2004
+Coronal Caries:  Tooth count #12,OHXDEN_C (1).htm,OHX12CTC,2003-2004
+Coronal Caries:  Tooth count #13,OHXDEN_C (1).htm,OHX13CTC,2003-2004
+Coronal Caries:  Tooth count #14,OHXDEN_C (1).htm,OHX14CTC,2003-2004
+Coronal Caries:  Tooth count #15,OHXDEN_C (1).htm,OHX15CTC,2003-2004
+Coronal Caries:  Tooth count #18,OHXDEN_C (1).htm,OHX18CTC,2003-2004
+Coronal Caries:  Tooth count #19,OHXDEN_C (1).htm,OHX19CTC,2003-2004
+Coronal Caries:  Tooth count #2,OHXDEN_C (1).htm,OHX02CTC,2003-2004
+Coronal Caries:  Tooth count #20,OHXDEN_C (1).htm,OHX20CTC,2003-2004
+Coronal Caries:  Tooth count #21,OHXDEN_C (1).htm,OHX21CTC,2003-2004
+Coronal Caries:  Tooth count #22,OHXDEN_C (1).htm,OHX22CTC,2003-2004
+Coronal Caries:  Tooth count #23,OHXDEN_C (1).htm,OHX23CTC,2003-2004
+Coronal Caries:  Tooth count #24,OHXDEN_C (1).htm,OHX24CTC,2003-2004
+Coronal Caries:  Tooth count #25,OHXDEN_C (1).htm,OHX25CTC,2003-2004
+Coronal Caries:  Tooth count #26,OHXDEN_C (1).htm,OHX26CTC,2003-2004
+Coronal Caries:  Tooth count #27,OHXDEN_C (1).htm,OHX27CTC,2003-2004
+Coronal Caries:  Tooth count #28,OHXDEN_C (1).htm,OHX28CTC,2003-2004
+Coronal Caries:  Tooth count #29,OHXDEN_C (1).htm,OHX29CTC,2003-2004
+Coronal Caries:  Tooth count #3,OHXDEN_C (1).htm,OHX03CTC,2003-2004
+Coronal Caries:  Tooth count #30,OHXDEN_C (1).htm,OHX30CTC,2003-2004
+Coronal Caries:  Tooth count #31,OHXDEN_C (1).htm,OHX31CTC,2003-2004
+Coronal Caries:  Tooth count #4,OHXDEN_C (1).htm,OHX04CTC,2003-2004
+Coronal Caries:  Tooth count #5,OHXDEN_C (1).htm,OHX05CTC,2003-2004
+Coronal Caries:  Tooth count #6,OHXDEN_C (1).htm,OHX06CTC,2003-2004
+Coronal Caries:  Tooth count #7,OHXDEN_C (1).htm,OHX07CTC,2003-2004
+Coronal Caries:  Tooth count #9,OHXDEN_C (1).htm,OHX09CTC,2003-2004
+Coronal Caries: Surface condition #18,OHXDEN_C (1).htm,OHX18CSC,2003-2004
+Coronal Caries: Tooth Count #11,OHXDEN_C (1).htm,OHX11CTC,2003-2004
+Coughing most days - over 3 mo period,RDQ_C.htm,RDQ031,2003-2004
+Covered by Indian Health Service,HIQ_D.htm,HIQ031G,2005-2006
+Covered by Medi-Gap,HIQ_D.htm,HIQ031C,2005-2006
+Covered by Medicaid,HIQ_D.htm,HIQ031D,2005-2006
+Covered by Medicare,HIQ_D.htm,HIQ031B,2005-2006
+Covered by SCHIP,HIQ_D.htm,HIQ031E,2005-2006
+Covered by health insurance,HIQ_D.htm,HIQ011,2005-2006
+Covered by military health care,HIQ_D.htm,HIQ031F,2005-2006
+Covered by other government insurance,HIQ_D.htm,HIQ031I,2005-2006
+Covered by private insurance,HIQ_D.htm,HIQ031A,2005-2006
+Covered by single service plan,HIQ_D.htm,HIQ031J,2005-2006
+Covered by state-sponsored health plan,HIQ_D.htm,HIQ031H,2005-2006
+"Crawl, walk, run, play limitations",PFQ_C.htm,PFQ020,2003-2004
+Creatinine (mg/dL),L40_C.htm,LBXSCR,2003-2004
+Creatinine (umol/L),L40_C.htm,LBDSCRSI,2003-2004
+"Creatinine, urine (mg/dL)",L16_C.htm,URXUCR,2003-2004
+"Creatinine, urine (umol/L)",L16_C.htm,URXUCRSI,2003-2004
+Crooked teeth or need braces,OHXREF_C.htm,OHQ490g,2003-2004
+Cuff size for blood pressure monitor,CVX_C.htm,CVACUFF,2003-2004
+Current self-reported height (inches),WHQ_C.htm,WHD010,2003-2004
+Current self-reported weight (pounds),WHQ_C.htm,WHD020,2003-2004
+DRE to check for blood in stool,KIQ_P_C.htm,KIQ381,2003-2004
+DRE to check for prostate cancer,KIQ_P_C.htm,KIQ361,2003-2004
+Data Reliability Status Flag,PAXRAW_C.htm,PAXSTAT,2003-2004
+Day of the Week,PAXRAW_C.htm,PAXDAY,2003-2004
+Dental Implant: yes / no?,OHXDEN_C (1).htm,OHXIMP,2003-2004
+Dental Sealants:  #10,OHXDEN_C (1).htm,OHX10SE,2003-2004
+Dental Sealants:  #12,OHXDEN_C (1).htm,OHX12SE,2003-2004
+Dental Sealants:  #13,OHXDEN_C (1).htm,OHX13SE,2003-2004
+Dental Sealants:  #14,OHXDEN_C (1).htm,OHX14SE,2003-2004
+Dental Sealants:  #15,OHXDEN_C (1).htm,OHX15SE,2003-2004
+Dental Sealants:  #18,OHXDEN_C (1).htm,OHX18SE,2003-2004
+Dental Sealants:  #19,OHXDEN_C (1).htm,OHX19SE,2003-2004
+Dental Sealants:  #2,OHXDEN_C (1).htm,OHX02SE,2003-2004
+Dental Sealants:  #20,OHXDEN_C (1).htm,OHX20SE,2003-2004
+Dental Sealants:  #21,OHXDEN_C (1).htm,OHX21SE,2003-2004
+Dental Sealants:  #28,OHXDEN_C (1).htm,OHX28SE,2003-2004
+Dental Sealants:  #29,OHXDEN_C (1).htm,OHX29SE,2003-2004
+Dental Sealants:  #3,OHXDEN_C (1).htm,OHX03SE,2003-2004
+Dental Sealants:  #30,OHXDEN_C (1).htm,OHX30SE,2003-2004
+Dental Sealants:  #31,OHXDEN_C (1).htm,OHX31SE,2003-2004
+Dental Sealants:  #4,OHXDEN_C (1).htm,OHX04SE,2003-2004
+Dental Sealants:  #5,OHXDEN_C (1).htm,OHX05SE,2003-2004
+Dental Sealants:  #7,OHXDEN_C (1).htm,OHX07SE,2003-2004
+Dental decay present,OHX_D.htm,OHXDECAY,2005-2006
+Dental restoration present,OHX_D.htm,OHXREST,2005-2006
+Dental sealant present,OHX_D.htm,OHXSEAL,2005-2006
+Dentition Status Code,OHXDEN_C (1).htm,OHASCST3,2003-2004
+Denture problems,OHXREF_C.htm,OHQ490j,2003-2004
+Denture/Partial Denture/plates,OHXREF_C.htm,OHAROCDE,2003-2004
+Depression Score,CIQDEP_C.htm,CIDDSCOR,2003-2004
+"Depression/anxiety/emotional probl, days",PFQ_C.htm,PFD069D,2003-2004
+Describe quantity/quality cutback,CIQDEP_C.htm,CIQD100,2003-2004
+Describe the cond. of your mouth/teeth,OHXREF_C.htm,OHQ011,2003-2004
+Device Intensity Value,PAXRAW_C.htm,PAXINTEN,2003-2004
+Device Step Count,PAXRAW_D.htm,PAXSTEP,2005-2006
+Diabetes affected eyes/had retinopathy,DIQ_D.htm,DIQ080,2005-2006
+"Diabetes condition, days",PFQ_C.htm,PFD069F,2003-2004
+Diagnosed with enlarged prostate,KIQ_P_C.htm,KIQ121,2003-2004
+Diagnosed with prostate disease,KIQ_P_C.htm,KIQ106,2003-2004
+Diastolic:  Blood pres (1st rdg) mm Hg,BPX_C.htm,BPXDI1,2003-2004
+Diastolic:  Blood pres (4th rdg) mm Hg,BPX_C.htm,BPXDI4,2003-2004
+Diastolic: Blood pres (2nd rdg) mm Hg,BPX_C.htm,BPXDI2,2003-2004
+Diastolic: Blood pres (3rd rdg) mm Hg,BPX_C.htm,BPXDI3,2003-2004
+Did 1st per begin after someone died?,CIQDEP_C.htm,CIQD066,2003-2004
+Did 2nd period begin after someone died?,CIQDEP_C.htm,CIQD078,2003-2004
+Did 2nd period begin w_in a mon of baby?,CIQDEP_C.htm,CIQD080,2003-2004
+Did 4 periods occur after someone died?,CIQDEP_C.htm,CIQD089,2003-2004
+Did R have multiple worries?,CIQGAD_C.htm,CIQG13,2003-2004
+Did R worry about health/drug use?,CIQGAD_C.htm,CIQG12,2003-2004
+Did SED interfere with life?,CIQDEP_C.htm,CIQDPC,2003-2004
+Did WTA interfere with life?,CIQGAD_C.htm,CIQGPC,2003-2004
+Did anyone notice moving all the time?,CIQDEP_C.htm,CIQD035,2003-2004
+Did anyone notice...more slowly?,CIQDEP_C.htm,CIQD033,2003-2004
+Did anything else happen before period?,CIQDEP_C.htm,CIQD062,2003-2004
+Did attacks interfere with life?,CIQPAN_C.htm,CIQPPC,2003-2004
+Did cutback occur past 4 weeks?,CIQDEP_C.htm,CIQD101,2003-2004
+Did day occur past 4 weeks?,CIQDEP_C.htm,CIQD097,2003-2004
+Did extreme occur past 4 weeks?,CIQDEP_C.htm,CIQD104,2003-2004
+Did father ever fracture hip?,OSQ_D.htm,OSQ200,2005-2006
+Did interfere occur past 4 weeks?,CIQDEP_C.htm,CIQD107,2003-2004
+"Did it end past mos, past 6 mos or more?",CIQDEP_C.htm,CIQD077,2003-2004
+Did it end past mos. or more than month?,CIQDEP_C.htm,CIQD076,2003-2004
+Did mother ever fracture hip?,OSQ_D.htm,OSQ170,2005-2006
+Did period begin after someone died?,CIQDEP_C.htm,CIQD059,2003-2004
+Did period begin w_in month of baby?,CIQDEP_C.htm,CIQD061,2003-2004
+Did period last six months?,CIQGAD_C.htm,CIQG02,2003-2004
+Did periods occur w_in mos. of baby?,CIQDEP_C.htm,CIQD092,2003-2004
+Did thoughts come slower...?,CIQDEP_C.htm,CIQD045,2003-2004
+Did totally occur past 4 weeks?,CIQPAN_C.htm,CIQP61,2003-2004
+Did you attempt suicide?,CIQDEP_C.htm,CIQD050,2003-2004
+Did you feel guilty?,CIQDEP_C.htm,CIQD037,2003-2004
+Did you feel not as good as others?,CIQDEP_C.htm,CIQD041,2003-2004
+Did you feel ok two months between?,CIQDEP_C.htm,CIQD072,2003-2004
+Did you feel unreal?,CIQPAN_C.htm,CIQP13J,2003-2004
+Did you feel worthless nearly every day?,CIQDEP_C.htm,CIQD036,2003-2004
+Did you gain weight?,CIQDEP_C.htm,CIQD023,2003-2004
+Did you have a larger appetite?,CIQDEP_C.htm,CIQD022,2003-2004
+Did you have dry mouth?,CIQPAN_C.htm,CIQP13D,2003-2004
+Did you have less appetite?,CIQDEP_C.htm,CIQD019,2003-2004
+Did you have so little confidence...?,CIQDEP_C.htm,CIQD042,2003-2004
+Did you have to move all the time?,CIQDEP_C.htm,CIQD034,2003-2004
+Did you have two mos. enjoy...?,CIQDEP_C.htm,CIQD073,2003-2004
+Did you have...trouble concentrating?,CIQDEP_C.htm,CIQD043,2003-2004
+Did you lose weight?,CIQDEP_C.htm,CIQD020,2003-2004
+Did you make a suicide plan?,CIQDEP_C.htm,CIQD049,2003-2004
+Did you sleep too much?,CIQDEP_C.htm,CIQD028,2003-2004
+Did you sweat?,CIQPAN_C.htm,CIQP13B,2003-2004
+Did you take medication for SED?,CIQDEP_C.htm,CIQDPB,2003-2004
+Did you take medication for WTA?,CIQGAD_C.htm,CIQGPB,2003-2004
+Did you take medication for attack?,CIQPAN_C.htm,CIQPPB,2003-2004
+Did you talk or move more slowly?,CIQDEP_C.htm,CIQD032,2003-2004
+Did you tell MD about SED?,CIQDEP_C.htm,CIQD109,2003-2004
+Did you tell MD about WTA?,CIQGAD_C.htm,CIQG18,2003-2004
+Did you tell doctor about attack?,CIQPAN_C.htm,CIQP58,2003-2004
+Did you tell other prof about SED?,CIQDEP_C.htm,CIQDPA,2003-2004
+Did you tell other prof about WTA?,CIQGAD_C.htm,CIQGPA,2003-2004
+Did you tell other prof about attack?,CIQPAN_C.htm,CIQPPA,2003-2004
+Did you think a lot about death?,CIQDEP_C.htm,CIQD047,2003-2004
+Did you think about committing suicide?,CIQDEP_C.htm,CIQD048,2003-2004
+Did you tremble or shake?,CIQPAN_C.htm,CIQP13C,2003-2004
+Did you wake up 2 hours early?,CIQDEP_C.htm,CIQD027,2003-2004
+Did your heart pound or race?,CIQPAN_C.htm,CIQP13A,2003-2004
+Dietary day one sample weight,DR2TOT_D.htm,WTDRD1,2005-2006
+Dietary fiber (gm),DR2TOT_D.htm,DR2TFIBE,2005-2006
+Dietary recall status,DR2TOT_D.htm,DR2DRSTZ,2005-2006
+Dietary two-day sample weight,DR2TOT_D.htm,WTDR2D,2005-2006
+Dietitian,WHQ_D.htm,WHQ280B,2005-2006
+Difficulty at work because tired?,SLQ_D.htm,SLQ230,2005-2006
+Difficulty concentrating when tired?,SLQ_D.htm,SLQ170,2005-2006
+Difficulty eating when tired?,SLQ_D.htm,SLQ190,2005-2006
+Difficulty getting things done?,SLQ_D.htm,SLQ210,2005-2006
+Difficulty on phone when tired?,SLQ_D.htm,SLQ240,2005-2006
+Difficulty remembering when tired?,SLQ_D.htm,SLQ180,2005-2006
+Difficulty with a hobby when tired?,SLQ_D.htm,SLQ200,2005-2006
+Difficulty with finance when tired?,SLQ_D.htm,SLQ220,2005-2006
+Direct HDL-Cholesterol (mg/dL),L13_C.htm,LBXHDD,2003-2004
+Direct HDL-Cholesterol (mmol/L),L13_C.htm,LBDHDDSI,2003-2004
+Do plans cover prescriptions?,HIQ_D.htm,HIQ270,2005-2006
+Do you now smoke a pipe,SMQ_C.htm,SMQ140,2003-2004
+Do you now smoke cigarettes,SMQ_C.htm,SMQ040,2003-2004
+Do you now smoke cigars,SMQ_C.htm,SMQ170,2003-2004
+Do you now use chewing tobacco,SMQ_C.htm,SMQ230,2003-2004
+Do you now use snuff,SMQ_C.htm,SMQ200,2003-2004
+Do you think worry excessive?,CIQGAD_C.htm,CIQG14,2003-2004
+Doc gave no definite diagnosis for WTA,CIQGAD_C.htm,CIQGPHK,2003-2004
+Doc said mental illness causing attacks,CIQPAN_C.htm,CIQPPHE,2003-2004
+Doctor,WHQ_D.htm,WHQ280D,2005-2006
+Doctor ever told any other fractures?,OSQ_D.htm,OSQ080,2005-2006
+Doctor gave no definite diag for SED,CIQDEP_C.htm,CIQDPHK,2003-2004
+Doctor gave no definite diag for attacks,CIQPAN_C.htm,CIQPPHK,2003-2004
+Doctor prescribe wheezing medication,RDQ_C.htm,RDQ134,2003-2004
+Doctor said alcohol causing SED,CIQDEP_C.htm,CIQDPHH,2003-2004
+Doctor said alcohol causing WTA,CIQGAD_C.htm,CIQGPHH,2003-2004
+Doctor said alcohol causing attacks,CIQPAN_C.htm,CIQPPHH,2003-2004
+Doctor said anxiety causing SED,CIQDEP_C.htm,CIQDPHC,2003-2004
+Doctor said anxiety causing WTA,CIQGAD_C.htm,CIQGPHC,2003-2004
+Doctor said anxiety causing attacks,CIQPAN_C.htm,CIQPPHC,2003-2004
+Doctor said depression causing SED,CIQDEP_C.htm,CIQDPHD,2003-2004
+Doctor said depression causing WTA,CIQGAD_C.htm,CIQGPHD,2003-2004
+Doctor said depression causing attacks,CIQPAN_C.htm,CIQPPHD,2003-2004
+Doctor said drugs causing SED,CIQDEP_C.htm,CIQDPHG,2003-2004
+Doctor said drugs causing WTA,CIQGAD_C.htm,CIQGPHG,2003-2004
+Doctor said drugs causing attacks,CIQPAN_C.htm,CIQPPHG,2003-2004
+Doctor said medication causing SED,CIQDEP_C.htm,CIQDPHF,2003-2004
+Doctor said medication causing WTA,CIQGAD_C.htm,CIQGPHF,2003-2004
+Doctor said medication causing attacks,CIQPAN_C.htm,CIQPPHF,2003-2004
+Doctor said mental illness causing SED,CIQDEP_C.htm,CIQDPHE,2003-2004
+Doctor said mental illness causing WTA,CIQGAD_C.htm,CIQGPHE,2003-2004
+Doctor said nerves causing SED,CIQDEP_C.htm,CIQDPHA,2003-2004
+Doctor said nerves causing WTA,CIQGAD_C.htm,CIQGPHA,2003-2004
+Doctor said nerves causing attacks,CIQPAN_C.htm,CIQPPHA,2003-2004
+Doctor said phys illness causing attacks,CIQPAN_C.htm,CIQPPHI,2003-2004
+Doctor said phys injury causing attacks,CIQPAN_C.htm,CIQPPHJ,2003-2004
+Doctor said physical illness causing SED,CIQDEP_C.htm,CIQDPHI,2003-2004
+Doctor said physical illness causing WTA,CIQGAD_C.htm,CIQGPHI,2003-2004
+Doctor said physical injury causing SED,CIQDEP_C.htm,CIQDPHJ,2003-2004
+Doctor said physical injury causing WTA,CIQGAD_C.htm,CIQGPHJ,2003-2004
+Doctor said stress causing SED,CIQDEP_C.htm,CIQDPHB,2003-2004
+Doctor said stress causing WTA,CIQGAD_C.htm,CIQGPHB,2003-2004
+Doctor said stress causing attacks,CIQPAN_C.htm,CIQPPHB,2003-2004
+Doctor told you - high cholesterol level,BPQ_C.htm,BPQ080,2003-2004
+Doctor told you have diabetes,DIQ_D.htm,DIQ010,2005-2006
+Does standing relieve pain/discomfort,CDQ_C.htm,CDQ005,2003-2004
+Drank a lot of water,WHQ_C.htm,WHD080M,2003-2004
+Dressing yourself difficulty,PFQ_C.htm,PFQ061L,2003-2004
+"During 2 weeks, trouble sleep?",CIQDEP_C.htm,CIQD025,2003-2004
+During an ordinary pace on level ground,CDQ_C.htm,CDQ003,2003-2004
+Earliest age attack occurred,CIQPAN_C.htm,CIQP29,2003-2004
+Earliest age period of SED,CIQDEP_C.htm,CIQD113,2003-2004
+Earliest age period of WTA,CIQGAD_C.htm,CIQG22,2003-2004
+Eat meals at Community/Senior center,DBQ_D.htm,DBQ330,2005-2006
+Eating fewer high fat foods on own,BPQ_C.htm,BPD110A,2003-2004
+Edentulous-yes,OHXDEN_C (1).htm,OHXEDEN,2003-2004
+"Ended past month, 6 months, more than 6?",CIQDEP_C.htm,CIQD057,2003-2004
+"Ended past mos, six months or more?",CIQDEP_C.htm,CIQD086,2003-2004
+Ended past mos. or more than month?,CIQDEP_C.htm,CIQD085,2003-2004
+Energy (kcal),DR2TOT_D.htm,DR2TKCAL,2005-2006
+English usually spoken at home,ACQ_C.htm,ACD010A,2003-2004
+Enhancement used first reading,BPX_C.htm,BPAEN1,2003-2004
+Enhancement used fourth reading,BPX_C.htm,BPAEN4,2003-2004
+Enhancement used second reading,BPX_C.htm,BPAEN2,2003-2004
+Enhancement used third reading,BPX_C.htm,BPAEN3,2003-2004
+Enlargement due to cancer,KIQ_P_C.htm,KIQ182,2003-2004
+Enlargement was BPH,KIQ_P_C.htm,KIQ141,2003-2004
+"Entire life, ever fear or panic attack?",CIQPAN_C.htm,CIQP01,2003-2004
+Eosinophils number (1000 cells/uL),CBC_D.htm,LBDEONO,2005-2006
+Eosinophils percent (%),CBC_D.htm,LBXEOPCT,2005-2006
+Estimated VO2max (ml/kg/min),CVX_C.htm,CVDESVO2,2003-2004
+Estimated extracellular fluid volume (L),BIX_C.htm,BIDECF,2003-2004
+Estimated fat mass (kg),BIX_C.htm,BIDFAT,2003-2004
+Estimated fat-free mass (kg),BIX_C.htm,BIDFFM,2003-2004
+Estimated intracellular fluid volume (L),BIX_C.htm,BIDICF,2003-2004
+Estimated percent body fat,BIX_C.htm,BIDPFAT,2003-2004
+Estimated total water body volume (L),BIX_C.htm,BIDTBW,2003-2004
+Ethyl paraben  (ng/ml),EPH_D.htm,URXEPB,2005-2006
+Ethyl paraben comment,EPH_D.htm,URDEPBLC,2005-2006
+"Ever attack for no reason, out of blue?",CIQPAN_C.htm,CIQP02,2003-2004
+Ever attacks life-threatening?,CIQPAN_C.htm,CIQP11,2003-2004
+Ever attacks not life-threatening?,CIQPAN_C.htm,CIQP12,2003-2004
+Ever breastfed or fed breastmilk,DBQ_D.htm,DBQ010,2005-2006
+Ever had a PSA test,KIQ_P_C.htm,KIQ321,2003-2004
+Ever had a rectal exam,KIQ_P_C.htm,KIQ341,2003-2004
+Ever had blood cholesterol checked,BPQ_C.htm,BPQ060,2003-2004
+Ever taken prednisone or cortisone daily,OSQ_D.htm,OSQ130,2005-2006
+Ever told by doctor have sleep disorder?,SLQ_D.htm,SLQ060,2005-2006
+Ever told doctor had trouble sleeping?,SLQ_D.htm,SLQ050,2005-2006
+Ever told had osteoporosis/brittle bones,OSQ_D.htm,OSQ060,2005-2006
+Ever told have health risk for diabetes,DIQ_D.htm,DIQ170,2005-2006
+Ever told you had high blood pressure,BPQ_C.htm,BPQ020,2003-2004
+Ever told you had weak/failing kidneys,KIQ_U_C.htm,KIQ022,2003-2004
+Ever told you have prediabetes,DIQ_D.htm,DIQ160,2005-2006
+Ever treated for osteoporosis,OSQ_D.htm,OSQ070,2005-2006
+Ever tried cigarette smoking,SMQ_D.htm,SMQ620,2005-2006
+Ever tried to lose weight,WHQ_D.htm,WHQ210,2005-2006
+Exact age when attack occurred,CIQPAN_C.htm,CIQP18,2003-2004
+Examiner ID code,CVX_C.htm,CVDEXMER,2003-2004
+Excluded per asthma symptoms,CVX_C.htm,CVDEXCL4,2003-2004
+Excluded per cardiovascular conditions,CVX_C.htm,CVDEXCL2,2003-2004
+Excluded per lung/breathing conditions,CVX_C.htm,CVDEXCL3,2003-2004
+Excluded per medications,CVX_C.htm,CVDEXCL5,2003-2004
+Excluded per other specific reasons,CVX_C.htm,CVDEXCL6,2003-2004
+Excluded per physical limitations,CVX_C.htm,CVDEXCL1,2003-2004
+Exercise protocol used in stage 1 and 2,CVX_C.htm,CVDPROT,2003-2004
+Exercised,WHQ_C.htm,WHD080D,2003-2004
+Exercised to lose weight,WHQ_D.htm,WHD080D,2005-2006
+Experience confusion/memory problems,PFQ_C.htm,PFQ057,2003-2004
+Exponent alpha,BIX_C.htm,BIDALPHA,2003-2004
+FTC Carbon Monoxide Content,SMQ_C.htm,SMD100CO,2003-2004
+FTC Nicotine Content,SMQ_C.htm,SMD100NI,2003-2004
+FTC Tar Content,SMQ_C.htm,SMD100TR,2003-2004
+Facial surface code for erosion,OHXADD_C.htm,OHX08ESF,2003-2004
+Fasting Subsample 2 Year MEC Weight,TRIGLY_D.htm,WTSAF2YR,2005-2006
+Father was told had osteoporosis,OSQ_D.htm,OSQ160b,2005-2006
+Father's country of birth,ACQ_C.htm,ACD070,2003-2004
+"Fear:  Crowd, standing in line",CIQPAN_C.htm,CIQP21G,2003-2004
+Fear: Animals,CIQPAN_C.htm,CIQP21I,2003-2004
+Fear: Being in a crowd,CIQPAN_C.htm,CIQP21C,2003-2004
+Fear: Being in a public place,CIQPAN_C.htm,CIQP21H,2003-2004
+"Fear: Being outside, away",CIQPAN_C.htm,CIQP21E,2003-2004
+Fear: Closed spaces,CIQPAN_C.htm,CIQP21M,2003-2004
+Fear: Flying,CIQPAN_C.htm,CIQP21L,2003-2004
+Fear: Getting an injection,CIQPAN_C.htm,CIQP21O,2003-2004
+Fear: Giving a speech,CIQPAN_C.htm,CIQP21A,2003-2004
+Fear: Going to a hospital,CIQPAN_C.htm,CIQP21Q,2003-2004
+Fear: Going to the dentist,CIQPAN_C.htm,CIQP21P,2003-2004
+Fear: Heights,CIQPAN_C.htm,CIQP21J,2003-2004
+Fear: Meeting new people,CIQPAN_C.htm,CIQP21D,2003-2004
+Fear: Other 1,CIQPAN_C.htm,CIQP21R,2003-2004
+Fear: Other 2,CIQPAN_C.htm,CIQP21S,2003-2004
+Fear: Other 3,CIQPAN_C.htm,CIQP21T,2003-2004
+Fear: Party or social event,CIQPAN_C.htm,CIQP21B,2003-2004
+Fear: Seeing blood,CIQPAN_C.htm,CIQP21N,2003-2004
+"Fear: Storms, thunder, lightening",CIQPAN_C.htm,CIQP21K,2003-2004
+"Fear: Traveling bus, train, car",CIQPAN_C.htm,CIQP21F,2003-2004
+Feel like you were choking?,CIQPAN_C.htm,CIQP13F,2003-2004
+Feel things around you unreal?,CIQPAN_C.htm,CIQP13K,2003-2004
+"Felt bad first woke, better later?",CIQDEP_C.htm,CIQD029,2003-2004
+Ferritin(ng/mL),FERTIN_D.htm,LBXFER,2005-2006
+Ferritin(ug/L),FERTIN_D.htm,LBDFERSI,2005-2006
+Filter type,SMQ_C.htm,SMD100FL,2003-2004
+Flag for Source Questionnaire,KIQ_U_C.htm,KIDUQUEX,2003-2004
+Fluorosis DI: #10,OHXDEN_C (1).htm,OHX10DI,2003-2004
+Fluorosis DI: #11,OHXDEN_C (1).htm,OHX11DI,2003-2004
+Fluorosis DI: #12,OHXDEN_C (1).htm,OHX12DI,2003-2004
+Fluorosis DI: #13,OHXDEN_C (1).htm,OHX13DI,2003-2004
+Fluorosis DI: #14,OHXDEN_C (1).htm,OHX14DI,2003-2004
+Fluorosis DI: #15,OHXDEN_C (1).htm,OHX15DI,2003-2004
+Fluorosis DI: #18,OHXDEN_C (1).htm,OHX18DI,2003-2004
+Fluorosis DI: #19,OHXDEN_C (1).htm,OHX19DI,2003-2004
+Fluorosis DI: #2,OHXDEN_C (1).htm,OHX02DI,2003-2004
+Fluorosis DI: #20,OHXDEN_C (1).htm,OHX20DI,2003-2004
+Fluorosis DI: #21,OHXDEN_C (1).htm,OHX21DI,2003-2004
+Fluorosis DI: #22,OHXDEN_C (1).htm,OHX22DI,2003-2004
+Fluorosis DI: #23,OHXDEN_C (1).htm,OHX23DI,2003-2004
+Fluorosis DI: #24,OHXDEN_C (1).htm,OHX24DI,2003-2004
+Fluorosis DI: #25,OHXDEN_C (1).htm,OHX25DI,2003-2004
+Fluorosis DI: #26,OHXDEN_C (1).htm,OHX26DI,2003-2004
+Fluorosis DI: #27,OHXDEN_C (1).htm,OHX27DI,2003-2004
+Fluorosis DI: #28,OHXDEN_C (1).htm,OHX28DI,2003-2004
+Fluorosis DI: #29,OHXDEN_C (1).htm,OHX29DI,2003-2004
+Fluorosis DI: #3,OHXDEN_C (1).htm,OHX03DI,2003-2004
+Fluorosis DI: #30,OHXDEN_C (1).htm,OHX30DI,2003-2004
+Fluorosis DI: #31,OHXDEN_C (1).htm,OHX31DI,2003-2004
+Fluorosis DI: #4,OHXDEN_C (1).htm,OHX04DI,2003-2004
+Fluorosis DI: #5,OHXDEN_C (1).htm,OHX05DI,2003-2004
+Fluorosis DI: #6,OHXDEN_C (1).htm,OHX06DI,2003-2004
+Fluorosis DI: #7,OHXDEN_C (1).htm,OHX07DI,2003-2004
+Fluorosis DI: #8,OHXDEN_C (1).htm,OHX08DI,2003-2004
+Fluorosis DI: #9,OHXDEN_C (1).htm,OHX09DI,2003-2004
+"Folate, DFE (mcg)",DR2TOT_D.htm,DR2TFDFE,2005-2006
+Folic acid (mcg),DR2TOT_D.htm,DR2TFA,2005-2006
+Followed a special diet,WHQ_C.htm,WHD080N,2003-2004
+Food folate (mcg),DR2TOT_D.htm,DR2TFF,2005-2006
+Four week in row and four attacks?,CIQPAN_C.htm,CIQP57,2003-2004
+Fracture result of severe trauma?,OSQ_D.htm,OSQ090a,2005-2006
+"Fractures/bone/joint injury probl, days",PFQ_C.htm,PFD069G,2003-2004
+Frequency trouble sleeping,CIQDEP_C.htm,CIQD026,2003-2004
+Frequency with which this occurs,KIQ_U_C.htm,KIQ045,2003-2004
+GAD score,CIQGAD_C.htm,CIDGSCOR,2003-2004
+Gamma glutamyl transferase (U/L),L40_C.htm,LBXSGTSI,2003-2004
+General cause of WTA,CIQGAD_C.htm,CIDGPRB,2003-2004
+General cause of problem,CIQDEP_C.htm,CIDDPRB,2003-2004
+General health condition,HSQ_C.htm,HSD010,2003-2004
+Getting in and out of bed difficulty,PFQ_C.htm,PFQ061J,2003-2004
+Gingival / OHI needs,OHXREF_C.htm,OHAROCOH,2003-2004
+Globulin (g/L),L40_C.htm,LBDSGBSI,2003-2004
+Globulin (g/dL),L40_C.htm,LBXSGB,2003-2004
+"Glucose, serum (mg/dL)",L40_C.htm,LBXSGL,2003-2004
+"Glucose, serum (mmol/L)",L40_C.htm,LBDSGLSI,2003-2004
+Glycohemoglobin (%),GHB_D.htm,LBXGH,2005-2006
+"Going out to movies, events difficulty",PFQ_C.htm,PFQ061Q,2003-2004
+Got medical attentn for wheezing attack,RDQ_C.htm,RDD120,2003-2004
+Grasp/holding small objects difficulty,PFQ_C.htm,PFQ061P,2003-2004
+Gynoid fat mass,DXXAG_C.htm,DXXGYFM,2003-2004
+Gynoid lean mass,DXXAG_C.htm,DXXGYLM,2003-2004
+Gynoid percent fat,DXXAG_C.htm,DXXGPFAT,2003-2004
+Gynoid total mass,DXXAG_C.htm,DXXGYTOM,2003-2004
+Had a heart problem?,OHXREF_C.htm,OHQ132,2003-2004
+Had alcohol in the past 30 minutes?,BPX_C.htm,BPQ150B,2003-2004
+Had bacterial endocarditis?,OHXREF_C.htm,OHQ140,2003-2004
+Had blood tested past three years,DIQ_D.htm,DIQ180,2005-2006
+Had cigarettes in the past 30 minutes?,BPX_C.htm,BPQ150D,2003-2004
+Had coffee in the past 30 minutes?,BPX_C.htm,BPQ150C,2003-2004
+Had congenital heart disease?,OHXREF_C.htm,OHQ138,2003-2004
+Had congenital heart murmurs?,OHXREF_C.htm,OHQ134,2003-2004
+Had dry cough at night in past year,RDQ_C.htm,RDQ140,2003-2004
+Had food in the past 30 minutes?,BPX_C.htm,BPQ150A,2003-2004
+Had heart valve problem?,OHXREF_C.htm,OHQ136,2003-2004
+Had rheumatic fever?,OHXREF_C.htm,OHQ142,2003-2004
+Handcard: more irritable?,CIQGAD_C.htm,CIQG17D,2003-2004
+Handcard: more tired than usual?,CIQGAD_C.htm,CIQG17C,2003-2004
+Handcard: often keyed up?,CIQGAD_C.htm,CIQG17B,2003-2004
+Handcard: often restless?,CIQGAD_C.htm,CIQG17A,2003-2004
+"Handcard: tense, sore, ach muscles?",CIQGAD_C.htm,CIQG17G,2003-2004
+Handcard: trouble keeping mind on?,CIQGAD_C.htm,CIQG17F,2003-2004
+Handcard: trouble sleeping?,CIQGAD_C.htm,CIQG17E,2003-2004
+Have Medicare?,HIQ_D.htm,HIQ260,2005-2006
+"Have a hip, bone, or joint replacement?",OHXREF_C.htm,OHQ148,2003-2004
+Have hot flashes or chills?,CIQPAN_C.htm,CIQP13O,2003-2004
+Have kidney disease w/ renal dialysis?,OHXREF_C.htm,OHQ144,2003-2004
+Have numbness or tingling?,CIQPAN_C.htm,CIQP13P,2003-2004
+Have other artificial material?,OHXREF_C.htm,OHQ146,2003-2004
+Head Circumference (cm),BMX_C.htm,BMXHEAD,2003-2004
+Head Circumference Comment,BMX_C.htm,BMIHEAD,2003-2004
+Health now compared with 1 year ago,HUQ_C.htm,HUQ020,2003-2004
+Health problems causing difficulty,PFQ_C.htm,PFQ063A,2003-2004
+Heard about 5-a-day program?,DBQ_D.htm,DBQ740,2005-2006
+Heard of dietary guidelines?,DBQ_D.htm,DBQ720,2005-2006
+Heard of food guide pyramid?,DBQ_D.htm,DBQ730,2005-2006
+"Hearing problems, days",PFQ_C.htm,PFD069H,2003-2004
+"Heart problems, days",PFQ_C.htm,PFD069I,2003-2004
+Height-Length difference flagged,BMX_C.htm,BMDRECUF,2003-2004
+Helped in responding for this interview,DR2TOT_D.htm,DR2HELPD,2005-2006
+Hematocrit (%),CBC_D.htm,LBXHCT,2005-2006
+Hemoglobin (g/dL),CBC_D.htm,LBXHGB,2005-2006
+Hour of the Day,PAXRAW_C.htm,PAXHOUR,2003-2004
+House chore difficulty,PFQ_C.htm,PFQ061F,2003-2004
+How do you consider your weight,WHQ_C.htm,WHQ030,2003-2004
+How frequently does this occur,KIQ_U_C.htm,KIQ043,2003-2004
+How frequently does this occur?,KIQ_U_D.htm,KIQ430,2005-2006
+How healthy is the diet,DBQ_D.htm,DBQ700,2005-2006
+How long ago saw a diabetes specialist,DIQ_D.htm,DIQ230,2005-2006
+How long ago was last blood donation?,HSQ_C.htm,HSQ580,2003-2004
+How long between two periods?,CIQDEP_C.htm,CIQD071,2003-2004
+How long each time (minutes),PAQ_C.htm,PAD160,2003-2004
+How long has period been going on?,CIQDEP_C.htm,CIQD055,2003-2004
+How long per day (minutes),PAQ_C.htm,PAD080,2003-2004
+How long period before it ended?,CIQDEP_C.htm,CIQD058,2003-2004
+How long since last healthcare visit,HUQ_C.htm,HUQ060,2003-2004
+How long since quit smoking cigarettes,SMQ_C.htm,SMQ050Q,2003-2004
+How long taking insulin,DIQ_D.htm,DID060,2005-2006
+How long to fall asleep (minutes)?,SLQ_D.htm,SLD020M,2005-2006
+How long used prednisone or cortisone?,OSQ_D.htm,OSQ140q,2005-2006
+How long went on before ended?,CIQDEP_C.htm,CIQD075,2003-2004
+How many periods?,CIQDEP_C.htm,CIQD064,2003-2004
+How many times urinate in night?,KIQ_U_D.htm,KIQ480,2005-2006
+How many years smoked this amount,SMQ_C.htm,SMD075,2003-2004
+How much did urine leakage bother you,KIQ_U_C.htm,KIQ050,2003-2004
+How much sleep do you get (hours)?,SLQ_D.htm,SLD010H,2005-2006
+How much urine lose each time?,KIQ_U_D.htm,KIQ010,2005-2006
+How much were daily activities affected,KIQ_U_C.htm,KIQ052,2003-2004
+How often check blood for glucose/sugar,DIQ_D.htm,DID260,2005-2006
+How often did you not get enough sleep?,SLQ_D.htm,SLQ130,2005-2006
+How often difficult control worry?,CIQGAD_C.htm,CIQG15,2003-2004
+How often do you check your feet,DIQ_D.htm,DID350,2005-2006
+How often do you snore?,SLQ_D.htm,SLQ030,2005-2006
+How often do you snort / stop breathing?,SLQ_D.htm,SLQ040,2005-2006
+How often drank milk age 13-17,DBQ_D.htm,DBQ235B,2005-2006
+How often drank milk age 18-35,DBQ_D.htm,DBQ235C,2005-2006
+How often drank milk age 5-12,DBQ_D.htm,DBQ235A,2005-2006
+How often feel overly sleepy during day?,SLQ_D.htm,SLQ120,2005-2006
+How often feel unrested during the day?,SLQ_D.htm,SLQ110,2005-2006
+How often felt bad because of mouth?,OHQ_D.htm,OHQ630,2005-2006
+How often have leg jerks while sleeping?,SLQ_D.htm,SLQ150,2005-2006
+How often have legs cramp while sleeping,SLQ_D.htm,SLQ160,2005-2006
+How often have trouble falling asleep?,SLQ_D.htm,SLQ080,2005-2006
+How often have urinary leakage,KIQ_U_D.htm,KIQ005,2005-2006
+How often last yr. had aching in mouth?,OHQ_D.htm,OHQ620,2005-2006
+How often take pills to help you sleep?,SLQ_D.htm,SLQ140,2005-2006
+How often wake up during night?,SLQ_D.htm,SLQ090,2005-2006
+How often wake up too early in morning?,SLQ_D.htm,SLQ100,2005-2006
+How often worry so strong?,CIQGAD_C.htm,CIQG16,2003-2004
+How old were you when first SED?,CIQDEP_C.htm,CIQD111,2003-2004
+How old were you when first WTA?,CIQGAD_C.htm,CIQG20,2003-2004
+How old when fracture occurred?,OSQ_D.htm,OSD110a,2005-2006
+How old when fractured hip?,OSQ_D.htm,OSQ180,2005-2006
+How recently avoided situations bc fear?,CIQPAN_C.htm,CIQP05,2003-2004
+How recently have concern?,CIQPAN_C.htm,CIQP07,2003-2004
+How soon after waking do you smoke,SMQ_C.htm,SMQ077,2003-2004
+How soon is the pain relieved,CDQ_C.htm,CDQ006,2003-2004
+How upset for feeling WTA?,CIQGAD_C.htm,CIQG24,2003-2004
+"Hypertension or high blood pressure,days",PFQ_C.htm,PFD069J,2003-2004
+If so does SP continue or slow down,CDQ_C.htm,CDQ004,2003-2004
+"In between 4 periods, ok for 2 months?",CIQDEP_C.htm,CIQD087,2003-2004
+In long term care facility last 12 month,HUQ_C.htm,HUQ082,2003-2004
+Incisal surface code for erosion,OHXADD_C.htm,OHX08ESI,2003-2004
+Incisial surface code for erosion,OHXADD_C.htm,OHX07ESI,2003-2004
+Incisor Trauma:  #10,OHXDEN_C (1).htm,OHX10TR,2003-2004
+Incisor Trauma:  #23,OHXDEN_C (1).htm,OHX23TR,2003-2004
+Incisor Trauma:  #24,OHXDEN_C (1).htm,OHX24TR,2003-2004
+Incisor Trauma:  #25,OHXDEN_C (1).htm,OHX25TR,2003-2004
+Incisor Trauma:  #26,OHXDEN_C (1).htm,OHX26TR,2003-2004
+Incisor Trauma:  #7,OHXDEN_C (1).htm,OHX07TR,2003-2004
+Incisor Trauma:  #8,OHXDEN_C (1).htm,OHX08TR,2003-2004
+Incisor Trauma:  #9,OHXDEN_C (1).htm,OHX09TR,2003-2004
+Increasing exercise on own,BPQ_C.htm,BPD110C,2003-2004
+Insurance card available or not,HIQ_D.htm,HIQ105,2005-2006
+Intake day of the week,DR2TOT_D.htm,DR2DAY,2005-2006
+Interviewer ID code,DR2TOT_D.htm,DR2EXMER,2005-2006
+Iron (mg),DR2TOT_D.htm,DR2TIRON,2005-2006
+"Iron, refigerated (ug/dL)",L40_C.htm,LBXSIR,2003-2004
+"Iron, refigerated (umol/L)",L40_C.htm,LBDSIRSI,2003-2004
+Irritable duration,CIQDEP_C.htm,CIQD016,2003-2004
+Irritable frequency,CIQDEP_C.htm,CIQD015,2003-2004
+Is most recent of 4 periods on or ended?,CIQDEP_C.htm,CIQD084,2003-2004
+Is second period going on or ended?,CIQDEP_C.htm,CIQD074,2003-2004
+Is the period still going on or ended?,CIQDEP_C.htm,CIQD054,2003-2004
+Is there one Dr you see for diabetes,DIQ_D.htm,DIQ240,2005-2006
+Joined a weight loss program,WHQ_C.htm,WHD080H,2003-2004
+LDL-cholesterol (mg/dL),L13AM_C.htm,LBDLDL,2003-2004
+LDL-cholesterol (mmol/L),L13AM_C.htm,LBDLDLSI,2003-2004
+LOA: distal #10 FGM/CEJ,OHXPRU_C.htm,OHD10CJD,2003-2004
+LOA: distal #10 PD,OHXPRU_C.htm,OHD10PCD,2003-2004
+LOA: distal #10 calculated LA,OHXPRU_C.htm,OHD10LAD,2003-2004
+LOA: distal #11 FGM/CEJ,OHXPRU_C.htm,OHD11CJD,2003-2004
+LOA: distal #11 PD,OHXPRU_C.htm,OHD11PCD,2003-2004
+LOA: distal #11 calculated LA,OHXPRU_C.htm,OHD11LAD,2003-2004
+LOA: distal #12 FGM/CEJ,OHXPRU_C.htm,OHD12CJD,2003-2004
+LOA: distal #12 PD,OHXPRU_C.htm,OHD12PCD,2003-2004
+LOA: distal #12 calculated LA,OHXPRU_C.htm,OHD12LAD,2003-2004
+LOA: distal #13 FGM/CEJ,OHXPRU_C.htm,OHD13CJD,2003-2004
+LOA: distal #13 PD,OHXPRU_C.htm,OHD13PCD,2003-2004
+LOA: distal #13 calculated LA,OHXPRU_C.htm,OHD13LAD,2003-2004
+LOA: distal #14 FGM/CEJ,OHXPRU_C.htm,OHD14CJD,2003-2004
+LOA: distal #14 PD,OHXPRU_C.htm,OHD14PCD,2003-2004
+LOA: distal #14 calculated LA,OHXPRU_C.htm,OHD14LAD,2003-2004
+LOA: distal #15 FGM/CEJ,OHXPRU_C.htm,OHD15CJD,2003-2004
+LOA: distal #15 PD,OHXPRU_C.htm,OHD15PCD,2003-2004
+LOA: distal #15 calculated LA,OHXPRU_C.htm,OHD15LAD,2003-2004
+LOA: distal #18 FGM/CEJ,OHXPRL_C.htm,OHD18CJD,2003-2004
+LOA: distal #18 PD,OHXPRL_C.htm,OHD18PCD,2003-2004
+LOA: distal #18 calculated LA,OHXPRL_C.htm,OHD18LAD,2003-2004
+LOA: distal #19 FGM/CEJ,OHXPRL_C.htm,OHD19CJD,2003-2004
+LOA: distal #19 PD,OHXPRL_C.htm,OHD19PCD,2003-2004
+LOA: distal #19 calculated LA,OHXPRL_C.htm,OHD19LAD,2003-2004
+LOA: distal #2 FGM/CEJ,OHXPRU_C.htm,OHD02CJD,2003-2004
+LOA: distal #2 PD,OHXPRU_C.htm,OHD02PCD,2003-2004
+LOA: distal #2 calculated LA,OHXPRU_C.htm,OHD02LAD,2003-2004
+LOA: distal #20 FGM/CEJ,OHXPRL_C.htm,OHD20CJD,2003-2004
+LOA: distal #20 PD,OHXPRL_C.htm,OHD20PCD,2003-2004
+LOA: distal #20 calculated LA,OHXPRL_C.htm,OHD20LAD,2003-2004
+LOA: distal #21 FGM/CEJ,OHXPRL_C.htm,OHD21CJD,2003-2004
+LOA: distal #21 PD,OHXPRL_C.htm,OHD21PCD,2003-2004
+LOA: distal #21 calculated LA,OHXPRL_C.htm,OHD21LAD,2003-2004
+LOA: distal #22 FGM/CEJ,OHXPRL_C.htm,OHD22CJD,2003-2004
+LOA: distal #22 PD,OHXPRL_C.htm,OHD22PCD,2003-2004
+LOA: distal #22 calculated LA,OHXPRL_C.htm,OHD22LAD,2003-2004
+LOA: distal #23 FGM/CEJ,OHXPRL_C.htm,OHD23CJD,2003-2004
+LOA: distal #23 PD,OHXPRL_C.htm,OHD23PCD,2003-2004
+LOA: distal #23 calculated LA,OHXPRL_C.htm,OHD23LAD,2003-2004
+LOA: distal #24 FGM/CEJ,OHXPRL_C.htm,OHD24CJD,2003-2004
+LOA: distal #24 PD,OHXPRL_C.htm,OHD24PCD,2003-2004
+LOA: distal #24 calculated LA,OHXPRL_C.htm,OHD24LAD,2003-2004
+LOA: distal #25 FGM/CEJ,OHXPRL_C.htm,OHD25CJD,2003-2004
+LOA: distal #25 PD,OHXPRL_C.htm,OHD25PCD,2003-2004
+LOA: distal #25 calculated LA,OHXPRL_C.htm,OHD25LAD,2003-2004
+LOA: distal #26 FGM/CEJ,OHXPRL_C.htm,OHD26CJD,2003-2004
+LOA: distal #26 PD,OHXPRL_C.htm,OHD26PCD,2003-2004
+LOA: distal #26 calculated LA,OHXPRL_C.htm,OHD26LAD,2003-2004
+LOA: distal #27 FGM/CEJ,OHXPRL_C.htm,OHD27CJD,2003-2004
+LOA: distal #27 PD,OHXPRL_C.htm,OHD27PCD,2003-2004
+LOA: distal #27 calculated LA,OHXPRL_C.htm,OHD27LAD,2003-2004
+LOA: distal #28 FGM/CEJ,OHXPRL_C.htm,OHD28CJD,2003-2004
+LOA: distal #28 PD,OHXPRL_C.htm,OHD28PCD,2003-2004
+LOA: distal #28 calculated LA,OHXPRL_C.htm,OHD28LAD,2003-2004
+LOA: distal #29 FGM/CEJ,OHXPRL_C.htm,OHD29CJD,2003-2004
+LOA: distal #29 PD,OHXPRL_C.htm,OHD29PCD,2003-2004
+LOA: distal #29 calculated LA,OHXPRL_C.htm,OHD29LAD,2003-2004
+LOA: distal #3 FGM/CEJ,OHXPRU_C.htm,OHD03CJD,2003-2004
+LOA: distal #3 PD,OHXPRU_C.htm,OHD03PCD,2003-2004
+LOA: distal #3 calculated LA,OHXPRU_C.htm,OHD03LAD,2003-2004
+LOA: distal #30 FGM/CEJ,OHXPRL_C.htm,OHD30CJD,2003-2004
+LOA: distal #30 PD,OHXPRL_C.htm,OHD30PCD,2003-2004
+LOA: distal #30 calculated LA,OHXPRL_C.htm,OHD30LAD,2003-2004
+LOA: distal #31 FGM/CEJ,OHXPRL_C.htm,OHD31CJD,2003-2004
+LOA: distal #31 PD,OHXPRL_C.htm,OHD31PCD,2003-2004
+LOA: distal #31 calculated LA,OHXPRL_C.htm,OHD31LAD,2003-2004
+LOA: distal #4 FGM/CEJ,OHXPRU_C.htm,OHD04CJD,2003-2004
+LOA: distal #4 PD,OHXPRU_C.htm,OHD04PCD,2003-2004
+LOA: distal #4 calculated LA,OHXPRU_C.htm,OHD04LAD,2003-2004
+LOA: distal #5 FGM/CEJ,OHXPRU_C.htm,OHD05CJD,2003-2004
+LOA: distal #5 PD,OHXPRU_C.htm,OHD05PCD,2003-2004
+LOA: distal #5 calculated LA,OHXPRU_C.htm,OHD05LAD,2003-2004
+LOA: distal #6 FGM/CEJ,OHXPRU_C.htm,OHD06CJD,2003-2004
+LOA: distal #6 PD,OHXPRU_C.htm,OHD06PCD,2003-2004
+LOA: distal #6 calculated LA,OHXPRU_C.htm,OHD06LAD,2003-2004
+LOA: distal #7 FGM/CEJ,OHXPRU_C.htm,OHD07CJD,2003-2004
+LOA: distal #7 PD,OHXPRU_C.htm,OHD07PCD,2003-2004
+LOA: distal #7 calculated LA,OHXPRU_C.htm,OHD07LAD,2003-2004
+LOA: distal #8 FGM/CEJ,OHXPRU_C.htm,OHD08CJD,2003-2004
+LOA: distal #8 PD,OHXPRU_C.htm,OHD08PCD,2003-2004
+LOA: distal #8 calculated LA,OHXPRU_C.htm,OHD08LAD,2003-2004
+LOA: distal #9 FGM/CEJ,OHXPRU_C.htm,OHD09CJD,2003-2004
+LOA: distal #9 PD,OHXPRU_C.htm,OHD09PCD,2003-2004
+LOA: distal #9 calculated LA,OHXPRU_C.htm,OHD09LAD,2003-2004
+LOA: mesial #10 FGM/CEJ,OHXPRU_C.htm,OHD10CJS,2003-2004
+LOA: mesial #10 PD,OHXPRU_C.htm,OHD10PCS,2003-2004
+LOA: mesial #10 calculated LA,OHXPRU_C.htm,OHD10LAS,2003-2004
+LOA: mesial #11 FGM/CEJ,OHXPRU_C.htm,OHD11CJS,2003-2004
+LOA: mesial #11 PD,OHXPRU_C.htm,OHD11PCS,2003-2004
+LOA: mesial #11 calculated LA,OHXPRU_C.htm,OHD11LAS,2003-2004
+LOA: mesial #12 FGM/CEJ,OHXPRU_C.htm,OHD12CJS,2003-2004
+LOA: mesial #12 PD,OHXPRU_C.htm,OHD12PCS,2003-2004
+LOA: mesial #12 calculated LA,OHXPRU_C.htm,OHD12LAS,2003-2004
+LOA: mesial #13 FGM/CEJ,OHXPRU_C.htm,OHD13CJS,2003-2004
+LOA: mesial #13 PD,OHXPRU_C.htm,OHD13PCS,2003-2004
+LOA: mesial #13 calculated LA,OHXPRU_C.htm,OHD13LAS,2003-2004
+LOA: mesial #14 FGM/CEJ,OHXPRU_C.htm,OHD14CJS,2003-2004
+LOA: mesial #14 PD,OHXPRU_C.htm,OHD14PCS,2003-2004
+LOA: mesial #14 calculated LA,OHXPRU_C.htm,OHD14LAS,2003-2004
+LOA: mesial #15 FGM/CEJ,OHXPRU_C.htm,OHD15CJS,2003-2004
+LOA: mesial #15 PD,OHXPRU_C.htm,OHD15PCS,2003-2004
+LOA: mesial #15 calculated LA,OHXPRU_C.htm,OHD15LAS,2003-2004
+LOA: mesial #18 FGM/CEJ,OHXPRL_C.htm,OHD18CJS,2003-2004
+LOA: mesial #18 PD,OHXPRL_C.htm,OHD18PCS,2003-2004
+LOA: mesial #18 calculated LA,OHXPRL_C.htm,OHD18LAS,2003-2004
+LOA: mesial #19 FGM/CEJ,OHXPRL_C.htm,OHD19CJS,2003-2004
+LOA: mesial #19 PD,OHXPRL_C.htm,OHD19PCS,2003-2004
+LOA: mesial #19 calculated LA,OHXPRL_C.htm,OHD19LAS,2003-2004
+LOA: mesial #2 FGM/CEJ,OHXPRU_C.htm,OHD02CJS,2003-2004
+LOA: mesial #2 PD,OHXPRU_C.htm,OHD02PCS,2003-2004
+LOA: mesial #2 calculated LA,OHXPRU_C.htm,OHD02LAS,2003-2004
+LOA: mesial #20 FGM/CEJ,OHXPRL_C.htm,OHD20CJS,2003-2004
+LOA: mesial #20 PD,OHXPRL_C.htm,OHD20PCS,2003-2004
+LOA: mesial #20 calculated LA,OHXPRL_C.htm,OHD20LAS,2003-2004
+LOA: mesial #21 FGM/CEJ,OHXPRL_C.htm,OHD21CJS,2003-2004
+LOA: mesial #21 PD,OHXPRL_C.htm,OHD21PCS,2003-2004
+LOA: mesial #21 calculated LA,OHXPRL_C.htm,OHD21LAS,2003-2004
+LOA: mesial #22 FGM/CEJ,OHXPRL_C.htm,OHD22CJS,2003-2004
+LOA: mesial #22 PD,OHXPRL_C.htm,OHD22PCS,2003-2004
+LOA: mesial #22 calculated LA,OHXPRL_C.htm,OHD22LAS,2003-2004
+LOA: mesial #23 FGM/CEJ,OHXPRL_C.htm,OHD23CJS,2003-2004
+LOA: mesial #23 PD,OHXPRL_C.htm,OHD23PCS,2003-2004
+LOA: mesial #23 calculated LA,OHXPRL_C.htm,OHD23LAS,2003-2004
+LOA: mesial #24 FGM/CEJ,OHXPRL_C.htm,OHD24CJS,2003-2004
+LOA: mesial #24 PD,OHXPRL_C.htm,OHD24PCS,2003-2004
+LOA: mesial #24 calculated LA,OHXPRL_C.htm,OHD24LAS,2003-2004
+LOA: mesial #25 FGM/CEJ,OHXPRL_C.htm,OHD25CJS,2003-2004
+LOA: mesial #25 PD,OHXPRL_C.htm,OHD25PCS,2003-2004
+LOA: mesial #25 calculated LA,OHXPRL_C.htm,OHD25LAS,2003-2004
+LOA: mesial #26 FGM/CEJ,OHXPRL_C.htm,OHD26CJS,2003-2004
+LOA: mesial #26 PD,OHXPRL_C.htm,OHD26PCS,2003-2004
+LOA: mesial #26 calculated LA,OHXPRL_C.htm,OHD26LAS,2003-2004
+LOA: mesial #27 FGM/CEJ,OHXPRL_C.htm,OHD27CJS,2003-2004
+LOA: mesial #27 PD,OHXPRL_C.htm,OHD27PCS,2003-2004
+LOA: mesial #27 calculated LA,OHXPRL_C.htm,OHD27LAS,2003-2004
+LOA: mesial #28 FGM/CEJ,OHXPRL_C.htm,OHD28CJS,2003-2004
+LOA: mesial #28 PD,OHXPRL_C.htm,OHD28PCS,2003-2004
+LOA: mesial #28 calculated LA,OHXPRL_C.htm,OHD28LAS,2003-2004
+LOA: mesial #29 FGM/CEJ,OHXPRL_C.htm,OHD29CJS,2003-2004
+LOA: mesial #29 PD,OHXPRL_C.htm,OHD29PCS,2003-2004
+LOA: mesial #29 calculated LA,OHXPRL_C.htm,OHD29LAS,2003-2004
+LOA: mesial #3 FGM/CEJ,OHXPRU_C.htm,OHD03CJS,2003-2004
+LOA: mesial #3 PD,OHXPRU_C.htm,OHD03PCS,2003-2004
+LOA: mesial #3 calculated LA,OHXPRU_C.htm,OHD03LAS,2003-2004
+LOA: mesial #30 FGM/CEJ,OHXPRL_C.htm,OHD30CJS,2003-2004
+LOA: mesial #30 PD,OHXPRL_C.htm,OHD30PCS,2003-2004
+LOA: mesial #30 calculated LA,OHXPRL_C.htm,OHD30LAS,2003-2004
+LOA: mesial #31 FGM/CEJ,OHXPRL_C.htm,OHD31CJS,2003-2004
+LOA: mesial #31 PD,OHXPRL_C.htm,OHD31PCS,2003-2004
+LOA: mesial #31 calculated LA,OHXPRL_C.htm,OHD31LAS,2003-2004
+LOA: mesial #4 FGM/CEJ,OHXPRU_C.htm,OHD04CJS,2003-2004
+LOA: mesial #4 PD,OHXPRU_C.htm,OHD04PCS,2003-2004
+LOA: mesial #4 calculated LA,OHXPRU_C.htm,OHD04LAS,2003-2004
+LOA: mesial #5 FGM/CEJ,OHXPRU_C.htm,OHD05CJS,2003-2004
+LOA: mesial #5 PD,OHXPRU_C.htm,OHD05PCS,2003-2004
+LOA: mesial #5 calculated LA,OHXPRU_C.htm,OHD05LAS,2003-2004
+LOA: mesial #6 FGM/CEJ,OHXPRU_C.htm,OHD06CJS,2003-2004
+LOA: mesial #6 PD,OHXPRU_C.htm,OHD06PCS,2003-2004
+LOA: mesial #6 calculated LA,OHXPRU_C.htm,OHD06LAS,2003-2004
+LOA: mesial #7 FGM/CEJ,OHXPRU_C.htm,OHD07CJS,2003-2004
+LOA: mesial #7 PD,OHXPRU_C.htm,OHD07PCS,2003-2004
+LOA: mesial #7 calculated LA,OHXPRU_C.htm,OHD07LAS,2003-2004
+LOA: mesial #8 FGM/CEJ,OHXPRU_C.htm,OHD08CJS,2003-2004
+LOA: mesial #8 PD,OHXPRU_C.htm,OHD08PCS,2003-2004
+LOA: mesial #8 calculated LA,OHXPRU_C.htm,OHD08LAS,2003-2004
+LOA: mesial #9 FGM/CEJ,OHXPRU_C.htm,OHD09CJS,2003-2004
+LOA: mesial #9 PD,OHXPRU_C.htm,OHD09PCS,2003-2004
+LOA: mesial #9 calculated LA,OHXPRU_C.htm,OHD09LAS,2003-2004
+LOA: mid-facial #10 FGM/CEJ,OHXPRU_C.htm,OHD10CJM,2003-2004
+LOA: mid-facial #10 PD,OHXPRU_C.htm,OHD10PCM,2003-2004
+LOA: mid-facial #10 calculated LA,OHXPRU_C.htm,OHD10LAM,2003-2004
+LOA: mid-facial #11 FGM/CEJ,OHXPRU_C.htm,OHD11CJM,2003-2004
+LOA: mid-facial #11 PD,OHXPRU_C.htm,OHD11PCM,2003-2004
+LOA: mid-facial #11 calculated LA,OHXPRU_C.htm,OHD11LAM,2003-2004
+LOA: mid-facial #12 FGM/CEJ,OHXPRU_C.htm,OHD12CJM,2003-2004
+LOA: mid-facial #12 PD,OHXPRU_C.htm,OHD12PCM,2003-2004
+LOA: mid-facial #12 calculated LA,OHXPRU_C.htm,OHD12LAM,2003-2004
+LOA: mid-facial #13 FGM/CEJ,OHXPRU_C.htm,OHD13CJM,2003-2004
+LOA: mid-facial #13 PD,OHXPRU_C.htm,OHD13PCM,2003-2004
+LOA: mid-facial #13 calculated LA,OHXPRU_C.htm,OHD13LAM,2003-2004
+LOA: mid-facial #14 FGM/CEJ,OHXPRU_C.htm,OHD14CJM,2003-2004
+LOA: mid-facial #14 PD,OHXPRU_C.htm,OHD14PCM,2003-2004
+LOA: mid-facial #14 calculated LA,OHXPRU_C.htm,OHD14LAM,2003-2004
+LOA: mid-facial #15 FGM/CEJ,OHXPRU_C.htm,OHD15CJM,2003-2004
+LOA: mid-facial #15 PD,OHXPRU_C.htm,OHD15PCM,2003-2004
+LOA: mid-facial #15 calculated LA,OHXPRU_C.htm,OHD15LAM,2003-2004
+LOA: mid-facial #18 FGM/CEJ,OHXPRL_C.htm,OHD18CJM,2003-2004
+LOA: mid-facial #18 PD,OHXPRL_C.htm,OHD18PCM,2003-2004
+LOA: mid-facial #18 calculated LA,OHXPRL_C.htm,OHD18LAM,2003-2004
+LOA: mid-facial #19 FGM/CEJ,OHXPRL_C.htm,OHD19CJM,2003-2004
+LOA: mid-facial #19 PD,OHXPRL_C.htm,OHD19PCM,2003-2004
+LOA: mid-facial #19 calculated LA,OHXPRL_C.htm,OHD19LAM,2003-2004
+LOA: mid-facial #2 FGM/CEJ,OHXPRU_C.htm,OHD02CJM,2003-2004
+LOA: mid-facial #2 PD,OHXPRU_C.htm,OHD02PCM,2003-2004
+LOA: mid-facial #2 calculated LA,OHXPRU_C.htm,OHD02LAM,2003-2004
+LOA: mid-facial #20 FGM/CEJ,OHXPRL_C.htm,OHD20CJM,2003-2004
+LOA: mid-facial #20 PD,OHXPRL_C.htm,OHD20PCM,2003-2004
+LOA: mid-facial #20 calculated LA,OHXPRL_C.htm,OHD20LAM,2003-2004
+LOA: mid-facial #21 FGM/CEJ,OHXPRL_C.htm,OHD21CJM,2003-2004
+LOA: mid-facial #21 PD,OHXPRL_C.htm,OHD21PCM,2003-2004
+LOA: mid-facial #21 calculated LA,OHXPRL_C.htm,OHD21LAM,2003-2004
+LOA: mid-facial #22 FGM/CEJ,OHXPRL_C.htm,OHD22CJM,2003-2004
+LOA: mid-facial #22 PD,OHXPRL_C.htm,OHD22PCM,2003-2004
+LOA: mid-facial #22 calculated LA,OHXPRL_C.htm,OHD22LAM,2003-2004
+LOA: mid-facial #23 FGM/CEJ,OHXPRL_C.htm,OHD23CJM,2003-2004
+LOA: mid-facial #23 PD,OHXPRL_C.htm,OHD23PCM,2003-2004
+LOA: mid-facial #23 calculated LA,OHXPRL_C.htm,OHD23LAM,2003-2004
+LOA: mid-facial #24 FGM/CEJ,OHXPRL_C.htm,OHD24CJM,2003-2004
+LOA: mid-facial #24 PD,OHXPRL_C.htm,OHD24PCM,2003-2004
+LOA: mid-facial #24 calculated LA,OHXPRL_C.htm,OHD24LAM,2003-2004
+LOA: mid-facial #25 FGM/CEJ,OHXPRL_C.htm,OHD25CJM,2003-2004
+LOA: mid-facial #25 PD,OHXPRL_C.htm,OHD25PCM,2003-2004
+LOA: mid-facial #25 calculated LA,OHXPRL_C.htm,OHD25LAM,2003-2004
+LOA: mid-facial #26 FGM/CEJ,OHXPRL_C.htm,OHD26CJM,2003-2004
+LOA: mid-facial #26 PD,OHXPRL_C.htm,OHD26PCM,2003-2004
+LOA: mid-facial #26 calculated LA,OHXPRL_C.htm,OHD26LAM,2003-2004
+LOA: mid-facial #27 FGM/CEJ,OHXPRL_C.htm,OHD27CJM,2003-2004
+LOA: mid-facial #27 PD,OHXPRL_C.htm,OHD27PCM,2003-2004
+LOA: mid-facial #27 calculated LA,OHXPRL_C.htm,OHD27LAM,2003-2004
+LOA: mid-facial #28 FGM/CEJ,OHXPRL_C.htm,OHD28CJM,2003-2004
+LOA: mid-facial #28 PD,OHXPRL_C.htm,OHD28PCM,2003-2004
+LOA: mid-facial #28 calculated LA,OHXPRL_C.htm,OHD28LAM,2003-2004
+LOA: mid-facial #29 FGM/CEJ,OHXPRL_C.htm,OHD29CJM,2003-2004
+LOA: mid-facial #29 PD,OHXPRL_C.htm,OHD29PCM,2003-2004
+LOA: mid-facial #29 calculated LA,OHXPRL_C.htm,OHD29LAM,2003-2004
+LOA: mid-facial #3 PD,OHXPRU_C.htm,OHD03PCM,2003-2004
+LOA: mid-facial #3 calculated LA,OHXPRU_C.htm,OHD03LAM,2003-2004
+LOA: mid-facial #30 FGM/CEJ,OHXPRL_C.htm,OHD30CJM,2003-2004
+LOA: mid-facial #30 PD,OHXPRL_C.htm,OHD30PCM,2003-2004
+LOA: mid-facial #30 calculated LA,OHXPRL_C.htm,OHD30LAM,2003-2004
+LOA: mid-facial #31 FGM/CEJ,OHXPRL_C.htm,OHD31CJM,2003-2004
+LOA: mid-facial #31 PD,OHXPRL_C.htm,OHD31PCM,2003-2004
+LOA: mid-facial #31 calculated LA,OHXPRL_C.htm,OHD31LAM,2003-2004
+LOA: mid-facial #4 FGM/CEJ,OHXPRU_C.htm,OHD04CJM,2003-2004
+LOA: mid-facial #4 PD,OHXPRU_C.htm,OHD04PCM,2003-2004
+LOA: mid-facial #4 calculated LA,OHXPRU_C.htm,OHD04LAM,2003-2004
+LOA: mid-facial #5 FGM/CEJ,OHXPRU_C.htm,OHD05CJM,2003-2004
+LOA: mid-facial #5 PD,OHXPRU_C.htm,OHD05PCM,2003-2004
+LOA: mid-facial #5 calculated LA,OHXPRU_C.htm,OHD05LAM,2003-2004
+LOA: mid-facial #6 FGM/CEJ,OHXPRU_C.htm,OHD06CJM,2003-2004
+LOA: mid-facial #6 PD,OHXPRU_C.htm,OHD06PCM,2003-2004
+LOA: mid-facial #6 calculated LA,OHXPRU_C.htm,OHD06LAM,2003-2004
+LOA: mid-facial #7 FGM/CEJ,OHXPRU_C.htm,OHD07CJM,2003-2004
+LOA: mid-facial #7 PD,OHXPRU_C.htm,OHD07PCM,2003-2004
+LOA: mid-facial #7 calculated LA,OHXPRU_C.htm,OHD07LAM,2003-2004
+LOA: mid-facial #8 FGM/CEJ,OHXPRU_C.htm,OHD08CJM,2003-2004
+LOA: mid-facial #8 PD,OHXPRU_C.htm,OHD08PCM,2003-2004
+LOA: mid-facial #8 calculated LA,OHXPRU_C.htm,OHD08LAM,2003-2004
+LOA: mid-facial #9 FGM/CEJ,OHXPRU_C.htm,OHD09CJM,2003-2004
+LOA: mid-facial #9 PD,OHXPRU_C.htm,OHD09PCM,2003-2004
+LOA: mid-facial #9 calculated LA,OHXPRU_C.htm,OHD09LAM,2003-2004
+LOA:mid-facial #3 FGM/CEJ,OHXPRU_C.htm,OHD03CJM,2003-2004
+Lactate dehydrogenase LDH (U/L),L40_C.htm,LBXSLDSI,2003-2004
+Language respondent used mostly,DR2TOT_D.htm,DR2LANG,2005-2006
+Language(s) read and spoken,ACQ_C.htm,ACQ020,2003-2004
+Language(s) used as child,ACQ_C.htm,ACQ030,2003-2004
+Language(s) usually spoken at home,ACQ_C.htm,ACD040,2003-2004
+Language(s) usually used to think,ACQ_C.htm,ACQ050,2003-2004
+Language(s) usually used with friends,ACQ_C.htm,ACQ060,2003-2004
+"Large adult used, poor thigh cuff fit",LEXAB_C.htm,LEQ020,2003-2004
+Largest no. attack any four weeks,CIQPAN_C.htm,CIQP55,2003-2004
+Largest no. attacks any one week,CIQPAN_C.htm,CIQP54,2003-2004
+Last blood pressure reading by doctor,BPQ_C.htm,BPQ010,2003-2004
+Last time had pupils dilated for exam,DIQ_D.htm,DIQ360,2005-2006
+Last time used nicotine stop smoking aid,SMQRTU_D.htm,SMQ840,2005-2006
+Last yr avoid some food because of mouth,OHQ_D.htm,OHQ660,2005-2006
+Last yr couldn't eat because of mouth,OHQ_D.htm,OHQ670,2005-2006
+Last yr embarrassed because of mouth,OHQ_D.htm,OHQ680,2005-2006
+Last yr had diff w/ job because of mouth,OHQ_D.htm,OHQ640,2005-2006
+Last yr taste affected because of mouth,OHQ_D.htm,OHQ650,2005-2006
+Lead (ug/dL),PBCD_D.htm,LBXBPB,2005-2006
+Lead (umol/L),PBCD_D.htm,LBDBPBSI,2005-2006
+Leak urine during nonphysical activities,KIQ_U_C.htm,KIQ046,2003-2004
+Leak urine during physical activities,KIQ_U_C.htm,KIQ042,2003-2004
+Left - Zone 1,OHX_D.htm,OHXFCLZ1,2005-2006
+Left - Zone 2,OHX_D.htm,OHXFCLZ2,2005-2006
+Left - Zone 3,OHX_D.htm,OHXFCLZ3,2005-2006
+Left - Zone 4,OHX_D.htm,OHXFCLZ4,2005-2006
+Left - Zone 5,OHX_D.htm,OHXFCLZ5,2005-2006
+Left - Zone 6,OHX_D.htm,OHXFCLZ6,2005-2006
+Left - Zone 7,OHX_D.htm,OHXFCLZ7,2005-2006
+Left - Zone 8,OHX_D.htm,OHXFCLZ8,2005-2006
+Left ABPI,LEXAB_C.htm,LEXLABPI,2003-2004
+Left Foot - Number of insensate areas,LEXPN_C.htm,LEALPN,2003-2004
+Left Mean Posterior Tibial SBP (mm Hg),LEXAB_C.htm,LEXLPTSM,2003-2004
+Left PT pulse detected?,LEXAB_C.htm,LEALPTPD,2003-2004
+Left Posterior Tibial SBP 1 (mm Hg),LEXAB_C.htm,LEXLPTS1,2003-2004
+Left Posterior Tibial SBP 2 (mm Hg),LEXAB_C.htm,LEXLPTS2,2003-2004
+Left amputation,LEXPN_C.htm,LEALAMP,2003-2004
+Left ankle SBP > 255 mm Hg?,LEXAB_C.htm,LEALAPNC,2003-2004
+Left bunions,LEXPN_C.htm,LEALBUN,2003-2004
+"Left halux comments, test 1",LEXPN_C.htm,LEALHAC1,2003-2004
+"Left halux comments, test 2",LEXPN_C.htm,LEALHAC2,2003-2004
+"Left halux comments, test 3",LEXPN_C.htm,LEALHAC3,2003-2004
+"Left halux, test 1",LEXPN_C.htm,LEXLHAL1,2003-2004
+"Left halux, test 2",LEXPN_C.htm,LEXLHAL2,2003-2004
+"Left halux, test 3",LEXPN_C.htm,LEXLHAL3,2003-2004
+Left lesion,LEXPN_C.htm,LEALLES,2003-2004
+Left lesion site,LEXPN_C.htm,LEALLESS,2003-2004
+"Left metatarsal 1 comment, test 1",LEXPN_C.htm,LEALM1C1,2003-2004
+"Left metatarsal 1 comment, test 2",LEXPN_C.htm,LEALM1C2,2003-2004
+"Left metatarsal 1 comment, test 3",LEXPN_C.htm,LEALM1C3,2003-2004
+"Left metatarsal 5 comment, test 1",LEXPN_C.htm,LEALM5C1,2003-2004
+"Left metatarsal 5 comment, test 2",LEXPN_C.htm,LEALM5C2,2003-2004
+"Left metatarsal 5 comment, test 3",LEXPN_C.htm,LEALM5C3,2003-2004
+"Left metatarsal head 1, test 1",LEXPN_C.htm,LEXLMH11,2003-2004
+"Left metatarsal head 1, test 2",LEXPN_C.htm,LEXLMH12,2003-2004
+"Left metatarsal head 1, test 3",LEXPN_C.htm,LEXLMH13,2003-2004
+"Left metatarsal head 5, test 1",LEXPN_C.htm,LEXLMH51,2003-2004
+"Left metatarsal head 5, test 2",LEXPN_C.htm,LEXLMH52,2003-2004
+"Left metatarsal head 5, test 3",LEXPN_C.htm,LEXLMH53,2003-2004
+Leisure activity at home difficulty,PFQ_C.htm,PFQ061S,2003-2004
+Leisure time activity,PAQIAF_C.htm,PADACTIV,2003-2004
+Length,SMQ_C.htm,SMD100LN,2003-2004
+Length of CV fitness exam (min),CVX_C.htm,CVDEXLEN,2003-2004
+Lifting or carrying difficulty,PFQ_C.htm,PFQ061E,2003-2004
+"Like to weigh more, less or same",WHQ_C.htm,WHQ040,2003-2004
+Limit usual activities due to wheezing,RDQ_C.htm,RDQ135,2003-2004
+Limitations keeping you from working,PFQ_C.htm,PFQ049,2003-2004
+Limited in amount of work you can do,PFQ_C.htm,PFQ051,2003-2004
+Lingual surface code for erosion,OHXADD_C.htm,OHX08ESL,2003-2004
+Long term care facility,HUQ_C.htm,HUQ088b,2003-2004
+Long term impairment/health problem,PFQ_C.htm,PFQ030,2003-2004
+Longest no. weeks in row attack,CIQPAN_C.htm,CIQP52,2003-2004
+Lose ability to enjoy good things?,CIQDEP_C.htm,CIQD031,2003-2004
+Loss of interest duration,CIQDEP_C.htm,CIQD010,2003-2004
+Loss of interest frequency,CIQDEP_C.htm,CIQD009,2003-2004
+"Lung or breathing problems, days",PFQ_C.htm,PFD069K,2003-2004
+Lutein + zeaxanthin (mcg),DR2TOT_D.htm,DR2TLZ,2005-2006
+Lycopene (mcg),DR2TOT_D.htm,DR2TLYCO,2005-2006
+Lymphocyte number (1000 cells/uL),CBC_D.htm,LBDLYMNO,2005-2006
+Lymphocyte percent (%),CBC_D.htm,LBXLYPCT,2005-2006
+MCHC (g/dL),CBC_D.htm,LBXMC,2005-2006
+MET score for activity,PAQIAF_C.htm,PADMETS,2003-2004
+MFA 16:1 (Hexadecenoic) (gm),DR2TOT_D.htm,DR2TM161,2005-2006
+MFA 18:1 (Octadecenoic) (gm),DR2TOT_D.htm,DR2TM181,2005-2006
+MFA 20:1 (Eicosenoic) (gm),DR2TOT_D.htm,DR2TM201,2005-2006
+MFA 22:1 (Docosenoic) (gm),DR2TOT_D.htm,DR2TM221,2005-2006
+MIL: maximum inflation levels (mm Hg),BPX_C.htm,BPXML1,2003-2004
+Magnesium (mg),DR2TOT_D.htm,DR2TMAGN,2005-2006
+Main respondent for this interview,DR2TOT_D.htm,DR2MNRSP,2005-2006
+Managing money difficulty,PFQ_C.htm,PFQ061A,2003-2004
+Maximal Calf Circumference (cm),BMX_C.htm,BMXCALF,2003-2004
+Maximal Calf Comment,BMX_C.htm,BMICALF,2003-2004
+Maximal incisal opening (mm),OHXADD_C.htm,OHXMAXIN,2003-2004
+May I please see the pack of cigarettes,SMQ_C.htm,SMD093,2003-2004
+Mean Brachial SBP (mm Hg),LEXAB_C.htm,LEXBRPM,2003-2004
+Mean cell hemoglobin (pg),CBC_D.htm,LBXMCHSI,2005-2006
+Mean cell volume (fL),CBC_D.htm,LBXMCVSI,2005-2006
+Mean platelet volume (fL),CBC_D.htm,LBXMPSI,2005-2006
+"Mental retardation condition, days",PFQ_C.htm,PFD069L,2003-2004
+Menthol indicator,SMQ_C.htm,SMD100MN,2003-2004
+Menthol or non-menthol BensonHedges,SMQ_D.htm,SMQ664B,2005-2006
+Menthol or non-menthol Camels,SMQ_D.htm,SMQ664C,2005-2006
+Menthol or non-menthol Marlboro,SMQ_D.htm,SMQ664M,2005-2006
+Menthol or non-menthol Winston,SMQ_D.htm,SMQ664W,2005-2006
+Menthol or non-menthol other brand,SMQ_D.htm,SMQ664O,2005-2006
+"Mercury, total (ug/L)",PBCD_D.htm,LBXTHG,2005-2006
+"Mercury, total (umol/L )",PBCD_D.htm,LBDTHGSI,2005-2006
+"Mercury, total comment code",PBCD_D.htm,LBDTHGLC,2005-2006
+Mesh vest used,CVX_C.htm,CVAVEST,2003-2004
+Methyl paraben (ng/ml),EPH_D.htm,URXMPB,2005-2006
+Methyl paraben comment,EPH_D.htm,URDMPBLC,2005-2006
+Minute of the Hour,PAXRAW_C.htm,PAXMINUT,2003-2004
+Miss work or school due to wheezing,RDQ_C.htm,RDQ137,2003-2004
+Missing teeth,OHXREF_C.htm,OHQ490i,2003-2004
+Moderate activity over past 30 days,PAQ_C.htm,PAD320,2003-2004
+Moisture (gm),DR2TOT_D.htm,DR2TMOIS,2005-2006
+Monocyte number (1000 cells/uL),CBC_D.htm,LBDMONO,2005-2006
+Monocyte percent (%),CBC_D.htm,LBXMOPCT,2005-2006
+"Month worried, tense, anxious(WTA)?",CIQGAD_C.htm,CIQG01,2003-2004
+Mother was told had osteoporosis,OSQ_D.htm,OSQ160a,2005-2006
+Mother's country of birth,ACQ_C.htm,ACD080,2003-2004
+Muscle strengthening activities,PAQ_C.htm,PAD440,2003-2004
+Must always take antibiotics?,OHXREF_C.htm,OHQ131,2003-2004
+Nausea or discomfort in stomach?,CIQPAN_C.htm,CIQP13H,2003-2004
+Need special equipment to walk,PFQ_C.htm,PFQ054,2003-2004
+Niacin (mg),DR2TOT_D.htm,DR2TNIAC,2005-2006
+No coverage of any type,HIQ_D.htm,HIQ031AA,2005-2006
+No significant needs,OHXREF_C.htm,OHARNF,2003-2004
+No. attacks lifetime out of the blue,CIQPAN_C.htm,CIQP32,2003-2004
+No. attacks lifetime real danger,CIQPAN_C.htm,CIQP40,2003-2004
+No. attacks lifetime strong fear,CIQPAN_C.htm,CIQP36,2003-2004
+No. attacks past 12 months,CIQPAN_C.htm,CIQP42,2003-2004
+No. attacks past 12 months?,CIQPAN_C.htm,CIQP34,2003-2004
+No. attacks w/symptoms in lifetime?,CIQPAN_C.htm,CIQP14,2003-2004
+No. days cutback amount/quality,CIQDEP_C.htm,CIQD099,2003-2004
+No. days cutback past 4 weeks,CIQDEP_C.htm,CIQD102,2003-2004
+No. days extreme effort to work,CIQDEP_C.htm,CIQD103,2003-2004
+No. days extreme past 4 weeks,CIQDEP_C.htm,CIQD105,2003-2004
+No. days interfere past 4 weeks,CIQDEP_C.htm,CIQD108,2003-2004
+No. days interfere personal life,CIQDEP_C.htm,CIQD106,2003-2004
+No. days totally past 4 weeks,CIQDEP_C.htm,CIQD098,2003-2004
+No. days totally unable work,CIQDEP_C.htm,CIQD096,2003-2004
+"No. months worried, tense, anxious?",CIQGAD_C.htm,CIQG03,2003-2004
+No. weeks SED... past 12 mos?,CIQDEP_C.htm,CIQD051,2003-2004
+Non SP HH member in care fac overnight,HUQ_C.htm,HUQ086,2003-2004
+None/no specific problem,OHXREF_C.htm,OHQ490m,2003-2004
+Now controlling weight,BPQ_C.htm,BPQ050B,2003-2004
+Now eating fewer high fat foods,BPQ_C.htm,BPQ100A,2003-2004
+Now exercising more,BPQ_C.htm,BPQ050D,2003-2004
+Now increasing exercise,BPQ_C.htm,BPQ100C,2003-2004
+Now reducing alcohol consumption,BPQ_C.htm,BPQ050E,2003-2004
+Now reducing salt/sodium,BPQ_C.htm,BPQ050C,2003-2004
+Now taking prescribed medicine,BPQ_C.htm,BPQ050A,2003-2004
+Number of days of intake,DR2TOT_D.htm,DRDINT,2005-2006
+Number of foods reported,DR2TOT_D.htm,DR2TNUMF,2005-2006
+Number of times past 30 days,PAQ_C.htm,PAD460,2003-2004
+Number of weeks before end?,CIQDEP_C.htm,CIQD065,2003-2004
+Nutritionist,WHQ_D.htm,WHQ280C,2005-2006
+Occlusal surface code for erosion,OHXADD_C.htm,OHX03ESO,2003-2004
+Order in which CIDI modules are asked,CIQDEP_C.htm,CIAORDER,2003-2004
+Osmolality (mmol/Kg),L40_C.htm,LBXSOSSI,2003-2004
+Other,OHXREF_C.htm,OHQ490n,2003-2004
+Other Referral Comments,OHXREF_C.htm,OHARCMT,2003-2004
+"Other development problems, days",PFQ_C.htm,PFD069E,2003-2004
+Other health professional,WHQ_D.htm,WHQ280E,2005-2006
+"Other impairment problems, days",PFQ_C.htm,PFD069R,2003-2004
+"Other injury problems, days",PFQ_C.htm,PFD069M,2003-2004
+Other language(s) usually spoken at home,ACQ_C.htm,ACD010C,2003-2004
+Out of the blue attack past 12 months?,CIQPAN_C.htm,CIQP33,2003-2004
+Over or under 50 years old?,OSQ_D.htm,OSQ190,2005-2006
+Overall Oral Health Exam Status,OHXADD_C.htm,OHAEXSTS,2003-2004
+Overall recommendation for care,OHXREF_C.htm,OHAREC,2003-2004
+Overnight hospital patient in last year,HUQ_C.htm,HUQ071,2003-2004
+Overnite hospital patient in last year,HUQ_D.htm,HUQ071,2005-2006
+PFA 18:2 (Octadecadienoic) (gm),DR2TOT_D.htm,DR2TP182,2005-2006
+PFA 18:3 (Octadecatrienoic) (gm),DR2TOT_D.htm,DR2TP183,2005-2006
+PFA 18:4 (Octadecatetraenoic) (gm),DR2TOT_D.htm,DR2TP184,2005-2006
+PFA 20:4 (Eicosatetraenoic) (gm),DR2TOT_D.htm,DR2TP204,2005-2006
+PFA 20:5 (Eicosapentaenoic) (gm),DR2TOT_D.htm,DR2TP205,2005-2006
+PFA 22:5 (Docosapentaenoic) (gm),DR2TOT_D.htm,DR2TP225,2005-2006
+PFA 22:6 (Docosahexaenoic) (gm),DR2TOT_D.htm,DR2TP226,2005-2006
+PN Section Comment,LEXPN_C.htm,LEDSCCT1,2003-2004
+Pain in epigastric area,CDQ_C.htm,CDQ009H,2003-2004
+Pain in left arm,CDQ_C.htm,CDQ009G,2003-2004
+Pain in left chest,CDQ_C.htm,CDQ009F,2003-2004
+Pain in lower sternum,CDQ_C.htm,CDQ009E,2003-2004
+Pain in neck,CDQ_C.htm,CDQ009C,2003-2004
+Pain in right arm,CDQ_C.htm,CDQ009A,2003-2004
+Pain in right chest,CDQ_C.htm,CDQ009B,2003-2004
+Pain in upper sternum,CDQ_C.htm,CDQ009D,2003-2004
+Pain or discomfort in chest?,CIQPAN_C.htm,CIQP13G,2003-2004
+Panic Score,CIQPAN_C.htm,CIDPSCOR,2003-2004
+Panic attack past 12 months?,CIQPAN_C.htm,CIQP03,2003-2004
+Parathyroid Hormone(Elecys method) pg/mL,L11_C.htm,LBXPT21,2003-2004
+Parents ever told had osteoporosis?,OSQ_D.htm,OSQ150,2005-2006
+Past 12 months no. weeks attack,CIQPAN_C.htm,CIQP50,2003-2004
+"Past 12 mos, attacks lead to terrible?",CIQPAN_C.htm,CIQP08,2003-2004
+"Past 12 mos, avoided situations bc fear?",CIQPAN_C.htm,CIQP04,2003-2004
+"Past 12 mos, month + fear another?",CIQPAN_C.htm,CIQP06,2003-2004
+Past 12 mos. 2 weeks lost interest?,CIQDEP_C.htm,CIQD008,2003-2004
+Past 30 day milk product consumption,DBQ_D.htm,DBQ197,2005-2006
+Past year how many times seen doctor,DIQ_D.htm,DID250,2005-2006
+Past year times Dr check feet for sores,DIQ_D.htm,DID340,2005-2006
+Past year times checked for A1C,DIQ_D.htm,DID270,2005-2006
+Past yr told control weight,DIQ_D.htm,DIQ190A,2005-2006
+Past yr told increase physical activity,DIQ_D.htm,DIQ190B,2005-2006
+Past yr told reduce fat/calories in diet,DIQ_D.htm,DIQ190C,2005-2006
+Periodontal Status Code,OHXPRL_C.htm,OHASCST4,2003-2004
+Periodontal needs,OHXREF_C.htm,OHAROCGP,2003-2004
+Periodontal problems,OHXREF_C.htm,OHQ490k,2003-2004
+Personal trainer,WHQ_D.htm,WHQ280A,2005-2006
+Phosphorus (mg),DR2TOT_D.htm,DR2TPHOS,2005-2006
+Phosphorus (mg/dL),L40_C.htm,LBXSPH,2003-2004
+Phosphorus (mmol/L),L40_C.htm,LBDSPHSI,2003-2004
+Physical activity readiness code,CVX_C.htm,CVXPARC,2003-2004
+"Physical, mental, emotional limitations",PFQ_C.htm,PFQ059,2003-2004
+"Physical,mental,emotional limitations",PFQ_C.htm,PFQ010,2003-2004
+Platelet count SI (1000 cells/uL),CBC_D.htm,LBXPLTSI,2005-2006
+Posterior Left  FOC Zone 1,OHXADD_C.htm,OHXFCLZ1,2003-2004
+Posterior Left  FOC Zone 2,OHXADD_C.htm,OHXFCLZ2,2003-2004
+Posterior Left  FOC Zone 3,OHXADD_C.htm,OHXFCLZ3,2003-2004
+Posterior Left  FOC Zone 4,OHXADD_C.htm,OHXFCLZ4,2003-2004
+Posterior Left  FOC Zone 5,OHXADD_C.htm,OHXFCLZ5,2003-2004
+Posterior Left  FOC Zone 6,OHXADD_C.htm,OHXFCLZ6,2003-2004
+Posterior Left  FOC Zone 7,OHXADD_C.htm,OHXFCLZ7,2003-2004
+Posterior Left  FOC Zone 8,OHXADD_C.htm,OHXFCLZ8,2003-2004
+Posterior Right FOC Zone 1,OHXADD_C.htm,OHXFCRZ1,2003-2004
+Posterior Right FOC Zone 2,OHXADD_C.htm,OHXFCRZ2,2003-2004
+Posterior Right FOC Zone 3,OHXADD_C.htm,OHXFCRZ3,2003-2004
+Posterior Right FOC Zone 4,OHXADD_C.htm,OHXFCRZ4,2003-2004
+Posterior Right FOC Zone 5,OHXADD_C.htm,OHXFCRZ5,2003-2004
+Posterior Right FOC Zone 6,OHXADD_C.htm,OHXFCRZ6,2003-2004
+Posterior Right FOC Zone 7,OHXADD_C.htm,OHXFCRZ7,2003-2004
+Posterior Right FOC Zone 8,OHXADD_C.htm,OHXFCRZ8,2003-2004
+Potassium (mg),DR2TOT_D.htm,DR2TPOTA,2005-2006
+Potassium (mmol/L),L40_C.htm,LBXSKSI,2003-2004
+Predicted VO2max (ml/kg/min),CVX_C.htm,CVDVOMAX,2003-2004
+Predicted maximal heart rate (per min),CVX_C.htm,CVDPMHR,2003-2004
+Preparing meals difficulty,PFQ_C.htm,PFQ061G,2003-2004
+"Priority 2 Stop, equipment failure",CVX_C.htm,CVQ220i,2003-2004
+"Priority 2 Stop, excessive BP",CVX_C.htm,CVQ220c,2003-2004
+"Priority 2 Stop, excessive HR in stage 1",CVX_C.htm,CVQ220b,2003-2004
+"Priority 2 Stop, excessive HR in stage 2",CVX_C.htm,CVQ220a,2003-2004
+"Priority 2 Stop, other specified reasons",CVX_C.htm,CVQ220m,2003-2004
+"Priority 2 Stop, participant grips rails",CVX_C.htm,CVQ220j,2003-2004
+"Priority 2 Stop, participant overexerted",CVX_C.htm,CVQ220k,2003-2004
+"Priority 2 Stop, participant request",CVX_C.htm,CVQ220h,2003-2004
+"Priority 2 Stop, significant drop in SBP",CVX_C.htm,CVQ220e,2003-2004
+"Priority 2 Stop, technician discretion",CVX_C.htm,CVQ220l,2003-2004
+"Priority 2 Stop, variability in HR",CVX_C.htm,CVQ220g,2003-2004
+"Problems began suddenly, got worse?",CIQPAN_C.htm,CIQP15,2003-2004
+Propyl paraben (ng/ml),EPH_D.htm,URXPPB,2005-2006
+Propyl paraben comment,EPH_D.htm,URDPPBLC,2005-2006
+Protein (gm),DR2TOT_D.htm,DR2TPROT,2005-2006
+Protoporphyrin (umol/L RBC),EPP_D.htm,LBDEPPSI,2005-2006
+Protoporphyrin(ug/dL RBC),EPP_D.htm,LBXEPP,2005-2006
+Pulse regular or irregular?,BPX_C.htm,BPXPULS,2003-2004
+Pulse type:,BPX_C.htm,BPXPTY,2003-2004
+Push or pull large objects difficulty,PFQ_C.htm,PFQ061T,2003-2004
+Quality of fit to Cole model,BIX_C.htm,BIDFIT,2003-2004
+Questionnaire Mode Flag,SMQRTU_D.htm,SMAQUEX,2005-2006
+Questionnaire source flag for weighting,PAQIAF_C.htm,PAAQUEX,2003-2004
+Reaching up over head difficulty,PFQ_C.htm,PFQ061O,2003-2004
+Reactance (Ohms) @ 1 MHz,BIX_C.htm,BIXC1M,2003-2004
+Reactance (Ohms) @ 10 KHz,BIX_C.htm,BIXC010K,2003-2004
+Reactance (Ohms) @ 100 KHz,BIX_C.htm,BIXC100K,2003-2004
+Reactance (Ohms) @ 11 KHz,BIX_C.htm,BIXC011K,2003-2004
+Reactance (Ohms) @ 115 KHz,BIX_C.htm,BIXC115K,2003-2004
+Reactance (Ohms) @ 12 KHz,BIX_C.htm,BIXC012K,2003-2004
+Reactance (Ohms) @ 128 KHz,BIX_C.htm,BIXC128K,2003-2004
+Reactance (Ohms) @ 13 KHz,BIX_C.htm,BIXC013K,2003-2004
+Reactance (Ohms) @ 14 KHz,BIX_C.htm,BIXC014K,2003-2004
+Reactance (Ohms) @ 143 KHz,BIX_C.htm,BIXC143K,2003-2004
+Reactance (Ohms) @ 15 KHz,BIX_C.htm,BIXC015K,2003-2004
+Reactance (Ohms) @ 159 KHz,BIX_C.htm,BIXC159K,2003-2004
+Reactance (Ohms) @ 16 KHz,BIX_C.htm,BIXC016K,2003-2004
+Reactance (Ohms) @ 177 KHz,BIX_C.htm,BIXC177K,2003-2004
+Reactance (Ohms) @ 18 KHz,BIX_C.htm,BIXC018K,2003-2004
+Reactance (Ohms) @ 20 KHz,BIX_C.htm,BIXC020K,2003-2004
+Reactance (Ohms) @ 200 KHz,BIX_C.htm,BIXC200K,2003-2004
+Reactance (Ohms) @ 220 KHz,BIX_C.htm,BIXC220K,2003-2004
+Reactance (Ohms) @ 23 KHz,BIX_C.htm,BIXC023K,2003-2004
+Reactance (Ohms) @ 245 KHz,BIX_C.htm,BIXC245K,2003-2004
+Reactance (Ohms) @ 25 KHz,BIX_C.htm,BIXC025K,2003-2004
+Reactance (Ohms) @ 273 KHz,BIX_C.htm,BIXC273K,2003-2004
+Reactance (Ohms) @ 28 KHz,BIX_C.htm,BIXC028K,2003-2004
+Reactance (Ohms) @ 304 KHz,BIX_C.htm,BIXC304K,2003-2004
+Reactance (Ohms) @ 31 KHz,BIX_C.htm,BIXC031K,2003-2004
+Reactance (Ohms) @ 339 KHz,BIX_C.htm,BIXC339K,2003-2004
+Reactance (Ohms) @ 35 KHz,BIX_C.htm,BIXC035K,2003-2004
+Reactance (Ohms) @ 378 KHz,BIX_C.htm,BIXC378K,2003-2004
+Reactance (Ohms) @ 39 KHz,BIX_C.htm,BIXC039K,2003-2004
+Reactance (Ohms) @ 421 KHz,BIX_C.htm,BIXC421K,2003-2004
+Reactance (Ohms) @ 43 KHz,BIX_C.htm,BIXC043K,2003-2004
+Reactance (Ohms) @ 469 KHz,BIX_C.htm,BIXC469K,2003-2004
+Reactance (Ohms) @ 5 KHz,BIX_C.htm,BIXC005K,2003-2004
+Reactance (Ohms) @ 50 KHz,BIX_C.htm,BIXC050K,2003-2004
+Reactance (Ohms) @ 500 KHz,BIX_C.htm,BIXC500K,2003-2004
+Reactance (Ohms) @ 54 KHz,BIX_C.htm,BIXC054K,2003-2004
+Reactance (Ohms) @ 582 KHz,BIX_C.htm,BIXC582K,2003-2004
+Reactance (Ohms) @ 6 KHz,BIX_C.htm,BIXC006K,2003-2004
+Reactance (Ohms) @ 60 KHz,BIX_C.htm,BIXC060K,2003-2004
+Reactance (Ohms) @ 649 KHz,BIX_C.htm,BIXC649K,2003-2004
+Reactance (Ohms) @ 67 KHz,BIX_C.htm,BIXC067K,2003-2004
+Reactance (Ohms) @ 7 KHz,BIX_C.htm,BIXC007K,2003-2004
+Reactance (Ohms) @ 723 KHz,BIX_C.htm,BIXC723K,2003-2004
+Reactance (Ohms) @ 75 KHz,BIX_C.htm,BIXC075K,2003-2004
+Reactance (Ohms) @ 8 KHz,BIX_C.htm,BIXC008K,2003-2004
+Reactance (Ohms) @ 806 KHz,BIX_C.htm,BIXC806K,2003-2004
+Reactance (Ohms) @ 83 KHz,BIX_C.htm,BIXC083K,2003-2004
+Reactance (Ohms) @ 898 KHz,BIX_C.htm,BIXC898K,2003-2004
+Reactance (Ohms) @ 9 KHz,BIX_C.htm,BIXC009K,2003-2004
+Reactance (Ohms) @ 93 KHz,BIX_C.htm,BIXC093K,2003-2004
+Reason hip fracture occurred 1st time,OSQ_D.htm,OSD050aa,2005-2006
+Reason hip fracture occurred 2nd time,OSQ_D.htm,OSD050ab,2005-2006
+Reason hip fracture occurred 3rd time,OSQ_D.htm,OSD050ac,2005-2006
+Reason spine fracture occurred 1st time,OSQ_D.htm,OSD050ca,2005-2006
+Reason spine fracture occurred 2nd time,OSQ_D.htm,OSD050cb,2005-2006
+Reason spine fracture occurred 3rd time,OSQ_D.htm,OSD050cc,2005-2006
+Reason spine fracture occurred 4th time,OSQ_D.htm,OSD050cd,2005-2006
+Reason spine fracture occurred 5th time,OSQ_D.htm,OSD050ce,2005-2006
+Reason spine fracture occurred 6th time,OSQ_D.htm,OSD050cf,2005-2006
+Reason wrist fracture occurred 1st time,OSQ_D.htm,OSD050ba,2005-2006
+Reason wrist fracture occurred 2nd time,OSQ_D.htm,OSD050bb,2005-2006
+Reason wrist fracture occurred 3rd time,OSQ_D.htm,OSD050bc,2005-2006
+Reason wrist fracture occurred 4th time,OSQ_D.htm,OSD050bd,2005-2006
+Reason wrist fracture occurred 5th time,OSQ_D.htm,OSD050be,2005-2006
+Reason wrist fracture occurred 6th time,OSQ_D.htm,OSD050bf,2005-2006
+Reason wrist fracture occurred 7th time,OSQ_D.htm,OSD050bg,2005-2006
+Receive Special Ed or Early Intervention,PFQ_C.htm,PFQ041,2003-2004
+Received dialysis in past 12 months,KIQ_U_C.htm,KIQ025,2003-2004
+Recency of fear or out of the blue,CIQPAN_C.htm,CIQP49,2003-2004
+Recency of period of WTA,CIQGAD_C.htm,CIQG23,2003-2004
+Recovery 1 diastolic BP (mm Hg),CVX_C.htm,CVDR1DI,2003-2004
+Recovery 1 heart rate (per min),CVX_C.htm,CVDR1HR,2003-2004
+Recovery 1 systolic BP (mm Hg),CVX_C.htm,CVDR1SY,2003-2004
+Recovery 2 diastolic BP (mm Hg),CVX_C.htm,CVDR2DI,2003-2004
+Recovery 2 heart rate (per min),CVX_C.htm,CVDR2HR,2003-2004
+Recovery 2 systolic BP (mm Hg),CVX_C.htm,CVDR2SY,2003-2004
+Recovery 3 diastolic BP (mm Hg),CVX_C.htm,CVDR3DI,2003-2004
+Recovery 3 heart rate (per min),CVX_C.htm,CVDR3HR,2003-2004
+Recovery 3 systolic BP (mm Hg),CVX_C.htm,CVDR3SY,2003-2004
+Recumbent Length (cm),BMX_C.htm,BMXRECUM,2003-2004
+Recumbent Length Comment,BMX_C.htm,BMIRECUM,2003-2004
+Red blood cell count (million cells/uL),CBC_D.htm,LBXRBCSI,2005-2006
+Red cell distribution width (%),CBC_D.htm,LBXRDW,2005-2006
+Referral Status Code,OHXREF_C.htm,OHASCST5,2003-2004
+Regular milk use 5 times per week,DBQ_D.htm,DBQ229,2005-2006
+"Regular, light or ultralite BensonHedges",SMQ_D.htm,SMQ666B,2005-2006
+"Regular, light or ultralite Camels",SMQ_D.htm,SMQ666C,2005-2006
+"Regular, light or ultralite Kools",SMQ_D.htm,SMQ666K,2005-2006
+"Regular, light or ultralite Marlboro",SMQ_D.htm,SMQ666M,2005-2006
+"Regular, light or ultralite Salem",SMQ_D.htm,SMQ666S,2005-2006
+"Regular, light or ultralite Winston",SMQ_D.htm,SMQ666W,2005-2006
+"Regular, light or ultralite other brand",SMQ_D.htm,SMQ666O,2005-2006
+Rehabilitation facility,HUQ_C.htm,HUQ088c,2003-2004
+Remember age when attack occurred?,CIQPAN_C.htm,CIQP17,2003-2004
+Remember age when first SED?,CIQDEP_C.htm,CIQD110,2003-2004
+Remember age when first WTA?,CIQGAD_C.htm,CIQG19,2003-2004
+Removable complete/partial mand. denture,OHXREF_C.htm,OHQ430,2003-2004
+Removable complete/partial max denture,OHXREF_C.htm,OHQ410,2003-2004
+Require special healthcare equipment,PFQ_C.htm,PFQ090,2003-2004
+Resistance (Ohms) @  649 KHz,BIX_C.htm,BIXS649K,2003-2004
+Resistance (Ohms) @ 1 MHz,BIX_C.htm,BIXS1M,2003-2004
+Resistance (Ohms) @ 10 KHz,BIX_C.htm,BIXS010K,2003-2004
+Resistance (Ohms) @ 100 KHz,BIX_C.htm,BIXS100K,2003-2004
+Resistance (Ohms) @ 11 KHz,BIX_C.htm,BIXS011K,2003-2004
+Resistance (Ohms) @ 115 KHz,BIX_C.htm,BIXS115K,2003-2004
+Resistance (Ohms) @ 12 KHz,BIX_C.htm,BIXS012K,2003-2004
+Resistance (Ohms) @ 128 KHz,BIX_C.htm,BIXS128K,2003-2004
+Resistance (Ohms) @ 13 KHz,BIX_C.htm,BIXS013K,2003-2004
+Resistance (Ohms) @ 14 KHz,BIX_C.htm,BIXS014K,2003-2004
+Resistance (Ohms) @ 143 KHz,BIX_C.htm,BIXS143K,2003-2004
+Resistance (Ohms) @ 15 KHz,BIX_C.htm,BIXS015K,2003-2004
+Resistance (Ohms) @ 159 KHz,BIX_C.htm,BIXS159K,2003-2004
+Resistance (Ohms) @ 16 KHz,BIX_C.htm,BIXS016K,2003-2004
+Resistance (Ohms) @ 177 KHz,BIX_C.htm,BIXS177K,2003-2004
+Resistance (Ohms) @ 18 KHz,BIX_C.htm,BIXS018K,2003-2004
+Resistance (Ohms) @ 20 KHz,BIX_C.htm,BIXS020K,2003-2004
+Resistance (Ohms) @ 200 KHz,BIX_C.htm,BIXS200K,2003-2004
+Resistance (Ohms) @ 220 KHz,BIX_C.htm,BIXS220K,2003-2004
+Resistance (Ohms) @ 23 KHz,BIX_C.htm,BIXS023K,2003-2004
+Resistance (Ohms) @ 245 KHz,BIX_C.htm,BIXS245K,2003-2004
+Resistance (Ohms) @ 25 KHz,BIX_C.htm,BIXS025K,2003-2004
+Resistance (Ohms) @ 273 KHz,BIX_C.htm,BIXS273K,2003-2004
+Resistance (Ohms) @ 28 KHz,BIX_C.htm,BIXS028K,2003-2004
+Resistance (Ohms) @ 304 KHz,BIX_C.htm,BIXS304K,2003-2004
+Resistance (Ohms) @ 31 KHz,BIX_C.htm,BIXS031K,2003-2004
+Resistance (Ohms) @ 339 KHz,BIX_C.htm,BIXS339K,2003-2004
+Resistance (Ohms) @ 35 KHz,BIX_C.htm,BIXS035K,2003-2004
+Resistance (Ohms) @ 378 KHz,BIX_C.htm,BIXS378K,2003-2004
+Resistance (Ohms) @ 39 KHz,BIX_C.htm,BIXS039K,2003-2004
+Resistance (Ohms) @ 421 KHz,BIX_C.htm,BIXS421K,2003-2004
+Resistance (Ohms) @ 43 KHz,BIX_C.htm,BIXS043K,2003-2004
+Resistance (Ohms) @ 469 KHz,BIX_C.htm,BIXS469K,2003-2004
+Resistance (Ohms) @ 5 KHz,BIX_C.htm,BIXS005K,2003-2004
+Resistance (Ohms) @ 50 KHz,BIX_C.htm,BIXS050K,2003-2004
+Resistance (Ohms) @ 500 KHz,BIX_C.htm,BIXS500K,2003-2004
+Resistance (Ohms) @ 54 KHz,BIX_C.htm,BIXS054K,2003-2004
+Resistance (Ohms) @ 582 KHz,BIX_C.htm,BIXS582K,2003-2004
+Resistance (Ohms) @ 6 KHz,BIX_C.htm,BIXS006K,2003-2004
+Resistance (Ohms) @ 60 KHz,BIX_C.htm,BIXS060K,2003-2004
+Resistance (Ohms) @ 67 KHz,BIX_C.htm,BIXS067K,2003-2004
+Resistance (Ohms) @ 7 KHz,BIX_C.htm,BIXS007K,2003-2004
+Resistance (Ohms) @ 723 KHz,BIX_C.htm,BIXS723K,2003-2004
+Resistance (Ohms) @ 75 KHz,BIX_C.htm,BIXS075K,2003-2004
+Resistance (Ohms) @ 8 KHz,BIX_C.htm,BIXS008K,2003-2004
+Resistance (Ohms) @ 806 KHz,BIX_C.htm,BIXS806K,2003-2004
+Resistance (Ohms) @ 83 KHz,BIX_C.htm,BIXS083K,2003-2004
+Resistance (Ohms) @ 898 KHz,BIX_C.htm,BIXS898K,2003-2004
+Resistance (Ohms) @ 9 KHz,BIX_C.htm,BIXS009K,2003-2004
+Resistance (Ohms) @ 93 KHz,BIX_C.htm,BIXS093K,2003-2004
+Resistance (ohms) of extracellular fluid,BIX_C.htm,BIDRECF,2003-2004
+Resistance (ohms) of intracellular fluid,BIX_C.htm,BIDRICF,2003-2004
+Respondent sequence number,ACQ_C.htm,SEQN,2003-2004
+Retinol (mcg),DR2TOT_D.htm,DR2TRET,2005-2006
+Riboflavin (Vitamin B2) (mg),DR2TOT_D.htm,DR2TVB2,2005-2006
+Right - Zone 1,OHX_D.htm,OHXFCRZ1,2005-2006
+Right - Zone 2,OHX_D.htm,OHXFCRZ2,2005-2006
+Right - Zone 3,OHX_D.htm,OHXFCRZ3,2005-2006
+Right - Zone 4,OHX_D.htm,OHXFCRZ4,2005-2006
+Right - Zone 5,OHX_D.htm,OHXFCRZ5,2005-2006
+Right - Zone 6,OHX_D.htm,OHXFCRZ6,2005-2006
+Right - Zone 7,OHX_D.htm,OHXFCRZ7,2005-2006
+Right - Zone 8,OHX_D.htm,OHXFCRZ8,2005-2006
+Right ABPI,LEXAB_C.htm,LEXRABPI,2003-2004
+Right Foot - Number of insensate areas,LEXPN_C.htm,LEARPN,2003-2004
+Right Mean Posterior Tibial SBP (mm Hg),LEXAB_C.htm,LEXRPTSM,2003-2004
+Right PT pulse detected?,LEXAB_C.htm,LEARPTPD,2003-2004
+Right Posterior Tibial SBP 1 (mm Hg),LEXAB_C.htm,LEXRPTS1,2003-2004
+Right Posterior Tibial SBP 2 (mm Hg),LEXAB_C.htm,LEXRPTS2,2003-2004
+Right amputation,LEXPN_C.htm,LEARAMP,2003-2004
+Right ankle SBP > 255 mm Hg?,LEXAB_C.htm,LEARAPNC,2003-2004
+Right bunions,LEXPN_C.htm,LEARBUN,2003-2004
+"Right halux comment, test 1",LEXPN_C.htm,LEARHAC1,2003-2004
+"Right halux comment, test 2",LEXPN_C.htm,LEARHAC2,2003-2004
+"Right halux, test 1",LEXPN_C.htm,LEXRHAL1,2003-2004
+"Right halux, test 2",LEXPN_C.htm,LEXRHAL2,2003-2004
+"Right halux, test 3",LEXPN_C.htm,LEXRHAL3,2003-2004
+Right lesion,LEXPN_C.htm,LEARLES,2003-2004
+Right lesion site,LEXPN_C.htm,LEARLESS,2003-2004
+"Right metatarsal head 1 comment, test 1",LEXPN_C.htm,LEARM1C1,2003-2004
+"Right metatarsal head 1 comment, test 2",LEXPN_C.htm,LEARM1C2,2003-2004
+"Right metatarsal head 1, test 1",LEXPN_C.htm,LEXRMH11,2003-2004
+"Right metatarsal head 1, test 2",LEXPN_C.htm,LEXRMH12,2003-2004
+"Right metatarsal head 1, test 3",LEXPN_C.htm,LEXRMH13,2003-2004
+"Right metatarsal head 5 comment, test 1",LEXPN_C.htm,LEARM5C1,2003-2004
+"Right metatarsal head 5 comment, test 2",LEXPN_C.htm,LEARM5C2,2003-2004
+"Right metatarsal head 5 comment, test 3",LEXPN_C.htm,LEARM5C3,2003-2004
+"Right metatarsal head 5, test 1",LEXPN_C.htm,LEXRMH51,2003-2004
+"Right metatarsal head 5, test 2",LEXPN_C.htm,LEXRMH52,2003-2004
+"Right metatarsal head 5, test 3",LEXPN_C.htm,LEXRMH53,2003-2004
+Room temperature (degrees F),CVX_C.htm,CVATEMP,2003-2004
+Root Caries:  yes / no,OHXDEN_C (1).htm,OHXRCAR,2003-2004
+Root restorations: yes / no,OHXDEN_C (1).htm,OHXRRES,2003-2004
+Routine place to go for healthcare,HUQ_C.htm,HUQ030,2003-2004
+SED duration,CIQDEP_C.htm,CIQD003,2003-2004
+SED interfere with daily life?,CIQDEP_C.htm,CIQD095,2003-2004
+SFA 10:0 (Decanoic) (gm),DR2TOT_D.htm,DR2TS100,2005-2006
+SFA 12:0 (Dodecanoic) (gm),DR2TOT_D.htm,DR2TS120,2005-2006
+SFA 14:0 (Tetradecanoic) (gm),DR2TOT_D.htm,DR2TS140,2005-2006
+SFA 16:0 (Hexadecanoic) (gm),DR2TOT_D.htm,DR2TS160,2005-2006
+SFA 18:0 (Octadecanoic) (gm),DR2TOT_D.htm,DR2TS180,2005-2006
+SFA 4:0 (Butanoic) (gm),DR2TOT_D.htm,DR2TS040,2005-2006
+SFA 6:0 (Hexanoic) (gm),DR2TOT_D.htm,DR2TS060,2005-2006
+SFA 8:0 (Octanoic) (gm),DR2TOT_D.htm,DR2TS080,2005-2006
+SP donated blood in past 12 months?,HSQ_C.htm,HSQ571,2003-2004
+SP ever had pain or discomfort in chest,CDQ_C.htm,CDQ001,2003-2004
+SP get it walking uphill or in a hurry,CDQ_C.htm,CDQ002,2003-2004
+"SP have flu, pneumonia, ear infection?",HSQ_C.htm,HSQ520,2003-2004
+SP have head cold or chest cold,HSQ_D.htm,HSQ500,2005-2006
+SP have stomach or intestinal illness?,HSQ_C.htm,HSQ510,2003-2004
+SP recent health - over past 4 weeks,HSQ_C.htm,HSQ500,2003-2004
+"Sad, empty, depressed (SED) frequency",CIQDEP_C.htm,CIQD002,2003-2004
+School breakfast free/reduced/full price,DBQ_D.htm,DBQ421,2005-2006
+"School lunch free, reduced or full price",DBQ_D.htm,DBQ390,2005-2006
+School serve complete breakfast each day,DBQ_D.htm,DBQ400,2005-2006
+School serves school lunches,DBQ_D.htm,DBQ370,2005-2006
+Seek help from a health professional,WHQ_D.htm,WHQ270,2005-2006
+Seen mental health professional /past yr,HUQ_C.htm,HUQ090,2003-2004
+Seen mental health professional/past yr,HUQ_D.htm,HUQ090,2005-2006
+Segmented neutrophils num (1000 cell/uL),CBC_D.htm,LBDNENO,2005-2006
+Segmented neutrophils percent (%),CBC_D.htm,LBXNEPCT,2005-2006
+Selenium (mcg),DR2TOT_D.htm,DR2TSELE,2005-2006
+Self-reported greatest weight (pounds),WHQ_D.htm,WHD140,2005-2006
+Self-reported greatest weight(pounds),WHQ_C.htm,WHD140,2003-2004
+Self-reported height - age 25 (inches),WHQ_C.htm,WHD130,2003-2004
+Self-reported weight - 1 yr ago (pounds),WHQ_D.htm,WHD050,2005-2006
+Self-reported weight - age 25 (pounds),WHQ_C.htm,WHD120,2003-2004
+Self-reported weight-1 yr ago (pounds),WHQ_C.htm,WHD050,2003-2004
+Self-reported weight-10 yrs ago (pounds),WHQ_C.htm,WHD110,2003-2004
+Self-reported weight-age 25 (pounds),WHQ_D.htm,WHD120,2005-2006
+"Senility condition, days",PFQ_C.htm,PFD069N,2003-2004
+Sensitivity,OHXREF_C.htm,OHQ490b,2003-2004
+Sequential Observation Number,PAXRAW_C.htm,PAXN,2003-2004
+Severe pain in chest more than half hour,CDQ_C.htm,CDQ008,2003-2004
+Shortness of breath on stairs/inclines,CDQ_C.htm,CDQ010,2003-2004
+Single period or two+ periods?,CIQPAN_C.htm,CIQP51,2003-2004
+Sitting for long periods difficulty,PFQ_C.htm,PFQ061N,2003-2004
+Skipped meals,WHQ_C.htm,WHD080E,2003-2004
+Sleep disorder: Insomnia,SLQ_D.htm,SLQ070B,2005-2006
+Sleep disorder: Other,SLQ_D.htm,SLQ070D,2005-2006
+Sleep disorder: Restless Legs,SLQ_D.htm,SLQ070C,2005-2006
+Sleep disorder: Sleep Apnea,SLQ_D.htm,SLQ070A,2005-2006
+Smoked a pipe at least 20 times in life,SMQ_C.htm,SMQ120,2003-2004
+Smoked at least 100 cigarettes in life,SMQ_C.htm,SMQ020,2003-2004
+Smoked cigars at least 20 times in life,SMQ_C.htm,SMQ150,2003-2004
+Sodium (mg),DR2TOT_D.htm,DR2TSODI,2005-2006
+Sodium (mmol/L),L40_C.htm,LBXSNASI,2003-2004
+Some other finding,OHXREF_C.htm,OHAROTH,2003-2004
+Source of Health Status Data,HSQ_C.htm,HSAQUEX,2003-2004
+Spanish usually spoken at home,ACQ_C.htm,ACD010B,2003-2004
+Stage 1 diastolic BP (mm Hg),CVX_C.htm,CVDS1DI,2003-2004
+Stage 1 grade (% incline),CVX_C.htm,CVDS1G,2003-2004
+Stage 1 heart rate (per min),CVX_C.htm,CVDS1HR,2003-2004
+Stage 1 rating of perceived exertion,CVX_C.htm,CVXS1RPE,2003-2004
+Stage 1 speed (mph),CVX_C.htm,CVDS1S,2003-2004
+Stage 1 systolic BP (mm Hg),CVX_C.htm,CVDS1SY,2003-2004
+Stage 2 diastolic BP (mm Hg),CVX_C.htm,CVDS2DI,2003-2004
+Stage 2 grade (% incline),CVX_C.htm,CVDS2G,2003-2004
+Stage 2 heart rate (per min),CVX_C.htm,CVDS2HR,2003-2004
+Stage 2 rating of perceived exertion,CVX_C.htm,CVXS2RPE,2003-2004
+Stage 2 speed (mph),CVX_C.htm,CVDS2S,2003-2004
+Stage 2 systolic BP (mm Hg),CVX_C.htm,CVDS2SY,2003-2004
+Staining/discoloration of teeth,OHXREF_C.htm,OHQ490f,2003-2004
+Standing Height (cm),BMX_C.htm,BMXHT,2003-2004
+Standing Height Comment,BMX_C.htm,BMIHT,2003-2004
+Standing for long periods difficulty,PFQ_C.htm,PFQ061M,2003-2004
+Standingup from armless chair difficulty,PFQ_C.htm,PFQ061I,2003-2004
+Started to smoke or began to smoke again,WHQ_D.htm,WHD080P,2005-2006
+Status code for Contacts,OHXADD_C.htm,OHDFCST,2003-2004
+"Status code for Tooth ""Wear""",OHXADD_C.htm,OHDDEST,2003-2004
+"Stooping, crouching, kneeling difficulty",PFQ_C.htm,PFQ061D,2003-2004
+"Stroke problems, days",PFQ_C.htm,PFD069O,2003-2004
+"Strong Fear:  Crowd, standing in line",CIQPAN_C.htm,CIQP44G,2003-2004
+Strong Fear: Animals,CIQPAN_C.htm,CIQP44I,2003-2004
+Strong Fear: Being in a crowd,CIQPAN_C.htm,CIQP44C,2003-2004
+Strong Fear: Being in a public place,CIQPAN_C.htm,CIQP44H,2003-2004
+"Strong Fear: Being outside, away",CIQPAN_C.htm,CIQP44E,2003-2004
+Strong Fear: Closed spaces,CIQPAN_C.htm,CIQP44M,2003-2004
+Strong Fear: Flying,CIQPAN_C.htm,CIQP44L,2003-2004
+Strong Fear: Getting an injection,CIQPAN_C.htm,CIQP44O,2003-2004
+Strong Fear: Giving a speech,CIQPAN_C.htm,CIQP44A,2003-2004
+Strong Fear: Going to a hospital,CIQPAN_C.htm,CIQP44Q,2003-2004
+Strong Fear: Going to the dentist,CIQPAN_C.htm,CIQP44P,2003-2004
+Strong Fear: Heights,CIQPAN_C.htm,CIQP44J,2003-2004
+Strong Fear: Meeting new people,CIQPAN_C.htm,CIQP44D,2003-2004
+Strong Fear: Other 1,CIQPAN_C.htm,CIQP44R,2003-2004
+Strong Fear: Other 2,CIQPAN_C.htm,CIQP44S,2003-2004
+Strong Fear: Other 3,CIQPAN_C.htm,CIQP44T,2003-2004
+Strong Fear: Party or social event,CIQPAN_C.htm,CIQP44B,2003-2004
+Strong Fear: Seeing blood,CIQPAN_C.htm,CIQP44N,2003-2004
+"Strong Fear: Storms, thunder, lightning",CIQPAN_C.htm,CIQP44K,2003-2004
+"Strong Fear: Traveling bus, train, car",CIQPAN_C.htm,CIQP44F,2003-2004
+Subscapular Skinfold (mm),BMX_C.htm,BMXSUB,2003-2004
+Subscapular Skinfold Comment,BMX_C.htm,BMISUB,2003-2004
+Summer program meal free/reduced price,DBQ_D.htm,DBQ424,2005-2006
+Switched to foods with lower calories,WHQ_C.htm,WHD080B,2003-2004
+Systolic:  Blood pres (1st rdg) mm Hg,BPX_C.htm,BPXSY1,2003-2004
+Systolic:  Blood pres (2nd rdg) mm Hg,BPX_C.htm,BPXSY2,2003-2004
+Systolic:  Blood pres (3rd rdg) mm Hg,BPX_C.htm,BPXSY3,2003-2004
+Systolic: Blood pres (4th rdg) mm Hg,BPX_C.htm,BPXSY4,2003-2004
+Take diabetic pills to lower blood sugar,DIQ_D.htm,DID070,2005-2006
+Taking insulin now,DIQ_D.htm,DIQ050,2005-2006
+Taking prescription for hypertension,BPQ_C.htm,BPQ040A,2003-2004
+Tap water source,DR2TOT_D.htm,DR2TWS,2005-2006
+Tasks around home/yard past 30 days,PAQ_C.htm,PAQ100,2003-2004
+Teeth needing extractions,OHXREF_C.htm,OHQ490h,2003-2004
+Theobromine (mg),DR2TOT_D.htm,DR2TTHEO,2005-2006
+Thiamin (Vitamin B1) (mg),DR2TOT_D.htm,DR2TVB1,2005-2006
+Thigh Circumference (cm),BMX_C.htm,BMXTHICR,2003-2004
+Thigh Circumference Comment,BMX_C.htm,BMITHICR,2003-2004
+Time delay (ns),BIX_C.htm,BIDTD,2003-2004
+Time when no insurance in past year?,HIQ_D.htm,HIQ210,2005-2006
+Told had high blood pressure - 2+ times,BPQ_C.htm,BPQ030,2003-2004
+Told of other diet changes for hyprtnsn,BPQ_C.htm,BPQ043C,2003-2004
+Told to control weight for hypertension,BPQ_C.htm,BPQ040B,2003-2004
+Told to do other things for hypertension,BPQ_C.htm,BPQ040F,2003-2004
+Told to do other things for hyprtnsn,BPQ_C.htm,BPQ043D,2003-2004
+Told to eat less fat for cholesterol,BPQ_C.htm,BPQ090A,2003-2004
+Told to exercise more for cholesterol,BPQ_C.htm,BPQ090C,2003-2004
+Told to exercise more for hypertension,BPQ_C.htm,BPQ040D,2003-2004
+Told to increase potassium for hyprtnsn,BPQ_C.htm,BPQ043B,2003-2004
+Told to reduce alcohol for hypertension,BPQ_C.htm,BPQ040E,2003-2004
+Told to reduce sodium for hypertension,BPQ_C.htm,BPQ040C,2003-2004
+Told to reduce weight for cholesterol,BPQ_C.htm,BPQ090B,2003-2004
+Told to stop smoking for hypertension,BPQ_C.htm,BPQ043A,2003-2004
+Told to take prescriptn for cholesterol,BPQ_C.htm,BPQ090D,2003-2004
+Took laxatives or vomited,WHQ_C.htm,WHD080K,2003-2004
+Took non-RX suppl. to lose weight,WHQ_D.htm,WHD080J,2005-2006
+Took non-prescription diet pills,WHQ_C.htm,WHD080J,2003-2004
+Took prescription diet pills,WHQ_C.htm,WHD080I,2003-2004
+Tooth Count:  #1,OHXDEN_C (1).htm,OHX01TC,2003-2004
+Tooth Count:  #10,OHXDEN_C (1).htm,OHX10TC,2003-2004
+Tooth Count:  #11,OHXDEN_C (1).htm,OHX11TC,2003-2004
+Tooth Count:  #12,OHXDEN_C (1).htm,OHX12TC,2003-2004
+Tooth Count:  #13,OHXDEN_C (1).htm,OHX13TC,2003-2004
+Tooth Count:  #14,OHXDEN_C (1).htm,OHX14TC,2003-2004
+Tooth Count:  #15,OHXDEN_C (1).htm,OHX15TC,2003-2004
+Tooth Count:  #16,OHXDEN_C (1).htm,OHX16TC,2003-2004
+Tooth Count:  #17,OHXDEN_C (1).htm,OHX17TC,2003-2004
+Tooth Count:  #18,OHXDEN_C (1).htm,OHX18TC,2003-2004
+Tooth Count:  #19,OHXDEN_C (1).htm,OHX19TC,2003-2004
+Tooth Count:  #2,OHXDEN_C (1).htm,OHX02TC,2003-2004
+Tooth Count:  #20,OHXDEN_C (1).htm,OHX20TC,2003-2004
+Tooth Count:  #21,OHXDEN_C (1).htm,OHX21TC,2003-2004
+Tooth Count:  #22,OHXDEN_C (1).htm,OHX22TC,2003-2004
+Tooth Count:  #23,OHXDEN_C (1).htm,OHX23TC,2003-2004
+Tooth Count:  #24,OHXDEN_C (1).htm,OHX24TC,2003-2004
+Tooth Count:  #25,OHXDEN_C (1).htm,OHX25TC,2003-2004
+Tooth Count:  #26,OHXDEN_C (1).htm,OHX26TC,2003-2004
+Tooth Count:  #27,OHXDEN_C (1).htm,OHX27TC,2003-2004
+Tooth Count:  #28,OHXDEN_C (1).htm,OHX28TC,2003-2004
+Tooth Count:  #29,OHXDEN_C (1).htm,OHX29TC,2003-2004
+Tooth Count:  #3,OHXDEN_C (1).htm,OHX03TC,2003-2004
+Tooth Count:  #30,OHXDEN_C (1).htm,OHX30TC,2003-2004
+Tooth Count:  #31,OHXDEN_C (1).htm,OHX31TC,2003-2004
+Tooth Count:  #32,OHXDEN_C (1).htm,OHX32TC,2003-2004
+Tooth Count:  #4,OHXDEN_C (1).htm,OHX04TC,2003-2004
+Tooth Count:  #5,OHXDEN_C (1).htm,OHX05TC,2003-2004
+Tooth Count:  #6,OHXDEN_C (1).htm,OHX06TC,2003-2004
+Tooth Count:  #7,OHXDEN_C (1).htm,OHX07TC,2003-2004
+Tooth Count:  #8,OHXDEN_C (1).htm,OHX08TC,2003-2004
+Tooth Count:  #9,OHXDEN_C (1).htm,OHX09TC,2003-2004
+Tooth count: #1,OHX_D.htm,OHX01HTC,2005-2006
+Tooth count: #10,OHX_D.htm,OHX10HTC,2005-2006
+Tooth count: #11,OHX_D.htm,OHX11HTC,2005-2006
+Tooth count: #12,OHX_D.htm,OHX12HTC,2005-2006
+Tooth count: #13,OHX_D.htm,OHX13HTC,2005-2006
+Tooth count: #14,OHX_D.htm,OHX14HTC,2005-2006
+Tooth count: #15,OHX_D.htm,OHX15HTC,2005-2006
+Tooth count: #16,OHX_D.htm,OHX16HTC,2005-2006
+Tooth count: #17,OHX_D.htm,OHX17HTC,2005-2006
+Tooth count: #18,OHX_D.htm,OHX18HTC,2005-2006
+Tooth count: #19,OHX_D.htm,OHX19HTC,2005-2006
+Tooth count: #2,OHX_D.htm,OHX02HTC,2005-2006
+Tooth count: #20,OHX_D.htm,OHX20HTC,2005-2006
+Tooth count: #21,OHX_D.htm,OHX21HTC,2005-2006
+Tooth count: #22,OHX_D.htm,OHX22HTC,2005-2006
+Tooth count: #23,OHX_D.htm,OHX23HTC,2005-2006
+Tooth count: #24,OHX_D.htm,OHX24HTC,2005-2006
+Tooth count: #25,OHX_D.htm,OHX25HTC,2005-2006
+Tooth count: #26,OHX_D.htm,OHX26HTC,2005-2006
+Tooth count: #27,OHX_D.htm,OHX27HTC,2005-2006
+Tooth count: #28,OHX_D.htm,OHX28HTC,2005-2006
+Tooth count: #29,OHX_D.htm,OHX29HTC,2005-2006
+Tooth count: #3,OHX_D.htm,OHX03HTC,2005-2006
+Tooth count: #30,OHX_D.htm,OHX30HTC,2005-2006
+Tooth count: #31,OHX_D.htm,OHX31HTC,2005-2006
+Tooth count: #32,OHX_D.htm,OHX32HTC,2005-2006
+Tooth count: #4,OHX_D.htm,OHX04HTC,2005-2006
+Tooth count: #5,OHX_D.htm,OHX05HTC,2005-2006
+Tooth count: #6,OHX_D.htm,OHX06HTC,2005-2006
+Tooth count: #7,OHX_D.htm,OHX07HTC,2005-2006
+Tooth count: #8,OHX_D.htm,OHX08HTC,2005-2006
+Tooth count: #9,OHX_D.htm,OHX09HTC,2005-2006
+Toothache,OHXREF_C.htm,OHQ490a,2003-2004
+Total # of days in long term facility,HUQ_C.htm,HUQ084,2003-2004
+Total Cholesterol (mg/dL),L13_C.htm,LBXTC,2003-2004
+Total Cholesterol (mmol/L),L13_C.htm,LBDTCSI,2003-2004
+Total Cholesterol( mmol/L),TCHOL_D.htm,LBDTCSI,2005-2006
+Total bilirubin (mg/dL),L40_C.htm,LBXSTB,2003-2004
+Total bottled water drank yesterday (gm),DR2TOT_D.htm,DR2BWATZ,2005-2006
+Total calcium (mg/dL),L40_C.htm,LBXSCA,2003-2004
+Total calcium (mmol/L),L40_C.htm,LBDSCASI,2003-2004
+Total cholesterol (mg/dL),TCHOL_D.htm,LBXTC,2005-2006
+Total choline (mg),DR2TOT_D.htm,DR2TCHL,2005-2006
+Total fat (gm),DR2TOT_D.htm,DR2TTFAT,2005-2006
+Total folate (mcg),DR2TOT_D.htm,DR2TFOLA,2005-2006
+Total monounsaturated fatty acids (gm),DR2TOT_D.htm,DR2TMFAT,2005-2006
+Total plain water drank yesterday (gm),DR2TOT_D.htm,DR2_320Z,2005-2006
+Total polyunsaturated fatty acids (gm),DR2TOT_D.htm,DR2TPFAT,2005-2006
+Total protein (g/L),L40_C.htm,LBDSTPSI,2003-2004
+Total protein (g/dL),L40_C.htm,LBXSTP,2003-2004
+Total saturated fatty acids (gm),DR2TOT_D.htm,DR2TSFAT,2005-2006
+Total sugars (gm),DR2TOT_D.htm,DR2TSUGR,2005-2006
+Total tap water drank yesterday (gm),DR2TOT_D.htm,DR2_330Z,2005-2006
+Triceps Skinfold (mm),BMX_C.htm,BMXTRI,2003-2004
+Triceps Skinfold Comment,BMX_C.htm,BMITRI,2003-2004
+Tried not to gain weight in past year,WHQ_C.htm,WHQ090,2003-2004
+Tried to lose weight in past year,WHQ_C.htm,WHQ070,2003-2004
+Tried to quit smoking,SMQ_D.htm,SMQ670,2005-2006
+Triglyceride (mg/dL),L13AM_C.htm,LBXTR,2003-2004
+Triglyceride (mmol/L),L13AM_C.htm,LBDTRSI,2003-2004
+Triglycerides (mg/dL),L40_C.htm,LBXSTR,2003-2004
+Triglycerides (mmol/L),L40_C.htm,LBDSTRSI,2003-2004
+Trunk (A/G region) scan status,DXXAG_C.htm,DXATRST,2003-2004
+Trunk tissue invalidity code,DXXAG_C.htm,DXATRTV,2003-2004
+Two weeks irritable most of the time?,CIQDEP_C.htm,CIQD014,2003-2004
+"Two weeks sad, empty, depressed?",CIQDEP_C.htm,CIQD001,2003-2004
+Two-year MEC weights of subsample B,EPH_D.htm,WTSB2YR,2005-2006
+Type of milk first fed - other,DBQ_D.htm,DBD072U,2005-2006
+Type of milk first fed-1% milk,DBQ_D.htm,DBD072C,2005-2006
+Type of milk first fed-2% milk,DBQ_D.htm,DBD072B,2005-2006
+Type of milk first fed-fat free milk,DBQ_D.htm,DBD072D,2005-2006
+Type of milk first fed-whole milk,DBQ_D.htm,DBD072A,2005-2006
+Type place most often go for healthcare,HUQ_C.htm,HUQ040,2003-2004
+Unable to read...couldn't pay attention?,CIQDEP_C.htm,CIQD044,2003-2004
+Under/over 50 when fracd spine 10th time,OSQ_D.htm,OSQ040cj,2005-2006
+Under/over 50 when fracd. hip 1st time,OSQ_D.htm,OSQ040aa,2005-2006
+Under/over 50 when fracd. hip 2nd time,OSQ_D.htm,OSQ040ab,2005-2006
+Under/over 50 when fracd. hip 3rd time,OSQ_D.htm,OSQ040ac,2005-2006
+Under/over 50 when fracd. spine 1st time,OSQ_D.htm,OSQ040ca,2005-2006
+Under/over 50 when fracd. spine 2nd time,OSQ_D.htm,OSQ040cb,2005-2006
+Under/over 50 when fracd. spine 3rd time,OSQ_D.htm,OSQ040cc,2005-2006
+Under/over 50 when fracd. spine 4th time,OSQ_D.htm,OSQ040cd,2005-2006
+Under/over 50 when fracd. spine 5th time,OSQ_D.htm,OSQ040ce,2005-2006
+Under/over 50 when fracd. spine 6th time,OSQ_D.htm,OSQ040cf,2005-2006
+Under/over 50 when fracd. spine 7th time,OSQ_D.htm,OSQ040cg,2005-2006
+Under/over 50 when fracd. spine 8th time,OSQ_D.htm,OSQ040ch,2005-2006
+Under/over 50 when fracd. spine 9th time,OSQ_D.htm,OSQ040ci,2005-2006
+Under/over 50 when fracd. wrist 1st time,OSQ_D.htm,OSQ040ba,2005-2006
+Under/over 50 when fracd. wrist 2nd time,OSQ_D.htm,OSQ040bb,2005-2006
+Under/over 50 when fracd. wrist 3rd time,OSQ_D.htm,OSQ040bc,2005-2006
+Under/over 50 when fracd. wrist 4th time,OSQ_D.htm,OSQ040bd,2005-2006
+Under/over 50 when fracd. wrist 5th time,OSQ_D.htm,OSQ040be,2005-2006
+Under/over 50 when fracd. wrist 6th time,OSQ_D.htm,OSQ040bf,2005-2006
+Under/over 50 when fracd. wrist 7th time,OSQ_D.htm,OSQ040bg,2005-2006
+Unit of measure (day/week/month),PAQ_C.htm,PAQ050U,2003-2004
+Unit of measure (day/week/month/year),SMQ_C.htm,SMQ050U,2003-2004
+Unit of measure (month/year),DIQ_D.htm,DIQ060U,2005-2006
+Unsatisfactory prior dental experience,OHXREF_C.htm,OHQ490l,2003-2004
+Untreated Caries / Restorative needs,OHXREF_C.htm,OHAROCDT,2003-2004
+Unusual value noted during data review,BMX_C.htm,BMDSUBF,2003-2004
+Upper Arm Length (cm),BMX_C.htm,BMXARML,2003-2004
+Upper Arm Length Comment,BMX_C.htm,BMIARML,2003-2004
+Upper Leg Length (cm),BMX_C.htm,BMXLEG,2003-2004
+Upper Leg Length Comment,BMX_C.htm,BMILEG,2003-2004
+Uric acid (mg/dL),L40_C.htm,LBXSUA,2003-2004
+Uric acid (umol/L),L40_C.htm,LBDSUASI,2003-2004
+Urinary 4-tert-octylphenol (ng/mL),EPH_D.htm,URX4TO,2005-2006
+Urinary 4-tert-octylphenol comment,EPH_D.htm,URD4TOLC,2005-2006
+Urinary Benzophenone-3 (ng/mL),EPH_D.htm,URXBP3,2005-2006
+Urinary Benzophenone-3 comment,EPH_D.htm,URDBP3LC,2005-2006
+Urinary Bisphenol A (ng/mL),EPH_D.htm,URXBPH,2005-2006
+Urinary Bisphenol A comment,EPH_D.htm,URDBPHLC,2005-2006
+Urinary Triclosan (ng/mL),EPH_D.htm,URXTRS,2005-2006
+Urinary Triclosan comment,EPH_D.htm,URDTRSLC,2005-2006
+Urinary creatinine,EPH_D.htm,URXUCR,2005-2006
+Urinated before reaching the toilet,KIQ_U_C.htm,KIQ044,2003-2004
+Use health claims on food packages,DBQ_D.htm,DBQ780,2005-2006
+Use ingredients list on food label,DBQ_D.htm,DBQ760,2005-2006
+Use nutrition facts panel on food label,DBQ_D.htm,DBQ750,2005-2006
+Use serving size info on food label,DBQ_D.htm,DBQ770,2005-2006
+Used a liquid diet formula,WHQ_C.htm,WHD080G,2003-2004
+Used chewing tobacco 20 times in life,SMQ_C.htm,SMQ210,2003-2004
+Used last 5 days - Chewing tobacco,SMQRTU_D.htm,SMQ690D,2005-2006
+Used last 5 days - Cigarettes,SMQRTU_D.htm,SMQ690A,2005-2006
+Used last 5 days - Cigars,SMQRTU_D.htm,SMQ690C,2005-2006
+"Used last 5 days - Patch, gum, other",SMQRTU_D.htm,SMQ690F,2005-2006
+Used last 5 days - Pipes,SMQRTU_D.htm,SMQ690B,2005-2006
+Used last 5 days - Snuff,SMQRTU_D.htm,SMQ690E,2005-2006
+Used liquid diet formula,WHQ_D.htm,WHD100G,2005-2006
+Used snuff at least 20 times in life,SMQ_C.htm,SMQ180,2003-2004
+Used tobacco/nicotine last 5 days?,SMQRTU_D.htm,SMQ680,2005-2006
+"Using fork, knife, drinking from cup",PFQ_C.htm,PFQ061K,2003-2004
+Usually have trouble trying to urinate,KIQ_P_C.htm,KIQ081,2003-2004
+Vigorous activity over past 30 days,PAQ_C.htm,PAD200,2003-2004
+"Vision problems, days",PFQ_C.htm,PFD069P,2003-2004
+"Vitamin A, RAE (mcg)",DR2TOT_D.htm,DR2TVARA,2005-2006
+Vitamin B12 (mcg),DR2TOT_D.htm,DR2TVB12,2005-2006
+Vitamin B6 (mg),DR2TOT_D.htm,DR2TVB6,2005-2006
+Vitamin C (mg),DR2TOT_D.htm,DR2TVC,2005-2006
+Vitamin E as alpha-tocopherol (mg),DR2TOT_D.htm,DR2TATOC,2005-2006
+Vitamin K (mcg),DR2TOT_D.htm,DR2TVK,2005-2006
+WTA a lot more than most?,CIQGAD_C.htm,CIQG06,2003-2004
+WTA duration,CIQGAD_C.htm,CIQG05,2003-2004
+WTA frequency,CIQGAD_C.htm,CIQG04,2003-2004
+WTA interfere with daily life?,CIQGAD_C.htm,CIQG25,2003-2004
+Waist Circumference (cm),BMX_C.htm,BMXWAIST,2003-2004
+Waist Circumference Comment,BMX_C.htm,BMIWAIST,2003-2004
+Walked or bicycled over past 30 days,PAQ_C.htm,PAD020,2003-2004
+Walking between rooms on same floor,PFQ_C.htm,PFQ061H,2003-2004
+Walking for a quarter mile difficulty,PFQ_C.htm,PFQ061B,2003-2004
+Walking up ten steps difficulty,PFQ_C.htm,PFQ061C,2003-2004
+Warm-up diastolic BP (mm Hg),CVX_C.htm,CVDWDI,2003-2004
+Warm-up grade (% incline),CVX_C.htm,CVAWG1,2003-2004
+Warm-up heart rate (per min),CVX_C.htm,CVDWHR,2003-2004
+Warm-up rating of perceived exertion,CVX_C.htm,CVXWRPE,2003-2004
+Warm-up speed (mph),CVX_C.htm,CVAWS1,2003-2004
+Warm-up systolic BP (mm Hg),CVX_C.htm,CVDWSY,2003-2004
+Was R worthless/guilty about depression?,CIQDEP_C.htm,CIQD040,2003-2004
+Was SED always result MDA?,CIQDEP_C.htm,CIQDPF,2003-2004
+Was SED always result of phys illness?,CIQDEP_C.htm,CIQDPN,2003-2004
+Was SED result of MDA?,CIQDEP_C.htm,CIQDPE,2003-2004
+Was SED result of phys illness?,CIQDEP_C.htm,CIQDPK,2003-2004
+Was SED result of physical illness?,CIQDEP_C.htm,CIQDPD,2003-2004
+Was WTA always result MDA?,CIQGAD_C.htm,CIQGPF,2003-2004
+Was WTA always result of phys illness?,CIQGAD_C.htm,CIQGPN,2003-2004
+Was WTA result of  MDA?,CIQGAD_C.htm,CIQGPE,2003-2004
+Was WTA result of phys illness?,CIQGAD_C.htm,CIQGPD,2003-2004
+Was interest in sex less than usual?,CIQDEP_C.htm,CIQD030,2003-2004
+Was it 1 period or 2 or more?,CIQDEP_C.htm,CIQD052,2003-2004
+Was it one period or two or more?,CIQDEP_C.htm,CIQD053,2003-2004
+Was participant exam position recumbent,OHXREF_C.htm,OHAPOS,2003-2004
+Was the Monitor in Calibration?,PAXRAW_C.htm,PAXCAL,2003-2004
+Was there reason worthless or guilty?,CIQDEP_C.htm,CIQD038,2003-2004
+Wears complete/partial Mand. denture,OHXREF_C.htm,OHQ440,2003-2004
+Wears complete/partial max denture,OHXREF_C.htm,OHQ420,2003-2004
+Weight (kg),BMX_C.htm,BMXWT,2003-2004
+Weight Comment,BMX_C.htm,BMIWT,2003-2004
+Weight change intentional,WHQ_C.htm,WHQ060,2003-2004
+Weight loss most successful (pounds),WHQ_D.htm,WHD220,2005-2006
+"Weight problems, days",PFQ_C.htm,PFD069Q,2003-2004
+Were all 4 periods after the death?,CIQDEP_C.htm,CIQD091,2003-2004
+Were attacks always result MDA?,CIQPAN_C.htm,CIQPPF,2003-2004
+Were attacks always result phys ill?,CIQPAN_C.htm,CIQPPN,2003-2004
+Were attacks result of  MDA?,CIQPAN_C.htm,CIQPPE,2003-2004
+Were attacks result of phys illness?,CIQPAN_C.htm,CIQPPD,2003-2004
+Were you dizzy or feeling faint?,CIQPAN_C.htm,CIQP13I,2003-2004
+Were you short of breath?,CIQPAN_C.htm,CIQP13E,2003-2004
+Were you unable to make up your mind...?,CIQDEP_C.htm,CIQD046,2003-2004
+What does Dr say A1C should be,DIQ_D.htm,DIQ290,2005-2006
+What does Dr say DBP should be,DIQ_D.htm,DID310D,2005-2006
+What does Dr say LDL should be,DIQ_D.htm,DID330,2005-2006
+What does Dr say SBP should be,DIQ_D.htm,DID310S,2005-2006
+What is longest  no weeks felt that way?,CIQDEP_C.htm,CIQD083,2003-2004
+What was most recent LDL number,DIQ_D.htm,DID320,2005-2006
+What was your last A1C level,DIQ_D.htm,DIQ280,2005-2006
+What was your recent DBP,DIQ_D.htm,DIQ300D,2005-2006
+What was your recent SBP,DIQ_D.htm,DIQ300S,2005-2006
+Wheezing disturb sleep in past year,RDQ_C.htm,RDQ090,2003-2004
+Wheezing or whistling in chest - past yr,RDQ_C.htm,RDQ070,2003-2004
+"When SED, also other problems?",CIQDEP_C.htm,CIQD004,2003-2004
+"When SED, did you lack energy?",CIQDEP_C.htm,CIQD005,2003-2004
+"When SED, did you lose interest?",CIQDEP_C.htm,CIQD006,2003-2004
+"When SED, were you irritable or grouchy?",CIQDEP_C.htm,CIQD007,2003-2004
+When blood cholesterol last checked,BPQ_C.htm,BPQ070,2003-2004
+When did attack occur?,CIQPAN_C.htm,CIQP16,2003-2004
+When did it end -- past month or more?,CIQDEP_C.htm,CIQD056,2003-2004
+When did resp. last use chewing tobacco?,SMQRTU_D.htm,SMQ815,2005-2006
+When did resp. smoke last cigar?,SMQRTU_D.htm,SMQ785,2005-2006
+When did resp. smoke last cigarette?,SMQRTU_D.htm,SMQ725,2005-2006
+When did resp. smoke last pipe?,SMQRTU_D.htm,SMQ755,2005-2006
+"When irritable, also other problems?",CIQDEP_C.htm,CIQD017,2003-2004
+"When irritable, did you lack energy?",CIQDEP_C.htm,CIQD018,2003-2004
+When last used snuff,SMQRTU_D.htm,SMQ819,2005-2006
+"When lost interest, also other problems?",CIQDEP_C.htm,CIQD011,2003-2004
+"When lost interest, did you lack energy?",CIQDEP_C.htm,CIQD012,2003-2004
+"When lost interest, irritable/grouchy?",CIQDEP_C.htm,CIQD013,2003-2004
+"When not ill,was SED always result MDA ?",CIQDEP_C.htm,CIQDPO,2003-2004
+When was your diabetes diagnosed,DIQ_D.htm,DIQ220,2005-2006
+Where fracture occurred,OSQ_D.htm,OSQ100a,2005-2006
+Which of three situations occurred?,CIQPAN_C.htm,CIQP20,2003-2004
+White blood cell count (1000 cells/uL),CBC_D.htm,LBXWBCSI,2005-2006
+Who was it that died?,CIQDEP_C.htm,CIQD060,2003-2004
+Years of age attack occurred,CIQPAN_C.htm,CIQP24,2003-2004
+You drink 1% fat milk,DBQ_D.htm,DBD222C,2005-2006
+You drink 2% fat milk,DBQ_D.htm,DBD222B,2005-2006
+You drink another type of milk,DBQ_D.htm,DBD222U,2005-2006
+You drink fat-free or skim milk,DBQ_D.htm,DBD222D,2005-2006
+You drink whole or regular milk,DBQ_D.htm,DBD222A,2005-2006
+Zinc (mg),DR2TOT_D.htm,DR2TZINC,2005-2006
+inactive days due to phys./mental hlth,HSQ_C.htm,HSQ490,2003-2004
+no. of days mental health was not good,HSQ_C.htm,HSQ480,2003-2004
+no. of days physical health was not good,HSQ_C.htm,HSQ470,2003-2004
