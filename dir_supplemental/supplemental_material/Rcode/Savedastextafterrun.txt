@@ -20,7 +20,7 @@
 > ##
 > ##  - Section 2: Calculate commonly used accelerometry summary measures:
 > ##                 * TAC: Total activity counts
-> ##                 * TLAC: Total log(1+activity countss)
+> ##                 * TLAC: Total log(1+activity counts)
 > ##                 * WT: Total wear time
 > ##                 * ST: Total sedentary, sleep, or non-wear time
 > ##                 * MVPA: Total time spent in MVPA
@@ -42,9 +42,9 @@
 > ##               Once we've subset the data to obtain "data_analysis", we calculate both adjusted and unadjsuted normalized
 > ##               survey weights. These weights are calculated using the reweight_accel() function
 > ##               (see ?reweight_accel for details). The adjusted weights are calculated using age, gender,
-> ##               and ethnicity strata. The "adjusted" normalizaed weights we use for regression analyses are "wtmec4yr_adj_norm"
+> ##               and ethnicity strata. The "adjusted" normalized weights we use for regression analyses are "wtmec4yr_adj_norm"
 > ##
-> ##               Ecxlusion criteria
+> ##               Exclusion criteria
 > ##                 * Apply age exclusion (i.e. younger than 50, or 85 and over). Note that individuals age 85 and over
 > ##                   at the time of accelerometer wear have NA (missing) values for the variable RIDAGEEX which records
 > ##                   age in months at the time individuals took part in the exam portion of the study.
@@ -72,7 +72,7 @@
 > ##
 > ##
 > ##
-> ##  By default, the assummption is that this R script will be downloaded with the supplemental material which accompanies
+> ##  By default, the assumption is that this R script will be downloaded with the supplemental material which accompanies
 > ##  the manuscript "Organizing and analyzing the activity in NHANES". This supplemental material is a zipped file with 3 folders:
 > ##    - code
 > ##    - figures
@@ -83,7 +83,7 @@
 > ##
 > ##  Because the data are relatively large and require a non-trivial amount of working memory (RAM)
 > ##  we "clean up" the workspace as we go, clearing items after the relevant figures/tables/regression results are
-> ##  created/printed to the console. This may need to be taken into consideration if there's a particualr area you'd like to investigate in more detail.
+> ##  created/printed to the console. This may need to be taken into consideration if there's a particular area you'd like to investigate in more detail.
 > ##
 > ##  Finally, although most of the code executes fairly quickly, there are two sections that may take a few minutes to run.
 > ##  The first, calculating survey weighted principal components, will not execute by default. This can be changed by switching
@@ -346,7 +346,7 @@ NULL
 +                   "(table_dat$mortstat == 0 & table_dat$permth_exm/12 < 5)" # less than 5 years of follow up with no mortality
 + )
 > 
-> ## create matrix of pairwise missing data based on our exclusion criterial
+> ## create matrix of pairwise missing data based on our exclusion criteria
 > tab_miss <- matrix(NA, ncol=length(criteria_vec), nrow=length(criteria_vec))
 > for(i in seq_along(criteria_vec)){
 +     for(j in seq_along(criteria_vec)){
