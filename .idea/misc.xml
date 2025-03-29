@@ -4,4 +4,17 @@
     <option name="sdkName" value="Python 3.12 (CapstoneTwoNHANES20032006)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (CapstoneTwoNHANES20032006)" project-jdk-type="Python SDK" />
+  <component name="RMarkdownSettings">
+    <option name="renderProfiles">
+      <map>
+        <entry key="file://$PROJECT_DIR$/documents/TestRMD.rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/documents" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
